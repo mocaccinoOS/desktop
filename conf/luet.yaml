@@ -1,11 +1,11 @@
 general:
   debug: true
 repositories:
-- name: "main"
+- name: "MocaccinoOS Desktop repo"
   type: "http"
   enable: true
   urls:
-  - "http://127.0.0.1:8000"
+  - "https://mocaccino.keybase.pub/desktop"
 - name: "livecd"
   type: "http"
   enable: true

@@ -1,0 +1,96 @@
+name: Build
+
+on:
+  push:
+    branches: [ master, develop, test]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        git fetch --prune --unshallow
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+    - name: setup-docker
+      uses: docker-practice/actions-setup-docker@0.0.1
+    # https://github.community/t/worker-running-out-of-disk-space/18245
+    - name: Patch Docker Daemon data-root
+      run: |
+        DOCKER_DATA_ROOT='/mnt/var/lib/docker'
+        DOCKER_DAEMON_JSON='/etc/docker/daemon.json'
+        sudo mkdir -p "${DOCKER_DATA_ROOT}"
+        jq --arg dataroot "${DOCKER_DATA_ROOT}" '. + {"data-root": $dataroot}' "${DOCKER_DAEMON_JSON}" > "/tmp/docker.json.tmp"
+        sudo mv "/tmp/docker.json.tmp" "${DOCKER_DAEMON_JSON}"
+        sudo systemctl restart docker
+    - uses: actions/setup-go@v2
+      with:
+        go-version: '^1.14.3' # The Go version to download (if necessary) and use.
+    - name: Login to DockerHub Registry
+      run: echo ${{ secrets.DOCKERIO_PASSWORD }} | docker login -u ${{ secrets.DOCKERIO_USERNAME }} --password-stdin
+    - name: Install deps and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      env:
+        PREVIOUS: ${{ github.event.before }}
+        BUILD_ARGS: "--pull --push --image-repository mocaccinoos/desktop-cache"
+      run: |
+        curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/114dcc00bad41896f8614cc0214f834b95a1e2a6/get_luet_root.sh | sudo sh
+        sudo luet install system/container-diff system/luet-extensions
+        make build-all create-repo
+    - name: Deploy repository 🚀
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      run: |
+        curl https://gist.githubusercontent.com/mudler/4fc89a4318e9987509727d4f5b47f546/raw/49e3cb612f8e9885082526744e2d8444320861c5/keybase.sh > keybase.sh
+
+        docker run --rm \
+        -e KEYBASE_DEVICENAME=$KEYBASE_DEVICENAME -e KEYBASE_USERNAME="$KEYBASE_USERNAME" \
+        -e KEYBASE_PAPERKEY="$KEYBASE_PAPERKEY" \
+        -e KEYBASE_SERVICE=1 -v $PWD:/data -v $PWD/keybase.sh:/keybase.sh \
+        keybaseio/client:stable \
+        bash /keybase.sh fs rm -r '/keybase/public/mocaccino/desktop/*' || true
+
+        docker run --rm \
+        -e KEYBASE_DEVICENAME=$KEYBASE_DEVICENAME -e KEYBASE_USERNAME="$KEYBASE_USERNAME" \
+        -e KEYBASE_PAPERKEY="$KEYBASE_PAPERKEY" \
+        -e KEYBASE_SERVICE=1 -v $PWD/build:/data -v $PWD/keybase.sh:/keybase.sh \
+        keybaseio/client:stable \
+        bash /keybase.sh fs cp -r -f '/data/*' /keybase/public/mocaccino/desktop
+      env:
+        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
+        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
+        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+    - name: Build and deploy iso 🚀
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      run: |
+        make iso
+        sha256sum $IMAGE_NAME > $IMAGE_NAME.sha256
+        mkdir isobuild
+        mv $IMAGE_NAME $IMAGE_NAME.sha256 isobuild/
+
+        docker run --rm \
+        -e KEYBASE_DEVICENAME=$KEYBASE_DEVICENAME -e KEYBASE_USERNAME="$KEYBASE_USERNAME" \
+        -e KEYBASE_PAPERKEY="$KEYBASE_PAPERKEY" \
+        -e KEYBASE_SERVICE=1 -v $PWD:/data -v $PWD/keybase.sh:/keybase.sh \
+        keybaseio/client:stable \
+        bash /keybase.sh fs rm -r '/keybase/public/mocaccino/iso/*' || true
+
+        docker run --rm \
+        -e KEYBASE_DEVICENAME=$KEYBASE_DEVICENAME -e KEYBASE_USERNAME="$KEYBASE_USERNAME" \
+        -e KEYBASE_PAPERKEY="$KEYBASE_PAPERKEY" \
+        -e KEYBASE_SERVICE=1 -v $PWD/isobuild:/data -v $PWD/keybase.sh:/keybase.sh \
+        keybaseio/client:stable \
+        bash /keybase.sh fs cp -r -f '/data/*' /keybase/public/mocaccino/iso
+      env:
+        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
+        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
+        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        IMAGE_NAME: "MocaccinoOS-Desktop-9999.iso"
+        OVERLAY: "true" 
+        FIRST_STAGE: "distro/sabayon-initramfs" 
+        LUET_PACKAGES: "flavor/sabayon-minimal-live system/luet system/container-diff"
+        LUET_CONFIG: "conf/luet.yaml"
+

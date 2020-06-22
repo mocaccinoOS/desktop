@@ -10,7 +10,7 @@ TARGET?=targets
 COMPRESSION?=gzip
 CLEAN?=true
 TREE?=packages
-BUILD_ARGS?=--pull --image-repository sabayonarm/luetcache
+BUILD_ARGS?=--pull --image-repository mocaccinoos/desktop-cache
 SUDO?=sudo
 
 # For ARM image build script
@@ -70,5 +70,4 @@ serve-repo:
 
 .PHONY: iso
 iso:
-	OVERLAY=true FIRST_STAGE="distro/sabayon-initramfs" LUET_PACKAGES="flavor/sabayon-minimal-live system/luet system/container-diff" LUET_BIN=/usr/bin/luet LUET_CONFIG=$PWD/conf/luet-local-gitlab.yam
-l sudo -E $(LUET) geniso-build       
+	$(SUDO) -E $(LUET) geniso-build
