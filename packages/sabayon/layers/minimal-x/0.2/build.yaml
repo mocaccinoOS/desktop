@@ -731,7 +731,6 @@ steps:
 - equo cleanup
 - cp /etc/shadow /etc/shadow.defaults
 - cp /etc/passwd /etc/passwd.defaults
-- cp /etc/gshadow /etc/gshadow.defaults
 - cp /etc/group /etc/group.defaults
 requires:
 - category: "distro"

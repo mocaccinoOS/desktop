@@ -118,7 +118,6 @@ steps:
 - cp /etc/shadow /etc/shadow.defaults
 - cp /etc/passwd /etc/passwd.defaults
 - cp /etc/group /etc/group.defaults
-- cp /etc/gshadow /etc/gshadow.defaults
 - rm /var/log/entropy/entropy.log || true
 requires:
 - category: "distro"
