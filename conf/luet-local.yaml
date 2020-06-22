@@ -1,0 +1,22 @@
+general:
+  debug: true
+repositories:
+- name: "main"
+  type: "http"
+  enable: true
+  urls:
+  - "http://127.0.0.1:8000"
+- name: "livecd"
+  type: "http"
+  enable: true
+  priority: 10
+  urls:
+  - "https://raw.githubusercontent.com/Luet-lab/livecd-specs/gh-pages"
+- name: "luet"
+  type: "http"
+  enable: true
+  priority: 1
+  urls:
+  - "https://raw.githubusercontent.com/Luet-lab/luet-repo/gh-pages"
+
+
