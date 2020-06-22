@@ -1,0 +1,126 @@
+unpack: true
+includes:
+- /bin$|/bin/.*
+
+- /dev$|/dev/.*
+- /etc$
+# We need to skip hostname \ hosts and resolv.conf (so the package can be also consumed in containers)
+# For such setup prefer finalizer steps
+# Explictly listing what we want from etc
+# Get it with: xzcat stage3-raspi3-1.4-release-std-2020-01-03.tar.xz | tar -t | grep /etc/
+- /etc$|/etc/.*
+
+- /home$|/home/.*
+- /lib$|/lib.*
+- /media$|/media/.*
+- /mnt$|/mnt/.*
+- /opt$|/opt/.*
+- /root$|/root/.*
+- /run$|/run/.*
+- /sbin$|/sbin/.*
+- /usr$|/usr/.*
+- /var$|/var/.*
+steps:
+- equo up
+- > 
+  ACCEPT_LICENSE=* equo i
+  @gnome
+  @gst-plugins
+  @gst-plugins-extra
+  app-admin/packagekit-base
+  app-admin/packagekit-gtk
+  app-admin/rigo
+  app-admin/system-tools-backends
+  app-arch/file-roller
+  app-backup/deja-dup
+  app-crypt/gnupg
+  app-crypt/pinentry-gnome
+  app-dicts/aspell-de
+  app-dicts/aspell-en
+  app-dicts/aspell-fr
+  app-dicts/aspell-it
+  app-dicts/aspell-nl
+  app-dicts/aspell-pl
+  app-dicts/myspell-de
+  app-dicts/myspell-en
+  app-dicts/myspell-es
+  app-dicts/myspell-fr
+  app-dicts/myspell-it
+  app-dicts/myspell-nl
+  app-editors/gedit
+  app-misc/gnote
+  app-misc/sabayon-greeter
+  app-misc/sabayon-version
+  app-office/libreoffice
+  games-misc/cowsay
+  gnome-base/gnome-shell
+  gnome-extra/chrome-gnome-shell
+  gnome-extra/gnome-calculator
+  gnome-extra/gconf-editor
+  gnome-extra/gnome-power-manager
+  gnome-extra/gnome-shell-windowlist
+  gnome-extra/gnome-system-monitor
+  gnome-extra/gnome-tweaks
+  gnome-extra/gnome-utils
+  gnome-extra/gucharmap
+  gnome-extra/nautilus-sendto
+  gnome-extra/nm-applet
+  gnome-extra/polkit-gnome
+  media-gfx/gimp
+  media-gfx/shotwell
+  media-libs/libdvdcss
+  media-libs/libdvdnav
+  media-libs/libdvdread
+  media-libs/libopenraw
+  media-plugins/alsa-plugins
+  media-sound/rhythmbox
+  media-sound/pavucontrol
+  media-video/mpv
+  media-video/pitivi
+  media-video/totem
+  net-firewall/ufw-frontends
+  net-fs/samba
+  net-irc/hexchat
+  net-misc/networkmanager
+  net-vpn/networkmanager-openvpn
+  net-vpn/networkmanager-pptp
+  net-vpn/networkmanager-vpnc
+  net-misc/ntp
+  net-p2p/transmission-gtk
+  net-print/cups
+  net-wireless/bluez
+  sys-boot/os-prober
+  sys-firmware/bluez-firmware
+  net-wireless/bluez-hcidump
+  net-wireless/gnome-bluetooth
+  sys-apps/gnome-disk-utility
+  sys-apps/hdparm
+  sys-apps/sdparm
+  sys-block/gparted
+  sys-fs/dmraid
+  sys-fs/ntfs3g
+  sys-power/acpid
+  www-client/firefox
+  x11-libs/libva-intel-driver
+  x11-libs/libva-vdpau-driver
+  x11-misc/alacarte
+  x11-misc/magneto-gtk3
+  x11-misc/xvkbd
+  x11-terms/gnome-terminal
+  x11-themes/adwaita-icon-theme
+  x11-themes/sabayon-artwork-extra
+  x11-themes/sabayon-artwork-gnome
+  x11-themes/sound-theme-freedesktop
+  x11-themes/xcursor-themes
+  x11-wm/twm
+
+- equo cleanup
+- cp /etc/shadow /etc/shadow.defaults
+- cp /etc/passwd /etc/passwd.defaults
+- cp /etc/group /etc/group.defaults
+- cp /etc/gshadow /etc/gshadow.defaults
+- rm /var/log/entropy/entropy.log || true
+requires:
+- category: "distro"
+  name: "sabayon-minimal-x"
+  version: ">=0.1"

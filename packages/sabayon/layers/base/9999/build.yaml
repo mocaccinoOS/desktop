@@ -1,0 +1,22 @@
+unpack: true
+image: "sabayon/base-amd64"
+includes:
+- /bin$|/bin/.*
+- /dev$|/dev/.*
+- /etc$
+# We need to skip hostname, hosts and resolv.conf (so the package can be also consumed in containers)
+# For such setup prefer finalizer steps
+# Explictly listing what we want from etc
+# Get it with: xzcat stage3-raspi3-1.4-release-std-2020-01-03.tar.xz | tar -t | grep /etc/
+- /etc$|/etc/.*
+
+- /home$|/home/.*
+- /lib$|/lib.*
+- /media$|/media/.*
+- /mnt$|/mnt/.*
+- /opt$|/opt/.*
+- /root$|/root/.*
+- /run$|/run/.*
+- /sbin$|/sbin/.*
+- /usr$|/usr/.*
+- /var$|/var/.*

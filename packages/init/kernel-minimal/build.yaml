@@ -1,0 +1,41 @@
+# This kernel package is a minimal spec with kernel + overlayfs modules to allow mounting overlays from livecd
+unpack: true
+includes:
+# Kernel
+- /boot$|/boot/.*
+- /lib$
+- /lib/modules$
+- /lib/modules/5.4.0-sabayon$
+- /lib/modules/5.4.0-sabayon/modules.*
+- /lib/modules/5.4.0-sabayon/source
+- /lib/modules/5.4.0-sabayon/build
+
+# OverlayFS
+- /lib/modules/5.4.0-sabayon/kernel$
+- /lib/modules/5.4.0-sabayon/kernel/fs$
+- /lib/modules/5.4.0-sabayon/kernel/fs/mbcache.ko
+- /lib/modules/5.4.0-sabayon/kernel/fs/overlayfs$
+- /lib/modules/5.4.0-sabayon/kernel/fs/overlayfs/.*
+- /lib/modules/5.4.0-sabayon/kernel/lib$
+- /lib/modules/5.4.0-sabayon/kernel/lib/.*
+
+# USB
+- /lib/modules/5.4.0-sabayon/kernel$
+- /lib/modules/5.4.0-sabayon/kernel/drivers$
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb$
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/.*
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/storage$
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/storage/.*
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/host$
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/host/.*
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/common$
+- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/common/.*
+
+requires:
+- category: "distro"
+  name: "sabayon-desktop"
+  version: ">=0.1"
+prelude:
+- equo up
+steps:
+- ACCEPT_LICENSE=* equo i sys-kernel/linux-sabayon:5.4 

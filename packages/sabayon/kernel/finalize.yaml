@@ -1,0 +1,3 @@
+install:
+- ln -s /boot/initramfs-* /boot/Initrd || true
+- ln -s /boot/kernel-genkernel-* /boot/bzImage || true

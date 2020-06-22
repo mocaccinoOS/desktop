@@ -1,0 +1,5 @@
+install:
+# eselect-bzimage is not present and i think link manually.
+# PRE: we always have only one kernel.
+- ln -s /boot/initramfs-* /boot/Initrd || true
+- ln -s /boot/kernel-genkernel-* /boot/bzImage || true

@@ -1,0 +1,18 @@
+unpack: true
+requires:
+- category: "distro"
+  name: "seed"
+  version: ">=0.1"
+prelude:
+- apk --no-cache add ca-certificates tar gzip wget xz rsync git
+- git clone https://github.com/ivandavidov/minimal.git
+- cd minimal && git checkout 9ac67c9b677396e70efbae239e137509f0372e40
+steps:
+- cp -rfv init minimal/src/minimal_rootfs/init
+- cp -rfv motd minimal/src/minimal_rootfs/etc/motd
+- cp -rfv 02_overlay.sh minimal/src/minimal_rootfs/etc/02_overlay.sh
+- rsync -A -a --delete --numeric-ids --exclude 'minimal/src/minimal_rootfs/*' --recursive -d -H --one-file-system --xattrs minimal/src/minimal_rootfs/  --exclude '/etc/resolv.conf'  --exclude '/etc/hostname'  --exclude '/sys/' --exclude '/etc/hosts'  --exclude '/sys/*' --exclude '/proc/*' --exclude '/dev/pts/*'  /
+includes:
+- /etc$|/etc/.*
+- /var$|/var/.*
+- /init

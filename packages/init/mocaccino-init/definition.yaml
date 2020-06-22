@@ -1,0 +1,7 @@
+category: "system"
+name: "sabayon-init"
+version: "0.20200222.0"
+conflicts:
+- category: "system"
+  name: "lml-init"
+  version: ">=0.1"

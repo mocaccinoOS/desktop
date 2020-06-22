@@ -1,0 +1,25 @@
+unpack: true
+requires:
+- category: "distro"
+  name: "seed"
+  version: ">=0.1"
+prelude:
+- apk --no-cache add ca-certificates tar gzip wget xz rsync git
+- git clone https://github.com/ivandavidov/minimal.git
+- cd minimal && git checkout e4ab26d8ee2e9e2e24d47852474d453b19cb0ced
+- rm -rfv /boot || true
+steps:
+- mv minimal/src/minimal_boot/ /boot/
+- sed -i 's/Minimal/Sabayon/g' /boot/bios/EFI/BOOT/startup.nsh
+- sed -i 's/Minimal/Sabayon/g' /boot/bios/boot/syslinux/syslinux.cfg
+- sed -i 's/Minimal/Sabayon/g' /boot/uefi/loader/entries/mll-x86.conf
+- sed -i 's/Minimal/Sabayon/g' /boot/uefi/loader/entries/mll-x86_64.conf
+# Needed during ISOIMAGE creation
+- cp -rfv /boot/bios/* /
+- cp -rfv /boot/uefi/loader /
+includes:
+- /boot$|/boot/.*
+# Needed ISOIMAGE
+- /EFI$|/EFI/.*
+- /loader$|/loader/.*
+
