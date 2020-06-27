@@ -4,7 +4,7 @@ requires:
   name: "seed"
   version: ">=0.1"
 prelude:
-- apk --no-cache add ca-certificates tar gzip wget xz rsync git
+- luet install vcs/git utils/ca-certificates
 - git clone https://github.com/ivandavidov/minimal.git
 - cd minimal && git checkout e4ab26d8ee2e9e2e24d47852474d453b19cb0ced
 - rm -rfv /boot || true
