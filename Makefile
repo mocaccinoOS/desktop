@@ -70,4 +70,4 @@ serve-repo:
 
 .PHONY: iso
 iso:
-	$(SUDO) -E $(LUET) geniso-build
+	$(SUDO) -E $(LUET) geniso
