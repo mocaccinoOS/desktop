@@ -1,6 +1,6 @@
 category: "system"
-name: "sabayon-init"
-version: "0.20200222.0"
+name: "mocaccino-init"
+version: "0.20200628.0"
 conflicts:
 - category: "system"
   name: "lml-init"

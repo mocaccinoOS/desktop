@@ -90,7 +90,7 @@ jobs:
         KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
         IMAGE_NAME: "MocaccinoOS-Desktop-9999.iso"
         OVERLAY: "true" 
-        FIRST_STAGE: "distro/sabayon-initramfs" 
+        FIRST_STAGE: "distro/mocaccino-initramfs" 
         LUET_PACKAGES: "flavor/sabayon-minimal-live system/luet system/container-diff"
         LUET_CONFIG: "conf/luet.yaml"
 
