@@ -186,6 +186,7 @@ for conf in 00-sabayon.package.use 00-sabayon.package.mask \
 	fi
 done
 
+# XXX: Mocaccino Setup default shadow/passwd
 ### XXX: The base layer doesn't ship shadow files etc.
 ### We run in the finalizer this step so it gets applied in runtime only if no users/groups are setted up in the machine
 if [ ! -e "/etc/shadow" ]; then
@@ -207,6 +208,9 @@ fi
 root_zeropass="root::$(cat /etc/shadow | grep "root:" | cut -d":" -f3-)"
 sed -i "s/^root:.*/${root_zeropass}/" /etc/shadow
 
+# Create sabayonuser
+useradd sabayonuser
+
 # protect /var/tmp
 touch /var/tmp/.keep
 touch /tmp/.keep
@@ -219,6 +223,7 @@ chown -R polkitd:polkitd /etc/polkit-1/rules.d
 chown root:messagebus /usr/libexec/dbus-daemon-launch-helper
 chmod +s /usr/libexec/dbus-daemon-launch-helper
 
+# XXX: Mocaccino - change calamares to allow init install
 # TODO: Move to its own package when we have the spec
 sed -i 's|/dev/live-base|/tmp/mnt/device/rootfs.squashfs|g' /etc/calamares/modules/unpackfs.conf
 cp -rfv /patches/calamares.py /usr/lib64/calamares/modules/sabayon/main.py
