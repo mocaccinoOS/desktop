@@ -13,4 +13,4 @@ requires:
 prelude:
 - equo up
 steps:
-- ACCEPT_LICENSE=* equo i sys-kernel/linux-sabayon:5.6
+- ACCEPT_LICENSE=* equo i sys-kernel/linux-sabayon:${PACKAGE_VERSION}

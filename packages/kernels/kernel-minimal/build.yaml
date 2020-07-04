@@ -5,31 +5,31 @@ includes:
 - /boot$|/boot/.*
 - /lib$
 - /lib/modules$
-- /lib/modules/5.4.0-sabayon$
-- /lib/modules/5.4.0-sabayon/modules.*
-- /lib/modules/5.4.0-sabayon/source
-- /lib/modules/5.4.0-sabayon/build
+- /lib/modules/.*-sabayon$
+- /lib/modules/.*-sabayon/modules.*
+- /lib/modules/.*-sabayon/source
+- /lib/modules/.*-sabayon/build
 
 # OverlayFS
-- /lib/modules/5.4.0-sabayon/kernel$
-- /lib/modules/5.4.0-sabayon/kernel/fs$
-- /lib/modules/5.4.0-sabayon/kernel/fs/mbcache.ko
-- /lib/modules/5.4.0-sabayon/kernel/fs/overlayfs$
-- /lib/modules/5.4.0-sabayon/kernel/fs/overlayfs/.*
-- /lib/modules/5.4.0-sabayon/kernel/lib$
-- /lib/modules/5.4.0-sabayon/kernel/lib/.*
+- /lib/modules/.*-sabayon/kernel$
+- /lib/modules/.*-sabayon/kernel/fs$
+- /lib/modules/.*-sabayon/kernel/fs/mbcache.ko
+- /lib/modules/.*-sabayon/kernel/fs/overlayfs$
+- /lib/modules/.*-sabayon/kernel/fs/overlayfs/.*
+- /lib/modules/.*-sabayon/kernel/lib$
+- /lib/modules/.*-sabayon/kernel/lib/.*
 
 # USB
-- /lib/modules/5.4.0-sabayon/kernel$
-- /lib/modules/5.4.0-sabayon/kernel/drivers$
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb$
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/.*
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/storage$
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/storage/.*
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/host$
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/host/.*
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/common$
-- /lib/modules/5.4.0-sabayon/kernel/drivers/usb/common/.*
+- /lib/modules/.*-sabayon/kernel$
+- /lib/modules/.*-sabayon/kernel/drivers$
+- /lib/modules/.*-sabayon/kernel/drivers/usb$
+- /lib/modules/.*-sabayon/kernel/drivers/usb/.*
+- /lib/modules/.*-sabayon/kernel/drivers/usb/storage$
+- /lib/modules/.*-sabayon/kernel/drivers/usb/storage/.*
+- /lib/modules/.*-sabayon/kernel/drivers/usb/host$
+- /lib/modules/.*-sabayon/kernel/drivers/usb/host/.*
+- /lib/modules/.*-sabayon/kernel/drivers/usb/common$
+- /lib/modules/.*-sabayon/kernel/drivers/usb/common/.*
 
 requires:
 - category: "distro"
@@ -38,4 +38,4 @@ requires:
 prelude:
 - equo up
 steps:
-- ACCEPT_LICENSE=* equo i sys-kernel/linux-sabayon:5.4 
+- ACCEPT_LICENSE=* equo i sys-kernel/linux-sabayon:${PACKAGE_VERSION}
