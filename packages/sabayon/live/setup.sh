@@ -208,8 +208,6 @@ fi
 root_zeropass="root::$(cat /etc/shadow | grep "root:" | cut -d":" -f3-)"
 sed -i "s/^root:.*/${root_zeropass}/" /etc/shadow
 
-# Create sabayonuser
-useradd sabayonuser
 
 # protect /var/tmp
 touch /var/tmp/.keep
