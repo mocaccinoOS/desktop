@@ -2,8 +2,8 @@ category: "distro"
 name: "sabayon-live"
 version: "0.5"
 requires:
-- category: "distro"
-  name: "sabayon-kernel"
+- category: "kernel"
+  name: "sabayon-full"
   version: ">=0.1"
 ## To note: this package also consumes user/group default from upper layers in finalizers.
 ## In this way they are not tracked by the package manager,
