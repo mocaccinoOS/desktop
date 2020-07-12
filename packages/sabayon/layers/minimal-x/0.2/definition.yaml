@@ -1,3 +1,5 @@
 category: "distro"
 name: "sabayon-minimal-x"
 version: "0.2"
+
+# This spec is also suitable for containers

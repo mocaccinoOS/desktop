@@ -1,0 +1,104 @@
+unpack: true
+includes:
+- /bin$|/bin/.*
+
+- /dev$|/dev/.*
+- /etc$
+# TODO: Add /etc to config protect
+- /etc$|/etc/.*
+
+- /home$|/home/.*
+- /lib$|/lib.*
+- /media$|/media/.*
+- /mnt$|/mnt/.*
+- /opt$|/opt/.*
+- /root$|/root/.*
+- /run$|/run/.*
+- /sbin$|/sbin/.*
+- /usr$|/usr/.*
+- /var$|/var/.*
+steps:
+- equo up
+- > 
+  ACCEPT_LICENSE=* equo i
+  @wireless
+	@X
+	app-admin/rigo
+	app-arch/p7zip
+	app-editors/notepadqq
+	app-crypt/gnupg
+	app-crypt/pinentry-qt5
+	app-dicts/aspell-de
+	app-dicts/aspell-en
+	app-dicts/aspell-fr
+	app-dicts/aspell-it
+	app-dicts/aspell-nl
+	app-dicts/aspell-pl
+	app-dicts/myspell-de
+	app-dicts/myspell-en
+	app-dicts/myspell-es
+	app-dicts/myspell-fr
+	app-dicts/myspell-it
+	app-dicts/myspell-nl
+	app-misc/calamares-sabayon
+	app-misc/sabayon-skel
+	app-misc/sabayon-version
+	games-misc/cowsay
+	gui-apps/nm-tray
+	lxqt-base/lxqt-meta
+	media-fonts/dejavu
+	media-fonts/corefonts
+	media-libs/libtxc_dxtn
+	media-libs/libopenraw
+	media-libs/mesa
+	net-dialup/ppp
+	net-dialup/rp-pppoe
+	net-misc/networkmanager
+	net-vpn/networkmanager-openvpn
+	net-vpn/networkmanager-pptp
+	net-vpn/networkmanager-vpnc
+	net-misc/ntp
+	net-print/cups
+	sys-apps/lsb-release
+	sys-apps/hdparm
+	sys-apps/sdparm
+	sys-apps/usbutils
+	sys-apps/usb_modeswitch
+	sys-auth/polkit
+	sys-auth/polkit-qt
+	sys-block/parted
+	sys-block/partitionmanager
+	sys-boot/os-prober
+	sys-fs/dmraid
+	sys-fs/ntfs3g
+	sys-power/acpid
+	sys-power/cpupower
+	www-client/firefox
+	x11-apps/setxkbmap
+	x11-apps/xdm
+	x11-apps/xhost
+	x11-terms/qterminal
+	x11-libs/libva-intel-driver
+	x11-libs/libva-vdpau-driver
+	x11-libs/libXxf86misc
+	x11-misc/lightdm-slick-greeter
+	x11-misc/xscreensaver
+	x11-misc/xvkbd
+	x11-themes/oxygen-gtk:2
+	x11-themes/oxygen-gtk:3
+	x11-themes/sabayon-artwork-core
+	x11-themes/sabayon-artwork-extra
+	x11-themes/sabayon-artwork-grub
+	x11-themes/sabayon-artwork-lightdm-slick-greeter
+	x11-themes/sound-theme-freedesktop
+	x11-themes/xcursor-themes
+
+- equo cleanup
+- cp /etc/shadow /etc/shadow.defaults
+- cp /etc/passwd /etc/passwd.defaults
+- cp /etc/group /etc/group.defaults
+- rm /var/log/entropy/entropy.log || true
+requires:
+- category: "distro"
+  name: "sabayon-minimal-x"
+  version: ">=0.1"
