@@ -3,6 +3,10 @@
 /usr/sbin/env-update
 . /etc/profile
 
+setup_startup_caches() {
+	ldconfig
+}
+
 safe_run() {
 	local updated=0
 	for ((i=0; i < 42; i++)); do
@@ -66,6 +70,8 @@ ln -sf ../locale.conf /etc/env.d/02locale
 
 # Cleanup Perl cruft
 perl-cleaner --ph-clean
+
+setup_startup_caches
 
 # Needed by systemd, because it doesn't properly set a good
 # encoding in ttys. Test it with (on tty1, VT1):

@@ -1,6 +1,6 @@
 category: "distro"
 name: "sabayon-live"
-version: "0.6"
+version: "0.7"
 requires:
 - category: "kernel"
   name: "sabayon-full"
