@@ -1,9 +1,9 @@
 category: "flavor"
-name: "sabayon-minimal-x-live"
-version: "0.2"
+name: "sabayon-kde-live"
+version: "0.1"
 requires:
 - category: "distro"
-  name: "sabayon-minimal-x"
+  name: "sabayon-kde-live"
   version: ">=0.1"
 - category: "system"
   name: "sabayon-init"
