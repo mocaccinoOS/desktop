@@ -62,6 +62,7 @@ create-repo:
     --descr "Mocaccino desktop Repo" \
     --urls "http://localhost:8000" \
     --tree-compression gzip \
+	--meta-compression gzip \
     --type http
 
 .PHONY: serve-repo
