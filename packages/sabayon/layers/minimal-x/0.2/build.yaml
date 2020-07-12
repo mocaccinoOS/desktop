@@ -735,4 +735,4 @@ steps:
 requires:
 - category: "distro"
   name: "sabayon"
-  version: "0.1"
+  version: ">=0"
