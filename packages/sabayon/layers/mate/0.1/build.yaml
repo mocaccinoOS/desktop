@@ -59,6 +59,7 @@ steps:
   x11-themes/sabayon-artwork-mate
 
 - equo cleanup
+- equo remove www-client/midori
 - cp /etc/shadow /etc/shadow.defaults
 - cp /etc/passwd /etc/passwd.defaults
 - cp /etc/group /etc/group.defaults
