@@ -94,6 +94,7 @@ steps:
   x11-themes/xcursor-themes
 
 - equo cleanup
+- equo remove x11-wm/fluxbox
 - cp /etc/shadow /etc/shadow.defaults
 - cp /etc/passwd /etc/passwd.defaults
 - cp /etc/group /etc/group.defaults
