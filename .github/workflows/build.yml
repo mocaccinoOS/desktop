@@ -151,3 +151,4 @@ jobs:
         KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
         KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
         KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        APPEND: "false"
