@@ -28,4 +28,5 @@ jobs:
         wget https://github.com/mudler/luet/releases/download/0.7.8/luet-0.7.8-linux-amd64 -O luet
         sudo mv luet /usr/bin/luet
         sudo chmod +x /usr/bin/luet
+        git clone https://github.com/mocaccinoOS/kernel-repo packages/kernel-repo
         make validate
