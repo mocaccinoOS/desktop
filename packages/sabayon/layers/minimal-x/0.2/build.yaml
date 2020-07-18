@@ -692,19 +692,16 @@ steps:
   ACCEPT_LICENSE=* equo i @wireless 
   @fluxbox 
   app-misc/calamares-sabayon 
-  app-text/pastebunz 
   lxde-base/lxdm 
   media-gfx/feh 
   net-dialup/ppp 
   net-dialup/rp-pppoe 
-  net-irc/irssi 
   net-misc/tightvnc 
   sys-apps/usbutils 
   sys-block/parted 
   sys-boot/os-prober 
   sys-power/cpupower 
   sys-process/htop 
-  www-client/midori 
   x11-themes/adwaita-icon-theme 
   x11-themes/sabayon-artwork-core 
   x11-themes/sabayon-artwork-grub  
