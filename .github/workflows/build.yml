@@ -134,13 +134,7 @@ jobs:
     #- name: Setup tmate session
     #  uses: mxschmitt/action-tmate@v2
     - name: Create repo 🔧
-      env:
-        BUILD_ARGS: "--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true"
-        CLEAN: "false"
-        TARGET: "target"
-        PACK: ${{ matrix.category }}/${{ matrix.name }}
       run: |
-        echo "$PACK" > $TARGET
         make create-repo
         ls -liah $PWD/build
     - name: Update repository 🚀
