@@ -707,7 +707,6 @@ steps:
   x11-themes/sabayon-artwork-grub  
   @X 
   app-arch/unrar 
-  app-misc/sabayon-live 
   app-misc/sabayon-skel 
   media-fonts/dejavu 
   media-fonts/corefonts 
