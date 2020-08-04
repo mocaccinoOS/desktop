@@ -10,7 +10,7 @@ TARGET?=targets
 COMPRESSION?=gzip
 CLEAN?=true
 TREE?=packages
-BUILD_ARGS?=--pull --image-repository mocaccinoos/desktop-cache
+BUILD_ARGS?=--pull --image-repository mocaccinoos/desktop-cache --no-spinner
 SUDO?=sudo
 
 # For ARM image build script
