@@ -327,12 +327,6 @@ def setup_nvidia_legacy(root_install_path):
                 for dep in matches:
                     f.write('%s\n' % (dep,))
 
-    libcalamares.utils.target_env_call(
-        ['eselect', 'opengl', 'set', 'xorg-x11', '&>', '/dev/null'])
-    libcalamares.utils.target_env_call(
-        ['eselect', 'opengl', 'set', 'nvidia', '&>', '/dev/null'])
-
-
 def run():
     """ Sabayon Calamares Post-install module """
     # XXX: Apply this in Sabayon/calamares-sabayon
