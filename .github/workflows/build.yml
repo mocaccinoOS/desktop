@@ -16,9 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install deps
-        env:
-          PREVIOUS: ${{ github.event.before }}
-          BUILD_ARGS: "--pull --push --image-repository mocaccinoos/desktop-cache"
         run: |
           curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
           sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
@@ -60,30 +57,37 @@ jobs:
       with:
         go-version: '^1.14.3'
     - name: Login to DockerHub Registry
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: echo ${{ secrets.DOCKERIO_PASSWORD }} | docker login -u ${{ secrets.DOCKERIO_USERNAME }} --password-stdin
     - name: Install deps
-      env:
-        PREVIOUS: ${{ github.event.before }}
-        BUILD_ARGS: "--pull --push --image-repository mocaccinoos/desktop-cache"
       run: |
         curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
         sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
         sudo luet install utils/keybase-tools
-    - name: Get existing repository metadata
+    - name: Install minio and login
       env:
-        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
-        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
-        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+        MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+        MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      run: |
+        sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/bin/mc
+        sudo chmod +x /usr/bin/mc
+        mc alias set minio $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+
+    - name: Get existing repository metadata
       run: |
         mkdir $PWD/build
         chmod -R 777 $PWD/build
-        keybase-download '/keybase/public/mocaccino/desktop/*.yaml' $PWD/build
+        mc mirror  --exclude '*.gz' minio/mocaccino-desktop/ $PWD/build
         ls -liah $PWD/build
+
     #- name: Setup tmate session
     #  uses: mxschmitt/action-tmate@v2
+    - name: Set Push options
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      run: echo ::set-env name=BUILD_ARGS::--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true
     - name: Build packages 🔧
       env:
-        BUILD_ARGS: "--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true"
         CLEAN: "false"
         TARGET: "target"
         PACK: ${{ matrix.category }}/${{ matrix.name }}
@@ -91,14 +95,12 @@ jobs:
         echo "$PACK" > $TARGET
         make rebuild
         ls -liah $PWD/build
+
     - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
-        keybase-append $PWD/build/ /keybase/public/mocaccino/desktop
-      env:
-        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
-        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
-        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        mc cp --recursive $PWD/build/ minio/mocaccino-desktop
+
 
   create-repo:
     runs-on: ubuntu-latest
@@ -112,35 +114,34 @@ jobs:
       with:
         go-version: '^1.14.3'
     - name: Install deps
-      env:
-        PREVIOUS: ${{ github.event.before }}
-        BUILD_ARGS: "--pull --push --image-repository mocaccinoos/desktop-cache"
       run: |
         curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
         sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
         sudo luet install utils/keybase-tools
-    - name: Get existing repository metadata
+    - name: Install minio and login
       env:
-        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
-        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
-        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+        MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+        MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      run: |
+        sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/bin/mc
+        sudo chmod +x /usr/bin/mc
+        mc alias set minio $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+    - name: Get existing repository metadata
       run: |
         mkdir $PWD/build
         chmod -R 777 $PWD/build
-        keybase-download '/keybase/public/mocaccino/desktop/*.yaml' $PWD/build
+        mc mirror  --exclude '*.gz' minio/mocaccino-desktop/ $PWD/build
         ls -liah $PWD/build
+
     #- name: Setup tmate session
     #  uses: mxschmitt/action-tmate@v2
     - name: Create repo 🔧
       run: |
         make create-repo
         ls -liah $PWD/build
+
     - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
-        keybase-append $PWD/build/ /keybase/public/mocaccino/desktop
-      env:
-        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
-        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
-        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
-        APPEND: "false"
+        mc cp --recursive $PWD/build/ minio/mocaccino-desktop
