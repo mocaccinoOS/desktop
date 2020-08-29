@@ -723,7 +723,9 @@ steps:
   x11-themes/hicolor-icon-theme 
   x11-themes/iottinka-artwork 
   x11-terms/xterm 
-  x11-libs/libXxf86misc 
+  x11-libs/libXxf86misc
+  app-i18n/unicode-emoji-12.0
+  media-fonts/noto-emoji
 - equo cleanup
 - cp /etc/shadow /etc/shadow.defaults
 - cp /etc/passwd /etc/passwd.defaults
