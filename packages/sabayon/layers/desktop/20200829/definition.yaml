@@ -1,0 +1,5 @@
+category: "distro"
+name: "sabayon-desktop"
+version: "20200829"
+
+# This is the only spec that is the base and it is suitable for containers
