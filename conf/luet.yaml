@@ -1,5 +1,8 @@
 general:
   debug: true
+system:
+  # Force directory not mount with tmpfs
+  tmpdir_base: /luet-tmp
 repositories:
 - name: "MocaccinoOS Desktop repo"
   type: "http"
