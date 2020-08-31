@@ -85,7 +85,7 @@ jobs:
     #  uses: mxschmitt/action-tmate@v2
     - name: Set Push options
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-      run: echo ::set-env name=BUILD_ARGS::--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true
+      run: echo ::set-env name=BUILD_ARGS::--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true --config conf/luet.yaml
     - name: Build packages 🔧
       env:
         CLEAN: "false"
