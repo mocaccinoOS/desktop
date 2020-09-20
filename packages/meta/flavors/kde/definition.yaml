@@ -1,6 +1,6 @@
 category: "flavor"
 name: "sabayon-kde-live"
-version: "0.1"
+version: "0.1+1"
 requires:
 - category: "distro"
   name: "sabayon-kde-live"
