@@ -101,8 +101,7 @@ setup_networkmanager() {
 
 
 prepare_lxqt() {
-        setup_default_xsession "lxqt"
-
+  setup_default_xsession "lxqt"
 }
 
 # Make sure that external Portage env vars are not set
@@ -116,14 +115,12 @@ SYSTEMD_SERVICES=(
 	"cups-browsed"
 #	"sabayon-mce"
 # "sabayon-steambox"
-	"gdm"
+	"lightdm"
 )
 for srv in "${SYSTEMD_SERVICES[@]}"; do
 	sd_enable "${srv}"
 done
 
-
-eselect opengl set xorg-x11
 
 systemctl --no-reload set-default graphical
 
