@@ -10,13 +10,19 @@ TARGET?=targets
 COMPRESSION?=gzip
 CLEAN?=true
 TREE?=packages
-BUILD_ARGS?=--pull --image-repository mocaccinoos/desktop-cache --no-spinner --skip-if-metadata-exists=true
+REPO_CACHE?=mocaccinoos/desktop-cache
+export REPO_CACHE
+BUILD_ARGS?=--pull --no-spinner --skip-if-metadata-exists=true --config $(ROOT_DIR)/conf/luet.yaml
 SUDO?=sudo
 
 # For ARM image build script
 export LUET_CONFIG?=$(ROOT_DIR)/conf/luet-local.yaml
 export LUET_BIN?=$(LUET)
 export IMAGE_NAME?=luet_os.img
+
+ifneq ($(strip $(REPO_CACHE)),)
+	BUILD_ARGS+=--image-repository $(REPO_CACHE)
+endif
 
 .PHONY: all
 all: deps build
