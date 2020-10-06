@@ -1,12 +1,12 @@
 BACKEND?=docker
 CONCURRENCY?=1
 CI_ARGS?=
+PACKAGES?=
 
 # Abs path only. It gets copied in chroot in pre-seed stages
 LUET?=/usr/bin/luet
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/output
-TARGET?=targets
 COMPRESSION?=gzip
 CLEAN?=true
 TREE?=packages
@@ -14,6 +14,7 @@ REPO_CACHE?=mocaccinoos/desktop-cache
 export REPO_CACHE
 BUILD_ARGS?=--pull --no-spinner --skip-if-metadata-exists=true --config $(ROOT_DIR)/conf/luet.yaml
 SUDO?=sudo
+VALIDATE_OPTIONS?=-s
 
 # For ARM image build script
 export LUET_CONFIG?=$(ROOT_DIR)/conf/luet-local.yaml
@@ -40,7 +41,7 @@ clean:
 .PHONY: build
 build: clean
 	mkdir -p $(ROOT_DIR)/build
-	$(SUDO) $(LUET) build $(BUILD_ARGS) --clean=$(CLEAN) --tree=$(TREE)  `cat $(ROOT_DIR)/$(TARGET) | xargs echo` --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(BUILD_ARGS) --clean=$(CLEAN) --tree=$(TREE) $(PACKAGES) --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: build-all
 build-all: clean
@@ -49,7 +50,7 @@ build-all: clean
 
 .PHONY: rebuild
 rebuild:
-	$(SUDO) $(LUET) build $(BUILD_ARGS) --clean=$(CLEAN) --tree=$(TREE) `cat $(ROOT_DIR)/$(TARGET) | xargs echo` --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(BUILD_ARGS) --clean=$(CLEAN) --tree=$(TREE) $(PACKAGES) --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild-all
 rebuild-all:
@@ -57,7 +58,7 @@ rebuild-all:
 
 .PHONY: validate
 validate:
-	$(LUET) tree validate --tree $(TREE) -s
+	$(LUET) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
 
 .PHONY: create-repo
 create-repo:
@@ -68,7 +69,7 @@ create-repo:
     --descr "Mocaccino desktop Repo" \
     --urls "http://localhost:8000" \
     --tree-compression gzip \
-	--meta-compression gzip \
+    --meta-compression gzip \
     --type http
 
 .PHONY: serve-repo
