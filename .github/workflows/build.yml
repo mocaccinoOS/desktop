@@ -64,6 +64,7 @@ jobs:
         curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
         sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
         sudo luet install utils/keybase-tools
+        sudo luet cleanup
     - name: Install minio and login
       env:
         MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
@@ -118,30 +119,9 @@ jobs:
         curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
         sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
         sudo luet install utils/keybase-tools
-    - name: Install minio and login
-      env:
-        MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
-        MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
-        MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
-      run: |
-        sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/bin/mc
-        sudo chmod +x /usr/bin/mc
-        mc alias set minio $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
-    - name: Get existing repository metadata
-      run: |
-        mkdir $PWD/build
-        chmod -R 777 $PWD/build
-        mc mirror  --exclude '*.gz' minio/mocaccino-desktop/ $PWD/build
-        ls -liah $PWD/build
-
     #- name: Setup tmate session
     #  uses: mxschmitt/action-tmate@v2
     - name: Create repo 🔧
       run: |
         make create-repo
         ls -liah $PWD/build
-
-    - name: Update repository 🚀
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-      run: |
-        mc cp --recursive $PWD/build/ minio/mocaccino-desktop
