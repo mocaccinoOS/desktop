@@ -1,14 +1,12 @@
-name: Build Matrix
+name: Build and push to minio
 
 on:
   push:
-    branches: [ master, develop, test ]
-  pull_request:
-    branches: [ master, develop ]
-
+    branches: [ master ]
 jobs:
 
   generate-matrix:
+
     name: Generate matrix for build
     runs-on: ubuntu-latest
     outputs:
@@ -16,10 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install deps
+        env:
+          PREVIOUS: ${{ github.event.before }}
         run: |
-          curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
-          sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
-          sudo luet install utils/keybase-tools utils/jq
+          curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+          sudo wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O /usr/bin/jq
+          sudo chmod a+x /usr/bin/jq
+          sudo luet install system/container-diff system/luet-extensions
+          sudo luet install utils/keybase-tools
       - name: Set matrix for build
         id: set-matrix
         run: |
@@ -33,38 +35,93 @@ jobs:
           echo "::set-output name=matrix::$( echo "$JSON" )"
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted 
     needs: generate-matrix
     continue-on-error: true
     strategy:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
     - uses: actions/checkout@v2
+
     - run: |
         git fetch --prune --unshallow
-    - name: setup-docker
-      uses: docker-practice/actions-setup-docker@0.0.1
-    # https://github.community/t/worker-running-out-of-disk-space/18245
-    - name: Patch Docker Daemon data-root
-      run: |
-        DOCKER_DATA_ROOT='/mnt/var/lib/docker'
-        DOCKER_DAEMON_JSON='/etc/docker/daemon.json'
-        sudo mkdir -p "${DOCKER_DATA_ROOT}"
-        jq --arg dataroot "${DOCKER_DATA_ROOT}" '. + {"data-root": $dataroot}' "${DOCKER_DAEMON_JSON}" > "/tmp/docker.json.tmp"
-        sudo mv "/tmp/docker.json.tmp" "${DOCKER_DAEMON_JSON}"
-        sudo systemctl restart docker
+
     - uses: actions/setup-go@v2
       with:
-        go-version: '^1.14.3'
+        go-version: '^1.14.3' # The Go version to download (if necessary) and use.
+
     - name: Login to DockerHub Registry
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: echo ${{ secrets.DOCKERIO_PASSWORD }} | docker login -u ${{ secrets.DOCKERIO_USERNAME }} --password-stdin
+
     - name: Install deps
+      env:
+        PREVIOUS: ${{ github.event.before }}
+        BUILD_ARGS: "--pull --push"
       run: |
-        curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
-        sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
+        sudo apt-get install -y wget make
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+        #sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
+        sudo luet install system/container-diff system/luet-extensions
         sudo luet install utils/keybase-tools
-        sudo luet cleanup
+    - name: Install minio and login
+      env:
+        MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+        MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+        MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      run: |
+        sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/bin/mc
+        sudo chmod +x /usr/bin/mc
+        mc alias set minio $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+    - name: Get existing repository metadata
+      run: |
+        mkdir $PWD/build
+        chmod -R 777 $PWD/build
+        mc mirror  --exclude '*.gz' minio/mocaccino-desktop/ $PWD/build
+        ls -liah $PWD/build
+
+    - name: Build packages 🔧
+      env:
+        BUILD_ARGS: "--pull --push --skip-if-metadata-exists=true"
+        CLEAN: "false"
+        TARGET: "target"
+        PACKAGES: ${{ matrix.category }}/${{ matrix.name }}
+        SUDO: "sudo -E"
+      run: |
+        make rebuild
+        ls -liah $PWD/build
+
+    - name: Update repository 🚀
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      run: |
+        mc cp --recursive $PWD/build/ minio/mocaccino-desktop
+
+  create-repo:
+    runs-on: ubuntu-latest
+    needs: build
+    continue-on-error: true
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - run: |
+        git fetch --prune --unshallow
+
+    - uses: actions/setup-go@v2
+      with:
+        go-version: '^1.14.3'
+
+    - name: Install deps
+      env:
+        PREVIOUS: ${{ github.event.before }}
+        BUILD_ARGS: "--pull --push"
+      run: |
+        sudo apt-get install -y wget make
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+        #sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
+        sudo luet install system/container-diff system/luet-extensions
+        sudo luet install utils/keybase-tools
+
     - name: Install minio and login
       env:
         MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
@@ -84,44 +141,14 @@ jobs:
 
     #- name: Setup tmate session
     #  uses: mxschmitt/action-tmate@v2
-    - name: Set Push options
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-      run: echo ::set-env name=BUILD_ARGS::--pull -d --push --image-repository mocaccinoos/desktop-cache --skip-if-metadata-exists=true --config conf/luet.yaml
-    - name: Build packages 🔧
+    - name: Create repo 🔧
       env:
-        CLEAN: "false"
-        TARGET: "target"
-        PACK: ${{ matrix.category }}/${{ matrix.name }}
+        SUDO: "sudo -E"
       run: |
-        echo "$PACK" > $TARGET
-        make rebuild
+        make create-repo
         ls -liah $PWD/build
 
     - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
         mc cp --recursive $PWD/build/ minio/mocaccino-desktop
-
-
-  create-repo:
-    runs-on: ubuntu-latest
-    needs: build
-    continue-on-error: true
-    steps:
-    - uses: actions/checkout@v2
-    - run: |
-        git fetch --prune --unshallow
-    - uses: actions/setup-go@v2
-      with:
-        go-version: '^1.14.3'
-    - name: Install deps
-      run: |
-        curl https://gist.githubusercontent.com/mudler/8b8d6c53c4669f4b9f9a72d1a2b92172/raw/e9d38b8e0702e7f1ef9a5db1bfa428add12a2d24/get_luet_root.sh | sudo sh
-        sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
-        sudo luet install utils/keybase-tools
-    #- name: Setup tmate session
-    #  uses: mxschmitt/action-tmate@v2
-    - name: Create repo 🔧
-      run: |
-        make create-repo
-        ls -liah $PWD/build
