@@ -76,6 +76,10 @@ create-repo:
 serve-repo:
 	LUET_NOLOCK=true $(LUET) serve-repo --port 8000 --dir $(ROOT_DIR)/build
 
+.PHONY: auto-bump
+auto-bump:
+	TREE_DIR=$(ROOT_DIR) $(LUET) autobump-github
+
 .PHONY: iso
 iso:
 	$(SUDO) -E $(LUET) geniso
