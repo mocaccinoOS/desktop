@@ -37,7 +37,6 @@ jobs:
   build:
     runs-on: self-hosted 
     needs: generate-matrix
-    continue-on-error: true
     strategy:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
     steps:
