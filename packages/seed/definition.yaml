@@ -1,6 +1,5 @@
 category: "distro"
 name: "seed"
-version: "0.20200920"
-
+version: "0.20201015"
 labels:
   autobump.strategy: "snapshot"
