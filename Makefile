@@ -80,6 +80,8 @@ serve-repo:
 auto-bump:
 	TREE_DIR=$(ROOT_DIR) $(LUET) autobump-github
 
+autobump: auto-bump
+	
 .PHONY: iso
 iso:
 	$(SUDO) -E $(LUET) geniso
