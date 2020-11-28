@@ -10,7 +10,7 @@ DESTINATION?=$(ROOT_DIR)/output
 COMPRESSION?=gzip
 CLEAN?=true
 TREE?=packages
-REPO_CACHE?=mocaccinoos/desktop-cache
+REPO_CACHE?=quay.io/mocaccinoos/desktop-cache
 export REPO_CACHE
 BUILD_ARGS?=--pull --no-spinner --skip-if-metadata-exists=true --config $(ROOT_DIR)/conf/luet.yaml
 SUDO?=sudo
