@@ -1,6 +1,6 @@
 category: "distro"
 name: "sabayon-lxqt-live"
-version: 0.3+3
+version: 0.3+4
 requires:
   - category: "distro"
     name: "sabayon-lxqt"
