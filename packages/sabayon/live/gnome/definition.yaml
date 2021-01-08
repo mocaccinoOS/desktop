@@ -1,6 +1,6 @@
 category: "distro"
 name: "sabayon-gnome-live"
-version: 0.2+5
+version: 0.2+6
 requires:
   - category: "distro"
     name: "sabayon-gnome"
