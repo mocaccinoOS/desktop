@@ -1,6 +1,6 @@
 category: "app-misc"
 name: "sabayon-live"
-version: "28"
+version: 28+1
 license: "GPL-2"
 uri:
   - https://github.com/Sabayon/sabayon-live.git
