@@ -1,10 +1,10 @@
 category: "distro"
 name: "sabayon-mate-live"
-version: "0.2+1"
+version: 0.2+2
 requires:
-- category: "distro"
-  name: "sabayon-mate"
-  version: ">=0.1"
-- category: "distro"
-  name: "sabayon-live"
-  version: ">=0.5"
+  - category: "distro"
+    name: "sabayon-mate"
+    version: ">=0.1"
+  - category: "distro"
+    name: "sabayon-live"
+    version: ">=0.5"
