@@ -1,6 +1,5 @@
 category: "distro"
 name: "sabayon"
-version: "0.3"
-
+version: "0.20210108"
 labels:
   autobump.strategy: "snapshot"
