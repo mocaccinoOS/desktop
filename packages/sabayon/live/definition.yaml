@@ -1,10 +1,10 @@
 category: "distro"
 name: "sabayon-live"
-version: "0.7+2"
+version: 0.7+3
 requires:
-- category: "kernel"
-  name: "sabayon-full"
-  version: ">=0.1"
+  - category: "kernel"
+    name: "sabayon-full"
+    version: ">=0.1"
 ## To note: this package also consumes user/group default from upper layers in finalizers.
 ## In this way they are not tracked by the package manager,
 ## and we consume the defaults during install only if the host didn't had any installed
