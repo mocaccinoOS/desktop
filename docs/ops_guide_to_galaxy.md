@@ -87,6 +87,8 @@ Luet generates docker images for each package, you can start a shell by either r
 DOCKER_HOST="..." LUET_ARGS="--image-repository quay.io/mocaccinocache/desktop" luet remote-exec packagename
 ```
 
+Note: It's not required `DOCKER_HOST` unless you want to leverage a remote host.
+
 ## How do I update provides list, and what are they?
 
 ## How do I add a package?
