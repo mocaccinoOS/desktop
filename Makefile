@@ -14,7 +14,7 @@ REPO_CACHE?=quay.io/mocaccinocache/desktop
 export REPO_CACHE
 BUILD_ARGS?=--pull --no-spinner --only-target-package
 SUDO?=sudo
-VALIDATE_OPTIONS?=-s
+VALIDATE_OPTIONS?=
 
 
 ifneq ($(strip $(REPO_CACHE)),)
