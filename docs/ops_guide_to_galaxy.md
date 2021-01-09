@@ -9,6 +9,14 @@ This guarantees that there are no moving parts, and we can in this way provide u
 
 We have an automated bot that automatically opens PR to track new version of the available Portage version. The package is available here: https://github.com/mocaccinoOS/desktop/tree/master/packages/portage. You don't need to do it manually. Just wait for a PR from `MarvinHatesOceans` to pop-up, we will review it and merge it only when we decide (after proper QA) that a development lifecycle is over.
 
+## So, how do I know which portage I can build things against?
+
+At the moment is as easy as browsing the portage git and point it at the same commit of our package. 
+
+For example:
+
+`git.hash: "b0e157b071cb23b348acab3d596b49f66c244808"` in https://github.com/mocaccinoOS/desktop/blob/e9ae4aafead5a79d1d36630c932d907361d8c93c/packages/portage/definition.yaml#L6 tells you that we are pinning at commit `b0e157b071cb23b348acab3d596b49f66c244808` of portage tree. So you can e.g. point your browser at : https://github.com/gentoo/gentoo/tree/b0e157b071cb23b348acab3d596b49f66c244808
+
 # How do I revbump a package? (and when it's actually needed?)
 
 By convention, we have chosen to increment the version of a package after the `+`, following [semver](https://semver.org/) notation.
