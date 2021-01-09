@@ -1,3 +1,4 @@
 install:
 - chgrp messagebus /usr/libexec/dbus-daemon-launch-helper
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
+- source /etc/profile && env-update
