@@ -9,6 +9,11 @@ This guarantees that there are no moving parts, and we can in this way provide u
 
 We have an automated bot that automatically opens PR to track new version of the available Portage version. The package is available here: https://github.com/mocaccinoOS/desktop/tree/master/packages/portage. You don't need to do it manually. Just wait for a PR from `MarvinHatesOceans` to pop-up, we will review it and merge it only when we decide (after proper QA) that a development lifecycle is over.
 
+A Portage bump happens when:
+
+- We close a dev cycle (release, and upgrades)
+- Security fixes
+
 ## So, how do I know which package I can build?
 
 At the moment is as easy as browsing the portage git and point it at the same commit of our package. 
