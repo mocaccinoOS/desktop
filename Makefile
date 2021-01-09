@@ -52,9 +52,20 @@ rebuild:
 rebuild-all:
 	$(SUDO) $(LUET) build $(BUILD_ARGS) --tree=$(TREE) --full --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
-.PHONY: validate
-validate:
-	$(LUET) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
+repository:
+	mkdir -p $(ROOT_DIR)/repository
+
+repository/luet:
+	git clone -b master --single-branch https://github.com/Luet-lab/luet-repo $(ROOT_DIR)/repository/luet
+
+repository/extra:
+	git clone -b master --single-branch https://github.com/mocaccinoos/mocaccino-extra $(ROOT_DIR)/repository/extra
+
+repository/commons:
+	git clone -b master --single-branch https://github.com/mocaccinoos/os-commons $(ROOT_DIR)/repository/commons
+
+validate: repository repository/luet repository/extra repository/commons
+	$(LUET) tree validate --tree $(ROOT_DIR)/repository --tree $(TREE) $(VALIDATE_OPTIONS)
 
 .PHONY: create-repo
 create-repo:

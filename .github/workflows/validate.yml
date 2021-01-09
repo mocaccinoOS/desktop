@@ -26,5 +26,4 @@ jobs:
     - name: Validate 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
       run: |
         curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
-        git clone https://github.com/mocaccinoOS/kernel-repo packages/kernel-repo
         make validate
