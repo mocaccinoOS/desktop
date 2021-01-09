@@ -3,7 +3,27 @@ name: "gnome-common"
 version: "0.4+6"
 labels:
   emerge.jobs: "6"
-  emerge.packages: "gnome-base/librsvg gnome-base/gsettings-desktop-schemas gnome-base/dconf gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs net-libs/gnome-online-accounts dev-cpp/gtkmm dev-libs/libpeas dev-libs/dbus-glib app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu app-i18n/unicode-data app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl"
+  emerge.packages: >-
+        gnome-base/librsvg
+        gnome-base/gsettings-desktop-schemas
+        gnome-base/dconf
+        gnome-base/gnome-keyring
+        gnome-extra/zenity
+        gnome-base/gvfs
+        net-libs/gnome-online-accounts
+        dev-cpp/gtkmm
+        dev-libs/libpeas
+        dev-libs/dbus-glib
+        app-text/yelp-tools
+        dev-util/gtk-doc
+        app-text/docbook-sgml-dtd
+        app-text/docbook-dsssl-stylesheets
+        app-text/djvu
+        app-i18n/unicode-data
+        app-text/djvu
+        dev-util/gtk-doc
+        gnome-base/libgtop
+        gnome-extra/yelp-xsl
 requires:
   - category: "layers"
     name: "X"

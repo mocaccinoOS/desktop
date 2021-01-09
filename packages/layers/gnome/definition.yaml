@@ -3,7 +3,8 @@ name: "gnome"
 version: "3.36.5+9"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "=gnome-base/gnome-3.36.5"
+  emerge.packages: >-
+      =gnome-base/gnome-3.36.5
 requires:
   - category: "layers"
     name: "X"
