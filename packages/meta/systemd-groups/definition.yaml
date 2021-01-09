@@ -1,6 +1,6 @@
 name: systemd-groups
 version: "0.20210103"
-category: virtual
+category: meta
 requires:
 # Default groups used by systemd
   - &group

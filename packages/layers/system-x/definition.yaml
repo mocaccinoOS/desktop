@@ -5,80 +5,10 @@ requires:
   - category: "system"
     name: "gcc-base"
     version: ">=0"
-
-# Default groups used by systemd
-  - &group
-    category: "acct-group"
+  - name: systemd-groups
     version: ">=0"
-    name: "dhcp"
-  - <<: *group
-    name: "dnsmasq"
-  - <<: *group
-    name: "ldap"
-  - <<: *group
-    name: "lp"
-  - <<: *group
-    name: "lpadmin"
-  - <<: *group
-    name: "mail"
-  - <<: *group
-    name: "openct"
-  - <<: *group
-    name: "pcscd"
-  - <<: *group
-    name: "plugdev"
-  - <<: *group
-    name: "polkitd"
-  - <<: *group
-    name: "svnusers"
-  - <<: *group
-    name: "tss"
-  - <<: *group
-    name: "unbound"
-  - <<: *group
-    name: "usb"
-  - <<: *group
-    name: "adm"
-  - <<: *group
-    name: "wheel"
-  - <<: *group
-    name: "kmem"
-  - <<: *group
-    name: "tty"
-  - <<: *group
-    name: "utmp"
-  - <<: *group
-    name: "audio"
-  - <<: *group
-    name: "cdrom"
-  - <<: *group
-    name: "dialout"
-  - <<: *group
-    name: "disk"
-  - <<: *group
-    name: "input"
-  - <<: *group
-    name: "kvm"
-  - <<: *group
-    name: "render"
-  - <<: *group
-    name: "tape"
-  - <<: *group
-    name: "video"
-  - <<: *group
-    name: "users"
-  - <<: *group
-    name: "systemd-journal"
-  - <<: *group
-    name: "systemd-journal-remote"
-  - <<: *group
-    name: "systemd-network"
-  - <<: *group
-    name: "systemd-resolve"
-  - <<: *group
-    name: "systemd-coredump"
-  - <<: *group
-    name: "systemd-timesync"
+    category: meta
+
 provides:
   - name: at-spi2-atk
     version: '>=0'
