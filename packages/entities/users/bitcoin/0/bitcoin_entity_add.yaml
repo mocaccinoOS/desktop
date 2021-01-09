@@ -1,0 +1,8 @@
+kind: "user"
+username: "bitcoin"
+password: "x"
+uid: 483
+gid: 483
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

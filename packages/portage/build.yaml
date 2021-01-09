@@ -1,0 +1,17 @@
+env:
+- PORTAGE_HASH={{ ( index .Values.labels "git.hash" ) }}
+prelude:
+- wget https://github.com/gentoo/gentoo/archive/${PORTAGE_HASH}.tar.gz -O /tmp/tree.tar.gz
+steps:
+- mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles
+- tar xf /tmp/tree.tar.gz -C  /var/db/repos
+- mv /var/db/repos/* /var/db/repos/gentoo
+- cp -rf /var/db/repos/gentoo/profiles/ /usr/portage/
+- mkdir -p /usr/portage/distfiles/ && wget http://www.gentoo.org/dtd/metadata.dtd -O /usr/portage/distfiles/metadata.dtd
+- chown -R root:portage /usr/portage/distfiles/
+- chmod g+w /usr/portage/distfiles/
+- touch /usr/portage/.keep
+requires:
+- category: "layer"
+  version:  ">=0.1"
+  name:     "gentoo-stage3"

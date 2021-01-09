@@ -1,0 +1,8 @@
+kind: "user"
+username: "heat"
+password: "x"
+uid: 444
+gid: 444
+info: "Created by entities"
+homedir: "/var/lib/heat"
+shell: "/sbin/nologin"

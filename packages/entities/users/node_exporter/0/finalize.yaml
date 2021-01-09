@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/node_exporter_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/node_exporter_group_entity_apply_node_exporter.yaml

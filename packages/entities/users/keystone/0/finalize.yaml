@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/keystone_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/keystone_group_entity_apply_keystone.yaml

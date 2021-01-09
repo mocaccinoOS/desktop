@@ -1,2 +1,0 @@
-install:
-- bash /patches/live_gnome_setup.sh || true

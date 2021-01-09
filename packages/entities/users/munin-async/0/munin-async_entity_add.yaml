@@ -1,0 +1,8 @@
+kind: "user"
+username: "munin-async"
+password: "x"
+uid: 178
+gid: 177
+info: "Created by entities"
+homedir: "/var/spool/munin-async"
+shell: "/bin/sh"

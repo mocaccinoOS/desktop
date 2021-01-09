@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/elasticsearch_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/elasticsearch_group_entity_apply_elasticsearch.yaml

@@ -1,0 +1,8 @@
+kind: "user"
+username: "i2pd"
+password: "x"
+uid: 470
+gid: 470
+info: "Created by entities"
+homedir: "/var/lib/i2pd"
+shell: "/sbin/nologin"

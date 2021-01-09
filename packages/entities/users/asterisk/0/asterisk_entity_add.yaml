@@ -1,0 +1,8 @@
+kind: "user"
+username: "asterisk"
+password: "x"
+uid: 242
+gid: 242
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

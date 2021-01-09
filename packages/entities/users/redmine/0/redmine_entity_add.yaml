@@ -1,0 +1,8 @@
+kind: "user"
+username: "redmine"
+password: "x"
+uid: 451
+gid: 451
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

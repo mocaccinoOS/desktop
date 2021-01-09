@@ -1,0 +1,8 @@
+kind: "user"
+username: "pdnsd"
+password: "x"
+uid: 184
+gid: 184
+info: "Created by entities"
+homedir: "/var/lib/pdnsd"
+shell: "/sbin/nologin"

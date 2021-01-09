@@ -1,0 +1,8 @@
+kind: "user"
+username: "unifi"
+password: "x"
+uid: 113
+gid: 113
+info: "Created by entities"
+homedir: "/var/lib/unifi"
+shell: "/sbin/nologin"

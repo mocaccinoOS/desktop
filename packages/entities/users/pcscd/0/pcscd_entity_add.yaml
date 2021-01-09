@@ -1,0 +1,8 @@
+kind: "user"
+username: "pcscd"
+password: "x"
+uid: 47
+gid: 47
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "varnish"
+password: "x"
+uid: 474
+gid: 474
+info: "Created by entities"
+homedir: "/var/lib/varnish"
+shell: "/sbin/nologin"

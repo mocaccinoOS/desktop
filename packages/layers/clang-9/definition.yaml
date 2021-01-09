@@ -1,0 +1,29 @@
+category: "layers"
+name: "clang-9"
+version: "9.0.1+1"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: "sys-devel/llvm:9 dev-libs/libclangformat-ide:9 sys-libs/compiler-rt:9.0.1 sys-libs/compiler-rt-sanitizers:9.0.1 sys-devel/clang-runtime:9.0.1 sys-devel/clang:9"
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+provides:
+  - name: libclangformat-ide
+    category: dev-libs-9
+    version: '>=0'
+  - name: clang
+    category: sys-devel-9
+    version: '>=0'
+  - name: clang-runtime
+    category: sys-devel-9.0.1
+    version: '>=0'
+  - name: llvm
+    category: sys-devel-9
+    version: '>=0'
+  - name: compiler-rt
+    category: sys-libs-9.0.1
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: sys-libs-9.0.1
+    version: '>=0'

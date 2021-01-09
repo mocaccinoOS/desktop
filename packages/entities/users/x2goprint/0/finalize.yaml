@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/x2goprint_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/x2goprint_group_entity_apply_x2goprint.yaml

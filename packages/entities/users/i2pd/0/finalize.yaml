@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/i2pd_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/i2pd_group_entity_apply_i2pd.yaml

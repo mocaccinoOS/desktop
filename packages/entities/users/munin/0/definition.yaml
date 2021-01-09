@@ -1,0 +1,10 @@
+category: "acct-user"
+name: "munin"
+version: "0+1"
+requires:
+- category: "acct-group"
+  name: "munin"
+  version: ">=0"
+- category: "system"
+  name: "entities"
+  version: ">=0.1"

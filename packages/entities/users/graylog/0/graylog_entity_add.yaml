@@ -1,0 +1,8 @@
+kind: "user"
+username: "graylog"
+password: "x"
+uid: 478
+gid: 478
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

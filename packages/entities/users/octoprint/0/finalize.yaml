@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/octoprint_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/octoprint_group_entity_apply_octoprint.yaml
+- entities apply -f /etc/group /etc/entities/octoprint_group_entity_apply_video.yaml

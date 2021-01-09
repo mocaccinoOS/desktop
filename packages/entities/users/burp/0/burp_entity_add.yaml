@@ -1,0 +1,8 @@
+kind: "user"
+username: "burp"
+password: "x"
+uid: 498
+gid: 498
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

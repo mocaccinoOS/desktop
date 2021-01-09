@@ -1,0 +1,8 @@
+kind: "user"
+username: "cmd5checkpw"
+password: "x"
+uid: 212
+gid: 212
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

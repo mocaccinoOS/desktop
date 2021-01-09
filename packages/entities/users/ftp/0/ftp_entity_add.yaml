@@ -1,0 +1,8 @@
+kind: "user"
+username: "ftp"
+password: "x"
+uid: 21
+gid: 21
+info: "Created by entities"
+homedir: "/home/ftp"
+shell: "/sbin/nologin"

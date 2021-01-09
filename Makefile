@@ -7,19 +7,15 @@ PACKAGES?=
 LUET?=/usr/bin/luet
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/output
-COMPRESSION?=gzip
+COMPRESSION?=zstd
 CLEAN?=true
 TREE?=packages
-REPO_CACHE?=quay.io/mocaccinoos/desktop-cache
+REPO_CACHE?=quay.io/ mocaccinocache/desktop
 export REPO_CACHE
-BUILD_ARGS?=--pull --no-spinner --skip-if-metadata-exists=true --config $(ROOT_DIR)/conf/luet.yaml
+BUILD_ARGS?=--pull --no-spinner --only-target-package
 SUDO?=sudo
 VALIDATE_OPTIONS?=-s
 
-# For ARM image build script
-export LUET_CONFIG?=$(ROOT_DIR)/conf/luet-local.yaml
-export LUET_BIN?=$(LUET)
-export IMAGE_NAME?=luet_os.img
 
 ifneq ($(strip $(REPO_CACHE)),)
 	BUILD_ARGS+=--image-repository $(REPO_CACHE)
@@ -32,7 +28,7 @@ all: deps build
 deps:
 	@echo "Installing luet"
 	go get -u github.com/mudler/luet
-	go get -u github.com/MottainaiCI/mottainai-cli
+
 
 .PHONY: clean
 clean:
@@ -66,10 +62,10 @@ create-repo:
     --output $(ROOT_DIR)/build \
     --packages $(ROOT_DIR)/build \
     --name "mocaccino-desktop" \
-    --descr "Mocaccino desktop Repo" \
+    --descr "Mocaccino Desktop Repo" \
     --urls "http://localhost:8000" \
-    --tree-compression gzip \
-    --meta-compression gzip \
+    --tree-compression $(COMPRESSION) \
+    --meta-compression $(COMPRESSION) \
     --type http
 
 .PHONY: serve-repo
@@ -81,7 +77,3 @@ auto-bump:
 	TREE_DIR=$(ROOT_DIR) $(LUET) autobump-github
 
 autobump: auto-bump
-	
-.PHONY: iso
-iso:
-	$(SUDO) -E $(LUET) geniso

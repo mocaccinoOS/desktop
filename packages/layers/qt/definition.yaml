@@ -1,0 +1,248 @@
+category: "layers"
+name: "qt"
+version: "5.15.1+4"
+labels:
+  emerge.jobs: "5"
+  emerge.packages: "dev-qt/assistant dev-qt/linguist dev-qt/linguist-tools dev-qt/qdbus dev-qt/qdbusviewer dev-qt/qt-creator dev-qt/qtbluetooth dev-qt/qtcharts dev-qt/qtchooser dev-qt/qtconcurrent dev-qt/qtcore dev-qt/qtdatavis3d dev-qt/qtdbus dev-qt/qtdeclarative dev-qt/qtgraphicaleffects dev-qt/qtgui dev-qt/qthelp dev-qt/qtimageformats dev-qt/qtlockedfile dev-qt/qtmultimedia dev-qt/qtnetwork dev-qt/qtnetworkauth dev-qt/qtopengl dev-qt/qtpaths dev-qt/qtpositioning dev-qt/qtprintsupport dev-qt/qtquickcontrols dev-qt/qtquickcontrols2 dev-qt/qtquicktimeline dev-qt/qtscript dev-qt/qtscxml dev-qt/qtsensors dev-qt/qtserialport dev-qt/qtsingleapplication dev-qt/qtspeech dev-qt/qtsql dev-qt/qtsvg dev-qt/qttest dev-qt/qttranslations dev-qt/qtvirtualkeyboard dev-qt/qtwayland dev-qt/qtwebchannel dev-qt/qtwebengine dev-qt/qtwebkit dev-qt/qtwebsockets dev-qt/qtwidgets dev-qt/qtx11extras dev-qt/qtxml dev-qt/qtxmlpatterns"
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: espeak
+    category: app-accessibility
+    version: '>=0'
+  - name: speech-dispatcher
+    category: app-accessibility
+    version: '>=0'
+  - name: brotli
+    category: app-arch
+    version: '>=0'
+  - name: snappy
+    category: app-arch
+    version: '>=0'
+  - name: yaml-cpp
+    category: dev-cpp
+    version: '>=0'
+  - name: mysql-connector-c
+    category: dev-db
+    version: '>=0'
+  - name: python
+    category: dev-lang-2.7
+    version: '>=0'
+  - name: yasm
+    category: dev-lang
+    version: '>=0'
+  - name: apr
+    category: dev-libs-1
+    version: '>=0'
+  - name: apr-util
+    category: dev-libs-1
+    version: '>=0'
+  - name: dotconf
+    category: dev-libs
+    version: '>=0'
+  - name: double-conversion
+    category: dev-libs
+    version: '>=0'
+  - name: hyphen
+    category: dev-libs
+    version: '>=0'
+  - name: libutf8proc
+    category: dev-libs
+    version: '>=0'
+  - name: re2
+    category: dev-libs
+    version: '>=0'
+  - name: pyxdg
+    category: dev-python
+    version: '>=0'
+  - name: assistant
+    category: dev-qt-5
+    version: '>=0'
+  - name: designer
+    category: dev-qt-5
+    version: '>=0'
+  - name: linguist
+    category: dev-qt-5
+    version: '>=0'
+  - name: linguist-tools
+    category: dev-qt-5
+    version: '>=0'
+  - name: qdbus
+    category: dev-qt-5
+    version: '>=0'
+  - name: qdbusviewer
+    category: dev-qt-5
+    version: '>=0'
+  - name: qt-creator
+    category: dev-qt
+    version: '>=0'
+  - name: qtbluetooth
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtcharts
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtchooser
+    category: dev-qt
+    version: '>=0'
+  - name: qtconcurrent
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtcore
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtdatavis3d
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtdbus
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtdeclarative
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtgraphicaleffects
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtgui
+    category: dev-qt-5
+    version: '>=0'
+  - name: qthelp
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtimageformats
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtlockedfile
+    category: dev-qt
+    version: '>=0'
+  - name: qtmultimedia
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtnetwork
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtnetworkauth
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtopengl
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtpaths
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtpositioning
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtprintsupport
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtquickcontrols
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtquickcontrols2
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtquicktimeline
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtscript
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtscxml
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtsensors
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtserialport
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtsingleapplication
+    category: dev-qt
+    version: '>=0'
+  - name: qtspeech
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtsql
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtsvg
+    category: dev-qt-5
+    version: '>=0'
+  - name: qttest
+    category: dev-qt-5
+    version: '>=0'
+  - name: qttranslations
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtvirtualkeyboard
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwayland
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwebchannel
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwebengine
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwebkit
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwebsockets
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtwidgets
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtx11extras
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtxml
+    category: dev-qt-5
+    version: '>=0'
+  - name: qtxmlpatterns
+    category: dev-qt-5
+    version: '>=0'
+  - name: netsurf-buildsystem
+    category: dev-util
+    version: '>=0'
+  - name: scons
+    category: dev-util
+    version: '>=0'
+  - name: valgrind
+    category: dev-util
+    version: '>=0'
+  - name: subversion
+    category: dev-vcs
+    version: '>=0'
+  - name: extra-cmake-modules
+    category: kde-frameworks-5
+    version: '>=0'
+  - name: kf-env
+    category: kde-frameworks-5
+    version: '>=0'
+  - name: syntax-highlighting
+    category: kde-frameworks-5
+    version: '>=0'
+  - name: libvpx
+    category: media-libs
+    version: '>=0'
+  - name: woff2
+    category: media-libs
+    version: '>=0'
+  - name: gsm
+    category: media-sound
+    version: '>=0'
+  - name: sox
+    category: media-sound
+    version: '>=0'
+  - name: serf
+    category: net-libs-1
+    version: '>=0'
+  - name: gdb
+    category: sys-devel
+    version: '>=0'

@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/rbldns_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/rbldns_group_entity_apply_.yaml

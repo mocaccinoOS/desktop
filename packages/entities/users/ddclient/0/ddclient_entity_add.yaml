@@ -1,0 +1,8 @@
+kind: "user"
+username: "ddclient"
+password: "x"
+uid: 487
+gid: 487
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

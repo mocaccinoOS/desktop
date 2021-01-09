@@ -1,0 +1,8 @@
+kind: "user"
+username: "tor"
+password: "x"
+uid: 43
+gid: 43
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/epmd_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/epmd_group_entity_apply_epmd.yaml

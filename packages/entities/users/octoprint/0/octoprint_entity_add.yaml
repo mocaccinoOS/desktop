@@ -1,0 +1,8 @@
+kind: "user"
+username: "octoprint"
+password: "x"
+uid: 368
+gid: 368
+info: "Created by entities"
+homedir: "/var/lib/octoprint"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "bacula"
+password: "x"
+uid: 273
+gid: 273
+info: "Created by entities"
+homedir: "/var/lib/bacula"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "openvpn"
+password: "x"
+uid: 394
+gid: 394
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

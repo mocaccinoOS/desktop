@@ -1,0 +1,6 @@
+install:
+- entities create -f /etc/passwd /etc/entities/bacula_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/bacula_group_entity_apply_bacula.yaml
+- entities apply -f /etc/group /etc/entities/bacula_group_entity_apply_disk.yaml
+- entities apply -f /etc/group /etc/entities/bacula_group_entity_apply_tape.yaml
+- entities apply -f /etc/group /etc/entities/bacula_group_entity_apply_cdrom.yaml

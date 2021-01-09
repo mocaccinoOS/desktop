@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/strelaysrv_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/strelaysrv_group_entity_apply_strelaysrv.yaml

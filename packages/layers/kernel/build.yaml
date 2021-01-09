@@ -1,0 +1,24 @@
+excludes:
+- ^/var/cache/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
+env:
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+- LUET_YES=true
+- LUET_NOLOCK=true
+prelude:
+- curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
+- luet install repository/mocaccino-kernel-stable
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- luet install kernel/mocaccino-lts-sources && luet cleanup
+# We use our kernel for compile modules
+- cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"

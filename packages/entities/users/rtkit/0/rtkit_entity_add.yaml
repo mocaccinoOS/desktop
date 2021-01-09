@@ -1,0 +1,8 @@
+kind: "user"
+username: "rtkit"
+password: "x"
+uid: 133
+gid: 133
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

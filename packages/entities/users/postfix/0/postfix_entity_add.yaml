@@ -1,0 +1,8 @@
+kind: "user"
+username: "postfix"
+password: "x"
+uid: 207
+gid: 207
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

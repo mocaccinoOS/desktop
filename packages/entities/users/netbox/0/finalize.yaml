@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/netbox_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/netbox_group_entity_apply_netbox.yaml

@@ -1,0 +1,8 @@
+kind: "user"
+username: "gvm"
+password: "x"
+uid: 495
+gid: 495
+info: "Created by entities"
+homedir: "/var/lib/gvm"
+shell: "/sbin/nologin"

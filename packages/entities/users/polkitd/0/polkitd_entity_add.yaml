@@ -1,0 +1,8 @@
+kind: "user"
+username: "polkitd"
+password: "x"
+uid: 102
+gid: 102
+info: "Created by entities"
+homedir: "/var/lib/polkit-1"
+shell: "/sbin/nologin"

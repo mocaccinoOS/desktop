@@ -1,0 +1,8 @@
+kind: "user"
+username: "turnserver"
+password: "x"
+uid: 235
+gid: 235
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

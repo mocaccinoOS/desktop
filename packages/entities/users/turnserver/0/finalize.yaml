@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/turnserver_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/turnserver_group_entity_apply_turnserver.yaml

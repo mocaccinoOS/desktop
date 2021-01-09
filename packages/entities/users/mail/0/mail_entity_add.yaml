@@ -1,0 +1,8 @@
+kind: "user"
+username: "mail"
+password: "x"
+uid: 8
+gid: 12
+info: "Created by entities"
+homedir: "/var/spool/mail"
+shell: "/sbin/nologin"

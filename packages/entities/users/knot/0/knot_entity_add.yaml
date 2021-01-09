@@ -1,0 +1,8 @@
+kind: "user"
+username: "knot"
+password: "x"
+uid: 53
+gid: 53
+info: "Created by entities"
+homedir: "/var/lib/knot"
+shell: "/sbin/nologin"

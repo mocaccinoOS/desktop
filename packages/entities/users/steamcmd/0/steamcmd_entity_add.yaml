@@ -1,0 +1,8 @@
+kind: "user"
+username: "steamcmd"
+password: "x"
+uid: 489
+gid: 489
+info: "Created by entities"
+homedir: "/opt/steamcmd"
+shell: "/sbin/nologin"

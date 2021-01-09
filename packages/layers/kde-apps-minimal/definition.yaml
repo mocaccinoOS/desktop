@@ -1,0 +1,185 @@
+category: "layers"
+name: "kde-apps-minimal"
+version: "5.19.5+9"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "kde-apps/ark kde-apps/dolphin kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kgpg kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite"
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
+provides:
+  - name: system-config-printer
+    category: app-admin
+    version: '>=0'
+  - name: eselect-notify-send
+    category: app-eselect
+    version: '>=0'
+  - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: mariadb
+    category: dev-db-10.4
+    version: '>=0'
+  - name: mysql-init-scripts
+    category: dev-db
+    version: '>=0'
+  - name: unixODBC
+    category: dev-db
+    version: '>=0'
+  - name: libdaemon
+    category: dev-libs
+    version: '>=0'
+  - name: DBD-mysql
+    category: dev-perl
+    version: '>=0'
+  - name: DBI
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-CheckLib
+    category: dev-perl
+    version: '>=0'
+  - name: Net-Daemon
+    category: dev-perl
+    version: '>=0'
+  - name: PlRPC
+    category: dev-perl
+    version: '>=0'
+  - name: dbus-python
+    category: dev-python
+    version: '>=0'
+  - name: pycups
+    category: dev-python
+    version: '>=0'
+  - name: akonadi
+    category: kde-apps-5
+    version: '>=0'
+  - name: akonadi-contacts
+    category: kde-apps-5
+    version: '>=0'
+  - name: ark
+    category: kde-apps-5
+    version: '>=0'
+  - name: baloo-widgets
+    category: kde-apps-5
+    version: '>=0'
+  - name: dolphin
+    category: kde-apps-5
+    version: '>=0'
+  - name: kcron
+    category: kde-apps-5
+    version: '>=0'
+  - name: kdeadmin-meta
+    category: kde-apps-5
+    version: '>=0'
+  - name: kdenetwork-filesharing
+    category: kde-apps-5
+    version: '>=0'
+  - name: kdf
+    category: kde-apps-5
+    version: '>=0'
+  - name: kdialog
+    category: kde-apps-5
+    version: '>=0'
+  - name: keditbookmarks
+    category: kde-apps-5
+    version: '>=0'
+  - name: kfind
+    category: kde-apps-5
+    version: '>=0'
+  - name: kgpg
+    category: kde-apps-5
+    version: '>=0'
+  - name: kipi-plugins
+    category: kde-apps-5
+    version: '>=0'
+  - name: kmag
+    category: kde-apps-5
+    version: '>=0'
+  - name: kmime
+    category: kde-apps-5
+    version: '>=0'
+  - name: kmousetool
+    category: kde-apps-5
+    version: '>=0'
+  - name: knetwalk
+    category: kde-apps-5
+    version: '>=0'
+  - name: konsole
+    category: kde-apps-5
+    version: '>=0'
+  - name: ksystemlog
+    category: kde-apps-5
+    version: '>=0'
+  - name: kwalletmanager
+    category: kde-apps-5
+    version: '>=0'
+  - name: kwrite
+    category: kde-apps-5
+    version: '>=0'
+  - name: libkdegames
+    category: kde-apps-5
+    version: '>=0'
+  - name: libkipi
+    category: kde-apps-5
+    version: '>=0'
+  - name: libksane
+    category: kde-apps-5
+    version: '>=0'
+  - name: print-manager
+    category: kde-apps-5
+    version: '>=0'
+  - name: spectacle
+    category: kde-apps-5
+    version: '>=0'
+  - name: svgpart
+    category: kde-apps-5
+    version: '>=0'
+  - name: thumbnailers
+    category: kde-apps-5
+    version: '>=0'
+  - name: yakuake
+    category: kde-apps-5
+    version: '>=0'
+  - name: kcontacts
+    category: kde-frameworks-5
+    version: '>=0'
+  - name: prison
+    category: kde-frameworks-5
+    version: '>=0'
+  - name: skanlite
+    category: kde-misc-5
+    version: '>=0'
+  - name: qrencode
+    category: media-gfx
+    version: '>=0'
+  - name: sane-backends
+    category: media-gfx
+    version: '>=0'
+  - name: libdmtx
+    category: media-libs
+    version: '>=0'
+  - name: avahi
+    category: net-dns
+    version: '>=0'
+  - name: cronbase
+    category: sys-process
+    version: '>=0'
+  - name: cronie
+    category: sys-process
+    version: '>=0'
+  - name: cron
+    category: virtual
+    version: '>=0'
+  - name: mysql
+    category: virtual
+    version: '>=0'
+  - name: notification-daemon
+    category: virtual
+    version: '>=0'
+  - name: perl-Term-ANSIColor
+    category: virtual
+    version: '>=0'
+  - name: libnotify
+    category: x11-libs
+    version: '>=0'

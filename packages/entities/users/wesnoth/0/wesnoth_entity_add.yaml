@@ -1,0 +1,8 @@
+kind: "user"
+username: "wesnoth"
+password: "x"
+uid: 419
+gid: 419
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/bin/bash"

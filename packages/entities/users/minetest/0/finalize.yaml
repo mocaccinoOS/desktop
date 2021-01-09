@@ -1,0 +1,2 @@
+install:
+- entities create -f /etc/passwd /etc/entities/minetest_entity_add.yaml || true

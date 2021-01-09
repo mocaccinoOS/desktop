@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/avahi_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/avahi_group_entity_apply_avahi.yaml

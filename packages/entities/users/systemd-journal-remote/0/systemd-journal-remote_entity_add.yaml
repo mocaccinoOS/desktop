@@ -1,0 +1,8 @@
+kind: "user"
+username: "systemd-journal-remote"
+password: "x"
+uid: 191
+gid: 191
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

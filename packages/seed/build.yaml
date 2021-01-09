@@ -1,5 +1,0 @@
-image: "quay.io/mocaccino/extra"
-unpack: true
-steps:
-  - mkdir /mnt
-  - luet install -y utils/busybox-init

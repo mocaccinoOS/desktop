@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/vdradmin_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/vdradmin_group_entity_apply_vdradmin.yaml

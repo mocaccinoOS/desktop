@@ -1,0 +1,10 @@
+category: "acct-user"
+name: "murmur"
+version: "0+1"
+requires:
+- category: "acct-group"
+  name: "murmur"
+  version: ">=0"
+- category: "system"
+  name: "entities"
+  version: ">=0.1"

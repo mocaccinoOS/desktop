@@ -1,0 +1,8 @@
+kind: "user"
+username: "gerbera"
+password: "x"
+uid: 429
+gid: 429
+info: "Created by entities"
+homedir: "/var/lib/gerbera"
+shell: "/sbin/nologin"

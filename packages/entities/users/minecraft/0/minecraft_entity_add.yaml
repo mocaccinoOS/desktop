@@ -1,0 +1,8 @@
+kind: "user"
+username: "minecraft"
+password: "x"
+uid: 490
+gid: 490
+info: "Created by entities"
+homedir: "/var/lib/minecraft-server"
+shell: "/sbin/nologin"

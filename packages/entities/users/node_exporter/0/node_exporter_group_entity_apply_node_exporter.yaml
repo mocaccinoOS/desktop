@@ -1,0 +1,3 @@
+kind: "group"
+group_name: "node_exporter"
+users: "node_exporter"

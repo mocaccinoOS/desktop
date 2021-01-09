@@ -1,0 +1,11 @@
+name: live-setup
+category: mocaccino
+version: "0.4"
+
+requires:
+- name: "yip"
+  category: "utils"
+  version: ">=0"
+- name: "yip-systemd"
+  category: "utils"
+  version: ">=0"

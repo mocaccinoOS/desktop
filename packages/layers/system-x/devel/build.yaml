@@ -1,0 +1,9 @@
+includes:
+- /usr$
+- /usr/include$
+- /usr/include/.*
+unpack: true
+requires:
+- name: system-x
+  version: ">=0"
+  category: layers

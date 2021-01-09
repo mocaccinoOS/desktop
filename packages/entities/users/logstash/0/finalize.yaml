@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/logstash_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/logstash_group_entity_apply_logstash.yaml

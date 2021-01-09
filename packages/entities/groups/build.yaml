@@ -1,0 +1,14 @@
+requires:
+- category: "distro"
+  name: mocaccino-micro
+  version: '>=0'
+package_dir: /{{ .Values.name }}
+env:
+- ENTITY_SOURCE=/{{ .Values.name}}/etc/entities/{{ .Values.name }}_acct-group_entity.yaml
+- LUET_YES=true
+steps:
+- luet install utils/yq
+- mkdir -p /{{ .Values.name }}/etc/entities/
+- yq r groups.yaml groups.{{ .Values.name }} > ${ENTITY_SOURCE}
+- yq w -i ${ENTITY_SOURCE} kind group
+- yq w -i ${ENTITY_SOURCE} group_name {{ .Values.name }}

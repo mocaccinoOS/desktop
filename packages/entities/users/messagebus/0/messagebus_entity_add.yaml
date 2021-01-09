@@ -1,0 +1,8 @@
+kind: "user"
+username: "messagebus"
+password: "x"
+uid: 101
+gid: 101
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

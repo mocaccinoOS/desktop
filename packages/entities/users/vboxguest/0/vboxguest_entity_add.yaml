@@ -1,0 +1,8 @@
+kind: "user"
+username: "vboxguest"
+password: "x"
+uid: 305
+gid: 305
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/bin/sh"

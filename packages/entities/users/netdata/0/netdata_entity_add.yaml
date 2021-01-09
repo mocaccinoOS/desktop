@@ -1,0 +1,8 @@
+kind: "user"
+username: "netdata"
+password: "x"
+uid: 290
+gid: 290
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

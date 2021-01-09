@@ -1,0 +1,10 @@
+category: "acct-user"
+name: "gdm"
+version: "0+3"
+requires:
+- category: "acct-group"
+  name: "gdm"
+  version: ">=0"
+- category: "system"
+  name: "entities"
+  version: ">=0.1"

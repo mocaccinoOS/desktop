@@ -1,0 +1,8 @@
+kind: "user"
+username: "placement"
+password: "x"
+uid: 448
+gid: 448
+info: "Created by entities"
+homedir: "/var/lib/placement"
+shell: "/sbin/nologin"

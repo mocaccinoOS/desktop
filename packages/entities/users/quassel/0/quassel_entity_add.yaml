@@ -1,0 +1,8 @@
+kind: "user"
+username: "quassel"
+password: "x"
+uid: 472
+gid: 472
+info: "Created by entities"
+homedir: "/var/lib/quassel"
+shell: "/sbin/nologin"

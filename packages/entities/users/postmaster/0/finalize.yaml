@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/postmaster_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/postmaster_group_entity_apply_mail.yaml

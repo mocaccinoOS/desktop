@@ -1,0 +1,8 @@
+kind: "user"
+username: "netbox"
+password: "x"
+uid: 431
+gid: 431
+info: "Created by entities"
+homedir: "/var/lib/netbox"
+shell: "/sbin/nologin"

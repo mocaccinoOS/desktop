@@ -1,4 +1,0 @@
-requires:
-- category: "distro"
-  name: "seed"
-  version: ">=0.1"

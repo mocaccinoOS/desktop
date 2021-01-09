@@ -1,0 +1,8 @@
+kind: "user"
+username: "gdm"
+password: "x"
+uid: 32
+gid: 32
+info: "Created by entities"
+homedir: "/var/lib/gdm"
+shell: "/bin/false"

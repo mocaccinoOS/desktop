@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/gerbera_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/gerbera_group_entity_apply_gerbera.yaml
+- entities apply -f /etc/group /etc/entities/gerbera_group_entity_apply_video.yaml

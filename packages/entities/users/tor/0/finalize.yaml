@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/tor_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/tor_group_entity_apply_tor.yaml

@@ -1,0 +1,4 @@
+stages:
+   boot:
+     - commands:
+        - bash /usr/bin/live.sh

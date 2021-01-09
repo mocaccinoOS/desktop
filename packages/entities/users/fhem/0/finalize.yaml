@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/fhem_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/fhem_group_entity_apply_fhem.yaml

@@ -1,0 +1,5 @@
+install:
+- entities create -f /etc/passwd /etc/entities/pcscd_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/pcscd_group_entity_apply_pcscd.yaml
+- entities apply -f /etc/group /etc/entities/pcscd_group_entity_apply_openct.yaml
+- entities apply -f /etc/group /etc/entities/pcscd_group_entity_apply_usb.yaml

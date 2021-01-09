@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/postfix_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/postfix_group_entity_apply_postfix.yaml
+- entities apply -f /etc/group /etc/entities/postfix_group_entity_apply_mail.yaml

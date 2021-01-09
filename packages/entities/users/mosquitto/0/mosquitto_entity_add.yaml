@@ -1,0 +1,8 @@
+kind: "user"
+username: "mosquitto"
+password: "x"
+uid: 482
+gid: 482
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "x2gouser"
+password: "x"
+uid: 291
+gid: 291
+info: "Created by entities"
+homedir: "/var/lib/x2go"
+shell: "/sbin/nologin"

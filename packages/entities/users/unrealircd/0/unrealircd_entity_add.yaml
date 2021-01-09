@@ -1,0 +1,8 @@
+kind: "user"
+username: "unrealircd"
+password: "x"
+uid: 494
+gid: 494
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

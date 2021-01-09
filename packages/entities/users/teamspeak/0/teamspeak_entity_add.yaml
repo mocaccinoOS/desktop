@@ -1,0 +1,8 @@
+kind: "user"
+username: "teamspeak"
+password: "x"
+uid: 488
+gid: 488
+info: "Created by entities"
+homedir: "/opt/teamspeak3-server"
+shell: "/sbin/nologin"

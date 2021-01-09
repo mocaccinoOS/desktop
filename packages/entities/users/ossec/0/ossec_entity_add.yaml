@@ -1,0 +1,8 @@
+kind: "user"
+username: "ossec"
+password: "x"
+uid: 330
+gid: 330
+info: "Created by entities"
+homedir: "/var/ossec"
+shell: "/sbin/nologin"

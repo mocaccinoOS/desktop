@@ -1,0 +1,8 @@
+kind: "user"
+username: "murmur"
+password: "x"
+uid: 122
+gid: 122
+info: "Created by entities"
+homedir: "/var/lib/"
+shell: "/sbin/nologin"

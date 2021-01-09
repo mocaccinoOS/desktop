@@ -1,0 +1,8 @@
+kind: "user"
+username: "elasticsearch"
+password: "x"
+uid: 183
+gid: 183
+info: "Created by entities"
+homedir: "/usr/share/elasticsearch"
+shell: "/sbin/nologin"

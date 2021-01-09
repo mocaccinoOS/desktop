@@ -1,0 +1,8 @@
+kind: "user"
+username: "vdradmin"
+password: "x"
+uid: 453
+gid: 453
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,125 @@
+category: "layers"
+name: "gnome-common"
+version: "0.4+6"
+labels:
+  emerge.jobs: "6"
+  emerge.packages: "gnome-base/librsvg gnome-base/gsettings-desktop-schemas gnome-base/dconf gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs net-libs/gnome-online-accounts dev-cpp/gtkmm dev-libs/libpeas dev-libs/dbus-glib app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu app-i18n/unicode-data app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl"
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: brotli
+    category: app-arch
+    version: '>=0'
+  - name: eselect-notify-send
+    category: app-eselect
+    version: '>=0'
+  - name: geoclue
+    category: app-misc-2.0
+    version: '>=0'
+  - name: libimobiledevice
+    category: app-pda
+    version: '>=0'
+  - name: libplist
+    category: app-pda
+    version: '>=0'
+  - name: libusbmuxd
+    category: app-pda
+    version: '>=0'
+  - name: djvu
+    category: app-text
+    version: '>=0'
+  - name: docbook-dsssl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-4.5
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-3.0
+    version: '>=0'
+  - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: yelp-tools
+    category: app-text
+    version: '>=0'
+  - name: atkmm
+    category: dev-cpp
+    version: '>=0'
+  - name: cairomm
+    category: dev-cpp
+    version: '>=0'
+  - name: glibmm
+    category: dev-cpp-2
+    version: '>=0'
+  - name: gtkmm
+    category: dev-cpp-3.0
+    version: '>=0'
+  - name: mm-common
+    category: dev-cpp
+    version: '>=0'
+  - name: pangomm
+    category: dev-cpp-1.4
+    version: '>=0'
+  - name: hyphen
+    category: dev-libs
+    version: '>=0'
+  - name: libgdata
+    category: dev-libs
+    version: '>=0'
+  - name: libpeas
+    category: dev-libs
+    version: '>=0'
+  - name: libsigc++
+    category: dev-libs-2
+    version: '>=0'
+  - name: gtk-doc
+    category: dev-util
+    version: '>=0'
+  - name: gnome-common
+    category: gnome-base-3
+    version: '>=0'
+  - name: gvfs
+    category: gnome-base
+    version: '>=0'
+  - name: libgtop
+    category: gnome-base-2
+    version: '>=0'
+  - name: yelp-xsl
+    category: gnome-extra
+    version: '>=0'
+  - name: zenity
+    category: gnome-extra
+    version: '>=0'
+  - name: woff2
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-opus
+    category: media-plugins-1.0
+    version: '>=0'
+  - name: libnfs
+    category: net-fs
+    version: '>=0'
+  - name: gnome-online-accounts
+    category: net-libs
+    version: '>=0'
+  - name: rest
+    category: net-libs-0.7
+    version: '>=0'
+  - name: webkit-gtk
+    category: net-libs-4
+    version: '>=0'
+  - name: bubblewrap
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-dbus-proxy
+    category: sys-apps
+    version: '>=0'
+  - name: notification-daemon
+    category: virtual
+    version: '>=0'
+  - name: libnotify
+    category: x11-libs
+    version: '>=0'

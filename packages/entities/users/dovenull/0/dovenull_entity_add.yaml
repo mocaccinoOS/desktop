@@ -1,0 +1,8 @@
+kind: "user"
+username: "dovenull"
+password: "x"
+uid: 74
+gid: 74
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

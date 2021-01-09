@@ -1,0 +1,8 @@
+kind: "user"
+username: "strelaysrv"
+password: "x"
+uid: 496
+gid: 496
+info: "Created by entities"
+homedir: "/var/lib/strelaysrv"
+shell: "/sbin/nologin"

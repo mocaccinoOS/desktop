@@ -1,0 +1,8 @@
+kind: "user"
+username: "spire"
+password: "x"
+uid: 271
+gid: 271
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

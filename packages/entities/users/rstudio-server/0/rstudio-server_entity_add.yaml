@@ -1,0 +1,8 @@
+kind: "user"
+username: "rstudio-server"
+password: "x"
+uid: 466
+gid: 466
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

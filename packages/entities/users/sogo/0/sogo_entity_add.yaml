@@ -1,0 +1,8 @@
+kind: "user"
+username: "sogo"
+password: "x"
+uid: 475
+gid: 475
+info: "Created by entities"
+homedir: "/var/lib/sogo"
+shell: "/bin/bash"

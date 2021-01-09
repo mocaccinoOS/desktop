@@ -1,0 +1,8 @@
+kind: "user"
+username: "swift"
+password: "x"
+uid: 449
+gid: 449
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "fhem"
+password: "x"
+uid: 491
+gid: 491
+info: "Created by entities"
+homedir: "/opt/fhem"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "telegraf"
+password: "x"
+uid: 428
+gid: 428
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

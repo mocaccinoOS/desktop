@@ -1,0 +1,8 @@
+kind: "user"
+username: "squid"
+password: "x"
+uid: 301
+gid: 301
+info: "Created by entities"
+homedir: "/var/cache/squid"
+shell: "/sbin/nologin"

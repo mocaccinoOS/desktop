@@ -1,0 +1,8 @@
+kind: "user"
+username: "stunnel"
+password: "x"
+uid: 341
+gid: 341
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

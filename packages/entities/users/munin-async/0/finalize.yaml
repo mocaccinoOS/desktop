@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/munin-async_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/munin-async_group_entity_apply_munin.yaml

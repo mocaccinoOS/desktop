@@ -1,0 +1,7 @@
+install:
+- entities create -f /etc/passwd /etc/entities/mythtv_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/mythtv_group_entity_apply_mythtv.yaml
+- entities apply -f /etc/group /etc/entities/mythtv_group_entity_apply_video.yaml
+- entities apply -f /etc/group /etc/entities/mythtv_group_entity_apply_audio.yaml
+- entities apply -f /etc/group /etc/entities/mythtv_group_entity_apply_cdrom.yaml
+- entities apply -f /etc/group /etc/entities/mythtv_group_entity_apply_tty.yaml

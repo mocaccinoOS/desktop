@@ -1,0 +1,8 @@
+kind: "user"
+username: "lighttpd"
+password: "x"
+uid: 302
+gid: 302
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "qemu"
+password: "x"
+uid: 77
+gid: 77
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

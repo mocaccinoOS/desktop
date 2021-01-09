@@ -1,0 +1,77 @@
+name: systemd-groups
+version: "0.20210103"
+category: virtual
+requires:
+# Default groups used by systemd
+  - &group
+    category: "acct-group"
+    version: ">=0"
+    name: "dhcp"
+  - <<: *group
+    name: "dnsmasq"
+  - <<: *group
+    name: "ldap"
+  - <<: *group
+    name: "lp"
+  - <<: *group
+    name: "lpadmin"
+  - <<: *group
+    name: "mail"
+  - <<: *group
+    name: "openct"
+  - <<: *group
+    name: "pcscd"
+  - <<: *group
+    name: "plugdev"
+  - <<: *group
+    name: "polkitd"
+  - <<: *group
+    name: "svnusers"
+  - <<: *group
+    name: "tss"
+  - <<: *group
+    name: "unbound"
+  - <<: *group
+    name: "usb"
+  - <<: *group
+    name: "adm"
+  - <<: *group
+    name: "wheel"
+  - <<: *group
+    name: "kmem"
+  - <<: *group
+    name: "tty"
+  - <<: *group
+    name: "utmp"
+  - <<: *group
+    name: "audio"
+  - <<: *group
+    name: "cdrom"
+  - <<: *group
+    name: "dialout"
+  - <<: *group
+    name: "disk"
+  - <<: *group
+    name: "input"
+  - <<: *group
+    name: "kvm"
+  - <<: *group
+    name: "render"
+  - <<: *group
+    name: "tape"
+  - <<: *group
+    name: "video"
+  - <<: *group
+    name: "messagebus"
+  - <<: *group
+    name: "systemd-journal"
+  - <<: *group
+    name: "systemd-journal-remote"
+  - <<: *group
+    name: "systemd-network"
+  - <<: *group
+    name: "systemd-resolve"
+  - <<: *group
+    name: "systemd-coredump"
+  - <<: *group
+    name: "systemd-timesync"

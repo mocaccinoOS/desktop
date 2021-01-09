@@ -1,0 +1,8 @@
+kind: "user"
+username: "smtpq"
+password: "x"
+uid: 252
+gid: 252
+info: "Created by entities"
+homedir: "/var/empty"
+shell: "/sbin/nologin"

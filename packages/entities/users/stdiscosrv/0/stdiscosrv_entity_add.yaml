@@ -1,0 +1,8 @@
+kind: "user"
+username: "stdiscosrv"
+password: "x"
+uid: 497
+gid: 497
+info: "Created by entities"
+homedir: "/var/lib/stdiscosrv"
+shell: "/sbin/nologin"

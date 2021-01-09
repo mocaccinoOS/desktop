@@ -1,0 +1,8 @@
+kind: "user"
+username: "avahi-autoipd"
+password: "x"
+uid: 62
+gid: 62
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

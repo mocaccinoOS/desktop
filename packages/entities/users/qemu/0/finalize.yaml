@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/qemu_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/qemu_group_entity_apply_qemu.yaml
+- entities apply -f /etc/group /etc/entities/qemu_group_entity_apply_kvm.yaml

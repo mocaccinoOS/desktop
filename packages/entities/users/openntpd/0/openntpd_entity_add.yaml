@@ -1,0 +1,8 @@
+kind: "user"
+username: "openntpd"
+password: "x"
+uid: 321
+gid: 321
+info: "Created by entities"
+homedir: "/var/lib/openntpd/chroot"
+shell: "/sbin/nologin"

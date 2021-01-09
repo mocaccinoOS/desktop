@@ -1,0 +1,3 @@
+kind: "group"
+group_name: "tty"
+users: "mythtv"

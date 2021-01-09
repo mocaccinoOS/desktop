@@ -1,0 +1,8 @@
+kind: "user"
+username: "prometheus"
+password: "x"
+uid: 430
+gid: 430
+info: "Created by entities"
+homedir: "/var/lib/prometheus"
+shell: "/sbin/nologin"

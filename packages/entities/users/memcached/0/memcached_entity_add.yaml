@@ -1,0 +1,8 @@
+kind: "user"
+username: "memcached"
+password: "x"
+uid: 441
+gid: 441
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

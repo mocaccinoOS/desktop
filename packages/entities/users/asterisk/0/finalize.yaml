@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/asterisk_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/asterisk_group_entity_apply_asterisk.yaml
+- entities apply -f /etc/group /etc/entities/asterisk_group_entity_apply_dialout.yaml

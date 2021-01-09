@@ -1,0 +1,8 @@
+kind: "user"
+username: "clamav"
+password: "x"
+uid: 435
+gid: 435
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

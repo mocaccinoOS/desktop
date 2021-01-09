@@ -1,0 +1,20 @@
+excludes:
+- ^/var/cache/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
+env:
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- cp -rv xorg.conf.d/ /etc/X11/
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
+- category: "layers"
+  name: "sys-fs"
+  version: ">=0"

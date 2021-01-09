@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/squid_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/squid_group_entity_apply_squid.yaml

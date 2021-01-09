@@ -1,0 +1,8 @@
+kind: "user"
+username: "node_exporter"
+password: "x"
+uid: 459
+gid: 459
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

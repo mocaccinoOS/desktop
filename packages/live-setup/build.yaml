@@ -1,0 +1,12 @@
+image: "quay.io/mocaccino/extra"
+package_dir: /integration
+steps:
+- mkdir -p /integration/etc/yip.d/live
+- cp -rfv yipfiles/* /integration/etc/yip.d/live
+- mkdir -p /integration/var/lib/mocaccino
+- mkdir -p /integration/usr/bin
+- cp -rfv live-functions.sh /integration/var/lib/mocaccino/
+- chmod +x /integration/var/lib/mocaccino/live-functions.sh
+
+- cp -rfv live.sh /integration/usr/bin/
+- chmod +x /integration/usr/bin/live.sh

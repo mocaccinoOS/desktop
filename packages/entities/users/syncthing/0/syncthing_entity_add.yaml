@@ -1,0 +1,8 @@
+kind: "user"
+username: "syncthing"
+password: "x"
+uid: 499
+gid: 499
+info: "Created by entities"
+homedir: "/var/lib/syncthing"
+shell: "/sbin/nologin"

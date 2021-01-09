@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/inspircd_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/inspircd_group_entity_apply_inspircd.yaml

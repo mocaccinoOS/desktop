@@ -1,0 +1,3 @@
+kind: "group"
+group_name: "kube-controller-manager"
+users: "kube-controller-manager"

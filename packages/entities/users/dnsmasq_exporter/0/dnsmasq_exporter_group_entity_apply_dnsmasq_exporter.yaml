@@ -1,0 +1,3 @@
+kind: "group"
+group_name: "dnsmasq_exporter"
+users: "dnsmasq_exporter"

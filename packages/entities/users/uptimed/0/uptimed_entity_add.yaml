@@ -1,0 +1,8 @@
+kind: "user"
+username: "uptimed"
+password: "x"
+uid: 220
+gid: 220
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

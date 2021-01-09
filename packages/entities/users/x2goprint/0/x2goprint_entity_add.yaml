@@ -1,0 +1,8 @@
+kind: "user"
+username: "x2goprint"
+password: "x"
+uid: 292
+gid: 292
+info: "Created by entities"
+homedir: "/var/spool/x2goprint"
+shell: "/sbin/nologin"

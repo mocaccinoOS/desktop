@@ -1,0 +1,8 @@
+kind: "user"
+username: "munin"
+password: "x"
+uid: 177
+gid: 177
+info: "Created by entities"
+homedir: "/var/lib/munin"
+shell: "/sbin/nologin"

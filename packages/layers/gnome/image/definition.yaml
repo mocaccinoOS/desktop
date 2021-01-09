@@ -1,0 +1,16 @@
+category: "layers"
+hidden: true
+name: "gnome-image"
+version: "3.36.5+10"
+labels:
+  emerge.jobs: "4"
+conflicts:
+- category: "layers"
+  name: "gnome"
+  version: ">=0"
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
+- category: "layers"
+  name: "mate"
+  version: ">=0"

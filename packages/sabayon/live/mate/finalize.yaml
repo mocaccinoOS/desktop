@@ -1,2 +1,0 @@
-install:
-- bash /patches/live_mate_setup.sh || true

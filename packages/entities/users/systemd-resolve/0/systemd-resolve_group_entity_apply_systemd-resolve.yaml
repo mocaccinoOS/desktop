@@ -1,0 +1,3 @@
+kind: "group"
+group_name: "systemd-resolve"
+users: "systemd-resolve"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "quagga"
+password: "x"
+uid: 424
+gid: 424
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

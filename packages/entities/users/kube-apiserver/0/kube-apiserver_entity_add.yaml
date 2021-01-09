@@ -1,0 +1,8 @@
+kind: "user"
+username: "kube-apiserver"
+password: "x"
+uid: 432
+gid: 432
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

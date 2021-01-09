@@ -1,0 +1,8 @@
+kind: "user"
+username: "vpopmail"
+password: "x"
+uid: 89
+gid: 89
+info: "Created by entities"
+homedir: "/var/vpopmail"
+shell: "/sbin/nologin"

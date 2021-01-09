@@ -1,0 +1,8 @@
+kind: "user"
+username: "keystone"
+password: "x"
+uid: 445
+gid: 445
+info: "Created by entities"
+homedir: "/var/lib/keystone"
+shell: "/sbin/nologin"

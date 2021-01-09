@@ -1,0 +1,8 @@
+kind: "user"
+username: "mysql"
+password: "x"
+uid: 60
+gid: 60
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

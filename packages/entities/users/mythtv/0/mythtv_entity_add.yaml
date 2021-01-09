@@ -1,0 +1,8 @@
+kind: "user"
+username: "mythtv"
+password: "x"
+uid: 117
+gid: 117
+info: "Created by entities"
+homedir: "/var/lib/mythtv"
+shell: "/bin/bash"

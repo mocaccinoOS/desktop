@@ -1,0 +1,8 @@
+kind: "user"
+username: "oidentd"
+password: "x"
+uid: 493
+gid: 493
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

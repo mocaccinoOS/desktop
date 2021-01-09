@@ -1,0 +1,8 @@
+kind: "user"
+username: "rspamd"
+password: "x"
+uid: 237
+gid: 237
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

@@ -1,0 +1,8 @@
+kind: "user"
+username: "slurm"
+password: "x"
+uid: 400
+gid: 400
+info: "Created by entities"
+homedir: "/var/lib/slurm"
+shell: "/sbin/nologin"

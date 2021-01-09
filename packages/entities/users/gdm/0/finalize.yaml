@@ -1,0 +1,4 @@
+install:
+- entities create -f /etc/passwd /etc/entities/gdm_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/gdm_group_entity_apply_gdm.yaml
+- entities apply -f /etc/group /etc/entities/gdm_group_entity_apply_video.yaml

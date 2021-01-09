@@ -1,0 +1,8 @@
+name: "gnome"
+category: "meta"
+version: "0.20210106"
+
+requires:
+- category: "layers"
+  name: "gnome"
+  version: ">=0"

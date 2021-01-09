@@ -1,0 +1,8 @@
+kind: "user"
+username: "puppet"
+password: "x"
+uid: 455
+gid: 455
+info: "Created by entities"
+homedir: "/var/lib/puppet"
+shell: "/sbin/nologin"

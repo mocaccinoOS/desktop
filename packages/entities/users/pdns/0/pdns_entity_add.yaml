@@ -1,0 +1,8 @@
+kind: "user"
+username: "pdns"
+password: "x"
+uid: 423
+gid: 423
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

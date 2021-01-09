@@ -1,0 +1,76 @@
+requires:
+- category: "layer"
+  name: "gentoo-portage"
+  version: ">=0"
+unpack: true
+env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox"
+- JOBS=7
+
+prelude:
+- cp -rf package.use /etc/portage/
+- cp -rf make.conf /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.license /etc/portage/
+steps:
+# we want py3.8 and py2.7 for now
+- eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
+- USE=-harfbuzz emerge media-libs/freetype -j $JOBS
+- emerge dev-perl/XML-Parser -j $JOBS
+- emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- emerge sys-apps/systemd
+- perl-cleaner --all
+
+excludes:
+- ^/etc/shadow
+- ^/etc/os-release
+- ^/etc/gshadow
+- ^/etc/group
+- ^/etc/hostname
+- ^/etc/hosts
+- ^/etc/machine-id
+- ^/etc/fstab
+- ^/etc/passwd
+- ^/etc/machineid
+- ^/var/db/repos
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/cache/distfiles
+- ^/var/log
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/sys
+- ^/proc
+- ^/luetbuild
+
+# GCC split
+- ^/etc/env.d/04gcc-x86_64-pc-linux-gnu
+- ^/etc/ld.so.conf.d/05gcc-x86_64-pc-linux-gnu.conf
+- ^/etc/env.d/gcc.*
+- ^/usr/lib/debug/usr/lib/gcc.*
+- ^/usr/lib/gcc/x86_64-pc-linux-gnu.*
+- ^/usr/share/gcc-data/x86_64-pc-linux-gnu.*
+- ^/usr/bin/c\+\+.*
+- ^/usr/bin/cc$
+- ^/usr/bin/cpp.*
+- ^/usr/bin/g\+\+.*
+- ^/usr/bin/gcc.*
+- ^/usr/bin/gccgo.*
+- ^/usr/bin/go-.*
+- ^/usr/bin/gofmt-.*
+- ^/usr/bin/gcov.*
+- ^/usr/bin/gfortran.*
+- ^/usr/bin/x86_64-pc-linux-gnu-.*
+- ^/usr/lib/gcc/x86_64-pc-linux-gnu.*
+- ^/usr/lib/go.*
+- ^/usr/lib64/go.*
+- ^/usr/libexec/gcc.*
+- ^/usr/share/gcc-data.*
+- ^/usr/x86_64-pc-linux-gnu/gcc-bin.*
+- ^/usr/lib/gcc
+- ^/usr/lib/llvm.*
+- ^/usr/lib/clang.*
+- ^/etc/lvm.*
+
+# devel
+- ^/usr/include

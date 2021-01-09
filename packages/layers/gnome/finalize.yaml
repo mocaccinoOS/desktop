@@ -1,0 +1,5 @@
+install:
+- glib-compile-schemas /usr/share/glib-2.0/schemas
+# Fix gnome icons caches
+- rm -f /usr/share/icons/hicolor/icon-theme.cache
+- gtk-update-icon-cache -f /usr/share/icons/*

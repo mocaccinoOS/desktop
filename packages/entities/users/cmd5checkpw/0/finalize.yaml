@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/cmd5checkpw_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/cmd5checkpw_group_entity_apply_nofiles.yaml

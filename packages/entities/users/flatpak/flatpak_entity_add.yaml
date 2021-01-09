@@ -1,0 +1,8 @@
+kind: "user"
+username: "flatpak"
+password: "x"
+uid: 313
+gid: 313
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

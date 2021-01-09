@@ -1,0 +1,8 @@
+kind: "user"
+username: "ceph"
+password: "x"
+uid: 267
+gid: 267
+info: "Created by entities"
+homedir: "/var/lib/ceph"
+shell: "/sbin/nologin"

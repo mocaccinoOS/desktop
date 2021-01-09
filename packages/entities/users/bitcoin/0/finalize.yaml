@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/bitcoin_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/bitcoin_group_entity_apply_bitcoin.yaml

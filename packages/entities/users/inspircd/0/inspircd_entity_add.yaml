@@ -1,0 +1,8 @@
+kind: "user"
+username: "inspircd"
+password: "x"
+uid: 167
+gid: 167
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

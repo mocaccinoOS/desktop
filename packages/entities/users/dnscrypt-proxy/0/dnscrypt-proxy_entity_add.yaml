@@ -1,0 +1,8 @@
+kind: "user"
+username: "dnscrypt-proxy"
+password: "x"
+uid: 353
+gid: 353
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

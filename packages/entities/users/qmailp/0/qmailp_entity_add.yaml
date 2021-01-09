@@ -1,0 +1,8 @@
+kind: "user"
+username: "qmailp"
+password: "x"
+uid: 203
+gid: 
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"

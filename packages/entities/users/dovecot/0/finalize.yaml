@@ -1,0 +1,3 @@
+install:
+- entities create -f /etc/passwd /etc/entities/dovecot_entity_add.yaml || true
+- entities apply -f /etc/group /etc/entities/dovecot_group_entity_apply_dovecot.yaml

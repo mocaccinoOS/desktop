@@ -1,0 +1,8 @@
+kind: "user"
+username: "cinder"
+password: "x"
+uid: 442
+gid: 442
+info: "Created by entities"
+homedir: "/var/lib/cinder"
+shell: "/sbin/nologin"
