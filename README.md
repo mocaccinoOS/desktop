@@ -20,3 +20,14 @@ From a developer standpoint, MOS takes a unique approach on package building, al
 
 - [Ops guide](https://github.com/mocaccinoOS/desktop/blob/master/docs/ops_guide_to_galaxy.md)
 - [Luet docs](https://luet-lab.github.io/docs/)
+
+## Repository layout
+
+As Luet doesn't impose any specific repository layout, we decided to split packages in the following directories:
+
+- `packages/entities` : All system users and groups
+- `packages/images`: External images that are consumed by other packages
+- `packages/laters`: Contain all installable layers by end-users
+- `packages/meta`: Contains meta packages, used to group multiple packages
+- `packages/virtual`: Virtual packages which are used to provide dependencies for other packages
+- `packages/mocaccino`: Packages used for branding, or MOS setup
