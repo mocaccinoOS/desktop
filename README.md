@@ -5,3 +5,7 @@ This repository contains installable "apps" that we refer internally as "layers"
 A User, should be able then to install KDE by calling `luet install layers/KDE` and nothing else. That package should bring all the necessary components to make the "app" work as expected. The user shouldn't be exposed to the typical OS architecture of bringing with it dozens of dependencies. 
 
 Think at it like Android apps: Install and uninstall should be as simple as installing an app.
+
+## Documentation
+
+- [Ops guide](https://github.com/mocaccinoOS/desktop/blob/master/docs/ops_guide_to_galaxy.md)
