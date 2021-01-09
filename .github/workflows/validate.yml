@@ -25,8 +25,6 @@ jobs:
         git fetch --prune --unshallow
     - name: Validate 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
       run: |
-        wget https://github.com/mudler/luet/releases/download/0.7.8/luet-0.7.8-linux-amd64 -O luet
-        sudo mv luet /usr/bin/luet
-        sudo chmod +x /usr/bin/luet
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
         git clone https://github.com/mocaccinoOS/kernel-repo packages/kernel-repo
         make validate

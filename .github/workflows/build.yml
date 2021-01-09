@@ -2,7 +2,7 @@ name: Build and push to minio
 
 on:
   push:
-    branches: [ master ]
+    branches: [ release ]
 jobs:
 
   generate-matrix:
@@ -18,10 +18,7 @@ jobs:
           PREVIOUS: ${{ github.event.before }}
         run: |
           curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
-          sudo wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O /usr/bin/jq
-          sudo chmod a+x /usr/bin/jq
-          sudo luet install system/container-diff system/luet-extensions
-          sudo luet install utils/keybase-tools
+          sudo luet install utils/jq
       - name: Set matrix for build
         id: set-matrix
         run: |
@@ -60,9 +57,7 @@ jobs:
       run: |
         sudo apt-get install -y wget make
         curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
-        #sudo luet install system/container-diff system/luet-extensions repository/mocaccino-extra
-        sudo luet install system/container-diff system/luet-extensions
-        sudo luet install utils/keybase-tools
+        sudo luet install utils/jq
     - name: Install minio and login
       env:
         MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
