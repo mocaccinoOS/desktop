@@ -12,12 +12,6 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
-  - category: dev-perl
-    name: XML-SAX-Base
-    version: '>=0'
-  - category: dev-libs
-    name: tinyxml
-    version: '>=0'
 provides:
   - name: engrampa
     category: app-arch
