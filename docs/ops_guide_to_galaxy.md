@@ -2,6 +2,12 @@
 
 This document has the objective to address several questions that starts with "How do I ... ?"
 
+# How do I know which version of a package is available in the Portage tree
+
+We pin Portage versions by using packages that are shipping a version of it.
+This guarantees that there are no moving parts, and we can in this way provide updates as part of a development lifecycle.
+
+We have an automated bot that automatically opens PR to track new version of the available Portage version. The package is available here: https://github.com/mocaccinoOS/desktop/tree/master/packages/portage. You don't need to do it manually. Just wait for a PR from `MarvinHatesOceans` to pop-up, we will review it and merge it only when we decide (after proper QA) that a development lifecycle is over.
 
 # How do I revbump a package? (and when it's actually needed?)
 
@@ -9,12 +15,17 @@ By convention, we have chosen to increment the version of a package after the `+
 
 That means, if a package version is at `1.0.0`, it's revbump version would be `1.0.0+1`, and a subsequent one would be for example `1.0.0+2`.
 
+## When I do need to bump a package?
+
+Only when there is a new version available!
+
 ## When I do need to revbump a package?
 
 A Package revbump is necessary when you apply changes to `build.yaml`, although, it's not always necessary, but just in few cases:
 
 - When you change `steps` in the `build.yaml`
 - When you change `prelude` in the `build.yaml`
+- When you change `requires` in the `build.yaml`
 
 ## What about packages depending on it?
 
