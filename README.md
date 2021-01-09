@@ -1,4 +1,4 @@
-# desktop
+# :computer: mocaccinoOS Desktop repository
 
 This repository contains installable "apps" that we refer internally as "layers" to install common suite of packages needed to bootstrap a pure and simple OS.
 
