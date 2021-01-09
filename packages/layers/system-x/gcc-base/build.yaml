@@ -66,6 +66,15 @@ includes:
 - /usr/share/gcc-data/x86_64-pc-linux-gnu/{{.Values.version}}/locale/fr$
 - /usr/share/gcc-data/x86_64-pc-linux-gnu/{{.Values.version}}/locale/fr/LC_MESSAGES
 - /usr/share/gcc-data/x86_64-pc-linux-gnu/{{.Values.version}}/locale/fr/LC_MESSAGES/libstdc.*
+# Emerge cache files
+- ^/var/cache/distfiles
+- ^/usr/portage/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
 unpack: true
 requires:
 - name: system-x
