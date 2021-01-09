@@ -11,9 +11,9 @@ This document has the objective to address several questions that starts with "H
     - [When I do need to revbump a package?](#when-i-do-need-to-revbump-a-package)
     - [What about packages depending on it?](#what-about-packages-depending-on-it)
     - [How do I do that?](#how-do-i-do-that)
-  - [How can I debug the build environment?](#how-can-i-debug-the-build-environment)
   - [How do I add a useflag to a Portage package?](#how-do-i-add-a-useflag-to-a-portage-package)
   - [How do I try my changes?](#how-do-i-try-my-changes)
+    - [How can I debug the build environment?](#how-can-i-debug-the-build-environment)
   - [How do I update provides list, and what are they?](#how-do-i-update-provides-list-and-what-are-they)
   - [How do I add a package?](#how-do-i-add-a-package)
   - [How do I know that a package belongs to a Layer?](#how-do-i-know-that-a-package-belongs-to-a-layer)
@@ -71,17 +71,21 @@ If we don't revbump reverse dependencies our CI would skip such changes, because
 
 Until https://github.com/mocaccinoOS/desktop/issues/7 is delivered, it is a manual process.
 
-## How can I debug the build environment?
+## How do I add a useflag to a Portage package?
+
+## How do I try my changes?
+
+You need at least Docker running locally, or img installed.
+
+To build a package, just edit/add the relevant specs and run `PACKAGES=".." make rebuild-all`.
+
+### How can I debug the build environment?
 
 Luet generates docker images for each package, you can start a shell by either retrieving manually the docker image of the package with `luet tree images`  and manually run `docker run..` on it or you can use the luet extension which does that already for you. You need to have installed `luet-extensions` package, and you can use it as follows:
 
 ```bash
 DOCKER_HOST="..." LUET_ARGS="--image-repository quay.io/mocaccinocache/desktop" luet remote-exec packagename
 ```
-
-## How do I add a useflag to a Portage package? 
-
-## How do I try my changes?
 
 ## How do I update provides list, and what are they?
 
