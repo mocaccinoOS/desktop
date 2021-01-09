@@ -10,7 +10,7 @@ DESTINATION?=$(ROOT_DIR)/output
 COMPRESSION?=zstd
 
 TREE?=packages
-REPO_CACHE?=quay.io/ mocaccinocache/desktop
+REPO_CACHE?=quay.io/mocaccinocache/desktop
 export REPO_CACHE
 BUILD_ARGS?=--pull --no-spinner --only-target-package
 SUDO?=sudo
