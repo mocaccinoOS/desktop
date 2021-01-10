@@ -27,7 +27,7 @@ As Luet doesn't impose any specific repository layout, we decided to split packa
 
 - `packages/entities` : All system users and groups
 - `packages/images`: External images that are consumed by other packages
-- `packages/laters`: Contain all installable layers by end-users
+- `packages/layers`: Contain all installable layers by end-users
 - `packages/meta`: Contains meta packages, used to group multiple packages
 - `packages/virtual`: Virtual packages which are used to provide dependencies for other packages
 - `packages/mocaccino`: Packages used for branding, or MOS setup
