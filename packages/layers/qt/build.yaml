@@ -15,6 +15,3 @@ requires:
 - category: "layers"
   name: "X"
   version: ">=0"
-- category: "layers"
-  name: "clang-9"
-  version: ">=0"

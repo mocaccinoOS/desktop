@@ -1,13 +1,24 @@
 name: system-x
-version: "0.20201125+5"
+version: "0.20210110"
 category: layers
 requires:
-  - category: "system"
-    name: "gcc-base"
-    version: ">=0"
-  - name: systemd-groups
-    version: ">=0"
-    category: meta
+- category: "system"
+  name: "gcc-base"
+  version: ">=0"
+- name: systemd-groups
+  version: ">=0"
+  category: meta
+
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    sys-devel/llvm:9
+    dev-libs/libclangformat-ide:9
+    sys-libs/compiler-rt:9.0.1
+    sys-libs/compiler-rt-sanitizers:9.0.1
+    sys-devel/clang-runtime:9.0.1
+    sys-devel/clang:9
+    sys-apps/systemd
 
 provides:
   - name: at-spi2-atk
