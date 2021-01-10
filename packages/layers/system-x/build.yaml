@@ -5,7 +5,7 @@ requires:
 unpack: true
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox"
-- JOBS=7
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 
 prelude:
 - cp -rf package.use /etc/portage/
@@ -18,7 +18,7 @@ steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
-- emerge sys-apps/systemd
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - perl-cleaner --all
 
 excludes:
