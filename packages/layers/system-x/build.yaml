@@ -4,7 +4,7 @@ requires:
   version: ">=0"
 unpack: true
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox"
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 
 prelude:
@@ -12,6 +12,7 @@ prelude:
 - cp -rf make.conf /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
+- cp -rf patches/ /etc/portage/
 steps:
 # we want py3.8 and py2.7 for now
 - eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
