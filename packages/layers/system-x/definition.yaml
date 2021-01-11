@@ -19,6 +19,9 @@ labels:
     sys-devel/clang-runtime:9.0.1
     sys-devel/clang:9
     sys-apps/systemd
+    app-shells/push
+    app-shells/quoter
+    app-portage/eix
 
 provides:
   - name: at-spi2-atk
