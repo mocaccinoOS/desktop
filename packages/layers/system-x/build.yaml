@@ -12,6 +12,7 @@ prelude:
 - cp -rf make.conf /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
+- cp -rf package.mask /etc/portage/
 - cp -rf patches/ /etc/portage/
 steps:
 # we want py3.8 and py2.7 for now
