@@ -9,7 +9,6 @@ labels:
       dev-qt/linguist-tools
       dev-qt/qdbus
       dev-qt/qdbusviewer
-      dev-qt/qt-creator
       dev-qt/qtbluetooth
       dev-qt/qtcharts
       dev-qt/qtchooser
