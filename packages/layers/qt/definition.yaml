@@ -2,7 +2,7 @@ category: "layers"
 name: "qt"
 version: "5.15.1+5"
 labels:
-  emerge.jobs: "5"
+  emerge.jobs: "1"
   emerge.packages: >-
       dev-qt/assistant
       dev-qt/linguist
