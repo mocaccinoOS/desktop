@@ -1,6 +1,10 @@
-category: "app-admin"
+category: "layers"
 name: "calamares"
 version: "3.2.32"
+provides:
+- name: "calamares"
+  category: "app-admin"
+  version: ">=0"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
