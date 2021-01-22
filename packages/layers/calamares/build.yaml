@@ -18,3 +18,6 @@ requires:
 - category: "layers"
   name: "qt"
   version: ">=0"
+- category: "layers"
+  name: "sys-tools"
+  version: ">=0"
