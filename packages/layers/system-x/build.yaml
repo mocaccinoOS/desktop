@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf patches/ /etc/portage/
+- cp -rf bashrc /etc/portage/
 steps:
 # we want py3.8 and py2.7 for now
 - eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
