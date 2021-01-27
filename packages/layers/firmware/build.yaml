@@ -10,6 +10,8 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
+# FIXME: Do this temporary, until we revbump or bump system-x layer with the new /etc/portage layout
+- echo "=sys-kernel/linux-firmware-20201022-r2 linux-fw-redistributable no-source-code" >> /etc/portage/package.license
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
