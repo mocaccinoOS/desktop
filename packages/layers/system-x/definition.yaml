@@ -9,2013 +9,444 @@ requires:
   version: ">=0"
   category: meta
 
-labels:
-  emerge.jobs: "3"
-  emerge.packages: >-
-    sys-devel/llvm:9
-    dev-libs/libclangformat-ide:9
-    sys-libs/compiler-rt:9.0.1
-    sys-libs/compiler-rt-sanitizers:9.0.1
-    sys-devel/clang-runtime:9.0.1
-    sys-devel/clang:9
-    sys-apps/systemd
-    app-shells/push
-    app-shells/quoter
-    app-portage/eix
-
-provides:
-  - name: at-spi2-atk
-    version: '>=0'
-    category: app-accessibility-2
-  - name: at-spi2-core
-    version: '>=0'
-    category: app-accessibility-2
-  - name: eselect
-    version: '>=0'
-    category: app-admin
-  - name: perl-cleaner
-    version: '>=0'
-    category: app-admin
-  - name: bzip2
-    version: '>=0'
-    category: app-arch
-  - name: gzip
-    version: '>=0'
-    category: app-arch
-  - category: app-arch
-    name: libarchive
-    version: '>=0'
-  - name: lz4
-    version: '>=0'
-    category: app-arch
-  - name: tar
-    version: '>=0'
-    category: app-arch
-  - name: unzip
-    version: '>=0'
-    category: app-arch
-  - name: xz-utils
-    version: '>=0'
-    category: app-arch
-  - name: zstd
-    version: '>=0'
-    category: app-arch
-  - name: argon2
-    version: '>=0'
-    category: app-crypt
-  - name: gcr
-    version: '>=0'
-    category: app-crypt
-  - name: gnupg
-    version: '>=0'
-    category: app-crypt
-  - name: gpgme
-    version: '>=0'
-    category: app-crypt-1
-  - name: libb2
-    version: '>=0'
-    category: app-crypt
-  - name: libsecret
-    category: app-crypt
-    version: '>=0'
-  - name: openpgp-keys-gentoo-release
-    category: app-crypt
-    version: '>=0'
-  - name: p11-kit
-    category: app-crypt
-    version: '>=0'
-  - name: pinentry
-    version: '>=0'
-    category: app-crypt
-  - name: rhash
-    version: '>=0'
-    category: app-crypt
-  - name: nano
-    version: '>=0'
-    category: app-editors
-  - name: eselect-fontconfig
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-infinality
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-iptables
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-lcdfilter
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-lib-bin-symlink
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-pinentry
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-python
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-ruby
-    version: '>=0'
-    category: app-eselect
-  - name: eselect-rust
-    version: '>=0'
-    category: app-eselect
-  - name: c_rehash
-    version: '>=0'
-    category: app-misc
-  - name: ca-certificates
-    version: '>=0'
-    category: app-misc
-  - name: editor-wrapper
-    version: '>=0'
-    category: app-misc
-  - name: mime-types
-    version: '>=0'
-    category: app-misc
-  - name: pax-utils
-    version: '>=0'
-    category: app-misc
-  - name: elt-patches
-    version: '>=0'
-    category: app-portage
-  - name: gemato
-    version: '>=0'
-    category: app-portage
-  - name: portage-utils
-    version: '>=0'
-    category: app-portage
-  - name: bash
-    version: '>=0'
-    category: app-shells
-  - name: asciidoc
-    version: '>=0'
-    category: app-text
-  - name: build-docbook-catalog
-    version: '>=0'
-    category: app-text
-  - name: docbook-xml-dtd
-    version: '>=0'
-    category: app-text-4.5
-  - name: docbook-xml-dtd
-    version: '>=0'
-    category: app-text-4.4
-  - name: docbook-xml-dtd
-    version: '>=0'
-    category: app-text-4.3
-  - name: docbook-xml-dtd
-    version: '>=0'
-    category: app-text-4.2
-  - name: docbook-xml-dtd
-    version: '>=0'
-    category: app-text-4.1.2
-  - name: docbook-xsl-stylesheets
-    version: '>=0'
-    category: app-text
-  - name: manpager
-    version: '>=0'
-    category: app-text
-  - name: opensp
-    version: '>=0'
-    category: app-text
-  - name: po4a
-    version: '>=0'
-    category: app-text
-  - name: sgml-common
-    version: '>=0'
-    category: app-text
-  - name: xmlto
-    version: '>=0'
-    category: app-text
-  - name: sqlite
-    version: '>=0'
-    category: dev-db-3
-  - name: nasm
-    version: '>=0'
-    category: dev-lang
-  - name: perl
-    version: '>=0'
-    category: dev-lang
-  - name: python
-    version: '>=0'
-    category: dev-lang-3.9
-  - name: python
-    version: '>=0'
-    category: dev-lang-3.8
-  - name: python
-    version: '>=0'
-    category: dev-lang-3.7
-  - name: python-exec
-    version: '>=0'
-    category: dev-lang-2
-  - name: ruby
-    version: '>=0'
-    category: dev-lang-2.6
-  - name: rust
-    version: '>=0'
-    category: dev-lang-stable
-  - name: spidermonkey
-    version: '>=0'
-    category: dev-lang-78
-  - name: tcl
-    version: '>=0'
-    category: dev-lang
-  - name: vala
-    version: '>=0'
-    category: dev-lang-0.48
-  - name: atk
-    version: '>=0'
-    category: dev-libs
-  - name: boehm-gc
-    version: '>=0'
-    category: dev-libs
-  - name: boost
-    version: '>=0'
-    category: dev-libs
-  - name: elfutils
-    version: '>=0'
-    category: dev-libs
-  - name: expat
-    version: '>=0'
-    category: dev-libs
-  - name: fribidi
-    version: '>=0'
-    category: dev-libs
-  - name: glib
-    version: '>=0'
-    category: dev-libs-2
-  - name: gmp
-    version: '>=0'
-    category: dev-libs
-  - name: gobject-introspection
-    version: '>=0'
-    category: dev-libs
-  - name: gobject-introspection-common
-    version: '>=0'
-    category: dev-libs
-  - name: icu
-    version: '>=0'
-    category: dev-libs
-  - name: isl
-    version: '>=0'
-    category: dev-libs
-  - name: json-c
-    version: '>=0'
-    category: dev-libs
-  - name: jsoncpp
-    version: '>=0'
-    category: dev-libs
-  - name: libaio
-    version: '>=0'
-    category: dev-libs
-  - name: libassuan
-    version: '>=0'
-    category: dev-libs
-  - name: libatomic_ops
-    version: '>=0'
-    category: dev-libs
-  - name: libbsd
-    version: '>=0'
-    category: dev-libs
-  - name: libclc
-    version: '>=0'
-    category: dev-libs
-  - name: libedit
-    version: '>=0'
-    category: dev-libs
-  - name: libevent
-    version: '>=0'
-    category: dev-libs
-  - name: libffi
-    version: '>=0'
-    category: dev-libs
-  - name: libgcrypt
-    version: '>=0'
-    category: dev-libs
-  - name: libgit2
-    version: '>=0'
-    category: dev-libs
-  - name: libgpg-error
-    version: '>=0'
-    category: dev-libs
-  - name: libksba
-    version: '>=0'
-    category: dev-libs
-  - name: libltdl
-    version: '>=0'
-    category: dev-libs
-  - name: libpcre
-    version: '>=0'
-    category: dev-libs-3
-  - name: libpcre2
-    version: '>=0'
-    category: dev-libs
-  - name: libpipeline
-    version: '>=0'
-    category: dev-libs
-  - name: libtasn1
-    version: '>=0'
-    category: dev-libs
-  - name: libunistring
-    version: '>=0'
-    category: dev-libs
-  - name: libuv
-    version: '>=0'
-    category: dev-libs
-  - name: libxml2
-    version: '>=0'
-    category: dev-libs-2
-  - name: libxslt
-    version: '>=0'
-    category: dev-libs
-  - name: libyaml
-    version: '>=0'
-    category: dev-libs
-  - name: lzo
-    version: '>=0'
-    category: dev-libs-2
-  - name: mpc
-    version: '>=0'
-    category: dev-libs
-  - name: mpfr
-    version: '>=0'
-    category: dev-libs
-  - name: nettle
-    version: '>=0'
-    category: dev-libs
-  - name: npth
-    version: '>=0'
-    category: dev-libs
-  - name: nspr
-    version: '>=0'
-    category: dev-libs
-  - name: ocl-icd
-    version: '>=0'
-    category: dev-libs
-  - name: openssl
-    version: '>=0'
-    category: dev-libs
-  - name: popt
-    version: '>=0'
-    category: dev-libs
-  - name: vala-common
-    version: '>=0'
-    category: dev-libs
-  - name: wayland
-    version: '>=0'
-    category: dev-libs
-  - name: wayland-protocols
-    version: '>=0'
-    category: dev-libs
-  - name: Authen-SASL
-    version: '>=0'
-    category: dev-perl
-  - name: Digest-HMAC
-    version: '>=0'
-    category: dev-perl
-  - name: Error
-    version: '>=0'
-    category: dev-perl
-  - name: Locale-gettext
-    version: '>=0'
-    category: dev-perl
-  - name: MailTools
-    version: '>=0'
-    category: dev-perl
-  - name: MIME-Charset
-    version: '>=0'
-    category: dev-perl
-  - name: Module-Build
-    version: '>=0'
-    category: dev-perl
-  - name: SGMLSpm
-    version: '>=0'
-    category: dev-perl
-  - name: TermReadKey
-    version: '>=0'
-    category: dev-perl
-  - name: Text-CharWidth
-    version: '>=0'
-    category: dev-perl
-  - name: Text-WrapI18N
-    version: '>=0'
-    category: dev-perl
-  - name: TimeDate
-    version: '>=0'
-    category: dev-perl
-  - name: Unicode-LineBreak
-    version: '>=0'
-    category: dev-perl
-  - name: XML-Parser
-    version: '>=0'
-    category: dev-perl
-  - name: XML-XPath
-    version: '>=0'
-    category: dev-perl
-  - name: YAML-Tiny
-    version: '>=0'
-    category: dev-perl
-  - name: certifi
-    version: '>=0'
-    category: dev-python
-  - name: cffi
-    version: '>=0'
-    category: dev-python
-  - name: chardet
-    version: '>=0'
-    category: dev-python
-  - name: cryptography
-    version: '>=0'
-    category: dev-python
-  - name: cython
-    version: '>=0'
-    category: dev-python
-  - name: idna
-    version: '>=0'
-    category: dev-python
-  - name: jinja
-    version: '>=0'
-    category: dev-python
-  - name: lxml
-    version: '>=0'
-    category: dev-python
-  - name: mako
-    version: '>=0'
-    category: dev-python
-  - name: markupsafe
-    version: '>=0'
-    category: dev-python
-  - name: ply
-    version: '>=0'
-    category: dev-python
-  - name: pycparser
-    version: '>=0'
-    category: dev-python
-  - name: pyopenssl
-    version: '>=0'
-    category: dev-python
-  - name: PySocks
-    version: '>=0'
-    category: dev-python
-  - name: requests
-    version: '>=0'
-    category: dev-python
-  - name: setuptools
-    version: '>=0'
-    category: dev-python
-  - name: setuptools_scm
-    version: '>=0'
-    category: dev-python
-  - name: six
-    version: '>=0'
-    category: dev-python
-  - name: urllib3
-    version: '>=0'
-    category: dev-python
-  - name: bundler
-    version: '>=0'
-    category: dev-ruby-2
-  - name: did_you_mean
-    version: '>=0'
-    category: dev-ruby-2.6
-  - name: json
-    version: '>=0'
-    category: dev-ruby-2
-  - name: kpeg
-    version: '>=0'
-    category: dev-ruby-1
-  - name: minitest
-    version: '>=0'
-    category: dev-ruby-5
-  - name: net-telnet
-    version: '>=0'
-    category: dev-ruby-1
-  - name: power_assert
-    version: '>=0'
-    category: dev-ruby
-  - name: racc
-    version: '>=0'
-    category: dev-ruby
-  - name: rake
-    version: '>=0'
-    category: dev-ruby
-  - name: rdoc
-    version: '>=0'
-    category: dev-ruby
-  - name: rubygems
-    version: '>=0'
-    category: dev-ruby
-  - name: test-unit
-    version: '>=0'
-    category: dev-ruby-2
-  - name: xmlrpc
-    version: '>=0'
-    category: dev-ruby
-  - name: guile
-    version: '>=0'
-    category: dev-scheme-12
-  - name: boost-build
-    version: '>=0'
-    category: dev-util
-  - name: cmake
-    version: '>=0'
-    category: dev-util
-  - name: colm
-    version: '>=0'
-    category: dev-util
-  - name: desktop-file-utils
-    version: '>=0'
-    category: dev-util
-  - name: gdbus-codegen
-    version: '>=0'
-    category: dev-util
-  - name: glib-utils
-    version: '>=0'
-    category: dev-util
-  - name: gperf
-    version: '>=0'
-    category: dev-util
-  - name: gtk-doc-am
-    version: '>=0'
-    category: dev-util
-  - name: gtk-update-icon-cache
-    version: '>=0'
-    category: dev-util
-  - name: intltool
-    version: '>=0'
-    category: dev-util
-  - name: itstool
-    version: '>=0'
-    category: dev-util
-  - name: meson
-    version: '>=0'
-    category: dev-util
-  - name: ninja
-    version: '>=0'
-    category: dev-util
-  - name: opencl-headers
-    version: '>=0'
-    category: dev-util
-  - name: pkgconf
-    version: '>=0'
-    category: dev-util
-  - name: ragel
-    version: '>=0'
-    category: dev-util
-  - name: re2c
-    version: '>=0'
-    category: dev-util
-  - name: git
-    version: '>=0'
-    category: dev-vcs
-  - name: gnome-keyring
-    version: '>=0'
-    category: gnome-base
-  - name: gsettings-desktop-schemas
-    version: '>=0'
-    category: gnome-base
-  - name: librsvg
-    version: '>=0'
-    category: gnome-base-2
-  - name: croscorefonts
-    version: '>=0'
-    category: media-fonts
-  - name: graphite2
-    version: '>=0'
-    category: media-gfx
-  - name: fontconfig
-    version: '>=0'
-    category: media-libs-1.0
-  - name: fontconfig-infinality
-    version: '>=0'
-    category: media-libs
-  - name: freetype
-    version: '>=0'
-    category: media-libs-2
-  - name: giflib
-    version: '>=0'
-    category: media-libs
-  - name: harfbuzz
-    version: '>=0'
-    category: media-libs
-  - name: imlib2
-    version: '>=0'
-    category: media-libs
-  - name: libepoxy
-    version: '>=0'
-    category: media-libs
-  - name: libglvnd
-    version: '>=0'
-    category: media-libs
-  - name: libjpeg-turbo
-    version: '>=0'
-    category: media-libs
-  - name: libpng
-    version: '>=0'
-    category: media-libs
-  - name: libwebp
-    version: '>=0'
-    category: media-libs
-  - name: mesa
-    version: '>=0'
-    category: media-libs
-  - name: tiff
-    version: '>=0'
-    category: media-libs
-  - name: dnssec-root
-    version: '>=0'
-    category: net-dns
-  - name: libidn2
-    version: '>=0'
-    category: net-dns
-  - name: unbound
-    version: '>=0'
-    category: net-dns
-  - name: iptables
-    version: '>=0'
-    category: net-firewall
-  - name: gnutls
-    version: '>=0'
-    category: net-libs
-  - name: http-parser
-    version: '>=0'
-    category: net-libs
-  - name: libmnl
-    version: '>=0'
-    category: net-libs
-  - name: libnsl
-    version: '>=0'
-    category: net-libs
-  - name: libssh2
-    version: '>=0'
-    category: net-libs
-  - name: libtirpc
-    version: '>=0'
-    category: net-libs
-  - name: nghttp2
-    version: '>=0'
-    category: net-libs
-  - name: curl
-    version: '>=0'
-    category: net-misc
-  - name: iputils
-    version: '>=0'
-    category: net-misc
-  - name: openssh
-    version: '>=0'
-    category: net-misc
-  - name: rsync
-    version: '>=0'
-    category: net-misc
-  - name: wget
-    version: '>=0'
-    category: net-misc
-  - name: File-Temp
-    version: '>=0'
-    category: perl-core
-  - name: acl
-    version: '>=0'
-    category: sys-apps
-  - name: attr
-    version: '>=0'
-    category: sys-apps
-  - name: baselayout
-    version: '>=0'
-    category: sys-apps
-  - name: busybox
-    version: '>=0'
-    category: sys-apps
-  - name: coreutils
-    version: '>=0'
-    category: sys-apps
-  - name: dbus
-    version: '>=0'
-    category: sys-apps
-  - name: debianutils
-    version: '>=0'
-    category: sys-apps
-  - name: diffutils
-    version: '>=0'
-    category: sys-apps
-  - name: file
-    version: '>=0'
-    category: sys-apps
-  - name: findutils
-    version: '>=0'
-    category: sys-apps
-  - name: gawk
-    version: '>=0'
-    category: sys-apps
-  - name: gentoo-functions
-    version: '>=0'
-    category: sys-apps
-  - name: gentoo-systemd-integration
-    version: '>=0'
-    category: sys-apps
-  - name: grep
-    version: '>=0'
-    category: sys-apps
-  - name: groff
-    version: '>=0'
-    category: sys-apps
-  - name: help2man
-    version: '>=0'
-    category: sys-apps
-  - name: hwids
-    version: '>=0'
-    category: sys-apps
-  - name: install-xattr
-    version: '>=0'
-    category: sys-apps
-  - name: iproute2
-    version: '>=0'
-    category: sys-apps
-  - name: kbd
-    version: '>=0'
-    category: sys-apps
-  - name: kmod
-    version: '>=0'
-    category: sys-apps
-  - name: less
-    version: '>=0'
-    category: sys-apps
-  - name: man-db
-    version: '>=0'
-    category: sys-apps
-  - name: man-pages
-    version: '>=0'
-    category: sys-apps
-  - name: man-pages-posix
-    version: '>=0'
-    category: sys-apps
-  - name: net-tools
-    version: '>=0'
-    category: sys-apps
-  - name: portage
-    version: '>=0'
-    category: sys-apps
-  - name: sandbox
-    version: '>=0'
-    category: sys-apps
-  - name: sed
-    version: '>=0'
-    category: sys-apps
-  - name: shadow
-    version: '>=0'
-    category: sys-apps
-  - name: systemd
-    version: '>=0'
-    category: sys-apps
-  - name: texinfo
-    version: '>=0'
-    category: sys-apps
-  - name: util-linux
-    version: '>=0'
-    category: sys-apps
-  - name: which
-    version: '>=0'
-    category: sys-apps
-  - name: pambase
-    version: '>=0'
-    category: sys-auth
-  - name: passwdqc
-    version: '>=0'
-    category: sys-auth
-  - name: polkit
-    version: '>=0'
-    category: sys-auth
-  - name: thin-provisioning-tools
-    version: '>=0'
-    category: sys-block
-  - name: autoconf
-    version: '>=0'
-    category: sys-devel-2.69
-  - name: autoconf
-    version: '>=0'
-    category: sys-devel-2.1
-  - name: autoconf-archive
-    version: '>=0'
-    category: sys-devel
-  - name: autoconf-wrapper
-    version: '>=0'
-    category: sys-devel
-  - name: autogen
-    version: '>=0'
-    category: sys-devel
-  - name: automake
-    version: '>=0'
-    category: sys-devel-1.16
-  - name: automake-wrapper
-    version: '>=0'
-    category: sys-devel
-  - name: binutils
-    version: '>=0'
-    category: sys-devel-2.34
-  - name: binutils-config
-    version: '>=0'
-    category: sys-devel
-  - name: bison
-    version: '>=0'
-    category: sys-devel
-  - name: clang
-    version: '>=0'
-    category: sys-devel-10
-  - name: clang-common
-    version: '>=0'
-    category: sys-devel
-  - name: clang-runtime
-    version: '>=0'
-    category: sys-devel-10.0.1
-  - name: flex
-    version: '>=0'
-    category: sys-devel
-  - name: gcc
-    version: '>=0'
-    category: sys-devel-9.3.0
-  - name: gcc-config
-    version: '>=0'
-    category: sys-devel
-  - name: gettext
-    version: '>=0'
-    category: sys-devel
-  - name: gnuconfig
-    version: '>=0'
-    category: sys-devel
-  - name: libtool
-    version: '>=0'
-    category: sys-devel-2
-  - name: llvm
-    version: '>=0'
-    category: sys-devel-10
-  - name: llvm-common
-    version: '>=0'
-    category: sys-devel
-  - name: m4
-    version: '>=0'
-    category: sys-devel
-  - name: make
-    version: '>=0'
-    category: sys-devel
-  - name: patch
-    version: '>=0'
-    category: sys-devel
-  - name: cryptsetup
-    version: '>=0'
-    category: sys-fs
-  - name: e2fsprogs
-    version: '>=0'
-    category: sys-fs
-  - name: lvm2
-    version: '>=0'
-    category: sys-fs
-  - name: udev-init-scripts
-    version: '>=0'
-    category: sys-fs
-  - name: installkernel-gentoo
-    version: '>=0'
-    category: sys-kernel
-  - name: linux-headers
-    version: '>=0'
-    category: sys-kernel
-  - name: binutils-libs
-    version: '>=0'
-    category: sys-libs
-  - name: compiler-rt
-    version: '>=0'
-    category: sys-libs-10.0.1
-  - name: compiler-rt-sanitizers
-    version: '>=0'
-    category: sys-libs-10.0.1
-  - name: db
-    version: '>=0'
-    category: sys-libs-5.3
-  - name: e2fsprogs-libs
-    version: '>=0'
-    category: sys-libs
-  - name: gdbm
-    version: '>=0'
-    category: sys-libs
-  - name: glibc
-    version: '>=0'
-    category: sys-libs-2.2
-  - name: libcap
-    version: '>=0'
-    category: sys-libs
-  - name: libcap-ng
-    version: '>=0'
-    category: sys-libs
-  - name: libomp
-    version: '>=0'
-    category: sys-libs
-  - name: libseccomp
-    version: '>=0'
-    category: sys-libs
-  - name: ncurses
-    version: '>=0'
-    category: sys-libs
-  - name: pam
-    version: '>=0'
-    category: sys-libs
-  - name: readline
-    version: '>=0'
-    category: sys-libs
-  - name: timezone-data
-    version: '>=0'
-    category: sys-libs
-  - name: zlib
-    version: '>=0'
-    category: sys-libs
-  - name: procps
-    version: '>=0'
-    category: sys-process
-  - name: psmisc
-    version: '>=0'
-    category: sys-process
-  - name: acl
-    version: '>=0'
-    category: virtual
-  - name: awk
-    version: '>=0'
-    category: virtual
-  - name: dev-manager
-    version: '>=0'
-    category: virtual
-  - name: editor
-    version: '>=0'
-    category: virtual
-  - name: jpeg
-    version: '>=0'
-    category: virtual
-  - name: libc
-    version: '>=0'
-    category: virtual
-  - name: libcrypt
-    version: '>=0'
-    category: virtual
-  - name: libelf
-    version: '>=0'
-    category: virtual
-  - name: libiconv
-    version: '>=0'
-    category: virtual
-  - name: libintl
-    version: '>=0'
-    category: virtual
-  - name: libudev
-    version: '>=0'
-    category: virtual
-  - name: man
-    version: '>=0'
-    category: virtual
-  - name: opencl
-    version: '>=0'
-    category: virtual
-  - name: os-headers
-    version: '>=0'
-    category: virtual
-  - name: package-manager
-    version: '>=0'
-    category: virtual
-  - name: pager
-    version: '>=0'
-    category: virtual
-  - name: perl-Carp
-    version: '>=0'
-    category: virtual
-  - name: perl-CPAN-Meta
-    version: '>=0'
-    category: virtual
-  - name: perl-CPAN-Meta-YAML
-    version: '>=0'
-    category: virtual
-  - name: perl-Data-Dumper
-    version: '>=0'
-    category: virtual
-  - name: perl-Digest-MD5
-    version: '>=0'
-    category: virtual
-  - name: perl-Digest-SHA
-    version: '>=0'
-    category: virtual
-  - name: perl-Encode
-    version: '>=0'
-    category: virtual
-  - name: perl-Exporter
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-CBuilder
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-Install
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-MakeMaker
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-Manifest
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-ParseXS
-    version: '>=0'
-    category: virtual
-  - name: perl-File-Spec
-    version: '>=0'
-    category: virtual
-  - name: perl-File-Temp
-    version: '>=0'
-    category: virtual
-  - name: perl-Getopt-Long
-    version: '>=0'
-    category: virtual
-  - name: perl-IO
-    version: '>=0'
-    category: virtual
-  - name: perl-JSON-PP
-    version: '>=0'
-    category: virtual
-  - name: perl-libnet
-    version: '>=0'
-    category: virtual
-  - name: perl-Module-Metadata
-    version: '>=0'
-    category: virtual
-  - name: perl-Parse-CPAN-Meta
-    version: '>=0'
-    category: virtual
-  - name: perl-Perl-OSType
-    version: '>=0'
-    category: virtual
-  - name: perl-podlators
-    version: '>=0'
-    category: virtual
-  - name: perl-Scalar-List-Utils
-    version: '>=0'
-    category: virtual
-  - name: perl-Test-Harness
-    version: '>=0'
-    category: virtual
-  - name: perl-Text-ParseWords
-    version: '>=0'
-    category: virtual
-  - name: perl-version
-    version: '>=0'
-    category: virtual
-  - name: pkgconfig
-    version: '>=0'
-    category: virtual
-  - name: ruby-ssl
-    version: '>=0'
-    category: virtual
-  - name: rubygems
-    version: '>=0'
-    category: virtual
-  - name: rust
-    version: '>=0'
-    category: virtual
-  - name: service-manager
-    version: '>=0'
-    category: virtual
-  - name: ssh
-    version: '>=0'
-    category: virtual
-  - name: tmpfiles
-    version: '>=0'
-    category: virtual
-  - name: ttf-fonts
-    version: '>=0'
-    category: virtual
-  - name: udev
-    version: '>=0'
-    category: virtual
-  - name: w3m
-    version: '>=0'
-    category: virtual
-  - name: yacc
-    version: '>=0'
-    category: virtual
-  - name: w3m
-    version: '>=0'
-    category: www-client
-  - name: xcb-proto
-    version: '>=0'
-    category: x11-base
-  - name: xorg-proto
-    version: '>=0'
-    category: x11-base
-  - name: cairo
-    version: '>=0'
-    category: x11-libs
-  - name: gdk-pixbuf
-    version: '>=0'
-    category: x11-libs-2
-  - name: gtk+
-    version: '>=0'
-    category: x11-libs-3
-  - name: gtk+
-    version: '>=0'
-    category: x11-libs-2
-  - name: libdrm
-    version: '>=0'
-    category: x11-libs
-  - name: libICE
-    version: '>=0'
-    category: x11-libs
-  - name: libpciaccess
-    version: '>=0'
-    category: x11-libs
-  - name: libSM
-    version: '>=0'
-    category: x11-libs
-  - name: libva
-    version: '>=0'
-    category: x11-libs
-  - name: libva-intel-driver
-    version: '>=0'
-    category: x11-libs
-  - name: libva-vdpau-driver
-    version: '>=0'
-    category: x11-libs
-  - name: libvdpau
-    version: '>=0'
-    category: x11-libs
-  - name: libX11
-    version: '>=0'
-    category: x11-libs
-  - name: libXau
-    version: '>=0'
-    category: x11-libs
-  - name: libxcb
-    version: '>=0'
-    category: x11-libs
-  - name: libXcomposite
-    version: '>=0'
-    category: x11-libs
-  - name: libXcursor
-    version: '>=0'
-    category: x11-libs
-  - name: libXdamage
-    version: '>=0'
-    category: x11-libs
-  - name: libXdmcp
-    version: '>=0'
-    category: x11-libs
-  - name: libXext
-    version: '>=0'
-    category: x11-libs
-  - name: libXfixes
-    version: '>=0'
-    category: x11-libs
-  - name: libXft
-    version: '>=0'
-    category: x11-libs
-  - name: libXi
-    version: '>=0'
-    category: x11-libs
-  - name: libXrandr
-    version: '>=0'
-    category: x11-libs
-  - name: libXrender
-    version: '>=0'
-    category: x11-libs
-  - name: libxshmfence
-    version: '>=0'
-    category: x11-libs
-  - name: libXt
-    version: '>=0'
-    category: x11-libs
-  - name: libXxf86vm
-    version: '>=0'
-    category: x11-libs
-  - name: pango
-    version: '>=0'
-    category: x11-libs
-  - name: pixman
-    version: '>=0'
-    category: x11-libs
-  - name: xtrans
-    version: '>=0'
-    category: x11-libs
-  - name: shared-mime-info
-    version: '>=0'
-    category: x11-misc
-  - name: adwaita-icon-theme
-    version: '>=0'
-    category: x11-themes
-  - name: gnome-themes-standard
-    version: '>=0'
-    category: x11-themes
-  - name: gtk-engines-adwaita
-    version: '>=0'
-    category: x11-themes
-  - name: hicolor-icon-theme
-    version: '>=0'
-    category: x11-themes
-  - name: jbig2dec
-    version: '>=0'
-    category: media-libs
-  - name: lcms
-    version: '>=0'
-    category: media-libs
-  - name: libepoxy
-    version: '>=0'
-    category: media-libs
-  - name: libglvnd
-    version: '>=0'
-    category: media-libs
-  - name: libjpeg-turbo
-    version: '>=0'
-    category: media-libs
-  - name: libmms
-    version: '>=0'
-    category: media-libs
-  - name: libmtp
-    version: '>=0'
-    category: media-libs
-  - name: libogg
-    version: '>=0'
-    category: media-libs
-  - name: libpng
-    version: '>=0'
-    category: media-libs
-  - name: libvorbis
-    version: '>=0'
-    category: media-libs
-  - name: libwebp
-    version: '>=0'
-    category: media-libs
-  - name: mesa
-    version: '>=0'
-    category: media-libs
-  - name: openjpeg
-    version: '>=0'
-    category: media-libs
-  - name: opus
-    version: '>=0'
-    category: media-libs
-  - name: tiff
-    version: '>=0'
-    category: media-libs
-  - name: woff2
-    version: '>=0'
-    category: media-libs
-  - name: gst-plugins-libmms
-    version: '>=0'
-    category: media-plugins
-  - name: gst-plugins-meta
-    version: '>=0'
-    category: media-plugins
-  - name: gst-plugins-opus
-    version: '>=0'
-    category: media-plugins
-  - name: gst-plugins-soup
-    version: '>=0'
-    category: media-plugins
-  - name: dnssec-root
-    version: '>=0'
-    category: net-dns
-  - name: libidn
-    version: '>=0'
-    category: net-dns
-  - name: libidn2
-    version: '>=0'
-    category: net-dns
-  - name: unbound
-    version: '>=0'
-    category: net-dns
-  - name: iptables
-    version: '>=0'
-    category: net-firewall
-  - name: cifs-utils
-    version: '>=0'
-    category: net-fs
-  - name: libnfs
-    version: '>=0'
-    category: net-fs
-  - name: samba
-    version: '>=0'
-    category: net-fs
-  - name: glib-networking
-    version: '>=0'
-    category: net-libs
-  - name: gnome-online-accounts
-    version: '>=0'
-    category: net-libs
-  - name: gnutls
-    version: '>=0'
-    category: net-libs
-  - name: http-parser
-    version: '>=0'
-    category: net-libs
-  - name: libmnl
-    version: '>=0'
-    category: net-libs
-  - name: libnsl
-    version: '>=0'
-    category: net-libs
-  - name: libproxy
-    version: '>=0'
-    category: net-libs
-  - name: libpsl
-    version: '>=0'
-    category: net-libs
-  - name: libsoup
-    version: '>=0'
-    category: net-libs
-  - name: libssh2
-    version: '>=0'
-    category: net-libs
-  - name: libtirpc
-    version: '>=0'
-    category: net-libs
-  - name: nghttp2
-    version: '>=0'
-    category: net-libs
-  - name: rest
-    version: '>=0'
-    category: net-libs
-  - name: rpcsvc-proto
-    version: '>=0'
-    category: net-libs
-  - name: webkit-gtk
-    version: '>=0'
-    category: net-libs
-  - name: mailbase
-    version: '>=0'
-    category: net-mail
-  - name: curl
-    version: '>=0'
-    category: net-misc
-  - name: iputils
-    version: '>=0'
-    category: net-misc
-  - name: openssh
-    version: '>=0'
-    category: net-misc
-  - name: rsync
-    version: '>=0'
-    category: net-misc
-  - name: wget
-    version: '>=0'
-    category: net-misc
-  - name: openldap
-    version: '>=0'
-    category: net-nds
-  - name: cups
-    version: '>=0'
-    category: net-print
-  - name: cups-filters
-    version: '>=0'
-    category: net-print
-  - name: bluez
-    version: '>=0'
-    category: net-wireless
-  - name: crda
-    version: '>=0'
-    category: net-wireless
-  - name: wireless-regdb
-    version: '>=0'
-    category: net-wireless
-  - name: wpa_supplicant
-    version: '>=0'
-    category: net-wireless
-  - name: File-Temp
-    version: '>=0'
-    category: perl-core
-  - name: acl
-    version: '>=0'
-    category: sys-apps
-  - name: attr
-    version: '>=0'
-    category: sys-apps
-  - name: baselayout
-    version: '>=0'
-    category: sys-apps
-  - name: bubblewrap
-    version: '>=0'
-    category: sys-apps
-  - name: busybox
-    version: '>=0'
-    category: sys-apps
-  - name: coreutils
-    version: '>=0'
-    category: sys-apps
-  - name: dbus
-    version: '>=0'
-    category: sys-apps
-  - name: debianutils
-    version: '>=0'
-    category: sys-apps
-  - name: diffutils
-    version: '>=0'
-    category: sys-apps
-  - name: ed
-    version: '>=0'
-    category: sys-apps
-  - name: file
-    version: '>=0'
-    category: sys-apps
-  - name: findutils
-    version: '>=0'
-    category: sys-apps
-  - name: gawk
-    version: '>=0'
-    category: sys-apps
-  - name: gentoo-functions
-    version: '>=0'
-    category: sys-apps
-  - name: gentoo-systemd-integration
-    version: '>=0'
-    category: sys-apps
-  - name: grep
-    version: '>=0'
-    category: sys-apps
-  - name: groff
-    version: '>=0'
-    category: sys-apps
-  - name: help2man
-    version: '>=0'
-    category: sys-apps
-  - name: hwids
-    version: '>=0'
-    category: sys-apps
-  - name: install-xattr
-    version: '>=0'
-    category: sys-apps
-  - name: iproute2
-    version: '>=0'
-    category: sys-apps
-  - name: kbd
-    version: '>=0'
-    category: sys-apps
-  - name: keyutils
-    version: '>=0'
-    category: sys-apps
-  - name: kmod
-    version: '>=0'
-    category: sys-apps
-  - name: less
-    version: '>=0'
-    category: sys-apps
-  - name: man-db
-    version: '>=0'
-    category: sys-apps
-  - name: man-pages
-    version: '>=0'
-    category: sys-apps
-  - name: man-pages-posix
-    version: '>=0'
-    category: sys-apps
-  - name: net-tools
-    version: '>=0'
-    category: sys-apps
-  - name: pcsc-lite
-    version: '>=0'
-    category: sys-apps
-  - name: portage
-    version: '>=0'
-    category: sys-apps
-  - name: sandbox
-    version: '>=0'
-    category: sys-apps
-  - name: sed
-    version: '>=0'
-    category: sys-apps
-  - name: shadow
-    version: '>=0'
-    category: sys-apps
-  - name: systemd
-    version: '>=0'
-    category: sys-apps
-  - name: tcp-wrappers
-    version: '>=0'
-    category: sys-apps
-  - name: texinfo
-    version: '>=0'
-    category: sys-apps
-  - name: util-linux
-    version: '>=0'
-    category: sys-apps
-  - name: which
-    version: '>=0'
-    category: sys-apps
-  - name: xdg-dbus-proxy
-    version: '>=0'
-    category: sys-apps
-  - name: pambase
-    version: '>=0'
-    category: sys-auth
-  - name: passwdqc
-    version: '>=0'
-    category: sys-auth
-  - name: polkit
-    version: '>=0'
-    category: sys-auth
-  - name: parted
-    version: '>=0'
-    category: sys-block
-  - name: thin-provisioning-tools
-    version: '>=0'
-    category: sys-block
-  - name: autoconf
-    version: '>=0'
-    category: sys-devel
-  - name: autoconf
-    version: '>=0'
-    category: sys-devel
-  - name: autoconf-archive
-    version: '>=0'
-    category: sys-devel
-  - name: autoconf-wrapper
-    version: '>=0'
-    category: sys-devel
-  - name: autogen
-    version: '>=0'
-    category: sys-devel
-  - name: automake
-    version: '>=0'
-    category: sys-devel
-  - name: automake-wrapper
-    version: '>=0'
-    category: sys-devel
-  - name: bc
-    version: '>=0'
-    category: sys-devel
-  - name: binutils
-    version: '>=0'
-    category: sys-devel
-  - name: binutils-config
-    version: '>=0'
-    category: sys-devel
-  - name: bison
-    version: '>=0'
-    category: sys-devel
-  - name: clang
-    version: '>=0'
-    category: sys-devel
-  - name: clang-common
-    version: '>=0'
-    category: sys-devel
-  - name: clang-runtime
-    version: '>=0'
-    category: sys-devel
-  - name: flex
-    version: '>=0'
-    category: sys-devel
-  - name: gcc
-    version: '>=0'
-    category: sys-devel
-  - name: gcc-config
-    version: '>=0'
-    category: sys-devel
-  - name: gettext
-    version: '>=0'
-    category: sys-devel
-  - name: gnuconfig
-    version: '>=0'
-    category: sys-devel
-  - name: libtool
-    version: '>=0'
-    category: sys-devel
-  - name: llvm
-    version: '>=0'
-    category: sys-devel
-  - name: llvm-common
-    version: '>=0'
-    category: sys-devel
-  - name: m4
-    version: '>=0'
-    category: sys-devel
-  - name: make
-    version: '>=0'
-    category: sys-devel
-  - name: patch
-    version: '>=0'
-    category: sys-devel
-  - name: cryptsetup
-    version: '>=0'
-    category: sys-fs
-  - name: e2fsprogs
-    version: '>=0'
-    category: sys-fs
-  - name: fuse
-    version: '>=0'
-    category: sys-fs
-  - name: fuse-common
-    version: '>=0'
-    category: sys-fs
-  - name: lvm2
-    version: '>=0'
-    category: sys-fs
-  - name: udev-init-scripts
-    version: '>=0'
-    category: sys-fs
-  - name: udisks
-    version: '>=0'
-    category: sys-fs
-  - name: installkernel-gentoo
-    version: '>=0'
-    category: sys-kernel
-  - name: linux-headers
-    version: '>=0'
-    category: sys-kernel
-  - name: binutils-libs
-    version: '>=0'
-    category: sys-libs
-  - name: compiler-rt
-    version: '>=0'
-    category: sys-libs
-  - name: compiler-rt-sanitizers
-    version: '>=0'
-    category: sys-libs
-  - name: db
-    version: '>=0'
-    category: sys-libs
-  - name: db
-    version: '>=0'
-    category: sys-libs-5.3
-  - name: e2fsprogs-libs
-    version: '>=0'
-    category: sys-libs
-  - name: gdbm
-    version: '>=0'
-    category: sys-libs
-  - name: glibc
-    version: '>=0'
-    category: sys-libs
-  - name: ldb
-    version: '>=0'
-    category: sys-libs
-  - name: libblockdev
-    version: '>=0'
-    category: sys-libs
-  - name: libcap
-    version: '>=0'
-    category: sys-libs
-  - name: libcap-ng
-    version: '>=0'
-    category: sys-libs
-  - name: libomp
-    version: '>=0'
-    category: sys-libs
-  - name: libseccomp
-    version: '>=0'
-    category: sys-libs
-  - name: ncurses
-    version: '>=0'
-    category: sys-libs
-  - name: pam
-    version: '>=0'
-    category: sys-libs
-  - name: readline
-    version: '>=0'
-    category: sys-libs
-  - name: talloc
-    version: '>=0'
-    category: sys-libs
-  - name: tdb
-    version: '>=0'
-    category: sys-libs
-  - name: tevent
-    version: '>=0'
-    category: sys-libs
-  - name: timezone-data
-    version: '>=0'
-    category: sys-libs
-  - name: zlib
-    version: '>=0'
-    category: sys-libs
-  - name: procps
-    version: '>=0'
-    category: sys-process
-  - name: psmisc
-    version: '>=0'
-    category: sys-process
-  - name: acl
-    version: '>=0'
-    category: virtual
-  - name: dev-manager
-    version: '>=0'
-    category: virtual
-  - name: editor
-    version: '>=0'
-    category: virtual
-  - name: eject
-    version: '>=0'
-    category: virtual
-  - name: jpeg
-    version: '>=0'
-    category: virtual
-  - name: krb5
-    version: '>=0'
-    category: virtual
-  - name: latex-base
-    version: '>=0'
-    category: virtual
-  - name: libc
-    version: '>=0'
-    category: virtual
-  - name: libcrypt
-    version: '>=0'
-    category: virtual
-  - name: libelf
-    version: '>=0'
-    category: virtual
-  - name: libffi
-    version: '>=0'
-    category: virtual
-  - name: libiconv
-    version: '>=0'
-    category: virtual
-  - name: libintl
-    version: '>=0'
-    category: virtual
-  - name: libudev
-    version: '>=0'
-    category: virtual
-  - name: libusb
-    version: '>=0'
-    category: virtual
-  - name: man
-    version: '>=0'
-    category: virtual
-  - name: notification-daemon
-    version: '>=0'
-    category: virtual
-  - name: opencl
-    version: '>=0'
-    category: virtual
-  - name: opengl
-    version: '>=0'
-    category: virtual
-  - name: os-headers
-    version: '>=0'
-    category: virtual
-  - name: package-manager
-    version: '>=0'
-    category: virtual
-  - name: pager
-    version: '>=0'
-    category: virtual
-  - name: perl-Carp
-    version: '>=0'
-    category: virtual
-  - name: perl-CPAN-Meta
-    version: '>=0'
-    category: virtual
-  - name: perl-CPAN-Meta-YAML
-    version: '>=0'
-    category: virtual
-  - name: perl-Data-Dumper
-    version: '>=0'
-    category: virtual
-  - name: perl-Digest-MD5
-    version: '>=0'
-    category: virtual
-  - name: perl-Digest-SHA
-    version: '>=0'
-    category: virtual
-  - name: perl-Encode
-    version: '>=0'
-    category: virtual
-  - name: perl-Exporter
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-CBuilder
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-Install
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-MakeMaker
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-Manifest
-    version: '>=0'
-    category: virtual
-  - name: perl-ExtUtils-ParseXS
-    version: '>=0'
-    category: virtual
-  - name: perl-File-Path
-    version: '>=0'
-    category: virtual
-  - name: perl-File-Spec
-    version: '>=0'
-    category: virtual
-  - name: perl-File-Temp
-    version: '>=0'
-    category: virtual
-  - name: perl-Getopt-Long
-    version: '>=0'
-    category: virtual
-  - name: perl-IO
-    version: '>=0'
-    category: virtual
-  - name: perl-JSON-PP
-    version: '>=0'
-    category: virtual
-  - name: perl-libnet
-    version: '>=0'
-    category: virtual
-  - name: perl-Module-Metadata
-    version: '>=0'
-    category: virtual
-  - name: perl-parent
-    version: '>=0'
-    category: virtual
-  - name: perl-Parse-CPAN-Meta
-    version: '>=0'
-    category: virtual
-  - name: perl-Perl-OSType
-    version: '>=0'
-    category: virtual
-  - name: perl-podlators
-    version: '>=0'
-    category: virtual
-  - name: perl-Scalar-List-Utils
-    version: '>=0'
-    category: virtual
-  - name: perl-Storable
-    version: '>=0'
-    category: virtual
-  - name: perl-Sys-Syslog
-    version: '>=0'
-    category: virtual
-  - name: perl-Test-Harness
-    version: '>=0'
-    category: virtual
-  - name: perl-Test-Simple
-    version: '>=0'
-    category: virtual
-  - name: perl-Text-ParseWords
-    version: '>=0'
-    category: virtual
-  - name: perl-version
-    version: '>=0'
-    category: virtual
-  - name: perl-XSLoader
-    version: '>=0'
-    category: virtual
-  - name: pkgconfig
-    version: '>=0'
-    category: virtual
-  - name: ruby-ssl
-    version: '>=0'
-    category: virtual
-  - name: rubygems
-    version: '>=0'
-    category: virtual
-  - name: rust
-    version: '>=0'
-    category: virtual
-  - name: service-manager
-    version: '>=0'
-    category: virtual
-  - name: ssh
-    version: '>=0'
-    category: virtual
-  - name: texi2dvi
-    version: '>=0'
-    category: virtual
-  - name: tmpfiles
-    version: '>=0'
-    category: virtual
-  - name: ttf-fonts
-    version: '>=0'
-    category: virtual
-  - name: udev
-    version: '>=0'
-    category: virtual
-  - name: w3m
-    version: '>=0'
-    category: virtual
-  - name: yacc
-    version: '>=0'
-    category: virtual
-  - name: w3m
-    version: '>=0'
-    category: www-client
-  - name: xcb-proto
-    version: '>=0'
-    category: x11-base
-  - name: xorg-proto
-    version: '>=0'
-    category: x11-base
-  - name: cairo
-    version: '>=0'
-    category: x11-libs
-  - name: gdk-pixbuf
-    version: '>=0'
-    category: x11-libs
-  - name: gtk+
-    version: '>=0'
-    category: x11-libs
-  - name: gtk+
-    version: '>=0'
-    category: x11-libs
-  - name: libdrm
-    version: '>=0'
-    category: x11-libs
-  - name: libICE
-    version: '>=0'
-    category: x11-libs
-  - name: libnotify
-    version: '>=0'
-    category: x11-libs
-  - name: libpciaccess
-    version: '>=0'
-    category: x11-libs
-  - name: libSM
-    version: '>=0'
-    category: x11-libs
-  - name: libva
-    version: '>=0'
-    category: x11-libs
-  - name: libva-intel-driver
-    version: '>=0'
-    category: x11-libs
-  - name: libva-vdpau-driver
-    version: '>=0'
-    category: x11-libs
-  - name: libvdpau
-    version: '>=0'
-    category: x11-libs
-  - name: libX11
-    version: '>=0'
-    category: x11-libs
-  - name: libXau
-    version: '>=0'
-    category: x11-libs
-  - name: libxcb
-    version: '>=0'
-    category: x11-libs
-  - name: libXcomposite
-    version: '>=0'
-    category: x11-libs
-  - name: libXcursor
-    version: '>=0'
-    category: x11-libs
-  - name: libXdamage
-    version: '>=0'
-    category: x11-libs
-  - name: libXdmcp
-    version: '>=0'
-    category: x11-libs
-  - name: libXext
-    version: '>=0'
-    category: x11-libs
-  - name: libXfixes
-    version: '>=0'
-    category: x11-libs
-  - name: libXft
-    version: '>=0'
-    category: x11-libs
-  - name: libXi
-    version: '>=0'
-    category: x11-libs
-  - name: libXrandr
-    version: '>=0'
-    category: x11-libs
-  - name: libXrender
-    version: '>=0'
-    category: x11-libs
-  - name: libxshmfence
-    version: '>=0'
-    category: x11-libs
-  - name: libXt
-    version: '>=0'
-    category: x11-libs
-  - name: libXv
-    version: '>=0'
-    category: x11-libs
-  - name: libXxf86vm
-    version: '>=0'
-    category: x11-libs
-  - name: pango
-    version: '>=0'
-    category: x11-libs
-  - name: pixman
-    version: '>=0'
-    category: x11-libs
-  - name: xtrans
-    version: '>=0'
-    category: x11-libs
-  - name: notification-daemon
-    version: '>=0'
-    category: x11-misc
-  - name: shared-mime-info
-    version: '>=0'
-    category: x11-misc
-  - name: xdg-user-dirs
-    version: '>=0'
-    category: x11-misc
-  - name: adwaita-icon-theme
-    version: '>=0'
-    category: x11-themes
-  - name: gnome-themes-standard
-    version: '>=0'
-    category: x11-themes
-  - name: gtk-engines-adwaita
-    version: '>=0'
-    category: x11-themes
-  - name: hicolor-icon-theme
-    version: '>=0'
-    category: x11-themes
+emerge:
+  jobs: "3"
+  packages:
+  - acct-group/adm:0
+  - acct-group/audio:0
+  - acct-group/cdrom:0
+  - acct-group/dialout:0
+  - acct-group/disk:0
+  - acct-group/input:0
+  - acct-group/kmem:0
+  - acct-group/kvm:0
+  - acct-group/man:0
+  - acct-group/messagebus:0
+  - acct-group/polkitd:0
+  - acct-group/render:0
+  - acct-group/sshd:0
+  - acct-group/systemd-coredump:0
+  - acct-group/systemd-journal:0
+  - acct-group/systemd-journal-remote:0
+  - acct-group/systemd-network:0
+  - acct-group/systemd-resolve:0
+  - acct-group/systemd-timesync:0
+  - acct-group/tape:0
+  - acct-group/tty:0
+  - acct-group/unbound:0
+  - acct-group/utmp:0
+  - acct-group/video:0
+  - acct-group/wheel:0
+  - acct-user/man:0
+  - acct-user/messagebus:0
+  - acct-user/polkitd:0
+  - acct-user/sshd:0
+  - acct-user/systemd-coredump:0
+  - acct-user/systemd-journal-remote:0
+  - acct-user/systemd-network:0
+  - acct-user/systemd-resolve:0
+  - acct-user/systemd-timesync:0
+  - acct-user/unbound:0
+  - app-accessibility/at-spi2-atk:2
+  - app-accessibility/at-spi2-core:2
+  - app-admin/eselect:0
+  - app-admin/perl-cleaner:0
+  - app-arch/bzip2:0
+  - app-arch/gzip:0
+  - app-arch/libarchive:0
+  - app-arch/lz4:0
+  - app-arch/tar:0
+  - app-arch/unzip:0
+  - app-arch/xz-utils:0
+  - app-arch/zstd:0
+  - app-crypt/argon2:0
+  - app-crypt/gcr:0
+  - app-crypt/gnupg:0
+  - app-crypt/gpgme:1
+  - app-crypt/libb2:0
+  - app-crypt/libsecret:0
+  - app-crypt/openpgp-keys-gentoo-release:0
+  - app-crypt/p11-kit:0
+  - app-crypt/pinentry:0
+  - app-crypt/rhash:0
+  - app-editors/nano:0
+  - app-eselect/eselect-fontconfig:0
+  - app-eselect/eselect-infinality:0
+  - app-eselect/eselect-iptables:0
+  - app-eselect/eselect-lcdfilter:0
+  - app-eselect/eselect-lib-bin-symlink:0
+  - app-eselect/eselect-pinentry:0
+  - app-eselect/eselect-python:0
+  - app-eselect/eselect-ruby:0
+  - app-eselect/eselect-rust:0
+  - app-misc/c_rehash:0
+  - app-misc/ca-certificates:0
+  - app-misc/editor-wrapper:0
+  - app-misc/mime-types:0
+  - app-misc/pax-utils:0
+  - app-portage/eix
+  - app-portage/elt-patches:0
+  - app-portage/gemato:0
+  - app-portage/portage-utils:0
+  - app-shells/bash:0
+  - app-shells/push
+  - app-shells/quoter
+  - app-text/asciidoc:0
+  - app-text/build-docbook-catalog:0
+  - app-text/docbook-xml-dtd:4.5
+  - app-text/docbook-xml-dtd:4.4
+  - app-text/docbook-xml-dtd:4.3
+  - app-text/docbook-xml-dtd:4.2
+  - app-text/docbook-xml-dtd:4.1.2
+  - app-text/docbook-xsl-stylesheets:0
+  - app-text/manpager:0
+  - app-text/opensp:0
+  - app-text/po4a:0
+  - app-text/sgml-common:0
+  - app-text/xmlto:0
+  - dev-db/sqlite:3
+  - dev-lang/nasm:0
+  - dev-lang/perl:0
+  - dev-lang/python:3.7
+  - dev-lang/python-exec:2
+  - dev-lang/ruby:2.6
+  - dev-lang/rust:stable
+  - dev-lang/spidermonkey:78
+  - dev-lang/tcl:0
+  - dev-lang/vala:0.48
+  - dev-libs/atk:0
+  - dev-libs/boehm-gc:0
+  - dev-libs/boost:0
+  - dev-libs/elfutils:0
+  - dev-libs/expat:0
+  - dev-libs/fribidi:0
+  - dev-libs/glib:2
+  - dev-libs/gmp:0
+  - dev-libs/gobject-introspection:0
+  - dev-libs/gobject-introspection-common:0
+  - dev-libs/icu:0
+  - dev-libs/isl:0
+  - dev-libs/json-c:0
+  - dev-libs/jsoncpp:0
+  - dev-libs/libaio:0
+  - dev-libs/libassuan:0
+  - dev-libs/libatomic_ops:0
+  - dev-libs/libbsd:0
+  - dev-libs/libclangformat-ide:9
+  - dev-libs/libclc:0
+  - dev-libs/libedit:0
+  - dev-libs/libevent:0
+  - dev-libs/libffi:0
+  - dev-libs/libgcrypt:0
+  - dev-libs/libgit2:0
+  - dev-libs/libgpg-error:0
+  - dev-libs/libksba:0
+  - dev-libs/libltdl:0
+  - dev-libs/libpcre:3
+  - dev-libs/libpcre2:0
+  - dev-libs/libpipeline:0
+  - dev-libs/libtasn1:0
+  - dev-libs/libunistring:0
+  - dev-libs/libuv:0
+  - dev-libs/libxml2:2
+  - dev-libs/libxslt:0
+  - dev-libs/libyaml:0
+  - dev-libs/lzo:2
+  - dev-libs/mpc:0
+  - dev-libs/mpfr:0
+  - dev-libs/nettle:0
+  - dev-libs/npth:0
+  - dev-libs/nspr:0
+  - dev-libs/ocl-icd:0
+  - dev-libs/openssl:0
+  - dev-libs/popt:0
+  - dev-libs/vala-common:0
+  - dev-libs/wayland:0
+  - dev-libs/wayland-protocols:0
+  - dev-perl/Authen-SASL:0
+  - dev-perl/Digest-HMAC:0
+  - dev-perl/Error:0
+  - dev-perl/Locale-gettext:0
+  - dev-perl/MailTools:0
+  - dev-perl/MIME-Charset:0
+  - dev-perl/Module-Build:0
+  - dev-perl/SGMLSpm:0
+  - dev-perl/TermReadKey:0
+  - dev-perl/Text-CharWidth:0
+  - dev-perl/Text-WrapI18N:0
+  - dev-perl/TimeDate:0
+  - dev-perl/Unicode-LineBreak:0
+  - dev-perl/XML-Parser:0
+  - dev-perl/XML-XPath:0
+  - dev-perl/YAML-Tiny:0
+  - dev-python/certifi:0
+  - dev-python/cffi:0
+  - dev-python/chardet:0
+  - dev-python/cryptography:0
+  - dev-python/cython:0
+  - dev-python/idna:0
+  - dev-python/jinja:0
+  - dev-python/lxml:0
+  - dev-python/mako:0
+  - dev-python/markupsafe:0
+  - dev-python/ply:0
+  - dev-python/pycparser:0
+  - dev-python/pyopenssl:0
+  - dev-python/PySocks:0
+  - dev-python/requests:0
+  - dev-python/setuptools:0
+  - dev-python/setuptools_scm:0
+  - dev-python/six:0
+  - dev-python/urllib3:0
+  - dev-ruby/bundler:2
+  - dev-ruby/did_you_mean:2.6
+  - dev-ruby/json:2
+  - dev-ruby/kpeg:1
+  - dev-ruby/minitest:5
+  - dev-ruby/net-telnet:1
+  - dev-ruby/power_assert:0
+  - dev-ruby/racc:0
+  - dev-ruby/rake:0
+  - dev-ruby/rdoc:0
+  - dev-ruby/rubygems:0
+  - dev-ruby/test-unit:2
+  - dev-ruby/xmlrpc:0
+  - dev-scheme/guile:12
+  - dev-util/boost-build:0
+  - dev-util/cmake:0
+  - dev-util/colm:0
+  - dev-util/desktop-file-utils:0
+  - dev-util/gdbus-codegen:0
+  - dev-util/glib-utils:0
+  - dev-util/gperf:0
+  - dev-util/gtk-doc-am:0
+  - dev-util/gtk-update-icon-cache:0
+  - dev-util/intltool:0
+  - dev-util/itstool:0
+  - dev-util/meson:0
+  - dev-util/ninja:0
+  - dev-util/opencl-headers:0
+  - dev-util/pkgconf:0
+  - dev-util/ragel:0
+  - dev-util/re2c:0
+  - dev-vcs/git:0
+  - gnome-base/dconf:0
+  - gnome-base/gnome-keyring:0
+  - gnome-base/gsettings-desktop-schemas:0
+  - gnome-base/librsvg:2
+  - media-fonts/croscorefonts:0
+  - media-gfx/graphite2:0
+  - media-libs/fontconfig:1.0
+  - media-libs/fontconfig-infinality:0
+  - media-libs/freetype:2
+  - media-libs/giflib:0
+  - media-libs/harfbuzz:0
+  - media-libs/imlib2:0
+  - media-libs/libepoxy:0
+  - media-libs/libglvnd:0
+  - media-libs/libjpeg-turbo:0
+  - media-libs/libpng:0
+  - media-libs/libwebp:0
+  - media-libs/mesa:0
+  - media-libs/tiff:0
+  - net-dns/dnssec-root:0
+  - net-dns/libidn2:0
+  - net-dns/unbound:0
+  - net-firewall/iptables:0
+  - net-libs/gnutls:0
+  - net-libs/http-parser:0
+  - net-libs/libmnl:0
+  - net-libs/libnsl:0
+  - net-libs/libssh2:0
+  - net-libs/libtirpc:0
+  - net-libs/nghttp2:0
+  - net-misc/curl:0
+  - net-misc/iputils:0
+  - net-misc/openssh:0
+  - net-misc/rsync:0
+  - net-misc/wget:0
+  - perl-core/File-Temp:0
+  - sys-apps/acl:0
+  - sys-apps/attr:0
+  - sys-apps/baselayout:0
+  - sys-apps/busybox:0
+  - sys-apps/coreutils:0
+  - sys-apps/dbus:0
+  - sys-apps/debianutils:0
+  - sys-apps/diffutils:0
+  - sys-apps/file:0
+  - sys-apps/findutils:0
+  - sys-apps/gawk:0
+  - sys-apps/gentoo-functions:0
+  - sys-apps/gentoo-systemd-integration:0
+  - sys-apps/grep:0
+  - sys-apps/groff:0
+  - sys-apps/help2man:0
+  - sys-apps/hwids:0
+  - sys-apps/install-xattr:0
+  - sys-apps/iproute2:0
+  - sys-apps/kbd:0
+  - sys-apps/kmod:0
+  - sys-apps/less:0
+  - sys-apps/man-db:0
+  - sys-apps/man-pages:0
+  - sys-apps/man-pages-posix:0
+  - sys-apps/net-tools:0
+  - sys-apps/portage:0
+  - sys-apps/sandbox:0
+  - sys-apps/sed:0
+  - sys-apps/shadow:0
+  - sys-apps/systemd:0
+  - sys-apps/texinfo:0
+  - sys-apps/util-linux:0
+  - sys-apps/which:0
+  - sys-auth/pambase:0
+  - sys-auth/passwdqc:0
+  - sys-auth/polkit:0
+  - sys-block/thin-provisioning-tools:0
+  - sys-devel/autoconf:2.69
+  - sys-devel/autoconf:2.1
+  - sys-devel/autoconf-archive:0
+  - sys-devel/autoconf-wrapper:0
+  - sys-devel/autogen:0
+  - sys-devel/automake:1.16
+  - sys-devel/automake-wrapper:0
+  - sys-devel/binutils:2.34
+  - sys-devel/binutils-config:0
+  - sys-devel/bison:0
+  - sys-devel/clang:10
+  - sys-devel/clang:9
+  - sys-devel/clang-common:0
+  - sys-devel/clang-runtime:10.0.1
+  - sys-devel/clang-runtime:9.0.1
+  - sys-devel/flex:0
+  - sys-devel/gcc:9.3.0
+  - sys-devel/gcc-config:0
+  - sys-devel/gettext:0
+  - sys-devel/gnuconfig:0
+  - sys-devel/libtool:2
+  - sys-devel/llvm:10
+  - sys-devel/llvm:9
+  - sys-devel/llvm-common:0
+  - sys-devel/m4:0
+  - sys-devel/make:0
+  - sys-devel/patch:0
+  - sys-fs/cryptsetup:0
+  - sys-fs/e2fsprogs:0
+  - sys-fs/lvm2:0
+  - sys-fs/udev-init-scripts:0
+  - sys-kernel/installkernel-gentoo:0
+  - sys-kernel/linux-headers:0
+  - sys-libs/binutils-libs:0
+  - sys-libs/compiler-rt:10.0.1
+  - sys-libs/compiler-rt:9.0.1
+  - sys-libs/compiler-rt-sanitizers:10.0.1
+  - sys-libs/compiler-rt-sanitizers:9.0.1
+  - sys-libs/db:5.3
+  - sys-libs/e2fsprogs-libs:0
+  - sys-libs/gdbm:0
+  - sys-libs/glibc:2.2
+  - sys-libs/libcap:0
+  - sys-libs/libcap-ng:0
+  - sys-libs/libomp:0
+  - sys-libs/libseccomp:0
+  - sys-libs/ncurses:0
+  - sys-libs/pam:0
+  - sys-libs/readline:0
+  - sys-libs/timezone-data:0
+  - sys-libs/zlib:0
+  - sys-process/procps:0
+  - sys-process/psmisc:0
+  - virtual/acl:0
+  - virtual/awk:0
+  - virtual/dev-manager:0
+  - virtual/editor:0
+  - virtual/jpeg:0
+  - virtual/libc:0
+  - virtual/libcrypt:0
+  - virtual/libelf:0
+  - virtual/libiconv:0
+  - virtual/libintl:0
+  - virtual/libudev:0
+  - virtual/man:0
+  - virtual/opencl:0
+  - virtual/os-headers:0
+  - virtual/package-manager:0
+  - virtual/pager:0
+  - virtual/perl-Carp:0
+  - virtual/perl-CPAN-Meta:0
+  - virtual/perl-CPAN-Meta-YAML:0
+  - virtual/perl-Data-Dumper:0
+  - virtual/perl-Digest-MD5:0
+  - virtual/perl-Digest-SHA:0
+  - virtual/perl-Encode:0
+  - virtual/perl-Exporter:0
+  - virtual/perl-ExtUtils-CBuilder:0
+  - virtual/perl-ExtUtils-Install:0
+  - virtual/perl-ExtUtils-MakeMaker:0
+  - virtual/perl-ExtUtils-Manifest:0
+  - virtual/perl-ExtUtils-ParseXS:0
+  - virtual/perl-File-Spec:0
+  - virtual/perl-File-Temp:0
+  - virtual/perl-Getopt-Long:0
+  - virtual/perl-IO:0
+  - virtual/perl-JSON-PP:0
+  - virtual/perl-libnet:0
+  - virtual/perl-Module-Metadata:0
+  - virtual/perl-Parse-CPAN-Meta:0
+  - virtual/perl-Perl-OSType:0
+  - virtual/perl-podlators:0
+  - virtual/perl-Scalar-List-Utils:0
+  - virtual/perl-Test-Harness:0
+  - virtual/perl-Text-ParseWords:0
+  - virtual/perl-version:0
+  - virtual/pkgconfig:0
+  - virtual/ruby-ssl:0
+  - virtual/rubygems:0
+  - virtual/rust:0
+  - virtual/service-manager:0
+  - virtual/ssh:0
+  - virtual/tmpfiles:0
+  - virtual/ttf-fonts:0
+  - virtual/udev:0
+  - virtual/w3m:0
+  - virtual/yacc:0
+  - www-client/w3m:0
+  - x11-base/xcb-proto:0
+  - x11-base/xorg-proto:0
+  - x11-libs/cairo:0
+  - x11-libs/gdk-pixbuf:2
+  - x11-libs/gtk+:3
+  - x11-libs/gtk+:2
+  - x11-libs/libdrm:0
+  - x11-libs/libICE:0
+  - x11-libs/libpciaccess:0
+  - x11-libs/libSM:0
+  - x11-libs/libva:0
+  - x11-libs/libva-intel-driver:0
+  - x11-libs/libva-vdpau-driver:0
+  - x11-libs/libvdpau:0
+  - x11-libs/libX11:0
+  - x11-libs/libXau:0
+  - x11-libs/libxcb:0
+  - x11-libs/libXcomposite:0
+  - x11-libs/libXcursor:0
+  - x11-libs/libXdamage:0
+  - x11-libs/libXdmcp:0
+  - x11-libs/libXext:0
+  - x11-libs/libXfixes:0
+  - x11-libs/libXft:0
+  - x11-libs/libXi:0
+  - x11-libs/libXrandr:0
+  - x11-libs/libXrender:0
+  - x11-libs/libxshmfence:0
+  - x11-libs/libXt:0
+  - x11-libs/libXxf86vm:0
+  - x11-libs/pango:0
+  - x11-libs/pixman:0
+  - x11-libs/xtrans:0
+  - x11-misc/shared-mime-info:0
+  - x11-themes/adwaita-icon-theme:0
+  - x11-themes/gnome-themes-standard:0
+  - x11-themes/gtk-engines-adwaita:0
+  - x11-themes/hicolor-icon-theme:0
