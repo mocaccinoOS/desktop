@@ -1,3 +1,4 @@
 name: "gcc-base"
 category: "system"
-version: "9.3.0+1"
+version: "9.3.0+2"
+gcc_version: "9.3.0"
