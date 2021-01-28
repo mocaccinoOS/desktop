@@ -146,7 +146,7 @@ To build a package, just edit/add the relevant specs and run `PACKAGES=".." make
 
 ### How can I debug the build environment?
 
-Luet generates docker images for each package, you can start a shell by either retrieving manually the docker image of the package with `luet tree images`  and manually run `docker run..` on it or you can use the luet extension which does that already for you. You need to have installed `luet-devkit` package, and you can use it as follows:
+Luet generates docker images for each package, you can start a shell by either retrieving manually the docker image of the package with `luet tree images`  and manually run `docker run..` on it or you can use the luet extension which does that already for you. You need to have installed `system/luet-devkit` package, and you can use it as follows:
 
 ```bash
 DOCKER_HOST="..." LUET_ARGS="--image-repository quay.io/mocaccinocache/desktop" luet remote-exec packagename
