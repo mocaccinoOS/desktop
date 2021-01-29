@@ -2,7 +2,6 @@ media-libs/libglvnd X
 
 # MATE
 
-mate-base/mate-panel X
 media-libs/libcanberra alsa
 dev-cpp/gtkmm X
 >=sys-apps/systemd-246-r2 policykit
@@ -510,14 +509,6 @@ mail-mta/exim exiscan-acl maildir
 mail-mta/netqmail qmail-spp
 # More postfix features
 mail-mta/postfix mbox sasl
-
-mate-base/mate -notification
-mate-extra/mate-sensors-applet gtk3
-# We want the MATE NetworkManager applet
-mate-base/mate-applets networkmanager
-mate-base/caja mate
-
-mate-extra/caja-extensions -cdr
 
 media-fonts/baekmuk-fonts -X
 media-fonts/noto -cjk
@@ -1278,19 +1269,6 @@ app-emulation/runc apparmor
 
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
-
-# MATE is slowly migrating to gtk3, those are needed for 1.16
->=mate-base/mate-control-center-1.16.0 gtk3
->=x11-wm/marco-1.16.0 gtk3
->=mate-base/libmatekbd-1.16.0 gtk3
->=mate-base/mate-settings-daemon-1.16.0 gtk3
->=mate-base/mate-desktop-1.16.1 gtk3
->=mate-base/caja-1.16.1 gtk3
->=mate-extra/caja-extensions-1.16.0 gtk3
->=mate-base/mate-1.16 gtk3
->=media-gfx/eom-1.16.0 -python gtk3
->=app-editors/pluma-1.16.0 -python gtk3
-dev-libs/libmateweather -python gtk3
 
 # Enable opencl and evm, make it possible to mine ETH.
 net-p2p/go-ethereum evm opencl

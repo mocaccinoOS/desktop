@@ -1,0 +1,12 @@
+app-editors/pluma spell
+mate-base/mate -notification
+mate-base/mate-applets ipv6 policykit X
+mate-base/mate-control-center -accountsservice -appindicator -debug
+mate-base/mate-settings-daemon libnotify policykit pulseaudio sound X -debug -rfkill -smartcard
+mate-base/mate-desktop startup-notification X -debug
+mate-base/libmatekbd X -test
+mate-base/mate-panel wayland X
+mate-extra/caja-extensions xattr -cdr
+mate-extra/mate-sensors-applet libnotify
+media-gfx/eom exif jpeg lcms svg tiff X
+x11-wm/marco startup-notification xinerama -test
