@@ -71,7 +71,6 @@ media-sound/pulseaudio bluetooth dbus
 >=app-text/xmlto-0.0.28-r3 text
 >=sys-apps/dbus-1.12.18 X
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
->=x11-libs/libxkbcommon-0.10.0-r1 X
 >=app-accessibility/brltty-6.1 python
 >=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
@@ -555,7 +554,6 @@ media-libs/cogl gles2
 media-libs/coin doc
 media-libs/devil mng
 media-libs/freetype -X -auto-hinter adobe-cff harfbuzz
-media-libs/gd fontconfig png jpeg
 media-libs/gegl raw jpeg2k umfpack
 media-libs/gexiv2 introspection
 # it's either Wayland or X, see Gentoo bug 616968
@@ -991,11 +989,6 @@ www-servers/nginx nginx_modules_http_stub_status nginx_modules_http_geoip
 
 x11-apps/mesa-progs egl gles2
 x11-apps/igt-gpu-tools video_cards_intel
-
-# X.Org stuff
-x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
-x11-base/xorg-x11 intel
-x11-drivers/xf86-video-intel dri3 sna uxa
 
 x11-drivers/nvidia-drivers distribution libglvnd uvm tools
 x11-drivers/nvidia-drivers -gtk
