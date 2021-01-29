@@ -20,6 +20,7 @@ jobs:
       DOCKER_PASS: ${{ secrets.QUAY_PASSWORD }}
     steps:
     - uses: actions/checkout@v2
+    - uses: fkirc/skip-duplicate-actions@master
     - run: |
         git fetch --prune --unshallow
     - name: Installing dependencies
