@@ -154,6 +154,11 @@ DOCKER_HOST="..." LUET_ARGS="--image-repository quay.io/mocaccinocache/desktop" 
 
 Note: It's not required `DOCKER_HOST` unless you want to leverage a remote host.
 
+Once you are hooked into the container there are some limited tools at your disposal that might help you. For instance if you want to list all the atoms that are installed you can do:
+
+```bash
+qlist -IRv
+```
 
 ## How do I add a package?
 
