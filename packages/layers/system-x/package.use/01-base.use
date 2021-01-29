@@ -7,7 +7,6 @@ media-libs/libcanberra alsa
 dev-cpp/gtkmm X
 >=sys-apps/systemd-246-r2 policykit
 >=app-text/poppler-0.90.1 cairo
-net-fs/samba ldap
 x11-libs/cairo X aqua
 dev-cpp/cairomm X aqua
 x11-libs/pango X
@@ -741,9 +740,6 @@ net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
 net-fs/cifs-utils ads upcall
 
-# 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
-net-fs/samba -abi_x86_32 ads acl aio client oav swat winbind -cluster -ceph
-
 # requires net-dns/avahi[-mdnsresponder-compat]
 net-fs/netatalk -avahi
 
@@ -965,8 +961,6 @@ sys-fs/ntfs3g suid ntfsprogs
 sys-fs/reiser4progs static static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/udev extras
-# udisks, we want cryptsetup support
-sys-fs/udisks cryptsetup crypt
 # We use a builtin kernel module
 sys-fs/zfs kernel-builtin
 
