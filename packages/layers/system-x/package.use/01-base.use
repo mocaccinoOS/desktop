@@ -14,10 +14,8 @@ x11-libs/pango X
 ## KDE
 
 kde-plasma/kde-cli-tools X
-dev-qt/qtgui dbus jpeg
 >=kde-frameworks/kwindowsystem-5.74.0 X
 >=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
->=dev-qt/qtprintsupport-5.15.1 cups
 >=media-libs/mesa-20.1.10 abi_x86_32 wayland
 >=dev-libs/expat-2.2.8 abi_x86_32
 >=media-libs/libglvnd-1.3.2-r2 abi_x86_32
@@ -376,29 +374,6 @@ dev-python/pyglet -alsa
 
 dev-python/sphinx latex
 dev-python/twisted conch
-
-dev-qt/linguist-tools qml
-dev-qt/qt-creator autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
-dev-qt/qt3d qml
-dev-qt/qtbluetooth qml
-dev-qt/qtcharts qml
-dev-qt/qtcore:5 icu
-dev-qt/qtcharts qml
-dev-qt/qtdeclarative webkit private-headers
-dev-qt/qthelp compat
-dev-qt/qtwebkit kde icu printsupport
-dev-qt/qtgui mng private-headers raster gtkstyle
-dev-qt/qtgui:5 egl ibus mng private-headers raster -gtkstyle
-dev-qt/qtmultimedia:5 gstreamer qml widgets
-dev-qt/qtquickcontrols:5 widgets
-dev-qt/qtquickcontrols2:5 widgets
-dev-qt/qtscript private-headers
-dev-qt/qtscript:5 private-headers scripttools
-dev-qt/qtsensors qml
-# added for mythtv
-dev-qt/qtsql mysql
-dev-qt/qtwayland egl
-dev-qt/qtxmlpatterns qml
 
 dev-ruby/mysql2 mariadb
 
@@ -1300,10 +1275,6 @@ www-client/w3m fbcon imlib
 
 # needed for lxd
 app-emulation/lxc cgmanager
-
-# needed for calamares
-dev-qt/qtwebengine -system-ffmpeg widgets geolocation
-dev-qt/qtwebchannel qml
 
 # -nsplugin: conflicts with dev-java/icedtea-web[nsplugin]
 dev-java/oracle-jre-bin -nsplugin
