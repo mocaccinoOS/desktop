@@ -13,6 +13,7 @@ env:
 - LUET_YES=true
 - LUET_NOLOCK=true
 prelude:
+- cp -rf package.use /etc/portage/
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - emerge -j ${JOBS} sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
 - luet install repository/mocaccino-kernel-stable
