@@ -1,0 +1,30 @@
+name: Prune packages
+on:
+  schedule:
+    - cron:  '* 20 * * *'
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    env:
+      ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
+      MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+      MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+      MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      IMAGE_REPOSITORY: quay.io/mocaccinocache/desktop
+      BUCKET: mocaccino-desktop
+      TREE_DIR: packages
+      DOCKER_REGISTRY: quay.io
+      DOCKER_USER: ${{ secrets.QUAY_USERNAME }}
+      DOCKER_PASS: ${{ secrets.QUAY_PASSWORD }}
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        git fetch --prune --unshallow
+    - name: Installing dependencies
+      run: |
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+        sudo luet install -y repository/mocaccino-extra-stable
+        sudo luet install -y system/luet-extensions system/luet-devkit utils/jq net-fs/minio-client container/kubectl
+    - name: Prune repository 🔧
+      run: |
+        BUILD_PHASE=false CREATE_REPO=false PRUNE_PHASE=true ./.github/luet-k8s-build-scheduler
