@@ -4,7 +4,6 @@ media-libs/libglvnd X
 
 media-libs/libcanberra alsa
 dev-cpp/gtkmm X
->=sys-apps/systemd-246-r2 policykit
 >=app-text/poppler-0.90.1 cairo
 dev-cpp/cairomm X aqua
 x11-libs/pango X abi_x86_32
@@ -896,8 +895,7 @@ sys-apps/dbus X systemd user-session abi_x86_32
 sys-apps/iproute2 caps
 sys-apps/keyutils split-usr abi_x86_32
 sys-apps/pciutils -zlib
-# systemd support
-sys-apps/systemd -gtk dracut plymouth sysv-utils cryptsetup lzma xattr -openrc keymap
+sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils abi_x86_32
 # Install tty helpers (like wall)
 sys-apps/util-linux tty-helpers
 sys-apps/xdg-desktop-portal screencast
