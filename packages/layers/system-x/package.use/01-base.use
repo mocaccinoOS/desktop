@@ -122,6 +122,7 @@ app-crypt/gcr vala gtk
 # images but it turned out to be buggy,
 # see bug 2781
 app-crypt/gnupg -static bzip2 smartcard
+app-crypt/heimdal abi_x86_32
 # required by app-backup/deja-dup
 app-crypt/libsecret crypt introspection vala abi_x86_32
 app-crypt/mit-krb5 keyutils nls openldap pkinit threads abi_x86_32
@@ -246,10 +247,7 @@ dev-db/freetds mssql odbc
 dev-db/mongodb v8 embedded-v8
 dev-db/postgis address-standardizer topology
 dev-db/postgresql server threads
-# soundex required by Entropy
-# secure-delete required by xulrunner
-# unlock-notify required by dev-db/libzdb
-dev-db/sqlite soundex extensions unlock-notify
+dev-db/sqlite icu readline abi_x86_32
 # We don't have Oracle
 dev-db/tora -oracle
 
