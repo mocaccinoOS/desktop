@@ -312,6 +312,7 @@ dev-libs/gdl gnome
 # 2010-04-6, trying to disable USE="mono" from gmime
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmime smime -mono
+dev-libs/icu abi_x86_32
 dev-libs/gmp static-libs
 dev-libs/libjcat gpg pkcs7
 dev-libs/libassuan static-libs
@@ -326,8 +327,8 @@ dev-libs/libgusb vala
 dev-libs/libgweather vala
 dev-libs/libical vala
 dev-libs/libksba static-libs
-dev-libs/libpcre pcre16 static-libs
-dev-libs/libpcre2 pcre16 pcre32
+dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib abi_x86_32
+dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib abi_x86_32
 dev-libs/libxml2 icu
 dev-libs/nss utils
 
@@ -525,6 +526,7 @@ media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
 media-gfx/gphoto2 aalib
 media-gfx/graphicsmagick q16 -lcms
+media-gfx/graphite2 perl abi_x86_32
 media-gfx/gthumb -cdr slideshow
 media-gfx/imagemagick fftw gs perl q32
 media-gfx/kphotoalbum kipi
@@ -561,7 +563,7 @@ media-libs/gexiv2 introspection
 media-libs/glfw -wayland
 media-libs/gsound vala
 # LibreOffice wants it
-media-libs/harfbuzz icu
+media-libs/harfbuzz cairo glib graphite icu introspection truetype abi_x86_32
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
@@ -932,7 +934,7 @@ sys-libs/e2fsprogs-libs static-libs
 sys-fs/udev static-libs
 sys-apps/util-linux caps static-libs
 # Use flag dbus is required for evolution
-dev-libs/glib static-libs dbus
+dev-libs/glib dbus mime static-libs xattr abi_x86_32
 dev-libs/elfutils static-libs
 sys-libs/gpm static-libs
 
@@ -951,6 +953,7 @@ sys-libs/zlib minizip
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
 virtual/lapack eselect-ldso
+virtual/libiconv abi_x86_32
 virtual/mpi romio
 virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx
@@ -1109,7 +1112,6 @@ x11-libs/gtk+:2 introspection
 x11-libs/gtk+:3 X cups introspection wayland xinerama
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
-dev-libs/glib introspection
 media-libs/babl introspection
 gnome-extra/polkit-gnome introspection
 gnome-base/libgtop introspection
