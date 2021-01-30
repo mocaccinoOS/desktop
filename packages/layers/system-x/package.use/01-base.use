@@ -6,9 +6,8 @@ media-libs/libcanberra alsa
 dev-cpp/gtkmm X
 >=sys-apps/systemd-246-r2 policykit
 >=app-text/poppler-0.90.1 cairo
-x11-libs/cairo X aqua
 dev-cpp/cairomm X aqua
-x11-libs/pango X
+x11-libs/pango X abi_x86_32
 
 ## KDE
 
@@ -449,7 +448,7 @@ media-plugins/grilo-plugins flickr
 
 # Needed by net-analyzer/ehterape
 gnome-base/libgnomecanvas glade
-gnome-base/librsvg gnome
+gnome-base/librsvg abi_x86_32
 gnome-base/nautilus gnome sendto
 
 gnome-extra/evolution-data-server oauth ldap kerberos vala
@@ -571,6 +570,7 @@ media-libs/libcaca imlib
 media-libs/libffado -qt5
 media-libs/libgphoto2 exif
 media-libs/libggi aalib
+media-libs/imlib2 X bzip2 gif jpeg mp3 png shm tiff webp zlib abi_x86_32
 media-libs/libmypaint gegl
 # Required by media-gfx/darktable
 media-libs/libraw demosaic
@@ -1003,7 +1003,7 @@ x11-drivers/nvidia-userspace -x-multilib libglvnd tools
 # required by gnome-extra/cinnamon-screensaver >= 3.2.13-r2
 x11-libs/xapps introspection
 
-x11-libs/cairo glitz X
+x11-libs/cairo X glib opengl svg abi_x86_32
 x11-libs/goffice gnome
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 # libva coolness
@@ -1013,6 +1013,7 @@ x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 x11-libs/qwt designer
 
 x11-libs/qwtpolar qt5
+x11-libs/libXft abi_x86_32
 x11-libs/wxGTK gstreamer webkit
 
 # to make cinepaint work, enable threads on fltk
