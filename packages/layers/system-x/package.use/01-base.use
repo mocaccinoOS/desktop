@@ -67,20 +67,20 @@ kde-plasma/kde-cli-tools X
 media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
->=sys-apps/dbus-1.12.18 X
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
 >=app-accessibility/brltty-6.1 python
 >=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
 >=media-libs/clutter-1.26.4 gtk introspection X
 >=media-libs/clutter-gtk-1.8.4 X gtk introspection
-x11-libs/gdk-pixbuf X introspection jpeg tiff abi_x86_32 
+x11-libs/gdk-pixbuf X introspection jpeg tiff abi_x86_32
 
 media-libs/clutter-gst X gtk introspection
 
 ## Sabayon use flags
 
-app-accessibility/at-spi2-core -X
+app-accessibility/at-spi2-atk abi_x86_32
+app-accessibility/at-spi2-core introspection abi_x86_32 -X
 # These two want either one of alsa pulseaudio, etc
 app-accessibility/julius -alsa pulseaudio -oss -portaudio
 app-accessibility/simon -alsa pulseaudio -oss -portaudio
@@ -124,7 +124,7 @@ app-crypt/gcr vala gtk
 app-crypt/gnupg -static bzip2 smartcard
 # required by app-backup/deja-dup
 app-crypt/libsecret crypt introspection vala abi_x86_32
-app-crypt/mit-krb5 krb4 openldap
+app-crypt/mit-krb5 keyutils nls openldap pkinit threads abi_x86_32
 app-crypt/p11-kit asn1 libffi trust abi_x86_32
 # app-crypt/pinentry is now a meta-package
 # enable GTK2 by default, people complaining
@@ -315,11 +315,13 @@ dev-libs/gdl gnome
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmime smime -mono
 dev-libs/icu abi_x86_32
-dev-libs/gmp static-libs
+dev-libs/gmp asm cxx static-libs abi_x86_32
 dev-libs/libjcat gpg pkcs7
 dev-libs/libassuan static-libs
 dev-libs/libdazzle vala
 dev-libs/libdbusmenu gtk3
+dev-libs/libev abi_x86_32
+dev-libs/libevent ssl threads abi_x86_32
 dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgdata gnome gnome-online-accounts
@@ -329,13 +331,17 @@ dev-libs/libgusb vala
 dev-libs/libgweather vala
 dev-libs/libical vala
 dev-libs/libksba static-libs
+dev-libs/libtasn1 abi_x86_32
 dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib abi_x86_32
 dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib abi_x86_32
+dev-libs/libunistring abi_x86_32
+dev-libs/libverto libev threads abi_x86_32
 dev-libs/libxml2 icu ipv6 python readline abi_x86_32
+dev-libs/nettle gmp abi_x86_32
 dev-libs/nss utils
 
 # required by net-misc/curl[static-libs], enabled here
-dev-libs/openssl:0 static-libs sslv3
+dev-libs/openssl:0 asm sslv3 static-libs zlib abi_x86_32
 dev-libs/popt static-libs
 dev-libs/tinyxml stl
 dev-libs/tntnet sdk
@@ -700,7 +706,7 @@ net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 
-net-dns/avahi howl-compat mdnsresponder-compat dbus gdbm gtk python autoipd -qt5 introspection
+net-dns/avahi howl-compat mdnsresponder-compat dbus gdbm gtk python autoipd -qt5 introspection abi_x86_32
 net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
 net-dns/avahi-gtk introspection
 net-dns/avahi-gtk3 introspection
@@ -708,9 +714,10 @@ net-dns/avahi-mono introspection
 net-dns/dnsmasq dbus tftp conntrack dnssec dhcp script dhcp-tools
 net-dns/getdns nettle stubby
 # net-dns/libidn2[static-libs] is for net-misc/curl
-net-dns/libidn2 static-libs
+net-dns/libidn2 static-libs abi_x86_32
 # We must choose between mysql and postgres
 net-dns/mydns mysql
+net-dns/unbound ecdsa python systemd abi_x86_32
 net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
 net-fs/cifs-utils ads upcall
@@ -811,7 +818,7 @@ net-misc/x2goserver sqlite
 net-news/rssguard webengine
 
 # slp disabled due to https://bugs.gentoo.org/show_bug.cgi?id=617278
-net-nds/openldap -minimal sasl -slp
+net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd abi_x86_32 -minimal -slp
 net-dns/bind-tools gssapi
 net-nds/rpcbind warmstarts
 
@@ -887,8 +894,9 @@ sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
 sys-apps/man-db -berkdb
-sys-apps/dbus user-session
+sys-apps/dbus X systemd user-session abi_x86_32
 sys-apps/iproute2 caps
+sys-apps/keyutils split-usr abi_x86_32
 sys-apps/pciutils -zlib
 # systemd support
 sys-apps/systemd -gtk dracut plymouth sysv-utils cryptsetup lzma xattr -openrc keymap
@@ -918,7 +926,7 @@ sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
 sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
 
 # No fuck git by default!
-sys-devel/gettext -git
+sys-devel/gettext acl cxx ncurses nls openmp abi_x86_32 -git
 # gdb tuning, we want XML
 sys-devel/gdb expat python
 # clang wants USE=clang for llvm
@@ -938,9 +946,10 @@ sys-fs/zfs kernel-builtin
 sys-apps/entropy-server -matter
 sys-apps/kmod lzma static-libs
 
+sys-libs/gdbm berkdb nls readline abi_x86_32
 sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
-sys-libs/e2fsprogs-libs static-libs
+sys-libs/e2fsprogs-libs split-usr static-libs abi_x86_32
 sys-fs/udev static-libs
 sys-apps/util-linux caps static-libs
 # Use flag dbus is required for evolution
@@ -963,6 +972,7 @@ sys-libs/zlib minizip
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
 virtual/glu abi_x86_32
+virtual/krb5 abi_x86_32
 virtual/lapack eselect-ldso
 virtual/libiconv abi_x86_32
 virtual/mpi romio
@@ -1032,6 +1042,11 @@ x11-libs/wxGTK gstreamer webkit
 # to make cinepaint work, enable threads on fltk
 # @cairo: doesn't compile if enabled, undefined ref -> fl_set_cairo_ctm()
 x11-libs/fltk threads xft -cairo
+
+x11-libs/libXcursor abi_x86_32
+x11-libs/libXcomposite abi_x86_32
+x11-libs/libXinerama abi_x86_32
+x11-libs/libXi abi_x86_32
 
 # We want MT support for tcl and tk
 dev-lang/tcl threads
