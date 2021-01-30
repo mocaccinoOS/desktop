@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210110+1"
+version: "0.20210110+2"
 category: layers
 requires:
 - category: "system"
@@ -315,10 +315,8 @@ emerge:
   - sys-devel/binutils-config:0
   - sys-devel/bison:0
   - sys-devel/clang:10
-  - sys-devel/clang:9
   - sys-devel/clang-common:0
   - sys-devel/clang-runtime:10.0.1
-  - sys-devel/clang-runtime:9.0.1
   - sys-devel/flex:0
   - sys-devel/gcc:9.3.0
   - sys-devel/gcc-config:0
@@ -326,7 +324,6 @@ emerge:
   - sys-devel/gnuconfig:0
   - sys-devel/libtool:2
   - sys-devel/llvm:10
-  - sys-devel/llvm:9
   - sys-devel/llvm-common:0
   - sys-devel/m4:0
   - sys-devel/make:0
@@ -339,9 +336,7 @@ emerge:
   - sys-kernel/linux-headers:0
   - sys-libs/binutils-libs:0
   - sys-libs/compiler-rt:10.0.1
-  - sys-libs/compiler-rt:9.0.1
   - sys-libs/compiler-rt-sanitizers:10.0.1
-  - sys-libs/compiler-rt-sanitizers:9.0.1
   - sys-libs/db:5.3
   - sys-libs/e2fsprogs-libs:0
   - sys-libs/gdbm:0

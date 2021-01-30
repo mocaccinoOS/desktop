@@ -65,7 +65,7 @@ kde-plasma/kde-cli-tools X
 >=virtual/libcrypt-1-r1 abi_x86_32
 
 ## GNOME
-media-sound/pulseaudio bluetooth dbus
+media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
 >=net-print/cups-2.3.3-r1 dbus
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
@@ -553,7 +553,7 @@ media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
-media-libs/freetype -X -auto-hinter adobe-cff harfbuzz
+media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs abi_x86_32
 media-libs/gegl raw jpeg2k umfpack
 media-libs/gexiv2 introspection
 # it's either Wayland or X, see Gentoo bug 616968
@@ -639,8 +639,6 @@ media-sound/qtractor sse
 # Enable system-wide pulseaudio, also see bug #4009
 # 2013-07-11: gtk3 is only used to set a proper window icon...
 # 2016-07-13: enable headset profiles, see bug #5232
-# 2016-12-01: kde-plasma/plasma-pa requires gnome use enabled
-media-sound/pulseaudio gnome system-wide -qt5 -gtk native-headset ofono-headset
 # 2.92 with USE=cdr requires =app-cdr/brasero-3.4* but
 # gnome-base/gnome-core-apps[cdr] depends on >=app-cdr/brasero-3.6.1
 media-sound/rhythmbox -cdr
@@ -1094,7 +1092,6 @@ virtual/jpeg static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng static-libs
 app-arch/bzip2 static-libs
-media-libs/freetype static-libs
 sys-libs/zlib static-libs
 
 # We want packages with static-libs (add here)
@@ -1133,10 +1130,6 @@ sys-devel/base-gcc hardened
 sys-devel/gcc hardened
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
 sys-libs/glibc hardened suid nscd
-
-# add Infinality patches to freetype-2
-# See bug 3360
-media-libs/freetype infinality
 
 dev-libs/lzo static-libs
 
