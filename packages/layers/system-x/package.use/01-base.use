@@ -75,7 +75,7 @@ media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth
 >=app-accessibility/speech-dispatcher-0.9.1 python
 >=media-libs/clutter-1.26.4 gtk introspection X
 >=media-libs/clutter-gtk-1.8.4 X gtk introspection
-x11-libs/gdk-pixbuf X jpeg tiff
+x11-libs/gdk-pixbuf X introspection jpeg tiff abi_x86_32 
 
 media-libs/clutter-gst X gtk introspection
 
@@ -293,6 +293,7 @@ dev-lang/parrot pcre
 dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd hash imap inifile intl json mhash mysql mysqli mysqlnd odbc pcntl pcre pdo posix postgres reflection simplexml snmp soap sockets spl sqlite sqlite3 tidy tokenizer truetype wddx xml xmlreader xmlwriter xsl zip sysvipc xslt
 dev-lang/python sqlite berkdb
 dev-lang/rakudo moar
+dev-lang/rust abi_x86_32
 
 dev-libs/apr-util openssl
 dev-libs/appstream -qt5
@@ -307,6 +308,7 @@ dev-libs/c-blosc hdf5
 dev-libs/dbus-glib bash-completion
 # Required by terminology
 dev-libs/efl audio drm egl fontconfig gles2-only pulseaudio pixman sound X gstreamer -xcb -opengl -sdl -gnutls
+dev-libs/fribidi abi_x86_32
 dev-libs/gdl gnome
 # 2010-04-6, trying to disable USE="mono" from gmime
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
@@ -328,7 +330,7 @@ dev-libs/libical vala
 dev-libs/libksba static-libs
 dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib abi_x86_32
 dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib abi_x86_32
-dev-libs/libxml2 icu
+dev-libs/libxml2 icu ipv6 python readline abi_x86_32
 dev-libs/nss utils
 
 # required by net-misc/curl[static-libs], enabled here
@@ -558,11 +560,13 @@ media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz i
 media-libs/fontconfig abi_x86_32
 media-libs/gegl raw jpeg2k umfpack
 media-libs/gexiv2 introspection
+media-libs/giflib abi_x86_32
 # it's either Wayland or X, see Gentoo bug 616968
 media-libs/glfw -wayland
 media-libs/gsound vala
 # LibreOffice wants it
 media-libs/harfbuzz cairo glib graphite icu introspection truetype abi_x86_32
+media-libs/libid3tag abi_x86_32
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
@@ -603,8 +607,9 @@ media-libs/sdl2-mixer midi timidity
 # USE=mikmod required by gltron
 media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
-media-libs/tiff lzma
+media-libs/tiff cxx jpeg lzma zlib abi_x86_32
 media-libs/vigra fftw
+media-libs/libwebp gif jpeg opengl png tiff abi_x86_32
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 
@@ -955,6 +960,7 @@ virtual/cblas eselect-ldso
 virtual/lapack eselect-ldso
 virtual/libiconv abi_x86_32
 virtual/mpi romio
+virtual/rust abi_x86_32
 virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx
 
@@ -1008,10 +1014,9 @@ x11-libs/goffice gnome
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
-
+x11-libs/pixman abi_x86_32
 # required by x11-libs/qwtpolar
 x11-libs/qwt designer
-
 x11-libs/qwtpolar qt5
 x11-libs/libXft abi_x86_32
 x11-libs/wxGTK gstreamer webkit
@@ -1093,8 +1098,8 @@ media-libs/libpng apng abi_x86_32
 # New splashutils wants static-libs see Gentoo bug #356231
 media-libs/libpng static-libs
 media-libs/lcms static-libs
-virtual/jpeg static-libs
-media-libs/libjpeg-turbo static-libs
+virtual/jpeg static-libs abi_x86_32
+media-libs/libjpeg-turbo static-libs abi_x86_32
 media-libs/libmng static-libs
 app-arch/bzip2 static-libs
 sys-libs/zlib static-libs
@@ -1135,7 +1140,7 @@ sys-devel/gcc hardened
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
 sys-libs/glibc hardened suid nscd
 
-dev-libs/lzo static-libs
+dev-libs/lzo split-usr static-libs abi_x86_32
 
 ## GNOME 3.10 flags
 # required by gnome-music
@@ -1187,6 +1192,7 @@ sys-devel/autogen libopts
 # required by gnome-photos (argument)
 media-plugins/grilo-plugins upnp-av
 
+sys-libs/binutils-libs nls abi_x86_32
 # required by reiser4progs
 sys-libs/readline static-libs
 
