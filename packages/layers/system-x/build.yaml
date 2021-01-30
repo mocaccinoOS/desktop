@@ -1,4 +1,4 @@
-requires:
+\requires:
 - category: "layer"
   name: "gentoo-portage"
   version: ">=0"
@@ -18,7 +18,8 @@ prelude:
 steps:
 # we want py3.8 and py2.7 for now
 - eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
-- USE=-harfbuzz emerge media-libs/freetype -j $JOBS
+- USE=-harfbuzz emerge -1 media-libs/freetype -j $JOBS
+- USE="-icu" emerge -1 dev-db/sqlite
 - emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
