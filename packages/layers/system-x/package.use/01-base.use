@@ -1218,7 +1218,7 @@ media-plugins/grilo-plugins upnp-av
 
 sys-libs/binutils-libs nls abi_x86_32
 # required by reiser4progs
-sys-libs/readline static-libs
+sys-libs/readline split-usr static-libs unicode abi_x86_32
 
 # threads: required by gitg
 dev-libs/libgit2 ssh threads
