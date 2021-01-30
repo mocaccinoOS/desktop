@@ -65,7 +65,6 @@ kde-plasma/kde-cli-tools X
 
 ## GNOME
 media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
->=net-print/cups-2.3.3-r1 dbus
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
 >=sys-apps/dbus-1.12.18 X
@@ -124,8 +123,9 @@ app-crypt/gcr vala gtk
 # see bug 2781
 app-crypt/gnupg -static bzip2 smartcard
 # required by app-backup/deja-dup
-app-crypt/libsecret vala
+app-crypt/libsecret crypt introspection vala abi_x86_32
 app-crypt/mit-krb5 krb4 openldap
+app-crypt/p11-kit asn1 libffi trust abi_x86_32
 # app-crypt/pinentry is now a meta-package
 # enable GTK2 by default, people complaining
 # about dependencies, should really use pinentry-base
@@ -297,9 +297,10 @@ dev-lang/rust abi_x86_32
 
 dev-libs/apr-util openssl
 dev-libs/appstream -qt5
+dev-libs/atk introspection abi_x86_32
 # Needed by some lisp packages
 dev-libs/boehm-gc threads
-dev-libs/boost context icu python threads zstd
+dev-libs/boost bzip2 context icu nls python threads zlib zstd abi_x86_32
 # Enable threading support in botan
 dev-libs/botan threads -gmp
 dev-libs/crypto++ sse3
@@ -556,6 +557,7 @@ media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
+media-libs/freeglut abi_x86_32
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs abi_x86_32
 media-libs/fontconfig abi_x86_32
 media-libs/gegl raw jpeg2k umfpack
@@ -563,6 +565,7 @@ media-libs/gexiv2 introspection
 media-libs/giflib abi_x86_32
 # it's either Wayland or X, see Gentoo bug 616968
 media-libs/glfw -wayland
+media-libs/glu abi_x86_32
 media-libs/gsound vala
 # LibreOffice wants it
 media-libs/harfbuzz cairo glib graphite icu introspection truetype abi_x86_32
@@ -571,6 +574,7 @@ media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
 media-libs/libcaca imlib
+media-libs/libepoxy X egl abi_x86_32
 media-libs/libffado -qt5
 media-libs/libgphoto2 exif
 media-libs/libggi aalib
@@ -592,6 +596,7 @@ media-libs/mlt melt frei0r kdenlive quicktime python
 # Disable GUI libs.
 media-libs/openal -qt5
 media-libs/openexr -video_cards_nvidia
+media-libs/openjpeg abi_x86_32
 media-libs/opus custom-modes
 # on amd64, if ABI_X86=32 is set, exif must be unset
 media-libs/oyranos -exif
@@ -737,7 +742,7 @@ net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
 net-libs/glib-networking gnome
-net-libs/gnutls dane openpgp sslv2 sslv3 tools
+net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools abi_x86_32
 net-libs/gnome-online-accounts vala
 # Disable cxx, otherwise we have curl pulling in boost
 net-libs/nghttp2 -cxx
@@ -819,7 +824,7 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups -java
+net-print/cups X acl dbus kerberos pam ssl systemd threads usb zeroconf abi_x86_32
 net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
@@ -957,12 +962,14 @@ sys-libs/zlib minizip
 
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
+virtual/glu abi_x86_32
 virtual/lapack eselect-ldso
 virtual/libiconv abi_x86_32
 virtual/mpi romio
 virtual/rust abi_x86_32
 virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx
+virtual/opengl abi_x86_32
 
 # relevant flags must be kept in sync with dev-vcs/subversion
 www-apache/mod_dav_svn -dso
@@ -1014,6 +1021,7 @@ x11-libs/goffice gnome
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
+x11-libs/libxkbcommon X abi_x86_32
 x11-libs/pixman abi_x86_32
 # required by x11-libs/qwtpolar
 x11-libs/qwt designer
@@ -1053,6 +1061,7 @@ x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisV
 # Our artwork, blame Ian
 >=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
+x11-themes/gtk-engines-adwaita abi_x86_32
 x11-themes/gtk-engines-murrine -themes
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
@@ -1114,8 +1123,8 @@ dev-python/pygobject introspection cairo
 sys-auth/polkit introspection
 sys-power/upower introspection
 net-libs/libsoup introspection
-x11-libs/gtk+:2 introspection
-x11-libs/gtk+:3 X cups introspection wayland xinerama
+x11-libs/gtk+:2 cups introspection xinerama abi_x86_32
+x11-libs/gtk+:3 X cups introspection wayland xinerama abi_x86_32
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 media-libs/babl introspection
@@ -1212,10 +1221,6 @@ dev-libs/libnl utils
 
 # Prefer gtk for media-libs/libmediaart
 media-libs/libmediaart gtk -qt5
-
-# prefer openssl instead of gnutls
-# because lib32 true multilib support in cups is broken
-net-print/cups -gnutls
 
 # commoncpp2 does not build with latest gnutls
 dev-cpp/commoncpp2 -gnutls ssl
