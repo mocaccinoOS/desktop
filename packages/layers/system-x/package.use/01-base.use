@@ -1083,7 +1083,7 @@ net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 
 sys-auth/polkit -kde -gtk
-media-libs/libpng apng
+media-libs/libpng apng abi_x86_32
 
 # New splashutils wants static-libs see Gentoo bug #356231
 media-libs/libpng static-libs
