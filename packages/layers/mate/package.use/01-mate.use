@@ -9,4 +9,5 @@ mate-base/mate-panel wayland X
 mate-extra/caja-extensions xattr -cdr
 mate-extra/mate-sensors-applet libnotify
 media-gfx/eom exif jpeg lcms svg tiff X
+media-libs/libmatemixer pulseaudio
 x11-wm/marco startup-notification xinerama -test

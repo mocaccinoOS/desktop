@@ -76,7 +76,7 @@ media-sound/pulseaudio bluetooth dbus
 >=app-accessibility/speech-dispatcher-0.9.1 python
 >=media-libs/clutter-1.26.4 gtk introspection X
 >=media-libs/clutter-gtk-1.8.4 X gtk introspection
-x11-libs/gdk-pixbuf jpeg
+x11-libs/gdk-pixbuf X jpeg tiff
 
 media-libs/clutter-gst X gtk introspection
 
@@ -1108,6 +1108,7 @@ sys-auth/polkit introspection
 sys-power/upower introspection
 net-libs/libsoup introspection
 x11-libs/gtk+:2 introspection
+x11-libs/gtk+:3 X cups introspection wayland xinerama
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 dev-libs/glib introspection
