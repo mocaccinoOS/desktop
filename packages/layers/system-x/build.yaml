@@ -20,7 +20,7 @@ steps:
 - eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
 - USE=-harfbuzz emerge -1 media-libs/freetype -j $JOBS
 - USE="-icu" emerge -1 dev-db/sqlite
-- USE="-zeroconf" emerge -1 net-print/cups
+- USE="-zeroconf" emerge -1 net-print/cups --backtrack=30
 - USE="-gtk" emerge -1 net-dns/avahi
 - emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
