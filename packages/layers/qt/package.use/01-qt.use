@@ -4,13 +4,13 @@ dev-qt/qt-creator autotools cmake designer git lsp modeling qmldesigner qmlprofi
 dev-qt/qt3d qml
 dev-qt/qtbluetooth qml
 dev-qt/qtcharts qml
-dev-qt/qtcore:5 icu
+dev-qt/qtcore:5 icu systemd
 dev-qt/qtcharts qml
-dev-qt/qtdeclarative webkit private-headers
-dev-qt/qthelp compat
-dev-qt/qtwebkit kde icu printsupport
-dev-qt/qtgui:5 dbus egl ibus jpeg mng private-headers raster -gtkstyle
-dev-qt/qtmultimedia:5 gstreamer qml widgets
+dev-qt/qtdeclarative jit widgets
+dev-qt/qtwebkit X gstreamer hyphen jit nsplugin opengl printsupport
+dev-qt/qtgui:5 X accessibility dbus egl gif ibus jpeg libinput png udev wayland
+dev-qt/qtmultimedia:5 alsa gstreamer openal pulseaudio qml widgets
+dev-qt/qtnetwork ssl
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
 dev-qt/qtscript private-headers
@@ -18,8 +18,9 @@ dev-qt/qtscript:5 private-headers scripttools
 dev-qt/qtsensors qml
 # added for mythtv
 dev-qt/qtsql mysql
+dev-qt/qtvirtualkeyboard X spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
 # needed for calamares
-dev-qt/qtwebengine -system-ffmpeg widgets geolocation
+dev-qt/qtwebengine alsa geolocation kerberos pulseaudio system-icu widgets -system-ffmpeg
 dev-qt/qtwebchannel qml
