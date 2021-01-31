@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210110+5"
+version: "0.20210110+6"
 category: layers
 requires:
 - category: "system"
