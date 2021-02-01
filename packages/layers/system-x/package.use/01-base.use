@@ -60,7 +60,7 @@ app-crypt/gnupg bzip2 nls readline smartcard ssl usb
 app-crypt/libsecret crypt introspection vala
 app-crypt/mit-krb5 keyutils nls openldap pkinit threads
 app-crypt/p11-kit asn1 libffi trust
-app-crypt/pinentry ncurses
+app-crypt/pinentry ncurses -qt5
 app-crypt/qca gpg ssl
 
 app-doc/doxygen latex dot
