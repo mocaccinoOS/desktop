@@ -21,7 +21,7 @@ steps:
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - USE="-openldap" emerge -1 dev-libs/openssl app-crypt/mit-krb5 net-misc/openssh
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
-- emerge -1 media-libs/mesa -j $JOBS
+- USE="-vaapi" emerge -1 media-libs/mesa -j $JOBS
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 # - USE="-icu" emerge -1 dev-db/sqlite -j $JOBS
