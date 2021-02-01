@@ -56,6 +56,7 @@ app-cdr/xfburn gstreamer
 # required by seahorse
 app-crypt/gcr vala gtk
 app-crypt/gnupg bzip2 nls readline smartcard ssl usb
+app-crypt/gpgme -qt5
 # required by app-backup/deja-dup
 app-crypt/libsecret crypt introspection vala
 app-crypt/mit-krb5 keyutils nls openldap pkinit threads
