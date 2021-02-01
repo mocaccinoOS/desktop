@@ -17,7 +17,7 @@ kde-plasma/kde-cli-tools X
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk X alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
+media-sound/pulseaudio -qt5 -gtk X alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
@@ -43,7 +43,7 @@ app-admin/keepassxc browser
 app-eselect/eselect-php fpm apache2
 app-admin/gkrellm hddtemp lm_sensors
 app-admin/ulogd mysql
-app-admin/rsyslog ssl systemd uuid openssl kafka elasticsearch kubernetes snmp normalize
+app-admin/rsyslog ssl uuid openssl kafka elasticsearch kubernetes snmp normalize
 app-admin/setools -X
 
 app-arch/advancecomp mng
@@ -645,7 +645,7 @@ net-dns/getdns nettle stubby
 net-dns/libidn2 static-libs
 # We must choose between mysql and postgres
 net-dns/mydns mysql
-net-dns/unbound ecdsa python systemd
+net-dns/unbound ecdsa python
 net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
 net-fs/cifs-utils ads upcall
@@ -759,7 +759,7 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups X acl dbus kerberos pam ssl systemd threads usb zeroconf
+net-print/cups X acl dbus kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
@@ -822,7 +822,7 @@ sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
-sys-apps/dbus X systemd user-session
+sys-apps/dbus X user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/keyutils split-usr
 sys-apps/pciutils kmod udev -zlib
@@ -830,7 +830,7 @@ sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre poli
 sys-apps/util-linux bzip2 nls static-libs utils
 sys-apps/xdg-desktop-portal screencast
 
-sys-auth/pambase cracklib nullok sha512 systemd -consolekit -kerberos
+sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 
 sys-block/gparted -kde -gtk dmraid f2fs mdadm btrfs
 sys-block/parted device-mapper
@@ -1044,7 +1044,7 @@ dev-libs/expat static-libs
 # cairo pulls in mesa in the end, which is bad for spinbase
 # however, we have split ebuilds now, so enable cairo
 dev-python/pygobject introspection cairo
-sys-auth/polkit introspection nls pam systemd -kde -gtk
+sys-auth/polkit introspection nls pam -kde -gtk
 sys-power/upower introspection
 net-libs/libsoup introspection ssl vala
 x11-libs/gtk+:2 cups introspection xinerama

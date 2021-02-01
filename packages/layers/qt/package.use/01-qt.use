@@ -4,7 +4,7 @@ dev-qt/qt-creator autotools cmake designer git lsp modeling qmldesigner qmlprofi
 dev-qt/qt3d qml
 dev-qt/qtbluetooth qml
 dev-qt/qtcharts qml
-dev-qt/qtcore:5 icu systemd
+dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
 dev-qt/qtdeclarative jit widgets
 dev-qt/qtwebkit X gstreamer hyphen jit nsplugin opengl printsupport
