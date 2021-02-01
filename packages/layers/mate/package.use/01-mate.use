@@ -10,6 +10,6 @@ mate-extra/caja-extensions xattr -cdr
 mate-extra/mate-power-manager applet policykit
 mate-extra/mate-screensaver libnotify opengl pam
 mate-extra/mate-sensors-applet dbus libnotify
-media-gfx/eom exif jpeg lcms svg tiff
+media-gfx/eom exif jpeg lcms
 media-libs/libmatemixer pulseaudio
 x11-wm/marco startup-notification xinerama -test

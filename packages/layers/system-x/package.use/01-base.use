@@ -1,7 +1,6 @@
 # MATE
 
 media-libs/libcanberra alsa
->=app-text/poppler-0.90.1 cairo
 dev-cpp/cairomm aqua
 
 ## KDE
@@ -17,7 +16,7 @@ media-sound/pulseaudio -qt5 -gtk alsa alsa-plugin asyncns bluetooth caps dbus gd
 >=app-accessibility/brltty-6.1 python
 >=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
-x11-libs/gdk-pixbuf introspection jpeg tiff
+x11-libs/gdk-pixbuf introspection jpeg
 
 ## Sabayon use flags
 
@@ -119,7 +118,7 @@ app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
 
 app-misc/mc -slang
 # app-misc/recoll cannot use both inotify and fam, only one of them.
-app-misc/recoll -fam inotify qt5
+app-misc/recoll -fam inotify
 app-misc/sabayon-live libglvnd
 app-misc/sphinx mysql
 app-misc/tuxcmd-modules gnome unrar
@@ -182,8 +181,6 @@ dev-db/postgresql server threads
 dev-db/sqlite icu readline
 # We don't have Oracle
 dev-db/tora -oracle
-
-dev-dotnet/libgdiplus cairo
 
 dev-embedded/avr-libc -selinux
 dev-embedded/openocd ftdi
@@ -468,15 +465,13 @@ media-gfx/pstoedit plotutils
 # Newer kernels do not provide vid4l
 media-gfx/sane-backends threads -v4l
 media-gfx/sane-frontends gimp
-media-gfx/xsane tiff
 media-gfx/zbar imagemagick v4l
 
-media-libs/avidemux-plugins qt5
 media-libs/blib aalib
 # required by media-sound/picard
 media-libs/chromaprint tools
 # Needed for gnome-shell
-media-libs/clutter egl opengl
+media-libs/clutter egl
 media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
@@ -488,7 +483,7 @@ media-libs/gexiv2 introspection
 media-libs/glfw -wayland
 media-libs/gsound vala
 # LibreOffice wants it
-media-libs/harfbuzz cairo glib graphite icu introspection truetype
+media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
@@ -584,13 +579,12 @@ media-tv/kodi airplay bluray cec css goom mysql pvr rtmp sftp upnp -wayland webs
 # disable hls because (as of 0.27.6_p20160318) it requires <media-libs/libvpx-1.5.0
 media-tv/mythtv -hls fftw
 
-media-video/avidemux qt5
 media-video/blinkensim aalib
 media-video/dvgrab quicktime
-media-video/ffmpeg alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal opengl openh264 opus postproc pulseaudio sdl speex svg test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
+media-video/ffmpeg alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 opus postproc pulseaudio sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 media-video/jubler mplayer
 media-video/kino quicktime sox vorbis
-media-video/mpv alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal opengl pulseaudio samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
+media-video/mpv alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal pulseaudio samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/totem xulrunner iplayer galago
@@ -1019,8 +1013,8 @@ dev-python/pygobject introspection
 sys-auth/polkit introspection nls pam -kde -gtk
 sys-power/upower introspection
 net-libs/libsoup introspection ssl vala
-x11-libs/gtk+:2 cups introspection xinerama
-x11-libs/gtk+:3 cups introspection xinerama
+x11-libs/gtk+:2 cups introspection
+x11-libs/gtk+:3 cups introspection
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 media-libs/babl introspection
