@@ -6,61 +6,18 @@ media-libs/libcanberra alsa
 dev-cpp/gtkmm X
 >=app-text/poppler-0.90.1 cairo
 dev-cpp/cairomm X aqua
-x11-libs/pango X abi_x86_32
 
 ## KDE
 
 kde-plasma/kde-cli-tools X
 >=kde-frameworks/kwindowsystem-5.74.0 X
 >=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
->=media-libs/mesa-20.1.10 abi_x86_32 wayland
->=dev-libs/expat-2.2.8 abi_x86_32
->=media-libs/libglvnd-1.3.2-r2 abi_x86_32
->=x11-libs/libva-2.7.1 abi_x86_32
->=dev-libs/wayland-1.18.0 abi_x86_32
->=x11-libs/libvdpau-1.3 abi_x86_32
->=x11-libs/libdrm-2.4.102 abi_x86_32
->=x11-libs/libX11-1.6.12 abi_x86_32
->=x11-libs/libxshmfence-1.3-r1 abi_x86_32
->=x11-libs/libXdamage-1.1.5 abi_x86_32
->=x11-libs/libXext-1.3.4 abi_x86_32
->=x11-libs/libXxf86vm-1.1.4-r1 abi_x86_32
->=x11-libs/libxcb-1.14 abi_x86_32
->=x11-libs/libXfixes-5.0.3-r1 abi_x86_32
->=app-arch/zstd-1.4.4-r4 abi_x86_32
->=sys-devel/clang-10.0.1 abi_x86_32
->=x11-libs/libXrandr-1.5.2 abi_x86_32
->=x11-libs/libXrender-0.9.10-r1 abi_x86_32
->=sys-devel/llvm-10.0.1 abi_x86_32
->=dev-libs/libffi-3.3-r2 abi_x86_32
->=sys-libs/ncurses-6.2-r1 abi_x86_32
->=x11-libs/libXau-1.0.9 abi_x86_32
->=x11-libs/libXdmcp-1.1.3 abi_x86_32
->=x11-base/xcb-proto-1.14-r1 abi_x86_32
->=x11-libs/libpciaccess-0.16 abi_x86_32
->=x11-libs/libva-vdpau-driver-0.7.4-r5 abi_x86_32
->=x11-libs/libva-intel-driver-2.4.1 abi_x86_32
+>=media-libs/mesa-20.1.10 wayland
 >=kde-frameworks/kdelibs4support-5.74.0 X
 >=kde-frameworks/prison-5.74.0 qml
->=virtual/libelf-3 abi_x86_32
->=virtual/opencl-3-r1 abi_x86_32
->=dev-libs/elfutils-0.181 abi_x86_32
->=dev-libs/ocl-icd-2.2.12-r3 abi_x86_32
->=virtual/libudev-232-r3 abi_x86_32
->=sys-apps/systemd-246-r2 abi_x86_32
->=sys-libs/libcap-2.43 abi_x86_32
->=dev-libs/libgcrypt-1.8.6 abi_x86_32
->=app-arch/lz4-1.9.2 abi_x86_32
->=app-arch/xz-utils-5.2.5 abi_x86_32
->=sys-libs/pam-1.4.0_p20200829 abi_x86_32
->=sys-libs/db-5.3.28-r4 abi_x86_32
->=dev-libs/libgpg-error-1.38 abi_x86_32
->=sys-apps/attr-2.4.48-r3 abi_x86_32
->=virtual/libintl-0-r2 abi_x86_32
->=virtual/libcrypt-1-r1 abi_x86_32
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
+media-sound/pulseaudio -qt5 -gtk X alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl systemd tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
@@ -69,14 +26,13 @@ media-sound/pulseaudio -qt5 -gtk X abi_x86_32 alsa alsa-plugin asyncns bluetooth
 >=app-accessibility/speech-dispatcher-0.9.1 python
 >=media-libs/clutter-1.26.4 gtk introspection X
 >=media-libs/clutter-gtk-1.8.4 X gtk introspection
-x11-libs/gdk-pixbuf X introspection jpeg tiff abi_x86_32
+x11-libs/gdk-pixbuf X introspection jpeg tiff
 
 media-libs/clutter-gst X gtk introspection
 
 ## Sabayon use flags
 
-app-accessibility/at-spi2-atk abi_x86_32
-app-accessibility/at-spi2-core introspection abi_x86_32 -X
+app-accessibility/at-spi2-core introspection -X
 # These two want either one of alsa pulseaudio, etc
 app-accessibility/julius -alsa pulseaudio -oss -portaudio
 app-accessibility/simon -alsa pulseaudio -oss -portaudio
@@ -114,11 +70,10 @@ app-cdr/xfburn gstreamer
 # required by seahorse
 app-crypt/gcr vala gtk
 app-crypt/gnupg bzip2 nls readline smartcard ssl usb
-app-crypt/heimdal abi_x86_32
 # required by app-backup/deja-dup
-app-crypt/libsecret crypt introspection vala abi_x86_32
-app-crypt/mit-krb5 keyutils nls openldap pkinit threads abi_x86_32
-app-crypt/p11-kit asn1 libffi trust abi_x86_32
+app-crypt/libsecret crypt introspection vala
+app-crypt/mit-krb5 keyutils nls openldap pkinit threads
+app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses
 app-crypt/qca gpg ssl
 
@@ -235,7 +190,7 @@ dev-db/freetds mssql odbc
 dev-db/mongodb v8 embedded-v8
 dev-db/postgis address-standardizer topology
 dev-db/postgresql server threads
-dev-db/sqlite icu readline abi_x86_32
+dev-db/sqlite icu readline
 # We don't have Oracle
 dev-db/tora -oracle
 
@@ -279,14 +234,13 @@ dev-lang/parrot pcre
 dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd hash imap inifile intl json mhash mysql mysqli mysqlnd odbc pcntl pcre pdo posix postgres reflection simplexml snmp soap sockets spl sqlite sqlite3 tidy tokenizer truetype wddx xml xmlreader xmlwriter xsl zip sysvipc xslt
 dev-lang/python sqlite berkdb
 dev-lang/rakudo moar
-dev-lang/rust abi_x86_32
 
 dev-libs/apr-util openssl
 dev-libs/appstream -qt5
-dev-libs/atk introspection abi_x86_32
+dev-libs/atk introspection
 # Needed by some lisp packages
 dev-libs/boehm-gc threads
-dev-libs/boost bzip2 context icu nls python threads zlib zstd abi_x86_32
+dev-libs/boost bzip2 context icu nls python threads zlib zstd
 # Enable threading support in botan
 dev-libs/botan threads -gmp
 dev-libs/crypto++ sse3
@@ -295,19 +249,16 @@ dev-libs/c-blosc hdf5
 dev-libs/dbus-glib bash-completion
 # Required by terminology
 dev-libs/efl audio drm egl fontconfig gles2-only pulseaudio pixman sound X gstreamer -xcb -opengl -sdl -gnutls
-dev-libs/fribidi abi_x86_32
 dev-libs/gdl gnome
 # 2010-04-6, trying to disable USE="mono" from gmime
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmime smime -mono
-dev-libs/icu abi_x86_32
-dev-libs/gmp asm cxx static-libs abi_x86_32
+dev-libs/gmp asm cxx static-libs
 dev-libs/libjcat gpg pkcs7
 dev-libs/libassuan static-libs
 dev-libs/libdazzle vala
 dev-libs/libdbusmenu gtk3
-dev-libs/libev abi_x86_32
-dev-libs/libevent ssl threads abi_x86_32
+dev-libs/libevent ssl threads
 dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgdata gnome gnome-online-accounts
@@ -317,17 +268,15 @@ dev-libs/libgusb vala
 dev-libs/libgweather vala
 dev-libs/libical vala
 dev-libs/libksba static-libs
-dev-libs/libtasn1 abi_x86_32
-dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib abi_x86_32
-dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib abi_x86_32
-dev-libs/libunistring abi_x86_32
-dev-libs/libverto libev threads abi_x86_32
-dev-libs/libxml2 icu ipv6 python readline abi_x86_32
-dev-libs/nettle gmp abi_x86_32
+dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
+dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib
+dev-libs/libverto libev threads
+dev-libs/libxml2 icu ipv6 python readline
+dev-libs/nettle gmp
 dev-libs/nss utils
 
 # required by net-misc/curl[static-libs], enabled here
-dev-libs/openssl:0 asm sslv3 static-libs zlib abi_x86_32
+dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-libs/tinyxml stl
 dev-libs/tntnet sdk
@@ -443,7 +392,6 @@ media-plugins/grilo-plugins flickr
 
 # Needed by net-analyzer/ehterape
 gnome-base/libgnomecanvas glade
-gnome-base/librsvg abi_x86_32
 gnome-base/nautilus gnome sendto
 
 gnome-extra/evolution-data-server oauth ldap kerberos vala
@@ -520,7 +468,7 @@ media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
 media-gfx/gphoto2 aalib
 media-gfx/graphicsmagick q16 -lcms
-media-gfx/graphite2 perl abi_x86_32
+media-gfx/graphite2 perl
 media-gfx/gthumb -cdr slideshow
 media-gfx/imagemagick fftw gs perl q32
 media-gfx/kphotoalbum kipi
@@ -549,35 +497,30 @@ media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
-media-libs/freeglut abi_x86_32
-media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs abi_x86_32
-media-libs/fontconfig abi_x86_32
+media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gegl raw jpeg2k umfpack
 media-libs/gexiv2 introspection
-media-libs/giflib abi_x86_32
 # it's either Wayland or X, see Gentoo bug 616968
 media-libs/glfw -wayland
-media-libs/glu abi_x86_32
 media-libs/gsound vala
 # LibreOffice wants it
-media-libs/harfbuzz cairo glib graphite icu introspection truetype abi_x86_32
-media-libs/libid3tag abi_x86_32
+media-libs/harfbuzz cairo glib graphite icu introspection truetype
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
 media-libs/libcaca imlib
-media-libs/libepoxy X egl abi_x86_32
+media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libgphoto2 exif
 media-libs/libggi aalib
-media-libs/imlib2 X bzip2 gif jpeg mp3 png shm tiff webp zlib abi_x86_32
+media-libs/imlib2 X bzip2 gif jpeg mp3 png shm tiff webp zlib
 media-libs/libmypaint gegl
 # Required by media-gfx/darktable
 media-libs/libraw demosaic
 media-libs/libsamplerate sndfile
 media-libs/libsdl aalib
 # 32bit libs on amd64, list them here
-media-libs/libsdl2 abi_x86_32 gles2 haptic
+media-libs/libsdl2 gles2 haptic
 media-libs/libsfml doc examples
 media-libs/libsoundtouch sse2
 media-libs/libvpx postproc svc
@@ -588,7 +531,6 @@ media-libs/mlt melt frei0r kdenlive quicktime python
 # Disable GUI libs.
 media-libs/openal -qt5
 media-libs/openexr -video_cards_nvidia
-media-libs/openjpeg abi_x86_32
 media-libs/opus custom-modes
 # on amd64, if ABI_X86=32 is set, exif must be unset
 media-libs/oyranos -exif
@@ -604,9 +546,9 @@ media-libs/sdl2-mixer midi timidity
 # USE=mikmod required by gltron
 media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
-media-libs/tiff cxx jpeg lzma zlib abi_x86_32
+media-libs/tiff cxx jpeg lzma zlib
 media-libs/vigra fftw
-media-libs/libwebp gif jpeg opengl png tiff abi_x86_32
+media-libs/libwebp gif jpeg opengl png tiff
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 
@@ -692,7 +634,7 @@ net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 
-net-dns/avahi howl-compat mdnsresponder-compat dbus gdbm gtk python autoipd -qt5 introspection abi_x86_32
+net-dns/avahi howl-compat mdnsresponder-compat dbus gdbm gtk python autoipd -qt5 introspection
 net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
 net-dns/avahi-gtk introspection
 net-dns/avahi-gtk3 introspection
@@ -700,10 +642,10 @@ net-dns/avahi-mono introspection
 net-dns/dnsmasq dbus tftp conntrack dnssec dhcp script dhcp-tools
 net-dns/getdns nettle stubby
 # net-dns/libidn2[static-libs] is for net-misc/curl
-net-dns/libidn2 static-libs abi_x86_32
+net-dns/libidn2 static-libs
 # We must choose between mysql and postgres
 net-dns/mydns mysql
-net-dns/unbound ecdsa python systemd abi_x86_32
+net-dns/unbound ecdsa python systemd
 net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
 net-fs/cifs-utils ads upcall
@@ -735,7 +677,7 @@ net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
 net-libs/glib-networking gnome
-net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools abi_x86_32
+net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
 net-libs/gnome-online-accounts vala
 # Disable cxx, otherwise we have curl pulling in boost
 net-libs/nghttp2 -cxx
@@ -804,7 +746,7 @@ net-misc/x2goserver sqlite
 net-news/rssguard webengine
 
 # slp disabled due to https://bugs.gentoo.org/show_bug.cgi?id=617278
-net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd abi_x86_32 -minimal -slp
+net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd -minimal -slp
 net-dns/bind-tools gssapi
 net-nds/rpcbind warmstarts
 
@@ -817,7 +759,7 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups X acl dbus kerberos pam ssl systemd threads usb zeroconf abi_x86_32
+net-print/cups X acl dbus kerberos pam ssl systemd threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
@@ -880,12 +822,12 @@ sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
-sys-apps/dbus X systemd user-session abi_x86_32
+sys-apps/dbus X systemd user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
-sys-apps/keyutils split-usr abi_x86_32
-sys-apps/pciutils kmod udev abi_x86_32 -zlib
-sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils abi_x86_32
-sys-apps/util-linux bzip2 nls static-libs utils abi_x86_32
+sys-apps/keyutils split-usr
+sys-apps/pciutils kmod udev -zlib
+sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils
+sys-apps/util-linux bzip2 nls static-libs utils
 sys-apps/xdg-desktop-portal screencast
 
 sys-auth/pambase cracklib nullok sha512 systemd -consolekit -kerberos
@@ -910,7 +852,7 @@ sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
 sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
 
 # No fuck git by default!
-sys-devel/gettext acl cxx ncurses nls openmp abi_x86_32 -git
+sys-devel/gettext acl cxx ncurses nls openmp -git
 # gdb tuning, we want XML
 sys-devel/gdb expat python
 # clang wants USE=clang for llvm
@@ -930,15 +872,15 @@ sys-fs/zfs kernel-builtin
 sys-apps/entropy-server -matter
 sys-apps/kmod lzma static-libs
 
-sys-libs/gdbm berkdb nls readline abi_x86_32
+sys-libs/gdbm berkdb nls readline
 sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
-sys-libs/e2fsprogs-libs split-usr static-libs abi_x86_32
+sys-libs/e2fsprogs-libs split-usr static-libs
 sys-fs/udev static-libs
 # Use flag dbus is required for evolution
-dev-libs/glib dbus mime static-libs xattr abi_x86_32
-dev-libs/elfutils bzip2 nls static-libs utils abi_x86_32
-sys-libs/gpm split-usr static-libs abi_x86_32
+dev-libs/glib dbus mime static-libs xattr
+dev-libs/elfutils bzip2 nls static-libs utils
+sys-libs/gpm split-usr static-libs
 
 sys-kernel/dracut device-mapper dracut_modules_biosdevname dracut_modules_btrfs dracut_modules_dmraid dracut_modules_dmsquash-live dracut_modules_gensplash dracut_modules_lvm dracut_modules_mdraid dracut_modules_multipath dracut_modules_nbd dracut_modules_nfs dracut_modules_plymouth dracut_modules_syslog dracut_modules_crypt dracut_modules_crypt-gpg dracut_modules_crypt-loop dracut_modules_iscsi dracut_modules_systemd net
 sys-kernel/genkernel cryptsetup crypt
@@ -949,19 +891,14 @@ sys-kernel/sabayon-sources symlink
 
 sys-libs/db -java
 sys-libs/gwenhywfar designer qml sensors serialport webkit
-sys-libs/zlib minizip split-usr static-libs abi_x86_32
+sys-libs/zlib minizip split-usr static-libs
 
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
-virtual/glu abi_x86_32
-virtual/krb5 abi_x86_32
 virtual/lapack eselect-ldso
-virtual/libiconv abi_x86_32
 virtual/mpi romio
-virtual/rust abi_x86_32
 virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx
-virtual/opengl abi_x86_32
 
 # relevant flags must be kept in sync with dev-vcs/subversion
 www-apache/mod_dav_svn -dso
@@ -1008,27 +945,20 @@ x11-drivers/nvidia-userspace -x-multilib libglvnd tools
 # required by gnome-extra/cinnamon-screensaver >= 3.2.13-r2
 x11-libs/xapps introspection
 
-x11-libs/cairo X glib opengl svg abi_x86_32
+x11-libs/cairo X glib opengl svg
 x11-libs/goffice gnome
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
-x11-libs/libxkbcommon X abi_x86_32
-x11-libs/pixman abi_x86_32
+x11-libs/libxkbcommon X
 # required by x11-libs/qwtpolar
 x11-libs/qwt designer
 x11-libs/qwtpolar qt5
-x11-libs/libXft abi_x86_32
 x11-libs/wxGTK gstreamer webkit
 
 # to make cinepaint work, enable threads on fltk
 # @cairo: doesn't compile if enabled, undefined ref -> fl_set_cairo_ctm()
 x11-libs/fltk threads xft -cairo
-
-x11-libs/libXcursor abi_x86_32
-x11-libs/libXcomposite abi_x86_32
-x11-libs/libXinerama abi_x86_32
-x11-libs/libXi abi_x86_32
 
 # We want MT support for tcl and tk
 dev-lang/tcl threads
@@ -1058,7 +988,6 @@ x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisV
 # Our artwork, blame Ian
 >=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
-x11-themes/gtk-engines-adwaita abi_x86_32
 x11-themes/gtk-engines-murrine -themes
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
@@ -1098,15 +1027,15 @@ media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 
-media-libs/libpng apng abi_x86_32
+media-libs/libpng apng
 
 # New splashutils wants static-libs see Gentoo bug #356231
 media-libs/libpng static-libs
 media-libs/lcms static-libs
-virtual/jpeg static-libs abi_x86_32
-media-libs/libjpeg-turbo static-libs abi_x86_32
+virtual/jpeg static-libs
+media-libs/libjpeg-turbo static-libs
 media-libs/libmng static-libs
-app-arch/bzip2 split-usr static-libs abi_x86_32
+app-arch/bzip2 split-usr static-libs
 
 # We want packages with static-libs (add here)
 dev-libs/expat static-libs
@@ -1117,9 +1046,9 @@ dev-libs/expat static-libs
 dev-python/pygobject introspection cairo
 sys-auth/polkit introspection nls pam systemd -kde -gtk
 sys-power/upower introspection
-net-libs/libsoup introspection ssl vala abi_x86_32
-x11-libs/gtk+:2 cups introspection xinerama abi_x86_32
-x11-libs/gtk+:3 X cups introspection wayland xinerama abi_x86_32
+net-libs/libsoup introspection ssl vala
+x11-libs/gtk+:2 cups introspection xinerama
+x11-libs/gtk+:3 X cups introspection wayland xinerama
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 media-libs/babl introspection
@@ -1144,7 +1073,7 @@ sys-devel/gcc hardened
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
 sys-libs/glibc hardened suid nscd
 
-dev-libs/lzo split-usr static-libs abi_x86_32
+dev-libs/lzo split-usr static-libs
 
 ## GNOME 3.10 flags
 # required by gnome-music
@@ -1196,9 +1125,9 @@ sys-devel/autogen libopts
 # required by gnome-photos (argument)
 media-plugins/grilo-plugins upnp-av
 
-sys-libs/binutils-libs nls abi_x86_32
+sys-libs/binutils-libs nls
 # required by reiser4progs
-sys-libs/readline split-usr static-libs unicode abi_x86_32
+sys-libs/readline split-usr static-libs unicode
 
 # threads: required by gitg
 dev-libs/libgit2 ssh threads
