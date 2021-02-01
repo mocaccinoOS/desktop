@@ -16,7 +16,6 @@ kde-plasma/kde-cli-tools X
 >=media-libs/mesa-20.1.10 abi_x86_32 wayland
 >=dev-libs/expat-2.2.8 abi_x86_32
 >=media-libs/libglvnd-1.3.2-r2 abi_x86_32
->=sys-libs/zlib-1.2.11-r2 abi_x86_32
 >=x11-libs/libva-2.7.1 abi_x86_32
 >=dev-libs/wayland-1.18.0 abi_x86_32
 >=x11-libs/libvdpau-1.3 abi_x86_32
@@ -46,11 +45,9 @@ kde-plasma/kde-cli-tools X
 >=virtual/libelf-3 abi_x86_32
 >=virtual/opencl-3-r1 abi_x86_32
 >=dev-libs/elfutils-0.181 abi_x86_32
->=app-arch/bzip2-1.0.6-r11 abi_x86_32
 >=dev-libs/ocl-icd-2.2.12-r3 abi_x86_32
 >=virtual/libudev-232-r3 abi_x86_32
 >=sys-apps/systemd-246-r2 abi_x86_32
->=sys-apps/util-linux-2.35.2 abi_x86_32
 >=sys-libs/libcap-2.43 abi_x86_32
 >=dev-libs/libgcrypt-1.8.6 abi_x86_32
 >=app-arch/lz4-1.9.2 abi_x86_32
@@ -116,22 +113,14 @@ app-cdr/xfburn gstreamer
 
 # required by seahorse
 app-crypt/gcr vala gtk
-# We really wanted USE=static in order
-# to not add many pkgs on 700Mb sized ISO
-# images but it turned out to be buggy,
-# see bug 2781
-app-crypt/gnupg -static bzip2 smartcard
+app-crypt/gnupg bzip2 nls readline smartcard ssl usb
 app-crypt/heimdal abi_x86_32
 # required by app-backup/deja-dup
 app-crypt/libsecret crypt introspection vala abi_x86_32
 app-crypt/mit-krb5 keyutils nls openldap pkinit threads abi_x86_32
 app-crypt/p11-kit asn1 libffi trust abi_x86_32
-# app-crypt/pinentry is now a meta-package
-# enable GTK2 by default, people complaining
-# about dependencies, should really use pinentry-base
-# instead
-app-crypt/pinentry gtk -qt5 gnome-keyring
-app-crypt/qca gpg
+app-crypt/pinentry ncurses
+app-crypt/qca gpg ssl
 
 app-doc/doxygen latex dot
 
@@ -890,17 +879,16 @@ sys-apps/gnome-disk-utility -nautilus -avahi
 sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
-sys-apps/man-db -berkdb
+sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus X systemd user-session abi_x86_32
-sys-apps/iproute2 caps
+sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/keyutils split-usr abi_x86_32
-sys-apps/pciutils -zlib
+sys-apps/pciutils kmod udev abi_x86_32 -zlib
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils abi_x86_32
-# Install tty helpers (like wall)
-sys-apps/util-linux tty-helpers
+sys-apps/util-linux bzip2 nls static-libs utils abi_x86_32
 sys-apps/xdg-desktop-portal screencast
 
-sys-auth/pambase -consolekit -kerberos
+sys-auth/pambase cracklib nullok sha512 systemd -consolekit -kerberos
 
 sys-block/gparted -kde -gtk dmraid f2fs mdadm btrfs
 sys-block/parted device-mapper
@@ -947,13 +935,10 @@ sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
 sys-libs/e2fsprogs-libs split-usr static-libs abi_x86_32
 sys-fs/udev static-libs
-sys-apps/util-linux caps static-libs
 # Use flag dbus is required for evolution
 dev-libs/glib dbus mime static-libs xattr abi_x86_32
-dev-libs/elfutils static-libs
-sys-libs/gpm static-libs
-
-sys-libs/gwenhywfar designer qml sensors serialport webkit
+dev-libs/elfutils bzip2 nls static-libs utils abi_x86_32
+sys-libs/gpm split-usr static-libs abi_x86_32
 
 sys-kernel/dracut device-mapper dracut_modules_biosdevname dracut_modules_btrfs dracut_modules_dmraid dracut_modules_dmsquash-live dracut_modules_gensplash dracut_modules_lvm dracut_modules_mdraid dracut_modules_multipath dracut_modules_nbd dracut_modules_nfs dracut_modules_plymouth dracut_modules_syslog dracut_modules_crypt dracut_modules_crypt-gpg dracut_modules_crypt-loop dracut_modules_iscsi dracut_modules_systemd net
 sys-kernel/genkernel cryptsetup crypt
@@ -963,7 +948,8 @@ sys-kernel/linux-sabayon btrfs dracut dmraid symlink grub iscsi mdadm luks lvm z
 sys-kernel/sabayon-sources symlink
 
 sys-libs/db -java
-sys-libs/zlib minizip
+sys-libs/gwenhywfar designer qml sensors serialport webkit
+sys-libs/zlib minizip split-usr static-libs abi_x86_32
 
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
@@ -1112,7 +1098,6 @@ media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 
-sys-auth/polkit -kde -gtk
 media-libs/libpng apng abi_x86_32
 
 # New splashutils wants static-libs see Gentoo bug #356231
@@ -1121,8 +1106,7 @@ media-libs/lcms static-libs
 virtual/jpeg static-libs abi_x86_32
 media-libs/libjpeg-turbo static-libs abi_x86_32
 media-libs/libmng static-libs
-app-arch/bzip2 static-libs
-sys-libs/zlib static-libs
+app-arch/bzip2 split-usr static-libs abi_x86_32
 
 # We want packages with static-libs (add here)
 dev-libs/expat static-libs
@@ -1131,9 +1115,9 @@ dev-libs/expat static-libs
 # cairo pulls in mesa in the end, which is bad for spinbase
 # however, we have split ebuilds now, so enable cairo
 dev-python/pygobject introspection cairo
-sys-auth/polkit introspection
+sys-auth/polkit introspection nls pam systemd -kde -gtk
 sys-power/upower introspection
-net-libs/libsoup introspection
+net-libs/libsoup introspection ssl vala abi_x86_32
 x11-libs/gtk+:2 cups introspection xinerama abi_x86_32
 x11-libs/gtk+:3 X cups introspection wayland xinerama abi_x86_32
 media-libs/gst-plugins-base introspection

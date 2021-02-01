@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210110+6"
+version: "0.20210110+7"
 category: layers
 requires:
 - category: "system"
@@ -107,13 +107,10 @@ emerge:
   - dev-db/sqlite:3
   - dev-lang/nasm:0
   - dev-lang/perl:0
-  - dev-lang/python:3.7
-  - dev-lang/python-exec:2
   - dev-lang/ruby:2.6
   - dev-lang/rust:stable
   - dev-lang/spidermonkey:78
   - dev-lang/tcl:0
-  - dev-lang/vala:0.48
   - dev-libs/atk:0
   - dev-libs/boehm-gc:0
   - dev-libs/boost:0
@@ -160,7 +157,6 @@ emerge:
   - dev-libs/ocl-icd:0
   - dev-libs/openssl:0
   - dev-libs/popt:0
-  - dev-libs/vala-common:0
   - dev-libs/wayland:0
   - dev-libs/wayland-protocols:0
   - dev-perl/Authen-SASL:0
@@ -216,11 +212,7 @@ emerge:
   - dev-util/cmake:0
   - dev-util/colm:0
   - dev-util/desktop-file-utils:0
-  - dev-util/gdbus-codegen:0
-  - dev-util/glib-utils:0
   - dev-util/gperf:0
-  - dev-util/gtk-doc-am:0
-  - dev-util/gtk-update-icon-cache:0
   - dev-util/intltool:0
   - dev-util/itstool:0
   - dev-util/meson:0
@@ -230,10 +222,6 @@ emerge:
   - dev-util/ragel:0
   - dev-util/re2c:0
   - dev-vcs/git:0
-  - gnome-base/dconf:0
-  - gnome-base/gnome-keyring:0
-  - gnome-base/gsettings-desktop-schemas:0
-  - gnome-base/librsvg:2
   - media-fonts/croscorefonts:0
   - media-gfx/graphite2:0
   - media-libs/fontconfig:1.0
@@ -242,12 +230,10 @@ emerge:
   - media-libs/giflib:0
   - media-libs/harfbuzz:0
   - media-libs/imlib2:0
-  - media-libs/libepoxy:0
   - media-libs/libglvnd:0
   - media-libs/libjpeg-turbo:0
   - media-libs/libpng:0
   - media-libs/libwebp:0
-  - media-libs/mesa:0
   - media-libs/tiff:0
   - net-dns/dnssec-root:0
   - net-dns/libidn2:0
@@ -409,17 +395,10 @@ emerge:
   - www-client/w3m:0
   - x11-base/xcb-proto:0
   - x11-base/xorg-proto:0
-  - x11-libs/cairo:0
-  - x11-libs/gdk-pixbuf:2
-  - x11-libs/gtk+:3
-  - x11-libs/gtk+:2
   - x11-libs/libdrm:0
   - x11-libs/libICE:0
   - x11-libs/libpciaccess:0
   - x11-libs/libSM:0
-  - x11-libs/libva:0
-  - x11-libs/libva-intel-driver:0
-  - x11-libs/libva-vdpau-driver:0
   - x11-libs/libvdpau:0
   - x11-libs/libX11:0
   - x11-libs/libXau:0
@@ -437,11 +416,5 @@ emerge:
   - x11-libs/libxshmfence:0
   - x11-libs/libXt:0
   - x11-libs/libXxf86vm:0
-  - x11-libs/pango:0
-  - x11-libs/pixman:0
   - x11-libs/xtrans:0
   - x11-misc/shared-mime-info:0
-  - x11-themes/adwaita-icon-theme:0
-  - x11-themes/gnome-themes-standard:0
-  - x11-themes/gtk-engines-adwaita:0
-  - x11-themes/hicolor-icon-theme:0
