@@ -610,7 +610,7 @@ net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 
-net-dns/avahi howl-compat mdnsresponder-compat gdbm gtk python autoipd -qt5 introspection
+net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
 net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
 net-dns/avahi-gtk introspection
 net-dns/avahi-gtk3 introspection
