@@ -1,6 +1,5 @@
 # MATE
 
-media-libs/libcanberra alsa
 dev-cpp/cairomm aqua
 
 ## KDE
@@ -9,7 +8,7 @@ dev-cpp/cairomm aqua
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
+media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
@@ -581,10 +580,10 @@ media-tv/mythtv -hls fftw
 
 media-video/blinkensim aalib
 media-video/dvgrab quicktime
-media-video/ffmpeg alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
+media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 media-video/jubler mplayer
 media-video/kino quicktime sox vorbis
-media-video/mpv alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
+media-video/mpv bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/totem xulrunner iplayer galago
@@ -949,7 +948,7 @@ x11-misc/xmobar xft
 x11-misc/xscreensaver -new-login
 
 x11-plugins/pidgin-sipe voice
-x11-plugins/cairo-dock-plugins alsa exif gmenu -kde terminal tomboy -webkit -xfce -xklavier
+x11-plugins/cairo-dock-plugins exif gmenu -kde terminal tomboy -webkit -xfce -xklavier
 x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisVert Ubuntu Verde Wood
 # Our artwork, blame Ian
 >=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
