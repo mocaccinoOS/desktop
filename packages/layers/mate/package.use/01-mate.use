@@ -2,7 +2,7 @@ app-editors/pluma spell
 mate-base/mate base extras themes -notification
 mate-base/mate-applets cpupower ipv6 policykit upower
 mate-base/mate-control-center -accountsservice -appindicator -debug
-mate-base/mate-settings-daemon libnotify policykit pulseaudio sound -debug -rfkill -smartcard
+mate-base/mate-settings-daemon libnotify policykit sound -debug -rfkill -smartcard
 mate-base/mate-session-manager ipv6 xtrans
 mate-base/mate-desktop startup-notification -debug
 mate-base/libmatekbd -test
@@ -11,5 +11,4 @@ mate-extra/mate-power-manager applet policykit
 mate-extra/mate-screensaver libnotify opengl pam
 mate-extra/mate-sensors-applet dbus libnotify
 media-gfx/eom exif jpeg lcms
-media-libs/libmatemixer pulseaudio
 x11-wm/marco startup-notification xinerama -test
