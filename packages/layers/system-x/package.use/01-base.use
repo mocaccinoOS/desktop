@@ -1,34 +1,23 @@
-media-libs/libglvnd X
-
 # MATE
 
 media-libs/libcanberra alsa
-dev-cpp/gtkmm X
 >=app-text/poppler-0.90.1 cairo
-dev-cpp/cairomm X aqua
+dev-cpp/cairomm aqua
 
 ## KDE
 
-kde-plasma/kde-cli-tools X
->=kde-frameworks/kwindowsystem-5.74.0 X
 >=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
->=media-libs/mesa-20.1.10 wayland
->=kde-frameworks/kdelibs4support-5.74.0 X
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk X alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
+media-sound/pulseaudio -qt5 -gtk alsa alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
 >=app-accessibility/brltty-6.1 python
 >=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
->=media-libs/clutter-1.26.4 gtk introspection X
->=media-libs/clutter-gtk-1.8.4 X gtk introspection
-x11-libs/gdk-pixbuf X introspection jpeg tiff
-
-media-libs/clutter-gst X gtk introspection
+x11-libs/gdk-pixbuf introspection jpeg tiff
 
 ## Sabayon use flags
 
@@ -217,10 +206,6 @@ dev-java/icedtea -source
 # Needed for Netbeans ide
 dev-java/junit source
 dev-java/swing-layout source
-dev-java/swt cairo -xulrunner
-dev-java/swt -firefox
-# net-p2p/vuze requires swt[gnome] in order to work, see bug #3724
-dev-java/swt gnome
 # sci-mathematics/rstudio requires dev-java/validation-api[source]
 dev-java/validation-api source
 
@@ -248,8 +233,7 @@ dev-libs/c-blosc hdf5
 # Needed by directvnc
 dev-libs/dbus-glib bash-completion
 # Required by terminology
-dev-libs/efl audio drm egl fontconfig gles2-only pulseaudio pixman sound X gstreamer -xcb -opengl -sdl -gnutls
-dev-libs/gdl gnome
+dev-libs/efl audio drm egl fontconfig gles2-only pulseaudio pixman sound gstreamer -xcb -opengl -sdl -gnutls
 # 2010-04-6, trying to disable USE="mono" from gmime
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmime smime -mono
@@ -261,7 +245,7 @@ dev-libs/libdbusmenu gtk3
 dev-libs/libevent ssl threads
 dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
-dev-libs/libgdata gnome gnome-online-accounts
+dev-libs/libgdata gnome-online-accounts
 dev-libs/libgit2-glib ssh
 dev-libs/libgpg-error static-libs
 dev-libs/libgusb vala
@@ -298,10 +282,10 @@ dev-perl/Alien-wxWidgets gstreamer
 dev-perl/PDL fftw
 
 dev-python/QtPy gui printsupport webengine
-dev-python/ipython qt5 -wxwidgets
+dev-python/ipython -wxwidgets
 # Required by app-editors/retext
 dev-python/markdown pygments
-dev-python/matplotlib qt5 -wxwidgets
+dev-python/matplotlib -wxwidgets
 dev-python/numpy lapack
 # The cli flag just brings a lot of dependencies (Gentoo bug 656148)
 dev-python/netaddr -cli
@@ -513,7 +497,7 @@ media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libgphoto2 exif
 media-libs/libggi aalib
-media-libs/imlib2 X bzip2 gif jpeg mp3 png shm tiff webp zlib
+media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
 media-libs/libmypaint gegl
 # Required by media-gfx/darktable
 media-libs/libraw demosaic
@@ -548,7 +532,6 @@ media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
 media-libs/tiff cxx jpeg lzma zlib
 media-libs/vigra fftw
-media-libs/libwebp gif jpeg opengl png tiff
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 
@@ -604,10 +587,10 @@ media-tv/mythtv -hls fftw
 media-video/avidemux qt5
 media-video/blinkensim aalib
 media-video/dvgrab quicktime
-media-video/ffmpeg X alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal opengl openh264 opus postproc pulseaudio sdl speex svg test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
+media-video/ffmpeg alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal opengl openh264 opus postproc pulseaudio sdl speex svg test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 media-video/jubler mplayer
 media-video/kino quicktime sox vorbis
-media-video/mpv X alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal opengl pulseaudio samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
+media-video/mpv alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal opengl pulseaudio samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/totem xulrunner iplayer galago
@@ -718,14 +701,6 @@ net-misc/mosh ufw
 # bluetooth use flag is useless
 # wext due to bug 3283
 net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection modemmanager nss wext wimax -resolvconf
-# OLD: to make VPN working with networkmanager (nm-applet)
-# NEW: USE=gtk makes these plugins work properly with
-# newer nm-applet. Please, don't remove it and see
-# bug 3508
-net-vpn/networkmanager-openvpn gtk
-net-vpn/networkmanager-openconnect gtk
-net-vpn/networkmanager-pptp gtk
-net-vpn/networkmanager-vpnc gnome
 net-misc/ntp -zeroconf
 net-misc/openssh -X -ldap
 net-misc/openssh libedit
@@ -759,7 +734,7 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups X acl dbus kerberos pam ssl threads usb zeroconf
+net-print/cups acl dbus kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
@@ -822,7 +797,7 @@ sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
-sys-apps/dbus X user-session
+sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/keyutils split-usr
 sys-apps/pciutils kmod udev -zlib
@@ -945,15 +920,12 @@ x11-drivers/nvidia-userspace -x-multilib libglvnd tools
 # required by gnome-extra/cinnamon-screensaver >= 3.2.13-r2
 x11-libs/xapps introspection
 
-x11-libs/cairo X glib opengl svg
-x11-libs/goffice gnome
+x11-libs/cairo glib
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
-x11-libs/libxkbcommon X
 # required by x11-libs/qwtpolar
 x11-libs/qwt designer
-x11-libs/qwtpolar qt5
 x11-libs/wxGTK gstreamer webkit
 
 # to make cinepaint work, enable threads on fltk
@@ -1043,12 +1015,12 @@ dev-libs/expat static-libs
 # Prepare for GNOME 3
 # cairo pulls in mesa in the end, which is bad for spinbase
 # however, we have split ebuilds now, so enable cairo
-dev-python/pygobject introspection cairo
+dev-python/pygobject introspection
 sys-auth/polkit introspection nls pam -kde -gtk
 sys-power/upower introspection
 net-libs/libsoup introspection ssl vala
 x11-libs/gtk+:2 cups introspection xinerama
-x11-libs/gtk+:3 X cups introspection wayland xinerama
+x11-libs/gtk+:3 cups introspection xinerama
 media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 media-libs/babl introspection
@@ -1063,7 +1035,7 @@ net-dns/avahi dbus gtk3
 # Disable accessibility, since it's just a virtual dependency
 gnome-base/gnome -extras -accessibility
 # Enable some fancy stuff on gdm
-gnome-base/gdm gnome-keyring smartcard accessibility fprint wayland
+gnome-base/gdm gnome-keyring smartcard accessibility fprint
 
 sys-boot/plymouth video_cards_intel video_cards_nouveau video_cards_radeon -openrc -gtk -pango -static-libs
 
@@ -1142,9 +1114,6 @@ dev-libs/libgit2 ssh threads
 
 # required by libteam
 dev-libs/libnl utils
-
-# Prefer gtk for media-libs/libmediaart
-media-libs/libmediaart gtk -qt5
 
 # commoncpp2 does not build with latest gnutls
 dev-cpp/commoncpp2 -gnutls ssl

@@ -7,8 +7,8 @@ dev-qt/qtcharts qml
 dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
 dev-qt/qtdeclarative jit widgets
-dev-qt/qtwebkit X gstreamer hyphen jit nsplugin opengl printsupport
-dev-qt/qtgui:5 X accessibility dbus egl gif ibus jpeg libinput png udev wayland
+dev-qt/qtwebkit gstreamer hyphen jit nsplugin opengl printsupport
+dev-qt/qtgui:5 accessibility dbus egl gif ibus jpeg libinput png udev wayland
 dev-qt/qtmultimedia:5 alsa gstreamer openal pulseaudio qml widgets
 dev-qt/qtnetwork ssl
 dev-qt/qtquickcontrols:5 widgets
@@ -18,7 +18,7 @@ dev-qt/qtscript:5 private-headers scripttools
 dev-qt/qtsensors qml
 # added for mythtv
 dev-qt/qtsql mysql
-dev-qt/qtvirtualkeyboard X spell
+dev-qt/qtvirtualkeyboard spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
 # needed for calamares
