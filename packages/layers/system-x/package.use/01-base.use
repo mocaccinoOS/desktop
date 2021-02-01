@@ -4,14 +4,13 @@ dev-cpp/cairomm aqua
 
 ## KDE
 
->=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
+>=media-video/vlc-3.0.11.1 ogg vorbis truetype xml
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps dbus gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
+media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
 >=app-text/ghostscript-gpl-9.52-r1 cups
 >=app-text/xmlto-0.0.28-r3 text
->=net-wireless/wpa_supplicant-2.9-r2 dbus
 >=app-accessibility/brltty-6.1 python
 >=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
@@ -543,7 +542,7 @@ media-sound/aqualung libsamplerate
 media-sound/ardour freesound lv2
 media-sound/asunder wavpack
 media-sound/audacity ladspa vamp soundtouch id3tag midi sbsms -ffmpeg
-media-sound/audacious gtk3 wma timidity lirc dbus chardet -gtk -qt5
+media-sound/audacious gtk3 wma timidity lirc chardet -gtk -qt5
 media-sound/audiotools -gui
 media-sound/cantata replaygain taglib cdparanoia devices
 media-sound/clementine -lastfm ios moodbar mtp
@@ -610,12 +609,12 @@ net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 
-net-dns/avahi howl-compat mdnsresponder-compat dbus gdbm gtk python autoipd -qt5 introspection
+net-dns/avahi howl-compat mdnsresponder-compat gdbm gtk python autoipd -qt5 introspection
 net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
 net-dns/avahi-gtk introspection
 net-dns/avahi-gtk3 introspection
 net-dns/avahi-mono introspection
-net-dns/dnsmasq dbus tftp conntrack dnssec dhcp script dhcp-tools
+net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
 net-dns/getdns nettle stubby
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
@@ -727,7 +726,7 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups acl dbus kerberos pam ssl threads usb zeroconf
+net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
@@ -846,7 +845,7 @@ sys-libs/libcxxabi -libunwind
 sys-libs/e2fsprogs-libs split-usr static-libs
 sys-fs/udev static-libs
 # Use flag dbus is required for evolution
-dev-libs/glib dbus mime static-libs xattr
+dev-libs/glib mime static-libs xattr
 dev-libs/elfutils bzip2 nls static-libs utils
 sys-libs/gpm split-usr static-libs
 
@@ -1023,7 +1022,7 @@ x11-libs/libnotify introspection
 dev-libs/libgee introspection
 net-libs/gtk-vnc gtk3
 # our is a split package, who cares
-net-dns/avahi dbus gtk3
+net-dns/avahi gtk3
 # Do not pull in gnome-extra-apps meta package
 # Disable accessibility, since it's just a virtual dependency
 gnome-base/gnome -extras -accessibility
