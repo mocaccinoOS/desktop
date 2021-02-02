@@ -828,6 +828,7 @@ sys-devel/llvm clang
 
 sys-firmware/intel-microcode initramfs
 
+sys-fs/cryptsetup luks1_default
 sys-fs/mtd-utils xattr
 sys-fs/ntfs3g suid ntfsprogs
 # USE=static static-libs must go together in order to have it compiling
