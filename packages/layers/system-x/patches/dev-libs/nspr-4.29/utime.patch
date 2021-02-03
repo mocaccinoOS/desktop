@@ -1,0 +1,74 @@
+commit 5adcfd63025423f378186f92773fe793f5e6963f
+Author: Ettore Di Giacinto <mudler@sabayon.org>
+Date:   Wed Feb 3 19:08:24 2021 +0100
+
+    Drop -t flag into nsinstall calls
+    
+    Modifying time with utime requires fs to support that, which limits a
+    lot portability and compilation on different platform setups, with no
+    real gain.
+
+diff --git a/config/Makefile.in b/config/Makefile.in
+index 7062c5c..ed3cf09 100644
+--- a/config/Makefile.in
++++ b/config/Makefile.in
+@@ -117,8 +117,8 @@ $(OBJDIR)/%$(PROG_SUFFIX): $(OBJDIR)/%.$(OBJ_SUFFIX)
+ 
+ install:: nspr.m4
+ 	$(NSINSTALL) -D $(DESTDIR)$(datadir)/aclocal
+-	$(NSINSTALL) -t -m 0644 $< $(DESTDIR)$(datadir)/aclocal
++	$(NSINSTALL) -m 0644 $< $(DESTDIR)$(datadir)/aclocal
+ 
+ install:: nspr.pc
+ 	$(NSINSTALL) -D $(DESTDIR)$(libdir)/pkgconfig
+-	$(NSINSTALL) -t -m 0644 $< $(DESTDIR)$(libdir)/pkgconfig
++	$(NSINSTALL) -m 0644 $< $(DESTDIR)$(libdir)/pkgconfig
+diff --git a/config/config.mk b/config/config.mk
+index 05db076..15d83ec 100644
+--- a/config/config.mk
++++ b/config/config.mk
+@@ -78,7 +78,7 @@ INSTALL		= $(NSINSTALL)
+ else
+ ifeq ($(NSDISTMODE),copy)
+ # copy files, but preserve source mtime
+-INSTALL		= $(NSINSTALL) -t
++INSTALL		= $(NSINSTALL)
+ else
+ ifeq ($(NSDISTMODE),absolute_symlink)
+ # install using absolute symbolic links
+diff --git a/config/rules.mk b/config/rules.mk
+index cc01759..adf7901 100644
+--- a/config/rules.mk
++++ b/config/rules.mk
+@@ -177,13 +177,13 @@ distclean::
+ 
+ install:: $(RELEASE_BINS) $(RELEASE_HEADERS) $(RELEASE_LIBS)
+ ifdef RELEASE_BINS
+-	$(NSINSTALL) -t -m 0755 $(RELEASE_BINS) $(DESTDIR)$(bindir)
++	$(NSINSTALL) -m 0755 $(RELEASE_BINS) $(DESTDIR)$(bindir)
+ endif
+ ifdef RELEASE_HEADERS
+-	$(NSINSTALL) -t -m 0644 $(RELEASE_HEADERS) $(DESTDIR)$(includedir)/$(include_subdir)
++	$(NSINSTALL) -m 0644 $(RELEASE_HEADERS) $(DESTDIR)$(includedir)/$(include_subdir)
+ endif
+ ifdef RELEASE_LIBS
+-	$(NSINSTALL) -t -m 0755 $(RELEASE_LIBS) $(DESTDIR)$(libdir)/$(lib_subdir)
++	$(NSINSTALL) -m 0755 $(RELEASE_LIBS) $(DESTDIR)$(libdir)/$(lib_subdir)
+ endif
+ 	+$(LOOP_OVER_DIRS)
+ 
+diff --git a/pr/include/md/Makefile.in b/pr/include/md/Makefile.in
+index 383c092..e36f875 100644
+--- a/pr/include/md/Makefile.in
++++ b/pr/include/md/Makefile.in
+@@ -25,8 +25,8 @@ export:: $(MDCPUCFG_H)
+ 
+ install::
+ 	$(NSINSTALL) -D $(DESTDIR)$(includedir)/md
+-	$(NSINSTALL) -t -m 644 $(CONFIGS) $(DESTDIR)$(includedir)/md
+-	$(NSINSTALL) -t -m 644 $(srcdir)/$(MDCPUCFG_H) $(DESTDIR)$(includedir)
++	$(NSINSTALL) -m 644 $(CONFIGS) $(DESTDIR)$(includedir)/md
++	$(NSINSTALL) -m 644 $(srcdir)/$(MDCPUCFG_H) $(DESTDIR)$(includedir)
+ 	mv -f $(DESTDIR)$(includedir)/$(MDCPUCFG_H) $(DESTDIR)$(includedir)/prcpucfg.h
+ 
+ release:: export

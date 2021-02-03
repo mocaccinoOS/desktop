@@ -20,7 +20,7 @@ steps:
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
-# - MAKEOPTS="-j1" emerge -1 dev-libs/nspr
+- MAKEOPTS="-j1" emerge -1 dev-libs/nspr
 - USE=-harfbuzz emerge -1 media-libs/freetype -j $JOBS
 # - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 # - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
