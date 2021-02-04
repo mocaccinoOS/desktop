@@ -12,6 +12,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- USE="-openldap" emerge -1 app-crypt/mit-krb5
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
