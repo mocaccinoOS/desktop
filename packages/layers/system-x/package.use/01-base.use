@@ -148,8 +148,6 @@ app-text/gtkspell vala
 app-text/mupdf -opengl -X
 app-text/lcdf-typetools kpathsea
 app-text/libwps tools
-app-text/poppler jpeg2k
-app-text/poppler-base jpeg2k
 app-text/stardict tools
 app-text/texlive extra -truetype
 app-text/texlive-core xetex
