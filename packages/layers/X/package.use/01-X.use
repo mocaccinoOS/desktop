@@ -1,4 +1,5 @@
 media-libs/gd fontconfig jpeg truetype zlib
+media-libs/harfbuzz glib graphite icu introspection truetype
 # X.Org stuff
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel

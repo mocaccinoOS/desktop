@@ -478,7 +478,6 @@ media-libs/gexiv2 introspection
 media-libs/glfw -wayland
 media-libs/gsound vala
 # LibreOffice wants it
-media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
 # In order to generate files in different formats, we need to enable imlib
