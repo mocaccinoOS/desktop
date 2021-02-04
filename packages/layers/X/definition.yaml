@@ -56,7 +56,6 @@ labels:
       dev-perl/XML-Twig
       dev-python/pycairo
       dev-python/pygobject
-      gnome-base/dconf
       media-libs/alsa-lib
       media-libs/alsa-topology-conf
       media-libs/alsa-ucm-conf
@@ -81,7 +80,6 @@ labels:
       net-libs/libnfnetlink
       net-libs/libqmi
       net-misc/dhcp
-      net-misc/dhcp
       net-misc/mobile-broadband-provider-info
       net-misc/modemmanager
       net-misc/networkmanager
@@ -89,9 +87,7 @@ labels:
       net-wireless/bluez
       net-wireless/wpa_supplicant
       sys-apps/accountsservice
-      sys-apps/dbus
       sys-apps/pciutils
-      sys-auth/polkit
       sys-libs/cracklib
       sys-libs/slang
       sys-power/upower
