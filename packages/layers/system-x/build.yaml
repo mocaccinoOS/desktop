@@ -24,7 +24,8 @@ steps:
 - USE=-harfbuzz emerge -1 media-libs/freetype -j $JOBS
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -1D @system
-# - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
+- wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
+- USE="-vaapi" emerge -1v media-libs/mesa
 # - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 # - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 # - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
