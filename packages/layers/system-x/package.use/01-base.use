@@ -26,7 +26,6 @@ app-eselect/eselect-php fpm apache2
 app-admin/gkrellm hddtemp lm_sensors
 app-admin/ulogd mysql
 app-admin/rsyslog ssl uuid openssl kafka elasticsearch kubernetes snmp normalize
-app-admin/setools -X
 
 app-arch/advancecomp mng
 # GNOME PackageKit support
@@ -180,14 +179,6 @@ dev-db/tora -oracle
 dev-embedded/avr-libc -selinux
 dev-embedded/openocd ftdi
 
-dev-games/cegui devil
-dev-games/mygui -opengl
-dev-games/ode double-precision
-dev-games/ogre cg ois
-dev-games/physfs hog
-dev-games/simgear subversion
-dev-games/clanlib:2.3 mikmod
-
 dev-java/antlr cxx script
 dev-java/bsh bsf
 dev-java/emma -launcher
@@ -334,30 +325,6 @@ dev-vcs/git-cvs curl perforce webdav
 dev-vcs/git-gui-tools curl perforce webdav
 dev-vcs/git-subversion curl perforce webdav
 www-apps/gitweb curl perforce webdav
-
-games-simulation/flightgear -qt5
-games-emulation/generator sdlaudio
-games-emulation/mednafen debugger
-games-emulation/pcsxr -alsa -openal -sdl
-games-emulation/vbam -ffmpeg
-games-emulation/dolphin ao egl llvm portaudio upnp
-games-emulation/yabause -qt5
-
-games-engines/stratagus mng
-
-games-fps/darkplaces textures
-games-fps/eduke32 server vpx
-games-fps/freedoom doomsday
-games-fps/nexuiz dedicated maps
-games-fps/worldofpadman maps
-
-games-sports/xmoto double-precision
-
-games-strategy/0ad editor sound
-games-strategy/freeciv -qt5
-games-strategy/ufoai client server
-games-strategy/uqm voice
-games-strategy/warzone2100 videos
 
 gnome-base/gconf policykit
 gnome-base/gnome-control-center networkmanager input_devices_wacom
