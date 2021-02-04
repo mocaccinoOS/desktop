@@ -475,7 +475,7 @@ media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
-media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs
+media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting infinality png static-libs
 media-libs/gegl raw jpeg2k umfpack
 media-libs/gexiv2 introspection
 # it's either Wayland or X, see Gentoo bug 616968
