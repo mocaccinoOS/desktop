@@ -1,4 +1,5 @@
 app-text/poppler jpeg2k -qt5
+app-text/xmlto text
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/harfbuzz glib graphite icu introspection truetype
 # X.Org stuff
