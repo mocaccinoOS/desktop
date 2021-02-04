@@ -4,3 +4,5 @@ media-libs/harfbuzz glib graphite icu introspection truetype
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa
+# Disable new-login, pulls in gdm or lightdm, which is bad
+x11-misc/xscreensaver -new-login
