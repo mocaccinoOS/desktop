@@ -3,7 +3,9 @@ name: Build packages
 on:
   push:
     branches: [ master ]
-
+  create:
+    tags:
+      - v*
 jobs:
   build:
     runs-on: ubuntu-latest
