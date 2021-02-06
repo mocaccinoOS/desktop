@@ -1,10 +1,34 @@
+app-i18n/ibus gtk2 dconf vala -emoji
+app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
 app-text/poppler jpeg2k -qt5
+app-text/texlive-core xetex
 app-text/xmlto text
+# Needed by directvnc
+dev-libs/dbus-glib bash-completion
+dev-python/pygobject introspection
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/harfbuzz glib graphite icu introspection truetype
-# X.Org stuff
+media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
+media-libs/gst-plugins-bad egl -wayland
+media-libs/gst-plugins-base introspection
+media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg gles2 opencl vaapi vdpau
+media-plugins/alsa-plugins libsamplerate
+media-plugins/gst-plugins-meta mms http
+media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
+net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
+net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection modemmanager nss wext wimax -resolvconf
+net-print/cups acl kerberos pam ssl threads usb zeroconf
+net-print/cups-filters ipp_autosetup pclm
+net-wireless/bluez gstreamer obex user-session
+net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
+sys-apps/pciutils kmod udev -zlib
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa
+x11-libs/cairo glib
+x11-libs/gtk+:2 cups introspection
+x11-libs/gtk+:3 cups introspection
+# libva coolness
+x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 # Disable new-login, pulls in gdm or lightdm, which is bad
 x11-misc/xscreensaver -new-login

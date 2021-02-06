@@ -8,8 +8,6 @@ dev-cpp/cairomm aqua
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
-media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf 
->=app-text/ghostscript-gpl-9.52-r1 cups
 x11-libs/gdk-pixbuf introspection jpeg
 
 ## Sabayon use flags
@@ -83,14 +81,6 @@ app-emulation/winetricks -gtk
 # add HVM
 app-emulation/xen-tools hvm qemu
 
-# USE flag gtk2 enabled on app-i18n/ibus makes it depend on both slots of Gtk+; it shouldn't
-# be a real problem though since everyone nowadays has normally both of them installed.
-# Advantage is that it will be working for applications using either version of the toolkit
-# which also helps make it just work (bug 2518). It may be revisited in the future if needed.
-# 2016-12-25: vala useflag enable because budgie-desktop requires it
-# emoji disabled because it pulls also app-i18n/unicode-cldr which when
-# unpacked takes about 120 MB
-app-i18n/ibus gtk2 dconf vala -emoji -python_single_target_python2_7
 app-i18n/skk-jisyo cdb
 
 app-laptop/pommed -gtk
@@ -141,7 +131,6 @@ app-text/djvu threads -nsplugin
 app-text/enchant aspell
 app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
 app-text/fbreader -gtk
-app-text/ghostscript-gpl -cjk -gtk
 app-text/gtkspell vala
 # enable X to have 'mupdf' tool - we build inject it now
 app-text/mupdf -opengl -X
@@ -149,16 +138,10 @@ app-text/lcdf-typetools kpathsea
 app-text/libwps tools
 app-text/stardict tools
 app-text/texlive extra -truetype
-app-text/texlive-core xetex
 
 app-text/qpdfview sqlite
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
-
-# Since those are not linker deps, we
-# can drop then and let users decide
-# to install the fonts they want
-app-text/ghostscript-gpl -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
 
 # required for blender
 dev-cpp/glog gflags
@@ -210,8 +193,6 @@ dev-libs/boost bzip2 context icu nls python threads zlib zstd
 dev-libs/botan threads -gmp
 dev-libs/crypto++ sse3
 dev-libs/c-blosc hdf5
-# Needed by directvnc
-dev-libs/dbus-glib bash-completion
 # Required by terminology
 dev-libs/efl audio drm egl fontconfig gles2-only pixman sound gstreamer -xcb -opengl -sdl -gnutls
 # 2010-04-6, trying to disable USE="mono" from gmime
@@ -448,7 +429,6 @@ media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libgphoto2 exif
 media-libs/libggi aalib
-media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
 media-libs/libmypaint gegl
 # Required by media-gfx/darktable
 media-libs/libraw demosaic
@@ -460,8 +440,6 @@ media-libs/libsfml doc examples
 media-libs/libsoundtouch sse2
 media-libs/libvpx postproc svc
 media-libs/libxtract fftw
-# www-client/chromium wants media-libs/mesa[gles2]
-media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg gles2
 media-libs/mlt melt frei0r kdenlive quicktime python
 # Disable GUI libs.
 media-libs/openal -qt5
@@ -486,14 +464,9 @@ media-libs/vigra fftw
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 
-media-plugins/alsa-plugins libsamplerate
 media-plugins/audacious-plugins chardet cue gnome gtk3 http icecast libsamplerate modplug sndfile speedpitch wavpack -gtk -qt5
-# Enable the http plugin
-media-plugins/gst-plugins-meta mms http
 kde-apps/kipi-plugins calendar gpssync
 media-plugins/vdr-weatherng dxr3
-# Enable egl flag as requested from wayland flag
-media-libs/gst-plugins-bad egl -wayland
 
 media-sound/alsa-tools -gtk
 media-sound/aqualung libsamplerate
@@ -572,7 +545,6 @@ net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
 net-dns/avahi-gtk introspection
 net-dns/avahi-gtk3 introspection
 net-dns/avahi-mono introspection
-net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
 net-dns/getdns nettle stubby
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
@@ -648,9 +620,6 @@ net-misc/asterisk jabber gtalk xmpp
 net-misc/curl http2 idn ssl -nss -gnutls static-libs
 net-misc/minidlna netgear readynas
 net-misc/mosh ufw
-# bluetooth use flag is useless
-# wext due to bug 3283
-net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection modemmanager nss wext wimax -resolvconf
 net-misc/ntp -zeroconf
 net-misc/openssh -X -ldap
 net-misc/openssh libedit
@@ -682,8 +651,6 @@ net-p2p/eiskaltdcpp json
 net-p2p/retroshare -cli
 net-p2p/vuze source
 
-net-print/cups acl kerberos pam ssl threads usb zeroconf
-net-print/cups-filters ipp_autosetup pclm
 net-print/gutenprint foomaticdb -gtk
 net-print/hplip -acl fax hpijs parport snmp static-ppds usb
 
@@ -691,8 +658,6 @@ net-proxy/privoxy threads
 net-proxy/tsocks tordns
 
 net-wireless/gnuradio atsc channels dtv fec grc noaa performance-counters
-net-wireless/bluez gstreamer obex user-session
-net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
 
 sci-astronomy/celestia -kde
 sci-astronomy/kstars fits indi
@@ -747,7 +712,6 @@ sys-apps/hwdata-gentoo binary-drivers
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
-sys-apps/pciutils kmod udev -zlib
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils
 sys-apps/util-linux bzip2 nls static-libs utils
 sys-apps/xdg-desktop-portal screencast
@@ -867,10 +831,7 @@ x11-drivers/nvidia-userspace -x-multilib libglvnd tools
 # required by gnome-extra/cinnamon-screensaver >= 3.2.13-r2
 x11-libs/xapps introspection
 
-x11-libs/cairo glib
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
-# libva coolness
-x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 # required by x11-libs/qwtpolar
 x11-libs/qwt designer
 x11-libs/wxGTK gstreamer webkit
@@ -960,13 +921,9 @@ dev-libs/expat static-libs
 # Prepare for GNOME 3
 # cairo pulls in mesa in the end, which is bad for spinbase
 # however, we have split ebuilds now, so enable cairo
-dev-python/pygobject introspection
 sys-auth/polkit introspection nls pam -kde -gtk
 sys-power/upower introspection
 net-libs/libsoup introspection ssl vala
-x11-libs/gtk+:2 cups introspection
-x11-libs/gtk+:3 cups introspection
-media-libs/gst-plugins-base introspection
 media-libs/gstreamer introspection
 media-libs/babl introspection
 gnome-extra/polkit-gnome introspection
@@ -1007,7 +964,6 @@ gnome-base/nautilus tracker
 # VAAPI/VDPAU support
 media-libs/avidemux-core vaapi vdpau
 media-libs/xine-lib vaapi vdpau
-media-libs/mesa vaapi vdpau
 # Disabling vaapi for now, see bug #2221, #4069
 # 2013-11-15: retry with USE=vaapi
 media-tv/kodi vaapi vdpau
@@ -1112,7 +1068,6 @@ sys-fs/dosfstools compat
 
 # Enable opencl and evm, make it possible to mine ETH.
 net-p2p/go-ethereum evm opencl
-media-libs/mesa opencl
 # Add electrum features
 net-misc/electrum qrcode sync trustedcoin_com cosign digitalbitbox
 
