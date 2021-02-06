@@ -54,7 +54,6 @@ app-crypt/gnupg bzip2 nls readline smartcard ssl usb
 app-crypt/gpgme -qt5
 # required by app-backup/deja-dup
 app-crypt/libsecret crypt introspection vala
-app-crypt/mit-krb5 keyutils nls openldap pkinit threads
 app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses -gtk -qt5
 app-crypt/qca gpg ssl
@@ -223,7 +222,6 @@ dev-libs/libjcat gpg pkcs7
 dev-libs/libassuan static-libs
 dev-libs/libdazzle vala
 dev-libs/libdbusmenu gtk3
-dev-libs/libevent ssl threads
 dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgdata gnome-online-accounts
@@ -235,7 +233,6 @@ dev-libs/libical vala
 dev-libs/libksba static-libs
 dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
 dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib
-dev-libs/libverto libev threads
 dev-libs/libxml2 icu ipv6 python readline
 dev-libs/nettle gmp
 dev-libs/nss utils
@@ -673,8 +670,6 @@ net-misc/x2goserver sqlite
 
 net-news/rssguard webengine
 
-# slp disabled due to https://bugs.gentoo.org/show_bug.cgi?id=617278
-net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd -minimal -slp
 net-dns/bind-tools gssapi
 net-nds/rpcbind warmstarts
 
@@ -752,7 +747,6 @@ sys-apps/hwdata-gentoo binary-drivers
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
-sys-apps/keyutils split-usr
 sys-apps/pciutils kmod udev -zlib
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils
 sys-apps/util-linux bzip2 nls static-libs utils
@@ -761,7 +755,6 @@ sys-apps/xdg-desktop-portal screencast
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 
 sys-block/gparted -kde -gtk dmraid f2fs mdadm btrfs
-sys-block/parted device-mapper
 
 # Kernel modules not needed
 sys-block/open-iscsi -modules
