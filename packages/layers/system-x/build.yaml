@@ -23,7 +23,7 @@ steps:
 - emerge -1D @system
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
-# - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
+- emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 # - perl-cleaner --all
 
 excludes:

@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210110+17"
+version: "0.20210110+18"
 category: layers
 requires:
 - category: "system"
@@ -12,5 +12,4 @@ requires:
 emerge:
   jobs: "3"
   packages:
-  - sys-apps/systemd
   - sys-devel/clang
