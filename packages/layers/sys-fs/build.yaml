@@ -9,6 +9,7 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+- TMPDIR=/var/tmp
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
