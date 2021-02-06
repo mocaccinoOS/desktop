@@ -950,16 +950,10 @@ sys-libs/glibc hardened suid nscd
 dev-libs/lzo split-usr static-libs
 
 ## GNOME 3.10 flags
-# required by gnome-music
-app-misc/tracker gstreamer -ffmpeg
 # required by gnome-base/gnome-core-apps-3.10.1::gnome-next[cdr]
 # required by gnome-base/gnome-3.10.1::gnome-next
 # required by gnome-base/gnome (argument)
 app-cdr/brasero tracker
-# required by gnome-base/gnome-core-apps-3.10.1::gnome-next
-# required by gnome-base/gnome-3.10.1::gnome-next
-# required by gnome-base/gnome (argument)
-gnome-base/nautilus tracker
 
 # VAAPI/VDPAU support
 media-libs/avidemux-core vaapi vdpau
@@ -985,12 +979,6 @@ net-misc/spice-gtk gtk3 usbredir smartcard vala
 gnome-base/gdm -plymouth
 sys-boot/plymouth -gdm
 
-# This is disabled because the functionality conflicts with RigoDaemon
-# Maybe it's time to think about turning RigoDaemon into a PackageKit provider
-gnome-base/gnome-settings-daemon -packagekit
-gnome-base/nautilus packagekit
-gnome-extra/gnome-color-manager packagekit
-
 # required by net-analyzer/tcpreplay-4.0.2
 sys-devel/autogen libopts
 
@@ -1005,10 +993,6 @@ sys-libs/readline split-usr static-libs unicode
 # threads: required by gitg
 dev-libs/libgit2 ssh threads
 
-# required by media-plugins/grilo-plugins-0.2.10
-# required by media-sound/gnome-music-3.10.3
-# required by gnome-music (argument)
->=media-libs/grilo-0.2.10 playlist
 # required by media-sound/gnome-music-3.10.3
 # required by gnome-music (argument)
 >=media-plugins/grilo-plugins-0.2.10 tracker
@@ -1069,5 +1053,5 @@ sys-fs/dosfstools compat
 # Enable opencl and evm, make it possible to mine ETH.
 net-p2p/go-ethereum evm opencl
 # Add electrum features
-net-misc/electrum qrcode sync trustedcoin_com cosign digitalbitbox
+net-misc/electrum qrcode
 
