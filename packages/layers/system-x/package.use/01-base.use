@@ -26,8 +26,6 @@ app-admin/ulogd mysql
 app-admin/rsyslog ssl uuid openssl kafka elasticsearch kubernetes snmp normalize
 
 app-arch/advancecomp mng
-# GNOME PackageKit support
-app-arch/file-roller -nautilus packagekit
 app-arch/engrampa caja
 app-arch/p7zip -kde -wxwidgets
 # vzctl and other packages now require xattr support in tar
@@ -169,7 +167,6 @@ dev-java/validation-api source
 
 dev-lang/fpc source ide
 dev-lang/lua deprecated
-dev-lang/luajit lua52compat
 dev-lang/mono minimal
 dev-lang/nqp moar -parrot
 dev-lang/ocaml tk
@@ -224,7 +221,6 @@ dev-libs/xmlsec gcrypt nss
 # See Sabayon bug #1020
 dev-libs/openct pcsc-lite
 
-dev-lua/lpeg luajit
 dev-lua/luv luajit
 dev-lua/mpack luajit
 
@@ -304,7 +300,6 @@ media-plugins/grilo-plugins flickr
 
 # Needed by net-analyzer/ehterape
 gnome-base/libgnomecanvas glade
-gnome-base/nautilus gnome sendto
 
 gnome-extra/evolution-data-server oauth ldap kerberos vala
 gnome-extra/libgsf gnome
@@ -695,8 +690,6 @@ sci-visualization/grace fftw
 sci-visualization/gwyddion fftw
 sci-visualization/paraview -python
 
-# Disable nautilus integration, it gets pulled in in XFCE spin
-sys-apps/gnome-disk-utility -nautilus -avahi
 sys-apps/groff -X
 sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
