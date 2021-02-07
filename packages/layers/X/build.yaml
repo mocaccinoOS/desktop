@@ -16,7 +16,6 @@ prelude:
 - cd /var/db/repos/gentoo/net-dialup/ppp && rm Manifest && ebuild ppp-2.4.8.ebuild digest
 
 steps:
-- MAKEOPTS="-j1" emerge	-1 dev-libs/nss
 - USE="-vaapi" emerge -1 media-libs/mesa
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -rv xorg.conf.d/ /etc/X11/
