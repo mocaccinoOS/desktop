@@ -18,7 +18,6 @@ labels:
       dev-libs/libusb
       dev-libs/libwacom
       dev-libs/newt
-      dev-libs/nss
       dev-libs/protobuf
       dev-perl/Encode-Locale
       dev-perl/ExtUtils-Config

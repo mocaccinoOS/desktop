@@ -16,7 +16,6 @@ prelude:
 
 steps:
 - USE="-vaapi" emerge -1 media-libs/mesa
-- MAKEOPTS="-j1" emerge -1 dev-libs/nss
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
