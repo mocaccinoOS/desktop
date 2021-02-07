@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "0.3+15"
+version: "0.3+16"
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -54,6 +54,7 @@ labels:
       dev-perl/XML-Twig
       dev-python/pycairo
       dev-python/pygobject
+      media-gfx/exiv2
       media-libs/alsa-lib
       media-libs/alsa-topology-conf
       media-libs/alsa-ucm-conf
@@ -67,7 +68,9 @@ labels:
       media-libs/opus
       media-libs/taglib
       media-plugins/gst-plugins-meta
+      media-sound/gsm
       media-sound/pulseaudio
+      media-sound/sox
       net-dialup/linux-atm
       net-dialup/ppp
       net-dialup/ppp-scripts

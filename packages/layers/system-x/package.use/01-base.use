@@ -365,7 +365,6 @@ media-fonts/noto -cjk
 media-gfx/asymptote -latex
 # Blender uses Python 3
 media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
-media-gfx/exiv2 xmp
 media-gfx/darktable geo cpu_flags_x86_sse3 -cpudetection
 # l10n issue is handled by entropy dep_rewrite
 media-gfx/digikam handbook semantic-desktop

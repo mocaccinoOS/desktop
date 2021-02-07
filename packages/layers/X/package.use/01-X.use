@@ -3,9 +3,11 @@ app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-T
 app-text/poppler jpeg2k -qt5
 app-text/texlive-core xetex
 app-text/xmlto text
+dev-lang/luajit lua52compat
 # Needed by directvnc
 dev-libs/dbus-glib bash-completion
 dev-python/pygobject introspection
+media-gfx/exiv2 xmp
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib

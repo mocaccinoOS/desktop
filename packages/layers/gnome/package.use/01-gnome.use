@@ -1,5 +1,4 @@
 app-arch/file-roller -nautilus -packagekit
-dev-lang/luajit lua52compat
 dev-libs/folks eds
 dev-lua/lpeg luajit
 gnome-base/nautilus gnome sendto

@@ -8,6 +8,7 @@ labels:
         gnome-extra/zenity
         gnome-base/gvfs
         net-libs/gnome-online-accounts
+        net-libs/gupnp
         dev-cpp/gtkmm
         dev-libs/libpeas
         app-text/yelp-tools
