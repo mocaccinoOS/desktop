@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210110+18"
+version: "0.20210110+19"
 category: layers
 requires:
 - category: "system"
@@ -13,3 +13,5 @@ emerge:
   jobs: "3"
   packages:
   - sys-devel/clang
+  - dev-perl/JSON
+  - dev-perl/Types-Serialiser

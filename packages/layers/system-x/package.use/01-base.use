@@ -197,7 +197,6 @@ dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgit2-glib ssh
 dev-libs/libgpg-error static-libs
-dev-libs/libgweather vala
 dev-libs/libical vala
 dev-libs/libksba static-libs
 dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
