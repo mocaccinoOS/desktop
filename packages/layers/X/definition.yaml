@@ -15,7 +15,6 @@ labels:
       dev-libs/dbus-glib
       dev-libs/json-glib
       dev-libs/libpwquality
-      dev-libs/libusb
       dev-libs/libwacom
       dev-libs/newt
       dev-libs/protobuf
@@ -90,7 +89,6 @@ labels:
       sys-libs/cracklib
       sys-libs/slang
       sys-power/upower
-      virtual/awk
       virtual/opengl
       virtual/tex-base
       x11-apps/setxkbmap
@@ -128,7 +126,6 @@ labels:
       x11-drivers/xf86-video-vesa
       x11-drivers/xf86-video-vmware
       x11-drivers/xf86-video-vboxvideo
-      x11-libs/libSM
       x11-libs/libwnck
       x11-libs/libxkbcommon
       x11-libs/libxklavier
