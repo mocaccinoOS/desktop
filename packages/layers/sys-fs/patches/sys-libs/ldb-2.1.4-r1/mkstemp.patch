@@ -1,0 +1,19 @@
+commit 57e3f2183d1df6cf0b202283463b64fda74eef7b
+Author: Ettore Di Giacinto <mudler@gentoo.org>
+Date:   Sat Feb 6 12:44:58 2021 +0100
+
+    mkstemp is not mandatory, talloc isn't using it
+
+diff --git a/lib/replace/wscript b/lib/replace/wscript
+index a2bc604..07f7d07 100644
+--- a/lib/replace/wscript
++++ b/lib/replace/wscript
+@@ -804,7 +804,7 @@ def configure(conf):
+                     ''',
+                     define='HAVE_SECURE_MKSTEMP',
+                     execute=True,
+-                    mandatory=True) # lets see if we get a mandatory failure for this one
++                    mandatory=False) # lets see if we get a mandatory failure for this one
+ 
+     # look for a method of finding the list of network interfaces
+     for method in ['HAVE_IFACE_GETIFADDRS', 'HAVE_IFACE_AIX', 'HAVE_IFACE_IFCONF', 'HAVE_IFACE_IFREQ']:
