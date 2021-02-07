@@ -1,0 +1,20 @@
+commit 6ae51e3274ea0a8c17e932373bb37377cb62340a
+Author: Ettore Di Giacinto <mudler@gentoo.org>
+Date:   Sun Feb 7 18:59:04 2021 +0100
+
+    Don't preserve source mtime when copying sources
+
+diff --git a/coreconf/UNIX.mk b/coreconf/UNIX.mk
+index 59dbf7b..592fcb1 100644
+--- a/coreconf/UNIX.mk
++++ b/coreconf/UNIX.mk
+@@ -38,9 +38,7 @@ endif
+ ####################################################################
+ 
+ ifeq ($(NSDISTMODE),copy)
+-	# copy files, but preserve source mtime
+ 	INSTALL  = $(NSINSTALL)
+-	INSTALL += -t
+ else
+ 	ifeq ($(NSDISTMODE),absolute_symlink)
+ 		# install using absolute symbolic links

@@ -12,6 +12,7 @@ env:
 
 prelude:
 - cp -rf package.use /etc/portage/
+- cp -rf patches /etc/portage/
 - cd /var/db/repos/gentoo/net-dialup/ppp && rm Manifest && ebuild ppp-2.4.8.ebuild digest
 
 steps:
