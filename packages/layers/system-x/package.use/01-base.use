@@ -53,7 +53,6 @@ app-doc/doxygen latex dot
 
 app-editors/bluefish gnome -python
 app-editors/emacs libxml2 xft
-app-editors/gedit-plugins terminal
 # USE=spell wants Python 3.2, doesn't allow 3.3
 app-editors/retext -spell
 app-editors/vim cscope lua ruby vim-pager
@@ -122,7 +121,6 @@ app-text/ansifilter -qt5
 app-text/atril djvu epub
 app-text/djvu threads -nsplugin
 app-text/enchant aspell
-app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
 app-text/fbreader -gtk
 app-text/gtkspell vala
 # enable X to have 'mupdf' tool - we build inject it now
@@ -199,7 +197,6 @@ dev-libs/libf2c static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgit2-glib ssh
 dev-libs/libgpg-error static-libs
-dev-libs/libgusb vala
 dev-libs/libgweather vala
 dev-libs/libical vala
 dev-libs/libksba static-libs
@@ -293,15 +290,12 @@ dev-vcs/git-subversion curl perforce webdav
 www-apps/gitweb curl perforce webdav
 
 gnome-base/gconf policykit
-gnome-base/gnome-control-center networkmanager input_devices_wacom
-gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
 net-misc/gnome-online-miners flickr
 media-plugins/grilo-plugins flickr
 
 # Needed by net-analyzer/ehterape
 gnome-base/libgnomecanvas glade
 
-gnome-extra/evolution-data-server oauth ldap kerberos vala
 gnome-extra/libgsf gnome
 gnome-extra/nautilus-sendto -cdr
 
@@ -368,7 +362,6 @@ media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
 media-gfx/darktable geo cpu_flags_x86_sse3 -cpudetection
 # l10n issue is handled by entropy dep_rewrite
 media-gfx/digikam handbook semantic-desktop
-media-gfx/eog-plugins flickr
 media-gfx/gimageview mng
 media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
@@ -395,18 +388,13 @@ media-gfx/zbar imagemagick v4l
 media-libs/blib aalib
 # required by media-sound/picard
 media-libs/chromaprint tools
-# Needed for gnome-shell
-media-libs/clutter egl
-media-libs/cogl gles2
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting infinality png static-libs
 media-libs/gegl raw jpeg2k umfpack
-media-libs/gexiv2 introspection
 # it's either Wayland or X, see Gentoo bug 616968
 media-libs/glfw -wayland
-media-libs/gsound vala
 # LibreOffice wants it
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
@@ -502,7 +490,6 @@ media-video/kino quicktime sox vorbis
 media-video/mpv bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
-media-video/totem xulrunner iplayer galago
 media-video/vdr SetGroupSep-Patch atsc cmdsubmenu dvbsetup dxr3 graphtft iptv menuorg pinplugin rotor submenu subtitles ttxtsubs ttxtsubs yaepg
 media-video/vlc aalib chromecast egl fontconfig httpd libass live lua microdns rtsp samba skins soxr taglib upnp vlm -svg
 media-video/xine-ui aalib vdr
@@ -915,11 +902,6 @@ dev-libs/libgee introspection
 net-libs/gtk-vnc gtk3
 # our is a split package, who cares
 net-dns/avahi gtk3
-# Do not pull in gnome-extra-apps meta package
-# Disable accessibility, since it's just a virtual dependency
-gnome-base/gnome -extras -accessibility
-# Enable some fancy stuff on gdm
-gnome-base/gdm gnome-keyring smartcard accessibility fprint
 
 sys-boot/plymouth video_cards_intel video_cards_nouveau video_cards_radeon -openrc -gtk -pango -static-libs
 
@@ -963,10 +945,6 @@ sys-boot/plymouth -gdm
 
 # required by net-analyzer/tcpreplay-4.0.2
 sys-devel/autogen libopts
-
-# required by media-gfx/gnome-photos-3.10.2
-# required by gnome-photos (argument)
-media-plugins/grilo-plugins upnp-av
 
 sys-libs/binutils-libs nls
 # required by reiser4progs
