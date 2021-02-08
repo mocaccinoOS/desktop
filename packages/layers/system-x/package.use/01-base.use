@@ -305,7 +305,6 @@ kde-apps/dolphin semantic-desktop thumbnail
 kde-apps/gwenview kipi raw semantic-desktop
 kde-apps/kdepim-runtime google
 kde-apps/kget -bittorrent semantic-desktop
-kde-apps/kio-extras mtp samba
 kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
 kde-apps/krdc vnc
 kde-apps/ktp-common-internals otr

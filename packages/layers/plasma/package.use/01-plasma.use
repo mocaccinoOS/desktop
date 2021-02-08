@@ -1,3 +1,4 @@
+kde-apps/kio-extras mtp samba
 kde-plasma/plasma-meta networkmanager
 kde-plasma/plasma-desktop input_devices_synaptics touchpad
 kde-plasma/kde-cli-tools kdesu
