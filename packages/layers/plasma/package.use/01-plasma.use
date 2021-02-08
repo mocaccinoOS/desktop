@@ -6,3 +6,4 @@ kde-plasma/kscreenlocker -seccomp
 kde-plasma/kwin captury xcomposite
 kde-plasma/plasma-nm modemmanager openconnect
 kde-plasma/plasma-workspace geolocation
+net-vpn/networkmanager-openconnect -gtk
