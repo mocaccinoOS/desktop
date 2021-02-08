@@ -320,15 +320,6 @@ kde-frameworks/kitemmodels qml
 # issues (scans the device often)
 kde-misc/kdeconnect -bluetooth
 
-kde-plasma/kde-cli-tools kdesu
-kde-plasma/kdeplasma-addons desktopglobe json oauth semantic-desktop
-kde-plasma/kwin captury xcomposite
-kde-plasma/kscreenlocker -seccomp
-kde-plasma/plasma-desktop input_devices_synaptics touchpad
-kde-plasma/plasma-meta networkmanager
-kde-plasma/plasma-nm modemmanager openconnect
-kde-plasma/plasma-workspace geolocation
-
 lxde-base/lxterminal gtk3
 
 lxqt-base/lxqt-panel networkmonitor
