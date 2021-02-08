@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "0.3+17"
+version: "0.3+18"
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -58,19 +58,32 @@ labels:
       media-libs/alsa-lib
       media-libs/alsa-topology-conf
       media-libs/alsa-ucm-conf
+      media-libs/dav1d
+      media-libs/fdk-aac
       media-libs/flac
       media-libs/gst-plugins-base
+      media-libs/libass
+      media-libs/libbluray
       media-libs/libcanberra
+      media-libs/libdvbpsi
       media-libs/libexif
       media-libs/libmtp
       media-libs/libsamplerate
       media-libs/libsndfile
       media-libs/opus
       media-libs/taglib
+      media-libs/soxr
+      media-libs/xvid
+      media-libs/vidstab
+      media-libs/x264
+      media-libs/x265
       media-plugins/gst-plugins-meta
       media-sound/gsm
+      media-sound/lame
       media-sound/pulseaudio
       media-sound/sox
+      media-video/ffmpeg
+      media-video/pipewire
       net-dialup/linux-atm
       net-dialup/ppp
       net-dialup/ppp-scripts
@@ -90,6 +103,7 @@ labels:
       sys-apps/accountsservice
       sys-apps/pciutils
       sys-libs/cracklib
+      sys-libs/libraw1394
       sys-libs/slang
       sys-power/upower
       virtual/opengl
