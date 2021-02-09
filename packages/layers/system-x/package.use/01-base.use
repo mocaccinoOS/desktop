@@ -6,9 +6,6 @@ dev-cpp/cairomm aqua
 
 >=kde-frameworks/prison-5.74.0 qml
 
-## GNOME
-x11-libs/gdk-pixbuf introspection jpeg
-
 ## Sabayon use flags
 
 app-accessibility/at-spi2-core introspection -X
@@ -379,7 +376,6 @@ media-libs/chromaprint tools
 # Needed by freecad
 media-libs/coin doc
 media-libs/devil mng
-media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting infinality png static-libs
 media-libs/gegl raw jpeg2k umfpack
 # it's either Wayland or X, see Gentoo bug 616968
 media-libs/glfw -wayland
@@ -404,7 +400,6 @@ media-libs/libvpx postproc svc
 media-libs/libxtract fftw
 media-libs/mlt melt frei0r kdenlive quicktime python
 # Disable GUI libs.
-media-libs/openal -qt5
 media-libs/openexr -video_cards_nvidia
 media-libs/opus custom-modes
 # on amd64, if ABI_X86=32 is set, exif must be unset
@@ -758,9 +753,6 @@ www-client/midori sqlite
 www-client/surf savedconfig
 www-client/uget gstreamer aria2
 
-# 32bit plugin is unwanted
-www-plugins/adobe-flash -32bit sse2
-
 # Our Apache defaults
 # apache2_modules_http2 not enabled because it does not build (on Gentoo) with
 # the prefork MPM
@@ -860,13 +852,9 @@ media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 
-media-libs/libpng apng
-
 # New splashutils wants static-libs see Gentoo bug #356231
-media-libs/libpng static-libs
 media-libs/lcms static-libs
 virtual/jpeg static-libs
-media-libs/libjpeg-turbo static-libs
 media-libs/libmng static-libs
 app-arch/bzip2 split-usr static-libs
 
