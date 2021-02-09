@@ -10,13 +10,10 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
-- cp -rf package.use /etc/portage/
+- cp -rf package.license /etc/portage/package.license/codecs.license
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "qt"
-  version: ">=0"
-- category "layers"
-  name: "codecs"
+  name: "system-x"
   version: ">=0"
