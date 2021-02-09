@@ -4,7 +4,6 @@ dev-cpp/cairomm aqua
 
 ## KDE
 
->=media-video/vlc-3.0.11.1 ogg vorbis truetype xml
 >=kde-frameworks/prison-5.74.0 qml
 
 ## GNOME
@@ -479,7 +478,6 @@ media-video/mpv bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv l
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/vdr SetGroupSep-Patch atsc cmdsubmenu dvbsetup dxr3 graphtft iptv menuorg pinplugin rotor submenu subtitles ttxtsubs ttxtsubs yaepg
-media-video/vlc aalib chromecast egl fontconfig httpd libass live lua microdns rtsp samba skins soxr taglib upnp vlm -svg
 media-video/xine-ui aalib vdr
 
 # Drop xine-ui from dvdrip, since
@@ -916,7 +914,6 @@ media-tv/kodi vaapi vdpau
 media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
 media-video/mpv vaapi vdpau
-media-video/vlc vaapi vdpau
 
 app-i18n/scim gtk3
 app-emulation/spice smartcard

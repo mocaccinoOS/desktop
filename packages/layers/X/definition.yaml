@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "0.3+18"
+version: "0.3+19"
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -93,6 +93,7 @@ labels:
       net-libs/libnetfilter_conntrack
       net-libs/libnfnetlink
       net-libs/libqmi
+      net-libs/libupnp
       net-misc/dhcp
       net-misc/mobile-broadband-provider-info
       net-misc/modemmanager

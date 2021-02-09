@@ -1,0 +1,11 @@
+category: "apps"
+name: "vlc"
+version: "3.0.11.1"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+      =media-video/vlc-3.0.11.1
+provides:
+  - name: vlc
+    category: media-video
+    version: '>=0'
