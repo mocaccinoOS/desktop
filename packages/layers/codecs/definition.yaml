@@ -4,12 +4,19 @@ version: "1+2"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      media-libs/libcddb
       media-libs/a52dec
+      media-libs/libcddb
+      media-libs/libmatroska
 provides:
   - name: libcddb
     category: media-libs
     version: '>=0'
   - name: a52dec
     category: media-libs
+    version: '>=0'
+  - name: libmatroska
+    category: media-libs
+    version: '>=0'
+  - name: libebml
+    category: dev-libs/libebml
     version: '>=0'
