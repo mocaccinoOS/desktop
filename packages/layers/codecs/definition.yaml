@@ -4,10 +4,20 @@ version: "1+2"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
+      media-sound/musepack-tools
       media-libs/a52dec
       media-libs/libcddb
       media-libs/libmatroska
 provides:
+  - name: musepack-tools
+    category: media-sound
+    version: '>=0'
+  - name: libcuefile
+    category: media-libs
+    version: '>=0'
+  - name: libreplaygain    
+    category: media-libs 
+    version: '>=0'
   - name: libcddb
     category: media-libs
     version: '>=0'
