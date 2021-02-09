@@ -9,8 +9,6 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-# prelude:
-# - cp -rf package.license /etc/portage/package.license/codecs.license
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
