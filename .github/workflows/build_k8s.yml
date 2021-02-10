@@ -51,6 +51,7 @@ jobs:
       run: |
         mc mirror --overwrite --remove minio-ci/$BUCKET minio-ci/$BUCKET-stable
     - uses: actions/upload-artifact@v2
+      if: always()
       with:
         name: build-log
         path: build.log
