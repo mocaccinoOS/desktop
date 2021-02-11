@@ -1,0 +1,3 @@
+# Disable net-wireless/bluez for libpcap to avoid
+# having dbus, thus half X shit around pulled in
+net-libs/libpcap -bluetooth

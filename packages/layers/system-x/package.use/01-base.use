@@ -552,10 +552,6 @@ net-libs/nodejs icu inspector
 net-libs/telepathy-qt farstream
 net-libs/zeromq drafts unwind
 
-# Disable net-wireless/bluez for libpcap to avoid
-# having dbus, thus half X shit around pulled in
-net-libs/libpcap -bluetooth
-
 net-mail/dbmail sqlite3
 # Provide more dovecot features
 net-mail/dovecot managesieve mbox sieve sqlite

@@ -1,0 +1,15 @@
+category: "layers"
+name: "net-tools"
+version: "0.1+1"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+        net-dns/c-ares
+        net-libs/libnatpmp
+        net-libs/libpcap
+        net-libs/libtorrent-rasterbar
+        net-libs/miniupnpc
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
