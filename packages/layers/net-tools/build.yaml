@@ -16,5 +16,5 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "net-tools"
+  name: "system-x"
   version: ">=0"
