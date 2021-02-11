@@ -1,0 +1,11 @@
+category: "apps"
+name: "hexchat"
+version: "2.14.3"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+      =net-irc/hexchat-2.14.3
+provides:
+  - name: hexchat
+    category: net-irc
+    version: '>=0'
