@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: "1+3"
+version: "1+4"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -8,6 +8,7 @@ labels:
       media-libs/a52dec
       media-libs/libcddb
       media-libs/libmatroska
+      media-plugins/live
 provides:
   - name: musepack-tools
     category: media-sound
@@ -28,5 +29,8 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libebml
-    category: dev-libs/libebml
+    category: dev-libs
+    version: '>=0'
+  - name: live
+    category: media-plugins
     version: '>=0'
