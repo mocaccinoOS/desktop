@@ -488,7 +488,6 @@ net-analyzer/rrdtool graph
 net-analyzer/snmptt mysql
 net-analyzer/snort dynamicplugin
 net-analyzer/smokeping apache2
-net-analyzer/wireshark lua python
 net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 
 net-dialup/mgetty -fax
