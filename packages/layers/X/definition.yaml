@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "0.3+19"
+version: "0.3+20"
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -9,6 +9,7 @@ labels:
       acct-group/plugdev
       acct-user/dhcp
       acct-user/dnsmasq
+      app-admin/sudo
       app-i18n/ibus
       app-text/hunspell
       dev-lang/lua
@@ -54,6 +55,7 @@ labels:
       dev-perl/XML-Twig
       dev-python/pycairo
       dev-python/pygobject
+      mail-mta/postfix
       media-gfx/exiv2
       media-libs/alsa-lib
       media-libs/alsa-topology-conf
