@@ -6,6 +6,6 @@ labels:
   emerge.packages: >-
       sys-kernel/linux-firmware
 provides:
-  - name: firmware
+  - name: linux-firmware
     category: sys-kernel
     version: '>=0'
