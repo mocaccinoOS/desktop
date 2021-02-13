@@ -17,3 +17,6 @@ requires:
 - category: "layers"
   name: "qt"
   version: ">=0"
+- category: "apps"
+  name: "vlc"
+  version: ">=0"
