@@ -10,7 +10,7 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
-- cp -rf package.license /etc/portage/package.license/firmware.license
+- cp -rf package.license /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
