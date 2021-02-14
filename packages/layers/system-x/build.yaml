@@ -25,7 +25,8 @@ steps:
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 # - perl-cleaner --all
-
+# Permissions, etc
+- chgrp messagebus /usr/libexec/dbus-daemon-launch-helper
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
