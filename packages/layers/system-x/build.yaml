@@ -24,6 +24,7 @@ steps:
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
+- emerge sys-apps/systemd sys-apps/dbus -j $JOBS
 # - perl-cleaner --all
 # Permissions, etc
 - chgrp messagebus /usr/libexec/dbus-daemon-launch-helper
