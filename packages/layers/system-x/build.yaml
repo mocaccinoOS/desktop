@@ -16,7 +16,9 @@ prelude:
 - cp -rf patches/ /etc/portage/
 - cp -rf bashrc /etc/portage/
 steps:
-- eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
+- eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 sys-apps/dbus || true'
+- emerge sys-apps/dbus
+- dbus-uuidgen --ensure
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
 - emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS
 - wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz
