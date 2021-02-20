@@ -9,3 +9,10 @@ provides:
   - name: vlc
     category: media-video
     version: '>=0'
+requires:
+- category: "layers"
+  name: "codecs"
+  version: ">=0"
+- category: "layers"
+  name: "qt"
+  version: ">=0"
