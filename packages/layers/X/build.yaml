@@ -17,6 +17,7 @@ prelude:
 
 steps:
 - USE="-vaapi" emerge -1 media-libs/mesa
+- wget https://sources.voidlinux.org/poppler-data-0.4.9/poppler-data-0.4.9.tar.gz -O /var/cache/distfiles/poppler-data-0.4.9.tar.gz
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
