@@ -15,7 +15,7 @@ prelude:
 steps:
 - USE="-subversion -mercurial" emerge layman
 - layman -L
-- layman -a steam-overlay
+- yes n | layman -a steam-overlay
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
