@@ -14,6 +14,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 steps:
 - USE="-subversion -mercurial" emerge layman
+- layman -L
 - layman -a steam-overlay
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
