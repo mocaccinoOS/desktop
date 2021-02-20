@@ -10,7 +10,6 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
-- cp -rf package.use /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.keywords /etc/portage/
 steps:
