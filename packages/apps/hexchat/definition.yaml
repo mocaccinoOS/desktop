@@ -9,3 +9,7 @@ provides:
   - name: hexchat
     category: net-irc
     version: '>=0'
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
