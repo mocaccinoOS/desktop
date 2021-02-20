@@ -4,7 +4,7 @@ version: "20191109"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      =games-util/steam-games-meta-0-r20191109::steam-overlay
+      games-util/steam-games-meta
 provides:
   - name: steam-games-meta
     category: games-util
