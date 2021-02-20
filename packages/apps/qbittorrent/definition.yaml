@@ -1,0 +1,18 @@
+category: "apps"
+name: "qbittorrent"
+version: "4.2.5-r2"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+      =net-p2p/qbittorrent-4.2.5-r2
+provides:
+  - name: qbittorrent
+    category: net-p2p
+    version: '>=0'
+requires:
+- category: "layers"
+  name: "qt"
+  version: ">=0"
+- category: "layers"
+  name: "net-tools"
+  version: ">=0"
