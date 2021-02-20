@@ -15,3 +15,6 @@ emerge:
   - sys-devel/clang
   - dev-perl/JSON
   - dev-perl/Types-Serialiser
+
+labels:
+  autobump.strategy: "snapshot"
