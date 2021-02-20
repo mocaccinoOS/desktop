@@ -1,0 +1,15 @@
+category: "apps"
+name: "spotify"
+version: "1.1.42"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+      =media-sound/spotify-1.1.42
+provides:
+  - name: spotify
+    category: media-sound
+    version: '1.1.42'
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
