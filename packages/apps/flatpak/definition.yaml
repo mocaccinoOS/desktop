@@ -1,6 +1,6 @@
 category: "apps"
 name: "flatpak"
-version: "1.8.2"
+version: "1.8.2+1"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -12,6 +12,9 @@ provides:
   - name: ostree
     category: dev-util
     version: '2019.5'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '1.8.0'
   - name: xdg-desktop-portal-gtk
     category: sys-apps
     version: '1.8.0'
