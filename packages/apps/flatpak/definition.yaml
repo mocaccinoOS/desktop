@@ -12,6 +12,9 @@ provides:
   - name: ostree
     category: dev-util
     version: '2019.5'
+  - name: xdg-desktop-portal-gtk
+    category: sys-apps
+    version: '1.8.0'
 requires:
 - category: "layers"
   name: "gnome"
