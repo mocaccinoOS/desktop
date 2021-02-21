@@ -1,0 +1,18 @@
+category: "apps"
+name: "flatpak"
+version: "1.8.2"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+      =sys-apps/flatpak-1.8.2
+provides:
+  - name: flatpak
+    category: sys-apps
+    version: '1.8.2'
+  - name: ostree
+    category: dev-util
+    version: '2019.5'
+requires:
+- category: "layers"
+  name: "gnome"
+  version: ">=0"
