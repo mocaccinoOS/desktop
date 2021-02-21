@@ -1,3 +1,2 @@
 sys-apps/flatpak ~amd64
 dev-util/ostree ~amd64
-sys-apps/xdg-desktop-portal-gtk ~amd64
