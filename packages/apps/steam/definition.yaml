@@ -1,10 +1,12 @@
 category: "apps"
 name: "steam"
-version: "20191109"
+version: "20191109+1"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
+      games-util/game-device-udev-rules
       games-util/steam-games-meta
+      games-util/steam-launcher
 provides:
   - name: steam-games-meta
     category: games-util
