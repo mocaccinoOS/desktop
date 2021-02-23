@@ -28,8 +28,6 @@ steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 - emerge sys-apps/systemd sys-apps/dbus -j $JOBS
 # - perl-cleaner --all
-# Permissions, etc
-- chgrp messagebus /usr/libexec/dbus-daemon-launch-helper
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
