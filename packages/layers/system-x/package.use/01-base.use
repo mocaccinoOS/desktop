@@ -966,9 +966,6 @@ app-emulation/lxc cgmanager
 dev-java/oracle-jre-bin -nsplugin
 app-emulation/runc apparmor
 
-# Require mkfs.dosfs
-sys-fs/dosfstools compat
-
 # Enable opencl and evm, make it possible to mine ETH.
 net-p2p/go-ethereum evm opencl
 # Add electrum features
