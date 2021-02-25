@@ -17,6 +17,7 @@ prelude:
 - cp -rf bashrc /etc/portage/
 steps:
 - eval 'emerge --unmerge dev-lang/python:3.9 || true'
+- emerge -1 dev-libs/libgcrypt:0
 - emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS
 - emerge -1D @system
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
