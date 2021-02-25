@@ -1,1 +1,2 @@
-=sys-kernel/linux-firmware-20201022-r2 linux-fw-redistributable no-source-code
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+
