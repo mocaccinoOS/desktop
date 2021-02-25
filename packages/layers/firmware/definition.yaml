@@ -1,10 +1,10 @@
 category: "layers"
 name: "firmware"
-version: "1+4"
+version: 1+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      sys-kernel/linux-firmware
+    sys-kernel/linux-firmware
 provides:
   - name: linux-firmware
     category: sys-kernel
