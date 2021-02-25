@@ -1,10 +1,10 @@
 category: "layers"
 name: "sys-tools"
-version: "0.2+3"
+version: 0.2+4
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-        sys-boot/grub
+    sys-boot/grub
 requires:
   - category: "layers"
     name: "system-x"
