@@ -1,10 +1,10 @@
 category: "apps"
 name: "htop"
-version: "2.2.0"
+version: 2.2.0+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      =sys-process/htop-2.2.0
+    =sys-process/htop-2.2.0
 provides:
   - name: htop
     category: sys-process

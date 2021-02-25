@@ -1,20 +1,18 @@
 name: system-x
-version: "0.20210214+3"
+version: 0.20210214+4
 category: layers
 requires:
-- category: "system"
-  name: "gcc-base"
-  version: ">=0"
-- name: systemd-groups
-  version: ">=0"
-  category: meta
-
+  - category: "system"
+    name: "gcc-base"
+    version: ">=0"
+  - name: systemd-groups
+    version: ">=0"
+    category: meta
 emerge:
   jobs: "3"
   packages:
-  - sys-devel/clang
-  - dev-perl/JSON
-  - dev-perl/Types-Serialiser
-
+    - sys-devel/clang
+    - dev-perl/JSON
+    - dev-perl/Types-Serialiser
 labels:
   autobump.strategy: "snapshot"

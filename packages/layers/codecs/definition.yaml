@@ -1,14 +1,10 @@
 category: "layers"
 name: "codecs"
-version: "1+4"
+version: 1+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      media-sound/musepack-tools
-      media-libs/a52dec
-      media-libs/libcddb
-      media-libs/libmatroska
-      media-plugins/live
+    media-sound/musepack-tools media-libs/a52dec media-libs/libcddb media-libs/libmatroska media-plugins/live
 provides:
   - name: musepack-tools
     category: media-sound
@@ -16,8 +12,8 @@ provides:
   - name: libcuefile
     category: media-libs
     version: '>=0'
-  - name: libreplaygain    
-    category: media-libs 
+  - name: libreplaygain
+    category: media-libs
     version: '>=0'
   - name: libcddb
     category: media-libs

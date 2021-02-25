@@ -1,18 +1,18 @@
 category: "apps"
 name: "wireshark"
-version: "3.4.0+1"
+version: 3.4.0+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      =net-analyzer/wireshark-3.4.0
+    =net-analyzer/wireshark-3.4.0
 provides:
   - name: wireshark
     category: net-analyzer
     version: '>=0'
 requires:
-- category: "layers"
-  name: "qt"
-  version: ">=0"
-- category: "layers"
-  name: "net-tools"
-  version: ">=0"
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
+  - category: "layers"
+    name: "net-tools"
+    version: ">=0"

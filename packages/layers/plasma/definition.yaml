@@ -1,10 +1,10 @@
 category: "layers"
 name: "plasma"
-version: "5.19.5+12"
+version: 5.19.5+13
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-      =kde-plasma/plasma-meta-5.19.5
+    =kde-plasma/plasma-meta-5.19.5
 requires:
   - category: "layers"
     name: "X"

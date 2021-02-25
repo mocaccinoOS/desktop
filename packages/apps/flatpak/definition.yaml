@@ -1,10 +1,10 @@
 category: "apps"
 name: "flatpak"
-version: "1.8.2+2"
+version: 1.8.2+3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-      =sys-apps/flatpak-1.8.2
+    =sys-apps/flatpak-1.8.2
 provides:
   - name: flatpak
     category: sys-apps
@@ -16,6 +16,6 @@ provides:
     category: sys-apps
     version: '0.1.2'
 requires:
-- category: "layers"
-  name: "X"
-  version: ">=0"
+  - category: "layers"
+    name: "X"
+    version: ">=0"
