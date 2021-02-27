@@ -9,6 +9,7 @@ env:
 
 prelude:
 - cp -rf package.use /etc/portage/
+- cp -rf profile /etc/portage/
 - cp -rf make.conf /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
