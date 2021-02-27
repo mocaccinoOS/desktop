@@ -1,11 +1,2 @@
-app-admin/calamares ~amd64
-app-admin/docker-bench ~amd64
-
-# For QT stuff
-dev-libs/libclangformat-ide ~amd64
-
-dev-qt/qt-creator ~amd64
-dev-qt/qtquicktimeline ~amd64
-
-sys-apps/usbmon ~amd64
+# Placeholder
 
