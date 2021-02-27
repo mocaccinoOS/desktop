@@ -14,12 +14,12 @@ env:
 - LUET_NOLOCK=true
 prelude:
 - cp -rf package.use /etc/portage/
-- curl https://get.mocaccino.org/luet/get_luet_root.sh | LUET_CONFIG_PROTECT=0 sh
-- emerge -j ${JOBS} sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
-- luet install repository/mocaccino-kernel-stable
-- luet install kernel/mocaccino-lts-sources && luet cleanup
+# - curl https://get.mocaccino.org/luet/get_luet_root.sh | LUET_CONFIG_PROTECT=0 sh
+# - emerge -j ${JOBS} sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
+# - luet install repository/mocaccino-kernel-stable
+# - luet install kernel/mocaccino-lts-sources && luet cleanup
 # We use our kernel for compile modules
-- cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
+# - cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:

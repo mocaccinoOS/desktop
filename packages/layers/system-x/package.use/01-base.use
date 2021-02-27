@@ -696,7 +696,7 @@ sys-fs/ntfs3g suid ntfsprogs
 sys-fs/reiser4progs static static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/udev extras
-sys-fs/zfs -kernel-builtin
+sys-fs/zfs kernel-builtin
 
 sys-apps/entropy-server -matter
 sys-apps/kmod lzma static-libs
