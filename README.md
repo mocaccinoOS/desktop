@@ -25,7 +25,6 @@ From a developer standpoint, MOS takes a unique approach on package building, al
 
 As Luet doesn't impose any specific repository layout, we decided to split packages in the following directories:
 
-- `packages/entities` : All system users and groups
 - `packages/images`: External images that are consumed by other packages
 - `packages/layers`: Contain all installable layers by end-users
 - `packages/meta`: Contains meta packages, used to group multiple packages
