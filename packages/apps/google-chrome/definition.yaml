@@ -1,10 +1,10 @@
 category: "apps"
 name: "google-chrome"
-version: 86.0.4240.193+2
+version: 88.0.4324.182
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =www-client/google-chrome-86.0.4240.193
+    www-client/google-chrome
 provides:
   - name: google-chrome
     category: www-client
