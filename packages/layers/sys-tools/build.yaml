@@ -26,3 +26,6 @@ requires:
 - category: "layers"
   name: "system-x"
   version: ">=0"
+- category: "layers"
+  name: "sys-fs"
+  version: ">=0"
