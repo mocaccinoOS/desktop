@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DOCKER_CFG: ${{ secrets.DOCKER_HOST }}
-      ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG_2 }}
+      ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
       MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
       MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
       MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
