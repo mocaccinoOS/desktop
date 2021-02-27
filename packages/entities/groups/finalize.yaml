@@ -1,2 +1,0 @@
-install:
-- entities apply -f /etc/group /etc/entities/{{ .Values.name }}_acct-group_entity.yaml || true

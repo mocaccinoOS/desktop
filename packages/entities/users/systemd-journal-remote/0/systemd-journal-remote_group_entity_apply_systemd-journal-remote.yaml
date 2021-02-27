@@ -1,3 +1,0 @@
-kind: "group"
-group_name: "systemd-journal-remote"
-users: "systemd-journal-remote"

@@ -1,8 +1,0 @@
-kind: "user"
-username: "logstash"
-password: "x"
-uid: 270
-gid: 270
-info: "Created by entities"
-homedir: "/var/lib/logstash"
-shell: "/sbin/nologin"

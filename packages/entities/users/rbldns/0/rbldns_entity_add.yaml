@@ -1,8 +1,0 @@
-kind: "user"
-username: "rbldns"
-password: "x"
-uid: 153
-gid: 153
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

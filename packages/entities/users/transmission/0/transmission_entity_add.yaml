@@ -1,8 +1,0 @@
-kind: "user"
-username: "transmission"
-password: "x"
-uid: 169
-gid: 
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

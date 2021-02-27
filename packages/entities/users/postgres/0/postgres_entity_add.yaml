@@ -1,8 +1,0 @@
-kind: "user"
-username: "postgres"
-password: "x"
-uid: 70
-gid: 70
-info: "Created by entities"
-homedir: "/var/lib/postgresql"
-shell: "/bin/sh"

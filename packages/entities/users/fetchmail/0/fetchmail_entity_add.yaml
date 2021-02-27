@@ -1,8 +1,0 @@
-kind: "user"
-username: "fetchmail"
-password: "x"
-uid: 124
-gid: 124
-info: "Created by entities"
-homedir: "/var/lib/fetchmail"
-shell: "/sbin/nologin"

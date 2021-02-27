@@ -1,8 +1,0 @@
-kind: "user"
-username: "scponly"
-password: "x"
-uid: 239
-gid: 239
-info: "Created by entities"
-homedir: "/var/chroot/scponly//"
-shell: "/sbin/nologin"

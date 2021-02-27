@@ -1,8 +1,0 @@
-kind: "user"
-username: "git"
-password: "x"
-uid: 196
-gid: 196
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/bin/sh"

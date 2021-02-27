@@ -1,8 +1,0 @@
-kind: "user"
-username: "i2p"
-password: "x"
-uid: 471
-gid: 471
-info: "Created by entities"
-homedir: "/var/lib/i2p"
-shell: "/sbin/nologin"

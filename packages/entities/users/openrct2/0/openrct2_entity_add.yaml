@@ -1,8 +1,0 @@
-kind: "user"
-username: "openrct2"
-password: "x"
-uid: 479
-gid: 479
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

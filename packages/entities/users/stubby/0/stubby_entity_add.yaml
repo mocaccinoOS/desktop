@@ -1,8 +1,0 @@
-kind: "user"
-username: "stubby"
-password: "x"
-uid: 476
-gid: 476
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

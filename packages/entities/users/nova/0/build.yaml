@@ -1,7 +1,0 @@
-steps:
-  - mkdir /etc/entities/|| true
-  - cp -rfv nova*.yaml /etc/entities/
-requires:
-  - category: "distro"
-    name: mocaccino-micro
-    version: '>=0'

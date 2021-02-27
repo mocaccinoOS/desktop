@@ -1,8 +1,0 @@
-kind: "user"
-username: "amavis"
-password: "x"
-uid: 333
-gid: 333
-info: "Created by entities"
-homedir: "/var/lib/amavishome"
-shell: "/sbin/nologin"

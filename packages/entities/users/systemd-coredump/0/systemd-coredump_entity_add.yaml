@@ -1,8 +1,0 @@
-kind: "user"
-username: "systemd-coredump"
-password: "x"
-uid: 194
-gid: 194
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

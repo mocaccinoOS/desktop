@@ -1,8 +1,0 @@
-kind: "user"
-username: "systemd-timesync"
-password: "x"
-uid: 195
-gid: 195
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

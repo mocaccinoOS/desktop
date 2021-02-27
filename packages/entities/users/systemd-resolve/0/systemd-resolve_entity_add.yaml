@@ -1,8 +1,0 @@
-kind: "user"
-username: "systemd-resolve"
-password: "x"
-uid: 193
-gid: 193
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

@@ -1,8 +1,0 @@
-kind: "user"
-username: "ossecr"
-password: "x"
-uid: 332
-gid: 330
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

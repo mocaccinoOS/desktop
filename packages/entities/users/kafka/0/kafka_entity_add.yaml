@@ -1,8 +1,0 @@
-kind: "user"
-username: "kafka"
-password: "x"
-uid: 425
-gid: 425
-info: "Created by entities"
-homedir: "/var/lib/kafka"
-shell: "/bin/sh"

@@ -1,8 +1,0 @@
-kind: "user"
-username: "tox"
-password: "x"
-uid: 236
-gid: 236
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

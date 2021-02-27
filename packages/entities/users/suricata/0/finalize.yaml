@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/suricata_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/suricata_group_entity_apply_.yaml

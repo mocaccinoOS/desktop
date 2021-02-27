@@ -1,8 +1,0 @@
-kind: "user"
-username: "systemd-network"
-password: "x"
-uid: 192
-gid: 192
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/neutron_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/neutron_group_entity_apply_neutron.yaml

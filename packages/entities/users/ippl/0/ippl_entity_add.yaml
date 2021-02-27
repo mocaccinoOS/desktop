@@ -1,8 +1,0 @@
-kind: "user"
-username: "ippl"
-password: "x"
-uid: 465
-gid: 200
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

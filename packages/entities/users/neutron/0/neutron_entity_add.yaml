@@ -1,8 +1,0 @@
-kind: "user"
-username: "neutron"
-password: "x"
-uid: 446
-gid: 446
-info: "Created by entities"
-homedir: "/var/lib/neutron"
-shell: "/sbin/nologin"

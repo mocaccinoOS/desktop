@@ -1,5 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/icinga_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/icinga_group_entity_apply_icinga.yaml
-- entities apply -f /etc/group /etc/entities/icinga_group_entity_apply_icingacmd.yaml
-- entities apply -f /etc/group /etc/entities/icinga_group_entity_apply_nagios.yaml

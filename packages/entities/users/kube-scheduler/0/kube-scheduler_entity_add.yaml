@@ -1,8 +1,0 @@
-kind: "user"
-username: "kube-scheduler"
-password: "x"
-uid: 434
-gid: 434
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

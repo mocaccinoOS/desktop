@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/systemd-resolve_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/systemd-resolve_group_entity_apply_systemd-resolve.yaml

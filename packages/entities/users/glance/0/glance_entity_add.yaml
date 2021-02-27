@@ -1,8 +1,0 @@
-kind: "user"
-username: "glance"
-password: "x"
-uid: 443
-gid: 443
-info: "Created by entities"
-homedir: "/var/lib/glance"
-shell: "/sbin/nologin"

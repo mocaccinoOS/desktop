@@ -1,8 +1,0 @@
-kind: "user"
-username: "etcd"
-password: "x"
-uid: 426
-gid: 426
-info: "Created by entities"
-homedir: "/var/lib/etcd"
-shell: "/sbin/nologin"

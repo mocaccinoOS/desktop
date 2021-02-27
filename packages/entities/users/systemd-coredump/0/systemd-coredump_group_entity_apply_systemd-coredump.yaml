@@ -1,3 +1,0 @@
-kind: "group"
-group_name: "systemd-coredump"
-users: "systemd-coredump"

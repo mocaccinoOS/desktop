@@ -1,8 +1,0 @@
-kind: "user"
-username: "icinga"
-password: "x"
-uid: 457
-gid: 457
-info: "Created by entities"
-homedir: "/var/lib/icinga2"
-shell: "/sbin/nologin"

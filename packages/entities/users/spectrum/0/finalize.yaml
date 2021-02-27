@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/spectrum_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/spectrum_group_entity_apply_spectrum.yaml

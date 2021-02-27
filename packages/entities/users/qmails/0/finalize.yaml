@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/qmails_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/qmails_group_entity_apply_qmail.yaml

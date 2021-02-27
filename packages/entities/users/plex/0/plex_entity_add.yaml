@@ -1,8 +1,0 @@
-kind: "user"
-username: "plex"
-password: "x"
-uid: 103
-gid: 103
-info: "Created by entities"
-homedir: "/var/lib/plexmediaserver"
-shell: "/sbin/nologin"

@@ -1,8 +1,0 @@
-kind: "user"
-username: "bedrock"
-password: "x"
-uid: 485
-gid: 485
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

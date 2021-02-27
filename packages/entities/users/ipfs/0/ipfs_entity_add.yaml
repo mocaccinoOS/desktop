@@ -1,8 +1,0 @@
-kind: "user"
-username: "ipfs"
-password: "x"
-uid: 484
-gid: 484
-info: "Created by entities"
-homedir: "/var/lib/ipfs"
-shell: "/sbin/nologin"

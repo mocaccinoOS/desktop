@@ -1,8 +1,0 @@
-kind: "user"
-username: "spectrum"
-password: "x"
-uid: 486
-gid: 486
-info: "Created by entities"
-homedir: "/var/lib/spectrum2"
-shell: "/sbin/nologin"

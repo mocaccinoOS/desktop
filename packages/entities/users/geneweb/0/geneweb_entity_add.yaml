@@ -1,8 +1,0 @@
-kind: "user"
-username: "geneweb"
-password: "x"
-uid: 467
-gid: 467
-info: "Created by entities"
-homedir: "/var/lib/geneweb"
-shell: "/sbin/nologin"

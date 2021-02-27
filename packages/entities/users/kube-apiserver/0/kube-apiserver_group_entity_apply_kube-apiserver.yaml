@@ -1,3 +1,0 @@
-kind: "group"
-group_name: "kube-apiserver"
-users: "kube-apiserver"

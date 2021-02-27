@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/{{ .Values.name }}_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/{{ .Values.name }}_group_entity_apply_{{ .Values.name }}.yaml

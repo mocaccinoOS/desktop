@@ -1,8 +1,0 @@
-kind: "user"
-username: "sqlgrey"
-password: "x"
-uid: 336
-gid: 336
-info: "Created by entities"
-homedir: "/var/spool/sqlgrey"
-shell: "/sbin/nologin"

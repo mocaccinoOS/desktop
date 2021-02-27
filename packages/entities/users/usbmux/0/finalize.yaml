@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/usbmux_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/usbmux_group_entity_apply_plugdev.yaml

@@ -1,8 +1,0 @@
-kind: "user"
-username: "dhcpcd"
-password: "x"
-uid: 303
-gid: 303
-info: "Created by entities"
-homedir: "/var/chroot/dhcpcd"
-shell: "/sbin/nologin"

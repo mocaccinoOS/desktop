@@ -1,8 +1,0 @@
-kind: "user"
-username: "kube-controller-manager"
-password: "x"
-uid: 433
-gid: 433
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

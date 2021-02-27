@@ -1,8 +1,0 @@
-kind: "user"
-username: "nova"
-password: "x"
-uid: 447
-gid: 447
-info: "Created by entities"
-homedir: "/var/lib/nova"
-shell: "/sbin/nologin"

@@ -1,8 +1,0 @@
-kind: "user"
-username: "nsd"
-password: "x"
-uid: 223
-gid: 223
-info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"

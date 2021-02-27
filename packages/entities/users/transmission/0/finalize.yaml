@@ -1,3 +1,0 @@
-install:
-- entities create -f /etc/passwd /etc/entities/transmission_entity_add.yaml || true
-- entities apply -f /etc/group /etc/entities/transmission_group_entity_apply_transmission.yaml
