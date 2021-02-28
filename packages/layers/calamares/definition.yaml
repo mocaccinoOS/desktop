@@ -1,6 +1,6 @@
 category: "layers"
 name: "calamares"
-version: 3.2.32+3
+version: 3.2.32+4
 provides:
   - name: "calamares"
     category: "app-admin"
@@ -15,12 +15,6 @@ requires:
     version: ">=0"
   - category: "layers"
     name: "gnome-common"
-    version: ">=0"
-  - category: "acct-group"
-    name: "gdm"
-    version: ">=0"
-  - category: "acct-user"
-    name: "gdm"
     version: ">=0"
   - category: "layers"
     name: "qt"
