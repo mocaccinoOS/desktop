@@ -12,6 +12,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- emerge -1 dev-qt/qtprintsupport
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
