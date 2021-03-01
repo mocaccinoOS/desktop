@@ -271,19 +271,6 @@ dev-util/xdelta lzma
 
 dev-vcs/subversion -java -apache2 -dso -kde
 
-# git, split-flags
-dev-vcs/git sab-split -subversion
-dev-vcs/git-cvs sab-split cvs -subversion
-dev-vcs/git-gui-tools sab-split tk -subversion
-dev-vcs/git-subversion sab-split subversion
-www-apps/gitweb sab-split cgi -subversion
-# git, misc. (keep them in sync)
-dev-vcs/git curl perforce webdav
-dev-vcs/git-cvs curl perforce webdav
-dev-vcs/git-gui-tools curl perforce webdav
-dev-vcs/git-subversion curl perforce webdav
-www-apps/gitweb curl perforce webdav
-
 gnome-base/gconf policykit
 net-misc/gnome-online-miners flickr
 media-plugins/grilo-plugins flickr
@@ -295,9 +282,6 @@ gnome-extra/libgsf gnome
 gnome-extra/nautilus-sendto -cdr
 
 kde-apps/akonadi tools
-# See bug 3619
-kde-apps/ark lzma
-kde-apps/dolphin semantic-desktop thumbnail
 kde-apps/gwenview kipi raw semantic-desktop
 kde-apps/kdepim-runtime google
 kde-apps/kget -bittorrent semantic-desktop
