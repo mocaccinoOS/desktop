@@ -1,10 +1,10 @@
 category: "apps"
 name: "wireshark"
-version: 3.4.0+2
+version: 3.4.3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =net-analyzer/wireshark-3.4.0
+    net-analyzer/wireshark
 provides:
   - name: wireshark
     category: net-analyzer
