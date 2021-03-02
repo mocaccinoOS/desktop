@@ -230,6 +230,9 @@ setup_networkmanager() {
 }
 
 prepare() {
+    ldconfig
+    systemctl --no-reload disable ldconfig.service 2> /dev/null
+    systemctl stop ldconfig.service 2> /dev/null
     SYSTEMD_SERVICES=(
         "avahi-daemon"
         "cups"
@@ -245,6 +248,4 @@ prepare() {
     fi
 
     setup_networkmanager
-
-    ldconfig
 }
