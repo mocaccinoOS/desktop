@@ -48,9 +48,9 @@ includes:
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/vtv_.*
 - /usr/lib/llvm$
-- /usr/lib/llvm/10$
-- /usr/lib/llvm/10/lib64$
-- /usr/lib/llvm/10/lib$
+- /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}$
+- /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib64$
+- /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib$
 - /usr/lib/llvm/.*/lib.*/libLLVM.*.so
 - /usr/share$
 - /usr/share/gcc-data$
