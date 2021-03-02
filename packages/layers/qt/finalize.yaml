@@ -1,2 +1,3 @@
 install:
+- ldconfig
 - source /etc/profile && env-update
