@@ -16,6 +16,11 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf patches/ /etc/portage/
 - cp -rf bashrc /etc/portage/
+# install entities
+- rm /etc/groups /etc/shadow
+- luet install repository/os-commons
+- luet install acct-group/adm acct-group/audio acct-group/cdrom acct-group/dialout acct-group/disk acct-group/input acct-group/kmem acct-group/kvm acct-group/lp acct-group/man acct-group/messagebus acct-group/nobody acct-group/polkitd acct-group/portage acct-group/render acct-group/root acct-group/sshd acct-group/systemd-coredump acct-group/systemd-journal acct-group/systemd-journal-remote acct-group/systemd-network acct-group/systemd-oom acct-group/systemd-resolve acct-group/systemd-timesync acct-group/tape acct-group/tty acct-group/unbound acct-group/users acct-group/utmp acct-group/video acct-group/wheel acct-user/man acct-user/messagebus acct-user/nobody acct-user/polkitd acct-user/portage acct-user/root acct-user/sshd acct-user/systemd-coredump acct-user/systemd-journal-remote acct-user/systemd-network acct-user/systemd-oom acct-user/systemd-resolve acct-user/systemd-timesync acct-user/unbound 
+- luet cleanup
 steps:
 - eval 'emerge --unmerge dev-lang/python:3.9 || true'
 - emerge -1 dev-libs/libgcrypt:0
