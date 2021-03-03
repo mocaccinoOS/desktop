@@ -25,15 +25,15 @@ steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 - emerge sys-apps/systemd sys-apps/dbus -j $JOBS
 excludes:
-- ^/etc/shadow
+# - ^/etc/shadow
 - ^/etc/os-release
 - ^/etc/gshadow
-- ^/etc/group
+# - ^/etc/group
 - ^/etc/hostname
 - ^/etc/hosts
 - ^/etc/machine-id
 - ^/etc/fstab
-- ^/etc/passwd
+# - ^/etc/passwd
 - ^/etc/machineid
 - ^/var/db/repos
 - ^/var/db/pkg
