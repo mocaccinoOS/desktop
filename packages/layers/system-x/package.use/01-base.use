@@ -90,7 +90,6 @@ app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
 app-misc/mc -slang
 # app-misc/recoll cannot use both inotify and fam, only one of them.
 app-misc/recoll -fam inotify
-app-misc/sabayon-live libglvnd
 app-misc/sphinx mysql
 app-misc/tuxcmd-modules gnome unrar
 
@@ -509,8 +508,6 @@ net-im/mcabber otr
 net-irc/inspircd mysql sqlite
 net-irc/irssi otr
 net-irc/kvirc -audiofile dcc_video
-net-irc/quassel monolithic urlpreview -server
-net-irc/quassel-client urlpreview
 net-irc/weechat tcl
 net-irc/znc -python
 
@@ -682,7 +679,6 @@ sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/udev extras
 sys-fs/zfs kernel-builtin
 
-sys-apps/entropy-server -matter
 sys-apps/kmod lzma static-libs
 
 sys-libs/gdbm berkdb nls readline
@@ -698,9 +694,6 @@ sys-libs/gpm split-usr static-libs
 sys-kernel/dracut device-mapper dracut_modules_biosdevname dracut_modules_btrfs dracut_modules_dmraid dracut_modules_dmsquash-live dracut_modules_gensplash dracut_modules_lvm dracut_modules_mdraid dracut_modules_multipath dracut_modules_nbd dracut_modules_nfs dracut_modules_plymouth dracut_modules_syslog dracut_modules_crypt dracut_modules_crypt-gpg dracut_modules_crypt-loop dracut_modules_iscsi dracut_modules_systemd net
 sys-kernel/genkernel cryptsetup crypt
 sys-kernel/genkernel-next cryptsetup crypt dmraid mdadm
-sys-kernel/linux-sabayon btrfs dracut dmraid symlink grub iscsi mdadm luks lvm zfs plymouth
-<sys-kernel/linux-sabayon-3.13 splash
-sys-kernel/sabayon-sources symlink
 
 sys-libs/db -java
 sys-libs/gwenhywfar designer qml sensors serialport webkit
@@ -857,12 +850,6 @@ sys-libs/glibc hardened suid nscd
 
 dev-libs/lzo split-usr static-libs
 
-## GNOME 3.10 flags
-# required by gnome-base/gnome-core-apps-3.10.1::gnome-next[cdr]
-# required by gnome-base/gnome-3.10.1::gnome-next
-# required by gnome-base/gnome (argument)
-app-cdr/brasero tracker
-
 # VAAPI/VDPAU support
 media-libs/avidemux-core vaapi vdpau
 media-libs/xine-lib vaapi vdpau
@@ -876,7 +863,6 @@ media-video/mpv vaapi vdpau
 app-i18n/scim gtk3
 app-emulation/spice smartcard
 net-misc/spice-gtk gtk3 usbredir smartcard vala
-
 
 # Disable plymouth integration in gdm 3.10
 # Disable gdm integration in plymouth
@@ -953,4 +939,3 @@ app-emulation/runc apparmor
 net-p2p/go-ethereum evm opencl
 # Add electrum features
 net-misc/electrum qrcode
-
