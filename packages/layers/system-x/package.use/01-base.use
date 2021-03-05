@@ -178,8 +178,6 @@ dev-libs/boost bzip2 context icu nls python threads zlib zstd
 dev-libs/botan threads -gmp
 dev-libs/crypto++ sse3
 dev-libs/c-blosc hdf5
-# Required by terminology
-dev-libs/efl audio drm egl fontconfig gles2-only pixman sound gstreamer -xcb -opengl -sdl -gnutls
 # 2010-04-6, trying to disable USE="mono" from gmime
 # 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmime smime -mono
@@ -787,7 +785,6 @@ x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
 x11-themes/zuki-themes gnome-shell
 
-x11-wm/enlightenment xrandr -exchange -enlightenment_modules_wl-weekeyboard
 x11-wm/fluxbox imlib
 x11-wm/fvwm imlib
 x11-wm/icewm imlib
