@@ -23,7 +23,6 @@ steps:
 - emerge -1D @system
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
-- emerge sys-apps/systemd sys-apps/dbus -j $JOBS
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
