@@ -1,0 +1,18 @@
+category: "apps"
+name: "transmission"
+version: 3.00
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    net-p2p/transmission
+provides:
+  - name: transmission
+    category: net-p2p
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+  - category: "layers"
+    name: "net-tools"
+    version: ">=0"
