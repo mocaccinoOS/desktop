@@ -4,7 +4,7 @@ version: 1+8
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/x264 media-libs/x265 media-plugins/live
+    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
   - name: lame
     category: media-sound
@@ -30,7 +30,10 @@ provides:
   - name: x265  
     category: media-libs
     version: '>=0'
- - name: a52dec
+  - name: xvid
+    category: media-libs
+    version: '>=0'
+  - name: a52dec
     category: media-libs
     version: '>=0'
   - name: libmatroska
