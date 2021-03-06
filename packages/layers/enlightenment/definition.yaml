@@ -1,0 +1,11 @@
+category: "layers"
+name: "enlightenment"
+version: 0.24.2
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-wm/enlightenment
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

@@ -1,0 +1,2 @@
+dev-libs/efl audio drm egl fontconfig gles2-only pixman sound gstreamer -xcb -opengl -sdl -gnutls
+x11-wm/enlightenment xrandr -exchange -enlightenment_modules_wl-weekeyboard
