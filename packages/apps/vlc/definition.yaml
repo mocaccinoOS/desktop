@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 3.0.12.1
+version: 3.0.12.1+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -10,9 +10,6 @@ provides:
     category: media-video
     version: '>=0'
 requires:
-  - category: "layers"
-    name: "codecs"
-    version: ">=0"
   - category: "layers"
     name: "qt"
     version: ">=0"

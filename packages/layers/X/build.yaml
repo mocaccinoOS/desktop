@@ -25,3 +25,6 @@ requires:
 - category: "layers"
   name: "sys-fs"
   version: ">=0"
+- category: "layers"
+  name: "codecs"
+  version: ">=0"

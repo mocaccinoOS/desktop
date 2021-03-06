@@ -1,11 +1,14 @@
 category: "layers"
 name: "codecs"
-version: 1+6
+version: 1+7
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-plugins/live
+    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-plugins/live
 provides:
+  - name: lame
+    category: media-sound
+    version: '>=0'
   - name: musepack-tools
     category: media-sound
     version: '>=0'
