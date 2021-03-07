@@ -18,6 +18,7 @@ This document has the objective to address several questions that starts with "H
   - [How do I add a package?](#how-do-i-add-a-package)
   - [How do I update provides list, and what are they?](#how-do-i-update-provides-list-and-what-are-they)
   - [How do I know that a package belongs to a Layer?](#how-do-i-know-that-a-package-belongs-to-a-layer)
+  - [How do I find the duplicate files in the package repositories?](#how-do-i-find-the-duplicate-files-in-the-package-repositories)
   
 
 ## How do I start contributing?
@@ -173,3 +174,19 @@ At the moment it's a manual process - and we will work an automated way as soon 
 ## How do I know that a package belongs to a Layer?
 
 Packages belonging to a layer should be listed as provides, and also part of the arguments to emerge for compiling that package. Until we deliver https://github.com/mocaccinoOS/desktop/issues/6 - it is also a manual process. Refer to the section of this document "How can I debug the build environment?" to see how to hook directly into a package container to inspect its content.
+
+## How do I find the duplicate files in the package repositories?
+
+You can use `luet search` and `jq` to compose a list of duplicate files.  `luet 0.11.3` returns the files in the packages as part of the json result:
+
+```bash
+luet search -o json | jq '.packages | map({ name: .name, files: .files, repository: .repository, version: .version}) | group_by(.files) | map(select(length>1) | .)'
+```
+
+To install jq, if you have `mocaccino-extra` enabled locally, just run:
+
+```bash
+luet install -y utils/jq
+```
+
+*Note*: `luet search` searches into online repositories enabled in the system. You need to have the desktop repo enabled locally in order to retrieve this list.
