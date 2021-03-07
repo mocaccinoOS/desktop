@@ -177,16 +177,16 @@ Packages belonging to a layer should be listed as provides, and also part of the
 
 ## How do I find the duplicate files in the package repositories?
 
-You can use `luet search` and `jq` to compose a list of duplicate files.  `luet 0.11.3` returns the files in the packages as part of the json result:
+You can use `luet search` and `luet filter` to compose a list of duplicate files.  `luet 0.11.3` returns the files in the packages as part of the json result:
 
 ```bash
-luet search -o json | jq '.packages | map({ name: .name, files: .files, repository: .repository, version: .version}) | group_by(.files) | map(select(length>1) | .)'
+luet search -o json | luet filter
 ```
 
-To install jq, if you have `mocaccino-extra` enabled locally, just run:
+To install `luet-filter`, just run:
 
 ```bash
-luet install -y utils/jq
+luet install -y extension/filter
 ```
 
-*Note*: `luet search` searches into online repositories enabled in the system. You need to have the desktop repo enabled locally in order to retrieve this list.
+*Note*: `luet search` searches into online repositories enabled in the system unless `--installed` is specified. You need to have the desktop repo enabled locally in order to retrieve this list.
