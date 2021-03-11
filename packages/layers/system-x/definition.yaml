@@ -11,6 +11,7 @@ requires:
 emerge:
   jobs: "3"
   packages:
+    - app-arch/cpio
     - sys-devel/clang
     - dev-perl/JSON
     - dev-perl/Types-Serialiser
