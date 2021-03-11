@@ -1,6 +1,6 @@
-category: "layers"
+category: "apps"
 name: "calamares"
-version: 3.2.32+4
+version: 3.2.32+5
 provides:
   - name: "calamares"
     category: "app-admin"
@@ -10,9 +10,6 @@ labels:
   emerge.packages: >-
     =app-admin/calamares-3.2.32.1
 requires:
-  - category: "layers"
-    name: "X"
-    version: ">=0"
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
