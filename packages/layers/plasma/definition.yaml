@@ -1,16 +1,16 @@
 category: "layers"
 name: "plasma"
-version: 5.20.5+2
+version: 5.20.5+3
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
     =kde-plasma/plasma-meta-5.20.5
 requires:
   - category: "layers"
-    name: "X"
+    name: "qt"
     version: ">=0"
   - category: "layers"
-    name: "qt"
+    name: "net-tools"
     version: ">=0"
   - category: "apps"
     name: "vlc"
