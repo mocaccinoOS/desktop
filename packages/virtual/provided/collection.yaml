@@ -46,7 +46,9 @@ packages:
   version: "0"
   description: "Virtual package"
   requires:
-  - <<: *dep
+  - category: "layers"
+    name: "sys-tools"
+    version: ">=0"
 - category: "utils"
   name: "rsync"
   version: "0"
