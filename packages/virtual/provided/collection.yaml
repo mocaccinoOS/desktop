@@ -26,7 +26,9 @@ packages:
   version: "0"
   description: "Virtual package"
   requires:
-  - <<: *dep
+  - category: "layers"
+    name: "sys-fs"
+    version: ">=0"
 - category: "utils"
   name: "e2fsprogs"
   version: "0"
