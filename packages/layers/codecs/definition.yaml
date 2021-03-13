@@ -1,10 +1,10 @@
 category: "layers"
 name: "codecs"
-version: 1+8
+version: 1+9
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
+    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
   - name: lame
     category: media-sound
@@ -37,6 +37,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libmatroska
+    category: media-libs
+    version: '>=0'
+  - name: woff2
     category: media-libs
     version: '>=0'
   - name: libebml
