@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20210214+10
+version: 0.20210214+11
 category: layers
 requires:
   - category: "system"
@@ -27,6 +27,8 @@ emerge:
   jobs: "3"
   packages:
     - app-arch/cpio
+    - media-libs/libpng
+    - sys-apps/pciutils
     - sys-devel/clang
     - dev-perl/JSON
     - dev-perl/Types-Serialiser
