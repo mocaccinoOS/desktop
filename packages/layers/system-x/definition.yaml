@@ -8,6 +8,21 @@ requires:
   - name: systemd-groups
     version: ">=0"
     category: meta
+  - name: man
+    category: acct-user
+    version: ">=0"
+  - name: messagebus
+    category: acct-user
+    version: ">=0"
+  - name: polkitd
+    category: acct-user
+    version: ">=0"
+  - name: sshd   
+    category: acct-user
+    version: ">=0"
+  - name: unbound    
+    category: acct-user
+    version: ">=0" 
 emerge:
   jobs: "3"
   packages:
