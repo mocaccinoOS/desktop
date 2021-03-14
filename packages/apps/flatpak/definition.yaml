@@ -22,6 +22,6 @@ requires:
   - category: "acct-group"
     name: "flatpak"
     version: ">=0"
-  - category: "acct-users"
+  - category: "acct-user"
     name: "flatpak"
     version: ">=0"
