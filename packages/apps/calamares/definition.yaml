@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+7
+version: 3.2.32+8
 provides:
   - name: "calamares"
     category: "app-admin"
@@ -16,6 +16,6 @@ requires:
   - category: "layers"
     name: "qt"
     version: ">=0"
-  - category: "layers"
-    name: "sys-tools"
+  - category: "apps"
+    name: "grub"
     version: ">=0"

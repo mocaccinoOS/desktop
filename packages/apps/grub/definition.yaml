@@ -1,13 +1,13 @@
-category: "layers"
-name: "sys-tools"
-version: 0.2+6
+category: "apps"
+name: "grub"
+version: 2.04
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
     sys-boot/grub
 requires:
   - category: "layers"
-    name: "system-x"
+    name: "X"
     version: ">=0"
   - category: "layers"
     name: "sys-fs"
