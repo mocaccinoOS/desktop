@@ -46,8 +46,8 @@ packages:
   version: "0"
   description: "Virtual package"
   requires:
-  - category: "layers"
-    name: "sys-tools"
+  - category: "apps"
+    name: "grub"
     version: ">=0"
 - category: "utils"
   name: "rsync"
