@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.6+8
+version: 0.6+9
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl
+    app-text/scrollkeeper-dtd gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl
 requires:
   - category: "layers"
     name: "X"
