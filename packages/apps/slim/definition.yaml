@@ -1,0 +1,15 @@
+category: "apps"
+name: "slim"
+version: 1.3.6+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-misc/slim
+provides:
+  - name: slim
+    category: x11-misc
+    version: '1.3.6'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
