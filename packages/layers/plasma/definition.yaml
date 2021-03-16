@@ -15,3 +15,7 @@ requires:
   - category: "apps"
     name: "vlc"
     version: ">=0"
+  - name: tss    
+    category: acct-user
+    version: ">=0" 
+# TODO: add sddm user/group
