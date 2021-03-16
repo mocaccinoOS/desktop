@@ -15,3 +15,39 @@ requires:
   - category: "layers"
     name: "codecs"
     version: ">=0"
+  - name: lpadmin
+    category: acct-group
+    version: ">=0"
+  - name: netdev
+    category: acct-group
+    version: ">=0"
+  - name: postdrop
+    category: acct-group
+    version: ">=0"
+  - name: postfix
+    category: acct-group
+    version: ">=0"
+  - name: avahi  
+    category: acct-group
+    version: ">=0"
+  - name: avahi    
+    category: acct-user
+    version: ">=0" 
+  - name: avahi-autoipd
+    category: acct-group
+    version: ">=0" 
+  - name: avahi-autoipd  
+    category: acct-user
+    version: ">=0" 
+  - name: dhcp
+    category: acct-user
+    version: ">=0" 
+  - name: dnsmasq         
+    category: acct-user
+    version: ">=0"
+  - name: pcscd
+    category: acct-user
+    version: ">=0"
+  - name: postfix  
+    category: acct-user
+    version: ">=0"
