@@ -367,6 +367,7 @@ media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libggi aalib
 media-libs/libmypaint gegl
+media-libs/libpng apng static-libs
 # Required by media-gfx/darktable
 media-libs/libraw demosaic
 media-libs/libsamplerate sndfile
