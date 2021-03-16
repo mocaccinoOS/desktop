@@ -15,9 +15,6 @@ requires:
   - name: mail
     category: acct-user
     version: ">=0"
-  - name: postmaster      
-    category: acct-group
-    version: ">=0"
   - name: postmaster
     category: acct-user
     version: ">=0"
