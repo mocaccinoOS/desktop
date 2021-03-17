@@ -17,6 +17,24 @@ requires:
   - name: polkitd
     category: acct-user
     version: ">=0"
+  - name: systemd-coredump
+    category: acct-user
+    version: ">=0"
+  - name: systemd-journal-remote
+    category: acct-user
+    version: ">=0"
+  - name: systemd-network
+    category: acct-user
+    version: ">=0"
+  - name: systemd-oom       
+    category: acct-user
+    version: ">=0"
+  - name: systemd-resolve    
+    category: acct-user
+    version: ">=0"
+  - name: systemd-timesync
+    category: acct-user
+    version: ">=0"
   - name: sshd   
     category: acct-user
     version: ">=0"

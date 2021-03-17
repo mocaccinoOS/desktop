@@ -75,3 +75,5 @@ requires:
     name: "systemd-coredump"
   - <<: *group
     name: "systemd-timesync"
+  - <<: *group
+    name: "systemd-oom"
