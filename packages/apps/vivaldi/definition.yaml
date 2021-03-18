@@ -1,0 +1,15 @@
+category: "apps"
+name: "vivaldi"
+version: 3.6.2165.36+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    www-client/vivaldi
+provides:
+  - name: vivaldi
+    category: www-client
+    version: '3.6.2165.36'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
