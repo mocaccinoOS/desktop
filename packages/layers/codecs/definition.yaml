@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 1+9
+version: 1+10
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -26,8 +26,8 @@ provides:
     version: '>=0'
   - name: x264
     category: media-libs
-    version: '>=0' 
-  - name: x265  
+    version: '>=0'
+  - name: x265
     category: media-libs
     version: '>=0'
   - name: xvid
