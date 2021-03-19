@@ -2,7 +2,7 @@
 
 This repository contains installable "apps" that we refer internally as "layers" to install common suite of packages needed to bootstrap a pure and simple OS.
 
-A User, should be able then to install KDE by calling `luet install layers/KDE` and nothing else. That package should bring all the necessary components to make the "app" work as expected. The user shouldn't be exposed to the typical OS architecture of bringing with it dozens of dependencies. 
+A User, should be able then to install the Plasma desktop by calling `luet install layers/plasma` and nothing else. That package should bring all the necessary components to make the "app" work as expected. The user shouldn't be exposed to the typical OS architecture of bringing with it dozens of dependencies. 
 
 Think at it like Android apps: Install and uninstall should be as simple as that.
 
@@ -26,7 +26,8 @@ From a developer standpoint, MOS takes a unique approach on package building, al
 As Luet doesn't impose any specific repository layout, we decided to split packages in the following directories:
 
 - `packages/images`: External images that are consumed by other packages
-- `packages/layers`: Contain all installable layers by end-users
+- `packages/apps`: Contains all installable applications by end-users
+- `packages/layers`: Contains all installable layers by end-users
 - `packages/meta`: Contains meta packages, used to group multiple packages
 - `packages/virtual`: Virtual packages which are used to provide dependencies for other packages
 - `packages/mocaccino`: Packages used for branding, or MOS setup
