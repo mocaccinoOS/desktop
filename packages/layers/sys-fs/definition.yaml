@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 0.4+14
+version: 0.4+15
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -9,7 +9,7 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
-  - name: mail      
+  - name: mail
     category: acct-group
     version: ">=0"
   - name: mail

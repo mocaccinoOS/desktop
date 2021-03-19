@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.4+14
+version: 0.4+15
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -27,27 +27,27 @@ requires:
   - name: postfix
     category: acct-group
     version: ">=0"
-  - name: avahi  
+  - name: avahi
     category: acct-group
     version: ">=0"
-  - name: avahi    
+  - name: avahi
     category: acct-user
-    version: ">=0" 
+    version: ">=0"
   - name: avahi-autoipd
     category: acct-group
-    version: ">=0" 
-  - name: avahi-autoipd  
+    version: ">=0"
+  - name: avahi-autoipd
     category: acct-user
-    version: ">=0" 
+    version: ">=0"
   - name: dhcp
     category: acct-user
-    version: ">=0" 
-  - name: dnsmasq         
+    version: ">=0"
+  - name: dnsmasq
     category: acct-user
     version: ">=0"
   - name: pcscd
     category: acct-user
     version: ">=0"
-  - name: postfix  
+  - name: postfix
     category: acct-user
     version: ">=0"
