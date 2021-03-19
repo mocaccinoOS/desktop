@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20210214+11
+version: 0.20210214+12
 category: layers
 requires:
   - category: "system"
@@ -26,21 +26,21 @@ requires:
   - name: systemd-network
     category: acct-user
     version: ">=0"
-#  - name: systemd-oom       
-#    category: acct-user
-#    version: ">=0"
-  - name: systemd-resolve    
+    #  - name: systemd-oom       
+    #    category: acct-user
+    #    version: ">=0"
+  - name: systemd-resolve
     category: acct-user
     version: ">=0"
   - name: systemd-timesync
     category: acct-user
     version: ">=0"
-  - name: sshd   
+  - name: sshd
     category: acct-user
     version: ">=0"
-  - name: unbound    
+  - name: unbound
     category: acct-user
-    version: ">=0" 
+    version: ">=0"
 emerge:
   jobs: "3"
   packages:
