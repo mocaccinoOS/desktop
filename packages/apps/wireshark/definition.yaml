@@ -1,6 +1,6 @@
 category: "apps"
 name: "wireshark"
-version: 3.4.3+1
+version: 3.4.3+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -12,7 +12,4 @@ provides:
 requires:
   - category: "layers"
     name: "qt"
-    version: ">=0"
-  - category: "layers"
-    name: "net-tools"
     version: ">=0"
