@@ -26,9 +26,9 @@ requires:
   - name: systemd-network
     category: acct-user
     version: ">=0"
-    #  - name: systemd-oom       
-    #    category: acct-user
-    #    version: ">=0"
+  - name: systemd-oom       
+    category: acct-user
+    version: ">=0"
   - name: systemd-resolve
     category: acct-user
     version: ">=0"
