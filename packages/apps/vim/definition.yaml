@@ -1,0 +1,11 @@
+category: "apps"
+name: "vim"
+version: 8.2.0814+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-editors/vim
+provides:
+  - name: vim
+    category: app-editors
+    version: '>=0'
