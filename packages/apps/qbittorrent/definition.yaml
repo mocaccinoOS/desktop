@@ -1,6 +1,6 @@
 category: "apps"
 name: "qbittorrent"
-version: 4.3.1+1
+version: 4.3.1+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -12,7 +12,4 @@ provides:
 requires:
   - category: "layers"
     name: "qt"
-    version: ">=0"
-  - category: "layers"
-    name: "net-tools"
     version: ">=0"
