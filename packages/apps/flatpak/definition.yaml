@@ -4,11 +4,11 @@ version: 1.8.5+4
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =sys-apps/flatpak-1.8.5
+    sys-apps/flatpak
 provides:
   - name: flatpak
     category: sys-apps
-    version: '1.8.5'
+    version: '1.10.0'
   - name: ostree
     category: dev-util
     version: '2020.8'
