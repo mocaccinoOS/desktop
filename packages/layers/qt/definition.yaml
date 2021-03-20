@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.2+9
+version: 5.15.2+10
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -8,4 +8,7 @@ labels:
 requires:
   - category: "layers"
     name: "X"
+    version: ">=0"
+  - category: "layers"
+    name: "net-tools"
     version: ">=0"
