@@ -642,8 +642,6 @@ sys-apps/xdg-desktop-portal screencast
 
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 
-sys-block/gparted -kde -gtk dmraid f2fs mdadm btrfs
-
 # Kernel modules not needed
 sys-block/open-iscsi -modules
 
