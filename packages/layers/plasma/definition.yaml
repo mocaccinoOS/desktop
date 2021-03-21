@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.20.5+9
+version: 5.20.5+10
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -8,9 +8,6 @@ labels:
 requires:
   - category: "layers"
     name: "qt"
-    version: ">=0"
-  - category: "layers"
-    name: "net-tools"
     version: ">=0"
   - category: "apps"
     name: "vlc"
