@@ -1,0 +1,11 @@
+category: "apps"
+name: "dracut"
+version: 050+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-kernel/dracut
+provides:
+  - name: dracut
+    category: sys-kernel
+    version: '>=0'
