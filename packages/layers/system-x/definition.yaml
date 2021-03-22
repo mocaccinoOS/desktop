@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20210214+13
+version: 0.20210320+1
 category: layers
 requires:
   - category: "system"
@@ -48,6 +48,7 @@ emerge:
     - media-libs/libpng
     - sys-apps/pciutils
     - sys-devel/clang
+    - sys-kernel/dracut
     - dev-perl/JSON
     - dev-perl/Types-Serialiser
 labels:
