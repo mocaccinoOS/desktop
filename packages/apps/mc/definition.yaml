@@ -1,0 +1,11 @@
+category: "apps"
+name: "mc"
+version: 4.8.26+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-misc/mc
+provides:
+  - name: mc
+    category: app-misc
+    version: '>=0'
