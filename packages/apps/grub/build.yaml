@@ -16,6 +16,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- cp -r 10_linux /etc/grub.d/10_linux
 requires:
 - category: "layers"
   name: "X"
