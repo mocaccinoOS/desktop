@@ -8,7 +8,6 @@ dev-cpp/cairomm aqua
 
 ## Sabayon use flags
 
-app-accessibility/at-spi2-core introspection -X
 # These two want either one of alsa pulseaudio, etc
 app-accessibility/julius -alsa -oss -portaudio
 app-accessibility/simon -alsa -oss -portaudio
