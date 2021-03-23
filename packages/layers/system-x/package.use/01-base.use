@@ -10,7 +10,6 @@ dev-cpp/cairomm aqua
 
 # These two want either one of alsa pulseaudio, etc
 app-accessibility/julius -alsa -oss -portaudio
-app-accessibility/simon -alsa -oss -portaudio
 
 app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
 app-admin/keepassxc browser
@@ -63,7 +62,6 @@ app-emulation/protontricks -gui
 # Add smartcard flag required by gnome-boxes
 app-emulation/qemu glusterfs nfs rbd fdt spice -gtk virtfs xattr usbredir gtk virgl smartcard
 app-emulation/vice fullscreen gtk -sdl
-app-emulation/virtualbox-bin additions vboxwebsrv -chm rdesktop-vrdp
 app-emulation/winetricks -gtk
 # add HVM
 app-emulation/xen-tools hvm qemu
@@ -89,7 +87,6 @@ app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
 # app-misc/recoll cannot use both inotify and fam, only one of them.
 app-misc/recoll -fam inotify
 app-misc/sphinx mysql
-app-misc/tuxcmd-modules gnome unrar
 
 app-mobilephone/gnokii sms -X
 
@@ -623,7 +620,6 @@ sci-visualization/gwyddion fftw
 sci-visualization/paraview -python
 
 sys-apps/groff -X
-sys-apps/hwdata-gentoo binary-drivers
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus user-session
@@ -916,7 +912,6 @@ www-client/w3m fbcon imlib
 app-emulation/lxc cgmanager
 
 # -nsplugin: conflicts with dev-java/icedtea-web[nsplugin]
-dev-java/oracle-jre-bin -nsplugin
 app-emulation/runc apparmor
 
 # Enable opencl and evm, make it possible to mine ETH.
