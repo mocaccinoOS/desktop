@@ -835,8 +835,6 @@ net-libs/gtk-vnc gtk3
 # our is a split package, who cares
 net-dns/avahi gtk3
 
-sys-boot/plymouth video_cards_intel video_cards_nouveau video_cards_radeon -openrc -gtk -pango -static-libs
-
 # Enable hardened USE flags
 sys-devel/base-gcc hardened
 sys-devel/gcc hardened
@@ -864,7 +862,6 @@ net-misc/spice-gtk gtk3 usbredir smartcard vala
 # If enabled, chvt() blocks on tty0 ioctl
 # VT_WAITACTIVE
 gnome-base/gdm -plymouth
-sys-boot/plymouth -gdm
 
 # required by net-analyzer/tcpreplay-4.0.2
 sys-devel/autogen libopts
