@@ -395,7 +395,6 @@ media-libs/sdl2-mixer midi timidity
 # USE=mikmod required by gltron
 media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
-media-libs/tiff cxx jpeg lzma zlib
 media-libs/vigra fftw
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
@@ -472,11 +471,6 @@ net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 
-net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
-net-dns/avahi-base introspection howl-compat autoipd mdnsresponder-compat
-net-dns/avahi-gtk introspection
-net-dns/avahi-gtk3 introspection
-net-dns/avahi-mono introspection
 net-dns/getdns nettle stubby
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
