@@ -15,9 +15,9 @@ requires:
   - name: tss
     category: acct-user
     version: ">=0"
- - category: "acct-groups"
+  - category: "acct-group"
     name: "sddm"
     version: ">=0"
- - category: "acct-user"
+  - category: "acct-user"
     name: "sddm"
     version: ">=0"
