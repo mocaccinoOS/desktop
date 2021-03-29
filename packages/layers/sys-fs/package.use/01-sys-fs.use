@@ -10,3 +10,5 @@ net-fs/samba -abi_x86_32 ads acl aio client ldap oav swat winbind -cluster -ceph
 sys-fs/udisks cryptsetup crypt
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
+sys-fs/ntfs3g suid ntfsprogs
+sys-fs/zfs kernel-builtin

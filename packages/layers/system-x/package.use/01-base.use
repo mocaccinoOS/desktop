@@ -657,12 +657,10 @@ sys-firmware/intel-microcode initramfs
 
 sys-fs/cryptsetup luks1_default
 sys-fs/mtd-utils xattr
-sys-fs/ntfs3g suid ntfsprogs
 # USE=static static-libs must go together in order to have it compiling
 sys-fs/reiser4progs static static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/udev extras
-sys-fs/zfs kernel-builtin
 
 sys-apps/kmod lzma static-libs
 
