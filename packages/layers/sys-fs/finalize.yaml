@@ -1,3 +1,5 @@
 install:
+- chmod u+s /usr/bin/fusermount
+- chmod u+s /usr/bin/fusermount3
 - ldconfig
 - source /etc/profile && env-update
