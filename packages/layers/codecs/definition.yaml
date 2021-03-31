@@ -1,11 +1,14 @@
 category: "layers"
 name: "codecs"
-version: 1+13
+version: 1+14
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/libogg media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
+    media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/libogg media-libs/soxr media-libs/vidstab media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
+  - name: gsm
+    category: media-sound
+    version: '>=0'
   - name: lame
     category: media-sound
     version: '>=0'
@@ -36,10 +39,25 @@ provides:
   - name: a52dec
     category: media-libs
     version: '>=0'
+  - name: alsa-lib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-topology-conf
+    category: media-libs
+    version: '>=0'
+  - name: alsa-ucm-conf
+    category: media-libs
+    version: '>=0'
   - name: libmatroska
     category: media-libs
     version: '>=0'
   - name: libogg
+    category: media-libs
+    version: '>=0'
+  - name: soxr
+    category: media-libs
+    version: '>=0'
+  - name: vidstab
     category: media-libs
     version: '>=0'
   - name: woff2
