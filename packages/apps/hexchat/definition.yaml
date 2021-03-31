@@ -4,7 +4,7 @@ version: 2.14.3+4
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =net-irc/hexchat-2.14.3
+    net-irc/hexchat
 provides:
   - name: hexchat
     category: net-irc
