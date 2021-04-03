@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C dev-util/xfce4-dev-tools
 requires:
 - category: "layers"
   name: "gnome-common"
