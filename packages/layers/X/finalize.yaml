@@ -1,5 +1,6 @@
 install:
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 - chmod u+s /usr/bin/bwrap
+- chmod u+s /usr/bin/sudo
 - ldconfig
 - source /etc/profile && env-update
