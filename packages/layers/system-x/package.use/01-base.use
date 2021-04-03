@@ -1,78 +1,15 @@
-# MATE
-
-
-## KDE
-
-
-## Sabayon use flags
-
-# These two want either one of alsa pulseaudio, etc
-
-# eselect-php now contains fpm init script and apache stuff
-
 # vzctl and other packages now require xattr support in tar
 app-arch/tar xattr
 app-arch/zstd lz4
-
-# Disable KDE on backintime
-# Only one DB supported.
-
-
 app-crypt/gnupg bzip2 nls readline smartcard ssl usb
 app-crypt/gpgme -qt5
 app-crypt/pinentry ncurses -gtk -qt5
-
-
-# USE=spell wants Python 3.2, doesn't allow 3.3
-
-
-# virt stuff
-# Added virgl and gtk to introduce virtual 3D gpu on qemu
-# Add smartcard flag required by gnome-boxes
-# add HVM
-
-
-
-# USE=sound wants mplayer
-
-
-# At 0.5.9 png and freetype require USE lcd_devices_glcd which would bring
-# a few additional dependencies.
-
-# Kernel drivers are unwanted for lirc, they're in-kernel
-
-# app-misc/recoll cannot use both inotify and fam, only one of them.
-
-
-
-# Added boost and gui flags to barry
-
-
-# enable X to have 'mupdf' tool - we build inject it now
-
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
-
-# required for blender
-
-# dev-db/mongodb should use V8. Allows to fix bug 3069
-# embedded-v8 due to incompatiblity with Chromium - Gentoo bug 471582
 dev-db/sqlite icu readline
-# We don't have Oracle
-
-
-# micia: disable source inclusion in icedtea, save some space
-# Needed for Netbeans ide
-# sci-mathematics/rstudio requires dev-java/validation-api[source]
-
 dev-lang/python sqlite berkdb
-
-# Needed by some lisp packages
 dev-libs/boehm-gc threads
 dev-libs/boost bzip2 context icu nls python threads zlib zstd
-# Enable threading support in botan
-# 2010-04-6, trying to disable USE="mono" from gmime
-# 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
 dev-libs/gmp asm cxx static-libs
 dev-libs/libassuan static-libs
 dev-libs/libgcrypt static-libs
@@ -82,123 +19,21 @@ dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-
 dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib
 dev-libs/libxml2 icu ipv6 python readline
 dev-libs/nettle gmp
-
-# required by net-misc/curl[static-libs], enabled here
 dev-libs/popt static-libs
-
-# See Sabayon bug #1020
-
-
-
-
-# Required by app-editors/retext
-# The cli flag just brings a lot of dependencies (Gentoo bug 656148)
-# We want sqlite3 support in pypy
-
-# don't require media-libs/alsa-lib[alisp]
-
-
-
 dev-scheme/guile regex discouraged networking
-
-
-
-
-
-
-# Needed by net-analyzer/ehterape
-
-
-
-
-# as of 1.3.2, bluetooth support is not yet ready, and as reported causes
-# issues (scans the device often)
-
-
-
-
-# ffmpeg is default; disabling it (as of 52.2.0) means losing HTML5 video
-# rendering
-
-
-
-
-# Blender uses Python 3
-# l10n issue is handled by entropy dep_rewrite
-# micia, add documentation for librecad, so that help menu works properly
-# SSE2 required, otherwise it does not merge
-# disable tiff because it pulls in media-libs/opencv, change if deemed so (bug
-# 5463, comment 1)
-# required for some functionality of Inkscape - bug 2941
-# Newer kernels do not provide vid4l
-
-# required by media-sound/picard
-# Needed by freecad
-# it's either Wayland or X, see Gentoo bug 616968
-# LibreOffice wants it
-# In order to generate files in different formats, we need to enable imlib
 media-libs/libpng apng static-libs
-# Required by media-gfx/darktable
-# 32bit libs on amd64, list them here
-# Disable GUI libs.
-# on amd64, if ABI_X86=32 is set, exif must be unset
-
-# ...but disable ABI_X86_32 to make elektra compile (Gentoo bug 519492)
-
-# required by games-engines/gargoyle:0
-# USE=mikmod required by gltron
-
-
-# Enable system-wide pulseaudio, also see bug #4009
-# 2013-07-11: gtk3 is only used to set a proper window icon...
-# 2016-07-13: enable headset profiles, see bug #5232
-# 2.92 with USE=cdr requires =app-cdr/brasero-3.4* but
-# gnome-base/gnome-core-apps[cdr] depends on >=app-cdr/brasero-3.6.1
-# Broken with latest libmp4v2
-
-
-# Disable MMX due to compile failures
-# disable hls because (as of 0.27.6_p20160318) it requires <media-libs/libvpx-1.5.0
-
-
-# Drop xine-ui from dvdrip, since
-# we don't want it on G ISO
-
-# No need to have USE=X on net-snmp
-# ucd-compat required by net-misc/vmpsd-1.4
-
-
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
-# We must choose between mysql and postgres
 net-dns/unbound ecdsa python
-
-# requires net-dns/avahi[-mdnsresponder-compat]
-
-
-# ejabberd, more features!
-
-
 net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
 # Disable cxx, otherwise we have curl pulling in boost
 net-libs/nghttp2 -cxx
-# Required by XBMC 12.x
-# libproxy is bloatware
-# used to be dolphin-emu (now dolphin) flag
-
-# Provide more dovecot features
-
-# See bug 3118
-
-# Preffer openssl over nss and gnutls for curl
-# moreover, nss breaks git https:// checkouts
+# nss breaks git https:// checkouts
 net-misc/curl http2 idn ssl -nss -gnutls static-libs
 net-misc/openssh -X -ldap
 net-misc/openssh libedit
-# No more spidermonkey
 # Add xattr support to rsync
 net-misc/rsync examples xattr
-
 
 
 
