@@ -1,0 +1,15 @@
+category: "apps"
+name: "lightdm"
+version: 1.30.0+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-misc/lightdm
+provides:
+  - name: lightdm
+    category: x11-misc
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
