@@ -34,30 +34,6 @@ net-misc/openssh -X -ldap
 net-misc/openssh libedit
 # Add xattr support to rsync
 net-misc/rsync examples xattr
-
-
-
-
-
-
-
-
-# workaround for https://bugs.gentoo.org/show_bug.cgi?id=361411
-
-# temp. disable python support due to sip shit
-
-
-# doesn't build with tiff 4.0
-# USE=python disabled to avoid PyQt5[designer] to reduce extra dependencies
-# from it
-
-# required by media-gfx/luminance-hdr
-# PQStego requires this USE, see bug 2751
-
-
-# htmldoc, doc, graphviz are required by app-doc/root-docs
-
-
 sys-apps/groff -X
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
@@ -65,164 +41,38 @@ sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre policykit resolvconf seccomp split-usr sysv-utils
 sys-apps/util-linux bzip2 nls static-libs utils
-
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
-
-# Kernel modules not needed
-
-# We support both vanilla and vz kernels
-
-# Disable GTK for distcc, this is a server-side app
-# and it's better to not ship with gtk
 sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
-#sys-devel/gcc objc objc++ objc-gc graphite go -gtk
-
 # No fuck git by default!
 sys-devel/gettext acl cxx ncurses nls openmp -git
-# gdb tuning, we want XML
 # clang wants USE=clang for llvm
 sys-devel/llvm clang
-
-
 sys-fs/cryptsetup luks1_default
-# USE=static static-libs must go together in order to have it compiling
 sys-fs/udev extras
-
 sys-apps/kmod lzma static-libs
-
 sys-libs/gdbm berkdb nls readline
 sys-libs/e2fsprogs-libs split-usr static-libs
 sys-fs/udev static-libs
 # Use flag dbus is required for evolution
 dev-libs/glib mime static-libs xattr
 dev-libs/elfutils bzip2 nls static-libs utils
-
-
 sys-libs/db -java
 sys-libs/zlib minizip split-usr static-libs
-
-
-# relevant flags must be kept in sync with dev-vcs/subversion
-
-
-
-# Our Apache defaults
-# apache2_modules_http2 not enabled because it does not build (on Gentoo) with
-# the prefork MPM
-# https://gitweb.gentoo.org/repo/gentoo.git/commit/eclass/apache-2.eclass?id=4b33fc3fc85114b1a95509eb393299ebc428c167
-# (the change made after 2.4.27 was introduced)
-
-# Inflate lighttpd
-
-
-
-# Disable USE=multilib, it's way too much space on amd64
-# see Sept. 6 2012 discussion on staff ML
-# Update: since we cannot disable USE=multilib,
-# USE flag has been renamed to x-multilib
-
-# required by gnome-extra/cinnamon-screensaver >= 3.2.13-r2
-
-# required by x11-libs/qwtpolar
-
-# to make cinepaint work, enable threads on fltk
-# @cairo: doesn't compile if enabled, undefined ref -> fl_set_cairo_ctm()
-
-# We want MT support for tcl and tk
 dev-lang/tcl threads
-
-
-# Bumblebee stuff
-# Better support for xmobar, add xft USE flag
-
-# Our artwork, blame Ian
-
-
-
 # For safety (no particular reason, but grub requires ncurses)
 # we also provide libncurses.a
 sys-libs/ncurses static-libs tinfo
-
-## Put new entries after this line if you dont want to organize it. ##
-######################################################################
-## Cleaned up 0600Z 10Jan2010 - Az
-
-# libdvdcss setup
-
-
-# openresolv support
-
 # New splashutils wants static-libs see Gentoo bug #356231
 app-arch/bzip2 split-usr static-libs
-
 # We want packages with static-libs (add here)
 dev-libs/expat static-libs
-
-# Prepare for GNOME 3
-# cairo pulls in mesa in the end, which is bad for spinbase
-# however, we have split ebuilds now, so enable cairo
 sys-auth/polkit introspection nls pam -kde -gtk
-# our is a split package, who cares
-
 # Enable hardened USE flags
 sys-devel/gcc hardened
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
 sys-libs/glibc hardened suid nscd
-
 dev-libs/lzo split-usr static-libs
-
-# VAAPI/VDPAU support
-# Disabling vaapi for now, see bug #2221, #4069
-# 2013-11-15: retry with USE=vaapi
-
-
-# Disable plymouth integration in gdm 3.10
-# Disable gdm integration in plymouth
-# If enabled, chvt() blocks on tty0 ioctl
-# VT_WAITACTIVE
-
 # required by net-analyzer/tcpreplay-4.0.2
 sys-devel/autogen libopts
-
 # required by reiser4progs
 sys-libs/readline split-usr static-libs unicode
-
-# threads: required by gitg
-
-# required by media-sound/gnome-music-3.10.3
-# required by gnome-music (argument)
-
-# required by libteam
-
-# commoncpp2 does not build with latest gnutls
-
-# Bug 4726, add UVM support
-
-# No modules, thanks. We're bleeding.
-
-
-# Add more docs to lxc
-
-# required by dev-ruby/metasploit_data_models-0.17.2[ruby_targets_ruby19]
-# required by net-analyzer/metasploit-4.9.3[ruby_targets_ruby19]
-# required by metasploit (argument)
-
-# Required by rkhunter
-
-# Required by reiser4progs
-
-# Enable caps, since threads is enabled by default
-
-# Enabling Galera arbitrator daemon
-
-# Enabling apparmor aufs btrfs overlay useflag to docker
-
-# Fails  https://bugs.gentoo.org/show_bug.cgi?id=571650
-
-
-# needed for lxd
-
-# -nsplugin: conflicts with dev-java/icedtea-web[nsplugin]
-
-# Enable opencl and evm, make it possible to mine ETH.
-# Add electrum features
