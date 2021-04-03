@@ -1,0 +1,522 @@
+dev-cpp/cairomm aqua
+>=kde-frameworks/prison-5.74.0 qml
+app-accessibility/julius -alsa -oss -portaudio
+app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
+app-admin/keepassxc browser
+app-eselect/eselect-php fpm apache2
+app-admin/gkrellm hddtemp lm_sensors
+app-admin/ulogd mysql
+app-admin/rsyslog ssl uuid openssl kafka elasticsearch kubernetes snmp normalize
+app-arch/advancecomp mng
+app-arch/engrampa caja
+app-arch/p7zip -kde -wxwidgets
+app-arch/rpm lua
+app-backup/backintime gnome -kde
+app-backup/bacula mysql vim-syntax -sqlite
+app-backup/fsarchiver lzma zstd
+app-cdr/brasero nautilus
+app-cdr/cdrdao -gnome
+kde-apps/k3b taglib
+app-cdr/xfburn gstreamer
+app-crypt/qca gpg ssl
+app-doc/doxygen latex dot
+app-editors/bluefish gnome -python
+app-editors/emacs libxml2 xft
+app-editors/retext -spell
+app-editors/vim cscope lua ruby vim-pager
+app-editors/xemacs xft
+app-emacs/auctex preview-latex
+app-emulation/libvirt lxc rbd virtualbox fuse kvm qemu virt-network lvm caps iscsi nfs parted uml python xen
+app-emulation/open-vm-tools -X -xinerama
+app-emulation/protontricks -gui
+app-emulation/qemu glusterfs nfs rbd fdt spice -gtk virtfs xattr usbredir gtk virgl smartcard
+app-emulation/vice fullscreen gtk -sdl
+app-emulation/winetricks -gtk
+app-emulation/xen-tools hvm qemu
+app-i18n/skk-jisyo cdb
+app-laptop/pommed -gtk
+app-laptop/tp_smapi hdaps
+app-misc/anki -sound
+app-misc/ddccontrol -gtk -gnome
+app-misc/gcstar stats
+app-misc/lcdproc -png -freetype
+app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
+app-misc/recoll -fam inotify
+app-misc/sphinx mysql
+app-mobilephone/gnokii sms -X
+app-office/abiword plugins
+app-office/calligra kdepim semantic-desktop
+app-office/dia gnome-print
+app-office/glabels doc
+app-office/gnucash aqbanking chipcard hbci ofx quotes sqlite
+app-office/homebank ofx
+app-office/kmymoney hbci ofx
+app-office/libreoffice -nsplugin gnome java templates -kde pdfimport binfilter -gtk3 gstreamer
+app-office/libreoffice-l10n-meta linguas_am linguas_as linguas_as_IN linguas_ast linguas_be linguas_be_BY linguas_bo linguas_brx linguas_ca_XV linguas_dgo linguas_dz linguas_en_ZA linguas_fo linguas_gd linguas_gu linguas_gug linguas_hi_IN linguas_ia linguas_id linguas_ka linguas_kn linguas_kok linguas_ks linguas_ku linguas_ky linguas_lb linguas_lo linguas_mai linguas_mi linguas_ml linguas_ml_IN linguas_mni linguas_mr linguas_mr_IN linguas_my linguas_ne linguas_nr linguas_ns linguas_nso linguas_oc linguas_om linguas_or linguas_or_IN linguas_pa_IN linguas_pap linguas_ps linguas_sa_IN linguas_sat linguas_sd linguas_sh linguas_si linguas_sid linguas_sq linguas_st linguas_sw linguas_sw_TZ linguas_te linguas_te_IN linguas_th linguas_ti linguas_ti_ER linguas_tn linguas_ts linguas_tt linguas_ug linguas_ur_IN linguas_ve linguas_xh linguas_zu
+app-office/magicpoint mng
+app-pda/barry boost gui
+app-portage/eix sqlite
+app-portage/layman git mercurial subversion sync-plugin-portage
+app-text/ansifilter -qt5
+app-text/atril djvu epub
+app-text/djvu threads -nsplugin
+app-text/enchant aspell
+app-text/fbreader -gtk
+app-text/gtkspell vala
+app-text/mupdf -opengl -X
+app-text/lcdf-typetools kpathsea
+app-text/libwps tools
+app-text/stardict tools
+app-text/texlive extra -truetype
+app-text/qpdfview sqlite
+dev-cpp/glog gflags
+dev-db/freetds mssql odbc
+dev-db/mongodb v8 embedded-v8
+dev-db/postgis address-standardizer topology
+dev-db/postgresql server threads
+dev-db/tora -oracle
+dev-embedded/avr-libc -selinux
+dev-embedded/openocd ftdi
+dev-java/antlr cxx script
+dev-java/bsh bsf
+dev-java/emma -launcher
+dev-java/glazedlists java5
+dev-java/gnu-classpath gstreamer
+dev-java/icedtea -source
+dev-java/junit source
+dev-java/swing-layout source
+dev-java/validation-api source
+dev-lang/fpc source ide
+dev-lang/lua deprecated
+dev-lang/mono minimal
+dev-lang/nqp moar -parrot
+dev-lang/ocaml tk
+dev-lang/parrot pcre
+dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd hash imap inifile intl json mhash mysql mysqli mysqlnd odbc pcntl pcre pdo posix postgres reflection simplexml snmp soap sockets spl sqlite sqlite3 tidy tokenizer truetype wddx xml xmlreader xmlwriter xsl zip sysvipc xslt
+dev-lang/rakudo moar
+dev-libs/apr-util openssl
+dev-libs/appstream -qt5
+dev-libs/atk introspection
+dev-libs/botan threads -gmp
+dev-libs/crypto++ sse3
+dev-libs/c-blosc hdf5
+dev-libs/gmime smime -mono
+dev-libs/libjcat gpg pkcs7
+dev-libs/libdazzle vala
+dev-libs/libdbusmenu gtk3
+dev-libs/libf2c static-libs
+dev-libs/libgit2-glib ssh
+dev-libs/libical vala
+dev-libs/nss utils
+dev-libs/openssl:0 asm sslv3 static-libs zlib
+dev-libs/tinyxml stl
+dev-libs/tntnet sdk
+dev-libs/xerces-c xqilla icu
+dev-libs/xmlrpc-c curl
+dev-libs/xmlsec gcrypt nss
+dev-libs/openct pcsc-lite
+dev-lua/luv luajit
+dev-lua/mpack luajit
+dev-ml/lablgl glut
+dev-ml/lablgtk gnomecanvas sourceview
+dev-perl/Alien-wxWidgets gstreamer
+dev-perl/PDL fftw
+dev-python/QtPy gui printsupport webengine
+dev-python/ipython -wxwidgets
+dev-python/markdown pygments
+dev-python/matplotlib -wxwidgets
+dev-python/numpy lapack
+dev-python/netaddr -cli
+dev-python/numpy-python2 lapack
+dev-python/pypy sqlite
+dev-python/pyudev -qt5
+dev-python/QtPy webkit
+dev-python/pyglet -alsa
+dev-python/sphinx latex
+dev-python/twisted conch
+dev-ruby/mysql2 mariadb
+dev-scheme/racket backtrace doc futures jit places threads
+dev-scheme/scm libscm
+dev-db/mysql -berkdb client-libs pic extraengine
+dev-db/mysql-cluster embedded
+dev-db/mariadb -berkdb client-libs extraengine odbc
+dev-tcltk/blt -X
+dev-tcltk/tclxml expat
+dev-util/anjuta subversion
+dev-util/astyle java
+dev-util/biew mmx sse
+dev-util/codeblocks contrib
+dev-util/geany gtk3
+dev-util/geany-plugins ctags enchant git gtkspell pretty-printer gtk3
+dev-util/glade -gnome
+dev-util/kdevelop php qthelp ruby
+dev-util/mottainai-agent lxd
+dev-util/mottainai-server lxd
+dev-util/nvidia-cuda-sdk opencl
+dev-util/nvidia-cuda-toolkit debugger eclipse profiler
+dev-util/xdelta lzma
+dev-vcs/subversion -java -apache2 -dso -kde
+gnome-base/gconf policykit
+net-misc/gnome-online-miners flickr
+media-plugins/grilo-plugins flickr
+gnome-base/libgnomecanvas glade
+gnome-extra/libgsf gnome
+gnome-extra/nautilus-sendto -cdr
+kde-apps/akonadi tools
+kde-apps/gwenview kipi raw semantic-desktop
+kde-apps/kdepim-runtime google
+kde-apps/kget -bittorrent semantic-desktop
+kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
+kde-apps/krdc vnc
+kde-apps/ktp-common-internals otr
+kde-apps/marble plasma
+kde-apps/okular chm djvu ebook epub crypt
+kde-apps/poxml extras
+kde-frameworks/baloo minimal
+kde-frameworks/kitemmodels qml
+kde-misc/kdeconnect -bluetooth
+lxde-base/lxterminal gtk3
+lxqt-base/lxqt-panel networkmonitor
+lxqt-base/lxqt-meta admin archiver lximage powermanagement processviewer -display-manager -sddm -trash
+mail-client/claws-mail archive bogofilter calendar networkmanager pdf perl python rss spam-report webkit -kde -pda
+mail-client/evolution exchange
+mail-client/mutt -berkdb -lmdb -qdbm -tokyocabinet gdbm sasl sidebar smtp
+mail-client/roundcube mysql
+mail-client/thunderbird lightning -system-sqlite -system-libvpx -system-av1
+mail-client/thunderbird-bin -ffmpeg
+mail-filter/maildrop authlib
+mail-filter/procmail mbox
+mail-mta/exim exiscan-acl maildir
+mail-mta/netqmail qmail-spp
+media-fonts/baekmuk-fonts -X
+media-fonts/noto -cjk
+media-gfx/asymptote -latex
+media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
+media-gfx/darktable geo cpu_flags_x86_sse3 -cpudetection
+media-gfx/digikam handbook semantic-desktop
+media-gfx/gimageview mng
+media-gfx/gimp aalib mng webp wmf smp
+media-gfx/gmic gimp fftw -ffmpeg -qt5
+media-gfx/gphoto2 aalib
+media-gfx/graphicsmagick q16 -lcms
+media-gfx/graphite2 perl
+media-gfx/gthumb -cdr slideshow
+media-gfx/imagemagick fftw gs perl q32
+media-gfx/kphotoalbum kipi
+media-gfx/librecad doc
+media-gfx/luminance-hdr sse2
+media-gfx/nomacs -tiff
+media-gfx/pstoedit plotutils
+media-gfx/sane-backends threads -v4l
+media-gfx/sane-frontends gimp
+media-gfx/zbar imagemagick v4l
+media-libs/blib aalib
+media-libs/chromaprint tools
+media-libs/coin doc
+media-libs/devil mng
+media-libs/gegl raw jpeg2k umfpack
+media-libs/glfw -wayland
+media-libs/libkate -wxwidgets
+media-libs/leptonica jpeg2k
+media-libs/libcaca imlib
+media-libs/libepoxy X egl
+media-libs/libffado -qt5
+media-libs/libggi aalib
+media-libs/libmypaint gegl
+media-libs/libraw demosaic
+media-libs/libsamplerate sndfile
+media-libs/libsdl aalib
+media-libs/libsdl2 gles2 haptic
+media-libs/libsfml doc examples
+media-libs/libsoundtouch sse2
+media-libs/libvpx postproc svc
+media-libs/libxtract fftw
+media-libs/mlt melt frei0r kdenlive quicktime python
+media-libs/openexr -video_cards_nvidia
+media-libs/opus custom-modes
+media-libs/oyranos -exif
+app-admin/elektra -abi_x86_32
+media-libs/oyranos -abi_x86_32
+media-libs/opencv contrib
+media-libs/sdl-mixer midi timidity mod mikmod
+media-libs/sdl2-mixer midi timidity
+media-libs/sdl-sound modplug mikmod
+media-libs/svgalib -kernel-helper
+media-libs/vigra fftw
+media-libs/urt gs
+media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
+media-plugins/audacious-plugins chardet cue gnome gtk3 http icecast libsamplerate modplug sndfile speedpitch wavpack -gtk -qt5
+kde-apps/kipi-plugins calendar gpssync
+media-plugins/vdr-weatherng dxr3
+media-sound/alsa-tools -gtk
+media-sound/aqualung libsamplerate
+media-sound/ardour freesound lv2
+media-sound/asunder wavpack
+media-sound/audacity ladspa vamp soundtouch id3tag midi sbsms -ffmpeg
+media-sound/audacious gtk3 wma timidity lirc chardet -gtk -qt5
+media-sound/audiotools -gui
+media-sound/cantata replaygain taglib cdparanoia devices
+media-sound/clementine -lastfm ios moodbar mtp
+media-sound/cmus mikmod
+media-sound/deadbeef alac ape cover curl lastfm m3u hotkeys sndfile supereq wavpack wma
+media-sound/gmusicbrowser gstreamer
+media-sound/gpodder gstreamer
+media-sound/jack-audio-connection-kit -mmx -cpudetection -ffado
+media-sound/lilypond guile2
+media-sound/lmms fftw fluidsynth vst
+media-sound/mixxx shout -ffmpeg hid
+media-sound/moc curl sndfile
+media-sound/mp3splt-gtk gstreamer
+media-sound/ncmpcpp curl
+media-sound/qmmp analyzer crossfade curl
+media-sound/qtractor sse
+media-sound/rhythmbox -cdr
+media-sound/snd fftw
+media-sound/sonic-visualiser fftw
+>=media-sound/soundkonverter-0.2.90-r1 lame
+media-sound/kid3 -mp4
+media-tv/kodi airplay bluray cec css goom mysql pvr rtmp sftp upnp -wayland webserver xrandr -system-ffmpeg nfs java udf
+media-tv/mythtv -hls fftw
+media-video/blinkensim aalib
+media-video/dvgrab quicktime
+media-video/jubler mplayer
+media-video/kino quicktime sox vorbis
+media-video/mpv bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
+media-video/mkvtoolnix -wxwidgets
+media-video/ogmrip ogm mp4 srt
+media-video/vdr SetGroupSep-Patch atsc cmdsubmenu dvbsetup dxr3 graphtft iptv menuorg pinplugin rotor submenu subtitles ttxtsubs ttxtsubs yaepg
+media-video/xine-ui aalib vdr
+media-video/dvdrip -xine subtitles fping
+net-analyzer/fping suid
+net-analyzer/gvmd sqlite
+net-analyzer/net-snmp ucd-compat -kmem -python -python_single_target_python2_7 -X
+net-analyzer/rrdtool graph
+net-analyzer/snmptt mysql
+net-analyzer/snort dynamicplugin
+net-analyzer/smokeping apache2
+net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
+net-dialup/mgetty -fax
+net-dialup/ppp atm dhcp eap-tls radius -gtk
+net-dns/getdns nettle stubby
+net-dns/mydns mysql
+net-firewall/fwknop firewalld server -iptables
+net-firewall/nftables xtables
+net-fs/cifs-utils ads upcall
+net-fs/netatalk -avahi
+net-ftp/proftpd authfile openssl
+net-im/bitlbee twitter
+net-im/centerim gadu
+net-im/ejabberd mod_irc mod_muc mod_pubsub odbc web
+net-im/empathy gnome
+net-im/gajim -zeroconf
+net-im/pidgin bonjour console gadu groupwise meanwhile msn prediction qq sasl silc -zephyr
+net-im/psi jingle
+net-im/telepathy-connection-managers -icq -yahoo
+net-im/mcabber otr
+net-irc/inspircd mysql sqlite
+net-irc/irssi otr
+net-irc/kvirc -audiofile dcc_video
+net-irc/weechat tcl
+net-irc/znc -python
+net-libs/aqbanking chipcard ofx
+net-libs/c-client chappa
+net-libs/glib-networking gnome
+net-libs/libgadu ssl threads
+net-libs/libmicrohttpd messages
+net-libs/libproxy -kde -gnome python
+net-libs/libsoup gnome vala
+net-libs/libssh server
+net-libs/mbedtls havege
+net-libs/nodejs icu inspector
+net-libs/telepathy-qt farstream
+net-libs/zeromq drafts unwind
+net-mail/dbmail sqlite3
+net-mail/dovecot managesieve mbox sieve sqlite
+net-mail/notmuch mutt
+net-mail/mu emacs
+net-mail/tpop3d mbox maildir
+net-misc/dropbox librsync-bundled
+net-misc/aria2 metalink bittorrent xmlrpc
+net-misc/asterisk jabber gtalk xmpp
+net-misc/minidlna netgear readynas
+net-misc/mosh ufw
+net-misc/ntp -zeroconf
+net-misc/plowshare -javascript
+net-misc/ps3mediaserver multiuser tsmuxer
+net-misc/putty gssapi
+net-misc/remmina vnc vte ssh rdp
+net-misc/tigervnc -java server
+net-vpn/tor threads
+net-misc/vinagre rdp -avahi
+net-misc/openvswitch monitor
+net-misc/x2goclient -qt5
+net-misc/x2goserver sqlite
+net-news/rssguard webengine
+net-dns/bind-tools gssapi
+net-nds/rpcbind warmstarts
+net-nntp/suck perl
+net-p2p/amule geoip stats remote upnp daemon
+net-p2p/bitcoin-qt knots
+net-p2p/deluge webinterface
+net-p2p/eiskaltdcpp json
+net-p2p/retroshare -cli
+net-p2p/vuze source
+net-print/gutenprint foomaticdb -gtk
+net-print/hplip -acl fax hpijs parport snmp static-ppds usb
+net-proxy/privoxy threads
+net-proxy/tsocks tordns
+net-wireless/gnuradio atsc channels dtv fec grc noaa performance-counters
+sci-astronomy/celestia -kde
+sci-astronomy/kstars fits indi
+sci-biology/ncbi-tools static-libs
+sci-biology/transfac -emboss
+sci-chemistry/openbabel -perl -python
+sci-chemistry/xds-bin smp
+sci-electronics/geda doc stroke
+sci-geosciences/grass tcl tk fftw
+sci-geosciences/mapserver flash threads -tiff
+sci-geosciences/qgis -grass webkit -python
+sci-libs/fftw threads
+sci-libs/gdal curl geos
+>=sci-libs/gsl-1.15 cblas-external
+sci-libs/hdf5 hl cxx -fortran -mpi -threads -szip
+sci-libs/itpp fftw
+sci-libs/indilib nova
+sci-libs/lapack eselect-ldso
+sci-libs/netcdf -fortran hdf5
+sci-libs/plplot -wxwidgets
+sci-libs/ViSP opencv
+sci-mathematics/maxima latex sbcl
+sci-mathematics/octave fftw curl gui doc gnuplot hdf5 graphicsmagick
+sci-physics/root htmldoc doc fftw graphviz
+sci-visualization/fityk gnuplot wxwindows
+sci-visualization/gnuplot gd wxwidgets
+sci-visualization/grace fftw
+sci-visualization/gwyddion fftw
+sci-visualization/paraview -python
+sys-apps/xdg-desktop-portal screencast
+sys-block/open-iscsi -modules
+sys-cluster/ceph cephfs
+sys-cluster/openmpi romio
+sys-cluster/torque server
+sys-cluster/vzctl vanilla-kernel vz-kernel ploop
+sys-devel/distcc -avahi -gtk
+sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
+sys-devel/gdb expat python
+sys-firmware/intel-microcode initramfs
+sys-fs/mtd-utils xattr
+sys-fs/reiser4progs static static-libs
+sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
+sys-libs/libcxx -libunwind
+sys-libs/libcxxabi -libunwind
+sys-libs/gpm split-usr static-libs
+sys-kernel/genkernel cryptsetup crypt
+sys-kernel/genkernel-next cryptsetup crypt dmraid mdadm
+sys-libs/gwenhywfar designer qml sensors serialport webkit
+virtual/blas eselect-ldso
+virtual/cblas eselect-ldso
+virtual/lapack eselect-ldso
+virtual/mpi romio
+virtual/ooo java
+virtual/opencl video_cards_nvidia video_cards_fglrx
+www-apache/mod_dav_svn -dso
+www-apache/mod_jk java
+www-apps/nextcloud -imagemagick
+www-apps/owncloud mysql postgres sqlite3
+www-apps/phpBB mysqli sqlite
+www-apps/postfixadmin mysql
+www-apps/rt mysql
+www-client/chromium jumbo-build widevine
+www-client/firefox filepicker -gnome gstreamer mozbranding system-jpeg -system-libvpx -system-sqlite -system-av1 xforms
+www-client/midori sqlite
+www-client/surf savedconfig
+www-client/uget gstreamer aria2
+www-servers/apache apache2_modules_macro apache2_modules_slotmem_shm apache2_modules_asis apache2_modules_auth_digest apache2_modules_authn_dbd apache2_modules_cern_meta apache2_modules_cgi apache2_modules_cgid apache2_modules_charset_lite apache2_modules_dbd apache2_modules_dumpio apache2_modules_imagemap apache2_modules_log_forensic apache2_modules_proxy apache2_modules_proxy_ajp apache2_modules_proxy_balancer apache2_modules_proxy_connect apache2_modules_proxy_fcgi apache2_modules_proxy_ftp apache2_modules_proxy_http apache2_modules_proxy_html apache2_modules_substitute apache2_modules_version apache2_modules_proxy_wstunnel apache2_modules_xml2enc ident suexec
+www-servers/lighttpd fastcgi lua memcache xattr -kerberos
+www-servers/nginx nginx_modules_http_stub_status nginx_modules_http_geoip
+x11-apps/igt-gpu-tools video_cards_intel
+x11-drivers/nvidia-drivers distribution libglvnd uvm tools
+x11-drivers/nvidia-drivers -gtk
+x11-drivers/nvidia-userspace -x-multilib libglvnd tools
+x11-libs/xapps introspection
+x11-libs/qwt designer
+x11-libs/wxGTK gstreamer webkit
+x11-libs/fltk threads xft -cairo
+dev-lang/tk threads
+dev-tcltk/tclx threads
+x11-terms/rxvt-unicode 256-color blink fading-colors xft
+x11-misc/bumblebee video_cards_nvidia video_cards_nouveau
+x11-misc/cairo-dock xcomposite
+x11-misc/gpaste gnome-shell keybinder
+x11-misc/notification-daemon gstreamer
+x11-misc/obconf -lxde
+x11-misc/shutter drawing webphoto
+x11-misc/xaos aalib
+x11-misc/xmobar xft
+x11-plugins/pidgin-sipe voice
+x11-plugins/cairo-dock-plugins exif gmenu -kde terminal tomboy -webkit -xfce -xklavier
+x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisVert Ubuntu Verde Wood
+>=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
+x11-themes/gnome-colors-common branding
+x11-themes/gtk-engines-murrine -themes
+x11-themes/qtcurve plasma
+x11-themes/tango-icon-theme branding
+x11-themes/zuki-themes gnome-shell
+x11-wm/fluxbox imlib
+x11-wm/fvwm imlib
+x11-wm/icewm imlib
+x11-wm/openbox imlib
+dev-python/PyQt5 declarative help webchannel webkit webengine websockets sql xmlpatterns
+media-libs/libdvdread -css
+media-libs/xine-lib -css
+app-cdr/brasero -css
+media-tv/mythtv -css
+media-video/avidemux amr
+net-dns/bind dlz resolvconf
+net-misc/connman iptables networkmanager resolvconf
+media-libs/lcms static-libs
+virtual/jpeg static-libs
+media-libs/libmng static-libs
+sys-power/upower introspection
+net-libs/libsoup introspection ssl vala
+media-libs/gstreamer introspection
+media-libs/babl introspection
+gnome-extra/polkit-gnome introspection
+gnome-base/libgtop introspection
+x11-libs/libnotify introspection
+dev-libs/libgee introspection
+net-libs/gtk-vnc gtk3
+net-dns/avahi gtk3
+sys-devel/base-gcc hardened
+media-libs/avidemux-core vaapi vdpau
+media-libs/xine-lib vaapi vdpau
+media-tv/kodi vaapi vdpau
+media-tv/mythtv vaapi vdpau
+media-video/avidemux vaapi vdpau
+media-video/mpv vaapi vdpau
+app-i18n/scim gtk3
+app-emulation/spice smartcard
+net-misc/spice-gtk gtk3 usbredir smartcard vala
+gnome-base/gdm -plymouth
+sys-libs/binutils-libs nls
+dev-libs/libgit2 ssh threads
+>=media-plugins/grilo-plugins-0.2.10 tracker
+dev-libs/libnl utils
+dev-cpp/commoncpp2 -gnutls ssl
+x11-drivers/nvidia-userspace uvm
+net-firewall/ipset -modules
+net-firewall/shorewall lite4 lite6
+app-emulation/lxc doc
+dev-ruby/activerecord postgres
+sys-process/lsof rpc
+sys-libs/libaal static-libs
+net-dns/bind threads caps
+sys-cluster/galera garbd
+sys-libs/libapparmor static-libs
+app-emulation/docker apparmor aufs btrfs overlay seccomp
+x11-misc/xplanet -gif
+www-client/w3m fbcon imlib
+app-emulation/lxc cgmanager
+app-emulation/runc apparmor
+net-p2p/go-ethereum evm opencl
+net-misc/electrum qrcode
