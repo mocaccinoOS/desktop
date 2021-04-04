@@ -1,6 +1,6 @@
 category: "apps"
 name: "vivaldi"
-version: 3.6.2165.36+4
+version: 3.6.2165.36+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
