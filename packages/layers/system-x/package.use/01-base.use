@@ -19,6 +19,7 @@ dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-
 dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib
 dev-libs/libxml2 icu ipv6 python readline
 dev-libs/nettle gmp
+dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-scheme/guile regex discouraged networking
 media-libs/libpng apng static-libs

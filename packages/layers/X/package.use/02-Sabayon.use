@@ -108,7 +108,6 @@ dev-libs/libf2c static-libs
 dev-libs/libgit2-glib ssh
 dev-libs/libical vala
 dev-libs/nss utils
-dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/tinyxml stl
 dev-libs/tntnet sdk
 dev-libs/xerces-c xqilla icu
