@@ -12,7 +12,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
-- MAKEOPTS="-j10" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- MAKEOPTS="-j5" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C dev-lang/python:2.7
 requires:
 - category: "layers"
