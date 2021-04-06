@@ -34,6 +34,12 @@ excludes:
 - ^/etc/fstab
 - ^/etc/passwd
 - ^/etc/machineid
+- ^/etc/udev/hwdb.bin
+- ^/etc/ld.so.cache
+- ^/etc/profile.env
+- ^/etc/csh.env
+- ^/etc/subgid
+- ^/etc/subuid
 - ^/var/db/repos
 - ^/var/db/pkg
 - ^/var/lib/portage
