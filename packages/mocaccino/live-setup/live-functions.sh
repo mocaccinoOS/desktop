@@ -242,10 +242,15 @@ prepare() {
         systemctl enable "${srv}"
     done
 
+    if [-f "/usr/share/xsessions/mate.desktop"]; then
+    	setup_default_xsession "mate"
+	systemctl enable "lightdm"
+    fi
+
     if [ -f "/usr/share/xsessions/gnome.desktop" ]; then
         setup_default_xsession "gnome"
         systemctl enable "gdm"
     fi
-
+    
     setup_networkmanager
 }
