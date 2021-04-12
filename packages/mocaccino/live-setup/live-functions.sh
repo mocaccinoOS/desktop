@@ -242,7 +242,7 @@ prepare() {
         systemctl enable "${srv}"
     done
 
-    if [-f "/usr/share/xsessions/mate.desktop"]; then
+    if [ -f "/usr/share/xsessions/mate.desktop" ]; then
     	setup_default_xsession "mate"
 	systemctl enable "lightdm"
     fi
