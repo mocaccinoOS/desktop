@@ -2,6 +2,7 @@
 
 PACK=$1
 ADD="${ADD:-false}"
+GENERATE_PROVIDES="${GENERATE_PROVIDES:-false}"
 DEBUG="${DEBUG:-false}"
 if [ -z "${PACK}" ]; then
 	echo "You must provide a package as an argument at least"
@@ -53,5 +54,21 @@ do
   	echo "Adding $i"
   	yq w -i $path/definition.yaml "emerge_packages[$p]" "${i}"
   fi
+
+  if [ "${GENERATE_PROVIDES}" == "true" ]; then
+    name=$(pkgs-checker pkg info $i --json | jq '.name' -r)
+    cat=$(pkgs-checker pkg info $i --json | jq '.category' -r)
+  
+    if [[ "${cat}" == "acct-group" ]] || [[ "${cat}" == "acct-user" ]];then
+      continue
+    fi
+
+    echo "Adding ${cat}/${name} ($i)"
+
+    yq w -i $path/definition.yaml "provides[$p].name" "${name}"
+    yq w -i $path/definition.yaml "provides[$p].category" "${cat}"
+    yq w -i $path/definition.yaml "provides[$p].version" ">=0"
+  fi
+
   p=$((p+1))
 done
