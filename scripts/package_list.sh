@@ -11,8 +11,8 @@ fi
 packages=()
 REPO_CACHE="${REPO_CACHE:-quay.io/mocaccinocache/desktop}"
 #set -ex
-IMAGES_DATA=$(luet tree images -t packages --image-repository $REPO_CACHE $PACK -o json)
-PKG_LIST=$(luet tree pkglist --tree packages -o json)
+IMAGES_DATA=$(luet tree images --image-repository $REPO_CACHE $PACK -o json)
+PKG_LIST=$(luet tree pkglist -o json)
 images=($(echo $IMAGES_DATA | jq -r '.packages[].image' ))
 images_names=($(echo $IMAGES_DATA | jq -r '.packages[].name' ))
 
