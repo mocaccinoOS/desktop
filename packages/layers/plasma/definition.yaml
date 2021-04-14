@@ -21,3 +21,352 @@ requires:
   - category: "acct-user"
     name: "sddm"
     version: ">=0"
+provides:
+  - name: qca
+    category: app-crypt
+    version: '>=0'
+  - name: tpm2-tss
+    category: app-crypt
+    version: '>=0'
+  - name: trousers
+    category: app-crypt
+    version: '>=0'
+  - name: editorconfig-core-c
+    category: app-text
+    version: '>=0'
+  - name: crypto++
+    category: dev-libs
+    version: '>=0'
+  - name: grantlee
+    category: dev-libs
+    version: '>=0'
+  - name: plasma-wayland-protocols
+    category: dev-libs
+    version: '>=0'
+  - name: xapian
+    category: dev-libs
+    version: '>=0'
+  - name: designer
+    category: dev-qt
+    version: '>=0'
+  - name: kaccounts-integration
+    category: kde-apps
+    version: '>=0'
+  - name: khelpcenter
+    category: kde-apps
+    version: '>=0'
+  - name: kio-extras
+    category: kde-apps
+    version: '>=0'
+  - name: attica
+    category: kde-frameworks
+    version: '>=0'
+  - name: baloo
+    category: kde-frameworks
+    version: '>=0'
+  - name: bluez-qt
+    category: kde-frameworks
+    version: '>=0'
+  - name: frameworkintegration
+    category: kde-frameworks
+    version: '>=0'
+  - name: kactivities
+    category: kde-frameworks
+    version: '>=0'
+  - name: kactivities-stats
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcmutils
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdeclarative
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdelibs4support
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdesu
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdnssd
+    category: kde-frameworks
+    version: '>=0'
+  - name: kemoticons
+    category: kde-frameworks
+    version: '>=0'
+  - name: kfilemetadata
+    category: kde-frameworks
+    version: '>=0'
+  - name: kholidays
+    category: kde-frameworks
+    version: '>=0'
+  - name: khtml
+    category: kde-frameworks
+    version: '>=0'
+  - name: kidletime
+    category: kde-frameworks
+    version: '>=0'
+  - name: kirigami
+    category: kde-frameworks
+    version: '>=0'
+  - name: kitemmodels
+    category: kde-frameworks
+    version: '>=0'
+  - name: kjs
+    category: kde-frameworks
+    version: '>=0'
+  - name: knewstuff
+    category: kde-frameworks
+    version: '>=0'
+  - name: knotifyconfig
+    category: kde-frameworks
+    version: '>=0'
+  - name: kpeople
+    category: kde-frameworks
+    version: '>=0'
+  - name: kpty
+    category: kde-frameworks
+    version: '>=0'
+  - name: kquickcharts
+    category: kde-frameworks
+    version: '>=0'
+  - name: krunner
+    category: kde-frameworks
+    version: '>=0'
+  - name: ktexteditor
+    category: kde-frameworks
+    version: '>=0'
+  - name: kunitconversion
+    category: kde-frameworks
+    version: '>=0'
+  - name: kwayland
+    category: kde-frameworks
+    version: '>=0'
+  - name: modemmanager-qt
+    category: kde-frameworks
+    version: '>=0'
+  - name: networkmanager-qt
+    category: kde-frameworks
+    version: '>=0'
+  - name: plasma
+    category: kde-frameworks
+    version: '>=0'
+  - name: prison
+    category: kde-frameworks
+    version: '>=0'
+  - name: purpose
+    category: kde-frameworks
+    version: '>=0'
+  - name: qqc2-desktop-style
+    category: kde-frameworks
+    version: '>=0'
+  - name: syntax-highlighting
+    category: kde-frameworks
+    version: '>=0'
+  - name: threadweaver
+    category: kde-frameworks
+    version: '>=0'
+  - name: breeze
+    category: kde-plasma
+    version: '>=0'
+  - name: breeze-gtk
+    category: kde-plasma
+    version: '>=0'
+  - name: drkonqi
+    category: kde-plasma
+    version: '>=0'
+  - name: kactivitymanagerd
+    category: kde-plasma
+    version: '>=0'
+  - name: kde-cli-tools
+    category: kde-plasma
+    version: '>=0'
+  - name: kde-gtk-config
+    category: kde-plasma
+    version: '>=0'
+  - name: kdecoration
+    category: kde-plasma
+    version: '>=0'
+  - name: kdeplasma-addons
+    category: kde-plasma
+    version: '>=0'
+  - name: kgamma
+    category: kde-plasma
+    version: '>=0'
+  - name: khotkeys
+    category: kde-plasma
+    version: '>=0'
+  - name: kinfocenter
+    category: kde-plasma
+    version: '>=0'
+  - name: kmenuedit
+    category: kde-plasma
+    version: '>=0'
+  - name: kscreen
+    category: kde-plasma
+    version: '>=0'
+  - name: kscreenlocker
+    category: kde-plasma
+    version: '>=0'
+  - name: ksshaskpass
+    category: kde-plasma
+    version: '>=0'
+  - name: ksysguard
+    category: kde-plasma
+    version: '>=0'
+  - name: kwallet-pam
+    category: kde-plasma
+    version: '>=0'
+  - name: kwayland-integration
+    category: kde-plasma
+    version: '>=0'
+  - name: kwayland-server
+    category: kde-plasma
+    version: '>=0'
+  - name: kwin
+    category: kde-plasma
+    version: '>=0'
+  - name: kwrited
+    category: kde-plasma
+    version: '>=0'
+  - name: libkscreen
+    category: kde-plasma
+    version: '>=0'
+  - name: libksysguard
+    category: kde-plasma
+    version: '>=0'
+  - name: libkworkspace
+    category: kde-plasma
+    version: '>=0'
+  - name: milou
+    category: kde-plasma
+    version: '>=0'
+  - name: oxygen
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-browser-integration
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-desktop
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-disks
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-integration
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-meta
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-nm
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-pa
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-vault
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-workspace
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-workspace-wallpapers
+    category: kde-plasma
+    version: '>=0'
+  - name: powerdevil
+    category: kde-plasma
+    version: '>=0'
+  - name: sddm-kcm
+    category: kde-plasma
+    version: '>=0'
+  - name: systemsettings
+    category: kde-plasma
+    version: '>=0'
+  - name: xdg-desktop-portal-kde
+    category: kde-plasma
+    version: '>=0'
+  - name: xembed-sni-proxy
+    category: kde-plasma
+    version: '>=0'
+  - name: hack
+    category: media-fonts
+    version: '>=0'
+  - name: noto
+    category: media-fonts
+    version: '>=0'
+  - name: qrencode
+    category: media-gfx
+    version: '>=0'
+  - name: ilmbase
+    category: media-libs
+    version: '>=0'
+  - name: libdmtx
+    category: media-libs
+    version: '>=0'
+  - name: openexr
+    category: media-libs
+    version: '>=0'
+  - name: phonon
+    category: media-libs
+    version: '>=0'
+  - name: phonon-vlc
+    category: media-libs
+    version: '>=0'
+  - name: accounts-qml
+    category: net-libs
+    version: '>=0'
+  - name: accounts-qt
+    category: net-libs
+    version: '>=0'
+  - name: kdsoap
+    category: net-libs
+    version: '>=0'
+  - name: kdsoap-ws-discovery-client
+    category: net-libs
+    version: '>=0'
+  - name: libaccounts-glib
+    category: net-libs
+    version: '>=0'
+  - name: libssh
+    category: net-libs
+    version: '>=0'
+  - name: signon-oauth2
+    category: net-libs
+    version: '>=0'
+  - name: signond
+    category: net-libs
+    version: '>=0'
+  - name: mailutils
+    category: net-mail
+    version: '>=0'
+  - name: socat
+    category: net-misc
+    version: '>=0'
+  - name: networkmanager-openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: smartmontools
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
+  - name: cryfs
+    category: sys-fs
+    version: '>=0'
+  - name: mailx
+    category: virtual
+    version: '>=0'
+  - name: appmenu-gtk-module
+    category: x11-misc
+    version: '>=0'
+  - name: sddm
+    category: x11-misc
+    version: '>=0'
+  - name: xsettingsd
+    category: x11-misc
+    version: '>=0'

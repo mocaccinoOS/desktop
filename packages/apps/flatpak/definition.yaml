@@ -6,15 +6,15 @@ labels:
   emerge.packages: >-
     sys-apps/flatpak
 provides:
-  - name: flatpak
-    category: sys-apps
-    version: '1.10.0'
+  - name: pyparsing
+    category: dev-python
+    version: '>=0'
   - name: ostree
     category: dev-util
-    version: '2020.8'
-  - name: xdg-dbus-proxy
+    version: '>=0'
+  - name: flatpak
     category: sys-apps
-    version: '0.1.2'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

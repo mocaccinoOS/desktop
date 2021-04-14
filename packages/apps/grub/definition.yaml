@@ -12,3 +12,16 @@ requires:
   - category: "layers"
     name: "sys-fs"
     version: ">=0"
+provides:
+  - name: efibootmgr
+    category: sys-boot
+    version: '>=0'
+  - name: grub
+    category: sys-boot
+    version: '>=0'
+  - name: plymouth
+    category: sys-boot
+    version: '>=0'
+  - name: efivar
+    category: sys-libs
+    version: '>=0'

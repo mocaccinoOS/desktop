@@ -9,3 +9,13 @@ requires:
   - category: "layers"
     name: "X"
     version: ">=0"
+provides:
+  - name: efl
+    category: dev-libs
+    version: '>=0'
+  - name: terminology
+    category: x11-terms
+    version: '>=0'
+  - name: enlightenment
+    category: x11-wm
+    version: '>=0'

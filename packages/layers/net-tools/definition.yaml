@@ -9,3 +9,22 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
+provides:
+  - name: c-ares
+    category: net-dns
+    version: '>=0'
+  - name: libnatpmp
+    category: net-libs
+    version: '>=0'
+  - name: libpcap
+    category: net-libs
+    version: '>=0'
+  - name: libtorrent-rasterbar
+    category: net-libs
+    version: '>=0'
+  - name: miniupnpc
+    category: net-libs
+    version: '>=0'
+  - name: lsb-release
+    category: sys-apps
+    version: '>=0'

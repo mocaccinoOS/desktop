@@ -9,6 +9,9 @@ provides:
   - name: wireshark
     category: net-analyzer
     version: '>=0'
+  - name: freedesktop-icon-theme
+    category: virtual
+    version: '>=0'
 requires:
   - category: "layers"
     name: "qt"

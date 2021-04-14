@@ -8,7 +8,7 @@ labels:
 provides:
   - name: slim
     category: x11-misc
-    version: '1.3.6'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

@@ -2,9 +2,24 @@ category: "apps"
 name: "calamares"
 version: 3.2.32+13
 provides:
-  - name: "calamares"
-    category: "app-admin"
-    version: ">=0"
+  - name: calamares
+    category: app-admin
+    version: '>=0'
+  - name: yaml-cpp
+    category: dev-cpp
+    version: '>=0'
+  - name: dmidecode
+    category: sys-apps
+    version: '>=0'
+  - name: os-prober
+    category: sys-boot
+    version: '>=0'
+  - name: squashfs-tools
+    category: sys-fs
+    version: '>=0'
+  - name: kpmcore
+    category: sys-libs
+    version: '>=0'
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
