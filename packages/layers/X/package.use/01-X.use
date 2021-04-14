@@ -10,6 +10,7 @@ dev-libs/dbus-glib bash-completion
 dev-python/pygobject introspection
 mail-mta/postfix mbox sasl
 media-gfx/exiv2 xmp
+media-gfx/imagemagick fftw gs perl q32 xml
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/gst-plugins-bad egl -wayland

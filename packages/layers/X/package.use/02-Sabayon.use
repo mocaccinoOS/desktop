@@ -200,7 +200,6 @@ media-gfx/gphoto2 aalib
 media-gfx/graphicsmagick q16 -lcms
 media-gfx/graphite2 perl
 media-gfx/gthumb -cdr slideshow
-media-gfx/imagemagick fftw gs perl q32
 media-gfx/kphotoalbum kipi
 media-gfx/librecad doc
 media-gfx/luminance-hdr sse2
