@@ -11,5 +11,8 @@ for i in $(echo "$PKG_LIST" | jq -r '.packages[].path'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layer/gentoo-stage3" ]; then
         continue
     fi
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
+        continue
+    fi
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
 done
