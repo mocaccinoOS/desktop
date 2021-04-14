@@ -1,0 +1,8 @@
+category: "net-p2p"
+name: "transmission-base"
+version: "3"
+description: "Virtual package for transmission"
+requires:
+- name: transmission
+  category: "apps"
+  version: ">=0"
