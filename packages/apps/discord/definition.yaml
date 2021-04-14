@@ -6,9 +6,9 @@ labels:
   emerge.packages: >-
     net-im/discord-bin
 provides:
-  - name: discord
+  - name: discord-bin
     category: net-im
-    version: '0.0.13'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

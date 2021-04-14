@@ -6,9 +6,12 @@ labels:
   emerge.packages: >-
     x11-apps/mesa-progs
 provides:
+  - name: glew
+    category: media-libs
+    version: '>=0'
   - name: mesa-progs
     category: x11-apps
-    version: '8.4.0'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

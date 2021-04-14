@@ -9,3 +9,15 @@ provides:
   - name: vim
     category: app-editors
     version: '>=0'
+  - name: vim-core
+    category: app-editors
+    version: '>=0'
+  - name: eselect-vi
+    category: app-eselect
+    version: '>=0'
+  - name: gentoo-syntax
+    category: app-vim
+    version: '>=0'
+  - name: cscope
+    category: dev-util
+    version: '>=0'

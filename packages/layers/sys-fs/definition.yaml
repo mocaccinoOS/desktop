@@ -19,3 +19,179 @@ requires:
     category: acct-user
     version: ">=0"
 # TODO: add ldap user/group
+
+provides:
+  - name: mit-krb5
+    category: app-crypt
+    version: '>=0'
+  - name: lmdb
+    category: dev-db
+    version: '>=0'
+  - name: check
+    category: dev-libs
+    version: '>=0'
+  - name: cyrus-sasl
+    category: dev-libs
+    version: '>=0'
+  - name: libatasmart
+    category: dev-libs
+    version: '>=0'
+  - name: libbytesize
+    category: dev-libs
+    version: '>=0'
+  - name: libev
+    category: dev-libs
+    version: '>=0'
+  - name: libgudev
+    category: dev-libs
+    version: '>=0'
+  - name: libverto
+    category: dev-libs
+    version: '>=0'
+  - name: userspace-rcu
+    category: dev-libs
+    version: '>=0'
+  - name: Parse-Yapp
+    category: dev-perl
+    version: '>=0'
+  - name: docutils
+    category: dev-python
+    version: '>=0'
+  - name: extras
+    category: dev-python
+    version: '>=0'
+  - name: fixtures
+    category: dev-python
+    version: '>=0'
+  - name: linecache2
+    category: dev-python
+    version: '>=0'
+  - name: pbr
+    category: dev-python
+    version: '>=0'
+  - name: pygments
+    category: dev-python
+    version: '>=0'
+  - name: pyrsistent
+    category: dev-python
+    version: '>=0'
+  - name: python-mimeparse
+    category: dev-python
+    version: '>=0'
+  - name: subunit
+    category: dev-python
+    version: '>=0'
+  - name: testtools
+    category: dev-python
+    version: '>=0'
+  - name: traceback2
+    category: dev-python
+    version: '>=0'
+  - name: unittest2
+    category: dev-python
+    version: '>=0'
+  - name: cmocka
+    category: dev-util
+    version: '>=0'
+  - name: cppunit
+    category: dev-util
+    version: '>=0'
+  - name: cifs-utils
+    category: net-fs
+    version: '>=0'
+  - name: samba
+    category: net-fs
+    version: '>=0'
+  - name: rpcsvc-proto
+    category: net-libs
+    version: '>=0'
+  - name: mailbase
+    category: net-mail
+    version: '>=0'
+  - name: openldap
+    category: net-nds
+    version: '>=0'
+  - name: gptfdisk
+    category: sys-apps
+    version: '>=0'
+  - name: keyutils
+    category: sys-apps
+    version: '>=0'
+  - name: tcp-wrappers
+    category: sys-apps
+    version: '>=0'
+  - name: parted
+    category: sys-block
+    version: '>=0'
+  - name: btrfs-progs
+    category: sys-fs
+    version: '>=0'
+  - name: dmraid
+    category: sys-fs
+    version: '>=0'
+  - name: dosfstools
+    category: sys-fs
+    version: '>=0'
+  - name: f2fs-tools
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: fuse-common
+    category: sys-fs
+    version: '>=0'
+  - name: mdadm
+    category: sys-fs
+    version: '>=0'
+  - name: mtools
+    category: sys-fs
+    version: '>=0'
+  - name: multipath-tools
+    category: sys-fs
+    version: '>=0'
+  - name: ntfs3g
+    category: sys-fs
+    version: '>=0'
+  - name: udisks
+    category: sys-fs
+    version: '>=0'
+  - name: zfs
+    category: sys-fs
+    version: '>=0'
+  - name: ldb
+    category: sys-libs
+    version: '>=0'
+  - name: libblockdev
+    category: sys-libs
+    version: '>=0'
+  - name: libcap-ng
+    category: sys-libs
+    version: '>=0'
+  - name: liburing
+    category: sys-libs
+    version: '>=0'
+  - name: talloc
+    category: sys-libs
+    version: '>=0'
+  - name: tdb
+    category: sys-libs
+    version: '>=0'
+  - name: tevent
+    category: sys-libs
+    version: '>=0'
+  - name: lsof
+    category: sys-process
+    version: '>=0'
+  - name: eject
+    category: virtual
+    version: '>=0'
+  - name: krb5
+    category: virtual
+    version: '>=0'
+  - name: python-cffi
+    category: virtual
+    version: '>=0'

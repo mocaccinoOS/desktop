@@ -6,6 +6,9 @@ labels:
   emerge.packages: >-
     net-p2p/qbittorrent
 provides:
+  - name: geoip
+    category: dev-libs
+    version: '>=0'
   - name: qbittorrent
     category: net-p2p
     version: '>=0'

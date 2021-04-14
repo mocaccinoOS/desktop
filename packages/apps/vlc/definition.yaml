@@ -9,6 +9,9 @@ provides:
   - name: vlc
     category: media-video
     version: '>=0'
+  - name: libmicrodns
+    category: net-libs
+    version: '>=0'
 requires:
   - category: "layers"
     name: "qt"

@@ -12,3 +12,154 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
+provides:
+  - name: engrampa
+    category: app-arch
+    version: '>=0'
+  - name: aspell-en
+    category: app-dicts
+    version: '>=0'
+  - name: pluma
+    category: app-editors
+    version: '>=0'
+  - name: aspell
+    category: app-text
+    version: '>=0'
+  - name: atril
+    category: app-text
+    version: '>=0'
+  - name: enchant
+    category: app-text
+    version: '>=0'
+  - name: libspectre
+    category: app-text
+    version: '>=0'
+  - name: rarian
+    category: app-text
+    version: '>=0'
+  - name: libmateweather
+    category: dev-libs
+    version: '>=0'
+  - name: mathjax
+    category: dev-libs
+    version: '>=0'
+  - name: tinyxml
+    category: dev-libs
+    version: '>=0'
+  - name: gucharmap
+    category: gnome-extra
+    version: '>=0'
+  - name: gtk-layer-shell
+    category: gui-libs
+    version: '>=0'
+  - name: caja
+    category: mate-base
+    version: '>=0'
+  - name: libmatekbd
+    category: mate-base
+    version: '>=0'
+  - name: mate
+    category: mate-base
+    version: '>=0'
+  - name: mate-applets
+    category: mate-base
+    version: '>=0'
+  - name: mate-applets-meta
+    category: mate-base
+    version: '>=0'
+  - name: mate-common
+    category: mate-base
+    version: '>=0'
+  - name: mate-control-center
+    category: mate-base
+    version: '>=0'
+  - name: mate-desktop
+    category: mate-base
+    version: '>=0'
+  - name: mate-menus
+    category: mate-base
+    version: '>=0'
+  - name: mate-panel
+    category: mate-base
+    version: '>=0'
+  - name: mate-session-manager
+    category: mate-base
+    version: '>=0'
+  - name: mate-settings-daemon
+    category: mate-base
+    version: '>=0'
+  - name: caja-extensions
+    category: mate-extra
+    version: '>=0'
+  - name: mate-calc
+    category: mate-extra
+    version: '>=0'
+  - name: mate-media
+    category: mate-extra
+    version: '>=0'
+  - name: mate-netbook
+    category: mate-extra
+    version: '>=0'
+  - name: mate-polkit
+    category: mate-extra
+    version: '>=0'
+  - name: mate-power-manager
+    category: mate-extra
+    version: '>=0'
+  - name: mate-screensaver
+    category: mate-extra
+    version: '>=0'
+  - name: mate-system-monitor
+    category: mate-extra
+    version: '>=0'
+  - name: mate-utils
+    category: mate-extra
+    version: '>=0'
+  - name: eom
+    category: media-gfx
+    version: '>=0'
+  - name: libmatemixer
+    category: media-libs
+    version: '>=0'
+  - name: wireless-tools
+    category: net-wireless
+    version: '>=0'
+  - name: cpupower
+    category: sys-power
+    version: '>=0'
+  - name: gtksourceview
+    category: x11-libs
+    version: '>=0'
+  - name: libfakekey
+    category: x11-libs
+    version: '>=0'
+  - name: icon-naming-utils
+    category: x11-misc
+    version: '>=0'
+  - name: mozo
+    category: x11-misc
+    version: '>=0'
+  - name: mate-terminal
+    category: x11-terms
+    version: '>=0'
+  - name: gtk-engines
+    category: x11-themes
+    version: '>=0'
+  - name: gtk-engines-murrine
+    category: x11-themes
+    version: '>=0'
+  - name: mate-backgrounds
+    category: x11-themes
+    version: '>=0'
+  - name: mate-icon-theme
+    category: x11-themes
+    version: '>=0'
+  - name: mate-themes
+    category: x11-themes
+    version: '>=0'
+  - name: mate-themes-meta
+    category: x11-themes
+    version: '>=0'
+  - name: marco
+    category: x11-wm
+    version: '>=0'

@@ -6,35 +6,14 @@ labels:
   emerge.packages: >-
     media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/libcddb media-libs/libmatroska media-libs/libogg media-libs/soxr media-libs/vidstab media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
-  - name: gsm
-    category: media-sound
+  - name: brotli
+    category: app-arch
     version: '>=0'
-  - name: lame
-    category: media-sound
+  - name: nasm
+    category: dev-lang
     version: '>=0'
-  - name: musepack-tools
-    category: media-sound
-    version: '>=0'
-  - name: libcuefile
-    category: media-libs
-    version: '>=0'
-  - name: libreplaygain
-    category: media-libs
-    version: '>=0'
-  - name: libcddb
-    category: media-libs
-    version: '>=0'
-  - name: dav1d
-    category: media-libs
-    version: '>=0'
-  - name: x264
-    category: media-libs
-    version: '>=0'
-  - name: x265
-    category: media-libs
-    version: '>=0'
-  - name: xvid
-    category: media-libs
+  - name: libebml
+    category: dev-libs
     version: '>=0'
   - name: a52dec
     category: media-libs
@@ -48,10 +27,22 @@ provides:
   - name: alsa-ucm-conf
     category: media-libs
     version: '>=0'
+  - name: dav1d
+    category: media-libs
+    version: '>=0'
+  - name: libcddb
+    category: media-libs
+    version: '>=0'
+  - name: libcuefile
+    category: media-libs
+    version: '>=0'
   - name: libmatroska
     category: media-libs
     version: '>=0'
   - name: libogg
+    category: media-libs
+    version: '>=0'
+  - name: libreplaygain
     category: media-libs
     version: '>=0'
   - name: soxr
@@ -63,9 +54,24 @@ provides:
   - name: woff2
     category: media-libs
     version: '>=0'
-  - name: libebml
-    category: dev-libs
+  - name: x264
+    category: media-libs
+    version: '>=0'
+  - name: x265
+    category: media-libs
+    version: '>=0'
+  - name: xvid
+    category: media-libs
     version: '>=0'
   - name: live
     category: media-plugins
+    version: '>=0'
+  - name: gsm
+    category: media-sound
+    version: '>=0'
+  - name: lame
+    category: media-sound
+    version: '>=0'
+  - name: musepack-tools
+    category: media-sound
     version: '>=0'

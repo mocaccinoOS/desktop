@@ -8,7 +8,7 @@ labels:
 provides:
   - name: opera
     category: www-client
-    version: '74.0.3911.160'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

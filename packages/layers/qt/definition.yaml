@@ -12,3 +12,259 @@ requires:
   - category: "layers"
     name: "net-tools"
     version: ">=0"
+provides:
+  - name: snappy
+    category: app-arch
+    version: '>=0'
+  - name: mysql-connector-c
+    category: dev-db
+    version: '>=0'
+  - name: double-conversion
+    category: dev-libs
+    version: '>=0'
+  - name: libdbusmenu-qt
+    category: dev-libs
+    version: '>=0'
+  - name: re2
+    category: dev-libs
+    version: '>=0'
+  - name: linguist-tools
+    category: dev-qt
+    version: '>=0'
+  - name: qdbus
+    category: dev-qt
+    version: '>=0'
+  - name: qtbluetooth
+    category: dev-qt
+    version: '>=0'
+  - name: qtcharts
+    category: dev-qt
+    version: '>=0'
+  - name: qtchooser
+    category: dev-qt
+    version: '>=0'
+  - name: qtconcurrent
+    category: dev-qt
+    version: '>=0'
+  - name: qtcore
+    category: dev-qt
+    version: '>=0'
+  - name: qtdbus
+    category: dev-qt
+    version: '>=0'
+  - name: qtdeclarative
+    category: dev-qt
+    version: '>=0'
+  - name: qtgraphicaleffects
+    category: dev-qt
+    version: '>=0'
+  - name: qtgui
+    category: dev-qt
+    version: '>=0'
+  - name: qthelp
+    category: dev-qt
+    version: '>=0'
+  - name: qtimageformats
+    category: dev-qt
+    version: '>=0'
+  - name: qtlockedfile
+    category: dev-qt
+    version: '>=0'
+  - name: qtmultimedia
+    category: dev-qt
+    version: '>=0'
+  - name: qtnetwork
+    category: dev-qt
+    version: '>=0'
+  - name: qtnetworkauth
+    category: dev-qt
+    version: '>=0'
+  - name: qtopengl
+    category: dev-qt
+    version: '>=0'
+  - name: qtpaths
+    category: dev-qt
+    version: '>=0'
+  - name: qtpositioning
+    category: dev-qt
+    version: '>=0'
+  - name: qtprintsupport
+    category: dev-qt
+    version: '>=0'
+  - name: qtquickcontrols
+    category: dev-qt
+    version: '>=0'
+  - name: qtquickcontrols2
+    category: dev-qt
+    version: '>=0'
+  - name: qtscript
+    category: dev-qt
+    version: '>=0'
+  - name: qtscxml
+    category: dev-qt
+    version: '>=0'
+  - name: qtsensors
+    category: dev-qt
+    version: '>=0'
+  - name: qtserialport
+    category: dev-qt
+    version: '>=0'
+  - name: qtsingleapplication
+    category: dev-qt
+    version: '>=0'
+  - name: qtspeech
+    category: dev-qt
+    version: '>=0'
+  - name: qtsql
+    category: dev-qt
+    version: '>=0'
+  - name: qtsvg
+    category: dev-qt
+    version: '>=0'
+  - name: qttest
+    category: dev-qt
+    version: '>=0'
+  - name: qttranslations
+    category: dev-qt
+    version: '>=0'
+  - name: qtvirtualkeyboard
+    category: dev-qt
+    version: '>=0'
+  - name: qtwayland
+    category: dev-qt
+    version: '>=0'
+  - name: qtwebchannel
+    category: dev-qt
+    version: '>=0'
+  - name: qtwebengine
+    category: dev-qt
+    version: '>=0'
+  - name: qtwebkit
+    category: dev-qt
+    version: '>=0'
+  - name: qtwebsockets
+    category: dev-qt
+    version: '>=0'
+  - name: qtwidgets
+    category: dev-qt
+    version: '>=0'
+  - name: qtx11extras
+    category: dev-qt
+    version: '>=0'
+  - name: qtxml
+    category: dev-qt
+    version: '>=0'
+  - name: qtxmlpatterns
+    category: dev-qt
+    version: '>=0'
+  - name: breeze-icons
+    category: kde-frameworks
+    version: '>=0'
+  - name: extra-cmake-modules
+    category: kde-frameworks
+    version: '>=0'
+  - name: karchive
+    category: kde-frameworks
+    version: '>=0'
+  - name: kauth
+    category: kde-frameworks
+    version: '>=0'
+  - name: kbookmarks
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcodecs
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcompletion
+    category: kde-frameworks
+    version: '>=0'
+  - name: kconfig
+    category: kde-frameworks
+    version: '>=0'
+  - name: kconfigwidgets
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcoreaddons
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcrash
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdbusaddons
+    category: kde-frameworks
+    version: '>=0'
+  - name: kded
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdoctools
+    category: kde-frameworks
+    version: '>=0'
+  - name: kf-env
+    category: kde-frameworks
+    version: '>=0'
+  - name: kglobalaccel
+    category: kde-frameworks
+    version: '>=0'
+  - name: kguiaddons
+    category: kde-frameworks
+    version: '>=0'
+  - name: ki18n
+    category: kde-frameworks
+    version: '>=0'
+  - name: kiconthemes
+    category: kde-frameworks
+    version: '>=0'
+  - name: kinit
+    category: kde-frameworks
+    version: '>=0'
+  - name: kio
+    category: kde-frameworks
+    version: '>=0'
+  - name: kitemviews
+    category: kde-frameworks
+    version: '>=0'
+  - name: kjobwidgets
+    category: kde-frameworks
+    version: '>=0'
+  - name: knotifications
+    category: kde-frameworks
+    version: '>=0'
+  - name: kpackage
+    category: kde-frameworks
+    version: '>=0'
+  - name: kparts
+    category: kde-frameworks
+    version: '>=0'
+  - name: kservice
+    category: kde-frameworks
+    version: '>=0'
+  - name: ktextwidgets
+    category: kde-frameworks
+    version: '>=0'
+  - name: kwallet
+    category: kde-frameworks
+    version: '>=0'
+  - name: kwidgetsaddons
+    category: kde-frameworks
+    version: '>=0'
+  - name: kwindowsystem
+    category: kde-frameworks
+    version: '>=0'
+  - name: kxmlgui
+    category: kde-frameworks
+    version: '>=0'
+  - name: solid
+    category: kde-frameworks
+    version: '>=0'
+  - name: sonnet
+    category: kde-frameworks
+    version: '>=0'
+  - name: polkit-kde-agent
+    category: kde-plasma
+    version: '>=0'
+  - name: nodejs
+    category: net-libs
+    version: '>=0'
+  - name: polkit-qt
+    category: sys-auth
+    version: '>=0'
