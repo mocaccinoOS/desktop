@@ -198,7 +198,6 @@ media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
 media-gfx/gphoto2 aalib
 media-gfx/graphicsmagick q16 -lcms
-media-gfx/graphite2 perl
 media-gfx/gthumb -cdr slideshow
 media-gfx/kphotoalbum kipi
 media-gfx/librecad doc
