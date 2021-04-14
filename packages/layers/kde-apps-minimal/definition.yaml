@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 5.19.5+22
+version: 5.19.5+23
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -99,13 +99,4 @@ provides:
     version: '>=0'
   - name: kimageannotator
     category: media-libs
-    version: '>=0'
-  - name: cronbase
-    category: sys-process
-    version: '>=0'
-  - name: cronie
-    category: sys-process
-    version: '>=0'
-  - name: cron
-    category: virtual
     version: '>=0'
