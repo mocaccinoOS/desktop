@@ -321,7 +321,6 @@ net-libs/glib-networking gnome
 net-libs/libgadu ssl threads
 net-libs/libmicrohttpd messages
 net-libs/libproxy -kde -gnome python
-net-libs/libsoup gnome vala
 net-libs/libssh server
 net-libs/mbedtls havege
 net-libs/nodejs icu inspector
@@ -475,7 +474,6 @@ media-libs/lcms static-libs
 virtual/jpeg static-libs
 media-libs/libmng static-libs
 sys-power/upower introspection
-net-libs/libsoup introspection ssl vala
 media-libs/gstreamer introspection
 media-libs/babl introspection
 gnome-extra/polkit-gnome introspection
