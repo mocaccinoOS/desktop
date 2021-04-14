@@ -6,5 +6,6 @@ app-crypt/pinentry gnome-keyring
 app-crypt/libsecret crypt introspection vala
 dev-libs/libgdata gnome-online-accounts
 gnome-base/gvfs afp ios samba gnome gdu google gnome-online-accounts fuse archive gnome-keyring mtp nfs udisks
+gnome-base/libgtop introspection
 media-libs/libgphoto2 exif
 net-libs/gnome-online-accounts vala

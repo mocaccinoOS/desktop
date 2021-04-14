@@ -479,7 +479,6 @@ net-libs/libsoup introspection ssl vala
 media-libs/gstreamer introspection
 media-libs/babl introspection
 gnome-extra/polkit-gnome introspection
-gnome-base/libgtop introspection
 x11-libs/libnotify introspection
 dev-libs/libgee introspection
 net-libs/gtk-vnc gtk3
