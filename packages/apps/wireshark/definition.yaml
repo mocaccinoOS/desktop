@@ -1,6 +1,6 @@
 category: "apps"
 name: "wireshark"
-version: 3.4.3+5
+version: 3.4.3+6
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -8,9 +8,6 @@ labels:
 provides:
   - name: wireshark
     category: net-analyzer
-    version: '>=0'
-  - name: freedesktop-icon-theme
-    category: virtual
     version: '>=0'
 requires:
   - category: "layers"
