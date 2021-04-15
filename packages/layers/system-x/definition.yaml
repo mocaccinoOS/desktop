@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20210405+4
+version: 0.20210405+5
 category: layers
 requires:
   - category: "system"
@@ -46,6 +46,7 @@ emerge:
   packages:
     - app-arch/cpio
     - media-libs/libpng
+    - sys-apps/dmidecode
     - sys-apps/pciutils
     - sys-devel/clang
     - sys-kernel/dracut
@@ -560,6 +561,9 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: diffutils
+    category: sys-apps
+    version: '>=0'
+  - name: dmidecode
     category: sys-apps
     version: '>=0'
   - name: file
