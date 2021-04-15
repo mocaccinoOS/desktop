@@ -600,7 +600,7 @@ provides:
     version: '>=0'
   - name: dejavu
     category: media-fonts
-    version: '>=0' 
+    version: '>=0'
   - name: encodings
     category: media-fonts
     version: '>=0'
@@ -611,9 +611,6 @@ provides:
     category: media-fonts
     version: '>=0'
   - name: font-util
-    category: media-fonts
-    version: '>=0'
-  - name: liberation-fonts
     category: media-fonts
     version: '>=0'
   - name: urw-fonts
@@ -627,7 +624,10 @@ provides:
     version: '>=0'
   - name: imagemagick
     category: media-gfx
-    version: '>=0'    
+    version: '>=0'
+  - name: potrace
+    category: media-gfx
+    version: '>=0'
   - name: fdk-aac
     category: media-libs
     version: '>=0'
@@ -668,6 +668,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: harfbuzz
+    category: media-libs
+    version: '>=0'
+  - name: ilmbase
     category: media-libs
     version: '>=0'
   - name: imlib2
@@ -746,6 +749,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: opencore-amr
+    category: media-libs
+    version: '>=0'
+  - name: openexr
     category: media-libs
     version: '>=0'
   - name: openh264
@@ -892,6 +898,9 @@ provides:
   - name: wpa_supplicant
     category: net-wireless
     version: '>=0'
+  - name: fftw
+    category: sci-libs
+    version: '>=0'
   - name: accountsservice
     category: sys-apps
     version: '>=0'
@@ -933,6 +942,9 @@ provides:
     version: '>=0'
   - name: upower
     category: sys-power
+    version: '>=0'
+  - name: fortran
+    category: virtual
     version: '>=0'
   - name: freedesktop-icon-theme
     category: virtual
