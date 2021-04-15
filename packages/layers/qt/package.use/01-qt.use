@@ -16,11 +16,8 @@ dev-qt/qtquickcontrols2:5 widgets
 dev-qt/qtscript private-headers
 dev-qt/qtscript:5 private-headers scripttools
 dev-qt/qtsensors qml
-# added for mythtv
 dev-qt/qtsql mysql
 dev-qt/qtvirtualkeyboard spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
-# needed for calamares
-dev-qt/qtwebengine geolocation kerberos system-icu widgets -system-ffmpeg
 dev-qt/qtwebchannel qml

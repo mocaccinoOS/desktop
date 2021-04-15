@@ -1,0 +1,15 @@
+category: "apps"
+name: "qtwebengine"
+version: 5.15.2+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    dev-qt/qtwebengine
+provides:
+  - name: qtwebengine
+    category: dev-qt
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"

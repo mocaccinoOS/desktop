@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.2+13
+version: 5.15.2+14
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -134,9 +134,6 @@ provides:
     category: dev-qt
     version: '>=0'
   - name: qtwebchannel
-    category: dev-qt
-    version: '>=0'
-  - name: qtwebengine
     category: dev-qt
     version: '>=0'
   - name: qtwebkit
