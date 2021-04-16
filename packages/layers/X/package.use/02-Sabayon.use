@@ -402,7 +402,6 @@ sys-devel/gdb expat python
 sys-firmware/intel-microcode initramfs
 sys-fs/mtd-utils xattr
 sys-fs/reiser4progs static static-libs
-sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
 sys-libs/gpm split-usr static-libs

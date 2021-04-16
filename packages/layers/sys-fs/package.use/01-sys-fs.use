@@ -11,4 +11,5 @@ sys-fs/udisks cryptsetup crypt
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs
+sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/zfs kernel-builtin
