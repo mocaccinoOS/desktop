@@ -1,6 +1,6 @@
 category: "apps"
 name: "guake"
-version: 3.7.0+1
+version: 3.7.0+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -8,9 +8,6 @@ labels:
 provides:
   - name: guake
     category: x11-terms
-    version: '>=0'
-  - name: keybinder
-    category: dev-libs
     version: '>=0'
 requires:
   - category: "layers"

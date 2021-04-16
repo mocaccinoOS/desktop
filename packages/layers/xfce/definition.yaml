@@ -1,6 +1,6 @@
 category: "layers"
 name: "xfce"
-version: 4.14+9
+version: 4.14+10
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -15,9 +15,6 @@ provides:
     version: '>=0'
   - name: gnome-doc-utils
     category: app-text
-    version: '>=0'
-  - name: keybinder
-    category: dev-libs
     version: '>=0'
   - name: libdbusmenu
     category: dev-libs
