@@ -1,15 +1,12 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+15
+version: 3.2.32+16
 provides:
   - name: calamares
     category: app-admin
     version: '>=0'
   - name: yaml-cpp
     category: dev-cpp
-    version: '>=0'
-  - name: os-prober
-    category: sys-boot
     version: '>=0'
   - name: squashfs-tools
     category: sys-fs
