@@ -17,7 +17,7 @@ prelude:
 steps:
 - |
   export PATH=$PATH:$GOPATH/bin && \
-  cd statusbar && DESTDIR=/statusbar ./build.sh && cp -rf statusbar/profile/*.yaml /statusbar/etc/yip.d/
+  cd statusbar && DESTDIR=/statusbar ./build.sh && cp -rf profile/*.yaml /statusbar/etc/yip.d/
 package_dir: "/statusbar"
 requires:
 - category: "layers"
