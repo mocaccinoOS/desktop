@@ -14,8 +14,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-# Temporary fix for fprintf
-# - sed -i /lib/systemd/system/fprintd.service -e 's|^ReadWritePaths.*|ReadWritePaths=/var/lib/fprint|'
+- etc-update -q --automode -5
 requires:
 - category: "layers"
   name: "X"
