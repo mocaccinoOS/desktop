@@ -17,6 +17,7 @@ prelude:
 steps:
 - USE="-vaapi" emerge -1 media-libs/mesa
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- etc-update -q --automode -5
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
 - category: "layers"
