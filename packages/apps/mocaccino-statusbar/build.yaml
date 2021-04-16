@@ -7,12 +7,12 @@ env:
 prelude:
 - mkdir -p /statusbar/etc/yip.d
 - mkdir -p ~/.ssh
-- ssh-keyscan github.com >> ~/.ssh/known_hosts && git checkout "${PACKAGE_VERSION}" -b build
+- ssh-keyscan github.com >> ~/.ssh/known_hosts
 - wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
 - tar -C /usr/local -xzf golang.tar.gz
 - | 
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-    git clone https://github.com/mocaccinoOS/statusbar.git && cd statusbar
+    git clone https://github.com/mocaccinoOS/statusbar.git && cd statusbar && git checkout "${PACKAGE_VERSION}" -b build
 steps:
 - cd statusbar && DESTDIR=/statusbar ./build.sh && cp -rf statusbar/profile/*.yaml /statusbar/etc/yip.d/
 package_dir: "/statusbar"
