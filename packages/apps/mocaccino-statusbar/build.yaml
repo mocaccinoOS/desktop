@@ -1,0 +1,22 @@
+env:
+- PATH=$PATH:/usr/local/go/bin
+- GOPATH=/luetbuild/go
+- GO111MODULE=on
+- CGO_ENABLED=1
+
+prelude:
+- mkdir -p /statusbar/etc/yip.d
+- mkdir -p ~/.ssh
+- ssh-keyscan github.com >> ~/.ssh/known_hosts && git checkout "${PACKAGE_VERSION}" -b build
+- wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
+- tar -C /usr/local -xzf golang.tar.gz
+- | 
+    PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+    git clone https://github.com/mocaccinoOS/statusbar.git && cd statusbar
+steps:
+- cd statusbar && DESTDIR=/statusbar ./build.sh && cp -rf statusbar/profile/*.yaml /statusbar/etc/yip.d/
+package_dir: "/statusbar"
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
