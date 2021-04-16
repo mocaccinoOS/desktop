@@ -1,15 +1,12 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+16
+version: 3.2.32+17
 provides:
   - name: calamares
     category: app-admin
     version: '>=0'
   - name: yaml-cpp
     category: dev-cpp
-    version: '>=0'
-  - name: squashfs-tools
-    category: sys-fs
     version: '>=0'
   - name: kpmcore
     category: sys-libs
@@ -21,6 +18,9 @@ labels:
 requires:
   - category: "layers"
     name: "gnome-common"
+    version: ">=0"
+  - category: "layers"
+    name: "sys-fs"
     version: ">=0"
   - category: "layers"
     name: "qt"
