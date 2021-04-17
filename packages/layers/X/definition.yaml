@@ -42,7 +42,7 @@ requires:
   - name: dhcp
     category: entity
     version: ">=0"
-  - name: dhcpd
+  - name: dhcpcd
     category: entity
     version: ">=0"
   - name: pcscd
