@@ -6,3 +6,6 @@ requires:
 - category: "layers"
   name: "gnome"
   version: ">=0"
+- category: mocaccino
+  name: gnome-skel
+  version: ">=0"
