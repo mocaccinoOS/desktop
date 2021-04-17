@@ -9,37 +9,37 @@ requires:
     version: ">=0"
     category: meta
   - name: man
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: messagebus
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: polkitd
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-coredump
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-journal-remote
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-network
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-oom
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-resolve
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: systemd-timesync
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: sshd
-    category: acct-user
+    category: entity
     version: ">=0"
   - name: unbound
-    category: acct-user
+    category: entity
     version: ">=0"
 emerge:
   jobs: "3"

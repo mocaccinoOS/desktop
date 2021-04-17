@@ -4,7 +4,7 @@ category: meta
 requires:
 # Default groups used by systemd
   - &group
-    category: "acct-group"
+    category: "entity"
     version: ">=0"
     name: "dhcp"
   - <<: *group
