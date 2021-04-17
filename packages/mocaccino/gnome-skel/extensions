@@ -1,0 +1,3 @@
+[org/gnome/shell]
+# List all extensions that you want to have enabled for all users
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com']

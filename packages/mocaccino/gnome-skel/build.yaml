@@ -1,0 +1,10 @@
+image: "alpine"
+package_dir: "/package"
+steps:
+- apk add git
+- mkdir -p /package/usr/share/gnome-shell/extensions
+- mkdir -p /package/etc/dconf/profile
+- mkdir -p /package/etc/dconf/db/local.d/
+- git clone https://github.com/ubuntu/gnome-shell-extension-appindicator /package/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+- cp -rf user /package/etc/dconf/profile/
+- cp -rf extensions /package/etc/dconf/db/local.d/00-extensions
