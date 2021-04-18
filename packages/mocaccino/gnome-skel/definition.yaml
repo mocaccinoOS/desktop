@@ -1,6 +1,6 @@
 category: mocaccino
 name: gnome-skel
-version: "0.3"
+version: "0.5"
 requires:
 - category: "layers"
   name: "gnome"
@@ -10,4 +10,7 @@ requires:
   version: ">=0"
 - name: tela
   category: gnome-icons
+  version: ">=0"
+- category: "gnome-themes"
+  name: "plano"
   version: ">=0"
