@@ -1,7 +1,13 @@
 category: mocaccino
 name: gnome-skel
-version: "0.1"
+version: "0.3"
 requires:
 - category: "layers"
   name: "gnome"
+  version: ">=0"
+- name: mocaccino-wallpaper
+  category: system
+  version: ">=0"
+- name: tela
+  category: gnome-icons
   version: ">=0"
