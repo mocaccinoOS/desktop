@@ -264,9 +264,6 @@ provides:
   - name: gupnp-dlna
     category: media-libs
     version: '>=0'
-  - name: libdvdread
-    category: media-libs
-    version: '>=0'
   - name: libmediaart
     category: media-libs
     version: '>=0'
@@ -356,6 +353,9 @@ provides:
     version: '>=0'
   - name: gnome-backgrounds
     category: x11-themes
+    version: '>=0'
+  - name: mutter
+    category: x11-wm
     version: '>=0'
   - name: mutter
     category: x11-wm
