@@ -339,9 +339,6 @@ provides:
   - name: libosinfo
     category: sys-libs
     version: '>=0'
-  - name: libusb
-    category: virtual
-    version: '>=0'
   - name: colord-gtk
     category: x11-libs
     version: '>=0'
