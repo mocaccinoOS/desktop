@@ -1,2 +1,2 @@
 install:
-- gtk-update-icon-cache /usr/share/icons/Tela-standard
+- gtk-update-icon-cache /usr/share/icons/Tela

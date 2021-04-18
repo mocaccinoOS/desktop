@@ -1,7 +1,8 @@
-image: "opensuse/tumbleweed"
+image: "debian:stable"
 
 prelude:
-- zypper in -y gtk2-engine-murrine gtk2-engines ninja git meson sassc
+- apt-get update
+- apt-get install -y gtk2-engines-murrine gtk2-engines-pixbuf ninja-build git meson sassc
 - git clone https://github.com/snwh/paper-icon-theme
 - cd paper-icon-theme && git checkout "aa3e8af7a1f0831a51fd7e638a4acb077a1e5188" -b build && meson "build" --prefix=/usr
 steps:

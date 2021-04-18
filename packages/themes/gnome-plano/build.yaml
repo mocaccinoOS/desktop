@@ -1,7 +1,8 @@
-image: "opensuse/tumbleweed"
+image: "debian:stable"
 
 prelude:
-- zypper in -y gtk2-engine-murrine gtk2-engines ninja git meson sassc
+- apt-get update
+- apt-get install -y gtk2-engines-murrine gtk2-engines-pixbuf ninja-build git meson sassc
 - git clone https://github.com/lassekongo83/plano-theme.git
 - cd plano-theme && git checkout "3c7395cf99d4974b9bf5fbd330d2a846c0921b9f" -b build && meson build
 steps:
