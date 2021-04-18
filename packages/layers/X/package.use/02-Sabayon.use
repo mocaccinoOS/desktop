@@ -460,7 +460,6 @@ x11-wm/fvwm imlib
 x11-wm/icewm imlib
 x11-wm/openbox imlib
 dev-python/PyQt5 declarative help webchannel webkit webengine websockets sql xmlpatterns
-media-libs/libdvdread -css
 media-libs/xine-lib -css
 app-cdr/brasero -css
 media-tv/mythtv -css
