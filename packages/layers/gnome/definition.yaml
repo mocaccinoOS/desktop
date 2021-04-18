@@ -285,12 +285,6 @@ provides:
   - name: grilo-plugins
     category: media-plugins
     version: '>=0'
-  - name: gst-plugins-gdkpixbuf
-    category: media-plugins
-    version: '>=0'
-  - name: gst-plugins-taglib
-    category: media-plugins
-    version: '>=0'
   - name: totem
     category: media-video
     version: '>=0'
