@@ -1,0 +1,12 @@
+image: "opensuse/tumbleweed"
+
+prelude:
+- zypper in -y gtk2-engine-murrine gtk2-engines ninja git meson sassc
+- git clone https://github.com/snwh/paper-icon-theme
+- cd paper-icon-theme && git checkout "aa3e8af7a1f0831a51fd7e638a4acb077a1e5188" -b build && meson "build" --prefix=/usr
+steps:
+- echo '#!/bin/sh' > /usr/bin/gtk-update-icon-cache
+- chmod +x /usr/bin/gtk-update-icon-cache
+- cd paper-icon-theme && ninja -C "build" install
+includes:
+- /usr/share/icons*

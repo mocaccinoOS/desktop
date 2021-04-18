@@ -1,0 +1,10 @@
+image: "opensuse/tumbleweed"
+
+prelude:
+- zypper in -y gtk2-engine-murrine gtk2-engines ninja git meson sassc
+- git clone https://github.com/lassekongo83/plano-theme.git
+- cd plano-theme && git checkout "3c7395cf99d4974b9bf5fbd330d2a846c0921b9f" -b build && meson build
+steps:
+- cd plano-theme && ninja -C build install
+includes:
+- /usr/share/themes*
