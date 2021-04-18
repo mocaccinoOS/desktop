@@ -3,6 +3,6 @@ name: "python"
 version: "3.7"
 description: "Virtual package for python"
 requires:
-- name: system-x
-  category: "layers"
-  version: ">=0"
+  - name: system-x
+    category: "layers"
+    version: ">=0"
