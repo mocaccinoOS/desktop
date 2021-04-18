@@ -443,7 +443,6 @@ x11-terms/rxvt-unicode 256-color blink fading-colors xft
 x11-misc/bumblebee video_cards_nvidia video_cards_nouveau
 x11-misc/cairo-dock xcomposite
 x11-misc/gpaste gnome-shell keybinder
-x11-misc/notification-daemon gstreamer
 x11-misc/obconf -lxde
 x11-misc/shutter drawing webphoto
 x11-misc/xaos aalib
