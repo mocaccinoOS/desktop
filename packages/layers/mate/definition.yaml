@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.24+18
+version: 1.24+19
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -143,9 +143,6 @@ provides:
     category: x11-terms
     version: '>=0'
   - name: gtk-engines
-    category: x11-themes
-    version: '>=0'
-  - name: gtk-engines-murrine
     category: x11-themes
     version: '>=0'
   - name: mate-backgrounds

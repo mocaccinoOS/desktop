@@ -453,7 +453,6 @@ x11-plugins/cairo-dock-plugins exif gmenu -kde terminal tomboy -webkit -xfce -xk
 x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisVert Ubuntu Verde Wood
 >=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
-x11-themes/gtk-engines-murrine -themes
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
 x11-themes/zuki-themes gnome-shell
