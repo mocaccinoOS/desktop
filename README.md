@@ -18,7 +18,7 @@ From a developer standpoint, MOS takes a unique approach on package building, al
 
 ## Documentation
 
-- [Ops guide](https://github.com/mocaccinoOS/desktop/blob/master/docs/ops_guide_to_galaxy.md)
+- [Ops guide](https://www.mocaccino.org/docs/desktop/development/)
 - [Luet docs](https://luet-lab.github.io/docs/)
 
 ## Repository layout
