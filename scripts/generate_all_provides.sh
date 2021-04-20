@@ -16,6 +16,10 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
         continue
     fi
+    # Skip dev-lang/python too. It is provided by virtual/python
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "dev-lang/python" ]; then
+        continue
+    fi
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
 done
