@@ -59,10 +59,6 @@ do
     name=$(pkgs-checker pkg info $i --json | jq '.name' -r)
     cat=$(pkgs-checker pkg info $i --json | jq '.category' -r)
   
-    if [[ "${cat}" == "acct-group" ]] || [[ "${cat}" == "acct-user" ]];then
-      continue
-    fi
-
     echo "Adding ${cat}/${name} ($i)"
 
     yq w -i $path/definition.yaml "provides[$p].name" "${name}"
