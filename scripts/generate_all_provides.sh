@@ -16,5 +16,6 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
         continue
     fi
+    echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
 done
