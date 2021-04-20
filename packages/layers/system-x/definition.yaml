@@ -56,6 +56,141 @@ emerge:
 labels:
   autobump.strategy: "snapshot"
 provides:
+  - name: adm
+    category: acct-group
+    version: '>=0'
+  - name: audio
+    category: acct-group
+    version: '>=0'
+  - name: cdrom
+    category: acct-group
+    version: '>=0'
+  - name: dialout
+    category: acct-group
+    version: '>=0'
+  - name: disk
+    category: acct-group
+    version: '>=0'
+  - name: input
+    category: acct-group
+    version: '>=0'
+  - name: kmem
+    category: acct-group
+    version: '>=0'
+  - name: kvm
+    category: acct-group
+    version: '>=0'
+  - name: lp
+    category: acct-group
+    version: '>=0'
+  - name: man
+    category: acct-group
+    version: '>=0'
+  - name: messagebus
+    category: acct-group
+    version: '>=0'
+  - name: nobody
+    category: acct-group
+    version: '>=0'
+  - name: polkitd
+    category: acct-group
+    version: '>=0'
+  - name: portage
+    category: acct-group
+    version: '>=0'
+  - name: render
+    category: acct-group
+    version: '>=0'
+  - name: root
+    category: acct-group
+    version: '>=0'
+  - name: sshd
+    category: acct-group
+    version: '>=0'
+  - name: systemd-coredump
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal-remote
+    category: acct-group
+    version: '>=0'
+  - name: systemd-network
+    category: acct-group
+    version: '>=0'
+  - name: systemd-oom
+    category: acct-group
+    version: '>=0'
+  - name: systemd-resolve
+    category: acct-group
+    version: '>=0'
+  - name: systemd-timesync
+    category: acct-group
+    version: '>=0'
+  - name: tape
+    category: acct-group
+    version: '>=0'
+  - name: tty
+    category: acct-group
+    version: '>=0'
+  - name: unbound
+    category: acct-group
+    version: '>=0'
+  - name: users
+    category: acct-group
+    version: '>=0'
+  - name: utmp
+    category: acct-group
+    version: '>=0'
+  - name: video
+    category: acct-group
+    version: '>=0'
+  - name: wheel
+    category: acct-group
+    version: '>=0'
+  - name: man
+    category: acct-user
+    version: '>=0'
+  - name: messagebus
+    category: acct-user
+    version: '>=0'
+  - name: nobody
+    category: acct-user
+    version: '>=0'
+  - name: polkitd
+    category: acct-user
+    version: '>=0'
+  - name: portage
+    category: acct-user
+    version: '>=0'
+  - name: root
+    category: acct-user
+    version: '>=0'
+  - name: sshd
+    category: acct-user
+    version: '>=0'
+  - name: systemd-coredump
+    category: acct-user
+    version: '>=0'
+  - name: systemd-journal-remote
+    category: acct-user
+    version: '>=0'
+  - name: systemd-network
+    category: acct-user
+    version: '>=0'
+  - name: systemd-oom
+    category: acct-user
+    version: '>=0'
+  - name: systemd-resolve
+    category: acct-user
+    version: '>=0'
+  - name: systemd-timesync
+    category: acct-user
+    version: '>=0'
+  - name: unbound
+    category: acct-user
+    version: '>=0'
   - name: eselect
     category: app-admin
     version: '>=0'

@@ -18,6 +18,21 @@ requires:
 # TODO: add ldap user/group
 
 provides:
+  - name: ldap
+    category: acct-group
+    version: '>=0'
+  - name: mail
+    category: acct-group
+    version: '>=0'
+  - name: ldap
+    category: acct-user
+    version: '>=0'
+  - name: mail
+    category: acct-user
+    version: '>=0'
+  - name: postmaster
+    category: acct-user
+    version: '>=0'
   - name: mit-krb5
     category: app-crypt
     version: '>=0'
