@@ -5,7 +5,7 @@ requires:
 
 steps:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
-- emerge -j ${JOBS} sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
+- emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
 - luet install repository/mocaccino-kernel
 - luet install kernel/{{.Values.name}} && luet cleanup
 # We use our kernel for compile modules

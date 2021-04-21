@@ -23,9 +23,9 @@ requires:
 {{- if .Values.lts }}
 - category: "kernel-sources"
   name: "mocaccino-lts-sources"
-  version: "1"
+  version: ">=0"
 {{- else}}
 - category: "kernel-sources"
   name: "mocaccino-sources"
-  version: "1"
+  version: ">=0"
 {{- end}}
