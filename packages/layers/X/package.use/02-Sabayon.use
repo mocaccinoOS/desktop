@@ -484,7 +484,6 @@ app-i18n/scim gtk3
 app-emulation/spice smartcard
 net-misc/spice-gtk gtk3 usbredir smartcard vala
 gnome-base/gdm -plymouth
-sys-libs/binutils-libs nls
 dev-libs/libgit2 ssh threads
 >=media-plugins/grilo-plugins-0.2.10 tracker
 dev-libs/libnl utils

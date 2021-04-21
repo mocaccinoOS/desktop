@@ -36,6 +36,7 @@ net-print/cups-filters ipp_autosetup pclm
 net-wireless/bluez gstreamer obex user-session
 net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
 sys-apps/pciutils kmod udev -zlib
+sys-libs/binutils-libs nls
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa
