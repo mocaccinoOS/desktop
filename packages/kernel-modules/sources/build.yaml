@@ -10,6 +10,6 @@ steps:
 - luet install repository/mocaccino-kernel
 - luet install kernel/{{.Values.name}} && luet cleanup
 - |
-    kernel=$(ls /lib/modules | head -n1) && \ 
+    kernel=$(ls /usr/src | head -n1) && \ 
     emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources && \
     cd /usr/src && rm -rfv linux && ln -s $kernel linux
