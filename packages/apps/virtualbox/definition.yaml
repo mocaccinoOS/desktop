@@ -1,0 +1,18 @@
+category: "apps"
+name: "virtualbox"
+version: 6.1.18+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-emulation/virtualbox
+provides:
+  - name: virtualbox
+    category: app-emulation
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
+  - category: "kernel-modules"
+    name: "virtualbox-modules"
+    version: ">=0"
