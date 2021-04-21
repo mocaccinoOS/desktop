@@ -188,7 +188,6 @@ mail-filter/procmail mbox
 mail-mta/exim exiscan-acl maildir
 mail-mta/netqmail qmail-spp
 media-fonts/baekmuk-fonts -X
-media-fonts/noto -cjk
 media-gfx/asymptote -latex
 media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
 media-gfx/darktable geo cpu_flags_x86_sse3 -cpudetection

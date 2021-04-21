@@ -9,6 +9,7 @@ dev-lang/luajit lua52compat
 dev-libs/dbus-glib bash-completion
 dev-python/pygobject introspection
 mail-mta/postfix mbox sasl
+media-fonts/noto -cjk
 media-gfx/exiv2 xmp
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs perl q32 xml
