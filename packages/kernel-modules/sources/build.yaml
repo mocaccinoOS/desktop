@@ -2,7 +2,9 @@ requires:
 - category: "layers"
   name: "system-x"
   version: ">=0"
-
+env:
+- LUET_NOLOCK=true
+- LUET_YES=true
 steps:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
