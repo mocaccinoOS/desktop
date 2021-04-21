@@ -220,7 +220,6 @@ media-libs/libffado -qt5
 media-libs/libggi aalib
 media-libs/libmypaint gegl
 media-libs/libraw demosaic
-media-libs/libsamplerate sndfile
 media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/libsfml doc examples
@@ -229,7 +228,6 @@ media-libs/libvpx postproc svc
 media-libs/libxtract fftw
 media-libs/mlt melt frei0r kdenlive quicktime python
 media-libs/openexr -video_cards_nvidia
-media-libs/opus custom-modes
 media-libs/oyranos -exif
 app-admin/elektra -abi_x86_32
 media-libs/oyranos -abi_x86_32
