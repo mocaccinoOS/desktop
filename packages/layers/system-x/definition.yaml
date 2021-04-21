@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210420"
+version: "0.20210420+1"
 category: layers
 requires:
   - category: "system"
@@ -45,6 +45,7 @@ emerge:
   jobs: "3"
   packages:
     - app-arch/cpio
+    - net-misc/ntp
     - media-libs/libpng
     - sys-apps/dmidecode
     - sys-apps/pciutils

@@ -31,6 +31,7 @@ net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
 net-libs/nghttp2 -cxx
 # nss breaks git https:// checkouts
 net-misc/curl http2 idn ssl -nss -gnutls static-libs
+net-misc/ntp -zeroconf
 net-misc/openssh -X -ldap
 net-misc/openssh libedit
 # Add xattr support to rsync

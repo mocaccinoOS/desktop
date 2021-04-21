@@ -336,7 +336,6 @@ net-misc/aria2 metalink bittorrent xmlrpc
 net-misc/asterisk jabber gtalk xmpp
 net-misc/minidlna netgear readynas
 net-misc/mosh ufw
-net-misc/ntp -zeroconf
 net-misc/plowshare -javascript
 net-misc/ps3mediaserver multiuser tsmuxer
 net-misc/putty gssapi
