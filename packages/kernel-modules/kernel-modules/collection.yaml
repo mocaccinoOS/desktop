@@ -1,21 +1,21 @@
 packages:
 - category: "kernel-modules"
-  name: "zfs-kmod"
+  name: "virtualbox-modules"
   version: "1"
   lts: false
   emerge:
     jobs: "3"
     packages:
-      - sys-fs/zfs-kmod
+      - app-emulation/virtualbox-modules
   labels:
     lts.kernel: "false"
 - category: "kernel-modules"
-  name: "zfs-kmod-lts"
+  name: "virtualbox-modules-lts"
   version: "1"
   lts: true
   emerge:
     jobs: "3"
     packages:
-      - sys-fs/zfs-kmod
+      - app-emulation/virtualbox-modules
   labels:
     lts.kernel: "true"
