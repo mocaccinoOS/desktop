@@ -6,8 +6,8 @@ requires:
 steps:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - emerge -j ${JOBS} sys-kernel/gentoo-kernel sys-kernel/gentoo-sources
-- luet install repository/mocaccino-kernel-stable
-- luet install kernel/mocaccino-lts-sources && luet cleanup
+- luet install repository/mocaccino-kernel
+- luet install kernel/{{.Values.name}} && luet cleanup
 # We use our kernel for compile modules
 - |
   kernel=$(ls /lib/modules | head -n1) && \
