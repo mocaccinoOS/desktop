@@ -10,5 +10,5 @@ steps:
 - luet install kernel/{{.Values.name}} && luet cleanup
 # We use our kernel for compile modules
 - |
-  kernel=$(ls /lib/modules | head -n1) && \
-  cd /usr/src && eval 'rm linux || true' && ln -s $kernel linux
+   kernel=$(ls /lib/modules | head -n1) && \
+   cd /usr/src && eval 'rm linux || true' && ln -s $kernel linux
