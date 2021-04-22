@@ -1,21 +1,21 @@
 packages:
-- category: "kernel-modules"
-  name: "virtualbox-modules"
-  version: "1"
-  lts: false
-  emerge:
-    jobs: "3"
-    packages:
-      - app-emulation/virtualbox-modules
-  labels:
-    lts.kernel: "false"
-- category: "kernel-modules"
-  name: "virtualbox-modules-lts"
-  version: "1"
-  lts: true
-  emerge:
-    jobs: "3"
-    packages:
-      - app-emulation/virtualbox-modules
-  labels:
-    lts.kernel: "true"
+  - category: "kernel-modules"
+    name: "virtualbox-modules"
+    version: "1"
+    lts: false
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-modules
+    labels:
+      lts.kernel: "false"
+  - category: "kernel-modules"
+    name: "virtualbox-modules-lts"
+    version: 1+1
+    lts: true
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-modules
+    labels:
+      lts.kernel: "true"
