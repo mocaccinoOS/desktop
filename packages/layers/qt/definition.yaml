@@ -13,9 +13,6 @@ requires:
     name: "net-tools"
     version: ">=0"
 provides:
-  - name: snappy
-    category: app-arch
-    version: '>=0'
   - name: mysql-connector-c
     category: dev-db
     version: '>=0'
@@ -23,9 +20,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libdbusmenu-qt
-    category: dev-libs
-    version: '>=0'
-  - name: re2
     category: dev-libs
     version: '>=0'
   - name: linguist-tools
@@ -255,6 +249,12 @@ provides:
     version: '>=0'
   - name: sonnet
     category: kde-frameworks
+    version: '>=0'
+  - name: polkit-kde-agent
+    category: kde-plasma
+    version: '>=0'
+  - name: polkit-qt
+    category: sys-auth
     version: '>=0'
   - name: polkit-kde-agent
     category: kde-plasma

@@ -93,6 +93,9 @@ provides:
   - name: nobody
     category: acct-group
     version: '>=0'
+  - name: ntp
+    category: acct-group
+    version: '>=0'
   - name: polkitd
     category: acct-group
     version: '>=0'
@@ -157,6 +160,9 @@ provides:
     category: acct-user
     version: '>=0'
   - name: nobody
+    category: acct-user
+    version: '>=0'
+  - name: ntp
     category: acct-user
     version: '>=0'
   - name: polkitd
@@ -661,6 +667,9 @@ provides:
     category: net-misc
     version: '>=0'
   - name: iputils
+    category: net-misc
+    version: '>=0'
+  - name: ntp
     category: net-misc
     version: '>=0'
   - name: openssh

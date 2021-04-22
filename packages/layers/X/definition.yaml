@@ -52,6 +52,60 @@ requires:
     category: entity
     version: ">=0"
 provides:
+  - name: avahi
+    category: acct-group
+    version: '>=0'
+  - name: avahi-autoipd
+    category: acct-group
+    version: '>=0'
+  - name: dhcp
+    category: acct-group
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-group
+    version: '>=0'
+  - name: lpadmin
+    category: acct-group
+    version: '>=0'
+  - name: netdev
+    category: acct-group
+    version: '>=0'
+  - name: openct
+    category: acct-group
+    version: '>=0'
+  - name: pcscd
+    category: acct-group
+    version: '>=0'
+  - name: plugdev
+    category: acct-group
+    version: '>=0'
+  - name: postdrop
+    category: acct-group
+    version: '>=0'
+  - name: postfix
+    category: acct-group
+    version: '>=0'
+  - name: usb
+    category: acct-group
+    version: '>=0'
+  - name: avahi
+    category: acct-user
+    version: '>=0'
+  - name: avahi-autoipd
+    category: acct-user
+    version: '>=0'
+  - name: dhcp
+    category: acct-user
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-user
+    version: '>=0'
+  - name: pcscd
+    category: acct-user
+    version: '>=0'
+  - name: postfix
+    category: acct-user
+    version: '>=0'
   - name: at-spi2-atk
     category: app-accessibility
     version: '>=0'

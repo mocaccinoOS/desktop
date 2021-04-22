@@ -54,13 +54,13 @@ provides:
   - name: libmatroska
     category: media-libs
     version: '>=0'
-  - name: libsamplerate
-    category: media-libs
-    version: '>=0'
   - name: libogg
     category: media-libs
     version: '>=0'
   - name: libreplaygain
+    category: media-libs
+    version: '>=0'
+  - name: libsamplerate
     category: media-libs
     version: '>=0'
   - name: opus
