@@ -210,3 +210,6 @@ provides:
   - name: python-cffi
     category: virtual
     version: '>=0'
+packages:
+  - {}
+  - version: +1
