@@ -1,4 +1,7 @@
 kde-apps/kio-extras mtp samba
+kde-frameworks/baloo minimal
+kde-frameworks/prison qml
+kde-frameworks/kitemmodels qml
 kde-plasma/plasma-meta networkmanager
 kde-plasma/plasma-desktop input_devices_synaptics touchpad
 kde-plasma/kde-cli-tools kdesu

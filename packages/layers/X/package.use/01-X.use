@@ -15,10 +15,12 @@ media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs perl q32 xml
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
+media-libs/gstreamer introspection
 media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
+media-libs/lcms static-libs
 media-libs/libjpeg-turbo static-libs
 media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg gles2 opencl vaapi vdpau
 media-libs/openal -qt5
@@ -37,6 +39,7 @@ net-wireless/bluez gstreamer obex user-session
 net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
 sys-apps/pciutils kmod udev -zlib
 sys-libs/binutils-libs nls
+sys-power/upower introspection
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa
@@ -47,6 +50,7 @@ x11-libs/gtk+:3 cups introspection
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
+x11-libs/libnotify introspection
 x11-misc/notification-daemon gstreamer
 # Disable new-login, pulls in gdm or lightdm, which is bad
 x11-misc/xscreensaver -new-login

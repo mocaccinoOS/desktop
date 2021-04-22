@@ -1,5 +1,3 @@
-dev-cpp/cairomm aqua
->=kde-frameworks/prison-5.74.0 qml
 app-accessibility/julius -alsa -oss -portaudio
 app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
 app-admin/keepassxc browser
@@ -171,8 +169,6 @@ kde-apps/ktp-common-internals otr
 kde-apps/marble plasma
 kde-apps/okular chm djvu ebook epub crypt
 kde-apps/poxml extras
-kde-frameworks/baloo minimal
-kde-frameworks/kitemmodels qml
 kde-misc/kdeconnect -bluetooth
 lxde-base/lxterminal gtk3
 lxqt-base/lxqt-panel networkmonitor
@@ -240,7 +236,6 @@ media-libs/vigra fftw
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 media-plugins/audacious-plugins chardet cue gnome gtk3 http icecast libsamplerate modplug sndfile speedpitch wavpack -gtk -qt5
-kde-apps/kipi-plugins calendar gpssync
 media-plugins/vdr-weatherng dxr3
 media-sound/alsa-tools -gtk
 media-sound/aqualung libsamplerate
@@ -393,7 +388,6 @@ sys-cluster/openmpi romio
 sys-cluster/torque server
 sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 sys-devel/distcc -avahi -gtk
-sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
 sys-devel/gdb expat python
 sys-firmware/intel-microcode initramfs
 sys-fs/mtd-utils xattr
@@ -462,18 +456,12 @@ media-tv/mythtv -css
 media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
-media-libs/lcms static-libs
 virtual/jpeg static-libs
 media-libs/libmng static-libs
-sys-power/upower introspection
-media-libs/gstreamer introspection
 media-libs/babl introspection
 gnome-extra/polkit-gnome introspection
-x11-libs/libnotify introspection
-dev-libs/libgee introspection
 net-libs/gtk-vnc gtk3
 net-dns/avahi gtk3
-sys-devel/base-gcc hardened
 media-libs/avidemux-core vaapi vdpau
 media-libs/xine-lib vaapi vdpau
 media-tv/kodi vaapi vdpau
@@ -483,7 +471,6 @@ media-video/mpv vaapi vdpau
 app-i18n/scim gtk3
 app-emulation/spice smartcard
 net-misc/spice-gtk gtk3 usbredir smartcard vala
-gnome-base/gdm -plymouth
 dev-libs/libgit2 ssh threads
 >=media-plugins/grilo-plugins-0.2.10 tracker
 dev-libs/libnl utils
