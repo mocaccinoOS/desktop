@@ -91,3 +91,6 @@ provides:
   - name: xfce4-volumed-pulse
     category: xfce-extra
     version: '>=0'
+packages:
+  - {}
+  - version: +1
