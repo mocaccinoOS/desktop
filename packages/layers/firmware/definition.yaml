@@ -9,3 +9,6 @@ provides:
   - name: linux-firmware
     category: sys-kernel
     version: '>=0'
+packages:
+  - {}
+  - version: +1
