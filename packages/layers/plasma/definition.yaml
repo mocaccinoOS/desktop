@@ -364,3 +364,6 @@ provides:
   - name: xsettingsd
     category: x11-misc
     version: '>=0'
+packages:
+  - {}
+  - version: +1
