@@ -99,3 +99,6 @@ provides:
   - name: musepack-tools
     category: media-sound
     version: '>=0'
+packages:
+  - {}
+  - version: +1
