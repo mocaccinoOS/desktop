@@ -1,6 +1,6 @@
 category: "apps"
 name: "wireshark"
-version: 3.4.3+8
+version: 3.4.3+9
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
