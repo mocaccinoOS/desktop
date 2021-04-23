@@ -92,3 +92,23 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+
+
+# Emerge/portage
+- ^/usr/bin/emerge
+- ^/usr/bin/emerge-webrsync
+- ^/usr/sbin/dispatch-conf
+- ^/etc/dispatch-conf.conf
+- ^/usr/lib/python-exec/python.*/dispatch-conf
+- ^/usr/share/man/man1/dispatch-conf.1.bz2
+- ^/usr/share/man/man1/emerge.1.bz2
+
+# We still depend on env-update
+# - ^/usr/lib/python-exec/python.*/emerge/.*
+# - ^/usr/lib/python.*/site-packages/portage
+# - ^/usr/lib/python.*/site-packages/_emerge
+# - ^/usr/lib/python.*/site-packages/_emerge/.*
+# - ^/usr/lib/python.*/site-packages/portage/.*
+
+# - ^/usr/share/man/man3/sd_event_dispatch.3
+# - ^/usr/lib/portage/.*
