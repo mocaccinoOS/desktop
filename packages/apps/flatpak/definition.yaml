@@ -6,6 +6,12 @@ labels:
   emerge.packages: >-
     sys-apps/flatpak
 provides:
+  - name: flatpak
+    category: acct-group
+    version: '>=0'
+  - name: flatpak
+    category: acct-user
+    version: '>=0'
   - name: pyparsing
     category: dev-python
     version: '>=0'
