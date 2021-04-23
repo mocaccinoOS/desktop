@@ -357,3 +357,6 @@ provides:
   - name: mutter
     category: x11-wm
     version: '>=0'
+packages:
+  - {}
+  - version: +1

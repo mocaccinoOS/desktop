@@ -100,3 +100,6 @@ provides:
   - name: kimageannotator
     category: media-libs
     version: '>=0'
+packages:
+  - {}
+  - version: +1

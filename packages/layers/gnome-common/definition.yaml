@@ -127,3 +127,6 @@ provides:
   - name: freedesktop-icon-theme
     category: virtual
     version: '>=0'
+packages:
+  - {}
+  - version: +1

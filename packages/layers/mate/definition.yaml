@@ -160,3 +160,6 @@ provides:
   - name: marco
     category: x11-wm
     version: '>=0'
+packages:
+  - {}
+  - version: +1
