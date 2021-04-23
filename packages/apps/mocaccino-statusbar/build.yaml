@@ -5,7 +5,6 @@ env:
 - CGO_ENABLED=1
 
 prelude:
-- mkdir -p /statusbar/etc/yip.d
 - mkdir -p ~/.ssh
 - ssh-keyscan github.com >> ~/.ssh/known_hosts
 - wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
@@ -18,9 +17,15 @@ steps:
 - |
   export PATH=$PATH:$GOPATH/bin && \
   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-  cd statusbar && DESTDIR=/statusbar VERSION="${PACKAGE_VERSION}" ./build.sh && cp -rf profile/*.yaml /statusbar/etc/yip.d/
+  cd statusbar && DESTDIR=/statusbar VERSION="${PACKAGE_VERSION}" ./build.sh
 package_dir: "/statusbar"
 requires:
 - category: "layers"
   name: "X"
+  version: ">=0"
+- name: check-upgrades
+  category: system-profile
+  version: ">=0"
+- name: donate
+  category: system-profile
   version: ">=0"
