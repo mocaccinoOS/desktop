@@ -16,3 +16,6 @@ requires:
   - category: "layers"
     name: "net-tools"
     version: ">=0"
+  - name: transmission
+    category: entity
+    version: ">=0"
