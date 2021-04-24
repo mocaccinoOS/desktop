@@ -7,6 +7,8 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+- ^/var/lib/module-rebuild
+- ^/luetbuild
 
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"

@@ -5,7 +5,7 @@ requires:
 env:
 - LUET_NOLOCK=true
 - LUET_YES=true
-steps:
+prelude:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - luet install repository/mocaccino-kernel
 - luet install kernel/{{.Values.name}} && luet cleanup
