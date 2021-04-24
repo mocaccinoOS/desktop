@@ -366,4 +366,4 @@ provides:
     version: '>=0'
 packages:
   - {}
-  - version: +1
+  - version: +2
