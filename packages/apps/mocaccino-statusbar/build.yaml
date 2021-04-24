@@ -23,9 +23,3 @@ requires:
 - category: "layers"
   name: "X"
   version: ">=0"
-- name: check-upgrades
-  category: system-profile
-  version: ">=0"
-- name: donate
-  category: system-profile
-  version: ">=0"

@@ -14,6 +14,9 @@ requires:
   - category: "system-profile"
     name: "donate"
     version: ">=0"
+  - name: check-upgrades
+    category: system-profile
+    version: ">=0"
 labels:
   github.repo: "statusbar"
   github.owner: "MocaccinoOS"
