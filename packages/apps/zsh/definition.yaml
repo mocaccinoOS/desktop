@@ -1,0 +1,11 @@
+category: "apps"
+name: "zsh"
+version: 5.8+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-shells/zsh
+provides:
+  - name: zsh
+    category: app-shells
+    version: '>=0'
