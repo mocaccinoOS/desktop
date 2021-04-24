@@ -21,3 +21,4 @@ dev-qt/qtvirtualkeyboard spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
 dev-qt/qtwebchannel qml
+net-libs/nodejs icu inspector

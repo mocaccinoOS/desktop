@@ -315,7 +315,6 @@ net-libs/libmicrohttpd messages
 net-libs/libproxy -kde -gnome python
 net-libs/libssh server
 net-libs/mbedtls havege
-net-libs/nodejs icu inspector
 net-libs/telepathy-qt farstream
 net-libs/zeromq drafts unwind
 net-mail/dbmail sqlite3
