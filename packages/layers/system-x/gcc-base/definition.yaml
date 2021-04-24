@@ -6,4 +6,4 @@ labels:
   llvm_slot: "11"
 packages:
   - {}
-  - version: +1
+  - version: +2
