@@ -14,3 +14,109 @@ requires:
 packages:
   - {}
   - version: +2
+provides:
+  - name: caribou
+    category: app-accessibility
+    version: '>=0'
+  - name: libcroco
+    category: dev-libs
+    version: '>=0'
+  - name: libgee
+    category: dev-libs
+    version: '>=0'
+  - name: libtimezonemap
+    category: dev-libs
+    version: '>=0'
+  - name: distro
+    category: dev-python
+    version: '>=0'
+  - name: olefile
+    category: dev-python
+    version: '>=0'
+  - name: pexpect
+    category: dev-python
+    version: '>=0'
+  - name: pillow
+    category: dev-python
+    version: '>=0'
+  - name: polib
+    category: dev-python
+    version: '>=0'
+  - name: psutil
+    category: dev-python
+    version: '>=0'
+  - name: ptyprocess
+    category: dev-python
+    version: '>=0'
+  - name: pyatspi
+    category: dev-python
+    version: '>=0'
+  - name: pyinotify
+    category: dev-python
+    version: '>=0'
+  - name: pypam
+    category: dev-python
+    version: '>=0'
+  - name: pyproject2setuppy
+    category: dev-python
+    version: '>=0'
+  - name: pytz
+    category: dev-python
+    version: '>=0'
+  - name: setproctitle
+    category: dev-python
+    version: '>=0'
+  - name: tinycss2
+    category: dev-python
+    version: '>=0'
+  - name: toml
+    category: dev-python
+    version: '>=0'
+  - name: webencodings
+    category: dev-python
+    version: '>=0'
+  - name: xapp
+    category: dev-python
+    version: '>=0'
+  - name: libgnomekbd
+    category: gnome-base
+    version: '>=0'
+  - name: cinnamon
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-control-center
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-desktop
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-menus
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-screensaver
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-session
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-settings-daemon
+    category: gnome-extra
+    version: '>=0'
+  - name: cinnamon-translations
+    category: gnome-extra
+    version: '>=0'
+  - name: cjs
+    category: gnome-extra
+    version: '>=0'
+  - name: nemo
+    category: gnome-extra
+    version: '>=0'
+  - name: polkit-gnome
+    category: gnome-extra
+    version: '>=0'
+  - name: xapps
+    category: x11-libs
+    version: '>=0'
+  - name: muffin
+    category: x11-wm
+    version: '>=0'
