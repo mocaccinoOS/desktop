@@ -13,6 +13,12 @@ requires:
     category: entity
     version: ">=0"
 provides:
+  - name: geoclue
+    category: acct-group
+    version: '>=0'
+  - name: geoclue
+    category: acct-user
+    version: '>=0'
   - name: gcr
     category: app-crypt
     version: '>=0'
@@ -44,6 +50,33 @@ provides:
     category: app-text
     version: '>=0'
   - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-utils
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-simple-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-simple-dtd
+    category: app-text
+    version: '>=0'
+  - name: openjade
     category: app-text
     version: '>=0'
   - name: yelp-tools
@@ -103,6 +136,12 @@ provides:
   - name: wpebackend-fdo
     category: gui-libs
     version: '>=0'
+  - name: clutter
+    category: media-libs
+    version: '>=0'
+  - name: cogl
+    category: media-libs
+    version: '>=0'
   - name: gst-plugins-opus
     category: media-plugins
     version: '>=0'
@@ -126,18 +165,6 @@ provides:
     version: '>=0'
   - name: webkit-gtk
     category: net-libs
-    version: '>=0'
-  - name: webkit-gtk
-    category: net-libs
-    version: '>=0'
-  - name: freedesktop-icon-theme
-    category: virtual
-    version: '>=0'
-  - name: cogl
-    category: media-libs
-    version: '>=0'
-  - name: clutter
-    category: media-libs
     version: '>=0'
 packages:
   - {}

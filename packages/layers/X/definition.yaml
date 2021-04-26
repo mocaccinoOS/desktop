@@ -70,6 +70,9 @@ provides:
   - name: avahi-autoipd
     category: acct-group
     version: '>=0'
+  - name: colord
+    category: acct-group
+    version: '>=0'
   - name: dhcp
     category: acct-group
     version: '>=0'
@@ -104,6 +107,9 @@ provides:
     category: acct-user
     version: '>=0'
   - name: avahi-autoipd
+    category: acct-user
+    version: '>=0'
+  - name: colord
     category: acct-user
     version: '>=0'
   - name: dhcp
@@ -281,6 +287,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libevdev
+    category: dev-libs
+    version: '>=0'
+  - name: libgusb
     category: dev-libs
     version: '>=0'
   - name: libical
@@ -1267,6 +1276,9 @@ provides:
   - name: cairo
     category: x11-libs
     version: '>=0'
+  - name: colord-gtk
+    category: x11-libs
+    version: '>=0'
   - name: gdk-pixbuf
     category: x11-libs
     version: '>=0'
@@ -1413,9 +1425,6 @@ provides:
     version: '>=0'
   - name: colord
     category: x11-misc
-    version: '>=0'
-  - name: colord-gtk
-    category: x11-libs
     version: '>=0'
   - name: notification-daemon
     category: x11-misc
