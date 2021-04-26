@@ -1,0 +1,15 @@
+category: "apps"
+name: "teamviewer"
+version: 15.15.5+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    net-misc/teamviewer
+provides:
+  - name: teamviewer
+    category: net-misc
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
