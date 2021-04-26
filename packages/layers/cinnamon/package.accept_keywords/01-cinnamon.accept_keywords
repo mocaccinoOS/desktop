@@ -1,0 +1,2 @@
+# stable cjs-4.6.0 pulls in old spidermonkey and python-2.7
+gnome-extra/cjs ~amd64
