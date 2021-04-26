@@ -130,6 +130,9 @@ provides:
   - name: freedesktop-icon-theme
     category: virtual
     version: '>=0'
+  - name: cogl
+    category: media-libs
+    version: '>=0'
   - name: clutter
     category: media-libs
     version: '>=0'

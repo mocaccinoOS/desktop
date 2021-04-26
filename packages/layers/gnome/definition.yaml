@@ -3,7 +3,7 @@ name: "gnome"
 version: 3.36.5+28
 labels:
   emerge.jobs: "1"
-  emerge.packages: "app-arch/file-roller gnome-base/dconf-editor =gnome-base/gnome-3.36.5 gnome-extra/gnome-calculator gnome-extra/gnome-power-manager gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks media-gfx/gnome-screenshot media-gfx/shotwell sys-apps/gnome-disk-utility      "
+  emerge.packages: "app-arch/file-roller gnome-base/dconf-editor =gnome-base/gnome-3.36.5 gnome-extra/gnome-calculator gnome-extra/gnome-power-manager gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks media-gfx/gnome-screenshot media-gfx/shotwell sys-apps/gnome-disk-utility"
 requires:
   - category: "layers"
     name: "X"
@@ -244,9 +244,6 @@ provides:
     category: media-libs
     version: '>=0'
   - name: clutter-gtk
-    category: media-libs
-    version: '>=0'
-  - name: cogl
     category: media-libs
     version: '>=0'
   - name: gexiv2
