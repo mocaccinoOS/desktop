@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.7+5
+version: 0.7+6
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter
+    gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter dev-python/pyatspi
 requires:
   - category: "layers"
     name: "X"
@@ -106,6 +106,9 @@ provides:
   - name: gtk-doc
     category: dev-util
     version: '>=0'
+  - name: pyatspi
+    category: dev-python
+    version: '>=0' 
   - name: gnome-common
     category: gnome-base
     version: '>=0'
@@ -113,6 +116,9 @@ provides:
     category: gnome-base
     version: '>=0'
   - name: gvfs
+    category: gnome-base
+    version: '>=0'
+  - name: libgnomekbd
     category: gnome-base
     version: '>=0'
   - name: libgtop
