@@ -1,11 +1,15 @@
 category: "layers"
 name: "codecs"
-version: 2+4
+version: 2+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-text/iso-codes media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/fdk-aac media-libs/flac media-libs/libcddb media-libs/libdvdread media-libs/libdvbpsi media-libs/libid3tag media-libs/libmatroska media-libs/libsamplerate media-libs/libogg media-libs/opus media-libs/soxr media-libs/vidstab media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
+    app-i18n/uchardet app-text/iso-codes dev-libs/libcdio media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/fdk-aac media-libs/flac media-libs/libcddb media-libs/libdvdread media-libs/libdvdnav media-libs/libdvbpsi media-libs/libid3tag media-libs/libmatroska media-libs/libsamplerate media-libs/libogg media-libs/opus media-libs/shaderc
+ media-libs/soxr media-libs/vidstab media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
+  - name: uchardet
+    category: app-i18n
+    version: '>=0'
   - name: brotli
     category: app-arch
     version: '>=0'
@@ -14,6 +18,9 @@ provides:
     version: '>=0'
   - name: nasm
     category: dev-lang
+    version: '>=0'
+  - name: libcdio 
+    category: dev-libs
     version: '>=0'
   - name: libebml
     category: dev-libs
@@ -48,6 +55,9 @@ provides:
   - name: libdvbpsi
     category: media-libs
     version: '>=0'
+  - name: libdvdnav    
+    category: media-libs
+    version: '>=0'
   - name: libdvdread
     category: media-libs
     version: '>=0'
@@ -67,6 +77,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: opus
+    category: media-libs
+    version: '>=0'
+  - name: shaderc
     category: media-libs
     version: '>=0'
   - name: soxr
