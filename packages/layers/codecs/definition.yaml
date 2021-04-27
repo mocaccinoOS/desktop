@@ -6,11 +6,14 @@ labels:
   emerge.packages: >-
     app-i18n/uchardet app-text/iso-codes dev-libs/libcdio dev-libs/libcdio-paranoia media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/fdk-aac media-libs/flac media-libs/libcddb media-libs/libdvdread media-libs/libdvdnav media-libs/libdvbpsi media-libs/libid3tag media-libs/libmatroska media-libs/libmodplug media-libs/libcue media-libs/libsamplerate media-libs/libogg media-libs/opus media-libs/shaderc media-libs/soxr media-libs/vidstab media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live
 provides:
-  - name: uchardet
-    category: app-i18n
-    version: '>=0'
   - name: brotli
     category: app-arch
+    version: '>=0'
+  - name: eselect-cdparanoia
+    category: app-eselect
+    version: '>=0'
+  - name: uchardet
+    category: app-i18n
     version: '>=0'
   - name: iso-codes
     category: app-text
@@ -18,7 +21,7 @@ provides:
   - name: nasm
     category: dev-lang
     version: '>=0'
-  - name: libcdio 
+  - name: libcdio
     category: dev-libs
     version: '>=0'
   - name: libcdio-paranoia
@@ -26,6 +29,15 @@ provides:
     version: '>=0'
   - name: libebml
     category: dev-libs
+    version: '>=0'
+  - name: glslang
+    category: dev-util
+    version: '>=0'
+  - name: spirv-headers
+    category: dev-util
+    version: '>=0'
+  - name: spirv-tools
+    category: dev-util
     version: '>=0'
   - name: a52dec
     category: media-libs
@@ -51,10 +63,7 @@ provides:
   - name: libcddb
     category: media-libs
     version: '>=0'
-  - name: libmodplug
-    category: media-libs
-    version: '>=0'
-  - name: libcue       
+  - name: libcue
     category: media-libs
     version: '>=0'
   - name: libcuefile
@@ -63,7 +72,7 @@ provides:
   - name: libdvbpsi
     category: media-libs
     version: '>=0'
-  - name: libdvdnav    
+  - name: libdvdnav
     category: media-libs
     version: '>=0'
   - name: libdvdread
@@ -73,6 +82,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libmatroska
+    category: media-libs
+    version: '>=0'
+  - name: libmodplug
     category: media-libs
     version: '>=0'
   - name: libogg

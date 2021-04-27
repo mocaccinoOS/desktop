@@ -6,8 +6,14 @@ labels:
   emerge.packages: >-
     media-video/mpv
 provides:
+  - name: libplacebo
+    category: media-libs
+    version: '>=0'
   - name: mpv
     category: media-video
+    version: '>=0'
+  - name: linuxtv-dvb-headers
+    category: virtual
     version: '>=0'
 requires:
   - category: "layers"
