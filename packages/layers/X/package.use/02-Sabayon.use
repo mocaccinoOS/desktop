@@ -270,7 +270,6 @@ media-video/blinkensim aalib
 media-video/dvgrab quicktime
 media-video/jubler mplayer
 media-video/kino quicktime sox vorbis
-media-video/mpv bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/vdr SetGroupSep-Patch atsc cmdsubmenu dvbsetup dxr3 graphtft iptv menuorg pinplugin rotor submenu subtitles ttxtsubs ttxtsubs yaepg
@@ -466,7 +465,6 @@ media-libs/xine-lib vaapi vdpau
 media-tv/kodi vaapi vdpau
 media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
-media-video/mpv vaapi vdpau
 app-i18n/scim gtk3
 app-emulation/spice smartcard
 net-misc/spice-gtk gtk3 usbredir smartcard vala
