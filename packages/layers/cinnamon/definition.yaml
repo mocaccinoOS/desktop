@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 4.6.7+3
+version: 4.6.7+4
 labels:
   emerge.jobs: "3"
   emerge.packages: "gnome-extra/cinnamon"
@@ -55,9 +55,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pytz
-    category: dev-python
-    version: '>=0'
-  - name: setproctitle
     category: dev-python
     version: '>=0'
   - name: tinycss2
