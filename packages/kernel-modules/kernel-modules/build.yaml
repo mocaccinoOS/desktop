@@ -9,6 +9,7 @@ excludes:
 - ^/var/log
 - ^/var/lib/module-rebuild
 - ^/luetbuild
+- ^/lib/modules/.*-mocaccino/modules\..*
 
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
