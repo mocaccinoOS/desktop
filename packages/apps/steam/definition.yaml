@@ -9,6 +9,9 @@ provides:
   - name: layman
     category: app-portage
     version: '>=0'
+  - name: inih
+    category: dev-libs
+    version: '>=0'
   - name: ssl-fetch
     category: dev-python
     version: '>=0'
