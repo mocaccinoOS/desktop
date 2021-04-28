@@ -1,0 +1,15 @@
+category: "apps"
+name: "discord"
+version: 0.0.13+7
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    net-im/discord-bin
+provides:
+  - name: discord-bin
+    category: net-im
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

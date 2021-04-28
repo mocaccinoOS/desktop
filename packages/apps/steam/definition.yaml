@@ -1,0 +1,27 @@
+category: "apps"
+name: "steam"
+version: 20191109+8
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    games-util/game-device-udev-rules games-util/steam-games-meta games-util/steam-launcher
+provides:
+  - name: layman
+    category: app-portage
+    version: '>=0'
+  - name: ssl-fetch
+    category: dev-python
+    version: '>=0'
+  - name: game-device-udev-rules
+    category: games-util
+    version: '>=0'
+  - name: steam-games-meta
+    category: games-util
+    version: '>=0'
+  - name: steam-launcher
+    category: games-util
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
