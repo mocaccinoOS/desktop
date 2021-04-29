@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210422"
+version: "0.20210422+1"
 category: layers
 requires:
   - category: "system"
@@ -48,6 +48,7 @@ emerge:
   jobs: "3"
   packages:
     - app-arch/cpio
+    - app-arch/zip
     - net-misc/ntp
     - media-libs/libpng
     - sys-apps/dmidecode
@@ -229,6 +230,9 @@ provides:
     category: app-arch
     version: '>=0'
   - name: xz-utils
+    category: app-arch
+    version: '>=0'
+  - name: zip
     category: app-arch
     version: '>=0'
   - name: zstd
