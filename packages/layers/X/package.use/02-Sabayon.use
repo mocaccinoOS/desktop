@@ -410,7 +410,6 @@ www-apps/phpBB mysqli sqlite
 www-apps/postfixadmin mysql
 www-apps/rt mysql
 www-client/chromium jumbo-build widevine
-www-client/firefox filepicker -gnome gstreamer mozbranding system-jpeg -system-libvpx -system-sqlite -system-av1 xforms
 www-client/midori sqlite
 www-client/surf savedconfig
 www-client/uget gstreamer aria2

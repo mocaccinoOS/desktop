@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- mkdir -p /var/lib/sddm/.config && chown sddm:sddm /var/lib/sddm/.config
 - etc-update -q --automode -5
 requires:
 - category: "layers"
