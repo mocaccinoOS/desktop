@@ -13,8 +13,6 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-# Remove Bdeps
-- emerge -C net-libs/nodejs
 requires:
 - category: "layers"
   name: "X"
