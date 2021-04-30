@@ -1,0 +1,12 @@
+excludes:
+- ^/var/cache/distfiles
+- ^/usr/portage/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
+steps:
+- mkdir /var/lib/test
+- chmod 219:219 /var/lib/test

@@ -1,0 +1,2 @@
+install:
+- echo -e "You just installed a test, you little h4x0r!"
