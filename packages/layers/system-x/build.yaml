@@ -48,6 +48,7 @@ excludes:
 - ^/var/cache/edb
 - ^/usr/portage
 - ^/sys
+- ^/tmp/tree.tar.tgz
 - ^/proc
 - ^/luetbuild
 
