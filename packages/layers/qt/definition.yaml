@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.2+15
+version: 5.15.2+16
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -15,9 +15,6 @@ requires:
 provides:
   - name: mysql-connector-c
     category: dev-db
-    version: '>=0'
-  - name: double-conversion
-    category: dev-libs
     version: '>=0'
   - name: libdbusmenu-qt
     category: dev-libs
@@ -258,9 +255,6 @@ provides:
     version: '>=0'
   - name: polkit-kde-agent
     category: kde-plasma
-    version: '>=0'
-  - name: nodejs
-    category: net-libs
     version: '>=0'
   - name: polkit-qt
     category: sys-auth

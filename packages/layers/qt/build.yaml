@@ -13,6 +13,8 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+# Remove Bdeps
+- emerge -C dev-libs/double-conversion net-libs/nodejs
 requires:
 - category: "layers"
   name: "X"
