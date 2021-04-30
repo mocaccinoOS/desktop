@@ -1,6 +1,4 @@
 install:
-- mkdir -p /var/lib/sddm/.config
-- chown -R sddm:sddm /var/lib/sddm
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 - ldconfig
 - source /etc/profile && env-update
