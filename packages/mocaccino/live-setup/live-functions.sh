@@ -4,7 +4,7 @@ GDM_FILE="/usr/share/gdm/defaults.conf"
 CUSTOM_GDM_FILE="/etc/gdm/custom.conf"
 LXDM_FILE="/etc/lxdm/lxdm.conf"
 LIGHTDM_FILE="/etc/lightdm/lightdm.conf"
-SDDM_FILE="/etc/sddm.conf"
+SDDM_FILE="/usr/share/sddm/sddm.conf.d/00default.conf"
 
 LIVE_USER_GROUPS="audio bumblebee cdrom cdrw clamav console games \
 kvm lp lpadmin messagebus plugdev polkituser portage pulse pulse-access pulse-rt \
