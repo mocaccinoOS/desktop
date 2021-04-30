@@ -19,6 +19,12 @@ requires:
     name: "sddm"
     version: ">=0"
 provides:
+  - name: tss
+    category: acct-group
+    version: '>=0'
+  - name: tss
+    category: acct-user
+    version: '>=0'
   - name: qca
     category: app-crypt
     version: '>=0'
@@ -292,13 +298,7 @@ provides:
   - name: qrencode
     category: media-gfx
     version: '>=0'
-  - name: ilmbase
-    category: media-libs
-    version: '>=0'
   - name: libdmtx
-    category: media-libs
-    version: '>=0'
-  - name: openexr
     category: media-libs
     version: '>=0'
   - name: phonon
