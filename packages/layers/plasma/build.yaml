@@ -14,8 +14,8 @@ prelude:
 steps:
 - mkdir -p /var/lib/sddm/.config
 - touch /var/lib/sddm/.config/.keep
-- chown -R sddm:sddm /var/lib/sddm
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- chown -R sddm:sddm /var/lib/sddm
 - etc-update -q --automode -5
 requires:
 - category: "layers"
