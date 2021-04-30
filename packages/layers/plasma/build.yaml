@@ -24,6 +24,3 @@ requires:
 - category: "apps"
   name: "vlc"
   version: ">=0"
-- category: "entity"
-  name: "sddm"
-  version: ">=0"
