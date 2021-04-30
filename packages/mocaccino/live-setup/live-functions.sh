@@ -247,6 +247,11 @@ prepare() {
 	systemctl enable "lightdm"
     fi
 
+    if [ -f "/usr/share/xsessions/plasma.desktop" ]; then
+    	setup_default_xsession "plasma"
+	systemctl enable "sddm"
+    fi
+
     if [ -f "/usr/share/xsessions/gnome.desktop" ]; then
         setup_default_xsession "gnome"
         systemctl enable "gdm"
