@@ -14,7 +14,7 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 # Remove Bdeps
-- emerge -C dev-libs/double-conversion net-libs/nodejs
+- emerge -C net-libs/nodejs
 requires:
 - category: "layers"
   name: "X"
