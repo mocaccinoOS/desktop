@@ -6,8 +6,35 @@ labels:
   emerge.packages: >-
     app-emulation/wine-staging
 provides:
+  - name: rtkit
+    category: acct-group
+    version: '>=0'
+  - name: rtkit
+    category: acct-user
+    version: '>=0'
+  - name: faudio
+    category: app-emulation
+    version: '>=0'
+  - name: wine-desktop-common
+    category: app-emulation
+    version: '>=0'
+  - name: wine-gecko
+    category: app-emulation
+    version: '>=0'
+  - name: wine-mono
+    category: app-emulation
+    version: '>=0'
   - name: wine-staging
     category: app-emulation
+    version: '>=0'
+  - name: eselect-wine
+    category: app-eselect
+    version: '>=0'
+  - name: rtkit
+    category: sys-auth
+    version: '>=0'
+  - name: libunwind
+    category: sys-libs
     version: '>=0'
 requires:
   - category: "layers"
