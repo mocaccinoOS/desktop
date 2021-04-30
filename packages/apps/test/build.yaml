@@ -7,6 +7,7 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+image: alpine
 steps:
 - mkdir /var/lib/test
 - chmod 219:219 /var/lib/test
