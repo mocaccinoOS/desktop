@@ -177,8 +177,6 @@ mail-client/claws-mail archive bogofilter calendar networkmanager pdf perl pytho
 mail-client/evolution exchange
 mail-client/mutt -berkdb -lmdb -qdbm -tokyocabinet gdbm sasl sidebar smtp
 mail-client/roundcube mysql
-mail-client/thunderbird lightning -system-sqlite -system-libvpx -system-av1
-mail-client/thunderbird-bin -ffmpeg
 mail-filter/maildrop authlib
 mail-filter/procmail mbox
 mail-mta/exim exiscan-acl maildir
