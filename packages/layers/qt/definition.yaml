@@ -19,9 +19,6 @@ provides:
   - name: double-conversion
     category: dev-libs
     version: '>=0'
-  - name: libdbusmenu-qt
-    category: dev-libs
-    version: '>=0'
   - name: linguist-tools
     category: dev-qt
     version: '>=0'
@@ -143,6 +140,9 @@ provides:
     category: dev-qt
     version: '>=0'
   - name: qtxml
+    category: dev-qt
+    version: '>=0'
+  - name: qtxmlpatterns
     category: dev-qt
     version: '>=0'
   - name: qtxmlpatterns
