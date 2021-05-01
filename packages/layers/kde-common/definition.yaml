@@ -4,7 +4,7 @@ version: 1+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-	dev-libs/plasma-wayland-protocols kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
+    dev-libs/plasma-wayland-protocols kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
 requires:
   - category: "layers"
     name: "qt"
