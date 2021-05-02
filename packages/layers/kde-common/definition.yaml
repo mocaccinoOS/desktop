@@ -138,4 +138,4 @@ provides:
     version: '>=0'
 packages:
   - {}
-  - version: +2
+  - version: +3
