@@ -13,7 +13,7 @@ requires:
     version: ">=0"
 packages:
   - {}
-  - version: +2
+  - version: +3
 provides:
   - name: caribou
     category: app-accessibility

@@ -111,7 +111,7 @@ provides:
     version: '>=0'
   - name: pyatspi
     category: dev-python
-    version: '>=0' 
+    version: '>=0'
   - name: setproctitle
     category: dev-python
     version: '>=0'
@@ -180,4 +180,4 @@ provides:
     version: '>=0'
 packages:
   - {}
-  - version: +2
+  - version: +3
