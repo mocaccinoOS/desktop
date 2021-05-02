@@ -12,15 +12,9 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
-- mkdir -p /var/lib/sddm/.config
-- touch /var/lib/sddm/.config/.keep
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- chown -R sddm:sddm /var/lib/sddm
 - etc-update -q --automode -5
 requires:
 - category: "layers"
   name: "kde-common"
-  version: ">=0"
-- category: "apps"
-  name: "vlc"
   version: ">=0"

@@ -171,8 +171,6 @@ kde-apps/okular chm djvu ebook epub crypt
 kde-apps/poxml extras
 kde-misc/kdeconnect -bluetooth
 lxde-base/lxterminal gtk3
-lxqt-base/lxqt-panel networkmonitor
-lxqt-base/lxqt-meta admin archiver lximage powermanagement processviewer -display-manager -sddm -trash
 mail-client/claws-mail archive bogofilter calendar networkmanager pdf perl python rss spam-report webkit -kde -pda
 mail-client/evolution exchange
 mail-client/mutt -berkdb -lmdb -qdbm -tokyocabinet gdbm sasl sidebar smtp
