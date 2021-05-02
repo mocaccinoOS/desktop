@@ -1,6 +1,6 @@
 category: "apps"
 name: "teamviewer"
-version: 15.15.5+3
+version: 15.15.5+4
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
