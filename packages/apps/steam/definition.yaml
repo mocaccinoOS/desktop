@@ -6,6 +6,9 @@ labels:
   emerge.packages: >-
     games-util/game-device-udev-rules games-util/steam-games-meta games-util/steam-launcher games-util/gamemode
 provides:
+  - name: gamemode
+    category: acct-group
+    version: '>=0'
   - name: layman
     category: app-portage
     version: '>=0'

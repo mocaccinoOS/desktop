@@ -106,14 +106,14 @@ provides:
   - name: libpeas
     category: dev-libs
     version: '>=0'
-  - name: gtk-doc
-    category: dev-util
-    version: '>=0'
   - name: pyatspi
     category: dev-python
     version: '>=0'
   - name: setproctitle
     category: dev-python
+    version: '>=0'
+  - name: gtk-doc
+    category: dev-util
     version: '>=0'
   - name: gnome-common
     category: gnome-base
