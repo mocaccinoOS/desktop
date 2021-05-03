@@ -8,7 +8,7 @@ labels:
 provides:
   - name: vivaldi
     category: www-client
-    version: '3.6.2165.36'
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"
