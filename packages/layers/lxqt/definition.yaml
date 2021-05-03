@@ -4,7 +4,7 @@ version: 0.16.0+1
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    =lxqt-base/lxqt-meta-5.20.5
+    =lxqt-base/lxqt-meta-0.16.0
 requires:
   - category: "layers"
     name: "kde-common"
