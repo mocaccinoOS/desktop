@@ -6,8 +6,35 @@ labels:
   emerge.packages: >-
     app-emulation/virtualbox
 provides:
+  - name: vboxusers
+    category: acct-group
+    version: '>=0'
   - name: virtualbox
     category: app-emulation
+    version: '>=0'
+  - name: libIDL
+    category: dev-libs
+    version: '>=0'
+  - name: byacc
+    category: dev-util
+    version: '>=0'
+  - name: kbuild
+    category: dev-util
+    version: '>=0'
+  - name: aalib
+    category: media-libs
+    version: '>=0'
+  - name: audiofile
+    category: media-libs
+    version: '>=0'
+  - name: libsdl
+    category: media-libs
+    version: '>=0'
+  - name: bin86
+    category: sys-devel
+    version: '>=0'
+  - name: iasl
+    category: sys-power
     version: '>=0'
 requires:
   - category: "layers"
