@@ -15,10 +15,7 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "gnome-common"
-  version: ">=0"
-- category: "layers"
-  name: "qt"
+  name: "kde-common"
   version: ">=0"
 - category: "apps"
   name: "grub"
