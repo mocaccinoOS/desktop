@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+22
+version: 3.2.32+23
 provides:
   - name: calamares
     category: app-admin
@@ -14,13 +14,10 @@ labels:
     =app-admin/calamares-3.2.32.1
 requires:
   - category: "layers"
-    name: "gnome-common"
-    version: ">=0"
-  - category: "layers"
     name: "sys-fs"
     version: ">=0"
   - category: "layers"
-    name: "qt"
+    name: "kde-common"
     version: ">=0"
   - category: "apps"
     name: "grub"
