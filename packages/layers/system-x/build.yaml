@@ -16,6 +16,8 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf patches/ /etc/portage/
 - cp -rf bashrc /etc/portage/
+- cp -rf env /etc/portage/
+- cp -f package.env /etc/portage/
 steps:
 - eval 'emerge --unmerge dev-lang/python:3.9 || true'
 - emerge -1 dev-libs/libgcrypt:0
