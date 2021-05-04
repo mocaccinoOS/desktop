@@ -10,3 +10,6 @@ requires:
     name: "kde-common"
     version: ">=0"
 provides:
+packages:
+  - {}
+  - version: +1
