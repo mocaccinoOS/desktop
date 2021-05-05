@@ -153,7 +153,6 @@ dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
 dev-util/xdelta lzma
 dev-vcs/subversion -java -apache2 -dso -kde
-gnome-base/gconf policykit
 net-misc/gnome-online-miners flickr
 media-plugins/grilo-plugins flickr
 gnome-base/libgnomecanvas glade
