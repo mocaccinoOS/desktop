@@ -28,6 +28,3 @@ provides:
   - name: lsb-release
     category: sys-apps
     version: '>=0'
-packages:
-  - {}
-  - version: +4
