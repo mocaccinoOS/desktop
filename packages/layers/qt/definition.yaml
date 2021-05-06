@@ -262,6 +262,3 @@ provides:
   - name: polkit-qt
     category: sys-auth
     version: '>=0'
-packages:
-  - {}
-  - version: +4
