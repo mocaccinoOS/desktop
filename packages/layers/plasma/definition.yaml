@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.20.5+23
+version: 5.20.5+24
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -475,6 +475,3 @@ provides:
   - name: xsettingsd
     category: x11-misc
     version: '>=0'
-packages:
-  - {}
-  - version: +4

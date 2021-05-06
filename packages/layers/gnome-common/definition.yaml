@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome-common"
-version: 0.7+8
+version: 0.7+9
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -178,6 +178,3 @@ provides:
   - name: webkit-gtk
     category: net-libs
     version: '>=0'
-packages:
-  - {}
-  - version: +4

@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 0.5+13
+version: 0.5+14
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -214,6 +214,3 @@ provides:
   - name: python-cffi
     category: virtual
     version: '>=0'
-packages:
-  - {}
-  - version: +4

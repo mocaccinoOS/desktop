@@ -1,6 +1,6 @@
 category: "layers"
 name: "firmware"
-version: 1+12
+version: 1+13
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -9,6 +9,3 @@ provides:
   - name: linux-firmware
     category: sys-kernel
     version: '>=0'
-packages:
-  - {}
-  - version: +4

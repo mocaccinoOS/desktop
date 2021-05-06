@@ -1,6 +1,6 @@
 category: "layers"
 name: "xfce"
-version: 4.14+11
+version: 4.14+12
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -91,6 +91,3 @@ provides:
   - name: xfce4-volumed-pulse
     category: xfce-extra
     version: '>=0'
-packages:
-  - {}
-  - version: +4

@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.24+20
+version: 1.24+21
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -160,6 +160,3 @@ provides:
   - name: marco
     category: x11-wm
     version: '>=0'
-packages:
-  - {}
-  - version: +4

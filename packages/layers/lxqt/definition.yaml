@@ -1,6 +1,6 @@
 category: "layers"
 name: "lxqt"
-version: 0.16.0+1
+version: 0.16.0+2
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -10,6 +10,3 @@ requires:
     name: "kde-common"
     version: ">=0"
 provides:
-packages:
-  - {}
-  - version: +1

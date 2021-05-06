@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 2+7
+version: 2+8
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -135,6 +135,3 @@ provides:
   - name: wavpack
     category: media-sound
     version: '>=0'
-packages:
-  - {}
-  - version: +4

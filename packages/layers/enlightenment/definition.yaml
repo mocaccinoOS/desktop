@@ -1,6 +1,6 @@
 category: "layers"
 name: "enlightenment"
-version: 0.24.2+8
+version: 0.24.2+9
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -19,6 +19,3 @@ provides:
   - name: enlightenment
     category: x11-wm
     version: '>=0'
-packages:
-  - {}
-  - version: +4

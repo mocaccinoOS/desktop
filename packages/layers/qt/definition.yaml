@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.2+19
+version: 5.15.2+20
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -262,6 +262,3 @@ provides:
   - name: polkit-qt
     category: sys-auth
     version: '>=0'
-packages:
-  - {}
-  - version: +4

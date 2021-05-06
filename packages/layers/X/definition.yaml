@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.6+1
+version: 0.6+2
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -1474,6 +1474,3 @@ provides:
   - name: sound-theme-freedesktop
     category: x11-themes
     version: '>=0'
-packages:
-  - {}
-  - version: +4
