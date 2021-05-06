@@ -1138,6 +1138,3 @@ provides:
   - name: shared-mime-info
     category: x11-misc
     version: '>=0'
-packages:
-  - {}
-  - version: +1
