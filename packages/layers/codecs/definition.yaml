@@ -135,6 +135,3 @@ provides:
   - name: wavpack
     category: media-sound
     version: '>=0'
-packages:
-  - {}
-  - version: +4
