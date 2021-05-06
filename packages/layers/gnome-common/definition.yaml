@@ -178,6 +178,3 @@ provides:
   - name: webkit-gtk
     category: net-libs
     version: '>=0'
-packages:
-  - {}
-  - version: +4
