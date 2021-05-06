@@ -11,9 +11,6 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
-packages:
-  - {}
-  - version: +4
 provides:
   - name: caribou
     category: app-accessibility
