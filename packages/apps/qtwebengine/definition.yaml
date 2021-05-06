@@ -1,6 +1,6 @@
 category: "apps"
 name: "qtwebengine"
-version: 5.15.2+6
+version: 5.15.2+7
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
