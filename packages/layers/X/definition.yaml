@@ -1474,6 +1474,3 @@ provides:
   - name: sound-theme-freedesktop
     category: x11-themes
     version: '>=0'
-packages:
-  - {}
-  - version: +4
