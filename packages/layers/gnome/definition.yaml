@@ -45,9 +45,6 @@ provides:
   - name: eselect-gnome-shell-extensions
     category: app-eselect
     version: '>=0'
-  - name: uchardet
-    category: app-i18n
-    version: '>=0'
   - name: jq
     category: app-misc
     version: '>=0'
@@ -133,9 +130,6 @@ provides:
     category: gnome-base
     version: '>=0'
   - name: gnome-shell
-    category: gnome-base
-    version: '>=0'
-  - name: libgnomekbd
     category: gnome-base
     version: '>=0'
   - name: nautilus
@@ -299,6 +293,12 @@ provides:
     version: '>=0'
   - name: gnome-terminal
     category: x11-terms
+    version: '>=0'
+  - name: gnome-backgrounds
+    category: x11-themes
+    version: '>=0'
+  - name: mutter
+    category: x11-wm
     version: '>=0'
   - name: gnome-backgrounds
     category: x11-themes

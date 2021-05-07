@@ -13,12 +13,6 @@ provides:
   - name: leafpad
     category: app-editors
     version: '>=0'
-  - name: gnome-doc-utils
-    category: app-text
-    version: '>=0'
-  - name: libdbusmenu
-    category: dev-libs
-    version: '>=0'
   - name: xfce4-dev-tools
     category: dev-util
     version: '>=0'
@@ -83,6 +77,12 @@ provides:
     category: xfce-extra
     version: '>=0'
   - name: xfce4-screenshooter
+    category: xfce-extra
+    version: '>=0'
+  - name: xfce4-taskmanager
+    category: xfce-extra
+    version: '>=0'
+  - name: xfce4-volumed-pulse
     category: xfce-extra
     version: '>=0'
   - name: xfce4-taskmanager
