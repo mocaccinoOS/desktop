@@ -30,7 +30,7 @@ net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
 # Disable cxx, otherwise we have curl pulling in boost
 net-libs/nghttp2 -cxx
 # nss breaks git https:// checkouts
-net-misc/curl http2 idn ssl -nss -gnutls static-libs
+net-misc/curl http2 idn ssl sslv3 -nss -gnutls static-libs
 net-misc/ntp -zeroconf
 net-misc/openssh -X -ldap
 net-misc/openssh libedit
