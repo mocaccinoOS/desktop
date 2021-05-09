@@ -100,6 +100,9 @@ provides:
   - name: postfix
     category: acct-group
     version: '>=0'
+  - name: realtime
+    category: acct-group
+    version: '>=0'
   - name: usb
     category: acct-group
     version: '>=0'

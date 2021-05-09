@@ -190,6 +190,9 @@ provides:
   - name: libcap-ng
     category: sys-libs
     version: '>=0'
+  - name: libunwind
+    category: sys-libs
+    version: '>=0'
   - name: liburing
     category: sys-libs
     version: '>=0'
