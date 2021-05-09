@@ -10,3 +10,90 @@ requires:
     name: "kde-common"
     version: ">=0"
 provides:
+  - name: lxqt-archiver
+    category: app-arch
+    version: '>=0'
+  - name: muParser
+    category: dev-cpp
+    version: '>=0'
+  - name: libqtxdg
+    category: dev-libs
+    version: '>=0'
+  - name: lxqt-build-tools
+    category: dev-util
+    version: '>=0'
+  - name: lxmenu-data
+    category: lxde-base
+    version: '>=0'
+  - name: menu-cache
+    category: lxde-base
+    version: '>=0'
+  - name: liblxqt
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-about
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-admin
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-config
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-globalkeys
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-meta
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-notificationd
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-panel
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-policykit
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-powermanagement
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-qtplugin
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-runner
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-session
+    category: lxqt-base
+    version: '>=0'
+  - name: lximage-qt
+    category: media-gfx
+    version: '>=0'
+  - name: pavucontrol-qt
+    category: media-sound
+    version: '>=0'
+  - name: libstatgrab
+    category: sys-libs
+    version: '>=0'
+  - name: libfm-extra
+    category: x11-libs
+    version: '>=0'
+  - name: libfm-qt
+    category: x11-libs
+    version: '>=0'
+  - name: obconf-qt
+    category: x11-misc
+    version: '>=0'
+  - name: pcmanfm-qt
+    category: x11-misc
+    version: '>=0'
+  - name: qps
+    category: x11-misc
+    version: '>=0'
+  - name: lxqt-themes
+    category: x11-themes
+    version: '>=0'
+  - name: openbox
+    category: x11-wm
+    version: '>=0'

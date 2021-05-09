@@ -43,12 +43,6 @@ provides:
   - name: grantlee
     category: dev-libs
     version: '>=0'
-  - name: libdbusmenu-qt
-    category: dev-libs
-    version: '>=0'
-  - name: plasma-wayland-protocols
-    category: dev-libs
-    version: '>=0'
   - name: xapian
     category: dev-libs
     version: '>=0'
@@ -73,12 +67,6 @@ provides:
   - name: bluez-qt
     category: kde-frameworks
     version: '>=0'
-  - name: breeze-icons
-    category: kde-frameworks
-    version: '>=0'
-  - name: extra-cmake-modules
-    category: kde-frameworks
-    version: '>=0'
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
@@ -88,43 +76,10 @@ provides:
   - name: kactivities-stats
     category: kde-frameworks
     version: '>=0'
-  - name: karchive
-    category: kde-frameworks
-    version: '>=0'
-  - name: kauth
-    category: kde-frameworks
-    version: '>=0'
-  - name: kbookmarks
-    category: kde-frameworks
-    version: '>=0'
   - name: kcmutils
     category: kde-frameworks
     version: '>=0'
-  - name: kcodecs
-    category: kde-frameworks
-    version: '>=0'
-  - name: kcompletion
-    category: kde-frameworks
-    version: '>=0'
-  - name: kconfig
-    category: kde-frameworks
-    version: '>=0'
-  - name: kconfigwidgets
-    category: kde-frameworks
-    version: '>=0'
-  - name: kcoreaddons
-    category: kde-frameworks
-    version: '>=0'
-  - name: kcrash
-    category: kde-frameworks
-    version: '>=0'
-  - name: kdbusaddons
-    category: kde-frameworks
-    version: '>=0'
   - name: kdeclarative
-    category: kde-frameworks
-    version: '>=0'
-  - name: kded
     category: kde-frameworks
     version: '>=0'
   - name: kdelibs4support
@@ -136,22 +91,10 @@ provides:
   - name: kdnssd
     category: kde-frameworks
     version: '>=0'
-  - name: kdoctools
-    category: kde-frameworks
-    version: '>=0'
   - name: kemoticons
     category: kde-frameworks
     version: '>=0'
-  - name: kf-env
-    category: kde-frameworks
-    version: '>=0'
   - name: kfilemetadata
-    category: kde-frameworks
-    version: '>=0'
-  - name: kglobalaccel
-    category: kde-frameworks
-    version: '>=0'
-  - name: kguiaddons
     category: kde-frameworks
     version: '>=0'
   - name: kholidays
@@ -160,31 +103,10 @@ provides:
   - name: khtml
     category: kde-frameworks
     version: '>=0'
-  - name: ki18n
-    category: kde-frameworks
-    version: '>=0'
-  - name: kiconthemes
-    category: kde-frameworks
-    version: '>=0'
-  - name: kidletime
-    category: kde-frameworks
-    version: '>=0'
-  - name: kinit
-    category: kde-frameworks
-    version: '>=0'
-  - name: kio
-    category: kde-frameworks
-    version: '>=0'
   - name: kirigami
     category: kde-frameworks
     version: '>=0'
   - name: kitemmodels
-    category: kde-frameworks
-    version: '>=0'
-  - name: kitemviews
-    category: kde-frameworks
-    version: '>=0'
-  - name: kjobwidgets
     category: kde-frameworks
     version: '>=0'
   - name: kjs
@@ -193,16 +115,7 @@ provides:
   - name: knewstuff
     category: kde-frameworks
     version: '>=0'
-  - name: knotifications
-    category: kde-frameworks
-    version: '>=0'
   - name: knotifyconfig
-    category: kde-frameworks
-    version: '>=0'
-  - name: kpackage
-    category: kde-frameworks
-    version: '>=0'
-  - name: kparts
     category: kde-frameworks
     version: '>=0'
   - name: kpeople
@@ -217,31 +130,10 @@ provides:
   - name: krunner
     category: kde-frameworks
     version: '>=0'
-  - name: kservice
-    category: kde-frameworks
-    version: '>=0'
   - name: ktexteditor
     category: kde-frameworks
     version: '>=0'
-  - name: ktextwidgets
-    category: kde-frameworks
-    version: '>=0'
   - name: kunitconversion
-    category: kde-frameworks
-    version: '>=0'
-  - name: kwallet
-    category: kde-frameworks
-    version: '>=0'
-  - name: kwayland
-    category: kde-frameworks
-    version: '>=0'
-  - name: kwidgetsaddons
-    category: kde-frameworks
-    version: '>=0'
-  - name: kwindowsystem
-    category: kde-frameworks
-    version: '>=0'
-  - name: kxmlgui
     category: kde-frameworks
     version: '>=0'
   - name: modemmanager-qt
@@ -260,12 +152,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: qqc2-desktop-style
-    category: kde-frameworks
-    version: '>=0'
-  - name: solid
-    category: kde-frameworks
-    version: '>=0'
-  - name: sonnet
     category: kde-frameworks
     version: '>=0'
   - name: syntax-highlighting
@@ -337,9 +223,6 @@ provides:
   - name: kwrited
     category: kde-plasma
     version: '>=0'
-  - name: libkscreen
-    category: kde-plasma
-    version: '>=0'
   - name: libksysguard
     category: kde-plasma
     version: '>=0'
@@ -351,6 +234,123 @@ provides:
     version: '>=0'
   - name: oxygen
     category: kde-plasma
+    version: '>=0'
+  - name: plasma-browser-integration
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-desktop
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-disks
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-integration
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-meta
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-nm
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-pa
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-vault
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-workspace
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-workspace-wallpapers
+    category: kde-plasma
+    version: '>=0'
+  - name: powerdevil
+    category: kde-plasma
+    version: '>=0'
+  - name: sddm-kcm
+    category: kde-plasma
+    version: '>=0'
+  - name: systemsettings
+    category: kde-plasma
+    version: '>=0'
+  - name: xdg-desktop-portal-kde
+    category: kde-plasma
+    version: '>=0'
+  - name: xembed-sni-proxy
+    category: kde-plasma
+    version: '>=0'
+  - name: hack
+    category: media-fonts
+    version: '>=0'
+  - name: qrencode
+    category: media-gfx
+    version: '>=0'
+  - name: libdmtx
+    category: media-libs
+    version: '>=0'
+  - name: phonon
+    category: media-libs
+    version: '>=0'
+  - name: phonon-vlc
+    category: media-libs
+    version: '>=0'
+  - name: accounts-qml
+    category: net-libs
+    version: '>=0'
+  - name: accounts-qt
+    category: net-libs
+    version: '>=0'
+  - name: kdsoap
+    category: net-libs
+    version: '>=0'
+  - name: kdsoap-ws-discovery-client
+    category: net-libs
+    version: '>=0'
+  - name: libaccounts-glib
+    category: net-libs
+    version: '>=0'
+  - name: libssh
+    category: net-libs
+    version: '>=0'
+  - name: signon-oauth2
+    category: net-libs
+    version: '>=0'
+  - name: signond
+    category: net-libs
+    version: '>=0'
+  - name: mailutils
+    category: net-mail
+    version: '>=0'
+  - name: socat
+    category: net-misc
+    version: '>=0'
+  - name: networkmanager-openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: smartmontools
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
+  - name: cryfs
+    category: sys-fs
+    version: '>=0'
+  - name: mailx
+    category: virtual
+    version: '>=0'
+  - name: appmenu-gtk-module
+    category: x11-misc
+    version: '>=0'
+  - name: sddm
+    category: x11-misc
+    version: '>=0'
+  - name: xsettingsd
+    category: x11-misc
     version: '>=0'
   - name: plasma-browser-integration
     category: kde-plasma

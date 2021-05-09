@@ -19,12 +19,12 @@ provides:
   - name: grub
     category: sys-boot
     version: '>=0'
+  - name: os-prober
+    category: sys-boot
+    version: '>=0'
   - name: plymouth
     category: sys-boot
     version: '>=0'
   - name: efivar
     category: sys-libs
-    version: '>=0'
-  - name: os-prober
-    category: sys-boot
     version: '>=0'
