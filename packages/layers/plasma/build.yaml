@@ -12,10 +12,12 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- groupadd -g 219 sddm
+- useradd -g 219 -u 219 sddm
 - mkdir -p /var/lib/sddm/.config
 - touch /var/lib/sddm/.config/.keep
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- chown -R sddm:sddm /var/lib/sddm
+- chown -R 219:219 /var/lib/sddm
 - etc-update -q --automode -5
 requires:
 - category: "layers"
