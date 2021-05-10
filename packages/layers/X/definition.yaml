@@ -60,6 +60,9 @@ requires:
   - name: postdrop
     category: entity
     version: ">=0"
+  - name: realtime
+    category: entity
+    version: ">=0"
   - name: usb
     category: entity
     version: ">=0"
