@@ -13,7 +13,12 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- groupadd -g 32 gdm
+- useradd -g 32 -u 32 gdm
+- mkdir -p /var/lib/gdm/.config
+- touch /var/lib/gdm/.config/.keep
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- chown -R 32:32 /var/lib/gdm
 - etc-update -q --automode -5
 requires:
 - category: "layers"
