@@ -1,0 +1,15 @@
+category: "apps"
+name: "i3"
+version: 4.18+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-wm/i3
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: i3
+    category: x11-wm
+    version: '>=0'
