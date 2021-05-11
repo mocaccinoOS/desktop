@@ -76,6 +76,9 @@ provides:
   - name: docbook-xml-simple-dtd
     category: app-text
     version: '>=0'
+  - name: libspectre
+    category: app-text
+    version: '>=0'
   - name: openjade
     category: app-text
     version: '>=0'
@@ -133,6 +136,9 @@ provides:
   - name: gnome-color-manager
     category: gnome-extra
     version: '>=0'
+  - name: libgsf
+    category: gnome-extra
+    version: '>=0'
   - name: nm-applet
     category: gnome-extra
     version: '>=0'
@@ -177,4 +183,10 @@ provides:
     version: '>=0'
   - name: webkit-gtk
     category: net-libs
+    version: '>=0'
+  - name: imagemagick-tools
+    category: virtual
+    version: '>=0'
+  - name: goffice
+    category: x11-libs
     version: '>=0'
