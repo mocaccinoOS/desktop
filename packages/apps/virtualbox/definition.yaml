@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 6.1.18+8
+version: 6.1.18+9
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -20,9 +20,6 @@ provides:
     version: '>=0'
   - name: kbuild
     category: dev-util
-    version: '>=0'
-  - name: aalib
-    category: media-libs
     version: '>=0'
   - name: audiofile
     category: media-libs
