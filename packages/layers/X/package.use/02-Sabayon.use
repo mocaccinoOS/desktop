@@ -42,7 +42,6 @@ app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
 app-misc/recoll -fam inotify
 app-misc/sphinx mysql
 app-mobilephone/gnokii sms -X
-app-office/abiword plugins
 app-office/calligra kdepim semantic-desktop
 app-office/dia gnome-print
 app-office/glabels doc

@@ -1,0 +1,15 @@
+category: "apps"
+name: "abiword"
+version: 3.0.4+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-office/abiword
+provides:
+  - name: abiword
+    category: app-office
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"

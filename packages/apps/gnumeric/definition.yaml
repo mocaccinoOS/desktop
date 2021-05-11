@@ -1,0 +1,15 @@
+category: "apps"
+name: "gnumeric"
+version: 1.12.48+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-office/gnumeric
+provides:
+  - name: gnumeric
+    category: app-office
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
