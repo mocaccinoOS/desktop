@@ -11,6 +11,8 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
+# workaround that can be removed once package.env is a directory created from system-x
+- if test -f "/etc/portage/package.env" ; then rm "/etc/portage/package.env"; fi
 - cp -rf package.env /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
