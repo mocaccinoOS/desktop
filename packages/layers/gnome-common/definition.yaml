@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.7+10
+version: 0.7+11
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    dev-python/setproctitle dev-libs/libgee gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter dev-python/pyatspi
+    x11-libs/goffice app-text/libspectre dev-python/setproctitle dev-libs/libgee gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter dev-python/pyatspi
 requires:
   - category: "layers"
     name: "X"

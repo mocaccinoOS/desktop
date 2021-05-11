@@ -156,7 +156,6 @@ dev-vcs/subversion -java -apache2 -dso -kde
 net-misc/gnome-online-miners flickr
 media-plugins/grilo-plugins flickr
 gnome-base/libgnomecanvas glade
-gnome-extra/libgsf gnome
 gnome-extra/nautilus-sendto -cdr
 kde-apps/akonadi tools
 kde-apps/gwenview kipi raw semantic-desktop
