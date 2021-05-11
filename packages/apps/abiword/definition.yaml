@@ -9,6 +9,9 @@ provides:
   - name: abiword
     category: app-office
     version: '>=0'
+  - name: wv
+    category: app-text
+    version: '>=0'
 requires:
   - category: "layers"
     name: "gnome-common"
