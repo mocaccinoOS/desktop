@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.6+4
+version: 0.6+5
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -818,12 +818,6 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libsndfile
-    category: media-libs
-    version: '>=0'
-  - name: libtheora
-    category: media-libs
-    version: '>=0'
-  - name: libvorbis
     category: media-libs
     version: '>=0'
   - name: libvpx
