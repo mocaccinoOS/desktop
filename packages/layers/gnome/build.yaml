@@ -9,7 +9,6 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
@@ -18,6 +17,7 @@ steps:
 - mkdir -p /var/lib/gdm/.config
 - touch /var/lib/gdm/.config/.keep
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-misc/jq
 - chown -R 32:32 /var/lib/gdm
 - etc-update -q --automode -5
 requires:
