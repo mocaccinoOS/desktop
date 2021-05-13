@@ -90,19 +90,19 @@ provides:
   - name: libmodplug
     category: media-libs
     version: '>=0'
-  - name: libtheora
-    category: media-libs
-    version: '>=0'
   - name: libogg
-    category: media-libs
-    version: '>=0'
-  - name: libvorbis
     category: media-libs
     version: '>=0'
   - name: libreplaygain
     category: media-libs
     version: '>=0'
   - name: libsamplerate
+    category: media-libs
+    version: '>=0'
+  - name: libtheora
+    category: media-libs
+    version: '>=0'
+  - name: libvorbis
     category: media-libs
     version: '>=0'
   - name: opus
