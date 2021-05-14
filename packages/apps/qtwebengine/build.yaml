@@ -15,7 +15,7 @@ prelude:
 
 steps:
 - MAKEOPTS="-j10" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C dev-lang/python:2.7
+- emerge -C dev-lang/python:2.7 net-libs/nodejs
 requires:
 - category: "layers"
   name: "qt"
