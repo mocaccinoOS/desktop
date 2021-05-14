@@ -10,6 +10,27 @@ requires:
     name: "X"
     version: ">=0"
 provides:
+  - name: confuse
+    category: dev-libs
+    version: '>=0'
+  - name: yajl
+    category: dev-libs
+    version: '>=0'
+  - name: AnyEvent
+    category: dev-perl
+    version: '>=0'
+  - name: AnyEvent-I3
+    category: dev-perl
+    version: '>=0'
+  - name: xcb-util-xrm
+    category: x11-libs
+    version: '>=0'
+  - name: dmenu
+    category: x11-misc
+    version: '>=0'
+  - name: i3status
+    category: x11-misc
+    version: '>=0'
   - name: i3
     category: x11-wm
     version: '>=0'
