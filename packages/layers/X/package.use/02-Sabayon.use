@@ -19,7 +19,6 @@ app-cdr/xfburn gstreamer
 app-crypt/qca gpg ssl
 app-doc/doxygen latex dot
 app-editors/bluefish gnome -python
-app-editors/emacs libxml2 xft
 app-editors/retext -spell
 app-editors/vim cscope lua ruby vim-pager
 app-editors/xemacs xft
