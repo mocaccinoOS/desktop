@@ -1,0 +1,18 @@
+category: "apps"
+name: "discover"
+version: 5.20.5+1
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    kde-plasma/discover
+provides:
+  - name: discover
+    category: kde-plasma
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
