@@ -5,6 +5,7 @@ app-text/poppler jpeg2k -qt5
 app-text/texlive-core xetex
 app-text/xmlto text
 dev-lang/luajit lua52compat
+dev-libs/appstream -qt5
 # Needed by directvnc
 dev-libs/dbus-glib bash-completion
 dev-python/pygobject introspection
