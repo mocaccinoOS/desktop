@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 4.6.7+8
+version: 4.6.7+9
 labels:
   emerge.jobs: "3"
   emerge.packages: "gnome-extra/cinnamon"
@@ -28,9 +28,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pexpect
-    category: dev-python
-    version: '>=0'
-  - name: pillow
     category: dev-python
     version: '>=0'
   - name: polib
