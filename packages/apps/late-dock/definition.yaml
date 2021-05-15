@@ -1,0 +1,15 @@
+category: "apps"
+name: "latte-dock"
+version: 0.9.11+1
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    kde-misc/latte-dock
+provides:
+  - name: latte-dock
+    category: kde-misc
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
