@@ -1,6 +1,6 @@
 category: "apps"
 name: "emacs"
-version: 27.1+1
+version: 27.1+2
 labels:
   emerge.jobs: "3"
   emerge.packages: >-

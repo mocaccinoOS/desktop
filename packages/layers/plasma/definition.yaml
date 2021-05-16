@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.20.5+29
+version: 5.20.5+30
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -162,7 +162,7 @@ provides:
     version: '>=0'
   - name: bluedevil
     category: kde-plasma
-    version: '>=0' 
+    version: '>=0'
   - name: breeze
     category: kde-plasma
     version: '>=0'
