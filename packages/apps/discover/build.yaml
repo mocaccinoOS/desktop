@@ -13,6 +13,8 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+# remove build deps
+- emerge -C app-text/docbook-sgml-utils app-text/openjade app-text/docbook-sgml-dtd:3.0 app-text/docbook-sgml-dtd:3.1 app-text/docbook-sgml-dtd:4.0 app-text/docbook-sgml-dtd:4.1 app-text/docbook-sgml-dtd:4.2 app-text/docbook-sgml-dtd:4.4 app-text/docbook-dsssl-stylesheets 
 requires:
 - category: "layers"
   name: "plasma"
