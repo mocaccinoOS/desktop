@@ -1,10 +1,10 @@
 category: "apps"
 name: "discover"
-version: 5.20.5+4
+version: 5.20.5+5
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    kde-plasma/discover
+    dev-libs/appstream kde-plasma/discover
 provides:
   - name: discover
     category: kde-plasma
