@@ -18,7 +18,7 @@ jobs:
       IMAGE_REPOSITORY: quay.io/mocaccinocache/desktop
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
-      BACKEND: docker
+      BACKEND: docker-sidecar
       DOCKER_REGISTRY: quay.io
       DOCKER_USER: ${{ secrets.QUAY_USERNAME }}
       DOCKER_PASS: ${{ secrets.QUAY_PASSWORD }}
