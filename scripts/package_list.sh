@@ -46,8 +46,10 @@ for target in "${packages_before[@]}"; do
   done
 done
 
-# Prune existing provides first
-yq w -i $path/definition.yaml 'provides' ''
+if [ -e "$path/definition.yaml" ] && [ ${#packages_after[@]} -ne 0 ]; then
+  # Prune existing provides first
+  yq w -i $path/definition.yaml 'provides' ''
+fi
 
 p=0
 for i in ${packages_after[@]};
