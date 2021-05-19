@@ -5,7 +5,7 @@ dev-libs/libverto libev threads
 net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd -minimal -slp
 sys-block/parted device-mapper
 # 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
-net-fs/samba -abi_x86_32 ads acl aio client ldap oav swat winbind -cluster -ceph
+net-fs/samba -abi_x86_32 ads acl aio client oav swat winbind -cluster -ceph
 # udisks, we want cryptsetup support
 sys-fs/udisks cryptsetup crypt
 # Require mkfs.dosfs
