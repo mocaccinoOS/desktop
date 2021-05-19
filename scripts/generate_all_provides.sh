@@ -22,4 +22,5 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     fi
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
+    docker images --filter='reference=quay.io/mocaccinocache/desktop' --format='{{.Repository}}:{{.Tag}}' | xargs -r docker rmi
 done
