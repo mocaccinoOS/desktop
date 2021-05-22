@@ -11,7 +11,12 @@ steps:
 - chown -R root:portage /usr/portage/distfiles/
 - chmod g+w /usr/portage/distfiles/
 - touch /usr/portage/.keep
+# Keep requires so the bot can check revdeps. Note join takes precedence and requires get ignored
 requires:
-- category: "layer"
+- category: "gentoo"
   version:  ">=0.1"
-  name:     "gentoo-stage3"
+  name:     "stage3"
+join:
+- category: "gentoo"
+  version:  ">=0.1"
+  name:     "stage3"

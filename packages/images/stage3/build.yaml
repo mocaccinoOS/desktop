@@ -1,14 +1,27 @@
-image: "alpine"
-env: 
+image: "quay.io/mocaccino/extra:latest"
+
+package_dir: /gentoo
+
+prelude:
+- luet upgrade && luet install -y utils/tar utils/curl utils/xz
+- mkdir /gentoo
+
+steps:
+# TODO: checksum
+- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+
+env:
 - LUET_YES=true
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
-prelude:
-- apk --no-cache add ca-certificates tar wget xz rsync curl
-- curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
-- luet install repository/distfiles-collection
-- mkdir /{{ .Values.name }}
-- | 
-  luet install gentoo/stage3-amd64 && \
-  cd /{{ .Values.name }} && tar xJpf /collections/gentoo/stage3.tar.xz --xattrs --numeric-owner && luet uninstall gentoo/stage3-amd64 && luet cleanup && \
-  rsync -A -a --delete --numeric-ids --recursive -d -H --one-file-system --xattrs --exclude '/{{ .Values.name }}/*'  --exclude '/etc/resolv.conf'  --exclude '/etc/hostname'  --exclude '/sys/' --exclude '/etc/hosts'  --exclude '/sys/*' --exclude '/proc/*' --exclude '/dev/pts/*' /{{ .Values.name }}/ / && \
-  rm -rf /{{ .Values.name }}
+
+# Add some common excludes
+excludes:
+- ^/etc/os-release
+- ^/etc/gshadow
+- ^/etc/hostname
+- ^/etc/hosts
+- ^/etc/machine-id
+- ^/etc/fstab
+- ^/etc/machineid
+- ^/sys
+- ^/proc
