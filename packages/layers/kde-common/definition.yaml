@@ -16,6 +16,9 @@ provides:
   - name: plasma-wayland-protocols
     category: dev-libs
     version: '>=0'
+  - name: attica
+    category: kde-frameworks
+    version: '>=0'
   - name: breeze-icons
     category: kde-frameworks
     version: '>=0'
@@ -52,6 +55,9 @@ provides:
   - name: kdbusaddons
     category: kde-frameworks
     version: '>=0'
+  - name: kdeclarative
+    category: kde-frameworks
+    version: '>=0'
   - name: kded
     category: kde-frameworks
     version: '>=0'
@@ -82,10 +88,19 @@ provides:
   - name: kio
     category: kde-frameworks
     version: '>=0'
+  - name: kirigami
+    category: kde-frameworks
+    version: '>=0'
+  - name: kitemmodels
+    category: kde-frameworks
+    version: '>=0'
   - name: kitemviews
     category: kde-frameworks
     version: '>=0'
   - name: kjobwidgets
+    category: kde-frameworks
+    version: '>=0'
+  - name: knewstuff
     category: kde-frameworks
     version: '>=0'
   - name: knotifications

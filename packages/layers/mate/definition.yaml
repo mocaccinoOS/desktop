@@ -154,9 +154,3 @@ provides:
   - name: marco
     category: x11-wm
     version: '>=0'
-  - name: marco
-    category: x11-wm
-    version: '>=0'
-  - name: marco
-    category: x11-wm
-    version: '>=0'

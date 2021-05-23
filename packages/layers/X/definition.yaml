@@ -613,6 +613,9 @@ provides:
   - name: mako
     category: dev-python
     version: '>=0'
+  - name: olefile
+    category: dev-python
+    version: '>=0'
   - name: pillow
     category: dev-python
     version: '>=0'
