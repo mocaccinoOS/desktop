@@ -33,9 +33,6 @@ provides:
   - name: rtkit
     category: sys-auth
     version: '>=0'
-  - name: libunwind
-    category: sys-libs
-    version: '>=0'
 requires:
   - category: "layers"
     name: "X"

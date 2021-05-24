@@ -85,9 +85,3 @@ provides:
   - name: xfce4-volumed-pulse
     category: xfce-extra
     version: '>=0'
-  - name: xfce4-taskmanager
-    category: xfce-extra
-    version: '>=0'
-  - name: xfce4-volumed-pulse
-    category: xfce-extra
-    version: '>=0'

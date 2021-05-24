@@ -58,9 +58,6 @@ provides:
   - name: kio-extras
     category: kde-apps
     version: '>=0'
-  - name: attica
-    category: kde-frameworks
-    version: '>=0'
   - name: baloo
     category: kde-frameworks
     version: '>=0'
@@ -77,9 +74,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: kcmutils
-    category: kde-frameworks
-    version: '>=0'
-  - name: kdeclarative
     category: kde-frameworks
     version: '>=0'
   - name: kdelibs4support
@@ -103,16 +97,7 @@ provides:
   - name: khtml
     category: kde-frameworks
     version: '>=0'
-  - name: kirigami
-    category: kde-frameworks
-    version: '>=0'
-  - name: kitemmodels
-    category: kde-frameworks
-    version: '>=0'
   - name: kjs
-    category: kde-frameworks
-    version: '>=0'
-  - name: knewstuff
     category: kde-frameworks
     version: '>=0'
   - name: knotifyconfig
@@ -339,129 +324,6 @@ provides:
     version: '>=0'
   - name: xdg-desktop-portal
     category: sys-apps
-    version: '>=0'
-  - name: cryfs
-    category: sys-fs
-    version: '>=0'
-  - name: mailx
-    category: virtual
-    version: '>=0'
-  - name: appmenu-gtk-module
-    category: x11-misc
-    version: '>=0'
-  - name: sddm
-    category: x11-misc
-    version: '>=0'
-  - name: xsettingsd
-    category: x11-misc
-    version: '>=0'
-  - name: plasma-browser-integration
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-desktop
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-disks
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-integration
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-meta
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-nm
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-pa
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-vault
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-workspace
-    category: kde-plasma
-    version: '>=0'
-  - name: plasma-workspace-wallpapers
-    category: kde-plasma
-    version: '>=0'
-  - name: polkit-kde-agent
-    category: kde-plasma
-    version: '>=0'
-  - name: powerdevil
-    category: kde-plasma
-    version: '>=0'
-  - name: sddm-kcm
-    category: kde-plasma
-    version: '>=0'
-  - name: systemsettings
-    category: kde-plasma
-    version: '>=0'
-  - name: xdg-desktop-portal-kde
-    category: kde-plasma
-    version: '>=0'
-  - name: xembed-sni-proxy
-    category: kde-plasma
-    version: '>=0'
-  - name: hack
-    category: media-fonts
-    version: '>=0'
-  - name: qrencode
-    category: media-gfx
-    version: '>=0'
-  - name: libdmtx
-    category: media-libs
-    version: '>=0'
-  - name: phonon
-    category: media-libs
-    version: '>=0'
-  - name: phonon-vlc
-    category: media-libs
-    version: '>=0'
-  - name: accounts-qml
-    category: net-libs
-    version: '>=0'
-  - name: accounts-qt
-    category: net-libs
-    version: '>=0'
-  - name: kdsoap
-    category: net-libs
-    version: '>=0'
-  - name: kdsoap-ws-discovery-client
-    category: net-libs
-    version: '>=0'
-  - name: libaccounts-glib
-    category: net-libs
-    version: '>=0'
-  - name: libssh
-    category: net-libs
-    version: '>=0'
-  - name: signon-oauth2
-    category: net-libs
-    version: '>=0'
-  - name: signond
-    category: net-libs
-    version: '>=0'
-  - name: mailutils
-    category: net-mail
-    version: '>=0'
-  - name: socat
-    category: net-misc
-    version: '>=0'
-  - name: networkmanager-openconnect
-    category: net-vpn
-    version: '>=0'
-  - name: openconnect
-    category: net-vpn
-    version: '>=0'
-  - name: smartmontools
-    category: sys-apps
-    version: '>=0'
-  - name: xdg-desktop-portal
-    category: sys-apps
-    version: '>=0'
-  - name: polkit-qt
-    category: sys-auth
     version: '>=0'
   - name: cryfs
     category: sys-fs

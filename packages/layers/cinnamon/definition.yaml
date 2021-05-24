@@ -24,9 +24,6 @@ provides:
   - name: distro
     category: dev-python
     version: '>=0'
-  - name: olefile
-    category: dev-python
-    version: '>=0'
   - name: pexpect
     category: dev-python
     version: '>=0'

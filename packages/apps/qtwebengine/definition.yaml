@@ -15,9 +15,6 @@ provides:
   - name: qtwebengine
     category: dev-qt
     version: '>=0'
-  - name: nodejs
-    category: net-libs
-    version: '>=0'
 requires:
   - category: "layers"
     name: "qt"
