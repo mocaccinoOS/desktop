@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 0.5+20
+version: 0.5+21
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -9,9 +9,6 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
-  - name: ldap
-    category: entity
-    version: ">=0"
   - name: mail
     category: entity
     version: ">=0"
@@ -19,14 +16,8 @@ requires:
     category: entity
     version: ">=0"
 provides:
-  - name: ldap
-    category: acct-group
-    version: '>=0'
   - name: mail
     category: acct-group
-    version: '>=0'
-  - name: ldap
-    category: acct-user
     version: '>=0'
   - name: mail
     category: acct-user
@@ -123,9 +114,6 @@ provides:
     version: '>=0'
   - name: mailbase
     category: net-mail
-    version: '>=0'
-  - name: openldap
-    category: net-nds
     version: '>=0'
   - name: gptfdisk
     category: sys-apps
