@@ -16,8 +16,14 @@ requires:
     category: entity
     version: ">=0"
 provides:
+  - name: ldap
+    category: acct-group
+    version: '>=0'
   - name: mail
     category: acct-group
+    version: '>=0'
+  - name: ldap
+    category: acct-user
     version: '>=0'
   - name: mail
     category: acct-user
@@ -114,6 +120,9 @@ provides:
     version: '>=0'
   - name: mailbase
     category: net-mail
+    version: '>=0'
+  - name: openldap
+    category: net-nds
     version: '>=0'
   - name: gptfdisk
     category: sys-apps
