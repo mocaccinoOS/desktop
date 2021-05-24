@@ -7,7 +7,6 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
-# appstream split
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
