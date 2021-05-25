@@ -1,6 +1,6 @@
 category: "apps"
 name: "wine"
-version: 6.7+9
+version: 6.7+10
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
