@@ -24,7 +24,7 @@ steps:
 - emerge --quiet -1 dev-libs/openssl net-misc/openssh -j $JOBS
 - emerge --quiet -1D @system
 - emerge -uDN --quiet --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
-- emerge -t -j --quiet ${JOBS} {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
+- emerge -t -j ${JOBS} --quiet {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
