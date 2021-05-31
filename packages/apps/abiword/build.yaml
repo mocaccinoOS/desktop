@@ -13,7 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 # Workaround upstream dropping patchsets
-- wget http://kacabenggala.uny.ac.id/gentoo/distfiles/ba/abiword-3.0.4-patchset-r2.tar.xz -O /usr/portage/distfiles/abiword-3.0.4-patchset-r2.tar.xz
+- wget http://kacabenggala.uny.ac.id/gentoo/distfiles/ba/abiword-3.0.4-patchset-r2.tar.xz -O /var/cache/distfiles/abiword-3.0.4-patchset-r2.tar.xz
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
