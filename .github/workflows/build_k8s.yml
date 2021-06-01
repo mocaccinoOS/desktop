@@ -16,7 +16,7 @@ jobs:
       MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
       MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
       IMAGE_REPOSITORY: quay.io/mocaccinocache/desktop
-      K8S_SCHEDULER: k8s-resource-scheduler
+      NODE_SELECTOR: "luet.io/workload: jobs"
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
       BACKEND: docker-sidecar
