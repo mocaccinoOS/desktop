@@ -7,7 +7,6 @@ dev-qt/qtcharts qml
 dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
 dev-qt/qtdeclarative jit widgets
-dev-qt/qtwebkit gstreamer hyphen jit nsplugin opengl printsupport
 dev-qt/qtgui:5 accessibility egl ibus jpeg libinput png udev
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtnetwork ssl
