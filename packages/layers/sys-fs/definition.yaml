@@ -15,6 +15,9 @@ requires:
   - name: postmaster
     category: entity
     version: ">=0"
+  - name: ldap
+    category: entity
+    version: ">=0"
 provides:
   - name: ldap
     category: acct-group
