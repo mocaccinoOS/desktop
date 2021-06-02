@@ -19,9 +19,9 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
+- emerge -1 =sys-libs/glibc-2.32-r7
 - emerge --quiet -1 dev-libs/libgcrypt:0
 # - emerge --quiet -1 dev-libs/openssl net-misc/openssh -j $JOBS
-- emerge -1 app-shells/bash
 - emerge --quiet -1uDN @system
 - emerge -uDN --quiet --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} --quiet {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
