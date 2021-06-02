@@ -6,8 +6,20 @@ labels:
   emerge.packages: >-
     dev-libs/appstream kde-plasma/discover
 provides:
+  - name: gcab
+    category: app-arch
+    version: '>=0'
+  - name: libjcat
+    category: dev-libs
+    version: '>=0'
+  - name: libxmlb
+    category: dev-libs
+    version: '>=0'
   - name: discover
     category: kde-plasma
+    version: '>=0'
+  - name: fwupd
+    category: sys-apps
     version: '>=0'
 requires:
   - category: "layers"
