@@ -8,6 +8,7 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 - ^/luetbuild
+- ^/etc/default/grub
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 - LUET_YES=true
@@ -17,7 +18,6 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -r 10_linux /etc/grub.d/10_linux
-- cp grub-default /etc/default/grub
 requires:
 - category: "layers"
   name: "X"
