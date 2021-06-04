@@ -4,7 +4,7 @@ requires:
   version: ">=0"
 unpack: true
 env:
-# - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ .Values.emerge.jobs }}
 
 prelude:
