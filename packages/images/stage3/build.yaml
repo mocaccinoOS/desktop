@@ -21,7 +21,6 @@ excludes:
 - ^/etc/hostname
 - ^/etc/hosts
 - ^/etc/machine-id
-- ^/etc/fstab
 - ^/etc/machineid
 - ^/sys
 - ^/proc
