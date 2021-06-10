@@ -1,19 +1,14 @@
 image: "quay.io/mocaccino/extra:latest"
 
-package_dir: /{{ .Values.name }}
+package_dir: /gentoo
 
 prelude:
 - luet upgrade && luet install -y utils/tar utils/curl utils/xz
-- luet install repository/distfiles-collection
-- mkdir /{{ .Values.name }}
+- mkdir /gentoo
 
 steps:
-- | 
-  luet install gentoo/stage3-amd64 && \
-  tar xJpf /collections/gentoo/stage3.tar.xz --xattrs --numeric-owner -C /{{ .Values.name }}
 # TODO: checksum
-# Gentoo stage3 are broken due to https://bugs.gentoo.org/780810
-#- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C  /{{ .Values.name }}
+- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
 - LUET_YES=true
