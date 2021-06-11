@@ -19,7 +19,8 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- emerge --quiet -1 sys-libs/glibc sys-devel/gnuconfig sys-devel/libtool
+- emerge --quiet -1 sys-libs/glibc
+- emerge --quiet @system
 - emerge --quiet -1 dev-libs/libgcrypt:0
 - emerge --quiet -1uDN @system
 - emerge -uDN --quiet --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
