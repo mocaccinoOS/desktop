@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20210602+24
+version: 0.20210602+25
 category: layers
 requires:
   - category: "system"
@@ -48,7 +48,7 @@ requires:
     category: entity
     version: ">=0"
 emerge:
-  jobs: "1"
+  jobs: "3"
   packages:
     - app-arch/cpio
     - app-arch/zip
