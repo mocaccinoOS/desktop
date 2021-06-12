@@ -1,5 +1,5 @@
 name: gentoo-portage
-version: 0.20210602+1
+version: 0.20210602+2
 category: layers
 labels:
   autobump.strategy: git_hash
