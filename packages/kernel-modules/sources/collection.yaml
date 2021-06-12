@@ -14,7 +14,7 @@ packages:
       package.version: "5.10.38"
   - category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 5.12.5+3
+    version: 5.12.5+4
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
