@@ -52,6 +52,7 @@ emerge:
   packages:
     - app-arch/cpio
     - app-arch/zip
+    - dev-vcs/git
     - net-misc/ntp
     - media-libs/libpng
     - sys-apps/dmidecode
