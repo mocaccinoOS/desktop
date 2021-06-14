@@ -24,6 +24,7 @@ steps:
 - emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS
 - USE="-sqlite" emerge -1 dev-lang/python:3.8
 - USE="-icu" emerge -1 dev-db/sqlite
+- emerge -1 dev-python/setuptools:0 dev-python/setuptools_scm:0 dev-python/certifi:0
 - emerge -1 sys-apps/systemd
 - emerge -1uDN @system
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
