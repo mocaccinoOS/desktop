@@ -4,7 +4,7 @@ version: 5.20.5+14
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    kde-plasma/discover
+    dev-libs/appstream kde-plasma/discover
 provides:
   - name: gcab
     category: app-arch
