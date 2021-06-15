@@ -16,6 +16,9 @@ steps:
 - useradd -g 32 -u 32 gdm
 - mkdir -p /var/lib/gdm/.config
 - touch /var/lib/gdm/.config/.keep
+# Workaround needed until we sync Portage tree again (15-6-2021)
+- wget https://data.gpo.zugaina.org/gentoo/net-misc/dleyna-server/dleyna-server-0.7.0-r1.ebuild -P /usr/portage/net-misc/dleyna-server
+- ebuild /usr/portage/net-misc/dleyna-server/dleyna-server-0.7.0-r1.ebuild manifest
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C app-misc/jq
 - chown -R 32:32 /var/lib/gdm
