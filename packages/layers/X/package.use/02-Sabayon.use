@@ -370,7 +370,6 @@ sci-visualization/gnuplot gd wxwidgets
 sci-visualization/grace fftw
 sci-visualization/gwyddion fftw
 sci-visualization/paraview -python
-sys-apps/xdg-desktop-portal screencast
 sys-block/open-iscsi -modules
 sys-cluster/ceph cephfs
 sys-cluster/openmpi romio
