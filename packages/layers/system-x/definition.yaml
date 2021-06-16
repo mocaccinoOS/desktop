@@ -117,6 +117,9 @@ provides:
   - name: root
     category: acct-group
     version: '>=0'
+  - name: sgx
+    category: acct-group
+    version: '>=0'
   - name: sshd
     category: acct-group
     version: '>=0'
@@ -279,6 +282,9 @@ provides:
   - name: eselect-python
     category: app-eselect
     version: '>=0'
+  - name: eselect-ruby
+    category: app-eselect
+    version: '>=0'
   - name: eselect-rust
     category: app-eselect
     version: '>=0'
@@ -354,10 +360,16 @@ provides:
   - name: python
     category: dev-lang
     version: '>=0'
+  - name: python
+    category: dev-lang
+    version: '>=0'
   - name: python-exec
     category: dev-lang
     version: '>=0'
   - name: python-exec-conf
+    category: dev-lang
+    version: '>=0'
+  - name: ruby
     category: dev-lang
     version: '>=0'
   - name: rust
@@ -468,6 +480,9 @@ provides:
   - name: libxslt
     category: dev-libs
     version: '>=0'
+  - name: libyaml
+    category: dev-libs
+    version: '>=0'
   - name: lzo
     category: dev-libs
     version: '>=0'
@@ -492,10 +507,22 @@ provides:
   - name: popt
     category: dev-libs
     version: '>=0'
+  - name: Authen-SASL
+    category: dev-perl
+    version: '>=0'
   - name: Canary-Stability
     category: dev-perl
     version: '>=0'
   - name: common-sense
+    category: dev-perl
+    version: '>=0'
+  - name: Digest-HMAC
+    category: dev-perl
+    version: '>=0'
+  - name: Error
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-SSL
     category: dev-perl
     version: '>=0'
   - name: JSON
@@ -507,10 +534,22 @@ provides:
   - name: Locale-gettext
     category: dev-perl
     version: '>=0'
+  - name: MailTools
+    category: dev-perl
+    version: '>=0'
   - name: MIME-Charset
     category: dev-perl
     version: '>=0'
   - name: Module-Build
+    category: dev-perl
+    version: '>=0'
+  - name: Mozilla-CA
+    category: dev-perl
+    version: '>=0'
+  - name: Net-SSLeay
+    category: dev-perl
+    version: '>=0'
+  - name: Pod-Parser
     category: dev-perl
     version: '>=0'
   - name: SGMLSpm
@@ -523,6 +562,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Text-WrapI18N
+    category: dev-perl
+    version: '>=0'
+  - name: TimeDate
     category: dev-perl
     version: '>=0'
   - name: Types-Serialiser
@@ -594,8 +636,50 @@ provides:
   - name: six
     category: dev-python
     version: '>=0'
+  - name: toml
+    category: dev-python
+    version: '>=0'
   - name: urllib3
     category: dev-python
+    version: '>=0'
+  - name: bundler
+    category: dev-ruby
+    version: '>=0'
+  - name: did_you_mean
+    category: dev-ruby
+    version: '>=0'
+  - name: json
+    category: dev-ruby
+    version: '>=0'
+  - name: kpeg
+    category: dev-ruby
+    version: '>=0'
+  - name: minitest
+    category: dev-ruby
+    version: '>=0'
+  - name: net-telnet
+    category: dev-ruby
+    version: '>=0'
+  - name: power_assert
+    category: dev-ruby
+    version: '>=0'
+  - name: racc
+    category: dev-ruby
+    version: '>=0'
+  - name: rake
+    category: dev-ruby
+    version: '>=0'
+  - name: rdoc
+    category: dev-ruby
+    version: '>=0'
+  - name: rubygems
+    category: dev-ruby
+    version: '>=0'
+  - name: test-unit
+    category: dev-ruby
+    version: '>=0'
+  - name: xmlrpc
+    category: dev-ruby
     version: '>=0'
   - name: guile
     category: dev-scheme
@@ -604,6 +688,9 @@ provides:
     category: dev-util
     version: '>=0'
   - name: cmake
+    category: dev-util
+    version: '>=0'
+  - name: colm
     category: dev-util
     version: '>=0'
   - name: desktop-file-utils
@@ -639,8 +726,14 @@ provides:
   - name: pkgconf
     category: dev-util
     version: '>=0'
+  - name: ragel
+    category: dev-util
+    version: '>=0'
   - name: re2c
     category: dev-util
+    version: '>=0'
+  - name: git
+    category: dev-vcs
     version: '>=0'
   - name: dconf
     category: gnome-base
@@ -1026,6 +1119,12 @@ provides:
   - name: perl-Data-Dumper
     category: virtual
     version: '>=0'
+  - name: perl-Digest-MD5
+    category: virtual
+    version: '>=0'
+  - name: perl-Digest-SHA
+    category: virtual
+    version: '>=0'
   - name: perl-Encode
     category: virtual
     version: '>=0'
@@ -1056,7 +1155,16 @@ provides:
   - name: perl-Getopt-Long
     category: virtual
     version: '>=0'
+  - name: perl-IO
+    category: virtual
+    version: '>=0'
   - name: perl-JSON-PP
+    category: virtual
+    version: '>=0'
+  - name: perl-libnet
+    category: virtual
+    version: '>=0'
+  - name: perl-MIME-Base64
     category: virtual
     version: '>=0'
   - name: perl-Module-Metadata
@@ -1087,6 +1195,12 @@ provides:
     category: virtual
     version: '>=0'
   - name: pkgconfig
+    category: virtual
+    version: '>=0'
+  - name: ruby-ssl
+    category: virtual
+    version: '>=0'
+  - name: rubygems
     category: virtual
     version: '>=0'
   - name: rust

@@ -166,9 +166,6 @@ provides:
   - name: eselect-notify-send
     category: app-eselect
     version: '>=0'
-  - name: eselect-ruby
-    category: app-eselect
-    version: '>=0'
   - name: eselect-xvmc
     category: app-eselect
     version: '>=0'
@@ -223,9 +220,6 @@ provides:
   - name: glibmm
     category: dev-cpp
     version: '>=0'
-  - name: mm-common
-    category: dev-cpp
-    version: '>=0'
   - name: yaml-cpp
     category: dev-cpp
     version: '>=0'
@@ -238,10 +232,10 @@ provides:
   - name: orc
     category: dev-lang
     version: '>=0'
-  - name: ruby
+  - name: sassc
     category: dev-lang
     version: '>=0'
-  - name: sassc
+  - name: vala
     category: dev-lang
     version: '>=0'
   - name: vala
@@ -319,10 +313,10 @@ provides:
   - name: libsigc++
     category: dev-libs
     version: '>=0'
-  - name: libwacom
+  - name: libudfread
     category: dev-libs
     version: '>=0'
-  - name: libyaml
+  - name: libwacom
     category: dev-libs
     version: '>=0'
   - name: newt
@@ -331,7 +325,7 @@ provides:
   - name: nss
     category: dev-libs
     version: '>=0'
-  - name: ocl-icd
+  - name: opencl-icd-loader
     category: dev-libs
     version: '>=0'
   - name: protobuf
@@ -355,12 +349,6 @@ provides:
   - name: zziplib
     category: dev-libs
     version: '>=0'
-  - name: App-pwhich
-    category: dev-perl
-    version: '>=0'
-  - name: Authen-SASL
-    category: dev-perl
-    version: '>=0'
   - name: B-Hooks-EndOfScope
     category: dev-perl
     version: '>=0'
@@ -382,16 +370,10 @@ provides:
   - name: Devel-StackTrace
     category: dev-perl
     version: '>=0'
-  - name: Digest-HMAC
-    category: dev-perl
-    version: '>=0'
   - name: Dist-CheckConflicts
     category: dev-perl
     version: '>=0'
   - name: Encode-Locale
-    category: dev-perl
-    version: '>=0'
-  - name: Error
     category: dev-perl
     version: '>=0'
   - name: Eval-Closure
@@ -454,9 +436,6 @@ provides:
   - name: IO-Socket-INET6
     category: dev-perl
     version: '>=0'
-  - name: IO-Socket-SSL
-    category: dev-perl
-    version: '>=0'
   - name: IPC-System-Simple
     category: dev-perl
     version: '>=0'
@@ -475,9 +454,6 @@ provides:
   - name: LWP-Protocol-https
     category: dev-perl
     version: '>=0'
-  - name: MailTools
-    category: dev-perl
-    version: '>=0'
   - name: Module-Build-Tiny
     category: dev-perl
     version: '>=0'
@@ -485,9 +461,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Module-Runtime
-    category: dev-perl
-    version: '>=0'
-  - name: Mozilla-CA
     category: dev-perl
     version: '>=0'
   - name: MRO-Compat
@@ -503,9 +476,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Net-HTTP
-    category: dev-perl
-    version: '>=0'
-  - name: Net-SSLeay
     category: dev-perl
     version: '>=0'
   - name: Package-Stash
@@ -568,9 +538,6 @@ provides:
   - name: Tie-IxHash
     category: dev-perl
     version: '>=0'
-  - name: TimeDate
-    category: dev-perl
-    version: '>=0'
   - name: Try-Tiny
     category: dev-perl
     version: '>=0'
@@ -631,50 +598,8 @@ provides:
   - name: pyxdg
     category: dev-python
     version: '>=0'
-  - name: bundler
-    category: dev-ruby
-    version: '>=0'
-  - name: did_you_mean
-    category: dev-ruby
-    version: '>=0'
-  - name: json
-    category: dev-ruby
-    version: '>=0'
-  - name: kpeg
-    category: dev-ruby
-    version: '>=0'
-  - name: minitest
-    category: dev-ruby
-    version: '>=0'
-  - name: net-telnet
-    category: dev-ruby
-    version: '>=0'
-  - name: power_assert
-    category: dev-ruby
-    version: '>=0'
-  - name: racc
-    category: dev-ruby
-    version: '>=0'
-  - name: rake
-    category: dev-ruby
-    version: '>=0'
-  - name: rdoc
-    category: dev-ruby
-    version: '>=0'
-  - name: rubygems
-    category: dev-ruby
-    version: '>=0'
-  - name: test-unit
-    category: dev-ruby
-    version: '>=0'
-  - name: xmlrpc
-    category: dev-ruby
-    version: '>=0'
   - name: bibtexu
     category: dev-tex
-    version: '>=0'
-  - name: colm
-    category: dev-util
     version: '>=0'
   - name: gtk-update-icon-cache
     category: dev-util
@@ -682,17 +607,11 @@ provides:
   - name: opencl-headers
     category: dev-util
     version: '>=0'
-  - name: ragel
-    category: dev-util
-    version: '>=0'
   - name: vulkan-headers
     category: dev-util
     version: '>=0'
   - name: wayland-scanner
     category: dev-util
-    version: '>=0'
-  - name: git
-    category: dev-vcs
     version: '>=0'
   - name: gsettings-desktop-schemas
     category: gnome-base
@@ -1012,6 +931,9 @@ provides:
   - name: xdg-dbus-proxy
     category: sys-apps
     version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
   - name: realtime-base
     category: sys-auth
     version: '>=0'
@@ -1072,16 +994,7 @@ provides:
   - name: perl-Compress-Raw-Zlib
     category: virtual
     version: '>=0'
-  - name: perl-Digest-MD5
-    category: virtual
-    version: '>=0'
-  - name: perl-Digest-SHA
-    category: virtual
-    version: '>=0'
   - name: perl-File-Path
-    category: virtual
-    version: '>=0'
-  - name: perl-IO
     category: virtual
     version: '>=0'
   - name: perl-IO-Compress
@@ -1090,13 +1003,7 @@ provides:
   - name: perl-IO-Socket-IP
     category: virtual
     version: '>=0'
-  - name: perl-libnet
-    category: virtual
-    version: '>=0'
   - name: perl-Locale-Maketext
-    category: virtual
-    version: '>=0'
-  - name: perl-MIME-Base64
     category: virtual
     version: '>=0'
   - name: perl-parent
@@ -1121,12 +1028,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-XSLoader
-    category: virtual
-    version: '>=0'
-  - name: ruby-ssl
-    category: virtual
-    version: '>=0'
-  - name: rubygems
     category: virtual
     version: '>=0'
   - name: tex-base
