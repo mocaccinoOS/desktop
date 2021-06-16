@@ -1,7 +1,7 @@
 name: "gcc-base"
 category: "system"
-version: 10.2.0+15
-gcc_version: "10.2.0"
+version: 10.3.0+1
+gcc_version: "10.3.0"
 labels:
   llvm_slot: "11"
 packages:
