@@ -1,0 +1,24 @@
+excludes:
+- ^/var/cache/distfiles
+- ^/usr/portage/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
+env:
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+prelude:
+# - cp -rf package.use /etc/portage/
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+# remove build deps
+# - emerge -C 
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
+- category: "apps"
+  name: "flatpak"
+  version: ">=0"
