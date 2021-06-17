@@ -20,6 +20,10 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "dev-lang/python" ]; then
         continue
     fi
+    # Skip images/portage
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
+        continue
+    fi
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
     docker images --filter='reference=quay.io/mocaccinocache/desktop' --format='{{.Repository}}:{{.Tag}}' | xargs -r docker rmi
