@@ -15,9 +15,6 @@ provides:
   - name: caribou
     category: app-accessibility
     version: '>=0'
-  - name: libcroco
-    category: dev-libs
-    version: '>=0'
   - name: libtimezonemap
     category: dev-libs
     version: '>=0'
@@ -25,9 +22,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pexpect
-    category: dev-python
-    version: '>=0'
-  - name: polib
     category: dev-python
     version: '>=0'
   - name: psutil
@@ -49,9 +43,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: tinycss2
-    category: dev-python
-    version: '>=0'
-  - name: toml
     category: dev-python
     version: '>=0'
   - name: webencodings

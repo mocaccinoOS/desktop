@@ -244,6 +244,9 @@ provides:
   - name: plasma-pa
     category: kde-plasma
     version: '>=0'
+  - name: plasma-systemmonitor
+    category: kde-plasma
+    version: '>=0'
   - name: plasma-vault
     category: kde-plasma
     version: '>=0'
@@ -319,11 +322,14 @@ provides:
   - name: openconnect
     category: net-vpn
     version: '>=0'
+  - name: libqalculate
+    category: sci-libs
+    version: '>=0'
   - name: smartmontools
     category: sys-apps
     version: '>=0'
-  - name: xdg-desktop-portal
-    category: sys-apps
+  - name: gdb
+    category: sys-devel
     version: '>=0'
   - name: cryfs
     category: sys-fs

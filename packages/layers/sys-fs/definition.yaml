@@ -208,9 +208,6 @@ provides:
   - name: lsof
     category: sys-process
     version: '>=0'
-  - name: eject
-    category: virtual
-    version: '>=0'
   - name: krb5
     category: virtual
     version: '>=0'
