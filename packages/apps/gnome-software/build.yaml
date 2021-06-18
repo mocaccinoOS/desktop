@@ -10,11 +10,10 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
+- cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-# remove build deps
-# - emerge -C 
 requires:
 - category: "layers"
   name: "gnome-common"
