@@ -6,6 +6,12 @@ labels:
   emerge.packages: >-
     gnome-extra/gnome-software
 provides:
+  - name: gnome-software
+    category: gnome-extra
+    version: '>=0'
+  - name: libhandy
+    category: gui-libs
+    version: '>=0'
 requires:
   - category: "layers"
     name: "gnome-common"

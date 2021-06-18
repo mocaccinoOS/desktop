@@ -12,6 +12,15 @@ provides:
   - name: flatpak
     category: acct-user
     version: '>=0'
+  - name: gcab
+    category: app-arch
+    version: '>=0'
+  - name: libjcat
+    category: dev-libs
+    version: '>=0'
+  - name: libxmlb
+    category: dev-libs
+    version: '>=0'
   - name: pyparsing
     category: dev-python
     version: '>=0'
