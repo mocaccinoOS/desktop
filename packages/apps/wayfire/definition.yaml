@@ -6,8 +6,20 @@ labels:
   emerge.packages: >-
     gui-wm/wayfire
 provides:
+  - name: gtk-layer-shell
+    category: gui-libs
+    version: '>=0'
+  - name: wf-config
+    category: gui-libs
+    version: '>=0'
+  - name: wlroots
+    category: gui-libs
+    version: '>=0'
   - name: wayfire
     category: gui-wm
+    version: '>=0'
+  - name: glm
+    category: media-libs
     version: '>=0'
 requires:
   - category: "layers"
