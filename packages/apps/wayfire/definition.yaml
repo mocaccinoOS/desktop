@@ -1,13 +1,13 @@
 category: "apps"
-name: "opera"
-version: 77.0.4054.90+1
+name: "wayfire"
+version: 0.7.1+1
 labels:
-  emerge.jobs: "1"
+  emerge.jobs: "3"
   emerge.packages: >-
-    www-client/opera
+    gui-wm/wayfire
 provides:
-  - name: opera
-    category: www-client
+  - name: wayfire
+    category: gui-wm
     version: '>=0'
 requires:
   - category: "layers"
