@@ -1,0 +1,15 @@
+category: "apps"
+name: "wcm"
+version: 0.7.0+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    gui-apps/wcm
+provides:
+  - name: wcm
+    category: gui-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
