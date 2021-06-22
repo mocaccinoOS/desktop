@@ -940,7 +940,22 @@ provides:
   - name: bc
     category: sys-devel
     version: '>=0'
+  - name: clang
+    category: sys-devel
+    version: '>=0'
+  - name: clang-runtime
+    category: sys-devel
+    version: '>=0'
+  - name: llvm
+    category: sys-devel
+    version: '>=0'
   - name: binutils-libs
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt-sanitizers
     category: sys-libs
     version: '>=0'
   - name: cracklib
