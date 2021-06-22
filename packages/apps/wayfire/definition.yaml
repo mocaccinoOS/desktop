@@ -6,7 +6,25 @@ labels:
   emerge.packages: >-
     gui-wm/wayfire gui-apps/wcm gui-libs/wayfire-plugins-extra
 provides:
+  - name: atkmm
+    category: dev-cpp
+    version: '>=0'
+  - name: cairomm
+    category: dev-cpp
+    version: '>=0'
+  - name: gtkmm
+    category: dev-cpp
+    version: '>=0'
+  - name: pangomm
+    category: dev-cpp
+    version: '>=0'
+  - name: wcm
+    category: gui-apps
+    version: '>=0'
   - name: gtk-layer-shell
+    category: gui-libs
+    version: '>=0'
+  - name: wayfire-plugins-extra
     category: gui-libs
     version: '>=0'
   - name: wf-config

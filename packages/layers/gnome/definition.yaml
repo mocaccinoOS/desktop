@@ -54,6 +54,9 @@ provides:
   - name: evince
     category: app-text
     version: '>=0'
+  - name: ocaml
+    category: dev-lang
+    version: '>=0'
   - name: folks
     category: dev-libs
     version: '>=0'
