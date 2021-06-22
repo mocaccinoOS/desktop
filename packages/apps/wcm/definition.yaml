@@ -1,6 +1,6 @@
 category: "apps"
 name: "wcm"
-version: 0.7.0+1
+version: 0.7.0+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -12,4 +12,7 @@ provides:
 requires:
   - category: "layers"
     name: "gnome-common"
+    version: ">=0"
+  - category: "apps"
+    name: "wayfire"
     version: ">=0"

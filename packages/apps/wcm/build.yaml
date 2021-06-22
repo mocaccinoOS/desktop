@@ -15,3 +15,6 @@ requires:
 - category: "layers"
   name: "gnome-common"
   version: ">=0"
+- category: "apps"
+  name: "wayfire"
+  version: ">=0"
