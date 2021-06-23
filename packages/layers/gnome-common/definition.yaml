@@ -22,9 +22,6 @@ provides:
   - name: gcr
     category: app-crypt
     version: '>=0'
-  - name: gtk-layer-shell
-    category: gui-libs
-    version: '>=0'
   - name: libsecret
     category: app-crypt
     version: '>=0'
@@ -150,6 +147,9 @@ provides:
     version: '>=0'
   - name: zenity
     category: gnome-extra
+    version: '>=0'
+  - name: gtk-layer-shell
+    category: gui-libs
     version: '>=0'
   - name: libwpe
     category: gui-libs
