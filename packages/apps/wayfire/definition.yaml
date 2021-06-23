@@ -1,14 +1,11 @@
 category: "apps"
 name: "wayfire"
-version: 0.7.1+6
+version: 0.7.1+7
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
     gui-wm/wayfire gui-libs/wayfire-plugins-extra gui-apps/wf-shell gui-apps/wcm gui-apps/waybar
 provides:
-  - name: gtk-layer-shell
-    category: gui-libs
-    version: '>=0'
   - name: wf-config
     category: gui-libs
     version: '>=0'
