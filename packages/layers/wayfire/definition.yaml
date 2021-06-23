@@ -1,10 +1,10 @@
-category: "apps"
+category: "layers"
 name: "wayfire"
-version: 0.7.1+8
+version: 0.7.1+9
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-wm/wayfire gui-libs/wayfire-plugins-extra gui-apps/wf-shell gui-apps/wcm gui-apps/waybar
+    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra x11-terms/alacritty
 provides:
   - name: wf-config
     category: gui-libs
