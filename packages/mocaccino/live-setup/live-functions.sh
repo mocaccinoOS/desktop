@@ -230,9 +230,11 @@ setup_networkmanager() {
 }
 
 prepare() {
-    ldconfig
-    systemctl --no-reload disable ldconfig.service 2> /dev/null
-    systemctl stop ldconfig.service 2> /dev/null
+    # Try to prevent rebuild dynamic linker cache.
+    # Simular case https://patchwork.openembedded.org/patch/143523/
+    touch /etc/.updated
+    touch /var/.updated
+
     SYSTEMD_SERVICES=(
         "avahi-daemon"
         "cups"
