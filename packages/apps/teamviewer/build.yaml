@@ -12,6 +12,7 @@ env:
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
+- cp -rf package.env /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
