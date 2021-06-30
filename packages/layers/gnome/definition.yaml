@@ -180,6 +180,9 @@ provides:
   - name: gtk
     category: gui-libs
     version: '>=0'
+  - name: libhandy
+    category: gui-libs
+    version: '>=0'
   - name: tepl
     category: gui-libs
     version: '>=0'
