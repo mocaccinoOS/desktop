@@ -1,0 +1,15 @@
+category: "apps"
+name: "kate"
+version: 20.12.3+1
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    kde-apps/kate
+provides:
+  - name: kate
+    category: kde-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
