@@ -49,7 +49,7 @@ setup_autologin() {
 	sed -i "s/^Conflicts=getty@t.*//g" /lib/systemd/system/sddm.service
 
         # This fix shutdown issue with sddm
-        #	systemctl stop getty@tty1
+        systemctl stop getty@tty1
     fi
 
     # LightDM
@@ -259,6 +259,6 @@ prepare() {
         setup_default_xsession "gnome"
         systemctl enable "gdm"
     fi
-    
+
     setup_networkmanager
 }
