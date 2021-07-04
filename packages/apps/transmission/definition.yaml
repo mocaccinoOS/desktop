@@ -1,6 +1,6 @@
 category: "apps"
 name: "transmission"
-version: 3.00+24
+version: 3.00+25
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
