@@ -1,10 +1,10 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 5.19.5+38
+version: 20.12.3+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    kde-apps/ark kde-apps/dolphin kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind  kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite
+    kde-apps/ark kde-apps/dolphin kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind  kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite sys-block/partitionmanager
 requires:
   - category: "layers"
     name: "plasma"
@@ -105,6 +105,9 @@ provides:
     version: '>=0'
   - name: kimageannotator
     category: media-libs
+    version: '>=0'
+  - name: partitionmanager
+    category: sys-block
     version: '>=0'
   - name: cron
     category: virtual
