@@ -35,6 +35,9 @@ requires:
   - name: systemd-timesync
     category: entity
     version: ">=0"
+  - name: sgx
+    category: entity
+    version: ">=0"
   - name: sshd
     category: entity
     version: ">=0"
