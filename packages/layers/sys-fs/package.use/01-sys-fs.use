@@ -2,8 +2,8 @@ app-crypt/mit-krb5 keyutils nls pkinit threads
 dev-libs/libevent ssl threads
 dev-libs/libverto libev threads
 # slp disabled due to https://bugs.gentoo.org/show_bug.cgi?id=617278
-net-nds/openldap berkdb crypt gnutls ipv6 kerberos perl sasl ssl syslog tcpd -minimal -slp
 sys-block/parted device-mapper
+sys-libs/ldb -ldap
 # 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
 net-fs/samba -abi_x86_32 acl aio client oav swat winbind -cluster -ceph -ldap
 # udisks, we want cryptsetup support
