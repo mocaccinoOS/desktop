@@ -11,7 +11,7 @@ packages:
       lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 3+20
+    version: 3+21
     lts: true
     emerge:
       jobs: "3"
