@@ -8,6 +8,9 @@ requires:
   - name: systemd-groups
     version: ">=0"
     category: meta
+  - name: crontab
+    category: entity
+    version: ">=0"
   - name: man
     category: entity
     version: ">=0"
