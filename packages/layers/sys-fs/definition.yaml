@@ -9,22 +9,7 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
-  - name: mail
-    category: entity
-    version: ">=0"
-  - name: postmaster
-    category: entity
-    version: ">=0"
 provides:
-  - name: mail
-    category: acct-group
-    version: '>=0'
-  - name: mail
-    category: acct-user
-    version: '>=0'
-  - name: postmaster
-    category: acct-user
-    version: '>=0'
   - name: mit-krb5
     category: app-crypt
     version: '>=0'
