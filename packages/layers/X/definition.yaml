@@ -42,6 +42,9 @@ requires:
   - name: lpadmin
     category: entity
     version: ">=0"
+  - name: mail
+    category: entity
+    version: ">=0"
   - name: netdev
     category: entity
     version: ">=0"
@@ -61,7 +64,7 @@ requires:
     category: entity
     version: ">=0"
   - name: postmaster
-    category: acct-user
+    category: entity
     version: '>=0'
   - name: realtime
     category: entity
