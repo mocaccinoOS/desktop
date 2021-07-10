@@ -16,13 +16,17 @@ jobs:
       MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
       MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
       IMAGE_REPOSITORY: quay.io/mocaccinocache/desktop
-      NODE_SELECTOR: "luet.io/workload: jobs"
+#      NODE_SELECTOR: "luet.io/workload: jobs"
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
       BACKEND: docker-sidecar
       DOCKER_REGISTRY: quay.io
       DOCKER_USER: ${{ secrets.QUAY_USERNAME }}
       DOCKER_PASS: ${{ secrets.QUAY_PASSWORD }}
+      NAMESPACE: "workload-desktop"
+      EDGEVPN: ${{ secrets.EDGEVPN }}
+      MASTER: 10.1.0.20
+      ADDRESS: "10.1.0.201/24"
     steps:
     - uses: actions/checkout@v2
     - uses: fkirc/skip-duplicate-actions@master
@@ -39,13 +43,19 @@ jobs:
         make validate
     - name: Build repository 🔧
       run: |
-        export NAMESPACE=workload-desktop
-        export KUBECONFIG=$GITHUB_WORKSPACE/kubeconfig
+        if [ -z "$EDGEVPN" ]; then
+          export KUBECONFIG=$GITHUB_WORKSPACE/kubeconfig
+          echo "$ENCODED_KUBECONFIG" | base64 -d > $KUBECONFIG
+        else
+          source .github/helpers.sh
+          start_vpn
+          prepare_jumpbox
+          export KUBECONFIG=$PWD/k3s.yaml
+        fi
         export REF=$GITHUB_SHA
         export GITHUB_REPO=$GITHUB_REPOSITORY
-        echo "$ENCODED_KUBECONFIG" | base64 -d > $KUBECONFIG
         kubectl create namespace $NAMESPACE || true
-        DOCKER_HOST=$DOCKER_CFG luet k8s-build-scheduler
+        luet k8s-build-scheduler
     - name: Create repository 🔧
       run: |
         BUILD_PHASE=false CREATE_PHASE=true luet k8s-build-scheduler
