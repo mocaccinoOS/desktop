@@ -46,7 +46,7 @@ setup_autologin() {
     if [ -f "$SDDM_FILE" ]; then
         sed -i "s/^User=.*/User=${LIVE_USER}/" $SDDM_FILE
         sed -i "s/^Session=.*/Session=default/" $SDDM_FILE
-	sed -i "s/^Conflicts=getty@t.*//g" /lib/systemd/system/sddm.service
+        sed -i "s/^Conflicts=getty@t.*//g" /lib/systemd/system/sddm.service
 
         # This fix shutdown issue with sddm
         systemctl stop getty@tty1
@@ -56,6 +56,8 @@ setup_autologin() {
     if [ -f "$LIGHTDM_FILE" ]; then
         sed -i "s/autologin-user=.*/autologin-user=${LIVE_USER}/" $LIGHTDM_FILE
         sed -i "/^#.*autologin-user=/ s/^#//" $LIGHTDM_FILE
+        sed -i "s/autologin-session=.*/autologin-session=default/" $LIGHTDM_FILE
+        sed -i "/^#.*autologin-session=/ s/^#//" $LIGHTDM_FILE
     fi
 
     fixup_gnome_autologin_session
@@ -80,6 +82,7 @@ disable_autologin() {
     # LightDM
     if [ -f "$LIGHTDM_FILE" ]; then
         sed -i "s/^autologin-user=.*/#autologin-user=/" $LIGHTDM_FILE
+        sed -i "s/^autologin-session=.*/#autologin-session=/" $LIGHTDM_FILE
     fi
 
     # SDDM
@@ -188,7 +191,6 @@ setup_gui_installer() {
     sed -i "/installer --fullscreen/ s/^# //" "${flux_startup_file}"
 
     setup_desktop_session "${LIVE_USER}" "fluxbox"
-
 }
 
 # This function reads /etc/skel/.dmrc and properly
