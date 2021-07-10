@@ -94,9 +94,6 @@ provides:
   - name: mail
     category: acct-group
     version: '>=0'
-  - name: mail
-    category: acct-user
-    version: '>=0'
   - name: netdev
     category: acct-group
     version: '>=0'
@@ -136,10 +133,16 @@ provides:
   - name: dnsmasq
     category: acct-user
     version: '>=0'
+  - name: mail
+    category: acct-user
+    version: '>=0'
   - name: pcscd
     category: acct-user
     version: '>=0'
   - name: postfix
+    category: acct-user
+    version: '>=0'
+  - name: postmaster
     category: acct-user
     version: '>=0'
   - name: at-spi2-atk
@@ -176,9 +179,6 @@ provides:
     category: app-eselect
     version: '>=0'
   - name: eselect-notify-send
-    category: app-eselect
-    version: '>=0'
-  - name: eselect-xvmc
     category: app-eselect
     version: '>=0'
   - name: ibus
@@ -263,6 +263,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: atk
+    category: dev-libs
+    version: '>=0'
+  - name: cyrus-sasl
     category: dev-libs
     version: '>=0'
   - name: dbus-glib
@@ -889,6 +892,9 @@ provides:
   - name: libupnp
     category: net-libs
     version: '>=0'
+  - name: mailbase
+    category: net-mail
+    version: '>=0'
   - name: dhcp
     category: net-misc
     version: '>=0'
@@ -952,22 +958,7 @@ provides:
   - name: bc
     category: sys-devel
     version: '>=0'
-  - name: clang
-    category: sys-devel
-    version: '>=0'
-  - name: clang-runtime
-    category: sys-devel
-    version: '>=0'
-  - name: llvm
-    category: sys-devel
-    version: '>=0'
   - name: binutils-libs
-    category: sys-libs
-    version: '>=0'
-  - name: compiler-rt
-    category: sys-libs
-    version: '>=0'
-  - name: compiler-rt-sanitizers
     category: sys-libs
     version: '>=0'
   - name: cracklib

@@ -81,6 +81,9 @@ provides:
   - name: cdrom
     category: acct-group
     version: '>=0'
+  - name: crontab
+    category: acct-group
+    version: '>=0'
   - name: dialout
     category: acct-group
     version: '>=0'

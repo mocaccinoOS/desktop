@@ -6,9 +6,6 @@ labels:
   emerge.packages: >-
     net-misc/teamviewer
 provides:
-  - name: qtwebkit
-    category: dev-qt
-    version: '>=0'
   - name: teamviewer
     category: net-misc
     version: '>=0'

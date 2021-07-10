@@ -54,9 +54,6 @@ provides:
   - name: evince
     category: app-text
     version: '>=0'
-  - name: ocaml
-    category: dev-lang
-    version: '>=0'
   - name: folks
     category: dev-libs
     version: '>=0'
@@ -178,6 +175,9 @@ provides:
     category: gui-libs
     version: '>=0'
   - name: gtk
+    category: gui-libs
+    version: '>=0'
+  - name: libhandy
     category: gui-libs
     version: '>=0'
   - name: tepl
