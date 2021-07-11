@@ -1,12 +1,9 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+40
+version: 3.2.32+41
 provides:
   - name: calamares
     category: app-admin
-    version: '>=0'
-  - name: kpmcore
-    category: sys-libs
     version: '>=0'
 labels:
   emerge.jobs: "1"
