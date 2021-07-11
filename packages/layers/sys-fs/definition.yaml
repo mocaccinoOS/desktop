@@ -19,9 +19,6 @@ provides:
   - name: check
     category: dev-libs
     version: '>=0'
-  - name: cyrus-sasl
-    category: dev-libs
-    version: '>=0'
   - name: libatasmart
     category: dev-libs
     version: '>=0'
@@ -52,9 +49,6 @@ provides:
   - name: fixtures
     category: dev-python
     version: '>=0'
-  - name: linecache2
-    category: dev-python
-    version: '>=0'
   - name: pbr
     category: dev-python
     version: '>=0'
@@ -71,12 +65,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: testtools
-    category: dev-python
-    version: '>=0'
-  - name: traceback2
-    category: dev-python
-    version: '>=0'
-  - name: unittest2
     category: dev-python
     version: '>=0'
   - name: cmocka
@@ -97,12 +85,6 @@ provides:
   - name: rpcsvc-proto
     category: net-libs
     version: '>=0'
-  - name: mailbase
-    category: net-mail
-    version: '>=0'
-  - name: openldap
-    category: net-nds
-    version: '>=0'
   - name: gptfdisk
     category: sys-apps
     version: '>=0'
@@ -118,10 +100,16 @@ provides:
   - name: btrfs-progs
     category: sys-fs
     version: '>=0'
+  - name: compsize
+    category: sys-fs
+    version: '>=0'
   - name: dmraid
     category: sys-fs
     version: '>=0'
   - name: dosfstools
+    category: sys-fs
+    version: '>=0'
+  - name: duperemove
     category: sys-fs
     version: '>=0'
   - name: f2fs-tools
