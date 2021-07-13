@@ -24,7 +24,7 @@ jobs:
       DOCKER_USER: ${{ secrets.QUAY_USERNAME }}
       DOCKER_PASS: ${{ secrets.QUAY_PASSWORD }}
       NAMESPACE: "workload-desktop"
-      EDGEVPN: ${{ secrets.EDGEVPN }}
+#      EDGEVPN: ${{ secrets.EDGEVPN }}
       MASTER: 10.1.0.20
       ADDRESS: "10.1.0.201/24"
     steps:
