@@ -53,6 +53,9 @@ requires:
   - name: ntp
     category: entity
     version: ">=0"
+  - name: wheel
+    category: entity
+    version: ">=0"
 emerge:
   jobs: "3"
   packages:
