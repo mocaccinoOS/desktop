@@ -1,6 +1,6 @@
 category: "apps"
 name: "latte-dock"
-version: 0.9.12+4
+version: 0.9.12+5
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
