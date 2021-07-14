@@ -47,6 +47,9 @@ requires:
   - name: unbound
     category: entity
     version: ">=0"
+  - name: users
+    category: entity
+    version: ">=0"
   - name: uucp
     category: entity
     version: ">=0"
