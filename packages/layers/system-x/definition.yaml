@@ -71,6 +71,12 @@ requires:
   - name: sshd
     category: entity
     version: ">=0"
+  - name: tape
+    category: entity
+    version: ">=0"
+  - name: tty
+    category: entity
+    version: ">=0"
   - name: unbound
     category: entity
     version: ">=0"
@@ -80,7 +86,13 @@ requires:
   - name: uucp
     category: entity
     version: ">=0"
+  - name: utmp
+    category: entity
+    version: ">=0"
   - name: ntp
+    category: entity
+    version: ">=0"
+  - name: video
     category: entity
     version: ">=0"
   - name: wheel
