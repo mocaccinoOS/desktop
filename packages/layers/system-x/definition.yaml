@@ -8,13 +8,40 @@ requires:
   - name: systemd-groups
     version: ">=0"
     category: meta
+  - name: adm
+    category: entity
+    version: ">=0"
+  - name: audio     
+    category: entity
+    version: ">=0"
+  - name: cdrom   
+    category: entity
+    version: ">=0"
   - name: crontab
+    category: entity
+    version: ">=0"
+  - name: disk
+    category: entity
+    version: ">=0"
+  - name: input    
+    category: entity
+    version: ">=0"
+  - name: kmem
+    category: entity
+    version: ">=0"
+  - name: kvm
+    category: entity
+    version: ">=0"
+  - name: lp   
     category: entity
     version: ">=0"
   - name: man
     category: entity
     version: ">=0"
   - name: messagebus
+    category: entity
+    version: ">=0"
+  - name: ntp
     category: entity
     version: ">=0"
   - name: polkitd
