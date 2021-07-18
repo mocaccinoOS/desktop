@@ -1,7 +1,4 @@
 install:
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
-# Fixme: check ownership and permissions for polkit
-# - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
-# - chown -R polkitd /{etc,usr/share}/polkit-1/rules.d
 - ldconfig
 - source /etc/profile && env-update

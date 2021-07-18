@@ -28,7 +28,11 @@ steps:
 - emerge -1 sys-apps/systemd
 - emerge -1uDN @system
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- groupadd -g 102 polkitd
+- useradd -g 102 -u 102 polkitd
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
+- chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
+- chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
