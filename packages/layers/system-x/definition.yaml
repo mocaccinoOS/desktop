@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210713+1"
+version: "0.20210720"
 category: layers
 requires:
   - category: "system"
@@ -11,10 +11,10 @@ requires:
   - name: adm
     category: entity
     version: ">=0"
-  - name: audio     
+  - name: audio
     category: entity
     version: ">=0"
-  - name: cdrom   
+  - name: cdrom
     category: entity
     version: ">=0"
   - name: crontab
@@ -23,7 +23,7 @@ requires:
   - name: disk
     category: entity
     version: ">=0"
-  - name: input    
+  - name: input
     category: entity
     version: ">=0"
   - name: kmem
@@ -32,7 +32,7 @@ requires:
   - name: kvm
     category: entity
     version: ">=0"
-  - name: lp   
+  - name: lp
     category: entity
     version: ">=0"
   - name: man
