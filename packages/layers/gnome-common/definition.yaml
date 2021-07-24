@@ -4,7 +4,7 @@ version: 0.8+7
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    gui-libs/libhandy x11-libs/goffice app-text/libspectre dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter dev-python/pyatspi
+    gui-libs/libhandy x11-libs/goffice app-text/libspectre dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter dev-python/pyatspi x11-libs/colord-gtk
 requires:
   - category: "layers"
     name: "X"
@@ -192,6 +192,9 @@ provides:
     version: '>=0'
   - name: imagemagick-tools
     category: virtual
+    version: '>=0'
+  - name: colord-gtk
+    category: x11-libs
     version: '>=0'
   - name: goffice
     category: x11-libs
