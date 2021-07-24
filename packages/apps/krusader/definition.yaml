@@ -1,6 +1,6 @@
 category: "apps"
 name: "krusader"
-version: 2.7.2+5
+version: 2.7.2+6
 labels:
   emerge.jobs: "3"
   emerge.packages: >-

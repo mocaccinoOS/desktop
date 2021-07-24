@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnumeric"
-version: 1.12.48+16
+version: 1.12.48+17
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

@@ -1,9 +1,9 @@
 name: gentoo-portage
-version: "0.20210707"
+version: "0.20210724"
 category: layers
 labels:
   autobump.strategy: git_hash
-  git.hash: "36412f865687f842f34e87f2a9775f41181a3c0f"
+  git.hash: "beb7512ac3c4af3f9ba250fe05fddf2bf6be4527"
   github.owner: gentoo
   github.repo: gentoo
 hidden: true
