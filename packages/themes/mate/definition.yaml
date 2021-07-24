@@ -1,0 +1,12 @@
+category: "themes"
+name: "mate"
+version: 1+1
+labels:
+requires:
+  - category: "layers"
+    name: "mate"
+    version: ">=0"
+  - category: "system"
+    name: "mocaccino-wallpaper"
+    version: ">=0"
+provides:
