@@ -15,7 +15,7 @@ prelude:
 - cp -rf patches /etc/portage/
 
 steps:
-- emerge -1 media-libs/harfbuzz
+- USE="-truetype" emerge -1 media-libs/harfbuzz
 - USE="-vaapi" emerge -1 media-libs/mesa
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - etc-update -q --automode -5
