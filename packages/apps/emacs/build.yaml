@@ -1,3 +1,6 @@
+prelude:
+- cp -rf package.use /etc/portage/
+
 excludes:
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
