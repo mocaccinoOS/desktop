@@ -15,7 +15,7 @@ prelude:
 - cp -rf patches /etc/portage/
 
 steps:
-- emerge -1 dev-tex/bibtexu
+- emerge -1 dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
 - USE="-cairo -harfbuzz" emerge -1 media-libs/harfbuzz media-libs/freetype
 - USE="-vaapi" emerge -1 media-libs/mesa
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
