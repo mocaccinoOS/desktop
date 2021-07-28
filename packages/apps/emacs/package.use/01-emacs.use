@@ -1,1 +1,2 @@
-app-editors/emacs libxml2 xft
+app-editors/emacs libxml2 xft gui
+app-emacs/emacs-common gui
