@@ -21,7 +21,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions"
-    version: 6.1.22+3
+    version: 6.1.22+4
     lts: false
     emerge:
       jobs: "3"
@@ -50,9 +50,9 @@ packages:
       - category: "entity"
         name: "vboxsf"
         version: ">=0"
-  - category: "apps"
+  - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.22+3
+    version: 6.1.22+4
     lts: true
     emerge:
       jobs: "3"
