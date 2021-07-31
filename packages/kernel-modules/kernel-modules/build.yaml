@@ -12,15 +12,18 @@ excludes:
 - ^/lib/modules/.*-mocaccino/modules\..*
 
 env:
-- FEATURES="-userpriv -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ .Values.emerge.jobs }}
-
+{{- if .Values.lts }}
+- KERNEL_VERSION=5.10.49
+{{- else}}
+- KERNEL_VERSION=5.13.1
+{{- end}}
   #prelude:
 # Add custom package.use for each package in the collection
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
-- emerge app-emulation/virtualbox-modules
 
 steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
