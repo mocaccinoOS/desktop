@@ -20,7 +20,7 @@ env:
 prelude:
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 {{- if .Values.lts }}
-- luet install -y kernel/mocaccino-modules-lts
+- luet install -y kernel/mocaccino-lts-modules
 {{- else}}
 - luet install -y kernel/mocaccino-modules
 {{- end}}
