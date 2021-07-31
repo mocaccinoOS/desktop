@@ -21,7 +21,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions"
-    version: 6.1.22+1
+    version: 6.1.22+2
     lts: false
     emerge:
       jobs: "3"
@@ -52,7 +52,7 @@ packages:
         version: ">=0"
   - category: "apps"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.22+1
+    version: 6.1.22+2
     lts: false
     emerge:
       jobs: "3"
