@@ -12,7 +12,7 @@ excludes:
 - ^/lib/modules/.*-mocaccino/modules\..*
 
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+- FEATURES="-userpriv -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ .Values.emerge.jobs }}
 
   #prelude:
