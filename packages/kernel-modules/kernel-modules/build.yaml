@@ -19,6 +19,11 @@ env:
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
+{{- if .Values.lts }}
+- luet install -y kernel/mocaccino-modules-lts
+{{- else}}
+- luet install -y kernel/mocaccino-modules
+{{- end}}
 
 steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
