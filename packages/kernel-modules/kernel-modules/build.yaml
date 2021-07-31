@@ -24,6 +24,9 @@ prelude:
 {{- else}}
 - luet install -y kernel/mocaccino-modules
 {{- end}}
+- |
+   modules=$(ls /lib/modules | head -n1) && \ 
+   ln -s /usr/src/linux /lib/modules/$modules/build
 
 steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
