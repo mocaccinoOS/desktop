@@ -1,0 +1,11 @@
+category: "apps"
+name: "tmux"
+version: 3.1+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-misc/tmux
+provides:
+  - name: tmux
+    category: app-misc
+    version: '>=0'
