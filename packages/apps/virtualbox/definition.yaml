@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 6.1.18+26
+version: 6.1.22+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -26,12 +26,6 @@ provides:
     version: '>=0'
   - name: libsdl
     category: media-libs
-    version: '>=0'
-  - name: bin86
-    category: sys-devel
-    version: '>=0'
-  - name: iasl
-    category: sys-power
     version: '>=0'
 requires:
   - category: "layers"

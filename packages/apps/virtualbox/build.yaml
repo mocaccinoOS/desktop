@@ -9,10 +9,9 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-prelude:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} --onlydeps
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C dev-lang/yasm sys-devel/bin86 sys-power/iasl
 requires:
 - category: "layers"
   name: "qt"
