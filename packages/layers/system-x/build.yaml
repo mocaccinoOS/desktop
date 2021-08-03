@@ -50,6 +50,7 @@ excludes:
 - ^/etc/csh.env
 - ^/etc/subgid
 - ^/etc/subuid
+- ^/mnt/.keep
 - ^/var/db/repos
 - ^/var/db/pkg
 - ^/var/lib/portage
