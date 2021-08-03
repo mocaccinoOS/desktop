@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.7+2
+version: 0.7+3
 labels:
   emerge.jobs: "8"
   emerge.packages: >-

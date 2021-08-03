@@ -1,6 +1,6 @@
 name: "gcc-base"
 category: "system"
-version: 10.3.0+9
+version: 10.3.0+10
 gcc_version: "10.3.0"
 labels:
   llvm_slot: "12"

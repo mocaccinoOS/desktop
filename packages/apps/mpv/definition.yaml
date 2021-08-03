@@ -1,6 +1,6 @@
 category: "apps"
 name: "mpv"
-version: 0.33.1+21
+version: 0.33.1+22
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
