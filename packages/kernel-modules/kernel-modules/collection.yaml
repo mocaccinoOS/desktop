@@ -19,38 +19,6 @@ packages:
         - app-emulation/virtualbox-modules
     labels:
       lts.kernel: "true"
-# Fails against 5.13 kernel, needs a patch
-#  - category: "kernel-modules"
-#    name: "virtualbox-guest-additions"
-#    version: 6.1.22+6
-#    lts: false
-#    emerge:
-#      jobs: "3"
-#      packages:
-#        - app-emulation/virtualbox-guest-additions
-#    provides:
-#      - name: vboxguest
-#        category: acct-group
-#        version: '>=0'
-#      - name: vboxguest
-#        category: acct-user
-#        version: '>=0'
-#      - name: vboxsf    
-#        category: acct-group
-#        version: '>=0'  
-#      - name: virtualbox-guest-additions
-#        category: app-emulation
-#        version: '>=0'
-#    requires:
-#      - category: "layers"
-#        name: "X"
-#        version: ">=0"
-#      - category: "entity"
-#        name: "vboxguest"
-#        version: ">=0"
-#      - category: "entity"
-#        name: "vboxsf"
-#        version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 6.1.22+6
