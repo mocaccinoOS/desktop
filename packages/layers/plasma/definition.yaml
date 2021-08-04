@@ -12,6 +12,9 @@ requires:
   - category: "apps"
     name: "vlc"
     version: ">=0"
+  - name: nm-openconnect
+    category: entity
+    version: ">=0"
   - name: tss
     category: entity
     version: ">=0"
