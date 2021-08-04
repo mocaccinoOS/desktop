@@ -160,11 +160,122 @@ provides:
   - name: sudo
     category: app-admin
     version: '>=0'
-  - name: system-config-printer
-    category: app-admin
-    version: '>=0'
   - name: rpm2targz
     category: app-arch
+    version: '>=0'
+  - name: myspell-af
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-bg
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ca
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-cs
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-cy
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-da
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-de
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-el
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-en
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-eo
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-es
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-et
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-fr
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ga
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-gl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-he
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-hr
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-hu
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-is
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-it
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-kk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-km
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-lt
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-lv
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-mk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ms
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nb
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nn
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pt
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pt-br
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ro
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ru
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sv
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-uk
+    category: app-dicts
     version: '>=0'
   - name: xmltoman
     category: app-doc
@@ -178,14 +289,17 @@ provides:
   - name: eselect-lua
     category: app-eselect
     version: '>=0'
-  - name: eselect-notify-send
-    category: app-eselect
-    version: '>=0'
   - name: ibus
     category: app-i18n
     version: '>=0'
   - name: unicode-data
     category: app-i18n
+    version: '>=0'
+  - name: docbook-dsssl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
     version: '>=0'
   - name: docbook-xml-dtd
     category: app-text
@@ -308,9 +422,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libical
-    category: dev-libs
-    version: '>=0'
-  - name: libindicator
     category: dev-libs
     version: '>=0'
   - name: libinput
@@ -604,9 +715,6 @@ provides:
   - name: pycairo
     category: dev-python
     version: '>=0'
-  - name: pycups
-    category: dev-python
-    version: '>=0'
   - name: pygobject
     category: dev-python
     version: '>=0'
@@ -615,6 +723,9 @@ provides:
     version: '>=0'
   - name: bibtexu
     category: dev-tex
+    version: '>=0'
+  - name: gtk-doc
+    category: dev-util
     version: '>=0'
   - name: gtk-update-icon-cache
     category: dev-util
@@ -650,6 +761,9 @@ provides:
     category: media-fonts
     version: '>=0'
   - name: font-util
+    category: media-fonts
+    version: '>=0'
+  - name: liberation-fonts
     category: media-fonts
     version: '>=0'
   - name: noto
@@ -916,9 +1030,6 @@ provides:
   - name: cups-filters
     category: net-print
     version: '>=0'
-  - name: cups-pk-helper
-    category: net-print
-    version: '>=0'
   - name: bluez
     category: net-wireless
     version: '>=0'
@@ -997,9 +1108,6 @@ provides:
   - name: mta
     category: virtual
     version: '>=0'
-  - name: notification-daemon
-    category: virtual
-    version: '>=0'
   - name: opencl
     category: virtual
     version: '>=0'
@@ -1010,6 +1118,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Compress-Raw-Zlib
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-Requirements
     category: virtual
     version: '>=0'
   - name: perl-File-Path
@@ -1117,6 +1228,9 @@ provides:
   - name: xrdb
     category: x11-apps
     version: '>=0'
+  - name: xrefresh
+    category: x11-apps
+    version: '>=0'
   - name: xset
     category: x11-apps
     version: '>=0'
@@ -1220,9 +1334,6 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libfontenc
-    category: x11-libs
-    version: '>=0'
-  - name: libnotify
     category: x11-libs
     version: '>=0'
   - name: libpciaccess
