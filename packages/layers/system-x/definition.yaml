@@ -138,6 +138,9 @@ provides:
   - name: cdrom
     category: acct-group
     version: '>=0'
+  - name: cron
+    category: acct-group
+    version: '>=0'
   - name: crontab
     category: acct-group
     version: '>=0'
@@ -230,6 +233,9 @@ provides:
     version: '>=0'
   - name: wheel
     category: acct-group
+    version: '>=0'
+  - name: cron
+    category: acct-user
     version: '>=0'
   - name: man
     category: acct-user
@@ -353,6 +359,21 @@ provides:
     version: '>=0'
   - name: eselect-rust
     category: app-eselect
+    version: '>=0'
+  - name: man-pages-it
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-ja
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-l10n
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-ru
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-zh_CN
+    category: app-i18n
     version: '>=0'
   - name: c_rehash
     category: app-misc
@@ -583,6 +604,12 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Digest-HMAC
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-EUCJPASCII
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-HanExtra
     category: dev-perl
     version: '>=0'
   - name: Error
@@ -1240,9 +1267,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Perl-OSType
-    category: virtual
-    version: '>=0'
-  - name: perl-Pod-Parser
     category: virtual
     version: '>=0'
   - name: perl-podlators

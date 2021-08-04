@@ -16,9 +16,6 @@ provides:
   - name: lmdb
     category: dev-db
     version: '>=0'
-  - name: check
-    category: dev-libs
-    version: '>=0'
   - name: libatasmart
     category: dev-libs
     version: '>=0'
@@ -43,34 +40,10 @@ provides:
   - name: docutils
     category: dev-python
     version: '>=0'
-  - name: extras
-    category: dev-python
-    version: '>=0'
-  - name: fixtures
-    category: dev-python
-    version: '>=0'
-  - name: pbr
-    category: dev-python
-    version: '>=0'
   - name: pygments
     category: dev-python
     version: '>=0'
-  - name: pyrsistent
-    category: dev-python
-    version: '>=0'
-  - name: python-mimeparse
-    category: dev-python
-    version: '>=0'
-  - name: subunit
-    category: dev-python
-    version: '>=0'
-  - name: testtools
-    category: dev-python
-    version: '>=0'
   - name: cmocka
-    category: dev-util
-    version: '>=0'
-  - name: cppunit
     category: dev-util
     version: '>=0'
   - name: cifs-utils
