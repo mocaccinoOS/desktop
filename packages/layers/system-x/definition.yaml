@@ -17,6 +17,9 @@ requires:
   - name: cdrom
     category: entity
     version: ">=0"
+  - name: cron
+    category: entity
+    version: ">=0"
   - name: crontab
     category: entity
     version: ">=0"
