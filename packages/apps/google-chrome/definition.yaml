@@ -6,9 +6,6 @@ labels:
   emerge.packages: >-
     www-client/google-chrome
 provides:
-  - name: liberation-fonts
-    category: media-fonts
-    version: '>=0'
   - name: google-chrome
     category: www-client
     version: '>=0'

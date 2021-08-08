@@ -19,6 +19,9 @@ provides:
   - name: geoclue
     category: acct-user
     version: '>=0'
+  - name: system-config-printer
+    category: app-admin
+    version: '>=0'
   - name: gcr
     category: app-crypt
     version: '>=0'
@@ -27,6 +30,9 @@ provides:
     version: '>=0'
   - name: p11-kit
     category: app-crypt
+    version: '>=0'
+  - name: eselect-notify-send
+    category: app-eselect
     version: '>=0'
   - name: geoclue
     category: app-misc
@@ -41,12 +47,6 @@ provides:
     category: app-pda
     version: '>=0'
   - name: djvu
-    category: app-text
-    version: '>=0'
-  - name: docbook-dsssl-stylesheets
-    category: app-text
-    version: '>=0'
-  - name: docbook-sgml-dtd
     category: app-text
     version: '>=0'
   - name: docbook-sgml-dtd
@@ -112,11 +112,11 @@ provides:
   - name: pyatspi
     category: dev-python
     version: '>=0'
-  - name: setproctitle
+  - name: pycups
     category: dev-python
     version: '>=0'
-  - name: gtk-doc
-    category: dev-util
+  - name: setproctitle
+    category: dev-python
     version: '>=0'
   - name: gnome-common
     category: gnome-base
@@ -190,12 +190,21 @@ provides:
   - name: webkit-gtk
     category: net-libs
     version: '>=0'
+  - name: cups-pk-helper
+    category: net-print
+    version: '>=0'
   - name: imagemagick-tools
+    category: virtual
+    version: '>=0'
+  - name: notification-daemon
     category: virtual
     version: '>=0'
   - name: colord-gtk
     category: x11-libs
     version: '>=0'
   - name: goffice
+    category: x11-libs
+    version: '>=0'
+  - name: libnotify
     category: x11-libs
     version: '>=0'
