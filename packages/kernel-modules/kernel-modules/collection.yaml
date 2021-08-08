@@ -63,6 +63,9 @@ packages:
         category: x11-drivers
         version: '>=0'
     requires:
+      - name: nvpd
+        category: entity
+        version: ">=0"
       - category: "layers"
         name: "X"
         version: ">=0"
