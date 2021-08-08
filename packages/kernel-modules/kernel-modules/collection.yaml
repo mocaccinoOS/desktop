@@ -50,3 +50,21 @@ packages:
       - category: "entity"
         name: "vboxsf"
         version: ">=0"
+  - category: "kernel-modules"
+    name: "nvidia-drivers-lts"
+    version: "0.99"
+    lts: true
+    emerge:
+      jobs: "3"
+      packages:
+        - x11-drivers/nvidia-drivers
+    provides:
+      - name: nvidia-drivers
+        category: x11-drivers
+        version: '>=0'
+    requires:
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+
+
