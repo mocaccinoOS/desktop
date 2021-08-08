@@ -20,6 +20,7 @@ env:
 prelude:
 - cp -rf package.license /etc/portage/
 - USE="-cairo -harfbuzz" emerge -1 media-libs/harfbuzz media-libs/freetype
+- USE="harfbuzz" emerge -1 media-libs/freetype 
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 
 steps:
