@@ -18,6 +18,7 @@ env:
 # Add custom package.use for each package in the collection
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
+- cp -rf package.license /etc/portage/
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 
 steps:
