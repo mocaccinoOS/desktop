@@ -5,6 +5,7 @@ requires:
 env:
 - LUET_NOLOCK=true
 - LUET_YES=true
+- HTTP_TIMEOUT=900
 prelude:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - luet install repository/mocaccino-kernel
