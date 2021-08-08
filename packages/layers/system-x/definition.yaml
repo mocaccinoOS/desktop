@@ -56,6 +56,9 @@ requires:
   - name: polkituser
     category: entity
     version: ">=0"
+  - name: portage
+    category: entity
+    version: ">=0"
   - name: render
     category: entity
     version: ">=0"
