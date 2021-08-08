@@ -17,6 +17,7 @@ steps:
 - mkdir -p /var/lib/sddm/.config
 - touch /var/lib/sddm/.config/.keep
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C dev-libs/check
 - chown -R 219:219 /var/lib/sddm
 - etc-update -q --automode -5
 requires:
