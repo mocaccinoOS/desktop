@@ -71,7 +71,7 @@ excludes:
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu.*
 - ^/usr/share/gcc-data/x86_64-pc-linux-gnu.*
 - ^/usr/bin/c\+\+.*
-- ^/usr/bin/cc$
+- ^/usr/bin/cc.*
 - ^/usr/bin/cpp.*
 - ^/usr/bin/g\+\+.*
 - ^/usr/bin/gcc.*
