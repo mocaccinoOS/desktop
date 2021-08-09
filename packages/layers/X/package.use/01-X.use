@@ -16,7 +16,6 @@ media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs perl q32 xml
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
-media-libs/gstreamer introspection
 media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite icu introspection truetype
