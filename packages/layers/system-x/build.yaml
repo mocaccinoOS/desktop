@@ -34,6 +34,7 @@ steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
+- emerge -C dev-lang/spidermonkey virtual/rust dev-lang/rust-bin
 excludes:
 - ^/etc/shadow
 - ^/etc/os-release
