@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.7+4
+version: 0.7+5
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -874,9 +874,6 @@ provides:
   - name: libsndfile
     category: media-libs
     version: '>=0'
-  - name: libvpx
-    category: media-libs
-    version: '>=0'
   - name: libwebp
     category: media-libs
     version: '>=0'
@@ -939,9 +936,6 @@ provides:
     version: '>=0'
   - name: gst-plugins-taglib
     category: media-plugins
-    version: '>=0'
-  - name: jack2
-    category: media-sound
     version: '>=0'
   - name: pulseaudio
     category: media-sound

@@ -1,2 +1,3 @@
 media-libs/libdvdread -css
+media-libs/libvpx postproc svc
 media-libs/opus custom-modes

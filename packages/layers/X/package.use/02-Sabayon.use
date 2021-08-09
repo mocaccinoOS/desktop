@@ -211,7 +211,6 @@ media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/libsfml doc examples
 media-libs/libsoundtouch sse2
-media-libs/libvpx postproc svc
 media-libs/libxtract fftw
 media-libs/mlt melt frei0r kdenlive quicktime python
 media-libs/openexr -video_cards_nvidia
