@@ -1,7 +1,7 @@
 packages:
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: "3+5"
+    version: 3+6
     lts: false
     emerge:
       jobs: "3"
@@ -11,7 +11,7 @@ packages:
       lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 3+25
+    version: 3+26
     lts: true
     emerge:
       jobs: "3"
@@ -21,7 +21,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.22+8
+    version: 6.1.22+9
     lts: true
     emerge:
       jobs: "3"
@@ -52,7 +52,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: "0.993"
+    version: 0.993+1
     lts: true
     emerge:
       jobs: "3"
@@ -69,5 +69,3 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
-
