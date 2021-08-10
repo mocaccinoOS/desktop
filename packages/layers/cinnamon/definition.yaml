@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 4.6.7+25
+version: 4.6.7+26
 labels:
   emerge.jobs: "3"
   emerge.packages: "gnome-extra/cinnamon"
