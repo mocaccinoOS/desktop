@@ -18,7 +18,6 @@ prelude:
 - cp -rf bashrc /etc/portage/
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
-- emerge -C dev-perl/SGMLSpm
 steps:
 - eval 'emerge --unmerge dev-lang/python:3.9 || true'
 - emerge -1 dev-libs/libgcrypt:0
