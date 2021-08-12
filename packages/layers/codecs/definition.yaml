@@ -5,6 +5,10 @@ labels:
   emerge.jobs: "3"
   emerge.packages: >-
     app-i18n/uchardet app-text/iso-codes dev-libs/libcdio dev-libs/libcdio-paranoia media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/aalib media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/fdk-aac media-libs/flac media-libs/gstreamer media-libs/libcddb media-libs/libdvdread media-libs/libdvdnav media-libs/libdvbpsi media-libs/libid3tag media-libs/libmatroska media-libs/libmms media-libs/libmodplug media-libs/libcue media-libs/libsamplerate media-libs/libsndfile media-libs/libtheora media-libs/libogg media-libs/libvorbis media-libs/libvpx media-libs/opencore-amr media-libs/openh264 media-libs/opus media-libs/sbc media-libs/shaderc media-libs/soxr media-libs/vidstab media-libs/webrtc-audio-processing media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live media-sound/jack2 media-sound/wavpack
+requires:
+  - name: realtime
+    category: entity
+    version: ">=0"
 provides:
   - name: realtime
     category: acct-group
