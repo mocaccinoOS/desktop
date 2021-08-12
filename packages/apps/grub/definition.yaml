@@ -1,6 +1,6 @@
 category: "apps"
 name: "grub"
-version: 2.04+38
+version: 2.04+39
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
