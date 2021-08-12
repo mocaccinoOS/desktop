@@ -1,6 +1,6 @@
 category: "apps"
 name: "nnn"
-version: 4.0+12
+version: 4.0+13
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
