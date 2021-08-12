@@ -13,9 +13,10 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
+- emerge -1 dev-lang/rust-bin
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 # Remove BDEPS
-- emerge -C sys-devel/lld dev-util/cbindgen net-libs/nodejs
+- emerge -C sys-devel/lld dev-util/cbindgen net-libs/nodejs virtual/rust dev-lang/rust-bin
 # Moccacino OS customization for bookmarks, start site and bookmarks toolbar.
 - cp -rf distribution/distribution.ini /usr/lib64/firefox/distribution/
 requires:
