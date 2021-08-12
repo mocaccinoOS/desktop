@@ -6,6 +6,9 @@ labels:
   emerge.packages: >-
     app-i18n/uchardet app-text/iso-codes dev-libs/libcdio dev-libs/libcdio-paranoia media-sound/gsm media-sound/lame media-sound/musepack-tools media-libs/a52dec media-libs/aalib media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/fdk-aac media-libs/flac media-libs/gstreamer media-libs/libcddb media-libs/libdvdread media-libs/libdvdnav media-libs/libdvbpsi media-libs/libid3tag media-libs/libmatroska media-libs/libmms media-libs/libmodplug media-libs/libcue media-libs/libsamplerate media-libs/libsndfile media-libs/libtheora media-libs/libogg media-libs/libvorbis media-libs/libvpx media-libs/opencore-amr media-libs/openh264 media-libs/opus media-libs/sbc media-libs/shaderc media-libs/soxr media-libs/vidstab media-libs/webrtc-audio-processing media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-plugins/live media-sound/jack2 media-sound/wavpack
 provides:
+  - name: realtime
+    category: acct-group
+    version: '>=0'
   - name: brotli
     category: app-arch
     version: '>=0'
@@ -21,6 +24,9 @@ provides:
   - name: nasm
     category: dev-lang
     version: '>=0'
+  - name: yasm
+    category: dev-lang
+    version: '>=0'
   - name: libcdio
     category: dev-libs
     version: '>=0'
@@ -29,6 +35,9 @@ provides:
     version: '>=0'
   - name: libebml
     category: dev-libs
+    version: '>=0'
+  - name: dbus-python
+    category: dev-python
     version: '>=0'
   - name: glslang
     category: dev-util
@@ -63,6 +72,9 @@ provides:
   - name: flac
     category: media-libs
     version: '>=0'
+  - name: gstreamer
+    category: media-libs
+    version: '>=0'
   - name: libcddb
     category: media-libs
     version: '>=0'
@@ -87,6 +99,9 @@ provides:
   - name: libmatroska
     category: media-libs
     version: '>=0'
+  - name: libmms
+    category: media-libs
+    version: '>=0'
   - name: libmodplug
     category: media-libs
     version: '>=0'
@@ -99,6 +114,9 @@ provides:
   - name: libsamplerate
     category: media-libs
     version: '>=0'
+  - name: libsndfile
+    category: media-libs
+    version: '>=0'
   - name: libtheora
     category: media-libs
     version: '>=0'
@@ -108,7 +126,16 @@ provides:
   - name: libvpx
     category: media-libs
     version: '>=0'
+  - name: opencore-amr
+    category: media-libs
+    version: '>=0'
+  - name: openh264
+    category: media-libs
+    version: '>=0'
   - name: opus
+    category: media-libs
+    version: '>=0'
+  - name: sbc
     category: media-libs
     version: '>=0'
   - name: shaderc
@@ -118,6 +145,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: vidstab
+    category: media-libs
+    version: '>=0'
+  - name: webrtc-audio-processing
     category: media-libs
     version: '>=0'
   - name: woff2
@@ -149,4 +179,7 @@ provides:
     version: '>=0'
   - name: wavpack
     category: media-sound
+    version: '>=0'
+  - name: realtime-base
+    category: sys-auth
     version: '>=0'

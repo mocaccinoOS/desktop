@@ -363,9 +363,6 @@ provides:
   - name: eselect-rust
     category: app-eselect
     version: '>=0'
-  - name: man-pages-it
-    category: app-i18n
-    version: '>=0'
   - name: man-pages-ja
     category: app-i18n
     version: '>=0'
@@ -460,9 +457,6 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: ruby
-    category: dev-lang
-    version: '>=0'
-  - name: rust
     category: dev-lang
     version: '>=0'
   - name: spidermonkey
@@ -615,7 +609,37 @@ provides:
   - name: Encode-HanExtra
     category: dev-perl
     version: '>=0'
+  - name: Encode-Locale
+    category: dev-perl
+    version: '>=0'
   - name: Error
+    category: dev-perl
+    version: '>=0'
+  - name: File-Listing
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tagset
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Cookies
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Date
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Message
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Negotiate
+    category: dev-perl
+    version: '>=0'
+  - name: IO-HTML
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-INET6
     category: dev-perl
     version: '>=0'
   - name: IO-Socket-SSL
@@ -627,7 +651,16 @@ provides:
   - name: JSON-XS
     category: dev-perl
     version: '>=0'
+  - name: libwww-perl
+    category: dev-perl
+    version: '>=0'
   - name: Locale-gettext
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-MediaTypes
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-Protocol-https
     category: dev-perl
     version: '>=0'
   - name: MailTools
@@ -642,6 +675,9 @@ provides:
   - name: Mozilla-CA
     category: dev-perl
     version: '>=0'
+  - name: Net-HTTP
+    category: dev-perl
+    version: '>=0'
   - name: Net-SSLeay
     category: dev-perl
     version: '>=0'
@@ -649,6 +685,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: SGMLSpm
+    category: dev-perl
+    version: '>=0'
+  - name: Socket6
     category: dev-perl
     version: '>=0'
   - name: TermReadKey
@@ -663,10 +702,19 @@ provides:
   - name: TimeDate
     category: dev-perl
     version: '>=0'
+  - name: Try-Tiny
+    category: dev-perl
+    version: '>=0'
   - name: Types-Serialiser
     category: dev-perl
     version: '>=0'
   - name: Unicode-LineBreak
+    category: dev-perl
+    version: '>=0'
+  - name: URI
+    category: dev-perl
+    version: '>=0'
+  - name: WWW-RobotRules
     category: dev-perl
     version: '>=0'
   - name: XML-Parser
@@ -883,6 +931,9 @@ provides:
     category: net-misc
     version: '>=0'
   - name: File-Temp
+    category: perl-core
+    version: '>=0'
+  - name: Scalar-List-Utils
     category: perl-core
     version: '>=0'
   - name: acl
@@ -1206,7 +1257,16 @@ provides:
   - name: perl-Carp
     category: virtual
     version: '>=0'
+  - name: perl-Compress-Raw-Bzip2
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Zlib
+    category: virtual
+    version: '>=0'
   - name: perl-CPAN-Meta
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-Requirements
     category: virtual
     version: '>=0'
   - name: perl-CPAN-Meta-YAML
@@ -1254,6 +1314,12 @@ provides:
   - name: perl-IO
     category: virtual
     version: '>=0'
+  - name: perl-IO-Compress
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Socket-IP
+    category: virtual
+    version: '>=0'
   - name: perl-JSON-PP
     category: virtual
     version: '>=0'
@@ -1264,6 +1330,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Module-Metadata
+    category: virtual
+    version: '>=0'
+  - name: perl-parent
     category: virtual
     version: '>=0'
   - name: perl-Parse-CPAN-Meta
@@ -1284,7 +1353,13 @@ provides:
   - name: perl-Text-ParseWords
     category: virtual
     version: '>=0'
+  - name: perl-Time-Local
+    category: virtual
+    version: '>=0'
   - name: perl-version
+    category: virtual
+    version: '>=0'
+  - name: perl-XSLoader
     category: virtual
     version: '>=0'
   - name: pkgconfig
@@ -1294,9 +1369,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: rubygems
-    category: virtual
-    version: '>=0'
-  - name: rust
     category: virtual
     version: '>=0'
   - name: service-manager
