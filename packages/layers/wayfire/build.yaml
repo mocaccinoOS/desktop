@@ -13,7 +13,9 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 steps:
+- emerge -1 dev-lang/rust-bin
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C virtual/rust dev-lang/rust-bin
 requires:
 - category: "layers"
   name: "gnome-common"
