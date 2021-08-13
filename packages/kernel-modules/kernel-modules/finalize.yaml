@@ -1,2 +1,3 @@
 install:
 - depmod -a
+- mos kernel gi --all --grub --set-links
