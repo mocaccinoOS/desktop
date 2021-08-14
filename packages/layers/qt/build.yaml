@@ -14,7 +14,6 @@ prelude:
 - cp -rf package.env /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -1 dev-qt/qtwebengine
 - emerge -C dev-lang/python:2.7 net-libs/nodejs
 requires:
 - category: "layers"
