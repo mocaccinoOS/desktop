@@ -20,4 +20,5 @@ dev-qt/qtvirtualkeyboard spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
 dev-qt/qtwebchannel qml
+dev-qt/qtwebengine geolocation kerberos system-icu widgets -system-ffmpeg
 net-libs/nodejs icu inspector

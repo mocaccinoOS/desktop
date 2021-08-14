@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+49
+version: 3.2.32+50
 provides:
   - name: calamares
     category: app-admin
@@ -18,7 +18,4 @@ requires:
     version: ">=0"
   - category: "apps"
     name: "grub"
-    version: ">=0"
-  - category: "apps"
-    name: "qtwebengine"
     version: ">=0"

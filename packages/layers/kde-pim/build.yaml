@@ -18,6 +18,3 @@ requires:
 - category: "layers"
   name: "plasma"
   version: ">=0"
-- category: "apps"
-  name: "qtwebengine"
-  version: ">=0"

@@ -21,6 +21,3 @@ requires:
 - category: "apps"
   name: "grub"
   version: ">=0"
-- category: "apps"
-  name: "qtwebengine"
-  version: ">=0"

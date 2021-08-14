@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 steps:
 - MAKEOPTS="-j6" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C dev-lang/python:2.7 net-libs/nodejs
 requires:
 - category: "layers"
   name: "X"

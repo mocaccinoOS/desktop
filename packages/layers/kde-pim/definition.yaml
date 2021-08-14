@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 21.04.3+3
+version: 21.04.3+4
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -8,8 +8,5 @@ labels:
 requires:
   - category: "layers"
     name: "plasma"
-    version: ">=0"
-  - category: "apps"
-    name: "qtwebengine"
     version: ">=0"
 provides:
