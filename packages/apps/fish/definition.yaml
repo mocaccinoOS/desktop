@@ -1,0 +1,11 @@
+category: "apps"
+name: "fish"
+version: 3.1.2+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-shells/fish
+provides:
+  - name: fish
+    category: app-shells
+    version: '>=0'
