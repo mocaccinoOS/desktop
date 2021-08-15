@@ -293,7 +293,6 @@ net-im/mcabber otr
 net-irc/inspircd mysql sqlite
 net-irc/irssi otr
 net-irc/kvirc -audiofile dcc_video
-net-irc/weechat tcl
 net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
