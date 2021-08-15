@@ -23,6 +23,9 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     # Skip images/portage
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
         continue
+    # Skip kernel-modules/sources, it is a collection and lacks a definition.yaml
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "kernel-modules/sources" ]; then
+        continue
     fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layers/gentoo-portage" ]; then
         continue
