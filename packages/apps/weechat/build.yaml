@@ -7,6 +7,7 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+- ^/usr/share/applications/mimeinfo.cache
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
