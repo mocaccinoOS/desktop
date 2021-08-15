@@ -48,9 +48,6 @@ requires:
   - name: netdev
     category: entity
     version: ">=0"
-  - name: openct
-    category: entity
-    version: ">=0"
   - name: plugdev
     category: entity
     version: ">=0"
@@ -89,9 +86,6 @@ provides:
     category: acct-group
     version: '>=0'
   - name: netdev
-    category: acct-group
-    version: '>=0'
-  - name: openct
     category: acct-group
     version: '>=0'
   - name: plugdev

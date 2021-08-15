@@ -12,6 +12,9 @@ requires:
   - category: "entity"
     name: "openvpn"
     version: ">=0"
+  - name: openct
+    category: entity
+    version: ">=0"
   - name: pcscd
     category: entity
     version: ">=0"
