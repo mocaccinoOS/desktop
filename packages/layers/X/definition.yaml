@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.7+10
+version: 0.8+1
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -14,6 +14,9 @@ requires:
     version: ">=0"
   - category: "layers"
     name: "codecs"
+    version: ">=0"
+  - category: "layers"
+    name: "net-tools"
     version: ">=0"
   - category: "entity"
     name: "audio"
