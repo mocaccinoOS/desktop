@@ -17,6 +17,3 @@ requires:
 - category: "layers"
   name: "gnome-common"
   version: ">=0"
-- category: "layers"
-  name: "net-tools"
-  version: ">=0"
