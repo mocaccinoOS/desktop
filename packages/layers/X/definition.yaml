@@ -54,9 +54,6 @@ requires:
   - name: plugdev
     category: entity
     version: ">=0"
-  - name: pcscd
-    category: entity
-    version: ">=0"
   - name: postfix
     category: entity
     version: ">=0"
@@ -97,9 +94,6 @@ provides:
   - name: openct
     category: acct-group
     version: '>=0'
-  - name: pcscd
-    category: acct-group
-    version: '>=0'
   - name: plugdev
     category: acct-group
     version: '>=0'
@@ -128,9 +122,6 @@ provides:
     category: acct-user
     version: '>=0'
   - name: mail
-    category: acct-user
-    version: '>=0'
-  - name: pcscd
     category: acct-user
     version: '>=0'
   - name: postfix
