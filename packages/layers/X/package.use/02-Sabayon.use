@@ -297,7 +297,6 @@ net-irc/weechat tcl
 net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
-net-libs/glib-networking gnome
 net-libs/libgadu ssl threads
 net-libs/libmicrohttpd messages
 net-libs/libproxy -kde -gnome python

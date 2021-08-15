@@ -31,6 +31,7 @@ media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ip
 media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 openssl opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
 net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
+net-libs/glib-networking gnome
 net-libs/libsoup gnome introspection ssl vala
 net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection modemmanager nss wext wimax -resolvconf
 net-print/cups acl kerberos pam ssl threads usb zeroconf

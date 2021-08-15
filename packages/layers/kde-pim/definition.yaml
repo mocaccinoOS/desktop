@@ -10,3 +10,6 @@ requires:
     name: "plasma"
     version: ">=0"
 provides:
+  - name: kdepim-meta
+    category: kde-apps
+    version: '>=0'
