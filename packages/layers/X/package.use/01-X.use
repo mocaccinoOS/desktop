@@ -37,7 +37,6 @@ net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls i
 net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-wireless/bluez gstreamer obex user-session
-net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
 sys-apps/pciutils kmod udev -zlib
 sys-apps/xdg-desktop-portal screencast
 sys-libs/binutils-libs nls

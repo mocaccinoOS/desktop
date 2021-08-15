@@ -1,10 +1,10 @@
 category: "layers"
 name: "net-tools"
-version: 0.2+1
+version: 0.2+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-vpn/openvpn
+    net-dialup/ppp net-dialup/ppp-scripts net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/mobile-broadband-provider-info net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"

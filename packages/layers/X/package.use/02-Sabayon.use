@@ -273,7 +273,6 @@ net-analyzer/snort dynamicplugin
 net-analyzer/smokeping apache2
 net-analyzer/zabbix frontend agent server mysql ssh snmp proxy -sqlite3
 net-dialup/mgetty -fax
-net-dialup/ppp atm dhcp eap-tls radius -gtk
 net-dns/getdns nettle stubby
 net-dns/mydns mysql
 net-firewall/fwknop firewalld server -iptables

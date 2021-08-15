@@ -1,3 +1,5 @@
+net-dialup/ppp atm dhcp eap-tls radius -gtk
 # Disable net-wireless/bluez for libpcap to avoid
 # having dbus, thus half X shit around pulled in
 net-libs/libpcap -bluetooth
+net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
