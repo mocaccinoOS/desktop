@@ -1,10 +1,10 @@
 category: "layers"
 name: "net-tools"
-version: 0.1+32
+version: 0.2+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc
+    net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-vpn/openvpn
 requires:
   - category: "layers"
     name: "system-x"
