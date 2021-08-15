@@ -109,9 +109,6 @@ provides:
   - name: postfix
     category: acct-group
     version: '>=0'
-  - name: realtime
-    category: acct-group
-    version: '>=0'
   - name: usb
     category: acct-group
     version: '>=0'
@@ -364,9 +361,6 @@ provides:
   - name: vala
     category: dev-lang
     version: '>=0'
-  - name: yasm
-    category: dev-lang
-    version: '>=0'
   - name: appstream
     category: dev-libs
     version: '>=0'
@@ -496,9 +490,6 @@ provides:
   - name: Dist-CheckConflicts
     category: dev-perl
     version: '>=0'
-  - name: Encode-Locale
-    category: dev-perl
-    version: '>=0'
   - name: Eval-Closure
     category: dev-perl
     version: '>=0'
@@ -523,58 +514,22 @@ provides:
   - name: File-HomeDir
     category: dev-perl
     version: '>=0'
-  - name: File-Listing
-    category: dev-perl
-    version: '>=0'
   - name: File-MimeInfo
     category: dev-perl
     version: '>=0'
   - name: File-Which
     category: dev-perl
     version: '>=0'
-  - name: HTML-Parser
-    category: dev-perl
-    version: '>=0'
-  - name: HTML-Tagset
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Cookies
-    category: dev-perl
-    version: '>=0'
   - name: HTTP-Daemon
     category: dev-perl
     version: '>=0'
-  - name: HTTP-Date
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Message
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Negotiate
-    category: dev-perl
-    version: '>=0'
-  - name: IO-HTML
-    category: dev-perl
-    version: '>=0'
-  - name: IO-Socket-INET6
-    category: dev-perl
-    version: '>=0'
   - name: IPC-System-Simple
-    category: dev-perl
-    version: '>=0'
-  - name: libwww-perl
     category: dev-perl
     version: '>=0'
   - name: Locale-Maketext-Lexicon
     category: dev-perl
     version: '>=0'
   - name: Log-Dispatch
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-MediaTypes
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-Protocol-https
     category: dev-perl
     version: '>=0'
   - name: Module-Build-Tiny
@@ -596,9 +551,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Net-DBus
-    category: dev-perl
-    version: '>=0'
-  - name: Net-HTTP
     category: dev-perl
     version: '>=0'
   - name: Package-Stash
@@ -626,9 +578,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Role-Tiny
-    category: dev-perl
-    version: '>=0'
-  - name: Socket6
     category: dev-perl
     version: '>=0'
   - name: Specio
@@ -661,16 +610,7 @@ provides:
   - name: Tie-IxHash
     category: dev-perl
     version: '>=0'
-  - name: Try-Tiny
-    category: dev-perl
-    version: '>=0'
-  - name: URI
-    category: dev-perl
-    version: '>=0'
   - name: Variable-Magic
-    category: dev-perl
-    version: '>=0'
-  - name: WWW-RobotRules
     category: dev-perl
     version: '>=0'
   - name: X11-Protocol
@@ -693,9 +633,6 @@ provides:
     version: '>=0'
   - name: XML-Twig
     category: dev-perl
-    version: '>=0'
-  - name: dbus-python
-    category: dev-python
     version: '>=0'
   - name: m2crypto
     category: dev-python
@@ -1033,9 +970,6 @@ provides:
   - name: xdg-desktop-portal
     category: sys-apps
     version: '>=0'
-  - name: realtime-base
-    category: sys-auth
-    version: '>=0'
   - name: bc
     category: sys-devel
     version: '>=0'
@@ -1084,28 +1018,10 @@ provides:
   - name: opengl
     category: virtual
     version: '>=0'
-  - name: perl-Compress-Raw-Bzip2
-    category: virtual
-    version: '>=0'
-  - name: perl-Compress-Raw-Zlib
-    category: virtual
-    version: '>=0'
-  - name: perl-CPAN-Meta-Requirements
-    category: virtual
-    version: '>=0'
   - name: perl-File-Path
     category: virtual
     version: '>=0'
-  - name: perl-IO-Compress
-    category: virtual
-    version: '>=0'
-  - name: perl-IO-Socket-IP
-    category: virtual
-    version: '>=0'
   - name: perl-Locale-Maketext
-    category: virtual
-    version: '>=0'
-  - name: perl-parent
     category: virtual
     version: '>=0'
   - name: perl-Socket
@@ -1121,12 +1037,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Time-HiRes
-    category: virtual
-    version: '>=0'
-  - name: perl-Time-Local
-    category: virtual
-    version: '>=0'
-  - name: perl-XSLoader
     category: virtual
     version: '>=0'
   - name: tex-base
