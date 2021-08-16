@@ -100,9 +100,6 @@ provides:
   - name: postfix
     category: acct-group
     version: '>=0'
-  - name: usb
-    category: acct-group
-    version: '>=0'
   - name: avahi
     category: acct-user
     version: '>=0'
@@ -406,9 +403,6 @@ provides:
   - name: libinput
     category: dev-libs
     version: '>=0'
-  - name: libnl
-    category: dev-libs
-    version: '>=0'
   - name: libpwquality
     category: dev-libs
     version: '>=0'
@@ -621,9 +615,6 @@ provides:
     version: '>=0'
   - name: XML-Twig
     category: dev-perl
-    version: '>=0'
-  - name: m2crypto
-    category: dev-python
     version: '>=0'
   - name: mako
     category: dev-python
@@ -850,9 +841,6 @@ provides:
   - name: pipewire
     category: media-video
     version: '>=0'
-  - name: linux-atm
-    category: net-dialup
-    version: '>=0'
   - name: avahi
     category: net-dns
     version: '>=0'
@@ -929,9 +917,6 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: ed
-    category: sys-apps
-    version: '>=0'
-  - name: pcsc-lite
     category: sys-apps
     version: '>=0'
   - name: xdg-dbus-proxy
