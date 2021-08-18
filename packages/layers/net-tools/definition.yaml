@@ -19,6 +19,39 @@ requires:
     category: entity
     version: ">=0"
 provides:
+  - name: openct
+    category: acct-group
+    version: '>=0'
+  - name: openvpn
+    category: acct-group
+    version: '>=0'
+  - name: pcscd
+    category: acct-group
+    version: '>=0'
+  - name: usb
+    category: acct-group
+    version: '>=0'
+  - name: openvpn
+    category: acct-user
+    version: '>=0'
+  - name: pcscd
+    category: acct-user
+    version: '>=0'
+  - name: libnl
+    category: dev-libs
+    version: '>=0'
+  - name: m2crypto
+    category: dev-python
+    version: '>=0'
+  - name: linux-atm
+    category: net-dialup
+    version: '>=0'
+  - name: ppp
+    category: net-dialup
+    version: '>=0'
+  - name: ppp-scripts
+    category: net-dialup
+    version: '>=0'
   - name: c-ares
     category: net-dns
     version: '>=0'
@@ -34,6 +67,24 @@ provides:
   - name: miniupnpc
     category: net-libs
     version: '>=0'
+  - name: mobile-broadband-provider-info
+    category: net-misc
+    version: '>=0'
+  - name: openvpn
+    category: net-vpn
+    version: '>=0'
+  - name: crda
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-regdb
+    category: net-wireless
+    version: '>=0'
+  - name: wpa_supplicant
+    category: net-wireless
+    version: '>=0'
   - name: lsb-release
+    category: sys-apps
+    version: '>=0'
+  - name: pcsc-lite
     category: sys-apps
     version: '>=0'

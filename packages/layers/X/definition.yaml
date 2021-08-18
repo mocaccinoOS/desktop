@@ -373,6 +373,9 @@ provides:
   - name: hyphen
     category: dev-libs
     version: '>=0'
+  - name: jansson
+    category: dev-libs
+    version: '>=0'
   - name: json-glib
     category: dev-libs
     version: '>=0'
