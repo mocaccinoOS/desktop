@@ -454,7 +454,6 @@ app-emulation/spice smartcard
 net-misc/spice-gtk gtk3 usbredir smartcard vala
 dev-libs/libgit2 ssh threads
 >=media-plugins/grilo-plugins-0.2.10 tracker
-dev-libs/libnl utils
 dev-cpp/commoncpp2 -gnutls ssl
 x11-drivers/nvidia-userspace uvm
 net-firewall/ipset -modules

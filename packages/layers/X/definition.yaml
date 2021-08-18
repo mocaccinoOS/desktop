@@ -63,9 +63,6 @@ requires:
   - name: postmaster
     category: entity
     version: '>=0'
-  - name: usb
-    category: entity
-    version: ">=0"
 provides:
   - name: avahi
     category: acct-group

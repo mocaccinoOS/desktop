@@ -1,3 +1,4 @@
+dev-libs/libnl utils
 net-dialup/ppp atm dhcp eap-tls radius -gtk
 # Disable net-wireless/bluez for libpcap to avoid
 # having dbus, thus half X shit around pulled in

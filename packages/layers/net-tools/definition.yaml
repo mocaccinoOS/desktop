@@ -18,6 +18,9 @@ requires:
   - name: pcscd
     category: entity
     version: ">=0"
+  - name: usb
+    category: entity
+    version: ">=0"
 provides:
   - name: openct
     category: acct-group
