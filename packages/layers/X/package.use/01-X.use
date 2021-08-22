@@ -33,7 +33,7 @@ net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 int
 net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
 net-libs/glib-networking gnome
 net-libs/libsoup gnome introspection ssl vala
-net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection modemmanager nss wext wimax -resolvconf
+net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection iptables modemmanager nss wext -resolvconf
 net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-wireless/bluez gstreamer obex user-session
