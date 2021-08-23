@@ -333,6 +333,9 @@ provides:
   - name: libb2
     category: app-crypt
     version: '>=0'
+  - name: libmd
+    category: app-crypt
+    version: '>=0'
   - name: openpgp-keys-gentoo-release
     category: app-crypt
     version: '>=0'
