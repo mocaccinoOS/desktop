@@ -10,7 +10,14 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     PACKAGE_CATEGORY=$(echo "$i" | jq -r ".category")
     PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
 
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/gentoo-stage3" ]; then
+    # Skip images/portage
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
+        continue
+    fi
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/stage3" ]; then
+        continue
+    fi
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "gentoo/stage3" ]; then
         continue
     fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
@@ -20,15 +27,8 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "dev-lang/python" ]; then
         continue
     fi
-    # Skip images/portage
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
-        continue
-    fi
     # Skip kernel-modules/sources, it is a collection and lacks a definition.yaml
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "kernel-modules/sources" ]; then
-        continue
-    fi
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layers/gentoo-portage" ]; then
         continue
     fi
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
