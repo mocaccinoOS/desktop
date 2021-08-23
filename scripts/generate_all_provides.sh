@@ -10,7 +10,7 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     PACKAGE_CATEGORY=$(echo "$i" | jq -r ".category")
     PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
 
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layer/gentoo-stage3" ]; then
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/gentoo-stage3" ]; then
         continue
     fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
