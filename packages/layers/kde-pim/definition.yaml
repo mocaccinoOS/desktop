@@ -10,6 +10,231 @@ requires:
     name: "plasma"
     version: ">=0"
 provides:
+  - name: ldap
+    category: acct-group
+    version: '>=0'
+  - name: mysql
+    category: acct-group
+    version: '>=0'
+  - name: ldap
+    category: acct-user
+    version: '>=0'
+  - name: mysql
+    category: acct-user
+    version: '>=0'
+  - name: paperkey
+    category: app-crypt
+    version: '>=0'
+  - name: mariadb
+    category: dev-db
+    version: '>=0'
+  - name: mysql-init-scripts
+    category: dev-db
+    version: '>=0'
+  - name: unixODBC
+    category: dev-db
+    version: '>=0'
+  - name: kdiagram
+    category: dev-libs
+    version: '>=0'
+  - name: qtkeychain
+    category: dev-libs
+    version: '>=0'
+  - name: DBD-mysql
+    category: dev-perl
+    version: '>=0'
+  - name: DBI
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-CheckLib
+    category: dev-perl
+    version: '>=0'
+  - name: Net-Daemon
+    category: dev-perl
+    version: '>=0'
+  - name: PlRPC
+    category: dev-perl
+    version: '>=0'
+  - name: akonadi
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-calendar
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-contacts
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-import-wizard
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-mime
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-notes
+    category: kde-apps
+    version: '>=0'
+  - name: akonadi-search
+    category: kde-apps
+    version: '>=0'
+  - name: akonadiconsole
+    category: kde-apps
+    version: '>=0'
+  - name: akregator
+    category: kde-apps
+    version: '>=0'
+  - name: calendarjanitor
+    category: kde-apps
+    version: '>=0'
+  - name: calendarsupport
+    category: kde-apps
+    version: '>=0'
+  - name: eventviews
+    category: kde-apps
+    version: '>=0'
+  - name: grantlee-editor
+    category: kde-apps
+    version: '>=0'
+  - name: grantleetheme
+    category: kde-apps
+    version: '>=0'
+  - name: incidenceeditor
+    category: kde-apps
+    version: '>=0'
+  - name: kaddressbook
+    category: kde-apps
+    version: '>=0'
+  - name: kalarm
+    category: kde-apps
+    version: '>=0'
+  - name: kalarmcal
+    category: kde-apps
+    version: '>=0'
+  - name: kcalutils
+    category: kde-apps
+    version: '>=0'
+  - name: kdepim-addons
+    category: kde-apps
+    version: '>=0'
   - name: kdepim-meta
     category: kde-apps
+    version: '>=0'
+  - name: kdepim-runtime
+    category: kde-apps
+    version: '>=0'
+  - name: kidentitymanagement
+    category: kde-apps
+    version: '>=0'
+  - name: kimap
+    category: kde-apps
+    version: '>=0'
+  - name: kitinerary
+    category: kde-apps
+    version: '>=0'
+  - name: kldap
+    category: kde-apps
+    version: '>=0'
+  - name: kleopatra
+    category: kde-apps
+    version: '>=0'
+  - name: kmail
+    category: kde-apps
+    version: '>=0'
+  - name: kmail-account-wizard
+    category: kde-apps
+    version: '>=0'
+  - name: kmailtransport
+    category: kde-apps
+    version: '>=0'
+  - name: kmbox
+    category: kde-apps
+    version: '>=0'
+  - name: kmime
+    category: kde-apps
+    version: '>=0'
+  - name: knotes
+    category: kde-apps
+    version: '>=0'
+  - name: konsolekalendar
+    category: kde-apps
+    version: '>=0'
+  - name: kontact
+    category: kde-apps
+    version: '>=0'
+  - name: kontactinterface
+    category: kde-apps
+    version: '>=0'
+  - name: korganizer
+    category: kde-apps
+    version: '>=0'
+  - name: kpimtextedit
+    category: kde-apps
+    version: '>=0'
+  - name: kpkpass
+    category: kde-apps
+    version: '>=0'
+  - name: ksmtp
+    category: kde-apps
+    version: '>=0'
+  - name: libgravatar
+    category: kde-apps
+    version: '>=0'
+  - name: libkdepim
+    category: kde-apps
+    version: '>=0'
+  - name: libkgapi
+    category: kde-apps
+    version: '>=0'
+  - name: libkleo
+    category: kde-apps
+    version: '>=0'
+  - name: libksieve
+    category: kde-apps
+    version: '>=0'
+  - name: libktnef
+    category: kde-apps
+    version: '>=0'
+  - name: mailcommon
+    category: kde-apps
+    version: '>=0'
+  - name: mailimporter
+    category: kde-apps
+    version: '>=0'
+  - name: mbox-importer
+    category: kde-apps
+    version: '>=0'
+  - name: messagelib
+    category: kde-apps
+    version: '>=0'
+  - name: pim-data-exporter
+    category: kde-apps
+    version: '>=0'
+  - name: pim-sieve-editor
+    category: kde-apps
+    version: '>=0'
+  - name: pimcommon
+    category: kde-apps
+    version: '>=0'
+  - name: kcalendarcore
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcontacts
+    category: kde-frameworks
+    version: '>=0'
+  - name: kdav
+    category: kde-frameworks
+    version: '>=0'
+  - name: kross
+    category: kde-frameworks
+    version: '>=0'
+  - name: syndication
+    category: kde-frameworks
+    version: '>=0'
+  - name: zxing-cpp
+    category: media-libs
+    version: '>=0'
+  - name: openldap
+    category: net-nds
+    version: '>=0'
+  - name: mysql
+    category: virtual
     version: '>=0'

@@ -22,8 +22,14 @@ requires:
     name: "sddm"
     version: ">=0"
 provides:
+  - name: nm-openconnect
+    category: acct-group
+    version: '>=0'
   - name: tss
     category: acct-group
+    version: '>=0'
+  - name: nm-openconnect
+    category: acct-user
     version: '>=0'
   - name: tss
     category: acct-user
@@ -339,6 +345,9 @@ provides:
     version: '>=0'
   - name: mailx
     category: virtual
+    version: '>=0'
+  - name: xwayland
+    category: x11-base
     version: '>=0'
   - name: appmenu-gtk-module
     category: x11-misc

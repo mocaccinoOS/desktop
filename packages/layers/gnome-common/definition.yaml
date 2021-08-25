@@ -199,6 +199,9 @@ provides:
   - name: notification-daemon
     category: virtual
     version: '>=0'
+  - name: secret-service
+    category: virtual
+    version: '>=0'
   - name: colord-gtk
     category: x11-libs
     version: '>=0'
