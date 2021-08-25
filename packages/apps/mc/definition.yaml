@@ -1,6 +1,6 @@
 category: "apps"
 name: "mc"
-version: 4.8.26+36
+version: 4.8.26+37
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
