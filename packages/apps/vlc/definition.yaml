@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 3.0.14+15
+version: 3.0.14+16
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
