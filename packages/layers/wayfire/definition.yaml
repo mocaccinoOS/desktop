@@ -1,10 +1,10 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.1+26
+version: 0.7.1+27
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra media-fonts/fontawesome x11-terms/alacritty
+    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire media-fonts/fontawesome x11-terms/alacritty
 provides:
   - name: greetd
     category: acct-group
@@ -43,15 +43,6 @@ provides:
     category: gui-apps
     version: '>=0'
   - name: greetd
-    category: gui-libs
-    version: '>=0'
-  - name: wayfire-plugins-extra
-    category: gui-libs
-    version: '>=0'
-  - name: wf-config
-    category: gui-libs
-    version: '>=0'
-  - name: wlroots
     category: gui-libs
     version: '>=0'
   - name: wayfire
