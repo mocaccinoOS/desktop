@@ -1,5 +1,0 @@
-media-libs/freetype X
-gui-apps/waybar network popups tray
-# <wlroots-0.14.0-r1 requires xorg-server +wayland. This is currently a bug in Portage.
-# As a result wayfire layer will try to downgrade xorg-server to the stable version that still features wayland use flag.
-gui-wm/wayfire -system-wfconfig -system-wlroots
