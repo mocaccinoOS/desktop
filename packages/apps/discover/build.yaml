@@ -11,12 +11,10 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
+- emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "plasma"
-  version: ">=0"
-- category: "apps"
-  name: "flatpak"
+  name: "X"
   version: ">=0"

@@ -11,7 +11,7 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "plasma"
+    name: "kde-common"
     version: ">=0"
   - category: "apps"
     name: "flatpak"
