@@ -11,7 +11,7 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
-- emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
+- emerge -t -o -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
