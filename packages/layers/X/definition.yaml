@@ -1072,6 +1072,9 @@ provides:
   - name: xorg-server
     category: x11-base
     version: '>=0'
+  - name: xwayland
+    category: x11-base
+    version: '>=0'
   - name: xf86-input-evdev
     category: x11-drivers
     version: '>=0'
