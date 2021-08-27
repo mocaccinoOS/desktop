@@ -11,11 +11,12 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
-- emerge -t -o -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
-- USE="qt5" emerge dev-libs/appstream
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
   name: "kde-common"
+  version: ">=0"
+- category: "apps"
+  name: "flatpak"
   version: ">=0"
