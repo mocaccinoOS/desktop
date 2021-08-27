@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - emerge -t -o -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
+- USE="qt5" emerge dev-libs/appstream
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
