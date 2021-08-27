@@ -6,8 +6,71 @@ labels:
   emerge.packages: >-
     kde-plasma/discover
 provides:
+  - name: flatpak
+    category: acct-group
+    version: '>=0'
+  - name: flatpak
+    category: acct-user
+    version: '>=0'
+  - name: gcab
+    category: app-arch
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-utils
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-simple-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-simple-dtd
+    category: app-text
+    version: '>=0'
+  - name: openjade
+    category: app-text
+    version: '>=0'
+  - name: libjcat
+    category: dev-libs
+    version: '>=0'
+  - name: libxmlb
+    category: dev-libs
+    version: '>=0'
+  - name: pyparsing
+    category: dev-python
+    version: '>=0'
+  - name: ostree
+    category: dev-util
+    version: '>=0'
+  - name: gnome-desktop
+    category: gnome-base
+    version: '>=0'
+  - name: kcmutils
+    category: kde-frameworks
+    version: '>=0'
   - name: discover
     category: kde-plasma
+    version: '>=0'
+  - name: flatpak
+    category: sys-apps
+    version: '>=0'
+  - name: fwupd
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-desktop-portal-gtk
+    category: sys-apps
     version: '>=0'
 requires:
   - category: "layers"
