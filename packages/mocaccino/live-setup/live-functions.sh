@@ -139,14 +139,19 @@ setup_live_user() {
 }
 
 setup_vt_autologin() {
-        cp /lib/systemd/system/getty@.service \
-            /etc/systemd/system/autologin@.service
-        sed -i "/^ExecStart=/ s:/sbin/agetty:/sbin/agetty --autologin root:g" \
-            /lib/systemd/system/getty@.service
-        sed -i "/^ExecStart=/ s:-o.*--noclear::g" \
-            /lib/systemd/system/getty@.service
-        systemctl daemon-reload
+    cp /lib/systemd/system/getty@.service \
+        /etc/systemd/system/autologin@.service
+    sed -i "/^ExecStart=/ s:/sbin/agetty:/sbin/agetty --autologin root:g" \
+        /lib/systemd/system/getty@.service
+    sed -i "/^ExecStart=/ s:-o.*--noclear::g" \
+        /lib/systemd/system/getty@.service
+        
+    systemctl daemon-reload
+    
+    # not for SDDM
+    if [ ! -f "$SDDM_FILE" ]; then
         systemctl restart getty@tty1
+    fi
 }
 
 setup_desktop_session() {
