@@ -20,7 +20,7 @@ prelude:
 - cp -rf package.env /etc/portage/
 steps:
 # - eval 'emerge --unmerge dev-lang/python:3.9 || true'
-- emerge -1 app-arch/libarchive app-arch/xz-utils dev-python/setuptools:0 dev-python/setuptools_scm:0 dev-python/certifi:0 dev-python/jinja dev-util/meson dev-python/cffi dev-python/toml dev-python/urllib3 dev-python/requests --backtrack=100
+- emerge -1 dev-libs/openssl net-misc/openssh dev-libs/libgcrypt:0 app-arch/libarchive app-arch/xz-utils dev-python/cython dev-python/setuptools:0 dev-python/setuptools_scm:0 dev-python/certifi:0 dev-python/jinja dev-util/meson dev-python/cffi dev-python/toml dev-python/urllib3 dev-python/requests dev-python/pycparser dev-python/idna dev-python/PySocks --backtrack=100
 - emerge -1 sys-apps/portage
 # - emerge -1 dev-libs/libgcrypt:0
 # - emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS
