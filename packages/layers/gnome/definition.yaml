@@ -78,21 +78,6 @@ provides:
   - name: totem-pl-parser
     category: dev-libs
     version: '>=0'
-  - name: lpeg
-    category: dev-lua
-    version: '>=0'
-  - name: LuaBitOp
-    category: dev-lua
-    version: '>=0'
-  - name: luaexpat
-    category: dev-lua
-    version: '>=0'
-  - name: luajson
-    category: dev-lua
-    version: '>=0'
-  - name: luasocket
-    category: dev-lua
-    version: '>=0'
   - name: gst-python
     category: dev-python
     version: '>=0'
@@ -159,6 +144,9 @@ provides:
   - name: gnome-user-docs
     category: gnome-extra
     version: '>=0'
+  - name: gnome-weather
+    category: gnome-extra
+    version: '>=0'
   - name: mousetweaks
     category: gnome-extra
     version: '>=0'
@@ -175,9 +163,6 @@ provides:
     category: gui-libs
     version: '>=0'
   - name: gtk
-    category: gui-libs
-    version: '>=0'
-  - name: libhandy
     category: gui-libs
     version: '>=0'
   - name: tepl
@@ -214,12 +199,6 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libmediaart
-    category: media-libs
-    version: '>=0'
-  - name: libquvi
-    category: media-libs
-    version: '>=0'
-  - name: libquvi-scripts
     category: media-libs
     version: '>=0'
   - name: libraw
@@ -289,6 +268,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: gtksourceview
+    category: x11-libs
+    version: '>=0'
+  - name: libxcvt
     category: x11-libs
     version: '>=0'
   - name: gnome-terminal

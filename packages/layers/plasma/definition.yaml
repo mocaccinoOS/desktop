@@ -343,9 +343,6 @@ provides:
   - name: mailx
     category: virtual
     version: '>=0'
-  - name: xwayland
-    category: x11-base
-    version: '>=0'
   - name: appmenu-gtk-module
     category: x11-misc
     version: '>=0'
