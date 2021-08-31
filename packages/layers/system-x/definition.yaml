@@ -50,6 +50,9 @@ requires:
   - name: ntp
     category: entity
     version: ">=0"
+  - name: plugdev
+    category: entity
+    version: ">=0"
   - name: polkitd
     category: entity
     version: ">=0"
@@ -116,9 +119,11 @@ requires:
 emerge:
   jobs: "3"
   packages:
+    - acct-group/plugdev
     - app-arch/cpio
     - app-arch/zip
     - dev-lang/ruby
+    - dev-libs/libgudev
     - dev-vcs/git
     - net-misc/ntp
     - media-libs/libpng
@@ -175,6 +180,9 @@ provides:
     category: acct-group
     version: '>=0'
   - name: ntp
+    category: acct-group
+    version: '>=0'
+  - name: plugdev
     category: acct-group
     version: '>=0'
   - name: polkitd
@@ -493,6 +501,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: gobject-introspection-common
+    category: dev-libs
+    version: '>=0'
+  - name: libgudev
     category: dev-libs
     version: '>=0'
   - name: icu

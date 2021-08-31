@@ -1,5 +1,6 @@
 dev-libs/libnl utils
 net-dialup/ppp atm dhcp eap-tls radius -gtk
+net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
 # Disable net-wireless/bluez for libpcap to avoid
 # having dbus, thus half X shit around pulled in
 net-libs/libpcap -bluetooth

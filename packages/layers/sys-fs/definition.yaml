@@ -25,9 +25,6 @@ provides:
   - name: libev
     category: dev-libs
     version: '>=0'
-  - name: libgudev
-    category: dev-libs
-    version: '>=0'
   - name: libverto
     category: dev-libs
     version: '>=0'

@@ -4,10 +4,13 @@ version: 0.2+7
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    net-dialup/ppp net-dialup/ppp-scripts net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/mobile-broadband-provider-info net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
+    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/c-ares net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/mobile-broadband-provider-info net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"
+    version: ">=0"
+  - name: dnsmasq
+    category: entity
     version: ">=0"
   - category: "entity"
     name: "openvpn"
@@ -22,6 +25,9 @@ requires:
     category: entity
     version: ">=0"
 provides:
+  - name: dnsmasq
+    category: acct-group
+    version: '>=0'
   - name: openct
     category: acct-group
     version: '>=0'
@@ -33,6 +39,9 @@ provides:
     version: '>=0'
   - name: usb
     category: acct-group
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-user
     version: '>=0'
   - name: openvpn
     category: acct-user
@@ -46,6 +55,9 @@ provides:
   - name: m2crypto
     category: dev-python
     version: '>=0'
+  - name: traceroute
+    category: net-analyzer
+    version: '>=0'
   - name: linux-atm
     category: net-dialup
     version: '>=0'
@@ -58,6 +70,9 @@ provides:
   - name: c-ares
     category: net-dns
     version: '>=0'
+  - name: dnsmasq
+    category: net-dns
+    version: '>=0'
   - name: libnatpmp
     category: net-libs
     version: '>=0'
@@ -68,6 +83,12 @@ provides:
     category: net-libs
     version: '>=0'
   - name: miniupnpc
+    category: net-libs
+    version: '>=0'
+  - name: libnetfilter_conntrack
+    category: net-libs
+    version: '>=0'
+  - name: libnfnetlink
     category: net-libs
     version: '>=0'
   - name: mobile-broadband-provider-info
