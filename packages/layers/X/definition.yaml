@@ -436,7 +436,13 @@ provides:
   - name: B-Hooks-EndOfScope
     category: dev-perl
     version: '>=0'
+  - name: Capture-Tiny
+    category: dev-perl
+    version: '>=0'
   - name: Class-Data-Inheritable
+    category: dev-perl
+    version: '>=0'
+  - name: Config-AutoConf
     category: dev-perl
     version: '>=0'
   - name: Data-OptList
@@ -482,6 +488,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: File-MimeInfo
+    category: dev-perl
+    version: '>=0'
+  - name: File-Slurper
     category: dev-perl
     version: '>=0'
   - name: File-Which
@@ -536,6 +545,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Perl-Tidy
+    category: dev-perl
+    version: '>=0'
+  - name: PerlIO-utf8_strict
     category: dev-perl
     version: '>=0'
   - name: Ref-Util
