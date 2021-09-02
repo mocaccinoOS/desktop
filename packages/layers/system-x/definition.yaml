@@ -458,9 +458,6 @@ provides:
   - name: python
     category: dev-lang
     version: '>=0'
-  - name: python
-    category: dev-lang
-    version: '>=0'
   - name: python-exec
     category: dev-lang
     version: '>=0'
