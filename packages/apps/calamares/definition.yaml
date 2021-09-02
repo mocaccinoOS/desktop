@@ -8,7 +8,7 @@ provides:
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =app-admin/calamares-3.2.32.1
+    =app-admin/calamares-3.2.32.1-r1
 requires:
   - category: "layers"
     name: "sys-fs"
