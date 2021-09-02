@@ -20,7 +20,7 @@ steps:
 - emerge -1 dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
 - emerge -1 dev-lang/rust-bin
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C virtual/rust dev-lang/rust-bin
+- emerge -C virtual/rust dev-lang/rust-bin app-text/docbook-xsl-ns-stylesheets
 - etc-update -q --automode -5
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
