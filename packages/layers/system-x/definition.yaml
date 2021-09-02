@@ -503,9 +503,6 @@ provides:
   - name: gobject-introspection-common
     category: dev-libs
     version: '>=0'
-  - name: libgudev
-    category: dev-libs
-    version: '>=0'
   - name: icu
     category: dev-libs
     version: '>=0'
@@ -543,6 +540,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libgpg-error
+    category: dev-libs
+    version: '>=0'
+  - name: libgudev
     category: dev-libs
     version: '>=0'
   - name: libksba
