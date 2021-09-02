@@ -2,7 +2,7 @@ category: "layers"
 name: "net-tools"
 version: 0.2+11
 labels:
-  emerge.jobs: "1"
+  emerge.jobs: "3"
   emerge.packages: >-
     net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/c-ares net-dns/dnsmasq net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
 requires:
