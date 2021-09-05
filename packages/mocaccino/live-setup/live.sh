@@ -106,9 +106,6 @@ setup_locale() {
             "/etc/profile.env"
 
     fi
-    # we must render a /etc/localtime file, we no longer ship this from the layer to prevent overwrite during upgrade
-    timedatectl set-timezone Europe/Rome
-    timedatectl set-local-rtc false
 }
 
 

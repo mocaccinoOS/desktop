@@ -243,6 +243,8 @@ prepare() {
     touch /etc/.updated
     touch /var/.updated
 
+    echo "Europe/Rome" > /etc/timezone
+
     SYSTEMD_SERVICES=(
         "avahi-daemon"
         "cups"
