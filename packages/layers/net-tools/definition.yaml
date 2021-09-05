@@ -82,19 +82,10 @@ provides:
   - name: dnsmasq
     category: net-dns
     version: '>=0'
-  - name: libnatpmp
-    category: net-libs
-    version: '>=0'
-  - name: libpcap
-    category: net-libs
-    version: '>=0'
-  - name: libtorrent-rasterbar
-    category: net-libs
-    version: '>=0'
-  - name: miniupnpc
-    category: net-libs
-    version: '>=0'
   - name: libmbim
+    category: net-libs
+    version: '>=0'
+  - name: libnatpmp
     category: net-libs
     version: '>=0'
   - name: libnetfilter_conntrack
@@ -103,7 +94,16 @@ provides:
   - name: libnfnetlink
     category: net-libs
     version: '>=0'
+  - name: libpcap
+    category: net-libs
+    version: '>=0'
   - name: libqmi
+    category: net-libs
+    version: '>=0'
+  - name: libtorrent-rasterbar
+    category: net-libs
+    version: '>=0'
+  - name: miniupnpc
     category: net-libs
     version: '>=0'
   - name: dhcp
