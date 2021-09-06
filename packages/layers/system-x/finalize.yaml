@@ -1,5 +1,5 @@
 install:
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
-- if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime fi
+- if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
 - ldconfig
 - source /etc/profile && env-update
