@@ -186,6 +186,13 @@ setup_desktop_session() {
     ln -sf "${sess}.desktop" /usr/share/xsessions/default.desktop
 }
 
+setup_diaplay_manager() {
+    # SDDM
+    if [ -f "$SDDM_FILE" ]; then
+        sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1breeze/" $SDDM_FILE
+    fi
+}
+
 setup_gui_installer() {
     # Configure Fluxbox
     local flux_dir="/home/${LIVE_USER}/.fluxbox"
@@ -224,17 +231,16 @@ openrc_running() {
 }
 
 setup_default_xsession() {
-	local sess="${1}"
-	echo "[Desktop]" > /etc/skel/.dmrc
-	echo "Session=${sess}" >> /etc/skel/.dmrc
-	rm -vf /usr/share/xsessions/default.desktop || true
-	ln -sf "${sess}.desktop" /usr/share/xsessions/default.desktop
+    local sess="${1}"
+    echo "[Desktop]" > /etc/skel/.dmrc
+    echo "Session=${sess}" >> /etc/skel/.dmrc
+    rm -vf /usr/share/xsessions/default.desktop || true
+    ln -sf "${sess}.desktop" /usr/share/xsessions/default.desktop
 }
 
-
 setup_networkmanager() {
-	systemctl enable NetworkManager
-	systemctl enable ModemManager
+    systemctl enable NetworkManager
+    systemctl enable ModemManager
 }
 
 prepare() {
@@ -253,13 +259,13 @@ prepare() {
     done
 
     if [ -f "/usr/share/xsessions/mate.desktop" ]; then
-    	setup_default_xsession "mate"
-	systemctl enable "lightdm"
+        setup_default_xsession "mate"
+        systemctl enable "lightdm"
     fi
 
     if [ -f "/usr/share/xsessions/plasma.desktop" ]; then
-    	setup_default_xsession "plasma"
-	systemctl enable "sddm"
+        setup_default_xsession "plasma"
+        systemctl enable "sddm"
     fi
 
     if [ -f "/usr/share/xsessions/gnome.desktop" ]; then
