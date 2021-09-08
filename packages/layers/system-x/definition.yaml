@@ -746,6 +746,9 @@ provides:
   - name: chardet
     category: dev-python
     version: '>=0'
+  - name: charset_normalizer
+    category: dev-python
+    version: '>=0'
   - name: cryptography
     category: dev-python
     version: '>=0'

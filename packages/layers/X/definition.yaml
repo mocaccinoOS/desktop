@@ -247,13 +247,13 @@ provides:
   - name: unicode-data
     category: app-i18n
     version: '>=0'
+  - name: docbook-dsssl-stylesheets
+    category: app-text
+    version: '>=0'
   - name: docbook-sgml-dtd
     category: app-text
     version: '>=0'
   - name: docbook-xml-dtd
-    category: app-text
-    version: '>=0'
-  - name: docbook-xsl-ns-stylesheets
     category: app-text
     version: '>=0'
   - name: dvipsk
@@ -457,15 +457,6 @@ provides:
   - name: Exception-Class
     category: dev-perl
     version: '>=0'
-  - name: ExtUtils-Config
-    category: dev-perl
-    version: '>=0'
-  - name: ExtUtils-Helpers
-    category: dev-perl
-    version: '>=0'
-  - name: ExtUtils-InstallPaths
-    category: dev-perl
-    version: '>=0'
   - name: File-BaseDir
     category: dev-perl
     version: '>=0'
@@ -484,9 +475,6 @@ provides:
   - name: File-Which
     category: dev-perl
     version: '>=0'
-  - name: HTTP-Daemon
-    category: dev-perl
-    version: '>=0'
   - name: IPC-System-Simple
     category: dev-perl
     version: '>=0'
@@ -494,9 +482,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Log-Dispatch
-    category: dev-perl
-    version: '>=0'
-  - name: Module-Build-Tiny
     category: dev-perl
     version: '>=0'
   - name: Module-Implementation
@@ -512,9 +497,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: namespace-clean
-    category: dev-perl
-    version: '>=0'
-  - name: Net-DBus
     category: dev-perl
     version: '>=0'
   - name: Package-Stash
@@ -571,34 +553,7 @@ provides:
   - name: Test-Fatal
     category: dev-perl
     version: '>=0'
-  - name: Text-Iconv
-    category: dev-perl
-    version: '>=0'
-  - name: Tie-IxHash
-    category: dev-perl
-    version: '>=0'
   - name: Variable-Magic
-    category: dev-perl
-    version: '>=0'
-  - name: X11-Protocol
-    category: dev-perl
-    version: '>=0'
-  - name: XML-NamespaceSupport
-    category: dev-perl
-    version: '>=0'
-  - name: XML-SAX
-    category: dev-perl
-    version: '>=0'
-  - name: XML-SAX-Base
-    category: dev-perl
-    version: '>=0'
-  - name: XML-SAX-Expat
-    category: dev-perl
-    version: '>=0'
-  - name: XML-Simple
-    category: dev-perl
-    version: '>=0'
-  - name: XML-Twig
     category: dev-perl
     version: '>=0'
   - name: mako
@@ -847,9 +802,6 @@ provides:
   - name: mailbase
     category: net-mail
     version: '>=0'
-  - name: dhcp
-    category: net-misc
-    version: '>=0'
   - name: freerdp
     category: net-misc
     version: '>=0'
@@ -940,9 +892,6 @@ provides:
   - name: perl-Locale-Maketext
     category: virtual
     version: '>=0'
-  - name: perl-Socket
-    category: virtual
-    version: '>=0'
   - name: perl-Storable
     category: virtual
     version: '>=0'
@@ -950,9 +899,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Test-Simple
-    category: virtual
-    version: '>=0'
-  - name: perl-Time-HiRes
     category: virtual
     version: '>=0'
   - name: tex-base
