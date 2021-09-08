@@ -186,7 +186,7 @@ setup_desktop_session() {
     ln -sf "${sess}.desktop" /usr/share/xsessions/default.desktop
 }
 
-setup_diaplay_manager() {
+setup_display_manager() {
     # SDDM
     if [ -f "$SDDM_FILE" ]; then
         sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1breeze/" $SDDM_FILE

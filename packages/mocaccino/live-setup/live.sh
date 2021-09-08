@@ -116,7 +116,7 @@ main() {
     setup_autologin
     setup_vbox
     setup_vt_autologin
-    setup_diaplay_manager
+    setup_display_manager
 }
 
 main
