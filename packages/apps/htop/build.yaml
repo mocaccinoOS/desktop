@@ -11,6 +11,8 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+excludes:
+- ^/usr/share/applications/mimeinfo.cache
 requires:
 - category: "layers"
   name: "system-x"
