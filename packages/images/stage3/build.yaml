@@ -3,7 +3,7 @@ image: "quay.io/mocaccino/extra:latest"
 package_dir: /gentoo
 
 prelude:
-- luet upgrade && luet install -y utils/tar utils/curl utils/xz
+- luet upgrade && luet install -y --force utils/tar utils/curl utils/xz
 - mkdir /gentoo
 
 steps:
