@@ -365,9 +365,6 @@ provides:
   - name: eselect-pinentry
     category: app-eselect
     version: '>=0'
-  - name: eselect-python
-    category: app-eselect
-    version: '>=0'
   - name: eselect-ruby
     category: app-eselect
     version: '>=0'
@@ -740,16 +737,10 @@ provides:
   - name: certifi
     category: dev-python
     version: '>=0'
-  - name: cffi
-    category: dev-python
-    version: '>=0'
   - name: chardet
     category: dev-python
     version: '>=0'
   - name: charset_normalizer
-    category: dev-python
-    version: '>=0'
-  - name: cryptography
     category: dev-python
     version: '>=0'
   - name: cython
@@ -767,16 +758,7 @@ provides:
   - name: markupsafe
     category: dev-python
     version: '>=0'
-  - name: ply
-    category: dev-python
-    version: '>=0'
-  - name: pycparser
-    category: dev-python
-    version: '>=0'
   - name: pyelftools
-    category: dev-python
-    version: '>=0'
-  - name: pyopenssl
     category: dev-python
     version: '>=0'
   - name: PySocks
@@ -789,9 +771,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: setuptools_scm
-    category: dev-python
-    version: '>=0'
-  - name: six
     category: dev-python
     version: '>=0'
   - name: toml
@@ -1094,9 +1073,6 @@ provides:
   - name: binutils
     category: sys-devel
     version: '>=0'
-  - name: binutils
-    category: sys-devel
-    version: '>=0'
   - name: binutils-config
     category: sys-devel
     version: '>=0'
@@ -1113,9 +1089,6 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: flex
-    category: sys-devel
-    version: '>=0'
-  - name: gcc
     category: sys-devel
     version: '>=0'
   - name: gcc

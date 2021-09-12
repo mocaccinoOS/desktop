@@ -34,7 +34,16 @@ provides:
   - name: Parse-Yapp
     category: dev-perl
     version: '>=0'
+  - name: cffi
+    category: dev-python
+    version: '>=0'
   - name: docutils
+    category: dev-python
+    version: '>=0'
+  - name: ply
+    category: dev-python
+    version: '>=0'
+  - name: pycparser
     category: dev-python
     version: '>=0'
   - name: pygments
