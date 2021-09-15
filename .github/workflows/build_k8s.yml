@@ -29,6 +29,7 @@ jobs:
 #      EDGEVPN: ${{ secrets.EDGEVPN }}
       MASTER: 10.1.0.20
       ADDRESS: "10.1.0.201/24"
+      LUET_GENERAL__DEBUG: "true"
     steps:
     - uses: actions/checkout@v2
     - uses: fkirc/skip-duplicate-actions@master
