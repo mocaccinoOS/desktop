@@ -85,8 +85,8 @@ excludes:
 - ^/usr/lib64/go.*
 - ^/usr/libexec/gcc.*
 - ^/usr/share/gcc-data.*
-- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc++.so.6.0.28-gdb.py
-- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/libstdc++.so.6.0.28-gdb.py
+- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc\+\+.so.6.0.28-gdb.py
+- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/libstdc\+\+.so.6.0.28-gdb.py
 - ^/usr/x86_64-pc-linux-gnu/gcc-bin.*
 - ^/usr/lib/gcc
 - ^/usr/lib/llvm.*
