@@ -883,6 +883,9 @@ provides:
   - name: libpng
     category: media-libs
     version: '>=0'
+  - name: c-ares
+    category: net-dns
+    version: '>=0'
   - name: dnssec-root
     category: net-dns
     version: '>=0'
