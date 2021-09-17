@@ -4,7 +4,7 @@ version: 0.2+19
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/c-ares net-dns/dnsmasq net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
+    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openvpn net-wireless/crda net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"
@@ -75,9 +75,6 @@ provides:
     version: '>=0'
   - name: ppp-scripts
     category: net-dialup
-    version: '>=0'
-  - name: c-ares
-    category: net-dns
     version: '>=0'
   - name: dnsmasq
     category: net-dns
