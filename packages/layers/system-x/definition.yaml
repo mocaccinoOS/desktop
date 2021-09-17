@@ -128,6 +128,7 @@ emerge:
     - dev-vcs/git
     - net-misc/ntp
     - media-libs/libpng
+    - sys-apps/bolt
     - sys-apps/dmidecode
     - sys-apps/pciutils
     - sys-devel/clang
@@ -870,6 +871,9 @@ provides:
   - name: re2c
     category: dev-util
     version: '>=0'
+  - name: umockdev
+    category: dev-util
+    version: '>=0'
   - name: git
     category: dev-vcs
     version: '>=0'
@@ -937,6 +941,9 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: baselayout
+    category: sys-apps
+    version: '>=0'
+  - name: bolt
     category: sys-apps
     version: '>=0'
   - name: busybox
