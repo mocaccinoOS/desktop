@@ -199,7 +199,7 @@ provides:
   - name: ksshaskpass
     category: kde-plasma
     version: '>=0'
-  - name: ksysguard
+  - name: ksystemstats
     category: kde-plasma
     version: '>=0'
   - name: kwallet-pam
@@ -215,6 +215,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: kwrited
+    category: kde-plasma
+    version: '>=0'
+  - name: layer-shell-qt
     category: kde-plasma
     version: '>=0'
   - name: libksysguard
