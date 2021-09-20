@@ -76,6 +76,9 @@ provides:
   - name: docbook-xml-simple-dtd
     category: app-text
     version: '>=0'
+  - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
   - name: libspectre
     category: app-text
     version: '>=0'

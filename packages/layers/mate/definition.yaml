@@ -202,6 +202,21 @@ provides:
   - name: tinyxml
     category: dev-libs
     version: '>=0'
+  - name: XML-NamespaceSupport
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Base
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Expat
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Simple
+    category: dev-perl
+    version: '>=0'
   - name: gucharmap
     category: gnome-extra
     version: '>=0'
