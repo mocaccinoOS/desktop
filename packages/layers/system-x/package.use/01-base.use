@@ -1,3 +1,4 @@
+app-arch/p7zip -kde -wxwidgets
 # vzctl and other packages now require xattr support in tar
 app-arch/tar xattr
 app-arch/zstd lz4

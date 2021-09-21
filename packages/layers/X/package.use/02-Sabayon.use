@@ -7,7 +7,6 @@ app-admin/ulogd mysql
 app-admin/rsyslog ssl uuid openssl kafka elasticsearch kubernetes snmp normalize
 app-arch/advancecomp mng
 app-arch/engrampa caja
-app-arch/p7zip -kde -wxwidgets
 app-arch/rpm lua
 app-backup/backintime gnome -kde
 app-backup/bacula mysql vim-syntax -sqlite
