@@ -1,6 +1,6 @@
 category: "apps"
 name: "weechat"
-version: 3.1+19
+version: 3.1+20
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
