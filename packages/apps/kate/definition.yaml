@@ -1,6 +1,6 @@
 category: "apps"
 name: "kate"
-version: 20.12.3+28
+version: 21.04.3+1
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
