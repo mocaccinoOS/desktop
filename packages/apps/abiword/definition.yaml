@@ -1,6 +1,6 @@
 category: "apps"
 name: "abiword"
-version: 3.0.4+41
+version: 3.0.4+42
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
