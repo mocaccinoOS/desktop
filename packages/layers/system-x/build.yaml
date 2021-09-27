@@ -29,7 +29,7 @@ steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
-- emerge -C virtual/rust dev-lang/rust-bin
+- emerge -C virtual/rust dev-lang/rust-bin dev-lang/yasm
 excludes:
 - ^/etc/unbound/unbound_*
 - ^/etc/shadow
