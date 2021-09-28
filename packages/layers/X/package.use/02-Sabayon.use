@@ -204,7 +204,6 @@ media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libggi aalib
 media-libs/libmypaint gegl
-media-libs/libraw demosaic
 media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/libsfml doc examples
