@@ -318,7 +318,13 @@ provides:
   - name: lz4
     category: app-arch
     version: '>=0'
+  - name: p7zip
+    category: app-arch
+    version: '>=0'
   - name: tar
+    category: app-arch
+    version: '>=0'
+  - name: unrar
     category: app-arch
     version: '>=0'
   - name: unzip
@@ -741,9 +747,6 @@ provides:
   - name: certifi
     category: dev-python
     version: '>=0'
-  - name: chardet
-    category: dev-python
-    version: '>=0'
   - name: charset_normalizer
     category: dev-python
     version: '>=0'
@@ -932,6 +935,9 @@ provides:
     version: '>=0'
   - name: wget
     category: net-misc
+    version: '>=0'
+  - name: Encode
+    category: perl-core
     version: '>=0'
   - name: File-Temp
     category: perl-core
