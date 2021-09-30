@@ -47,7 +47,6 @@ excludes:
 - ^/etc/localtime
 - ^/etc/profile.env
 - ^/etc/csh.env
-- ^/etc/sasl2/sasldb2
 - ^/etc/subgid
 - ^/etc/subuid
 - ^/mnt/.keep

@@ -1,4 +1,5 @@
 excludes:
+- ^/etc/sasl2/sasldb2
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
 - ^/var/db/repos
