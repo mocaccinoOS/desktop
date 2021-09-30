@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 20.12.3+33
+version: 20.12.3+34
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -28,7 +28,7 @@ provides:
   - name: dolphin
     category: kde-apps
     version: '>=0'
-  - name: gwenview 
+  - name: gwenview
     category: kde-apps
     version: '>=0'
   - name: kcron
