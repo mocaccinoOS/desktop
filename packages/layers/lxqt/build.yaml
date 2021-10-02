@@ -18,3 +18,6 @@ requires:
 - category: "layers"
   name: "kde-common"
   version: ">=0"
+- category: "apps"
+  name: "pavucontrol-qt"
+  version: ">=0"
