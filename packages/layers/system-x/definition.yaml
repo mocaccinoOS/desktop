@@ -957,9 +957,6 @@ provides:
   - name: bolt
     category: sys-apps
     version: '>=0'
-  - name: busybox
-    category: sys-apps
-    version: '>=0'
   - name: coreutils
     category: sys-apps
     version: '>=0'
