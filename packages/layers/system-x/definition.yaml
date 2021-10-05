@@ -128,6 +128,7 @@ emerge:
     - dev-lang/ruby
     - dev-libs/libgudev
     - dev-python/six
+    - dev-python/pyyaml
     - dev-vcs/git
     - net-misc/ntp
     - media-libs/libpng
@@ -770,6 +771,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: PySocks
+    category: dev-python
+    version: '>=0'
+  - name: pyyaml
     category: dev-python
     version: '>=0'
   - name: requests
