@@ -483,6 +483,9 @@ provides:
   - name: tcl
     category: dev-lang
     version: '>=0'
+  - name: vala
+    category: dev-lang
+    version: '>=0'
   - name: boehm-gc
     category: dev-libs
     version: '>=0'
@@ -607,6 +610,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: popt
+    category: dev-libs
+    version: '>=0'
+  - name: vala-common
     category: dev-libs
     version: '>=0'
   - name: Authen-SASL
@@ -912,6 +918,9 @@ provides:
   - name: libnsl
     category: net-libs
     version: '>=0'
+  - name: libpcap
+    category: net-libs
+    version: '>=0'
   - name: libtirpc
     category: net-libs
     version: '>=0'
@@ -1064,6 +1073,9 @@ provides:
     version: '>=0'
   - name: thin-provisioning-tools
     category: sys-block
+    version: '>=0'
+  - name: autoconf
+    category: sys-devel
     version: '>=0'
   - name: autoconf
     category: sys-devel

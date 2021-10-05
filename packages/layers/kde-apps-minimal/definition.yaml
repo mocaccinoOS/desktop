@@ -79,6 +79,9 @@ provides:
   - name: kwrite
     category: kde-apps
     version: '>=0'
+  - name: libkdcraw
+    category: kde-apps
+    version: '>=0'
   - name: libkdegames
     category: kde-apps
     version: '>=0'
@@ -102,6 +105,9 @@ provides:
     version: '>=0'
   - name: yakuake
     category: kde-apps
+    version: '>=0'
+  - name: kimageformats
+    category: kde-frameworks
     version: '>=0'
   - name: skanlite
     category: kde-misc
