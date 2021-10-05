@@ -1,4 +1,4 @@
-# [![Packages](https://packages.mocaccino.org/badge/mocaccino-desktop.svg "List of packages")](https://packages.mocaccino.org/mocaccino-desktop) :computer: mocaccinoOS Desktop repository
+# [![Packages](https://packages.mocaccino.org/badge/mocaccino-desktop-stable.svg "List of packages")](https://packages.mocaccino.org/mocaccino-desktop) :computer: mocaccinoOS Desktop repository
 
 This repository contains installable "apps" that we refer internally as "layers" to install common suite of packages needed to bootstrap a pure and simple OS.
 
