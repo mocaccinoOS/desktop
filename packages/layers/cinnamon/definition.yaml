@@ -21,9 +21,6 @@ provides:
   - name: pexpect
     category: dev-python
     version: '>=0'
-  - name: psutil
-    category: dev-python
-    version: '>=0'
   - name: ptyprocess
     category: dev-python
     version: '>=0'

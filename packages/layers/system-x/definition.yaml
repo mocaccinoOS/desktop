@@ -128,6 +128,7 @@ emerge:
     - dev-lang/ruby
     - dev-libs/libgudev
     - dev-python/six
+    - dev-python/psutil
     - dev-python/pyyaml
     - dev-vcs/git
     - net-misc/ntp
@@ -765,6 +766,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: markupsafe
+    category: dev-python
+    version: '>=0'
+  - name: psutil
     category: dev-python
     version: '>=0'
   - name: pyelftools
