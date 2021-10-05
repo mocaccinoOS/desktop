@@ -127,6 +127,7 @@ emerge:
     - app-arch/zip
     - dev-lang/ruby
     - dev-libs/libgudev
+    - dev-python/six
     - dev-vcs/git
     - net-misc/ntp
     - media-libs/libpng
@@ -778,6 +779,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: setuptools_scm
+    category: dev-python
+    version: '>=0'
+  - name: six
     category: dev-python
     version: '>=0'
   - name: toml
