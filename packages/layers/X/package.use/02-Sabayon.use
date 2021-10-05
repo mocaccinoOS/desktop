@@ -122,7 +122,6 @@ dev-python/numpy lapack
 dev-python/netaddr -cli
 dev-python/numpy-python2 lapack
 dev-python/pypy sqlite
-dev-python/pyudev -qt5
 dev-python/QtPy webkit
 dev-python/pyglet -alsa
 dev-python/sphinx latex
