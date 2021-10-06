@@ -1,6 +1,6 @@
 category: "apps"
 name: "hexchat"
-version: 2.14.3+55
+version: 2.14.3+56
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

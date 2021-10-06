@@ -1,6 +1,6 @@
 category: "apps"
 name: "opera"
-version: 77.0.4054.90+33
+version: 77.0.4054.90+34
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
