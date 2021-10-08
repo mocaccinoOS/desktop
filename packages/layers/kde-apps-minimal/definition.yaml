@@ -88,9 +88,6 @@ provides:
   - name: libkipi
     category: kde-apps
     version: '>=0'
-  - name: libksane
-    category: kde-apps
-    version: '>=0'
   - name: print-manager
     category: kde-apps
     version: '>=0'
