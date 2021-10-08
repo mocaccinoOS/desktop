@@ -229,9 +229,6 @@ provides:
   - name: kdav
     category: kde-frameworks
     version: '>=0'
-  - name: kross
-    category: kde-frameworks
-    version: '>=0'
   - name: syndication
     category: kde-frameworks
     version: '>=0'
