@@ -192,9 +192,6 @@ provides:
   - name: grilo
     category: media-libs
     version: '>=0'
-  - name: gsound
-    category: media-libs
-    version: '>=0'
   - name: gupnp-dlna
     category: media-libs
     version: '>=0'
