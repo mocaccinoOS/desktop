@@ -1,6 +1,6 @@
 category: "apps"
 name: "zsh"
-version: 5.8+49
+version: 5.8+50
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
