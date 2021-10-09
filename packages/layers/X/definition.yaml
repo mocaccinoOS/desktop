@@ -115,6 +115,15 @@ provides:
   - name: rpm2targz
     category: app-arch
     version: '>=0'
+  - name: gcr
+    category: app-crypt
+    version: '>=0'
+  - name: libsecret
+    category: app-crypt
+    version: '>=0'
+  - name: p11-kit
+    category: app-crypt
+    version: '>=0'
   - name: myspell-af
     category: app-dicts
     version: '>=0'
@@ -313,9 +322,6 @@ provides:
   - name: vala
     category: dev-lang
     version: '>=0'
-  - name: vala
-    category: dev-lang
-    version: '>=0'
   - name: appstream
     category: dev-libs
     version: '>=0'
@@ -407,9 +413,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: snowball-stemmer
-    category: dev-libs
-    version: '>=0'
-  - name: vala-common
     category: dev-libs
     version: '>=0'
   - name: wayland
@@ -597,6 +600,9 @@ provides:
     version: '>=0'
   - name: wayland-scanner
     category: dev-util
+    version: '>=0'
+  - name: gnome-keyring
+    category: gnome-base
     version: '>=0'
   - name: gsettings-desktop-schemas
     category: gnome-base
@@ -793,6 +799,9 @@ provides:
   - name: libndp
     category: net-libs
     version: '>=0'
+  - name: libnma
+    category: net-libs
+    version: '>=0'
   - name: libproxy
     category: net-libs
     version: '>=0'
@@ -911,6 +920,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Test-Simple
+    category: virtual
+    version: '>=0'
+  - name: secret-service
     category: virtual
     version: '>=0'
   - name: tex-base
@@ -1079,6 +1091,9 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: gdk-pixbuf
+    category: x11-libs
+    version: '>=0'
+  - name: gtk+
     category: x11-libs
     version: '>=0'
   - name: gtk+
