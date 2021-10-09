@@ -1,0 +1,15 @@
+category: "apps"
+name: "pavucontrol-qt"
+version: 0.17.0+3
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    media-sound/pavucontrol-qt
+provides:
+  - name: pavucontrol-qt
+    category: media-sound
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
