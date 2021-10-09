@@ -9,7 +9,19 @@ requires:
   - category: "layers"
     name: "qt"
     version: ">=0"
+  - name: saned
+    category: entity
+    version: ">=0"
+  - name: scanner
+    category: entity
+    version: ">=0"
 provides:
+  - name: saned
+    category: acct-user
+    version: '>=0'
+  - name: scanner
+    category: acct-group
+    version: '>=0'
   - name: libdbusmenu-qt
     category: dev-libs
     version: '>=0'
