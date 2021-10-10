@@ -91,9 +91,6 @@ provides:
   - name: libnfnetlink
     category: net-libs
     version: '>=0'
-  - name: libpcap
-    category: net-libs
-    version: '>=0'
   - name: libqmi
     category: net-libs
     version: '>=0'
