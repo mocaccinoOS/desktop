@@ -4,7 +4,7 @@ version: 3+19
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-libs/kpmcore dev-libs/plasma-wayland-protocols kde-apps/libksane kde-frameworks/attica kde-frameworks/kcmutils kde-frameworks/kirigami kde-frameworks/kdeclarative kde-frameworks/kitemmodels kde-frameworks/knewstuff kde-frameworks/kross kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
+    sys-libs/kpmcore dev-libs/plasma-wayland-protocols kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/kcmutils kde-frameworks/kirigami kde-frameworks/kdeclarative kde-frameworks/kitemmodels kde-frameworks/knewstuff kde-frameworks/kross kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
 requires:
   - category: "layers"
     name: "qt"
@@ -27,6 +27,9 @@ provides:
     version: '>=0'
   - name: plasma-wayland-protocols
     category: dev-libs
+    version: '>=0'
+  - name: libkomparediff2
+    category: kde-apps
     version: '>=0'
   - name: libksane
     category: kde-apps
