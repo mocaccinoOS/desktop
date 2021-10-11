@@ -18,7 +18,7 @@ jobs:
       MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
       MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
       IMAGE_REPOSITORY: quay.io/mocaccinocache/desktop
-      NODE_SELECTOR: "luet.io/workload: jobs"
+      NODE_SELECTOR: "luet.io/workload: jobs-light"
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
       BACKEND: docker-sidecar
