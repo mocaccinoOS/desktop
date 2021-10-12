@@ -1,6 +1,6 @@
 category: "apps"
 name: "mesa-progs"
-version: 8.4.0+55
+version: 8.4.0+56
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
