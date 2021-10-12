@@ -16,7 +16,5 @@ requires:
 - category: "gentoo"
   version:  ">=0.1"
   name:     "stage3"
-join:
-- category: "gentoo"
-  version:  ">=0.1"
-  name:     "stage3"
+
+requires_final_images: true
