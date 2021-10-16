@@ -1,0 +1,11 @@
+category: "apps"
+name: "brave"
+version: 1.31.84+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    www-client/brave-bin
+provides:
+  - name: brave-bin
+    category: www-client
+    version: '>=0'
