@@ -1,6 +1,6 @@
 category: "apps"
 name: "google-chrome"
-version: 94.0.4606.61+10
+version: 94.0.4606.61+11
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
