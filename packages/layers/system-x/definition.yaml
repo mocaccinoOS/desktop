@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20211017"
+version: "0.20211019"
 gcc_version: "10.3.0"
 category: layers
 requires:
