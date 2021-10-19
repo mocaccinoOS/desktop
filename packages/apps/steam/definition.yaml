@@ -1,6 +1,6 @@
 category: "apps"
 name: "steam"
-version: 20210323+53
+version: 20210323+54
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -9,14 +9,8 @@ provides:
   - name: gamemode
     category: acct-group
     version: '>=0'
-  - name: layman
-    category: app-portage
-    version: '>=0'
   - name: inih
     category: dev-libs
-    version: '>=0'
-  - name: ssl-fetch
-    category: dev-python
     version: '>=0'
   - name: game-device-udev-rules
     category: games-util

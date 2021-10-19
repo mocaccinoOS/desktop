@@ -12,10 +12,10 @@ env:
 prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-steps:
 - USE="-subversion -mercurial" emerge layman
 - layman -L
 - echo "y" | layman -a steam-overlay
+steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
