@@ -1,6 +1,6 @@
 category: "apps"
 name: "brave"
-version: 1.31.84+2
+version: 1.31.84+3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -9,3 +9,7 @@ provides:
   - name: brave-bin
     category: www-client
     version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
