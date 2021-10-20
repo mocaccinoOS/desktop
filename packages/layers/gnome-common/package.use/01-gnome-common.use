@@ -4,6 +4,7 @@ app-crypt/p11-kit asn1 libffi trust
 # see https://bugs.gentoo.org/570512
 app-crypt/pinentry gnome-keyring
 app-crypt/libsecret crypt introspection vala
+app-text/poppler cairo
 dev-cpp/cairomm aqua
 dev-libs/libgdata gnome-online-accounts
 gnome-base/gvfs afp ios samba gnome gdu google gnome-online-accounts fuse archive gnome-keyring mtp nfs udisks
