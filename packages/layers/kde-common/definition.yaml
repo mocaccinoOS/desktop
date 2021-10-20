@@ -16,17 +16,20 @@ requires:
     category: entity
     version: ">=0"
 provides:
-  - name: saned
-    category: acct-user
-    version: '>=0'
   - name: scanner
     category: acct-group
+    version: '>=0'
+  - name: saned
+    category: acct-user
     version: '>=0'
   - name: libdbusmenu-qt
     category: dev-libs
     version: '>=0'
   - name: plasma-wayland-protocols
     category: dev-libs
+    version: '>=0'
+  - name: designer
+    category: dev-qt
     version: '>=0'
   - name: libkomparediff2
     category: kde-apps
@@ -133,6 +136,9 @@ provides:
   - name: kparts
     category: kde-frameworks
     version: '>=0'
+  - name: kross
+    category: kde-frameworks
+    version: '>=0'
   - name: kservice
     category: kde-frameworks
     version: '>=0'
@@ -140,9 +146,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: kwallet
-    category: kde-frameworks
-    version: '>=0'
-  - name: kross
     category: kde-frameworks
     version: '>=0'
   - name: kwayland
@@ -171,6 +174,9 @@ provides:
     version: '>=0'
   - name: polkit-kde-agent
     category: kde-plasma
+    version: '>=0'
+  - name: sane-backends
+    category: media-gfx
     version: '>=0'
   - name: polkit-qt
     category: sys-auth

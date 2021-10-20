@@ -21,9 +21,6 @@ provides:
   - name: libxmlb
     category: dev-libs
     version: '>=0'
-  - name: pyparsing
-    category: dev-python
-    version: '>=0'
   - name: ostree
     category: dev-util
     version: '>=0'
