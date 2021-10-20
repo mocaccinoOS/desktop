@@ -12,13 +12,13 @@ provides:
   - name: java-config
     category: dev-java
     version: '>=0'
-  - name: openjdk-jre-bin 
+  - name: openjdk-jre-bin
     category: dev-java
     version: '>=0'
   - name: libnet
     category: net-libs
     version: '>=0'
-  - name: baselayout-java         
+  - name: baselayout-java
     category: sys-apps
     version: '>=0'
   - name: jre

@@ -774,10 +774,16 @@ provides:
   - name: markupsafe
     category: dev-python
     version: '>=0'
+  - name: packaging
+    category: dev-python
+    version: '>=0'
   - name: psutil
     category: dev-python
     version: '>=0'
   - name: pyelftools
+    category: dev-python
+    version: '>=0'
+  - name: pyparsing
     category: dev-python
     version: '>=0'
   - name: PySocks
@@ -799,6 +805,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: toml
+    category: dev-python
+    version: '>=0'
+  - name: tomli
     category: dev-python
     version: '>=0'
   - name: urllib3
@@ -1085,9 +1094,6 @@ provides:
     version: '>=0'
   - name: thin-provisioning-tools
     category: sys-block
-    version: '>=0'
-  - name: autoconf
-    category: sys-devel
     version: '>=0'
   - name: autoconf
     category: sys-devel
