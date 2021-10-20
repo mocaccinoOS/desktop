@@ -1,0 +1,30 @@
+category: "apps"
+name: "java-jre"
+version: 8.302_p08+1
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    dev-java/openjdk-jre-bin virtual/jre
+provides:
+  - name: eselect-java
+    category: app-eselect
+    version: '>=0'
+  - name: java-config
+    category: dev-java
+    version: '>=0'
+  - name: openjdk-jre-bin 
+    category: dev-java
+    version: '>=0'
+  - name: libnet
+    category: net-libs
+    version: '>=0'
+  - name: baselayout-java         
+    category: sys-apps
+    version: '>=0'
+  - name: jre
+    category: virtual
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
