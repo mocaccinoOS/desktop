@@ -222,6 +222,26 @@ fixup_gnome_autologin_session() {
     setup_desktop_session "${LIVE_USER}" "${cur_session}"
 }
 
+is_vbox() {
+    local _isvbox=$(dmidecode | grep -i VirtualBox)
+    if [[ $? != 0 ]]; then
+        return 0
+    elif [ -n "${_isvbox}" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+setup_vbox() {
+   if ! is_vbox; then
+       systemctl disable virtualbox-guest-additions
+       systemctl stop virtualbox-guest-additions
+       # KILL IT WITH FIRE BEFORE IT LAYS EGGS
+       rm -rf /etc/xdg/autostart/vboxclient.desktop
+   fi
+}
+
 systemd_running() {
     test -d /run/systemd/system
 }
