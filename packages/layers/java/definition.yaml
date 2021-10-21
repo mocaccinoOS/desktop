@@ -1,6 +1,6 @@
-category: "apps"
+category: "layers"
 name: "java"
-version: 8.302_p08+1
+version: 8.302_p08+2
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
