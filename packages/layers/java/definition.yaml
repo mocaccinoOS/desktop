@@ -1,15 +1,18 @@
 category: "apps"
-name: "java-jre"
+name: "java"
 version: 8.302_p08+1
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-java/openjdk-jre-bin virtual/jre
+    dev-java/openjdk-jre-bin dev-java/openjdk-bin virtual/jre 
 provides:
   - name: eselect-java
     category: app-eselect
     version: '>=0'
   - name: java-config
+    category: dev-java
+    version: '>=0'
+  - name: openjdk-jdk-bin
     category: dev-java
     version: '>=0'
   - name: openjdk-jre-bin
