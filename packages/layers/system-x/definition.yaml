@@ -804,9 +804,6 @@ provides:
   - name: six
     category: dev-python
     version: '>=0'
-  - name: toml
-    category: dev-python
-    version: '>=0'
   - name: tomli
     category: dev-python
     version: '>=0'
@@ -1135,6 +1132,9 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: flex
+    category: sys-devel
+    version: '>=0'
+  - name: gcc
     category: sys-devel
     version: '>=0'
   - name: gcc

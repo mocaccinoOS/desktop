@@ -436,6 +436,9 @@ provides:
   - name: Config-AutoConf
     category: dev-perl
     version: '>=0'
+  - name: CPAN-Meta-Check
+    category: dev-perl
+    version: '>=0'
   - name: Data-OptList
     category: dev-perl
     version: '>=0'
@@ -458,6 +461,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Exception-Class
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-HasCompiler
     category: dev-perl
     version: '>=0'
   - name: File-BaseDir

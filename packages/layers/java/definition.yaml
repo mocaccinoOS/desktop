@@ -11,7 +11,7 @@ provides:
   - name: java-config
     category: dev-java
     version: '>=0'
-  - name: openjdk-jdk-bin
+  - name: openjdk-bin
     category: dev-java
     version: '>=0'
   - name: openjdk-jre-bin
