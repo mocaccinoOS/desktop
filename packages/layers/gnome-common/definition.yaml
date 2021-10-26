@@ -22,15 +22,6 @@ provides:
   - name: system-config-printer
     category: app-admin
     version: '>=0'
-  - name: gcr
-    category: app-crypt
-    version: '>=0'
-  - name: libsecret
-    category: app-crypt
-    version: '>=0'
-  - name: p11-kit
-    category: app-crypt
-    version: '>=0'
   - name: eselect-notify-send
     category: app-eselect
     version: '>=0'
@@ -124,9 +115,6 @@ provides:
   - name: gnome-common
     category: gnome-base
     version: '>=0'
-  - name: gnome-keyring
-    category: gnome-base
-    version: '>=0'
   - name: gvfs
     category: gnome-base
     version: '>=0'
@@ -187,9 +175,6 @@ provides:
   - name: gupnp
     category: net-libs
     version: '>=0'
-  - name: libnma
-    category: net-libs
-    version: '>=0'
   - name: rest
     category: net-libs
     version: '>=0'
@@ -203,9 +188,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: notification-daemon
-    category: virtual
-    version: '>=0'
-  - name: secret-service
     category: virtual
     version: '>=0'
   - name: colord-gtk

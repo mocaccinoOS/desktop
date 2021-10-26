@@ -1137,9 +1137,6 @@ provides:
   - name: gcc
     category: sys-devel
     version: '>=0'
-  - name: gcc
-    category: sys-devel
-    version: '>=0'
   - name: gcc-config
     category: sys-devel
     version: '>=0'

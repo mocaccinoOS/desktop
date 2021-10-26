@@ -100,9 +100,6 @@ provides:
   - name: skanlite
     category: kde-misc
     version: '>=0'
-  - name: sane-backends
-    category: media-gfx
-    version: '>=0'
   - name: kcolorpicker
     category: media-libs
     version: '>=0'

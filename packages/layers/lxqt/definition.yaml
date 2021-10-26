@@ -22,9 +22,6 @@ provides:
   - name: libqtxdg
     category: dev-libs
     version: '>=0'
-  - name: lxqt-build-tools
-    category: dev-util
-    version: '>=0'
   - name: lxmenu-data
     category: lxde-base
     version: '>=0'
