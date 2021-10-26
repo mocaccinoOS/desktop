@@ -10,7 +10,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     env:
       DOCKER_CFG: ${{ secrets.DOCKER_HOST }}
       ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
