@@ -1,6 +1,6 @@
 name: system-x
-version: 0.20211026+1
-gcc_version: "10.3.0"
+version: 0.20211026+2
+gcc_version: "11.2.0"
 category: layers
 requires:
   - category: "system"
