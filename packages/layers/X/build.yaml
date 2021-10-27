@@ -15,7 +15,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf patches /etc/portage/
-- emerge -1 dev-lang/rust-bin virtual/rust app-text/docbook-xsl-ns-stylesheets
+- emerge -1 app-arch/rpm2targz dev-lang/rust-bin virtual/rust app-text/docbook-xsl-ns-stylesheets
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 - USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
