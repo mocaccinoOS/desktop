@@ -155,7 +155,6 @@ gnome-extra/nautilus-sendto -cdr
 kde-apps/akonadi tools
 kde-apps/kget -bittorrent semantic-desktop
 kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
-kde-apps/krdc vnc
 kde-apps/ktp-common-internals otr
 kde-apps/marble plasma
 kde-apps/okular chm djvu ebook epub crypt
@@ -403,7 +402,6 @@ x11-drivers/nvidia-drivers -gtk
 x11-drivers/nvidia-userspace -x-multilib libglvnd tools
 x11-libs/xapps introspection
 x11-libs/qwt designer
-x11-libs/wxGTK gstreamer webkit
 x11-libs/fltk threads xft -cairo
 dev-lang/tk threads
 dev-tcltk/tclx threads

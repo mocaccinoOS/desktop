@@ -12,3 +12,4 @@ media-libs/cogl gles2
 media-libs/clutter egl
 media-libs/libgphoto2 exif
 net-libs/gnome-online-accounts vala
+x11-libs/wxGTK gstreamer webkit
