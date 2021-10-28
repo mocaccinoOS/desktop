@@ -1,4 +1,5 @@
 media-libs/gstreamer introspection
 media-libs/libdvdread -css
+media-libs/libjpeg-turbo static-libs
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes
