@@ -142,6 +142,7 @@ emerge:
     - dev-perl/DBI
     - dev-perl/DBD-SQLite
     - dev-perl/JSON
+    - dev-perl/PlRPC
     - dev-perl/Types-Serialiser
 labels:
   autobump.strategy: "snapshot"
