@@ -49,9 +49,6 @@ provides:
   - name: DBD-mysql
     category: dev-perl
     version: '>=0'
-  - name: DBI
-    category: dev-perl
-    version: '>=0'
   - name: Devel-CheckLib
     category: dev-perl
     version: '>=0'

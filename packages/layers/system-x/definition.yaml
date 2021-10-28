@@ -139,6 +139,7 @@ emerge:
     - sys-devel/clang
     - sys-kernel/dracut
     - sys-process/cronie
+    - dev-perl/DBI
     - dev-perl/JSON
     - dev-perl/Types-Serialiser
 labels:
