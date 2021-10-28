@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.9+7
+version: 0.9+8
 labels:
   emerge.jobs: "10"
   emerge.packages: >-
@@ -618,7 +618,7 @@ provides:
     version: '>=0'
   - name: corefonts
     category: media-fonts
-    version: '>=0' 
+    version: '>=0'
   - name: dejavu
     category: media-fonts
     version: '>=0'
