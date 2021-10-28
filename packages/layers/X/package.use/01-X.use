@@ -1,5 +1,5 @@
 app-accessibility/at-spi2-core introspection -X
-app-i18n/ibus gtk2 dconf vala -emoji
+app-i18n/ibus dconf vala -emoji -gtk -gtk2
 app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
 app-text/poppler jpeg2k -qt5
 app-text/texlive-core xetex

@@ -1,3 +1,4 @@
+app-i18n/ibus gtk gtk2
 app-crypt/gcr vala gtk
 app-crypt/p11-kit asn1 libffi trust
 #TODO: check out pinentry
