@@ -1,7 +1,7 @@
 packages:
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 3+40
+    version: 3+41
     lts: false
     emerge:
       jobs: "3"
