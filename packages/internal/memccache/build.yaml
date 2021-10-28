@@ -1,0 +1,17 @@
+image: ubuntu
+env:
+- DEBIAN_FRONTEND=noninteractive
+prelude:
+- apt-get update && apt-get install -y --no-install-recommends autoconf libmemcached-dev asciidoc xsltproc docbook-xml docbook-xsl git ca-certificates gcc build-essential gperf
+- |
+   git clone https://github.com/afbjorklund/memccache && cd memccache && \
+   ./autogen.sh && \
+   ./configure --enable-memcached && \
+   make -j4 
+
+steps:
+- cd memccache && make install
+- mkdir /usr/lib/memccache
+- cp -rfv /usr/lib/x86_64-linux-gnu/libmemcached* /usr/lib/memccache
+- cp -rf wrapper.sh /usr/bin/memccache 
+- ln -s /usr/bin/memccache /usr/bin/ccache
