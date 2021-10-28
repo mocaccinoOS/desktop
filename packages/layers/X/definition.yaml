@@ -655,9 +655,6 @@ provides:
   - name: imagemagick
     category: media-gfx
     version: '>=0'
-  - name: potrace
-    category: media-gfx
-    version: '>=0'
   - name: fontconfig
     category: media-libs
     version: '>=0'
