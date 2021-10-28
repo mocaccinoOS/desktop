@@ -3,3 +3,4 @@ media-libs/libdvdread -css
 media-libs/libjpeg-turbo static-libs
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes
+media-libs/tiff cxx jpeg lzma zlib
