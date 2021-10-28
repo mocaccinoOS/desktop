@@ -140,6 +140,7 @@ emerge:
     - sys-kernel/dracut
     - sys-process/cronie
     - dev-perl/DBI
+    - dev-perl/DBD-SQLite
     - dev-perl/JSON
     - dev-perl/Types-Serialiser
 labels:
