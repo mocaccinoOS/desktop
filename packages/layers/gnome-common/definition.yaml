@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.9+6
+version: 0.9+7
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    app-admin/system-config-printer gui-libs/libhandy x11-libs/goffice app-text/libspectre dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter media-libs/libcanberra media-libs/libgphoto2 media-libs/gsound dev-python/pyatspi x11-misc/xdg-user-dirs-gtk x11-libs/colord-gtk x11-libs/libwnck x11-libs/wxGTK x11-themes/adwaita-icon-theme
+    app-admin/system-config-printer gui-libs/libhandy x11-libs/goffice app-text/libspectre dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-cpp/gtkmm dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets app-text/djvu dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter media-libs/libcanberra media-libs/libgphoto2 media-libs/gsound dev-python/pyatspi x11-misc/xdg-user-dirs-gtk x11-libs/colord-gtk x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-themes/adwaita-icon-theme
 requires:
   - category: "layers"
     name: "X"
@@ -221,6 +221,9 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libnotify
+    category: x11-libs
+    version: '>=0'
+  - name: vte
     category: x11-libs
     version: '>=0'
   - name: libwnck
