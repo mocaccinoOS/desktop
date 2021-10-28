@@ -73,6 +73,8 @@ excludes:
 - ^/usr/portage/distfiles
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/omp*
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/openacc*
+- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc\+\+.so.*
+- ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/libstdc\+\+.so.*
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
