@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.2+82
+version: 5.15.2+83
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
