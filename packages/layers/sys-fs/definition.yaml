@@ -19,10 +19,10 @@ provides:
   - name: libatasmart
     category: dev-libs
     version: '>=0'
-  - name: libbytesize
+  - name: libburn
     category: dev-libs
     version: '>=0'
-  - name: libburn
+  - name: libbytesize
     category: dev-libs
     version: '>=0'
   - name: libev
