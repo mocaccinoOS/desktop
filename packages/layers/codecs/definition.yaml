@@ -76,9 +76,6 @@ provides:
   - name: dav1d
     category: media-libs
     version: '>=0'
-  - name: libexif
-    category: media-libs
-    version: '>=0'
   - name: fdk-aac
     category: media-libs
     version: '>=0'
@@ -86,6 +83,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: gstreamer
+    category: media-libs
+    version: '>=0'
+  - name: lcms
     category: media-libs
     version: '>=0'
   - name: libcddb
@@ -97,9 +97,6 @@ provides:
   - name: libcuefile
     category: media-libs
     version: '>=0'
-  - name: libjpeg-turbo
-    category: media-libs
-    version: '>=0'
   - name: libdvbpsi
     category: media-libs
     version: '>=0'
@@ -109,7 +106,13 @@ provides:
   - name: libdvdread
     category: media-libs
     version: '>=0'
+  - name: libexif
+    category: media-libs
+    version: '>=0'
   - name: libid3tag
+    category: media-libs
+    version: '>=0'
+  - name: libjpeg-turbo
     category: media-libs
     version: '>=0'
   - name: libmatroska
@@ -219,4 +222,7 @@ provides:
     version: '>=0'
   - name: realtime-base
     category: sys-auth
+    version: '>=0'
+  - name: jpeg
+    category: virtual
     version: '>=0'

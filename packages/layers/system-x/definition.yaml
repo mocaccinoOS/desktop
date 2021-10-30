@@ -631,6 +631,12 @@ provides:
   - name: common-sense
     category: dev-perl
     version: '>=0'
+  - name: DBD-SQLite
+    category: dev-perl
+    version: '>=0'
+  - name: DBI
+    category: dev-perl
+    version: '>=0'
   - name: Digest-HMAC
     category: dev-perl
     version: '>=0'
@@ -706,10 +712,16 @@ provides:
   - name: Mozilla-CA
     category: dev-perl
     version: '>=0'
+  - name: Net-Daemon
+    category: dev-perl
+    version: '>=0'
   - name: Net-HTTP
     category: dev-perl
     version: '>=0'
   - name: Net-SSLeay
+    category: dev-perl
+    version: '>=0'
+  - name: PlRPC
     category: dev-perl
     version: '>=0'
   - name: Pod-Parser
@@ -1379,6 +1391,12 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Scalar-List-Utils
+    category: virtual
+    version: '>=0'
+  - name: perl-Storable
+    category: virtual
+    version: '>=0'
+  - name: perl-Sys-Syslog
     category: virtual
     version: '>=0'
   - name: perl-Test-Harness
