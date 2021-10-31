@@ -9,3 +9,6 @@ provides:
   - name: thunderbird
     category: mail-client
     version: '>=0'
+  - name: freedesktop-icon-theme
+    category: virtual
+    version: '>=0'
