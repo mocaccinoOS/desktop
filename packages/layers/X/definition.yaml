@@ -85,6 +85,9 @@ provides:
   - name: postfix
     category: acct-group
     version: '>=0'
+  - name: scanner
+    category: acct-group
+    version: '>=0'
   - name: avahi
     category: acct-user
     version: '>=0'
@@ -103,9 +106,6 @@ provides:
   - name: postmaster
     category: acct-user
     version: '>=0'
-  - name: scanner
-    category: acct-group
-    version: '>=0'
   - name: saned
     category: acct-user
     version: '>=0'
@@ -123,6 +123,9 @@ provides:
     version: '>=0'
   - name: sudo
     category: app-admin
+    version: '>=0'
+  - name: cabextract
+    category: app-arch
     version: '>=0'
   - name: rpm2targz
     category: app-arch
@@ -277,6 +280,9 @@ provides:
   - name: docbook-xml-dtd
     category: app-text
     version: '>=0'
+  - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
   - name: dvipsk
     category: app-text
     version: '>=0'
@@ -326,6 +332,9 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: orc
+    category: dev-lang
+    version: '>=0'
+  - name: rust-bin
     category: dev-lang
     version: '>=0'
   - name: sassc
@@ -392,6 +401,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libinput
+    category: dev-libs
+    version: '>=0'
+  - name: libmspack
     category: dev-libs
     version: '>=0'
   - name: libpwquality
@@ -664,13 +676,13 @@ provides:
   - name: exiv2
     category: media-gfx
     version: '>=0'
-  - name: sane-backends
-    category: media-gfx
-    version: '>=0'
   - name: graphite2
     category: media-gfx
     version: '>=0'
   - name: imagemagick
+    category: media-gfx
+    version: '>=0'
+  - name: sane-backends
     category: media-gfx
     version: '>=0'
   - name: fontconfig
@@ -715,9 +727,6 @@ provides:
   - name: jbig2dec
     category: media-libs
     version: '>=0'
-  - name: lcms
-    category: media-libs
-    version: '>=0'
   - name: libass
     category: media-libs
     version: '>=0'
@@ -755,9 +764,6 @@ provides:
     category: media-libs
     version: '>=0'
   - name: openjpeg
-    category: media-libs
-    version: '>=0'
-  - name: tiff
     category: media-libs
     version: '>=0'
   - name: vulkan-loader
@@ -904,9 +910,6 @@ provides:
   - name: jack
     category: virtual
     version: '>=0'
-  - name: jpeg
-    category: virtual
-    version: '>=0'
   - name: mta
     category: virtual
     version: '>=0'
@@ -922,13 +925,10 @@ provides:
   - name: perl-Locale-Maketext
     category: virtual
     version: '>=0'
-  - name: perl-Storable
-    category: virtual
-    version: '>=0'
-  - name: perl-Sys-Syslog
-    category: virtual
-    version: '>=0'
   - name: perl-Test-Simple
+    category: virtual
+    version: '>=0'
+  - name: rust
     category: virtual
     version: '>=0'
   - name: secret-service
