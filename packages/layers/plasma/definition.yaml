@@ -55,9 +55,6 @@ provides:
   - name: xapian
     category: dev-libs
     version: '>=0'
-  - name: designer
-    category: dev-qt
-    version: '>=0'
   - name: kaccounts-integration
     category: kde-apps
     version: '>=0'
@@ -329,6 +326,9 @@ provides:
     category: net-vpn
     version: '>=0'
   - name: openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: vpnc-scripts
     category: net-vpn
     version: '>=0'
   - name: libqalculate

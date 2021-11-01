@@ -39,9 +39,6 @@ provides:
   - name: tinycss2
     category: dev-python
     version: '>=0'
-  - name: tomli
-    category: dev-python
-    version: '>=0'
   - name: webencodings
     category: dev-python
     version: '>=0'

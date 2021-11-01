@@ -6,6 +6,9 @@ labels:
   emerge.packages: >-
     www-client/firefox
 provides:
+  - name: freedesktop-icon-theme
+    category: virtual
+    version: '>=0'
   - name: firefox
     category: www-client
     version: '>=0'
