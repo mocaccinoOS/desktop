@@ -1,6 +1,6 @@
 install:
 - |
-  for KER in  $(ls -U /lib/modules/)
+  for KER in  $(ls -Art /lib/modules/ | tail -n 1)
   do
     depmod -a $KER
   done
