@@ -313,6 +313,9 @@ provides:
   - name: gtk-engines
     category: x11-themes
     version: '>=0'
+  - name: gtk-engines-murrine
+    category: x11-themes
+    version: '>=0'
   - name: mate-backgrounds
     category: x11-themes
     version: '>=0'

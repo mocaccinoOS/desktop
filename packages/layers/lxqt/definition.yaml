@@ -22,9 +22,6 @@ provides:
   - name: libqtxdg
     category: dev-libs
     version: '>=0'
-  - name: lxqt-build-tools
-    category: dev-util
-    version: '>=0'
   - name: lxmenu-data
     category: lxde-base
     version: '>=0'
@@ -75,6 +72,9 @@ provides:
     version: '>=0'
   - name: libstatgrab
     category: sys-libs
+    version: '>=0'
+  - name: freedesktop-icon-theme
+    category: virtual
     version: '>=0'
   - name: libfm-extra
     category: x11-libs
