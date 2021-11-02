@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 0.9+11
+version: 0.9+12
 labels:
   emerge.jobs: "10"
   emerge.packages: >-
@@ -456,7 +456,7 @@ provides:
     version: '>=0'
   - name: enchant
     category: app-text
-    version: '>=0' 
+    version: '>=0'
   - name: ghostscript-gpl
     category: app-text
     version: '>=0'
@@ -469,7 +469,7 @@ provides:
   - name: libpaper
     category: app-text
     version: '>=0'
-  - name: libspectre    
+  - name: libspectre
     category: app-text
     version: '>=0'
   - name: poppler
