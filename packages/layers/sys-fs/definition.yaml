@@ -4,7 +4,7 @@ version: 0.6+9
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/libburn dev-libs/libisofs media-libs/musicbrainz net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof
+    dev-libs/libburn dev-libs/libisofs dev-libs/pugixml media-libs/musicbrainz net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof
 requires:
   - category: "layers"
     name: "system-x"
@@ -32,6 +32,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libverto
+    category: dev-libs
+    version: '>=0'
+  - name: pugixml
     category: dev-libs
     version: '>=0'
   - name: userspace-rcu
