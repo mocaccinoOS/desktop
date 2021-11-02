@@ -6,6 +6,48 @@ labels:
   emerge.packages: >-
     gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra x11-terms/alacritty
 provides:
+  - name: greetd
+    category: acct-group
+    version: '>=0'
+  - name: greetd
+    category: acct-user
+    version: '>=0'
+  - name: scdoc
+    category: app-text
+    version: '>=0'
+  - name: date
+    category: dev-libs
+    version: '>=0'
+  - name: libfmt
+    category: dev-libs
+    version: '>=0'
+  - name: spdlog
+    category: dev-libs
+    version: '>=0'
+  - name: grim
+    category: gui-apps
+    version: '>=0'
+  - name: gtkgreet
+    category: gui-apps
+    version: '>=0'
+  - name: waybar
+    category: gui-apps
+    version: '>=0'
+  - name: wayland-logout
+    category: gui-apps
+    version: '>=0'
+  - name: wcm
+    category: gui-apps
+    version: '>=0'
+  - name: wf-shell
+    category: gui-apps
+    version: '>=0'
+  - name: greetd
+    category: gui-libs
+    version: '>=0'
+  - name: wayfire-plugins-extra
+    category: gui-libs
+    version: '>=0'
   - name: wf-config
     category: gui-libs
     version: '>=0'
@@ -17,6 +59,12 @@ provides:
     version: '>=0'
   - name: glm
     category: media-libs
+    version: '>=0'
+  - name: seatd
+    category: sys-auth
+    version: '>=0'
+  - name: alacritty
+    category: x11-terms
     version: '>=0'
 requires:
   - category: "layers"
