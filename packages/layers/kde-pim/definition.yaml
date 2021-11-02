@@ -43,9 +43,6 @@ provides:
   - name: kdiagram
     category: dev-libs
     version: '>=0'
-  - name: qtkeychain
-    category: dev-libs
-    version: '>=0'
   - name: DBD-mysql
     category: dev-perl
     version: '>=0'
