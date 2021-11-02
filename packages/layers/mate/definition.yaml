@@ -187,9 +187,6 @@ provides:
   - name: atril
     category: app-text
     version: '>=0'
-  - name: enchant
-    category: app-text
-    version: '>=0'
   - name: rarian
     category: app-text
     version: '>=0'
