@@ -78,9 +78,6 @@ provides:
   - name: totem-pl-parser
     category: dev-libs
     version: '>=0'
-  - name: gst-python
-    category: dev-python
-    version: '>=0'
   - name: dconf-editor
     category: gnome-base
     version: '>=0'
