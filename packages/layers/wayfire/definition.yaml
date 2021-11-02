@@ -1,0 +1,24 @@
+category: "layers"
+name: "wayfire"
+version: 0.7.2+1
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra x11-terms/alacritty
+provides:
+  - name: wf-config
+    category: gui-libs
+    version: '>=0'
+  - name: wlroots
+    category: gui-libs
+    version: '>=0'
+  - name: wayfire
+    category: gui-wm
+    version: '>=0'
+  - name: glm
+    category: media-libs
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"

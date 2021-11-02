@@ -1,0 +1,4 @@
+gui-apps/gtkgreet ~amd64
+gui-apps/waybar ~amd64
+gui-libs/greetd ~amd64
+dev-libs/date ~amd64
