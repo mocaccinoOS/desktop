@@ -141,7 +141,7 @@ build() {
     if kubectl get pods -n $NAMESPACE $JOB_NAME; then
         JOB_STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
         if [[ "$JOB_STATE" == "Pending" ]] || [[ "$JOB_STATE" == "Running" ]]; then
-            echo "Job for $PACKAGE_NAME already running"
+            echo "Job $JOB_NAME already running"
             current_checkout=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq '.spec.git_repository.checkout' -r)
             if [[ "$REF" != "$current_checkout" ]]; then
                 create_job
@@ -157,22 +157,11 @@ build() {
     fi
 
     STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
-    while ( [ "$STATE" == "Pending" ] || [ "$STATE" == "Running" ]  )
+    while ( [ "$STATE" == "Pending" ] || [ "$STATE" == "Running" ] || [[ "$STATE" == "null" ]])
     do
-        
-        echo "Package $PACKAGE_CATEGORY/$PACKAGE_NAME @ $PACKAGE_VERSION not uploaded yet, sleeping"
-        JOB_STATE=$(kubectl get packagebuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
-        if [[ "$JOB_STATE" == "Pending" ]] || [[ "$JOB_STATE" == "Running" ]]; then
-            kubectl logs -f -c spec-build -n $NAMESPACE $JOB_NAME
-        fi
-        if [[ "$JOB_STATE" == "Failed" ]]; then
-            kubectl logs -f -c spec-build -n $NAMESPACE $JOB_NAME
-            echo "Job failed, exiting"
-            exit 1
-        fi
-        if [[ "$JOB_STATE" == "Succeeded" ]]; then
-            echo "Build succeded"
-        fi
+        echo "Jobs still running sleeping"
+	sleep 10
+        STATE=$(kubectl get packagebuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
     done
 
     STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
