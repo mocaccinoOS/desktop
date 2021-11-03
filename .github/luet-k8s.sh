@@ -161,7 +161,7 @@ build() {
     do
         echo "Jobs still running sleeping"
 	sleep 10
-        STATE=$(kubectl get packagebuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
+        STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
     done
 
     STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
