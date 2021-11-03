@@ -138,7 +138,7 @@ EOF
 build() {
     JOB_NAME="$REPO-$GITHUB_BRANCH"
 
-    if kubectl get pods -n $NAMESPACE $JOB_NAME; then
+    if kubectl get repobuild -n $NAMESPACE $JOB_NAME; then
         JOB_STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
         if [[ "$JOB_STATE" == "Pending" ]] || [[ "$JOB_STATE" == "Running" ]]; then
             echo "Job $JOB_NAME already running"
