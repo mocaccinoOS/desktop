@@ -13,7 +13,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- emerge -1 dev-lang/rust-bin
+- emerge -1 virtual/rust dev-lang/rust-bin
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 # Remove BDEPS
 - emerge -C sys-devel/lld dev-util/cbindgen net-libs/nodejs virtual/rust dev-lang/rust-bin
