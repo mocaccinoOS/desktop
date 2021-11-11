@@ -1,12 +1,12 @@
 category: "apps"
 name: "thunderbird"
-version: 78.14.0+23
+version: 91.3.0+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    mail-client/thunderbird
+    mail-client/thunderbird-bin
 provides:
-  - name: thunderbird
+  - name: thunderbird-bin
     category: mail-client
     version: '>=0'
   - name: freedesktop-icon-theme
