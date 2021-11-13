@@ -45,34 +45,10 @@ NODE_SELECTOR=${NODE_SELECTOR:-}
 REPOSITORY_TYPE=${REPOSITORY_TYPE:-http}
 REPOSITORY_URL=${REPOSITORY_URL:-https://get.mocaccino.org/mocaccino-desktop}
 
-prune() {
-    allPacks=()
-    for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
-            PACKAGE_PATH=$(echo "$i" | jq -r ".path")
-            PACKAGE_NAME=$(echo "$i" | jq -r ".name")
-            PACKAGE_CATEGORY=$(echo "$i" | jq -r ".category")
-            PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
-            allPacks+=( "$PACKAGE_NAME\-$PACKAGE_CATEGORY\-$PACKAGE_VERSION" )
-    done
-    echo "Pruning old packages from repository"
-    for a in $(mc find minio-ci/$BUCKET --regex '.*.package.*|.*.metadata.yaml$' --json |  jq -r '.key' ); do
-
-        # For each package in the tree, get the path where the spec resides
-        # e.g. packages/acct-group/amavis/0/
-        for t in ${allPacks[@]}; do
-
-            if echo $a | grep -q $t; then
-            continue 2
-            fi
-        done
-
-    # echo "$a pending deletion"
-    mc rm $a
-
-    done
-}
-
 create_repo() {
+    # TODO
+    echo "Not implemented yet"
+    exit 1
     # Unsetting tree as it will be automatically filled by make create-repo
     unset TREE
     set -ex
@@ -117,7 +93,9 @@ spec:
     options:
         pull: true
         push: true
-        imageRepository: "$IMAGE_REPOSITORY" 
+        imageRepository: "$IMAGE_REPOSITORY"
+        pushFinalImages: true
+        finalImagesRepository: "$IMAGE_REPOSITORY"
         onlyTarget: true
         compression: "$COMPRESSION_TYPE"
         tree: $YAML_TREE
@@ -187,14 +165,10 @@ if hash stern 2>/dev/null; then
     stern -n $NAMESPACE . &
 fi
 
-mc alias set minio-ci $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+# mc alias set minio-ci $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
 
 if [[ "$BUILD_PHASE" == "true" ]]; then
     build
-fi
-
-if [[ "$PRUNE_PHASE" == "true" ]]; then
-    prune
 fi
 
 if [[ "$CREATE_PHASE" == "true" ]]; then
