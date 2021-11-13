@@ -1,14 +1,14 @@
 packages:
-  - category: "kernel-modules"
-    name: "virtualbox-modules"
-    version: 4+4
-    lts: false
-    emerge:
-      jobs: "3"
-      packages:
-        - app-emulation/virtualbox-modules
-    labels:
-      lts.kernel: "false"
+#  - category: "kernel-modules"
+#    name: "virtualbox-modules"
+#    version: 4+4
+#    lts: false
+#    emerge:
+#      jobs: "3"
+#      packages:
+#        - app-emulation/virtualbox-modules
+#    labels:
+#      lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 4+4
