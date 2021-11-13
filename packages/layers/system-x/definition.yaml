@@ -1171,6 +1171,9 @@ provides:
   - name: llvm-common
     category: sys-devel
     version: '>=0'
+  - name: llvmgold
+    category: sys-devel
+    version: '>=0'
   - name: m4
     category: sys-devel
     version: '>=0'
@@ -1201,6 +1204,9 @@ provides:
   - name: linux-headers
     category: sys-kernel
     version: '>=0'
+  - name: binutils-libs
+    category: sys-libs
+    version: '>=0'
   - name: compiler-rt
     category: sys-libs
     version: '>=0'
@@ -1226,6 +1232,9 @@ provides:
     category: sys-libs
     version: '>=0'
   - name: libseccomp
+    category: sys-libs
+    version: '>=0'
+  - name: libxcrypt
     category: sys-libs
     version: '>=0'
   - name: ncurses
