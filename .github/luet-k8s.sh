@@ -84,7 +84,7 @@ spec:
         - "$REPOSITORY_URL"
         type: "$REPOSITORY_TYPE"
     storage:
-        enabled: true
+        enabled: false
         url: "$MINIO_API_URL"
         secretKey: "$MINIO_SECRET_KEY"
         accessID: "$MINIO_ACCESS_KEY"
