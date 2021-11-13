@@ -32,7 +32,7 @@ requires:
     name: "qt"
     version: ">=0"
   - category: "kernel-modules"
-    name: "virtualbox-modules"
+    name: "virtualbox-modules-lts"
     version: ">=0"
   - category: "entity"
     name: "vboxusers"
