@@ -1,6 +1,6 @@
 category: "apps"
 name: "discover"
-version: 5.22.5+22
+version: 5.22.5+23
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
