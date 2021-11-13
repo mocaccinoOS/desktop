@@ -1,14 +1,14 @@
 packages:
-#  - category: "kernel-modules"
-#    name: "virtualbox-modules"
-#    version: 4+4
-#    lts: false
-#    emerge:
-#      jobs: "3"
-#      packages:
-#        - app-emulation/virtualbox-modules
-#    labels:
-#      lts.kernel: "false"
+  #  - category: "kernel-modules"
+  #    name: "virtualbox-modules"
+  #    version: 4+4
+  #    lts: false
+  #    emerge:
+  #      jobs: "3"
+  #      packages:
+  #        - app-emulation/virtualbox-modules
+  #    labels:
+  #      lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 4+4
@@ -52,7 +52,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 0.993+45
+    version: 0.993+46
     lts: true
     emerge:
       jobs: "3"
