@@ -48,7 +48,7 @@ jobs:
   #    run: |
   #      make validate
     - name: Login to Quay Registry
-      run: echo ${{ secrets.DOCKER_PASSWORD }} | sudo docker login -u ${{ secrets.DOCKER_USER }} --password-stdin quay.io
+      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin quay.io
     - name: Build repository 🔧
       run: |
         if [ -z "$EDGEVPN" ]; then
@@ -71,4 +71,6 @@ jobs:
     - name: Push to stable repository 🚀
       if: startsWith(github.ref, 'refs/tags/')
       run: |
-        mc mirror --overwrite --remove minio-ci/$BUCKET minio-ci/$BUCKET-stable
+        # TODO
+        exit 1
+        #mc mirror --overwrite --remove minio-ci/$BUCKET minio-ci/$BUCKET-stable

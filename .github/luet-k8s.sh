@@ -56,7 +56,7 @@ create_repo() {
         sudo -E luet util unpack $IMAGE_REPOSITORY:$PACKAGE_NAME-$PACKAGE_CATEGORY-$PACKAGE_VERSION.metadata.yaml build
     done
 
-    sudo luet create-repo \
+    sudo -E luet create-repo \
           --push-images \
           --type docker \
           --output $IMAGE_REPOSITORY \
