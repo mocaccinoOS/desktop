@@ -47,6 +47,8 @@ jobs:
   #  - name: Validate 🔧
   #    run: |
   #      make validate
+    - name: Login to Quay Registry
+      run: echo ${{ secrets.DOCKER_PASSWORD }} | sudo docker login -u ${{ secrets.DOCKER_USER }} --password-stdin quay.io
     - name: Build repository 🔧
       run: |
         if [ -z "$EDGEVPN" ]; then
