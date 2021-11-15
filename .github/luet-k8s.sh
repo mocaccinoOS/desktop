@@ -17,7 +17,7 @@ TREE_ARGS=${TREE_ARGS:-$tree_args}
 
 YAML_TREE=$(printf "/%s," $TREE_DIR)
 YAML_TREE="[${YAML_TREE%,}]"
-
+REPOSITORY_NAME="${REPOSITORY_NAME:-MocaccinoOS Desktop}"
 BUCKET=${BUCKET:-}
 GITHUB_REPO=${GITHUB_REPO:-mocaccinoOS/desktop}
 GITHUB_BRANCH=${GITHUB_BRANCH:-master}
@@ -46,18 +46,23 @@ REPOSITORY_TYPE=${REPOSITORY_TYPE:-http}
 REPOSITORY_URL=${REPOSITORY_URL:-https://get.mocaccino.org/mocaccino-desktop}
 
 create_repo() {
-    # TODO
-    echo "Not implemented yet"
-    exit 1
-    # Unsetting tree as it will be automatically filled by make create-repo
-    unset TREE
-    set -ex
-    mkdir build || true
-    mc mirror --exclude '*.gz' --exclude '*.zstd' minio-ci/$BUCKET/ build
-    ls -liah build/
-    make create-repo
-    mc cp --recursive build/ minio-ci/$BUCKET/
-    ls -liah build/
+    mkdir build
+    for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
+        PACKAGE_PATH=$(echo "$i" | jq -r ".path")
+        PACKAGE_NAME=$(echo "$i" | jq -r ".name")
+        PACKAGE_CATEGORY=$(echo "$i" | jq -r ".category")
+        PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
+        PACKAGE_VERSION="${PACKAGE_VERSION/+/-}"
+        luet util unpack $IMAGE_REPOSITORY:$PACKAGE_NAME-$PACKAGE_CATEGORY-$PACKAGE_VERSION build
+    done
+
+    luet create-repo \
+          --push-images \
+          --type docker \
+          --output $IMAGE_REPOSITORY \
+          --name "$REPOSITORY_NAME" \
+          --packages ${PWD}/build \
+          $tree_args
 }
 
 create_job() {
@@ -148,9 +153,10 @@ build() {
 
     Succeeded)
         echo "Repo build succeeded"
-        kubectl delete repobuild -n $NAMESPACE $JOB_NAME
+        #kubectl delete repobuild -n $NAMESPACE $JOB_NAME
         ;;
     Failed)
+        echo "Repo build failed"
         exit 1
         ;;
     *)
