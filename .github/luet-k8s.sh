@@ -53,10 +53,10 @@ create_repo() {
         PACKAGE_CATEGORY=$(echo "$i" | jq -r ".category")
         PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
         PACKAGE_VERSION="${PACKAGE_VERSION/+/-}"
-        luet util unpack $IMAGE_REPOSITORY:$PACKAGE_NAME-$PACKAGE_CATEGORY-$PACKAGE_VERSION build
+        sudo -E luet util unpack $IMAGE_REPOSITORY:$PACKAGE_NAME-$PACKAGE_CATEGORY-$PACKAGE_VERSION.metadata.yaml build
     done
 
-    luet create-repo \
+    sudo -E luet create-repo \
           --push-images \
           --type docker \
           --output $IMAGE_REPOSITORY \
