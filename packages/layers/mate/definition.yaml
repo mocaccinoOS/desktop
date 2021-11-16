@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.24+87
+version: 1.24+88
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
