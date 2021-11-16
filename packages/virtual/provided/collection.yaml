@@ -1,7 +1,7 @@
 packages:
 - category: "system"
   name: "kmod"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - &dep
@@ -10,20 +10,20 @@ packages:
     version: ">=0"
 - category: "utils"
   name: "xz"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - <<: *dep
 # The following might not be shipped by system-x yet. But required by unattended-installer (which right now it's not supposed to work)
 - category: "networking"
   name: "iptables"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - <<: *dep
 - category: "utils"
   name: "gptfdisk"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - category: "layers"
@@ -31,19 +31,19 @@ packages:
     version: ">=0"
 - category: "utils"
   name: "e2fsprogs"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - <<: *dep
 - category: "networking"
   name: "wireguard-tools"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - <<: *dep
 - category: "utils"
   name: "grub2"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - category: "apps"
@@ -51,7 +51,7 @@ packages:
     version: ">=0"
 - category: "utils"
   name: "rsync"
-  version: "0"
+  version: "1"
   description: "Virtual package"
   requires:
   - <<: *dep

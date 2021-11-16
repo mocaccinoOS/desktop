@@ -1,6 +1,6 @@
 name: "gnome"
 category: "meta"
-version: "0.20210106"
+version: "0.20211116"
 
 requires:
 - category: "layers"
