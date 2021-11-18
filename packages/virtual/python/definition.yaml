@@ -1,8 +1,0 @@
-category: "dev-lang"
-name: "python"
-version: "3.9"
-description: "Virtual package for python"
-requires:
-  - name: system-x
-    category: "layers"
-    version: ">=0"
