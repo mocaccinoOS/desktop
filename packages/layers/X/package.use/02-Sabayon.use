@@ -54,6 +54,7 @@ app-portage/eix sqlite
 app-portage/layman git mercurial subversion sync-plugin-portage
 app-text/ansifilter -qt5
 app-text/atril djvu epub
+app-text/djvu threads -nsplugin
 app-text/fbreader -gtk
 app-text/gtkspell vala
 app-text/mupdf -opengl -X
