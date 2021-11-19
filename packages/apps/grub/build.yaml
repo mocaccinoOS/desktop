@@ -19,7 +19,7 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -r 10_linux /etc/grub.d/10_linux
 # Fix plymouth service file
-- sed '/^sConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
+- sed '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
 - sed -i -e 's/KillMode=none/KillMode=mixed/g' /lib/systemd/system/plymouth-start.service
 requires:
 - category: "layers"
