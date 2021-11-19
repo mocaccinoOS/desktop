@@ -15,7 +15,6 @@ app-cdr/brasero nautilus
 app-cdr/cdrdao -gnome
 kde-apps/k3b taglib
 app-cdr/xfburn gstreamer
-app-crypt/qca gpg ssl
 app-doc/doxygen latex dot
 app-editors/bluefish gnome -python
 app-editors/retext -spell

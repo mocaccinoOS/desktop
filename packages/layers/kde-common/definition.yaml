@@ -4,12 +4,15 @@ version: 4+14
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-text/discount app-text/poppler sys-libs/kpmcore dev-libs/plasma-wayland-protocols kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/kcmutils kde-frameworks/kdnssd kde-frameworks/kirigami kde-frameworks/kdeclarative kde-frameworks/kitemmodels kde-frameworks/knewstuff kde-frameworks/kross kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
+    app-crypt/qca app-text/discount app-text/poppler sys-libs/kpmcore dev-libs/plasma-wayland-protocols kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/kcmutils kde-frameworks/kdnssd kde-frameworks/kirigami kde-frameworks/kdeclarative kde-frameworks/kitemmodels kde-frameworks/knewstuff kde-frameworks/kross kde-frameworks/kwayland kde-frameworks/kidletime kde-frameworks/oxygen-icons kde-plasma/libkscreen kde-frameworks/kservice kde-frameworks/kwindowsystem kde-frameworks/breeze-icons kde-frameworks/kcrash kde-frameworks/kconfig kde-frameworks/kcoreaddons kde-frameworks/kdoctools kde-frameworks/kpackage kde-frameworks/kparts
 requires:
   - category: "layers"
     name: "qt"
     version: ">=0"
 provides:
+  - name: qca
+    category: app-crypt
+    version: '>=0'
   - name: discount
     category: app-text
     version: '>=0'
