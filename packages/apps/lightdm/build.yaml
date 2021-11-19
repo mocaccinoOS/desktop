@@ -14,6 +14,7 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C dev-util/xfce4-dev-tools
+- sed -i '/syslog/d' /lib/systemd/system/lightdm.service
 requires:
 - category: "layers"
   name: "gnome-common"
