@@ -37,9 +37,6 @@ provides:
   - name: tss
     category: acct-user
     version: '>=0'
-  - name: qca
-    category: app-crypt
-    version: '>=0'
   - name: tpm2-tss
     category: app-crypt
     version: '>=0'
