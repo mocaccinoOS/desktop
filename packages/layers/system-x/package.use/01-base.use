@@ -46,6 +46,7 @@ sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre reso
 sys-apps/util-linux bzip2 nls static-libs utils
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
+sys-devel/gdb python
 # No fuck git by default!
 sys-devel/gettext acl cxx ncurses nls openmp -git
 # clang wants USE=clang for llvm

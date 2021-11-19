@@ -365,7 +365,6 @@ sys-cluster/openmpi romio
 sys-cluster/torque server
 sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 sys-devel/distcc -avahi -gtk
-sys-devel/gdb expat python
 sys-firmware/intel-microcode initramfs
 sys-fs/mtd-utils xattr
 sys-fs/reiser4progs static static-libs

@@ -137,6 +137,7 @@ emerge:
     - sys-apps/dmidecode
     - sys-apps/pciutils
     - sys-devel/clang
+    - sys-devel/gdb
     - sys-kernel/dracut
     - sys-process/cronie
     - dev-perl/DBI
@@ -1154,6 +1155,9 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: gcc-config
+    category: sys-devel
+    version: '>=0'
+  - name: gdb
     category: sys-devel
     version: '>=0'
   - name: gettext
