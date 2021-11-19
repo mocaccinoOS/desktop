@@ -79,13 +79,7 @@ provides:
   - name: atkmm
     category: dev-cpp
     version: '>=0'
-  - name: cairomm
-    category: dev-cpp
-    version: '>=0'
   - name: gtkmm
-    category: dev-cpp
-    version: '>=0'
-  - name: pangomm
     category: dev-cpp
     version: '>=0'
   - name: keybinder
