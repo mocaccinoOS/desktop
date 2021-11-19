@@ -88,9 +88,6 @@ provides:
   - name: kdesu
     category: kde-frameworks
     version: '>=0'
-  - name: kdnssd
-    category: kde-frameworks
-    version: '>=0'
   - name: kemoticons
     category: kde-frameworks
     version: '>=0'
