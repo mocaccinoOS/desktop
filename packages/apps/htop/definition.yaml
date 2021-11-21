@@ -1,6 +1,6 @@
 category: "apps"
 name: "htop"
-version: 3.0.5+55
+version: 3.0.5+56
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
