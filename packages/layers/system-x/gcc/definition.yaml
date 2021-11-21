@@ -1,4 +1,4 @@
 name: "gcc"
 category: "development"
-version: 11.2.0+14
+version: 11.2.0+15
 gcc_version: "11.2.0"
