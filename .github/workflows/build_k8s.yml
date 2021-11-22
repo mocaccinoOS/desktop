@@ -17,8 +17,8 @@ jobs:
       ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
       #MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
       #MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
-      REPOSITORY_TYPE: http
-      REPOSITORY_URL: https://get.mocaccino.org/mocaccino-desktop
+      REPOSITORY_TYPE: docker
+      REPOSITORY_URL: quay.io/mocaccino/desktop
       #$MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
       IMAGE_REPOSITORY: quay.io/mocaccino/desktop
       NODE_SELECTOR: "luet.io/workload: jobs"
