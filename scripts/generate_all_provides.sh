@@ -14,6 +14,9 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
         continue
     fi
+    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layers/gentoo-portage" ]; then
+        continue
+    fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/stage3" ]; then
         continue
     fi
