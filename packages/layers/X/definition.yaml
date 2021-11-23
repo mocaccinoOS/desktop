@@ -301,12 +301,6 @@ provides:
   - name: aspell-vi
     category: app-dicts
     version: '>=0'
-  - name: pluma
-    category: app-editors
-    version: '>=0'
-  - name: aspell
-    category: app-text
-    version: '>=0'
   - name: myspell-af
     category: app-dicts
     version: '>=0'
@@ -438,6 +432,9 @@ provides:
     version: '>=0'
   - name: unicode-data
     category: app-i18n
+    version: '>=0'
+  - name: aspell
+    category: app-text
     version: '>=0'
   - name: docbook-dsssl-stylesheets
     category: app-text
@@ -898,15 +895,6 @@ provides:
   - name: gst-plugins-good
     category: media-libs
     version: '>=0'
-  - name: gst-plugins-faac
-    category: media-libs
-    version: '>=0'
-  - name: gst-plugins-flac
-    category: media-libs
-    version: '>=0'
-  - name: gst-plugins-lame
-    category: media-libs
-    version: '>=0'
   - name: gst-plugins-ugly
     category: media-libs
     version: '>=0'
@@ -967,7 +955,16 @@ provides:
   - name: alsa-plugins
     category: media-plugins
     version: '>=0'
+  - name: gst-plugins-faac
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-flac
+    category: media-plugins
+    version: '>=0'
   - name: gst-plugins-gdkpixbuf
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-lame
     category: media-plugins
     version: '>=0'
   - name: gst-plugins-libmms
@@ -1074,9 +1071,6 @@ provides:
     version: '>=0'
   - name: bc
     category: sys-devel
-    version: '>=0'
-  - name: binutils-libs
-    category: sys-libs
     version: '>=0'
   - name: cracklib
     category: sys-libs

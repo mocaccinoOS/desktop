@@ -18,9 +18,6 @@ provides:
   - name: date
     category: dev-libs
     version: '>=0'
-  - name: libfmt
-    category: dev-libs
-    version: '>=0'
   - name: spdlog
     category: dev-libs
     version: '>=0'
