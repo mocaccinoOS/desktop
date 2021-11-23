@@ -14,20 +14,10 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/portage" ]; then
         continue
     fi
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "layers/gentoo-portage" ]; then
-        continue
-    fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "images/stage3" ]; then
         continue
     fi
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "gentoo/stage3" ]; then
-        continue
-    fi
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "virtual/python" ]; then
-        continue
-    fi
-    # Skip dev-lang/python too. It is provided by virtual/python
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "dev-lang/python" ]; then
         continue
     fi
     # Skip kernel-modules/sources, it is a collection and lacks a definition.yaml
@@ -36,5 +26,5 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     fi
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
-    docker images --filter='reference=quay.io/mocaccinocache/desktop' --format='{{.Repository}}:{{.Tag}}' | xargs -r docker rmi
+    docker images --filter='reference=quay.io/mocaccino/desktop' --format='{{.Repository}}:{{.Tag}}' | xargs -r docker rmi
 done
