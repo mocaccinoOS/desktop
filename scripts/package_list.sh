@@ -9,7 +9,7 @@ if [ -z "${PACK}" ]; then
 	exit 1
 fi
 packages=()
-REPO_CACHE="${REPO_CACHE:-quay.io/mocaccinocache/desktop}"
+REPO_CACHE="${REPO_CACHE:-quay.io/mocaccino/desktop}"
 #set -ex
 IMAGES_DATA=$(luet tree images --image-repository $REPO_CACHE $PACK -o json)
 PKG_LIST=$(luet tree pkglist -o json)
