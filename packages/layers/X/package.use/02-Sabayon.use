@@ -116,9 +116,7 @@ dev-python/QtPy gui printsupport webengine
 dev-python/ipython -wxwidgets
 dev-python/markdown pygments
 dev-python/matplotlib -wxwidgets
-dev-python/numpy lapack
 dev-python/netaddr -cli
-dev-python/numpy-python2 lapack
 dev-python/pypy sqlite
 dev-python/QtPy webkit
 dev-python/pyglet -alsa
@@ -346,7 +344,6 @@ sci-libs/gdal curl geos
 sci-libs/hdf5 hl cxx -fortran -mpi -threads -szip
 sci-libs/itpp fftw
 sci-libs/indilib nova
-sci-libs/lapack eselect-ldso
 sci-libs/netcdf -fortran hdf5
 sci-libs/plplot -wxwidgets
 sci-libs/ViSP opencv
@@ -375,7 +372,6 @@ sys-kernel/genkernel-next cryptsetup crypt dmraid mdadm
 sys-libs/gwenhywfar designer qml sensors serialport webkit
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
-virtual/lapack eselect-ldso
 virtual/mpi romio
 virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx

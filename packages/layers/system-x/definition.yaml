@@ -127,6 +127,7 @@ emerge:
     - app-arch/zip
     - dev-lang/ruby
     - dev-libs/libgudev
+    - dev-python/numpy
     - dev-python/six
     - dev-python/psutil
     - dev-python/pyyaml
@@ -374,6 +375,12 @@ provides:
     version: '>=0'
   - name: nano
     category: app-editors
+    version: '>=0'
+  - name: eselect-blas
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-lapack
+    category: app-eselect
     version: '>=0'
   - name: eselect-iptables
     category: app-eselect
@@ -789,6 +796,9 @@ provides:
   - name: lxml
     category: dev-python
     version: '>=0'
+  - name: numpy
+    category: dev-python
+    version: '>=0'
   - name: markupsafe
     category: dev-python
     version: '>=0'
@@ -989,6 +999,9 @@ provides:
     version: '>=0'
   - name: Scalar-List-Utils
     category: perl-core
+    version: '>=0'
+  - name: lapack
+    category: sci-libs
     version: '>=0'
   - name: acl
     category: sys-apps
@@ -1276,6 +1289,15 @@ provides:
     category: virtual
     version: '>=0'
   - name: awk
+    category: virtual
+    version: '>=0'
+  - name: cblas
+    category: virtual
+    version: '>=0'
+  - name: fortran
+    category: virtual
+    version: '>=0'
+  - name: lapack
     category: virtual
     version: '>=0'
   - name: dev-manager

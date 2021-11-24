@@ -22,6 +22,7 @@ dev-libs/libxml2 icu ipv6 python readline
 dev-libs/nettle gmp
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
+dev-python/numpy lapack
 dev-scheme/guile regex discouraged networking
 media-libs/libpng apng static-libs
 # net-dns/libidn2[static-libs] is for net-misc/curl
@@ -37,6 +38,7 @@ net-misc/openssh -X -ldap
 net-misc/openssh libedit
 # Add xattr support to rsync
 net-misc/rsync examples xattr
+sci-libs/lapack eselect-ldso
 sys-apps/groff -X
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
@@ -81,3 +83,4 @@ dev-libs/lzo split-usr static-libs
 sys-devel/autogen libopts
 # required by reiser4progs
 sys-libs/readline split-usr static-libs unicode
+virtual/lapack eselect-ldso
