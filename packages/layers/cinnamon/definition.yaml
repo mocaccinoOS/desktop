@@ -75,9 +75,6 @@ provides:
   - name: nemo
     category: gnome-extra
     version: '>=0'
-  - name: polkit-gnome
-    category: gnome-extra
-    version: '>=0'
   - name: xapps
     category: x11-libs
     version: '>=0'

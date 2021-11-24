@@ -37,9 +37,6 @@ provides:
   - name: tqtinterface
     category: dev-tqt
     version: '>=0'
-  - name: libart_lgpl
-    category: media-libs
-    version: '>=0'
   - name: pmount
     category: sys-apps
     version: '>=0'
