@@ -43,9 +43,6 @@ provides:
   - name: pmount
     category: sys-apps
     version: '>=0'
-  - name: usbutils
-    category: sys-apps
-    version: '>=0'
   - name: drkonqi
     category: trinity-base
     version: '>=0'

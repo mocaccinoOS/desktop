@@ -136,6 +136,7 @@ emerge:
     - sys-apps/bolt
     - sys-apps/dmidecode
     - sys-apps/pciutils
+    - sys-apps/usbutils
     - sys-devel/clang
     - sys-devel/gdb
     - sys-kernel/dracut
@@ -1089,6 +1090,9 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: texinfo
+    category: sys-apps
+    version: '>=0'
+  - name: usbutils
     category: sys-apps
     version: '>=0'
   - name: util-linux
