@@ -76,9 +76,6 @@ provides:
   - name: yelp-tools
     category: app-text
     version: '>=0'
-  - name: atkmm
-    category: dev-cpp
-    version: '>=0'
   - name: keybinder
     category: dev-libs
     version: '>=0'
