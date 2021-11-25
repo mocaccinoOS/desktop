@@ -12,7 +12,7 @@ packages:
   name: "flatpak"
 - !!merge <<: *X
   real_category: "apps"
-  name: "discover"
+  name: "kde-common"
 - !!merge <<: *X
-  real_category: "apps"
-  name: "calamares"
+  real_category: "layers"
+  name: "qt"
