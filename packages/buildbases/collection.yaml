@@ -10,3 +10,9 @@ packages:
 - !!merge <<: *X
   real_category: "apps"
   name: "flatpak"
+- !!merge <<: *X
+  real_category: "apps"
+  name: "discover"
+- !!merge <<: *X
+  real_category: "apps"
+  name: "calamares"
