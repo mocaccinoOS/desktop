@@ -74,8 +74,8 @@ metadata:
     annotations:
       luet-k8s.io/retry: "5"
 spec:
-    #nodeSelector:
-    #    $NODE_SELECTOR
+    nodeSelector:
+        $NODE_SELECTOR
     podScheduler: "k8s-resource-scheduler"
     annotations:
         k8s-resource-scheduler/burst-protect: "200"
