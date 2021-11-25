@@ -1,4 +1,12 @@
 packages:
-- name: "X"
+- &X
+  name: "X"
   category: "layers-buildbase"
   version: "0"
+  real_category: "layers"
+  hidden: true
+- !!merge <<: *X
+  name: "gnome-common"
+- !!merge <<: *cos
+  real_category: "apps"
+  name: "flatpak"

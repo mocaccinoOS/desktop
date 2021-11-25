@@ -1,5 +1,5 @@
 requires:
 - name: "{{.Values.name}}"
-  category: "layers"
+  category: "{{.Values.real_category}}"
   version: ">=0"
 unpack: true
