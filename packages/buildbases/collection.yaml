@@ -11,7 +11,7 @@ packages:
   real_category: "apps"
   name: "flatpak"
 - !!merge <<: *X
-  real_category: "apps"
+  real_category: "layers"
   name: "kde-common"
 - !!merge <<: *X
   real_category: "layers"
