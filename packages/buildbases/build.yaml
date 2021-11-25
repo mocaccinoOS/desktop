@@ -1,0 +1,5 @@
+requires:
+- name: "{{.Values.name}}"
+  category: "layers"
+  version: ">=0"
+unpack: true
