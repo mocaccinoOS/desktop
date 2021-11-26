@@ -379,10 +379,10 @@ provides:
   - name: eselect-blas
     category: app-eselect
     version: '>=0'
-  - name: eselect-lapack
+  - name: eselect-iptables
     category: app-eselect
     version: '>=0'
-  - name: eselect-iptables
+  - name: eselect-lapack
     category: app-eselect
     version: '>=0'
   - name: eselect-lib-bin-symlink
@@ -796,10 +796,10 @@ provides:
   - name: lxml
     category: dev-python
     version: '>=0'
-  - name: numpy
+  - name: markupsafe
     category: dev-python
     version: '>=0'
-  - name: markupsafe
+  - name: numpy
     category: dev-python
     version: '>=0'
   - name: packaging
@@ -1294,16 +1294,16 @@ provides:
   - name: cblas
     category: virtual
     version: '>=0'
-  - name: fortran
-    category: virtual
-    version: '>=0'
-  - name: lapack
-    category: virtual
-    version: '>=0'
   - name: dev-manager
     category: virtual
     version: '>=0'
   - name: editor
+    category: virtual
+    version: '>=0'
+  - name: fortran
+    category: virtual
+    version: '>=0'
+  - name: lapack
     category: virtual
     version: '>=0'
   - name: libc

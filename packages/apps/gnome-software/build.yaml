@@ -8,6 +8,7 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
@@ -15,9 +16,10 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "layers"
+- category: "layers-buildbase"
   name: "gnome-common"
   version: ">=0"
-- category: "apps"
+- category: "apps-buildbase"
   name: "flatpak"
   version: ">=0"
+requires_final_images: true
