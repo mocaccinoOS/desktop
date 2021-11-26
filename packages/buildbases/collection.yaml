@@ -10,6 +10,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
+    version: 0+2
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
