@@ -34,6 +34,7 @@ requires:
   name: "mocaccino-sources"
   version: ">=0"
 {{- end}}
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"
+requires_final_images: true
