@@ -15,9 +15,10 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp grub-default /etc/default/grub
 requires:
-- category: "layers"
+- category: "layers-buildbase"
   name: "kde-common"
   version: ">=0"
-- category: "apps"
+- category: "apps-buildbase"
   name: "grub"
   version: ">=0"
+requires_final_images: true
