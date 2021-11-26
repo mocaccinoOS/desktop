@@ -1,18 +1,18 @@
 packages:
-- &X
-  name: "X"
-  category: "layers-buildbase"
-  version: "0"
-  real_category: "layers"
-  hidden: true
-- !!merge <<: *X
-  name: "gnome-common"
-- !!merge <<: *X
-  real_category: "apps"
-  name: "flatpak"
-- !!merge <<: *X
-  real_category: "layers"
-  name: "kde-common"
-- !!merge <<: *X
-  real_category: "layers"
-  name: "qt"
+  - &X
+    name: "X"
+    category: "layers-buildbase"
+    version: 0+1
+    real_category: "layers"
+    hidden: true
+  - !!merge <<: *X
+    name: "gnome-common"
+  - !!merge <<: *X
+    real_category: "apps"
+    name: "flatpak"
+  - !!merge <<: *X
+    real_category: "layers"
+    name: "kde-common"
+  - !!merge <<: *X
+    real_category: "layers"
+    name: "qt"
