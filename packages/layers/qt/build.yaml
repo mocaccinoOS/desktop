@@ -17,7 +17,7 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C dev-lang/python:2.7 net-libs/nodejs
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"
 - category: "buildbase"
