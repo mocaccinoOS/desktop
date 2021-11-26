@@ -1,7 +1,7 @@
 packages:
 - &X
   name: "X"
-  category: "layers-buildbase"
+  category: "buildbase"
   version: "0"
   real_category: "layers"
   hidden: true
