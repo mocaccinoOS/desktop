@@ -427,6 +427,9 @@ provides:
   - name: eselect-lua
     category: app-eselect
     version: '>=0'
+  - name: eselect-mpg123
+    category: app-eselect
+    version: '>=0'
   - name: ibus
     category: app-i18n
     version: '>=0'
@@ -886,6 +889,9 @@ provides:
   - name: giflib
     category: media-libs
     version: '>=0'
+  - name: glew
+    category: media-libs
+    version: '>=0'
   - name: glu
     category: media-libs
     version: '>=0'
@@ -1101,9 +1107,6 @@ provides:
     version: '>=0'
   - name: upower
     category: sys-power
-    version: '>=0'
-  - name: fortran
-    category: virtual
     version: '>=0'
   - name: glu
     category: virtual
