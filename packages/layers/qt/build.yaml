@@ -8,6 +8,7 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
@@ -19,6 +20,7 @@ requires:
 - category: "layers"
   name: "X"
   version: ">=0"
-- category: "layers"
+- category: "buildbase"
   name: "net-tools"
   version: ">=0"
+requires_final_images: true
