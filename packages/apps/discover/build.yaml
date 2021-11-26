@@ -15,10 +15,10 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "layers-buildbase"
+- category: "buildbase"
   name: "kde-common"
   version: ">=0"
-- category: "apps-buildbase"
+- category: "buildbase"
   name: "flatpak"
   version: ">=0"
 requires_final_images: true
