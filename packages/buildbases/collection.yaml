@@ -16,3 +16,12 @@ packages:
 - !!merge <<: *X
   real_category: "layers"
   name: "qt"
+- !!merge <<: *X
+  real_category: "layers"
+  name: "sys-fs"
+- !!merge <<: *X
+  real_category: "layers"
+  name: "net-tools"
+- !!merge <<: *X
+  real_category: "layers"
+  name: "codecs"
