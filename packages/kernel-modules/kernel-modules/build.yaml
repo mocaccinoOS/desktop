@@ -26,11 +26,11 @@ steps:
 
 requires:
 {{- if .Values.lts }}
-- category: "kernel-sources"
+- category: "buildbase"
   name: "mocaccino-lts-sources"
   version: ">=0"
 {{- else}}
-- category: "kernel-sources"
+- category: "buildbase"
   name: "mocaccino-sources"
   version: ">=0"
 {{- end}}
