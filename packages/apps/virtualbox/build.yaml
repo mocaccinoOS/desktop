@@ -8,14 +8,16 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C dev-lang/yasm sys-devel/bin86 sys-power/iasl
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "qt"
   version: ">=0"
 - category: "kernel-modules"
   name: "virtualbox-modules-lts"
   version: ">=0"
+requires_final_images: true
