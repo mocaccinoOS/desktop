@@ -8,6 +8,7 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
@@ -16,6 +17,7 @@ steps:
 - emerge -C dev-util/xfce4-dev-tools
 - sed -i '/syslog/d' /lib/systemd/system/lightdm.service
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "gnome-common"
   version: ">=0"
+requires_final_images: true
