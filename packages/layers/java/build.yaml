@@ -8,10 +8,13 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"
+requires_final_images: true
+
