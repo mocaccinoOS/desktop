@@ -8,6 +8,7 @@ excludes:
 - ^/var/lib/portage
 - ^/var/log
 env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.use /etc/portage/
@@ -17,6 +18,7 @@ steps:
 # remove build deps
 - emerge -C app-text/docbook-xml-simple-dtd:1.0 app-text/docbook-xml-simple-dtd:4.1.2.4 app-text/docbook-sgml-utils app-text/openjade app-text/docbook-sgml-dtd:3.0 app-text/docbook-sgml-dtd:3.1 app-text/docbook-sgml-dtd:4.0 app-text/docbook-sgml-dtd:4.1 app-text/docbook-sgml-dtd:4.2 app-text/docbook-sgml-dtd:4.4 app-text/docbook-dsssl-stylesheets
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"
+requires_final_images: true
