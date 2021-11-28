@@ -36,4 +36,4 @@ packages:
   name: "mocaccino-sources"
 - !!merge <<: *X
   real_category: "kernel-modules"
-  name: "virtualbox-guest-additions-lts"
+  name: "virtualbox-modules-lts"
