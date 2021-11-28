@@ -17,7 +17,7 @@ requires:
 - category: "buildbase"
   name: "qt"
   version: ">=0"
-- category: "kernel-modules"
+- category: "buildbase"
   name: "virtualbox-modules-lts"
   version: ">=0"
 requires_final_images: true
