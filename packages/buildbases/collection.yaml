@@ -28,6 +28,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "codecs"
+    version: 0+2
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
