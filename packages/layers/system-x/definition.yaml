@@ -126,6 +126,7 @@ emerge:
     - app-arch/unrar
     - app-arch/zip
     - dev-lang/ruby
+    - dev-libs/jemalloc
     - dev-libs/libgudev
     - dev-python/numpy
     - dev-python/six
@@ -530,6 +531,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: isl
+    category: dev-libs
+    version: '>=0'
+  - name: jemalloc
     category: dev-libs
     version: '>=0'
   - name: json-c
