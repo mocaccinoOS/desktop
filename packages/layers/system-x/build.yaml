@@ -32,6 +32,7 @@ steps:
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
 - emerge -C virtual/rust dev-lang/rust-bin dev-lang/yasm sys-devel/llvm:12
 excludes:
+- ^/etc/._cfg*
 - ^/etc/unbound/unbound_*
 - ^/etc/shadow
 - ^/etc/os-release
