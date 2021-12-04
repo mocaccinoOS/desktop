@@ -7,7 +7,7 @@ packages:
     hidden: true
   - !!merge <<: *X
     name: "gnome-common"
-    version: 0+3
+    version: 0+4
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
