@@ -127,6 +127,7 @@ build() {
             echo "Job $JOB_NAME already running"
             current_checkout=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq '.spec.git_repository.checkout' -r)
             if [[ "$REF" != "$current_checkout" ]]; then
+	    	kubectl delete repobuild -n $NAMESPACE $JOB_NAME
                 create_job
             fi
         fi
@@ -153,7 +154,7 @@ build() {
 
     Succeeded)
         echo "Repo build succeeded"
-        #kubectl delete repobuild -n $NAMESPACE $JOB_NAME
+        kubectl delete repobuild -n $NAMESPACE $JOB_NAME
         ;;
     Failed)
         echo "Repo build failed"
