@@ -97,9 +97,6 @@ provides:
   - name: yakuake
     category: kde-apps
     version: '>=0'
-  - name: kimageformats
-    category: kde-frameworks
-    version: '>=0'
   - name: skanlite
     category: kde-misc
     version: '>=0'
