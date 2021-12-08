@@ -126,6 +126,7 @@ emerge:
     - app-arch/unrar
     - app-arch/zip
     - dev-lang/ruby
+    - dev-libs/double-conversion
     - dev-libs/jemalloc
     - dev-libs/libgudev
     - dev-python/numpy
@@ -507,6 +508,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: boost
+    category: dev-libs
+    version: '>=0'
+  - name: double-conversion
     category: dev-libs
     version: '>=0'
   - name: elfutils

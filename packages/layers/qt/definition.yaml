@@ -16,9 +16,6 @@ provides:
   - name: mysql-connector-c
     category: dev-db
     version: '>=0'
-  - name: double-conversion
-    category: dev-libs
-    version: '>=0'
   - name: re2
     category: dev-libs
     version: '>=0'
