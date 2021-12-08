@@ -1,6 +1,6 @@
 category: "apps"
 name: "vim"
-version: 8.2.0814+81
+version: 8.2.0814+82
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
