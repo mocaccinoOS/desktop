@@ -1,4 +1,5 @@
 app-crypt/mit-krb5 keyutils nls pkinit threads
+dev-db/mariadb -berkdb client-libs extraengine odbc
 dev-libs/libevent ssl threads
 dev-libs/libverto libev threads
 # slp disabled due to https://bugs.gentoo.org/show_bug.cgi?id=617278

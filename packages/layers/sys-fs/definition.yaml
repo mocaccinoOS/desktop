@@ -4,16 +4,37 @@ version: 0.6+22
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/pugixml media-libs/musicbrainz net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof
+    dev-db/mariadb dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/pugixml media-libs/musicbrainz net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof virtual/mysql
 requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
+  - category: "entity"
+    name: "mysql"
+    version: ">=0"
 provides:
+  - name: mysql
+    category: acct-group
+    version: '>=0'
+  - name: mysql
+    category: acct-user
+    version: '>=0'
   - name: mit-krb5
     category: app-crypt
     version: '>=0'
   - name: lmdb
+    category: dev-db
+    version: '>=0'
+  - name: mariadb
+    category: dev-db
+    version: '>=0'
+  - name: mysql-connector-c
+    category: dev-db
+    version: '>=0'
+  - name: mysql-init-scripts
+    category: dev-db
+    version: '>=0'
+  - name: unixODBC
     category: dev-db
     version: '>=0'
   - name: libatasmart
@@ -42,6 +63,12 @@ provides:
     version: '>=0'
   - name: userspace-rcu
     category: dev-libs
+    version: '>=0'
+  - name: DBD-mysql
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-CheckLib
+    category: dev-perl
     version: '>=0'
   - name: Parse-Yapp
     category: dev-perl
@@ -173,5 +200,8 @@ provides:
     category: virtual
     version: '>=0'
   - name: python-cffi
+    category: virtual
+    version: '>=0'
+  - name: mysql
     category: virtual
     version: '>=0'

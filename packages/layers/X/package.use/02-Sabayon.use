@@ -127,7 +127,6 @@ dev-scheme/racket backtrace doc futures jit places threads
 dev-scheme/scm libscm
 dev-db/mysql -berkdb client-libs pic extraengine
 dev-db/mysql-cluster embedded
-dev-db/mariadb -berkdb client-libs extraengine odbc
 dev-tcltk/blt -X
 dev-tcltk/tclxml expat
 dev-util/anjuta subversion
