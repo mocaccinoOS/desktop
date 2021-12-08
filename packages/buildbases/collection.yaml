@@ -15,7 +15,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+4
+    version: 0+5
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
