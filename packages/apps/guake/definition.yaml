@@ -1,6 +1,6 @@
 category: "apps"
 name: "guake"
-version: 3.7.0+79
+version: 3.7.0+80
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
