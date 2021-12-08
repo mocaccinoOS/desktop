@@ -150,6 +150,7 @@ emerge:
     - dev-perl/Net-Daemon
     - dev-perl/PlRPC
     - dev-perl/Types-Serialiser
+    - dev-perl/XML-Simple
 labels:
   autobump.strategy: "snapshot"
 provides:
@@ -775,6 +776,21 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: WWW-RobotRules
+    category: dev-perl
+    version: '>=0'
+  - name: XML-NamespaceSupport
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Base
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Expat
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Simple
     category: dev-perl
     version: '>=0'
   - name: XML-Parser
