@@ -129,6 +129,7 @@ emerge:
     - dev-libs/double-conversion
     - dev-libs/jemalloc
     - dev-libs/libgudev
+    - dev-python/python-dateutil
     - dev-python/numpy
     - dev-python/six
     - dev-python/psutil
@@ -839,6 +840,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: PySocks
+    category: dev-python
+    version: '>=0'
+  - name: python-dateutil
     category: dev-python
     version: '>=0'
   - name: pyyaml
