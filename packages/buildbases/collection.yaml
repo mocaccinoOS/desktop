@@ -2,49 +2,49 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+4
+    version: 0+5
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     name: "gnome-common"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "layers"
     name: "net-tools"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "layers"
     name: "codecs"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 0+5
+    version: 0+6
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+5
+    version: 0+6
