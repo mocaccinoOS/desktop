@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.license /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- etc-update -q --automode -5
 requires:
 - category: "layers"
   name: "system-x"
