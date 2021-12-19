@@ -31,7 +31,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "net-tools"
-    version: 0+6
+    version: 0+7
   - !!merge <<: *X
     real_category: "layers"
     name: "codecs"
