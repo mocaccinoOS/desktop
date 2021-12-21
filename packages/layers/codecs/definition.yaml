@@ -52,9 +52,6 @@ provides:
   - name: librevenge
     category: dev-libs
     version: '>=0'
-  - name: dbus-python
-    category: dev-python
-    version: '>=0'
   - name: glslang
     category: dev-util
     version: '>=0'

@@ -129,6 +129,7 @@ emerge:
     - dev-libs/double-conversion
     - dev-libs/jemalloc
     - dev-libs/libgudev
+    - dev-python/dbus-python
     - dev-python/docutils
     - dev-python/pygments
     - dev-python/python-dateutil
@@ -812,6 +813,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: cython
+    category: dev-python
+    version: '>=0'
+  - name: dbus-python
     category: dev-python
     version: '>=0'
   - name: docutils
