@@ -6,3 +6,4 @@ media-libs/libvpx postproc svc
 media-libs/opus custom-modes
 media-libs/tiff cxx jpeg lzma zlib
 sci-libs/fftw threads
+virtual/jpeg static-libs

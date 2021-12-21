@@ -406,7 +406,6 @@ media-tv/mythtv -css
 media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
-virtual/jpeg static-libs
 media-libs/libmng static-libs
 media-libs/babl introspection
 net-libs/gtk-vnc gtk3
@@ -427,14 +426,12 @@ net-firewall/ipset -modules
 net-firewall/shorewall lite4 lite6
 app-emulation/lxc doc
 dev-ruby/activerecord postgres
-sys-process/lsof rpc
 sys-libs/libaal static-libs
 net-dns/bind threads caps
 sys-cluster/galera garbd
 sys-libs/libapparmor static-libs
 app-emulation/docker apparmor aufs btrfs overlay seccomp
 x11-misc/xplanet -gif
-www-client/w3m fbcon imlib
 app-emulation/lxc cgmanager
 app-emulation/runc apparmor
 net-p2p/go-ethereum evm opencl
