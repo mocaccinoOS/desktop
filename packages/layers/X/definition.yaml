@@ -949,9 +949,6 @@ provides:
   - name: openexr
     category: media-libs
     version: '>=0'
-  - name: openjpeg
-    category: media-libs
-    version: '>=0'
   - name: vulkan-loader
     category: media-libs
     version: '>=0'
