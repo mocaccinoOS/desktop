@@ -8,6 +8,7 @@ app-text/xmlto text
 dev-lang/lua deprecated
 dev-lang/luajit lua52compat
 dev-libs/appstream -qt5
+dev-libs/atk introspection
 # Needed by directvnc
 dev-libs/dbus-glib bash-completion
 dev-python/pygobject introspection
@@ -16,6 +17,7 @@ mail-mta/postfix mbox sasl
 media-fonts/noto -cjk
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 xml
+media-gfx/sane-backends threads -v4l
 media-libs/chromaprint tools -abi_x86_32
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
@@ -25,8 +27,10 @@ media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
 media-libs/lcms static-libs
 media-libs/libgphoto2 exif
+media-libs/libsdl2 gles2 haptic
 media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg gles2 opencl vaapi vdpau
 media-libs/openal -qt5
+media-libs/openexr -video_cards_nvidia
 media-plugins/alsa-plugins libsamplerate
 media-plugins/gst-plugins-meta mms http
 media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf

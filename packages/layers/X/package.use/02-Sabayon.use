@@ -51,7 +51,6 @@ app-pda/barry boost gui
 app-portage/eix sqlite
 app-portage/layman git mercurial subversion sync-plugin-portage
 app-text/ansifilter -qt5
-app-text/atril djvu epub
 app-text/fbreader -gtk
 app-text/gtkspell vala
 app-text/mupdf -opengl -X
@@ -85,9 +84,7 @@ dev-lang/parrot pcre
 dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd hash imap inifile intl json mhash mysql mysqli mysqlnd odbc pcntl pcre pdo posix postgres reflection simplexml snmp soap sockets spl sqlite sqlite3 tidy tokenizer truetype wddx xml xmlreader xmlwriter xsl zip sysvipc xslt
 dev-lang/rakudo moar
 dev-libs/apr-util openssl
-dev-libs/atk introspection
 dev-libs/botan threads -gmp
-dev-libs/crypto++ sse3
 dev-libs/c-blosc hdf5
 dev-libs/gmime smime -mono
 dev-libs/libjcat gpg pkcs7
@@ -96,7 +93,6 @@ dev-libs/libdbusmenu gtk3
 dev-libs/libf2c static-libs
 dev-libs/libgit2-glib ssh
 dev-libs/nss utils
-dev-libs/tinyxml stl
 dev-libs/tntnet sdk
 dev-libs/xerces-c xqilla icu
 dev-libs/xmlrpc-c curl
@@ -175,7 +171,6 @@ media-gfx/librecad doc
 media-gfx/luminance-hdr sse2
 media-gfx/nomacs -tiff
 media-gfx/pstoedit plotutils
-media-gfx/sane-backends threads -v4l
 media-gfx/sane-frontends gimp
 media-gfx/zbar imagemagick v4l
 media-libs/blib aalib
@@ -191,12 +186,10 @@ media-libs/libffado -qt5
 media-libs/libggi aalib
 media-libs/libmypaint gegl
 media-libs/libsdl aalib
-media-libs/libsdl2 gles2 haptic
 media-libs/libsfml doc examples
 media-libs/libsoundtouch sse2
 media-libs/libxtract fftw
 media-libs/mlt melt frei0r kdenlive quicktime python
-media-libs/openexr -video_cards_nvidia
 media-libs/oyranos -exif
 app-admin/elektra -abi_x86_32
 media-libs/oyranos -abi_x86_32

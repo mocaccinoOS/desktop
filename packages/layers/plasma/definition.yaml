@@ -46,9 +46,6 @@ provides:
   - name: editorconfig-core-c
     category: app-text
     version: '>=0'
-  - name: crypto++
-    category: dev-libs
-    version: '>=0'
   - name: grantlee
     category: dev-libs
     version: '>=0'
