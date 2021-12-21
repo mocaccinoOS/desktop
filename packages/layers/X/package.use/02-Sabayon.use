@@ -18,7 +18,6 @@ app-cdr/xfburn gstreamer
 app-doc/doxygen latex dot
 app-editors/bluefish gnome -python
 app-editors/retext -spell
-app-editors/vim cscope lua ruby vim-pager
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
 app-emulation/libvirt lxc rbd virtualbox fuse kvm qemu virt-network lvm caps iscsi nfs parted uml python xen
