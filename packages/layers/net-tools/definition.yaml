@@ -4,7 +4,7 @@ version: 0.3+37
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libnatpmp net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libtorrent-rasterbar net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wpa_supplicant
+    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libasyncns net-libs/libnatpmp net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libtorrent-rasterbar net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"
@@ -87,6 +87,9 @@ provides:
     version: '>=0'
   - name: libidn
     category: net-dns
+    version: '>=0'
+  - name: libasyncns
+    category: net-libs
     version: '>=0'
   - name: libmbim
     category: net-libs

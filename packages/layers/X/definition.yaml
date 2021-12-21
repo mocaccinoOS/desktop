@@ -1006,9 +1006,6 @@ provides:
   - name: glib-networking
     category: net-libs
     version: '>=0'
-  - name: libasyncns
-    category: net-libs
-    version: '>=0'
   - name: libnma
     category: net-libs
     version: '>=0'
