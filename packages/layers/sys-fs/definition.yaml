@@ -4,7 +4,7 @@ version: 0.6+25
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-db/mariadb dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/pugixml dev-libs/libzip media-libs/musicbrainz net-nds/openldap net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof virtual/mysql
+    dev-db/mariadb dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/libudfread dev-libs/pugixml dev-libs/libzip media-libs/musicbrainz net-nds/openldap net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-process/lsof virtual/mysql
 requires:
   - category: "layers"
     name: "system-x"
@@ -62,6 +62,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libisofs
+    category: dev-libs
+    version: '>=0'
+  - name: libudfread
     category: dev-libs
     version: '>=0'
   - name: libverto

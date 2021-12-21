@@ -598,9 +598,6 @@ provides:
   - name: libsigc++
     category: dev-libs
     version: '>=0'
-  - name: libudfread
-    category: dev-libs
-    version: '>=0'
   - name: libwacom
     category: dev-libs
     version: '>=0'
