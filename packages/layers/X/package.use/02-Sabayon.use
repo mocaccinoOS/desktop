@@ -334,7 +334,6 @@ sci-electronics/geda doc stroke
 sci-geosciences/grass tcl tk fftw
 sci-geosciences/mapserver flash threads -tiff
 sci-geosciences/qgis -grass webkit -python
-sci-libs/fftw threads
 sci-libs/gdal curl geos
 >=sci-libs/gsl-1.15 cblas-external
 sci-libs/hdf5 hl cxx -fortran -mpi -threads -szip

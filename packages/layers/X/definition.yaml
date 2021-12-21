@@ -1036,9 +1036,6 @@ provides:
   - name: networkmanager-fortisslvpn
     category: net-vpn
     version: '>=0'
-  - name: fftw
-    category: sci-libs
-    version: '>=0'
   - name: accountsservice
     category: sys-apps
     version: '>=0'
