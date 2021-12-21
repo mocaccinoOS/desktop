@@ -182,7 +182,6 @@ media-gfx/sane-backends threads -v4l
 media-gfx/sane-frontends gimp
 media-gfx/zbar imagemagick v4l
 media-libs/blib aalib
-media-libs/chromaprint tools
 media-libs/coin doc
 media-libs/devil mng
 media-libs/gegl raw jpeg2k umfpack
