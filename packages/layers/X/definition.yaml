@@ -1009,9 +1009,6 @@ provides:
   - name: libnma
     category: net-libs
     version: '>=0'
-  - name: libpsl
-    category: net-libs
-    version: '>=0'
   - name: libsoup
     category: net-libs
     version: '>=0'
