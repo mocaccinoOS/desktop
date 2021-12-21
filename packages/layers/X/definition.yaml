@@ -1003,9 +1003,6 @@ provides:
   - name: avahi
     category: net-dns
     version: '>=0'
-  - name: libidn
-    category: net-dns
-    version: '>=0'
   - name: glib-networking
     category: net-libs
     version: '>=0'
