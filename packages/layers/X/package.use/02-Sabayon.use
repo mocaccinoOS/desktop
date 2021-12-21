@@ -78,7 +78,6 @@ dev-java/junit source
 dev-java/swing-layout source
 dev-java/validation-api source
 dev-lang/fpc source ide
-dev-lang/lua deprecated
 dev-lang/mono minimal
 dev-lang/nqp moar -parrot
 dev-lang/ocaml tk
@@ -144,7 +143,6 @@ net-misc/gnome-online-miners flickr
 media-plugins/grilo-plugins flickr
 gnome-base/libgnomecanvas glade
 gnome-extra/nautilus-sendto -cdr
-kde-apps/akonadi tools
 kde-apps/kget -bittorrent semantic-desktop
 kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
 kde-apps/ktp-common-internals otr
@@ -418,7 +416,6 @@ net-misc/connman iptables networkmanager resolvconf
 virtual/jpeg static-libs
 media-libs/libmng static-libs
 media-libs/babl introspection
-gnome-extra/polkit-gnome introspection
 net-libs/gtk-vnc gtk3
 net-dns/avahi gtk3
 media-libs/avidemux-core vaapi vdpau
