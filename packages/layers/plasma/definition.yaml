@@ -304,9 +304,6 @@ provides:
   - name: libaccounts-glib
     category: net-libs
     version: '>=0'
-  - name: libssh
-    category: net-libs
-    version: '>=0'
   - name: signon-oauth2
     category: net-libs
     version: '>=0'

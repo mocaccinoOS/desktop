@@ -284,7 +284,6 @@ net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
 net-libs/libgadu ssl threads
 net-libs/libmicrohttpd messages
-net-libs/libssh server
 net-libs/mbedtls havege
 net-libs/telepathy-qt farstream
 net-libs/zeromq drafts unwind
