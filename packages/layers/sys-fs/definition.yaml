@@ -214,9 +214,9 @@ provides:
   - name: krb5
     category: virtual
     version: '>=0'
-  - name: python-cffi
+  - name: mysql
     category: virtual
     version: '>=0'
-  - name: mysql
+  - name: python-cffi
     category: virtual
     version: '>=0'

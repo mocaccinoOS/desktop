@@ -782,6 +782,9 @@ provides:
   - name: XML-NamespaceSupport
     category: dev-perl
     version: '>=0'
+  - name: XML-Parser
+    category: dev-perl
+    version: '>=0'
   - name: XML-SAX
     category: dev-perl
     version: '>=0'
@@ -792,9 +795,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: XML-Simple
-    category: dev-perl
-    version: '>=0'
-  - name: XML-Parser
     category: dev-perl
     version: '>=0'
   - name: XML-XPath
@@ -902,6 +902,9 @@ provides:
   - name: test-unit
     category: dev-ruby
     version: '>=0'
+  - name: webrick
+    category: dev-ruby
+    version: '>=0' 
   - name: xmlrpc
     category: dev-ruby
     version: '>=0'
@@ -930,12 +933,6 @@ provides:
     category: dev-util
     version: '>=0'
   - name: gtk-doc-am
-    category: dev-util
-    version: '>=0'
-  - name: intltool
-    category: dev-util
-    version: '>=0'
-  - name: itstool
     category: dev-util
     version: '>=0'
   - name: meson
@@ -1082,7 +1079,7 @@ provides:
   - name: help2man
     category: sys-apps
     version: '>=0'
-  - name: hwids
+  - name: hwdata
     category: sys-apps
     version: '>=0'
   - name: install-xattr

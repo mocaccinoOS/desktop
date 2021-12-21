@@ -82,9 +82,6 @@ provides:
   - name: alsa-ucm-conf
     category: media-libs
     version: '>=0'
-  - name: libcdr
-    category: media-libs
-    version: '>=0'
   - name: dav1d
     category: media-libs
     version: '>=0'
@@ -110,6 +107,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libcddb
+    category: media-libs
+    version: '>=0'
+  - name: libcdr
     category: media-libs
     version: '>=0'
   - name: libcue
