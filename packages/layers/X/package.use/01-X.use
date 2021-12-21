@@ -13,7 +13,6 @@ dev-python/pygobject introspection
 dev-python/pyudev -qt5
 mail-mta/postfix mbox sasl
 media-fonts/noto -cjk
-media-gfx/exiv2 xmp
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 xml
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs

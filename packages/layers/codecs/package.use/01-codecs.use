@@ -1,3 +1,4 @@
+media-gfx/exiv2 xmp
 media-libs/gstreamer introspection
 media-libs/libdvdread -css
 media-libs/libjpeg-turbo static-libs
