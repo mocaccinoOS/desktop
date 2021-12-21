@@ -880,9 +880,6 @@ provides:
   - name: gd
     category: media-libs
     version: '>=0'
-  - name: giflib
-    category: media-libs
-    version: '>=0'
   - name: glew
     category: media-libs
     version: '>=0'
