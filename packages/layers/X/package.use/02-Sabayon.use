@@ -97,7 +97,6 @@ dev-libs/libdazzle vala
 dev-libs/libdbusmenu gtk3
 dev-libs/libf2c static-libs
 dev-libs/libgit2-glib ssh
-dev-libs/libical vala
 dev-libs/nss utils
 dev-libs/tinyxml stl
 dev-libs/tntnet sdk

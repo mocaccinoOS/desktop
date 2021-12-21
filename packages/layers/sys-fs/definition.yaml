@@ -88,16 +88,10 @@ provides:
   - name: cffi
     category: dev-python
     version: '>=0'
-  - name: docutils
-    category: dev-python
-    version: '>=0'
   - name: ply
     category: dev-python
     version: '>=0'
   - name: pycparser
-    category: dev-python
-    version: '>=0'
-  - name: pygments
     category: dev-python
     version: '>=0'
   - name: cmocka

@@ -129,6 +129,8 @@ emerge:
     - dev-libs/double-conversion
     - dev-libs/jemalloc
     - dev-libs/libgudev
+    - dev-python/docutils
+    - dev-python/pygments
     - dev-python/python-dateutil
     - dev-python/numpy
     - dev-python/six
@@ -812,6 +814,9 @@ provides:
   - name: cython
     category: dev-python
     version: '>=0'
+  - name: docutils
+    category: dev-python
+    version: '>=0'
   - name: idna
     category: dev-python
     version: '>=0'
@@ -834,6 +839,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pyelftools
+    category: dev-python
+    version: '>=0'
+  - name: pygments
     category: dev-python
     version: '>=0'
   - name: pyparsing

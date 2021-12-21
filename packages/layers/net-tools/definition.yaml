@@ -4,7 +4,7 @@ version: 0.3+37
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/crda net-wireless/wireless-regdb net-wireless/wpa_supplicant
+    net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-libs/libnatpmp net-libs/libpcap net-libs/libtorrent-rasterbar net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"
@@ -57,6 +57,12 @@ provides:
     version: '>=0'
   - name: pcscd
     category: acct-user
+    version: '>=0'
+  - name: ell
+    category: dev-libs
+    version: '>=0'
+  - name: libical
+    category: dev-libs
     version: '>=0'
   - name: libnl
     category: dev-libs
@@ -114,6 +120,9 @@ provides:
     version: '>=0'
   - name: openvpn
     category: net-vpn
+    version: '>=0'
+  - name: bluez
+    category: net-wireless
     version: '>=0'
   - name: crda
     category: net-wireless

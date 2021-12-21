@@ -36,7 +36,6 @@ net-libs/libsoup gnome introspection ssl vala
 net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection iptables modemmanager nss wext -resolvconf
 net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
-net-wireless/bluez gstreamer obex user-session
 sys-apps/pciutils kmod udev -zlib
 sys-apps/xdg-desktop-portal screencast
 sys-libs/binutils-libs nls
