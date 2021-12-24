@@ -103,9 +103,6 @@ provides:
   - name: libmatemixer
     category: media-libs
     version: '>=0'
-  - name: wireless-tools
-    category: net-wireless
-    version: '>=0'
   - name: cpupower
     category: sys-power
     version: '>=0'
