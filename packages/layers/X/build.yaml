@@ -5,6 +5,7 @@ excludes:
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/usr/share/icons/hicolor/icon-theme.cache
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
