@@ -18,9 +18,6 @@ steps:
 - etc-update -q --automode -5
 requires:
 - category: "buildbase"
-  name: "X"
-  version: ">=0"
-- category: "buildbase"
   name: "gnome-common"
   version: ">=0"
 requires_final_images: true
