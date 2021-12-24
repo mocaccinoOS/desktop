@@ -371,9 +371,6 @@ provides:
   - name: libmd
     category: app-crypt
     version: '>=0'
-  - name: openpgp-keys-gentoo-release
-    category: app-crypt
-    version: '>=0'
   - name: pinentry
     category: app-crypt
     version: '>=0'
@@ -1036,6 +1033,9 @@ provides:
     version: '>=0'
   - name: Scalar-List-Utils
     category: perl-core
+    version: '>=0'
+  - name: openpgp-keys-gentoo-release
+    category: sec-keys
     version: '>=0'
   - name: lapack
     category: sci-libs
