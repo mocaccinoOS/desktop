@@ -15,6 +15,7 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - etc-update -q --automode -5
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "plasma"
   version: ">=0"
+requires_final_images: true

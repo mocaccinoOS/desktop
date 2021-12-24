@@ -24,9 +24,10 @@ steps:
 - chown -R 219:219 /var/lib/sddm
 - etc-update -q --automode -5
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "kde-common"
   version: ">=0"
-- category: "apps"
+- category: "buildbase"
   name: "vlc"
   version: ">=0"
+requires_final_images: true
