@@ -19,11 +19,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- emerge -1 net-misc/curl dev-libs/openssl net-misc/openssh dev-libs/libgcrypt:0 app-arch/libarchive app-arch/xz-utils --backtrack=100 -j $JOBS
-- emerge -1 sys-apps/portage -j $JOBS
-- USE="-icu" emerge -1 dev-db/sqlite -j $JOBS
 - emerge -1 dev-lang/rust-bin -j $JOBS
-- emerge -1 sys-apps/systemd -j $JOBS
 - emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }} && etc-update -q --automode -5
