@@ -16,9 +16,10 @@ steps:
 - emerge -C dev-util/lxqt-build-tools
 - etc-update -q --automode -5
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "kde-common"
   version: ">=0"
 - category: "apps"
   name: "pavucontrol-qt"
   version: ">=0"
+requires_final_images: true
