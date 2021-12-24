@@ -19,7 +19,7 @@ requires:
 - category: "buildbase"
   name: "kde-common"
   version: ">=0"
-- category: "apps"
+- category: ""buildbase"
   name: "pavucontrol-qt"
   version: ">=0"
 requires_final_images: true
