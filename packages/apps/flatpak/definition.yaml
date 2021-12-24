@@ -1,6 +1,6 @@
 category: "apps"
 name: "flatpak"
-version: 1.10.2+67
+version: 1.10.2+68
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
