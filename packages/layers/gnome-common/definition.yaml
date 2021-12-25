@@ -34,12 +34,6 @@ provides:
   - name: libimobiledevice
     category: app-pda
     version: '>=0'
-  - name: libplist
-    category: app-pda
-    version: '>=0'
-  - name: libusbmuxd
-    category: app-pda
-    version: '>=0'
   - name: docbook-sgml-dtd
     category: app-text
     version: '>=0'
