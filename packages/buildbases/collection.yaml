@@ -43,7 +43,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
