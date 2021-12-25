@@ -30,6 +30,7 @@ steps:
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
 - emerge -C virtual/rust dev-lang/rust-bin dev-lang/yasm
 excludes:
+- ^/dev
 - ^/etc/._cfg.*
 - ^/etc/unbound/unbound_*
 - ^/etc/shadow
@@ -57,6 +58,7 @@ excludes:
 - ^/var/log
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/run
 - ^/sys
 - ^/tmp/tree.tar.tgz
 - ^/proc
