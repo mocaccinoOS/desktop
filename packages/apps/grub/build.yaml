@@ -26,7 +26,4 @@ requires:
 - category: "buildbase"
   name: "X"
   version: ">=0"
-- category: "buildbase"
-  name: "sys-fs"
-  version: ">=0"
 requires_final_images: true
