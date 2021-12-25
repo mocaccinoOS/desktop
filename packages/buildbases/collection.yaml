@@ -2,61 +2,61 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+8
+    version: 0+9
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     name: "gnome-common"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+9
-  - !!merge <<: *X
-    real_category: "layers"
-    name: "kde-common"
     version: 0+10
   - !!merge <<: *X
     real_category: "layers"
+    name: "kde-common"
+    version: 0+11
+  - !!merge <<: *X
+    real_category: "layers"
     name: "qt"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "layers"
     name: "net-tools"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "layers"
     name: "codecs"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+9
+    version: 0+10
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
-    version: 0+2
+    version: 0+3
   - !!merge <<: *X
     real_category: "layers"
     name: "plasma"
-    version: 0+2
+    version: 0+3
   - !!merge <<: *X
     real_category: "apps"
     name: "vlc"
-    version: 0+2
+    version: 0+3
