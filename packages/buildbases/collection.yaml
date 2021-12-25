@@ -55,7 +55,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "plasma"
-    version: 0+2
+    version: 0+3
   - !!merge <<: *X
     real_category: "apps"
     name: "vlc"
