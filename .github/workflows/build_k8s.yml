@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     # runs-on: [self-hosted]
     env:
-      DOCKER_HOST: ${{ secrets.DOCKER_HOST }}
+      DOCKER_CFG: ${{ secrets.DOCKER_HOST }}
       ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
       #MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
       #MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
@@ -62,6 +62,7 @@ jobs:
         fi
         export REF=$GITHUB_SHA
         export GITHUB_REPO=$GITHUB_REPOSITORY
+        export DOCKER_HOST=$DOCKER_CFG
         kubectl create namespace $NAMESPACE || true
         bash .github/luet-k8s.sh
     - name: Create repository 🔧
