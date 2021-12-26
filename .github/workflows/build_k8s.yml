@@ -24,7 +24,7 @@ jobs:
       REPO: desktop
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
-      BACKEND: docker-sidecar
+      BACKEND: docker
       DOCKER_REGISTRY: quay.io
       DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
       DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
