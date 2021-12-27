@@ -1,0 +1,12 @@
+category: "apps"
+name: "mos-updater"
+version: 0.1
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+labels:
+  github.repo: "mos-updater"
+  github.owner: "MocaccinoOS"
+golang_version: "1.15.6"
+arch: "amd64"

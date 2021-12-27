@@ -1,0 +1,27 @@
+env:
+- PATH=$PATH:/usr/local/go/bin
+- GOPATH=/luetbuild/go
+- GO111MODULE=on
+
+prelude:
+# - mkdir -p ~/.ssh
+# - ssh-keyscan github.com 2>/dev/null > ~/.ssh/known_hosts
+- wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
+- tar -C /usr/local -xzf golang.tar.gz
+- go get fyne.io/fyne/v2
+- | 
+    PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+    git clone https://github.com/mocaccinoOS/mos-updater.git && cd mos-updater && git checkout "v${PACKAGE_VERSION}" -b build
+- |
+  export PATH=$PATH:$GOPATH/bin && \
+  PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+  cd mos-updater && fyne release -os linux -name "mos-updater" -appVersion "${PACKAGE_VERSION}" && \
+  mkdir out && tar xvf mos-updater.tar.gz -C out
+steps:
+- |
+  cd out && DESTDIR=/mos-updater PREFIX=/usr make install
+package_dir: "/mos-updater"
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
