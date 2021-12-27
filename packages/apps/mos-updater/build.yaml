@@ -20,7 +20,7 @@ prelude:
   mkdir out && tar xvf mos-updater.tar.xz -C out
 steps:
 - |
-  cd out && DESTDIR=/mos-updater PREFIX=/usr make install
+  cd mos-updater/out && DESTDIR=/mos-updater PREFIX=/usr make install
 package_dir: "/mos-updater"
 requires:
 - category: "layers"
