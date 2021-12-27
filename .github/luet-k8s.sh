@@ -22,6 +22,7 @@ BUCKET=${BUCKET:-}
 GITHUB_REPO=${GITHUB_REPO:-mocaccinoOS/desktop}
 GITHUB_BRANCH=${GITHUB_BRANCH:-master}
 IMAGE_REPOSITORY=${IMAGE_REPOSITORY:-}
+CACHE_REPOSITORY=${CACHE_REPOSITORY:-$IMAGE_REPOSITORY}
 MINIO_API_URL=${MINIO_API_URL:-}
 MINIO_SECRET_KEY=${MINIO_SECRET_KEY:-}
 MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY:-}
@@ -98,7 +99,7 @@ spec:
     options:
         pull: true
         push: true
-        imageRepository: "$IMAGE_REPOSITORY"
+        imageRepository: "$CACHE_REPOSITORY"
         pushFinalImages: true
         finalImagesRepository: "$IMAGE_REPOSITORY"
         onlyTarget: true
