@@ -1,0 +1,20 @@
+env:
+- PATH=$PATH:/usr/local/go/bin
+- GOPATH=/luetbuild/go
+- GO111MODULE=on
+- CGO_ENABLED=1
+
+prelude:
+# - mkdir -p ~/.ssh
+# - ssh-keyscan github.com 2>/dev/null > ~/.ssh/known_hosts
+- wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
+- tar -C /usr/local -xzf golang.tar.gz
+- git clone https://github.com/fyne-io/fynedesk
+- cd fynedesk && make
+steps:
+- cd fynedesk && make install
+requires:
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true
