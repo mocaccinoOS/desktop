@@ -16,7 +16,7 @@ prelude:
 - |
   export PATH=$PATH:$GOPATH/bin && \
   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-  cd mos-updater && fyne release -os linux -name "mos-updater" -appVersion "${PACKAGE_VERSION}" && \
+  cd mos-updater && fyne release -os linux -name "mos-updater" -appVersion "${PACKAGE_VERSION}" && ls -liah && \
   mkdir out && tar xvf mos-updater.tar.gz -C out
 steps:
 - |
