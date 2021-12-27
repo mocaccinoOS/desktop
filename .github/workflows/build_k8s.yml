@@ -19,15 +19,19 @@ jobs:
       REPOSITORY_TYPE: docker
       REPOSITORY_URL: quay.io/mocaccino/desktop
       #$MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
-      IMAGE_REPOSITORY: quay.io/mocaccino/desktop
+      IMAGE_REPOSITORY: ${{ secrets.REGISTRY_IMAGE }}
+      CACHE_REPOSITORY: ${{ secrets.REGISTRY_IMAGE }}
       NODE_SELECTOR: "luet.io/workload: jobs"
       REPO: desktop
       BUCKET: mocaccino-desktop
       TREE_DIR: packages
       BACKEND: docker-sidecar
-      DOCKER_REGISTRY: quay.io
-      DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
-      DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
+      DOCKER_REGISTRY: ${{ secrets.REGISTRY_URL }}
+      DOCKER_USER: ${{ secrets.REGISTRY_USERNAME }}
+      DOCKER_PASS: ${{ secrets.REGISTRY_PASSWORD }}
+      #DOCKER_REGISTRY: quay.io
+      #DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
+      #DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
       NAMESPACE: "workload-desktop"
 #      EDGEVPN: ${{ secrets.EDGEVPN }}
       MASTER: 10.1.0.20
