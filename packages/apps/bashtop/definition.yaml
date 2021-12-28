@@ -1,6 +1,6 @@
 category: "apps"
 name: "bashtop"
-version: 0.9.25+5
+version: 0.9.25+6
 requires:
   - category: "layers"
     name: "system-x"
