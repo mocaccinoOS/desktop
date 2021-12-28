@@ -51,7 +51,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
-    version: 0+3
+    version: 0+4
   - !!merge <<: *X
     real_category: "layers"
     name: "plasma"
