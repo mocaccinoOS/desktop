@@ -27,7 +27,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+10
+    version: 0+11
   - !!merge <<: *X
     real_category: "layers"
     name: "net-tools"
