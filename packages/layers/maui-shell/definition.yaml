@@ -1,0 +1,7 @@
+category: "layers"
+name: "maui-shell"
+version: "0.9999"
+requires:
+  - category: "layers"
+    name: "kde-common"
+    version: ">=0"
