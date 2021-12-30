@@ -2,7 +2,7 @@ package_dir: "/output"
 prelude:
 - git clone https://github.com/KDE/mauikit.git
 - |
-   cd mauikit && 
+   cd mauikit && \
    cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
