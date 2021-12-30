@@ -15,6 +15,7 @@ RUN layers/system-x
 
 SHELL ["/bin/sh", "-c"]
 RUN rm -rf /var/cache/luet/packages/ /var/cache/luet/repos/
+RUN luet cleanup
 
 ENV TMPDIR=/tmp
 ENTRYPOINT ["/bin/sh"]
