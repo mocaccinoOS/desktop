@@ -14,7 +14,7 @@ prelude:
    make
 steps:
 - cd mauikit && make DESTDIR="/output" install
-- cd maui-shell && make DESTDIR="/output" install
+- cd maui-shell/build && make DESTDIR="/output" install
 requires:
 - category: "buildbase"
   name: "kde-common"
