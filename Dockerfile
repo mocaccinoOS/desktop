@@ -8,6 +8,8 @@ SHELL ["/usr/bin/luet", "install", "-y", "-d"]
 
 RUN repository/luet
 RUN repository/mocaccino-desktop
+RUN repository/mocaccino-os-commons
+RUN repository/mocaccino-repository-index
 RUN layers/system-x
 
 SHELL ["/bin/sh", "-c"]
