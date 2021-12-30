@@ -86,6 +86,8 @@ jobs:
         tags=$(skopeo list-tags docker://$src | jq '.Tags')
 
         for i in $(echo "$tags" | jq -rc '.[]'); do
+         if ! luet util image-exist $dst:$i; then
           echo "Copy docker://$src:$i docker://$dst:$i"
           skopeo copy docker://$src:$i docker://$dst:$i
+         fi
         done
