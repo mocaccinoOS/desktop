@@ -25,18 +25,6 @@ packages:
     name: "qt"
     version: 0+11
   - !!merge <<: *X
-    real_category: "layers"
-    name: "sys-fs"
-    version: 0+11
-  - !!merge <<: *X
-    real_category: "layers"
-    name: "net-tools"
-    version: 0+11
-  - !!merge <<: *X
-    real_category: "layers"
-    name: "codecs"
-    version: 0+11
-  - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
     version: 0+11
