@@ -25,10 +25,6 @@ steps:
 - chown -R 32:32 /var/lib/gdm
 - etc-update -q --automode -5
 requires:
-- category: "buildbase"
-  name: "X"
-  version: ">=0"
-- category: "buildbase"
+- category: "layers"
   name: "gnome-common"
   version: ">=0"
-requires_final_images: true

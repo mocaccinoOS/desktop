@@ -16,7 +16,6 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - etc-update -q --automode -5
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "gnome-common"
   version: ">=0"
-requires_final_images: true
