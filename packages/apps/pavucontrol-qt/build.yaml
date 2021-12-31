@@ -15,7 +15,6 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C dev-util/lxqt-build-tools
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "qt"
   version: ">=0"
-requires_final_images: true
