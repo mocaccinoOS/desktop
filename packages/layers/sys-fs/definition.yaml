@@ -31,10 +31,10 @@ provides:
   - name: mit-krb5
     category: app-crypt
     version: '>=0'
-  - name: app-pda/libplist
+  - name: libplist
     category: app-pda
     version: '>=0'
-  - name: app-pda/libusbmuxd
+  - name: libusbmuxd
     category: app-pda
     version: '>=0'
   - name: lmdb

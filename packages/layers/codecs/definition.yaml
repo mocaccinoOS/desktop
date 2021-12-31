@@ -181,10 +181,10 @@ provides:
   - name: opencore-amr
     category: media-libs
     version: '>=0'
-  - name: openjpeg
+  - name: openh264
     category: media-libs
     version: '>=0'
-  - name: openh264
+  - name: openjpeg
     category: media-libs
     version: '>=0'
   - name: opus
