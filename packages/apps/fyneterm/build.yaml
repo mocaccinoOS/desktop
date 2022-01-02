@@ -11,15 +11,15 @@ prelude:
 - go get fyne.io/fyne/v2/cmd/fyne
 - | 
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-    git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && cd $GITHUB_REPO && git checkout "{{.Values.sha}}" -b build
+    git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && git checkout "{{.Values.sha}}" -b build
 - |
   export PATH=$PATH:$GOPATH/bin && \
   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-  cd $GITHUB_REPO && fyne release -os linux -name "{{.Values.name}}" -appVersion "${PACKAGE_VERSION}" && ls -liah && \
+  cd $GITHUB_REPO/cmd/fyneterm && fyne release -os linux -name "{{.Values.name}}" -appVersion "${PACKAGE_VERSION}" && ls -liah && \
   mkdir out && tar xvf {{.Values.name}}.tar.xz -C out
 steps:
 - |
-  cd $GITHUB_REPO/out && DESTDIR=/{{.Values.name}} PREFIX=/usr make install
+  cd $GITHUB_REPO/cmd/fyneterm/out && DESTDIR=/{{.Values.name}} PREFIX=/usr make install
 package_dir: "/{{.Values.name}}"
 requires:
 - category: "layers"
