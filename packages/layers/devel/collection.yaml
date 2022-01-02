@@ -4,30 +4,30 @@ packages:
   version: "0.20220102"
   category: layers
   package: "system-x"
-- <<: *base
-  name: X-devel
-  package: "X"
-- <<: *base
-  name: xfce-devel
-  package: "xfce"
-- <<: *base
-  name: wayfire-devel
-  package: "wayfire"
-- <<: *base
-  name: trinity-devel
-  package: "trinity"
-- <<: *base
-  name: sys-fs-devel
-  package: "sys-fs"
-- <<: *base
-  name: qt-devel
-  package: "qt"
-- <<: *base
-  name: plasma-devel
-  package: "plasma"
-- <<: *base
-  name: kde-common-devel
-  package: "kde-common"
-- <<: *base
-  name: gnome-common-devel
-  package: "gnome-common"
+# - <<: *base
+#   name: X-devel
+#   package: "X"
+# - <<: *base
+#   name: xfce-devel
+#   package: "xfce"
+# - <<: *base
+#   name: wayfire-devel
+#   package: "wayfire"
+# - <<: *base
+#   name: trinity-devel
+#   package: "trinity"
+# - <<: *base
+#   name: sys-fs-devel
+#   package: "sys-fs"
+# - <<: *base
+#   name: qt-devel
+#   package: "qt"
+# - <<: *base
+#   name: plasma-devel
+#   package: "plasma"
+# - <<: *base
+#   name: kde-common-devel
+#   package: "kde-common"
+# - <<: *base
+#   name: gnome-common-devel
+#   package: "gnome-common"

@@ -7,8 +7,7 @@
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
-# devel
-- ^/usr/include
+
 
 - ^/luetbuild
 {{end}}

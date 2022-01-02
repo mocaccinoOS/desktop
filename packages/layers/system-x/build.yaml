@@ -95,7 +95,12 @@ excludes:
 - ^/usr/lib/llvm.*
 - ^/usr/lib/clang.*
 - ^/etc/lvm.*
+
+# devel split
+- ^/usr/include
+
 {{ template "portage_excludes" }}
+
 # Emerge/portage
 - ^/usr/bin/emerge
 - ^/usr/bin/emerge-webrsync
