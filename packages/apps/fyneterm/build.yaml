@@ -11,7 +11,7 @@ prelude:
 - go get fyne.io/fyne/v2/cmd/fyne
 - | 
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-    git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && git checkout "{{.Values.sha}}" -b build
+    git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && cd $GITHUB_REPO && git checkout "{{.Values.sha}}" -b build
 - |
   export PATH=$PATH:$GOPATH/bin && \
   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
