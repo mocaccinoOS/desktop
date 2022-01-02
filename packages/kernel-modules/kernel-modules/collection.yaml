@@ -18,11 +18,14 @@ packages:
       packages:
         - app-emulation/virtualbox-modules
     labels:
+      emerge.jobs: "3"
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 6.1.24+39
     lts: true
+    labels:
+      emerge.jobs: "3"
     emerge:
       jobs: "3"
       packages:
@@ -54,6 +57,8 @@ packages:
     name: "nvidia-drivers-lts"
     version: 0.993+64
     lts: true
+    labels:
+      emerge.jobs: "3"
     emerge:
       jobs: "3"
       packages:
