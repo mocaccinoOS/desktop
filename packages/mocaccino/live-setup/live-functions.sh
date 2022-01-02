@@ -283,16 +283,6 @@ prepare() {
         systemctl enable "lightdm"
     fi
 
-    if [ -f "/usr/share/xsessions/cask-x11.desktop" ]; then
-        setup_default_xsession "cask-x11"
-        systemctl enable "lightdm"
-    fi
-
-    if [ -f "/usr/share/xsessions/fynedesk.desktop" ]; then
-        setup_default_xsession "fynedesk"
-        systemctl enable "lightdm"
-    fi
-
     if [ -f "/usr/share/xsessions/plasma.desktop" ]; then
         setup_default_xsession "plasma"
         systemctl enable "sddm"
@@ -301,6 +291,16 @@ prepare() {
     if [ -f "/usr/share/xsessions/gnome.desktop" ]; then
         setup_default_xsession "gnome"
         systemctl enable "gdm"
+    fi
+
+    if [ -f "/usr/share/xsessions/cask-x11.desktop" ]; then
+        setup_default_xsession "cask-x11"
+        systemctl enable "lightdm"
+    fi
+
+    if [ -f "/usr/share/xsessions/fynedesk.desktop" ]; then
+        setup_default_xsession "fynedesk"
+        systemctl enable "lightdm"
     fi
 
     setup_networkmanager
