@@ -16,3 +16,8 @@
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 {{end}}
+
+{{ define "portage_build" }}
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- etc-update -q --automode -5
+{{end}}

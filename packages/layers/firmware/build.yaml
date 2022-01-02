@@ -6,8 +6,7 @@ env:
 prelude:
 - cp -rf package.license /etc/portage/
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- etc-update -q --automode -5
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "system-x"

@@ -8,7 +8,7 @@ prelude:
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "system-x"

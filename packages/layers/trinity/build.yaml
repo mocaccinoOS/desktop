@@ -9,8 +9,7 @@ prelude:
 - USE="-subversion -mercurial" emerge layman
 - echo "y" | layman -o https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo/raw/branch/master/Documentation/overlay.xml -f -a trinity-official
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- etc-update -q --automode -5
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "X"

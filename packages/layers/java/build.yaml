@@ -5,7 +5,7 @@ env:
 {{ template "portage_env" . }}
 
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "X"

@@ -9,8 +9,7 @@ prelude:
 - if test -f "/etc/portage/package.env" ; then rm "/etc/portage/package.env"; fi
 - cp -rf package.env /etc/portage/
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- etc-update -q --automode -5
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "X"
