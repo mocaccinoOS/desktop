@@ -1,19 +1,10 @@
 excludes:
-- ^/var/cache/distfiles
-- ^/usr/portage/distfiles
-- ^/var/db/repos
-- ^/var/cache/edb
-- ^/usr/portage
-- ^/var/db/pkg
-- ^/var/lib/portage
-- ^/var/log
+{{ template "portage_excludes" }}
 - ^/var/lib/module-rebuild
-- ^/luetbuild
 - ^/lib/modules/.*-mocaccino/modules\..*
 
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ .Values.emerge.jobs }}
+{{ template "portage_env" . }}
   #prelude:
 # Add custom package.use for each package in the collection
 #- cp -rf {{.Values.name}}/package.use /etc/portage/

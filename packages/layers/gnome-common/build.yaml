@@ -2,8 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
 # workaround that can be removed once package.env is a directory created from system-x

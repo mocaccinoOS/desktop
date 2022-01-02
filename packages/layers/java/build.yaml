@@ -2,8 +2,8 @@ excludes:
 {{ template "portage_excludes" }}
 
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{ template "portage_env" . }}
+
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:

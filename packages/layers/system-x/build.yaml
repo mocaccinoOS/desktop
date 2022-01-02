@@ -4,8 +4,7 @@ requires:
   version: ">=0"
 unpack: true
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ .Values.emerge.jobs }}
+{{ template "portage_env" . }}
 
 prelude:
 - cp -rf package.use /etc/portage/

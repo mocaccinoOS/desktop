@@ -1,7 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
 env:
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/

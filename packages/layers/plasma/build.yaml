@@ -1,8 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
 env:
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+{{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
