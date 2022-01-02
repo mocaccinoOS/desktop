@@ -4,6 +4,6 @@ includes:
 - /usr/include/.*
 unpack: true
 requires:
-- name: system-x
+- name: {{.Values.package}}
   version: ">=0"
   category: layers

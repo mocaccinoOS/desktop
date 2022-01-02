@@ -95,21 +95,7 @@ excludes:
 - ^/usr/lib/llvm.*
 - ^/usr/lib/clang.*
 - ^/etc/lvm.*
-
-# devel
-- ^/usr/include
-
-# Emerge cache files
-- ^/var/cache/distfiles
-- ^/usr/portage/distfiles
-- ^/var/db/repos
-- ^/var/cache/edb
-- ^/usr/portage
-- ^/var/db/pkg
-- ^/var/lib/portage
-- ^/var/log
-
-
+{{ template "portage_excludes" }}
 # Emerge/portage
 - ^/usr/bin/emerge
 - ^/usr/bin/emerge-webrsync

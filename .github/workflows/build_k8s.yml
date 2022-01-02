@@ -77,7 +77,6 @@ jobs:
     - name: Push to stable repository 🚀
       if: startsWith(github.ref, 'refs/tags/')
       run: |
-        # TODO
         src="quay.io/mocaccino/desktop"
         dst="quay.io/mocaccino/desktop-stable"
 

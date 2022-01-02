@@ -1,0 +1,14 @@
+{{ define "portage_excludes" }}
+- ^/var/cache/distfiles
+- ^/usr/portage/distfiles
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
+# devel
+- ^/usr/include
+
+- ^/luetbuild
+{{end}}

@@ -1,6 +1,0 @@
-name: system-x-devel
-version: 0.20201125+93
-category: layers
-packages:
-  - {}
-  - version: +4
