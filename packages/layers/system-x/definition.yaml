@@ -157,6 +157,7 @@ emerge:
     - dev-perl/XML-Simple
 labels:
   autobump.strategy: "snapshot"
+  emerge.jobs: "1"
 provides:
   - name: adm
     category: acct-group
