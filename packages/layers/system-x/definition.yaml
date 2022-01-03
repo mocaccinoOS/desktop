@@ -117,47 +117,46 @@ requires:
   - name: wheel
     category: entity
     version: ">=0"
-emerge:
-  jobs: "3"
-  packages:
-    - acct-group/plugdev
-    - app-arch/cpio
-    - app-arch/p7zip
-    - app-arch/unrar
-    - app-arch/zip
-    - dev-lang/ruby
-    - dev-libs/double-conversion
-    - dev-libs/jemalloc
-    - dev-libs/libgudev
-    - dev-python/dbus-python
-    - dev-python/docutils
-    - dev-python/pygments
-    - dev-python/python-dateutil
-    - dev-python/numpy
-    - dev-python/six
-    - dev-python/psutil
-    - dev-python/pyyaml
-    - dev-vcs/git
-    - net-misc/ntp
-    - media-libs/libpng
-    - sys-apps/bolt
-    - sys-apps/dmidecode
-    - sys-apps/pciutils
-    - sys-apps/usbutils
-    - sys-devel/clang
-    - sys-devel/gdb
-    - sys-kernel/dracut
-    - sys-process/cronie
-    - dev-perl/DBI
-    - dev-perl/DBD-SQLite
-    - dev-perl/JSON
-    - dev-perl/Net-Daemon
-    - dev-perl/PlRPC
-    - dev-perl/Types-Serialiser
-    - dev-perl/XML-Simple
 labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "1"
+  emerge.packages: >-
+    acct-group/plugdev
+    app-arch/cpio
+    app-arch/p7zip
+    app-arch/unrar
+    app-arch/zip
+    dev-lang/ruby
+    dev-libs/double-conversion
+    dev-libs/jemalloc
+    dev-libs/libgudev
+    dev-python/dbus-python
+    dev-python/docutils
+    dev-python/pygments
+    dev-python/python-dateutil
+    dev-python/numpy
+    dev-python/six
+    dev-python/psutil
+    dev-python/pyyaml
+    dev-vcs/git
+    net-misc/ntp
+    media-libs/libpng
+    sys-apps/bolt
+    sys-apps/dmidecode
+    sys-apps/pciutils
+    sys-apps/usbutils
+    sys-devel/clang
+    sys-devel/gdb
+    sys-kernel/dracut
+    sys-process/cronie
+    dev-perl/DBI
+    dev-perl/DBD-SQLite
+    dev-perl/JSON
+    dev-perl/Net-Daemon
+    dev-perl/PlRPC
+    dev-perl/Types-Serialiser
+    dev-perl/XML-Simple
+
 provides:
   - name: adm
     category: acct-group
