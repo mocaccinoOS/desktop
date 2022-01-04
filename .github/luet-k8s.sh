@@ -100,8 +100,7 @@ spec:
         pull: true
         push: true
         imageRepository: "$CACHE_REPOSITORY"
-	pullRepository:
-	- "$REPOSITORY_URL"
+	pullRepository: [ $REPOSITORY_URL ]
         pushFinalImages: true
         finalImagesRepository: "$IMAGE_REPOSITORY"
         onlyTarget: true
