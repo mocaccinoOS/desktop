@@ -28,11 +28,11 @@ jobs:
       TREE_DIR: packages
       BACKEND: docker-sidecar
       DOCKER_REGISTRY: ${{ secrets.REGISTRY_URL }}
-      #DOCKER_USER: ${{ secrets.REGISTRY_USERNAME }}
-      #DOCKER_PASS: ${{ secrets.REGISTRY_PASSWORD }}
+      DOCKER_USER: ${{ secrets.REGISTRY_USERNAME }}
+      DOCKER_PASS: ${{ secrets.REGISTRY_PASSWORD }}
       #DOCKER_REGISTRY: quay.io
-      DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
-      DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
+      #DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
+      #DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
       NAMESPACE: "workload-desktop"
 #      EDGEVPN: ${{ secrets.EDGEVPN }}
       MASTER: 10.1.0.20
