@@ -85,6 +85,6 @@ serve-repo:
 
 .PHONY: auto-bump
 auto-bump:
-	TREE_DIR=$(ROOT_DIR)/$(TREE) autobump-github
+	TREE_DIR=$(ROOT_DIR)/$(TREE) $(LUET) autobump-github
 
 autobump: auto-bump
