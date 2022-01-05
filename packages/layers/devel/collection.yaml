@@ -1,9 +1,9 @@
 packages:
-- &base
-  name: system-x-devel
-  version: "0.20220102"
-  category: layers
-  package: "system-x"
+  - &base
+    name: system-x-devel
+    version: 0.20220102+1
+    category: layers
+    package: "system-x"
 # - <<: *base
 #   name: X-devel
 #   package: "X"
