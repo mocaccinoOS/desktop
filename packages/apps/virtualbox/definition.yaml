@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 6.1.24+40
+version: 6.1.24+41
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
