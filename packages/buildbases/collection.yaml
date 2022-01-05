@@ -24,7 +24,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+12
+    version: 0+13
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-sources"
