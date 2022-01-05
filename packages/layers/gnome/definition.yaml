@@ -66,9 +66,6 @@ provides:
   - name: liblouis
     category: dev-libs
     version: '>=0'
-  - name: libusb-compat
-    category: dev-libs
-    version: '>=0'
   - name: oniguruma
     category: dev-libs
     version: '>=0'
@@ -245,9 +242,6 @@ provides:
     version: '>=0'
   - name: libosinfo
     category: sys-libs
-    version: '>=0'
-  - name: libusb
-    category: virtual
     version: '>=0'
   - name: gtksourceview
     category: x11-libs
