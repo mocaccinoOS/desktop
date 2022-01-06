@@ -15,6 +15,7 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "gnome-common"
   version: ">=0"
+requires_final_images: true

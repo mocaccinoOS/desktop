@@ -17,6 +17,7 @@ steps:
 - emerge -C app-misc/jq
 - chown -R 32:32 /var/lib/gdm
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "gnome-common"
   version: ">=0"
+requires_final_images: true
