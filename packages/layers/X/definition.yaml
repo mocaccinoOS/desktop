@@ -51,9 +51,6 @@ requires:
   - name: postdrop
     category: entity
     version: ">=0"
-  - name: postmaster
-    category: entity
-    version: '>=0'
   - name: saned
     category: entity
     version: ">=0"
@@ -101,9 +98,6 @@ provides:
     category: acct-user
     version: '>=0'
   - name: postfix
-    category: acct-user
-    version: '>=0'
-  - name: postmaster
     category: acct-user
     version: '>=0'
   - name: saned
