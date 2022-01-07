@@ -1003,9 +1003,6 @@ provides:
   - name: libvncserver
     category: net-libs
     version: '>=0'
-  - name: mailbase
-    category: net-mail
-    version: '>=0'
   - name: freerdp
     category: net-misc
     version: '>=0'
