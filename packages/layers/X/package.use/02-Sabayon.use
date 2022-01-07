@@ -295,8 +295,6 @@ net-misc/tigervnc -java server
 net-vpn/tor threads
 net-misc/vinagre rdp -avahi
 net-misc/openvswitch monitor
-net-misc/x2goclient -qt5
-net-misc/x2goserver sqlite
 net-news/rssguard webengine
 net-dns/bind-tools gssapi
 net-nds/rpcbind warmstarts
