@@ -22,10 +22,8 @@ app-editors/xemacs xft
 app-emacs/auctex preview-latex
 app-emulation/libvirt lxc rbd virtualbox fuse kvm qemu virt-network lvm caps iscsi nfs parted uml python xen
 app-emulation/open-vm-tools -X -xinerama
-app-emulation/protontricks -gui
 app-emulation/qemu glusterfs nfs rbd fdt spice -gtk virtfs xattr usbredir gtk virgl smartcard
 app-emulation/vice fullscreen gtk -sdl
-app-emulation/winetricks -gtk
 app-emulation/xen-tools hvm qemu
 app-i18n/skk-jisyo cdb
 app-laptop/pommed -gtk
@@ -129,8 +127,6 @@ dev-util/geany gtk3
 dev-util/geany-plugins ctags enchant git gtkspell pretty-printer gtk3
 dev-util/glade -gnome
 dev-util/kdevelop php qthelp ruby
-dev-util/mottainai-agent lxd
-dev-util/mottainai-server lxd
 dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
 dev-util/xdelta lzma
@@ -211,7 +207,6 @@ media-sound/audacity ladspa vamp soundtouch id3tag midi sbsms -ffmpeg
 media-sound/audacious gtk3 wma timidity lirc chardet -gtk -qt5
 media-sound/audiotools -gui
 media-sound/cantata replaygain taglib cdparanoia devices
-media-sound/clementine -lastfm ios moodbar mtp
 media-sound/cmus mikmod
 media-sound/deadbeef alac ape cover curl lastfm m3u hotkeys sndfile supereq wavpack wma
 media-sound/gmusicbrowser gstreamer
@@ -371,9 +366,7 @@ www-servers/apache apache2_modules_macro apache2_modules_slotmem_shm apache2_mod
 www-servers/lighttpd fastcgi lua memcache xattr -kerberos
 www-servers/nginx nginx_modules_http_stub_status nginx_modules_http_geoip
 x11-apps/igt-gpu-tools video_cards_intel
-x11-drivers/nvidia-drivers distribution libglvnd uvm tools
-x11-drivers/nvidia-drivers -gtk
-x11-drivers/nvidia-userspace -x-multilib libglvnd tools
+x11-drivers/nvidia-drivers distribution libglvnd uvm tools -gtk
 x11-libs/xapps introspection
 x11-libs/qwt designer
 x11-libs/fltk threads xft -cairo
@@ -388,8 +381,6 @@ x11-misc/shutter drawing webphoto
 x11-misc/xaos aalib
 x11-misc/xmobar xft
 x11-plugins/pidgin-sipe voice
-x11-plugins/cairo-dock-plugins exif gmenu -kde terminal tomboy -webkit -xfce -xklavier
-x11-themes/cairo-dock-themes Azur Cobalt Djoole Glattering I_Cairo MacOSX TapisVert Ubuntu Verde Wood
 >=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
 x11-themes/qtcurve plasma
@@ -419,7 +410,6 @@ net-misc/spice-gtk gtk3 usbredir smartcard vala
 dev-libs/libgit2 ssh threads
 >=media-plugins/grilo-plugins-0.2.10 tracker
 dev-cpp/commoncpp2 -gnutls ssl
-x11-drivers/nvidia-userspace uvm
 net-firewall/ipset -modules
 net-firewall/shorewall lite4 lite6
 app-emulation/lxc doc
