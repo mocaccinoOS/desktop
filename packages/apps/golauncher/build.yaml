@@ -14,10 +14,10 @@ prelude:
   export PATH=$PATH:$GOPATH/bin && \
   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
   cd $GITHUB_REPO && make BUNDLE_NAME={{.Values.name}} release && ls -liah && \
-  mkdir out && tar xvf {{.Values.name}}.tar.xz -C out
+  mkdir build && tar xvf {{.Values.name}}.tar.xz -C build
 steps:
 - |
-  cd $GITHUB_REPO/out && DESTDIR=/{{.Values.name}} PREFIX=/usr make install
+  cd $GITHUB_REPO/build && DESTDIR=/{{.Values.name}} PREFIX=/usr make install
 package_dir: "/{{.Values.name}}"
 requires:
 - category: "layers"
