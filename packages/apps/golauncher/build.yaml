@@ -1,0 +1,25 @@
+env:
+- PATH=$PATH:/usr/local/go/bin
+- GOPATH=/luetbuild/go
+- GO111MODULE=on
+- GITHUB_REPO={{ ( index .Values.labels "github.repo" ) }}
+- GITHUB_ORG={{ ( index .Values.labels "github.owner" ) }}
+prelude:
+- wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
+- tar -C /usr/local -xzf golang.tar.gz
+- | 
+    PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+    git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && cd $GITHUB_REPO && git checkout "${PACKAGE_VERSION}" -b build
+- |
+  export PATH=$PATH:$GOPATH/bin && \
+  PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+  cd $GITHUB_REPO && make BUNDLE_NAME={{.Values.name}} release && ls -liah && \
+  mkdir out && tar xvf {{.Values.name}}.tar.xz -C out
+steps:
+- |
+  cd $GITHUB_REPO/out && DESTDIR=/{{.Values.name}} PREFIX=/usr make install
+package_dir: "/{{.Values.name}}"
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
