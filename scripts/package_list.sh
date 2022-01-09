@@ -10,17 +10,20 @@ if [ -z "${PACK}" ]; then
 fi
 packages=()
 REPO_CACHE="${REPO_CACHE:-quay.io/mocaccino/desktop}"
-#set -ex
-IMAGES_DATA=$(luet tree images --image-repository $REPO_CACHE $PACK -o json)
+if [ "$DEBUG" == "true" ]; then
+set -ex
+fi
+IMAGES_DATA=$(luet tree images --tree packages --image-repository $REPO_CACHE $PACK -o json)
 PKG_LIST=$(luet tree pkglist -o json)
 images=($(echo $IMAGES_DATA | jq -r '.packages[].image' ))
 images_names=($(echo $IMAGES_DATA | jq -r '.packages[].name' ))
 
 if [ "$DEBUG" == "true" ]; then
 echo "For layer $PACK:
-previous packages layer: ${images_names[-2]}
-after packages layer: ${images_names[-1]}
+previous packages layer: ${images_names[-2]} ${images[-2]}
+after packages layer: ${images_names[-1]} ${images[1]}
 "
+
 fi
 
 if [[ "${#images[@]}" == "1" ]];then
