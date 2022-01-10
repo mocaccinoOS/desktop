@@ -1,6 +1,6 @@
 category: "apps"
 name: "slim"
-version: 1.3.6+92
+version: 1.3.6+93
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
