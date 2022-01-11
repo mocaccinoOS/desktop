@@ -1,6 +1,6 @@
 category: "apps"
 name: "steam"
-version: 20210323+85
+version: 20210323+86
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
