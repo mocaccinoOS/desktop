@@ -4,7 +4,7 @@ version: 0.3+45
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/geoip net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libasyncns net-libs/libnatpmp net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libtorrent-rasterbar net-libs/libssh net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant
+    dev-perl/libwww-perl dev-libs/geoip net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libasyncns net-libs/libnatpmp net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libtorrent-rasterbar net-libs/libssh net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant
 requires:
   - category: "layers"
     name: "system-x"
@@ -69,6 +69,60 @@ provides:
     version: '>=0'
   - name: libnl
     category: dev-libs
+    version: '>=0'
+  - name: Encode-Locale
+    category: dev-perl
+    version: '>=0'
+  - name: File-Listing
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tagset
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Cookies
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Date
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Message
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Negotiate
+    category: dev-perl
+    version: '>=0'
+  - name: IO-HTML
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-INET6
+    category: dev-perl
+    version: '>=0'
+  - name: libwww-perl
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-MediaTypes
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-Protocol-https
+    category: dev-perl
+    version: '>=0'
+  - name: Net-HTTP
+    category: dev-perl
+    version: '>=0'
+  - name: Socket6
+    category: dev-perl
+    version: '>=0'
+  - name: Try-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: URI
+    category: dev-perl
+    version: '>=0'
+  - name: WWW-RobotRules
+    category: dev-perl
     version: '>=0'
   - name: m2crypto
     category: dev-python
@@ -165,4 +219,28 @@ provides:
     version: '>=0'
   - name: pcsc-lite
     category: sys-apps
+    version: '>=0'
+  - name: perl-Compress-Raw-Bzip2
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Zlib
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-Requirements
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Compress
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Socket-IP
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-Local
+    category: virtual
+    version: '>=0'
+  - name: perl-parent
+    category: virtual
+    version: '>=0'
+  - name: perl-XSLoader
+    category: virtual
     version: '>=0'
