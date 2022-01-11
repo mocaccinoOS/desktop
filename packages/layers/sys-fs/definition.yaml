@@ -4,7 +4,7 @@ version: 0.6+33
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-pda/libusbmuxd dev-db/mariadb dev-libs/crypto++ dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/libudfread dev-libs/libusb-compat dev-libs/pugixml dev-libs/libzip media-libs/musicbrainz net-nds/openldap net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-libs/cracklib sys-libs/libraw1394 sys-process/lsof virtual/libusb virtual/mysql
+    app-pda/libusbmuxd dev-db/mariadb dev-libs/crypto++ dev-libs/libburn dev-libs/libfmt dev-libs/libisofs dev-libs/libudfread dev-libs/libusb-compat dev-libs/pugixml dev-libs/libzip media-libs/musicbrainz net-nds/openldap net-fs/sshfs net-libs/neon sys-apps/gptfdisk sys-apps/tcp-wrappers sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/exfat-utils sys-fs/fuse-exfat sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g net-fs/samba sys-fs/f2fs-tools sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/squashfs-tools sys-fs/mdadm sys-fs/udisks sys-fs/zfs sys-libs/cracklib sys-libs/libraw1394 sys-process/lsof virtual/libusb virtual/mysql
 requires:
   - category: "layers"
     name: "system-x"
@@ -160,6 +160,9 @@ provides:
   - name: duperemove
     category: sys-fs
     version: '>=0'
+  - name: exfat-utils
+    category: sys-fs
+    version: '>=0'
   - name: f2fs-tools
     category: sys-fs
     version: '>=0'
@@ -167,6 +170,9 @@ provides:
     category: sys-fs
     version: '>=0'
   - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: fuse-exfat
     category: sys-fs
     version: '>=0'
   - name: fuse-common
