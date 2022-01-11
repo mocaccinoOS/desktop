@@ -27,10 +27,11 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "gentoo/stage3" ]; then
         continue
     fi
-    # Skip kernel-modules/sources, it is a collection and lacks a definition.yaml
-    if [ "$PACKAGE_CATEGORY/$PACKAGE_NAME" == "kernel-modules/sources" ]; then
+    # Skip kernel-modules
+    if [ "$PACKAGE_CATEGORY" == "kernel-modules" ]; then
         continue
     fi
+
     echo "===== Generating provides for package $PACKAGE_CATEGORY/$PACKAGE_NAME ====="
     ./scripts/package_list.sh "$PACKAGE_CATEGORY/$PACKAGE_NAME"
     docker images --filter='reference=quay.io/mocaccino/desktop' --format='{{.Repository}}:{{.Tag}}' | xargs -r docker rmi
