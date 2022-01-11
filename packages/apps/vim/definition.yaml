@@ -1,6 +1,6 @@
 category: "apps"
 name: "vim"
-version: 8.2.3582+9
+version: 8.2.3741+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -21,3 +21,7 @@ provides:
   - name: cscope
     category: dev-util
     version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

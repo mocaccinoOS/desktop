@@ -9,3 +9,7 @@ provides:
   - name: htop
     category: sys-process
     version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"

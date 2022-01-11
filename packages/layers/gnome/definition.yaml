@@ -186,9 +186,6 @@ provides:
   - name: libmediaart
     category: media-libs
     version: '>=0'
-  - name: musicbrainz
-    category: media-libs
-    version: '>=0'
   - name: grilo-plugins
     category: media-plugins
     version: '>=0'

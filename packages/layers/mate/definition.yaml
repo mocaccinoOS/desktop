@@ -13,6 +13,9 @@ provides:
   - name: engrampa
     category: app-arch
     version: '>=0'
+  - name: pluma
+    category: app-editors
+    version: '>=0'
   - name: atril
     category: app-text
     version: '>=0'
