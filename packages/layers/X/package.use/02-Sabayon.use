@@ -87,7 +87,6 @@ dev-libs/c-blosc hdf5
 dev-libs/gmime smime -mono
 dev-libs/libjcat gpg pkcs7
 dev-libs/libdazzle vala
-dev-libs/libdbusmenu gtk3
 dev-libs/libf2c static-libs
 dev-libs/libgit2-glib ssh
 dev-libs/nss utils
