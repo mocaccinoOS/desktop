@@ -26,7 +26,7 @@ steps:
 {{ template "portage_build" . }}
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
-- emerge -C virtual/rust dev-lang/rust-bin dev-lang/yasm
+- emerge -C virtual/rust dev-lang/rust-bin dev-lang/yasm dev-lang/python:3.10
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
