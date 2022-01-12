@@ -94,9 +94,6 @@ excludes:
 - ^/usr/lib/clang.*
 - ^/etc/lvm.*
 
-# devel split
-- ^/usr/include
-
 {{ template "portage_excludes" }}
 
 # Emerge/portage
