@@ -10,6 +10,7 @@
 # devel split
 - ^/usr/include
 - ^/luetbuild
+- ^/tmp
 {{end}}
 
 {{ define "portage_env" }}
