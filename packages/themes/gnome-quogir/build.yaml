@@ -1,0 +1,9 @@
+image: "debian:stable"
+
+prelude:
+- apt-get update
+- apt-get install -y gtk2-engines-murrine gtk2-engines-pixbuf ninja-build git meson sassc
+- git clone https://github.com/vinceliuice/Qogir-theme
+- cd Qogir-theme && git checkout "{{.Values.sha}}" -b build
+steps:
+- cd Qogir-theme && ./install.sh -d /usr/share/themes

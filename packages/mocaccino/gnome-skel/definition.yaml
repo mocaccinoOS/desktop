@@ -1,6 +1,7 @@
 category: mocaccino
 name: gnome-skel
-version: "0.6"
+version: "0.7"
+dashtoclock: "v45"
 requires:
 - category: "layers"
   name: "gnome"

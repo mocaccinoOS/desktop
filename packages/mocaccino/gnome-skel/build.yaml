@@ -10,10 +10,10 @@ steps:
 - git clone https://github.com/ubuntu/gnome-shell-extension-appindicator /package/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
 
 # dash to panel
-- wget https://github.com/home-sweet-gnome/dash-to-panel/releases/download/v40/dash-to-panel@jderose9.github.com_v40.zip
+- wget https://github.com/home-sweet-gnome/dash-to-panel/releases/download/{{.Values.dashtoclock}}/dash-to-panel@jderose9.github.com_{{.Values.dashtoclock}}.zip
 - mkdir dash-to-panel@jderose9.github.com
-- mv dash-to-panel@jderose9.github.com_v40.zip dash-to-panel@jderose9.github.com
-- cd dash-to-panel@jderose9.github.com && unzip dash-to-panel@jderose9.github.com_v40.zip && rm dash-to-panel@jderose9.github.com_v40.zip
+- mv dash-to-panel@jderose9.github.com_{{.Values.dashtoclock}}.zip dash-to-panel@jderose9.github.com
+- cd dash-to-panel@jderose9.github.com && unzip dash-to-panel@jderose9.github.com_{{.Values.dashtoclock}}.zip && rm dash-to-panel@jderose9.github.com_{{.Values.dashtoclock}}.zip
 - mv dash-to-panel@jderose9.github.com /package/usr/share/gnome-shell/extensions
 
 - cp -rf user /package/etc/dconf/profile/
