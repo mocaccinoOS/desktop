@@ -6,4 +6,5 @@ prelude:
 - git clone https://github.com/vinceliuice/Qogir-theme
 - cd Qogir-theme && git checkout "{{.Values.sha}}" -b build
 steps:
+- mkdir -p /usr/share/themes
 - cd Qogir-theme && ./install.sh -d /usr/share/themes
