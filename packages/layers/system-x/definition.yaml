@@ -471,9 +471,6 @@ provides:
   - name: python
     category: dev-lang
     version: '>=0'
-  - name: python
-    category: dev-lang
-    version: '>=0'
   - name: python-exec
     category: dev-lang
     version: '>=0'
@@ -963,6 +960,9 @@ provides:
   - name: wget
     category: net-misc
     version: '>=0'
+  - name: CPAN
+    category: perl-core
+    version: '>=0'
   - name: Encode
     category: perl-core
     version: '>=0'
@@ -1321,6 +1321,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Carp
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN
     category: virtual
     version: '>=0'
   - name: perl-CPAN-Meta

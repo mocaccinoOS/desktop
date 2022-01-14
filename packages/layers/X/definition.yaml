@@ -616,6 +616,12 @@ provides:
   - name: B-Hooks-EndOfScope
     category: dev-perl
     version: '>=0'
+  - name: Cairo
+    category: dev-perl
+    version: '>=0'
+  - name: Cairo-GObject
+    category: dev-perl
+    version: '>=0'
   - name: Capture-Tiny
     category: dev-perl
     version: '>=0'
@@ -652,7 +658,13 @@ provides:
   - name: Exception-Class
     category: dev-perl
     version: '>=0'
+  - name: ExtUtils-Depends
+    category: dev-perl
+    version: '>=0'
   - name: ExtUtils-HasCompiler
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-PkgConfig
     category: dev-perl
     version: '>=0'
   - name: File-BaseDir
@@ -673,6 +685,12 @@ provides:
   - name: File-Which
     category: dev-perl
     version: '>=0'
+  - name: Glib-Object-Introspection
+    category: dev-perl
+    version: '>=0'
+  - name: glib-perl
+    category: dev-perl
+    version: '>=0'
   - name: Gtk3
     category: dev-perl
     version: '>=0'
@@ -680,6 +698,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Locale-Maketext-Lexicon
+    category: dev-perl
+    version: '>=0'
+  - name: Log-Agent
     category: dev-perl
     version: '>=0'
   - name: Log-Dispatch
@@ -757,6 +778,9 @@ provides:
   - name: Variable-Magic
     category: dev-perl
     version: '>=0'
+  - name: XString
+    category: dev-perl
+    version: '>=0'
   - name: gst-python
     category: dev-python
     version: '>=0'
@@ -791,6 +815,12 @@ provides:
     category: dev-util
     version: '>=0'
   - name: gtk-update-icon-cache
+    category: dev-util
+    version: '>=0'
+  - name: intltool
+    category: dev-util
+    version: '>=0'
+  - name: itstool
     category: dev-util
     version: '>=0'
   - name: opencl-headers
@@ -1255,9 +1285,6 @@ provides:
   - name: gtk+
     category: x11-libs
     version: '>=0'
-  - name: gtk+
-    category: x11-libs
-    version: '>=0'
   - name: libdrm
     category: x11-libs
     version: '>=0'
@@ -1268,12 +1295,6 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libva
-    category: x11-libs
-    version: '>=0'
-  - name: libva-intel-driver
-    category: x11-libs
-    version: '>=0'
-  - name: libva-vdpau-driver
     category: x11-libs
     version: '>=0'
   - name: libvdpau
@@ -1406,12 +1427,6 @@ provides:
     category: x11-terms
     version: '>=0'
   - name: adwaita-icon-theme
-    category: x11-themes
-    version: '>=0'
-  - name: gnome-themes-standard
-    category: x11-themes
-    version: '>=0'
-  - name: gtk-engines-adwaita
     category: x11-themes
     version: '>=0'
   - name: hicolor-icon-theme
