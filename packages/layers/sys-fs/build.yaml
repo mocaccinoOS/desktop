@@ -1,6 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
 - ^/run
+- ^/etc/openldap/ssl/ldap.*
 env:
 {{ template "portage_env" . }}
 prelude:
