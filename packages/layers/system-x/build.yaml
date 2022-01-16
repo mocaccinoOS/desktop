@@ -27,6 +27,12 @@ steps:
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
 - emerge -C app-eselect/eselect-rust virtual/rust dev-lang/rust-bin dev-lang/yasm dev-lang/python:3.10
+# Here we start project removing builddeps
+- emerge -C app-text/docbook-xml-dtd:* app-text/sgml-common app-text/docbook-xsl-stylesheets app-text/build-docbook-catalog app-text/asciidoc app-text/xmlto
+- emerge -C dev-util/cmake app-arch/libarchive dev-libs/libuv app-crypt/rhash dev-libs/jsoncpp dev-libs/lzo
+- emerge -C sys-devel/bison virtual/yacc
+- emerge -C sys-devel/autoconf:* sys-devel/libtool:* sys-devel/automake:* sys-devel/autoconf-wrapper:*
+- emerge -C dev-util/boost-build
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
