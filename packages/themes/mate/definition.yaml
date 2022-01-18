@@ -1,10 +1,13 @@
 category: "themes"
 name: "mate"
-version: 1+69
+version: 1+70
 labels:
 requires:
   - category: "layers"
     name: "mate"
+    version: ">=0"
+  - category: "gnome-themes"
+    name: "qogir"
     version: ">=0"
   - category: "system"
     name: "mocaccino-wallpaper"
