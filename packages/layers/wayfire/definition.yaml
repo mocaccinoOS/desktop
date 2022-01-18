@@ -4,7 +4,7 @@ version: 0.7.2+29
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra x11-terms/alacritty
+    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra
 provides:
   - name: greetd
     category: acct-group
