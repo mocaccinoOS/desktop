@@ -13,6 +13,8 @@ prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.env /etc/portage/
 - emerge -1 app-arch/rpm2targz dev-lang/rust-bin virtual/rust app-text/docbook-xsl-ns-stylesheets
+- emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 - USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
