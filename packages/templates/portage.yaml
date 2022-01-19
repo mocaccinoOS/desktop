@@ -18,6 +18,11 @@
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 {{end}}
 
+{{ define "portage_prelude_build" }}
+- emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C {{ ( index .Values.labels "emerge.packages" ) }}
+{{end}}
+
 {{ define "portage_build" }}
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - etc-update -q --automode -5

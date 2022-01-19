@@ -7,8 +7,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
-- emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 requires:
