@@ -415,6 +415,9 @@ provides:
   - name: eselect-mpg123
     category: app-eselect
     version: '>=0'
+  - name: eselect-rust
+    category: app-eselect
+    version: '>=0'
   - name: ibus
     category: app-i18n
     version: '>=0'
@@ -1285,6 +1288,9 @@ provides:
   - name: gtk+
     category: x11-libs
     version: '>=0'
+  - name: gtk+
+    category: x11-libs
+    version: '>=0'
   - name: libdrm
     category: x11-libs
     version: '>=0'
@@ -1427,6 +1433,12 @@ provides:
     category: x11-terms
     version: '>=0'
   - name: adwaita-icon-theme
+    category: x11-themes
+    version: '>=0'
+  - name: gnome-themes-standard
+    category: x11-themes
+    version: '>=0'
+  - name: gtk-engines-adwaita
     category: x11-themes
     version: '>=0'
   - name: hicolor-icon-theme

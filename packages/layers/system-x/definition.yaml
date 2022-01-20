@@ -378,9 +378,6 @@ provides:
   - name: eselect-ruby
     category: app-eselect
     version: '>=0'
-  - name: eselect-rust
-    category: app-eselect
-    version: '>=0'
   - name: man-pages-ja
     category: app-i18n
     version: '>=0'

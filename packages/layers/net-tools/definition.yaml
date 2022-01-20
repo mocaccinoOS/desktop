@@ -235,10 +235,10 @@ provides:
   - name: perl-IO-Socket-IP
     category: virtual
     version: '>=0'
-  - name: perl-Time-Local
+  - name: perl-parent
     category: virtual
     version: '>=0'
-  - name: perl-parent
+  - name: perl-Time-Local
     category: virtual
     version: '>=0'
   - name: perl-XSLoader

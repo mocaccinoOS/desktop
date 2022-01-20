@@ -172,10 +172,10 @@ provides:
   - name: fuse
     category: sys-fs
     version: '>=0'
-  - name: fuse-exfat
+  - name: fuse-common
     category: sys-fs
     version: '>=0'
-  - name: fuse-common
+  - name: fuse-exfat
     category: sys-fs
     version: '>=0'
   - name: mdadm
@@ -239,8 +239,5 @@ provides:
     category: virtual
     version: '>=0'
   - name: python-cffi
-    category: virtual
-    version: '>=0'
-  - name: libusb
     category: virtual
     version: '>=0'
