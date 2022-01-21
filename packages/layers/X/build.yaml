@@ -18,7 +18,6 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
-- USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
 - emerge -1 -j ${JOBS} dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
 {{ template "portage_build" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
