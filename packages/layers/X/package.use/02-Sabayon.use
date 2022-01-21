@@ -89,7 +89,6 @@ dev-libs/libjcat gpg pkcs7
 dev-libs/libdazzle vala
 dev-libs/libf2c static-libs
 dev-libs/libgit2-glib ssh
-dev-libs/nss utils
 dev-libs/tntnet sdk
 dev-libs/xerces-c xqilla icu
 dev-libs/xmlrpc-c curl
