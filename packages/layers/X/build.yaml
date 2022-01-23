@@ -16,6 +16,8 @@ prelude:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 - USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build" . }}
+# Be sure it ends up in our package.
+- rm -rfv /usr/lib/libgdk_pixbuf-2.0.so.0
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 - USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
