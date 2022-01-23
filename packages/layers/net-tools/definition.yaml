@@ -1,10 +1,10 @@
 category: "layers"
 name: "net-tools"
-version: 0.3+50
+version: 0.3+52
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-perl/libwww-perl dev-libs/geoip net-analyzer/traceroute net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libasyncns net-libs/libnatpmp net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libtorrent-rasterbar net-libs/libssh net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant
+    app-crypt/mit-krb5 dev-perl/libwww-perl dev-libs/geoip dev-libs/libverto net-analyzer/traceroute net-dialup/linux-atm net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-libs/libasyncns net-libs/libnatpmp net-libs/libmbim net-libs/libnetfilter_conntrack net-libs/libndp net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libqmi net-libs/libtorrent-rasterbar net-libs/libssh net-libs/libupnp net-libs/miniupnpc net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant sys-apps/keyutils sys-apps/pcsc-lite
 requires:
   - category: "layers"
     name: "system-x"
