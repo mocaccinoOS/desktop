@@ -8,6 +8,8 @@ prelude:
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
 {{ template "portage_prelude_build" . }}
+# as a workaround we merge gdk-pixbuf here.
+- emerge -1 x11-libs/gdk-pixbuf
 steps:
 {{ template "portage_build" . }}
 requires:

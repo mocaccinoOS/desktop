@@ -8,3 +8,4 @@ media-libs/tiff cxx jpeg lzma zlib
 media-video/mjpegtools -gtk
 sci-libs/fftw threads
 virtual/jpeg static-libs
+x11-libs/gdk-pixbuf introspection jpeg
