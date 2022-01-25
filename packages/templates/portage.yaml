@@ -19,8 +19,10 @@
 {{end}}
 
 {{ define "portage_prelude_build" }}
-- emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C {{ ( index .Values.labels "emerge.packages" ) }}
+- | 
+  emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  emerge -C {{ ( index .Values.labels "emerge.packages" ) }} && \
+  find / -xtype l 2>/dev/null -exec rm {} \;
 {{end}}
 
 {{ define "portage_build" }}
