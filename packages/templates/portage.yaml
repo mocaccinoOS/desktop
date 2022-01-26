@@ -14,7 +14,6 @@
 {{end}}
 
 {{ define "portage_env" }}
-- FEATURES="-preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 {{end}}
 
