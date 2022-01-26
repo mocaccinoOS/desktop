@@ -17,8 +17,8 @@ prelude:
 - cp -rf bashrc /etc/portage/
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
-- emerge -1 dev-lang/rust-bin virtual/rust
 steps:
+- emerge -1 dev-lang/rust-bin virtual/rust
 - emerge -1 sys-apps/systemd
 - emerge -1 dev-libs/openssl net-misc/openssh net-misc/curl net-dns/unbound
 - emerge -1uDN @system -j $JOBS
@@ -26,7 +26,7 @@ steps:
 {{ template "portage_build" . }}
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
 - chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
-- emerge -C dev-lang/yasm dev-lang/python:3.10
+- emerge -C app-eselect/eselect-rust virtual/rust dev-lang/rust-bin dev-lang/yasm dev-lang/python:3.10
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
