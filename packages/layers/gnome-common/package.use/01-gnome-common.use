@@ -1,5 +1,4 @@
 app-crypt/gcr vala gtk
-app-crypt/p11-kit asn1 libffi trust
 #TODO: check out pinentry
 # see https://bugs.gentoo.org/570512
 app-crypt/pinentry gnome-keyring
