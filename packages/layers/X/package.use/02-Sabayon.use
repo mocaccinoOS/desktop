@@ -20,9 +20,7 @@ app-editors/bluefish gnome -python
 app-editors/retext -spell
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
-app-emulation/libvirt lxc rbd virtualbox fuse kvm qemu virt-network lvm caps iscsi nfs parted uml python xen
 app-emulation/open-vm-tools -X -xinerama
-app-emulation/qemu glusterfs nfs rbd fdt spice -gtk virtfs xattr usbredir gtk virgl smartcard
 app-emulation/vice fullscreen gtk -sdl
 app-emulation/xen-tools hvm qemu
 app-i18n/skk-jisyo cdb
