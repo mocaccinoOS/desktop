@@ -12,7 +12,7 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C dev-lang/yasm sys-devel/bin86 sys-power/iasl
+- emerge -C dev-lang/yasm sys-devel/bin86 sys-power/iasl dev-util/kbuild
 requires:
 - category: "buildbase"
   name: "qt"
