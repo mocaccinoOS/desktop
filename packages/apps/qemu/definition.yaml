@@ -1,0 +1,15 @@
+category: "apps"
+name: "qemu"
+version: 6.2.0+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-emulation/qemu
+provides:
+  - name: qemu
+    category: app-emulation
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
