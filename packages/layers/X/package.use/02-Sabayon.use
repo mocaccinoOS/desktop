@@ -20,9 +20,7 @@ app-editors/bluefish gnome -python
 app-editors/retext -spell
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
-app-emulation/libvirt lxc rbd virtualbox fuse kvm qemu virt-network lvm caps iscsi nfs parted uml python xen
 app-emulation/open-vm-tools -X -xinerama
-app-emulation/qemu glusterfs nfs rbd fdt spice -gtk virtfs xattr usbredir gtk virgl smartcard
 app-emulation/vice fullscreen gtk -sdl
 app-emulation/xen-tools hvm qemu
 app-i18n/skk-jisyo cdb
@@ -365,7 +363,6 @@ www-servers/lighttpd fastcgi lua memcache xattr -kerberos
 www-servers/nginx nginx_modules_http_stub_status nginx_modules_http_geoip
 x11-apps/igt-gpu-tools video_cards_intel
 x11-drivers/nvidia-drivers distribution libglvnd uvm tools -gtk
-x11-libs/xapps introspection
 x11-libs/qwt designer
 x11-libs/fltk threads xft -cairo
 dev-lang/tk threads
