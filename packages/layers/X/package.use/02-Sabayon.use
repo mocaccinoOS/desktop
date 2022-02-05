@@ -177,7 +177,6 @@ media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libggi aalib
 media-libs/libmypaint gegl
-media-libs/libsdl aalib
 media-libs/libsfml doc examples
 media-libs/libsoundtouch sse2
 media-libs/libxtract fftw
