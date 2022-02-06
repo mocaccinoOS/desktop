@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+21
+    version: 0+22
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
