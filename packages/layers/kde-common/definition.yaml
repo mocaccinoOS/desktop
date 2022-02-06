@@ -1,10 +1,10 @@
 category: "layers"
 name: "kde-common"
-version: 4+45
+version: 4+46
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-crypt/qca app-text/discount app-text/poppler dev-libs/plasma-wayland-protocols kde-apps/kdegraphics-mobipocket kde-apps/libkcddb kde-apps/libkexiv2 kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/breeze-icons kde-frameworks/kbookmarks kde-frameworks/kcmutils kde-frameworks/kconfig kde-frameworks/kconfigwidgets kde-frameworks/kcoreaddons kde-frameworks/kcrash kde-frameworks/kdbusaddons kde-frameworks/kdeclarative kde-frameworks/kdnssd kde-frameworks/kdoctools kde-frameworks/kglobalaccel kde-frameworks/ki18n kde-frameworks/kidletime kde-frameworks/kimageformats kde-frameworks/kio kde-frameworks/kirigami kde-frameworks/kitemmodels kde-frameworks/kjobwidgets kde-frameworks/knewstuff kde-frameworks/knotifications kde-frameworks/knotifyconfig kde-frameworks/kpackage kde-frameworks/kparts kde-frameworks/kplotting kde-frameworks/kross kde-frameworks/kservice kde-frameworks/kwayland kde-frameworks/kwindowsystem kde-frameworks/kxmlgui kde-frameworks/oxygen-icons kde-plasma/libkscreen sys-libs/kpmcore
+    app-crypt/qca app-text/discount app-text/poppler dev-libs/plasma-wayland-protocols kde-apps/kdegraphics-mobipocket kde-apps/libkcddb kde-apps/libkexiv2 kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/breeze-icons kde-frameworks/kbookmarks kde-frameworks/kcmutils kde-frameworks/kcompletion kde-frameworks/kconfig kde-frameworks/kconfigwidgets kde-frameworks/kcoreaddons kde-frameworks/kcrash kde-frameworks/kdbusaddons kde-frameworks/kdeclarative kde-frameworks/kdnssd kde-frameworks/kdoctools kde-frameworks/kglobalaccel kde-frameworks/kguiaddons kde-frameworks/ki18n kde-frameworks/kidletime kde-frameworks/kimageformats kde-frameworks/kio kde-frameworks/kirigami kde-frameworks/kitemmodels kde-frameworks/kjobwidgets kde-frameworks/knewstuff kde-frameworks/knotifications kde-frameworks/knotifyconfig kde-frameworks/kpackage kde-frameworks/kparts kde-frameworks/kplotting kde-frameworks/kross kde-frameworks/kservice kde-frameworks/kwayland kde-frameworks/kwidgetsaddons kde-frameworks/kwindowsystem kde-frameworks/kxmlgui kde-frameworks/oxygen-icons kde-plasma/libkscreen sys-libs/kpmcore
 requires:
   - category: "layers"
     name: "qt"
