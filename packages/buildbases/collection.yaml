@@ -36,7 +36,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
-    version: 0+15
+    version: 0+16
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
