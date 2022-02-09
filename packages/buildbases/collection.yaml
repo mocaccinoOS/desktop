@@ -40,4 +40,4 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+22
+    version: 0+23
