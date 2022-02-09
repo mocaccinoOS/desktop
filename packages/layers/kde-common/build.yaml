@@ -16,7 +16,7 @@ excludes:
 - ^/usr/lib64/girepository-1.0/Poppler-0.18.typelib
 - ^/usr/lib64/libpoppler-cpp.*
 - ^/usr/lib64/libpoppler-glib.*
-- ^/usr/lib64/libpoppler.*
+- ^/usr/lib64/libpoppler.so.*
 - ^/usr/lib64/pkgconfig/poppler-cpp.pc
 - ^/usr/lib64/pkgconfig/poppler-glib.pc
 - ^/usr/lib64/pkgconfig/poppler.pc
