@@ -13,7 +13,6 @@ app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
 app-cdr/brasero nautilus
 app-cdr/cdrdao -gnome
-kde-apps/k3b taglib
 app-cdr/xfburn gstreamer
 app-doc/doxygen latex dot
 app-editors/bluefish gnome -python
