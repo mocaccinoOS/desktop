@@ -1,4 +1,5 @@
 install:
+- /var/lib/portage/.keep
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
 - chmod u+s /bin/su
 - chmod +s /usr/lib/polkit-1/polkit-agent-helper-1
