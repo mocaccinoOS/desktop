@@ -12,7 +12,6 @@ app-backup/backintime gnome -kde
 app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
 app-cdr/brasero nautilus
-app-cdr/cdrdao -gnome
 app-cdr/xfburn gstreamer
 app-doc/doxygen latex dot
 app-editors/bluefish gnome -python
@@ -34,7 +33,6 @@ app-misc/recoll -fam inotify
 app-misc/sphinx mysql
 app-mobilephone/gnokii sms -X
 app-office/calligra kdepim semantic-desktop
-app-office/dia gnome-print
 app-office/glabels doc
 app-office/gnucash aqbanking chipcard hbci ofx quotes sqlite
 app-office/homebank ofx
@@ -72,7 +70,6 @@ dev-java/junit source
 dev-java/swing-layout source
 dev-java/validation-api source
 dev-lang/fpc source ide
-dev-lang/mono minimal
 dev-lang/nqp moar -parrot
 dev-lang/ocaml tk
 dev-lang/parrot pcre
@@ -133,8 +130,6 @@ gnome-extra/nautilus-sendto -cdr
 kde-apps/kget -bittorrent semantic-desktop
 kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
 kde-apps/ktp-common-internals otr
-kde-apps/marble plasma
-kde-apps/okular chm djvu ebook epub crypt
 kde-apps/poxml extras
 kde-misc/kdeconnect -bluetooth
 lxde-base/lxterminal gtk3
@@ -149,8 +144,6 @@ mail-mta/netqmail qmail-spp
 media-fonts/baekmuk-fonts -X
 media-gfx/asymptote -latex
 media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
-media-gfx/darktable geo cpu_flags_x86_sse3 -cpudetection
-media-gfx/digikam handbook semantic-desktop
 media-gfx/gimageview mng
 media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
@@ -183,12 +176,10 @@ media-libs/mlt melt frei0r kdenlive quicktime python
 media-libs/oyranos -exif
 app-admin/elektra -abi_x86_32
 media-libs/oyranos -abi_x86_32
-media-libs/opencv contrib
 media-libs/sdl-mixer midi timidity mod mikmod
 media-libs/sdl2-mixer midi timidity
 media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
-media-libs/vigra fftw
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 media-plugins/audacious-plugins chardet cue gnome gtk3 http icecast libsamplerate modplug sndfile speedpitch wavpack -gtk -qt5
@@ -217,7 +208,6 @@ media-sound/qtractor sse
 media-sound/rhythmbox -cdr
 media-sound/snd fftw
 media-sound/sonic-visualiser fftw
->=media-sound/soundkonverter-0.2.90-r1 lame
 media-sound/kid3 -mp4
 media-tv/kodi airplay bluray cec css goom mysql pvr rtmp sftp upnp -wayland webserver xrandr -system-ffmpeg nfs java udf
 media-tv/mythtv -hls fftw
@@ -225,7 +215,6 @@ media-video/blinkensim aalib
 media-video/dvgrab quicktime
 media-video/jubler mplayer
 media-video/kino quicktime sox vorbis
-media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/vdr SetGroupSep-Patch atsc cmdsubmenu dvbsetup dxr3 graphtft iptv menuorg pinplugin rotor submenu subtitles ttxtsubs ttxtsubs yaepg
 media-video/xine-ui aalib vdr
@@ -263,7 +252,6 @@ net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
 net-libs/libgadu ssl threads
 net-libs/libmicrohttpd messages
-net-libs/mbedtls havege
 net-libs/telepathy-qt farstream
 net-libs/zeromq drafts unwind
 net-mail/dbmail sqlite3
@@ -279,7 +267,6 @@ net-misc/mosh ufw
 net-misc/plowshare -javascript
 net-misc/ps3mediaserver multiuser tsmuxer
 net-misc/putty gssapi
-net-misc/remmina vnc vte ssh rdp
 net-misc/tigervnc -java server
 net-vpn/tor threads
 net-misc/vinagre rdp -avahi
@@ -299,8 +286,6 @@ net-print/hplip -acl fax hpijs parport snmp static-ppds usb
 net-proxy/privoxy threads
 net-proxy/tsocks tordns
 net-wireless/gnuradio atsc channels dtv fec grc noaa performance-counters
-sci-astronomy/celestia -kde
-sci-astronomy/kstars fits indi
 sci-biology/ncbi-tools static-libs
 sci-biology/transfac -emboss
 sci-chemistry/openbabel -perl -python
@@ -311,7 +296,6 @@ sci-geosciences/mapserver flash threads -tiff
 sci-geosciences/qgis -grass webkit -python
 sci-libs/gdal curl geos
 >=sci-libs/gsl-1.15 cblas-external
-sci-libs/hdf5 hl cxx -fortran -mpi -threads -szip
 sci-libs/itpp fftw
 sci-libs/indilib nova
 sci-libs/netcdf -fortran hdf5
@@ -383,7 +367,6 @@ x11-wm/fluxbox imlib
 x11-wm/fvwm imlib
 x11-wm/icewm imlib
 media-libs/xine-lib -css
-app-cdr/brasero -css
 media-tv/mythtv -css
 media-video/avidemux amr
 net-dns/bind dlz resolvconf
