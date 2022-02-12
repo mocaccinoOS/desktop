@@ -13,9 +13,6 @@ provides:
   - name: confuse
     category: dev-libs
     version: '>=0'
-  - name: yajl
-    category: dev-libs
-    version: '>=0'
   - name: AnyEvent
     category: dev-perl
     version: '>=0'
