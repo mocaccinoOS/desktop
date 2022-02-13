@@ -4,13 +4,10 @@ version: 0.7.2+37
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wcm gui-apps/wf-shell gui-wm/wayfire gui-libs/wayfire-plugins-extra
+    dev-libs/date dev-libs/spdlog gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wayfire-plugins-extra gui-libs/wf-config gui-libs/wlroots gui-wm/wayfire media-libs/glm x11-terms/alacritty
 requires:
   - category: "layers"
     name: "gnome-common"
-    version: ">=0"
-  - category: "entity"
-    name: "seat"
     version: ">=0"
   - category: "entity"
     name: "seat"
