@@ -1,6 +1,6 @@
 category: "apps"
 name: "i3"
-version: 4.20.1+10
+version: 4.20.1+11
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -11,9 +11,6 @@ requires:
     version: ">=0"
 provides:
   - name: confuse
-    category: dev-libs
-    version: '>=0'
-  - name: yajl
     category: dev-libs
     version: '>=0'
   - name: AnyEvent
