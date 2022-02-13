@@ -1,10 +1,14 @@
 category: "apps"
 name: "lightdm"
-version: 1.30.0+102
+version: 1.30.0+103
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    x11-misc/lightdm
+    x11-misc/lightdm x11-misc/lightdm-gtk-greeter
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
 provides:
   - name: lightdm
     category: x11-misc
@@ -12,7 +16,3 @@ provides:
   - name: lightdm-gtk-greeter
     category: x11-misc
     version: '>=0'
-requires:
-  - category: "layers"
-    name: "gnome-common"
-    version: ">=0"
