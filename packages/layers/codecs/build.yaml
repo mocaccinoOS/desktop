@@ -7,6 +7,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
+- cp -rf package.mask /etc/portage/
 {{ template "portage_prelude_build" . }}
 steps:
 # We need this in env.d until this is in stable tree. See https://bugs.gentoo.org/832773
