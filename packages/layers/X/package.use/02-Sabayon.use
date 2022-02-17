@@ -380,8 +380,6 @@ media-tv/kodi vaapi vdpau
 media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
 app-i18n/scim gtk3
-app-emulation/spice smartcard
-net-misc/spice-gtk gtk3 usbredir smartcard vala
 dev-libs/libgit2 ssh threads
 >=media-plugins/grilo-plugins-0.2.10 tracker
 dev-cpp/commoncpp2 -gnutls ssl
