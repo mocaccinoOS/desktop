@@ -4,7 +4,7 @@ version: 7.7.0+3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/libvirt app-misc/scrub dev-python/libvirt-python net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libssh2 net-misc/ethertypes net-misc/radvd
+    app-emulation/libvirt app-emulation/libvirt-glib app-misc/scrub dev-python/libvirt-python net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libssh2 net-misc/ethertypes net-misc/radvd
 requires:
   - category: "apps"
     name: "qemu"
@@ -20,6 +20,9 @@ requires:
     version: ">=0"
 provides:
   - name: libvirt
+    category: app-emulation
+    version: '>=0'
+  - name: libvirt-glib
     category: app-emulation
     version: '>=0'
   - name: libvirt-python
