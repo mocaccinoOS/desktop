@@ -273,7 +273,6 @@ net-misc/vinagre rdp -avahi
 net-misc/openvswitch monitor
 net-news/rssguard webengine
 net-dns/bind-tools gssapi
-net-nds/rpcbind warmstarts
 net-nntp/suck perl
 net-p2p/amule geoip stats remote upnp daemon
 net-p2p/bitcoin-qt knots

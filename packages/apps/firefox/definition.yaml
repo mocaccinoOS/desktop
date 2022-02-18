@@ -1,6 +1,6 @@
 category: "apps"
 name: "firefox"
-version: 95.0.1+12
+version: 95.0.1+13
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
