@@ -6,8 +6,8 @@ labels:
   emerge.packages: >-
     app-emulation/virt-manager dev-python/argcomplete net-misc/x11-ssh-askpass sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-libs/libosinfo
 requires:
-  - category: "apps"
-    name: "libvirt"
+  - category: "layers"
+    name: "gnome-common"
     version: ">=0"
   - category: "apps"
     name: "spice-gtk"
