@@ -7,9 +7,9 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "apps"
+- category: "buildbase"
   name: "spice-gtk"
   version: ">=0"
-- category: "layers"
+- category: "buildbase"
   name: "gnome-common"
   version: ">=0"
