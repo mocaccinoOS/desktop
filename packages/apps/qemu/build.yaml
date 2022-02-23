@@ -15,6 +15,6 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"

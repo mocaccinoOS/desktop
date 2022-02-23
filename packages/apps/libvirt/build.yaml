@@ -8,6 +8,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "apps"
+- category: "buildbase"
   name: "qemu"
   version: ">=0"
