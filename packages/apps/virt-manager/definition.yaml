@@ -1,10 +1,10 @@
 category: "apps"
 name: "virt-manager"
-version: 3.2.0+4
+version: 3.2.0+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/virt-manager dev-python/argcomplete net-misc/x11-ssh-askpass sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-libs/libosinfo
+    app-emulation/virt-manager dev-python/argcomplete net-libs/gtk-vnc net-misc/x11-ssh-askpass sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-libs/libosinfo
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -18,6 +18,9 @@ provides:
     version: '>=0'
   - name: argcomplete
     category: dev-python
+    version: '>=0'
+  - name: gtk-vnc
+    category: net-libs
     version: '>=0'
   - name: x11-ssh-askpass
     category: net-misc
