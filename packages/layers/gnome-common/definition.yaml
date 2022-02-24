@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.9+53
+version: 0.9+54
 labels:
   emerge.jobs: "4"
   emerge.packages: >-
-    app-admin/system-config-printer gui-libs/libhandy x11-libs/goffice dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/polkit-gnome gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter media-libs/gsound dev-python/pyatspi sys-apps/xdg-desktop-portal-gtk x11-misc/xdg-user-dirs-gtk x11-libs/colord-gtk x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-themes/adwaita-icon-theme x11-themes/gnome-themes-standard
+    app-admin/system-config-printer gui-libs/libhandy x11-libs/goffice dev-python/setproctitle dev-libs/libgee gui-libs/gtk-layer-shell gnome-base/gnome-keyring gnome-extra/polkit-gnome gnome-extra/zenity gnome-base/gvfs gnome-base/libgnomekbd gnome-extra/gnome-color-manager gnome-extra/nm-applet net-libs/gnome-online-accounts net-libs/gupnp dev-libs/keybinder dev-libs/libpeas app-text/yelp-tools dev-util/gtk-doc app-text/docbook-sgml-dtd app-text/docbook-dsssl-stylesheets dev-util/gtk-doc gnome-base/libgtop gnome-extra/yelp-xsl media-libs/clutter media-libs/gsound net-libs/gtk-vnc dev-python/pyatspi sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-misc/xdg-user-dirs-gtk x11-libs/colord-gtk x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-themes/adwaita-icon-theme x11-themes/gnome-themes-standard
 requires:
   - category: "layers"
     name: "X"
@@ -154,6 +154,9 @@ provides:
   - name: gssdp
     category: net-libs
     version: '>=0'
+  - name: gtk-vnc
+    category: net-libs
+    version: '>=0'
   - name: gupnp
     category: net-libs
     version: '>=0'
@@ -166,8 +169,17 @@ provides:
   - name: cups-pk-helper
     category: net-print
     version: '>=0'
+  - name: osinfo-db-tools
+    category: sys-apps
+    version: '>=0'
+  - name: osinfo-db
+    category: sys-apps
+    version: '>=0'
   - name: xdg-desktop-portal-gtk
     category: sys-apps
+    version: '>=0'
+  - name: libosinfo
+    category: sys-libs
     version: '>=0'
   - name: freedesktop-icon-theme
     category: virtual

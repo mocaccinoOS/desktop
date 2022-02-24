@@ -1,12 +1,15 @@
 category: "apps"
 name: "qemu"
-version: 6.2.0+8
+version: 6.2.0+9
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/qemu
+    app-emulation/qemu app-emulation/spice
 provides:
   - name: qemu
+    category: app-emulation
+    version: '>=0'
+  - name: spice
     category: app-emulation
     version: '>=0'
 requires:
