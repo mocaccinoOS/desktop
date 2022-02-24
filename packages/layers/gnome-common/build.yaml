@@ -1,13 +1,11 @@
 excludes:
 {{ template "portage_excludes" }}
-
 env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-# workaround that can be removed once package.env is a directory created from system-x
-- if test -f "/etc/portage/package.env" ; then rm "/etc/portage/package.env"; fi
 - cp -rf package.env /etc/portage/
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 requires:
