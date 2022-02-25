@@ -296,7 +296,6 @@ sci-geosciences/qgis -grass webkit -python
 sci-libs/gdal curl geos
 >=sci-libs/gsl-1.15 cblas-external
 sci-libs/itpp fftw
-sci-libs/indilib nova
 sci-libs/netcdf -fortran hdf5
 sci-libs/plplot -wxwidgets
 sci-libs/ViSP opencv
