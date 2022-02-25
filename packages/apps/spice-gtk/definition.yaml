@@ -1,10 +1,10 @@
 category: "apps"
 name: "spice-gtk"
-version: 0.39+4
+version: 0.39+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    net-misc/spice-gtk sys-apps/usbredir
+    net-misc/spice-gtk
 requires:
   - category: "apps"
     name: "libvirt"
@@ -12,7 +12,4 @@ requires:
 provides:
   - name: spice-gtk
     category: net-misc
-    version: '>=0'
-  - name: usbredir
-    category: sys-apps
     version: '>=0'
