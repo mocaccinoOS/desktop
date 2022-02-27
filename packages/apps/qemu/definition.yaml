@@ -1,13 +1,19 @@
 category: "apps"
 name: "qemu"
-version: 6.2.0+4
+version: 6.2.0+11
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/qemu
+    app-emulation/qemu app-emulation/spice sys-apps/usbredir
 provides:
   - name: qemu
     category: app-emulation
+    version: '>=0'
+  - name: spice
+    category: app-emulation
+    version: '>=0'
+  - name: usbredir
+    category: sys-apps
     version: '>=0'
 requires:
   - category: "layers"

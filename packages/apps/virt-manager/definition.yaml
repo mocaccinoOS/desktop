@@ -1,0 +1,24 @@
+category: "apps"
+name: "virt-manager"
+version: 3.2.0+7
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-emulation/virt-manager dev-python/argcomplete net-misc/x11-ssh-askpass
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+  - category: "apps"
+    name: "spice-gtk"
+    version: ">=0"
+provides:
+  - name: virt-manager
+    category: app-emulation
+    version: '>=0'
+  - name: argcomplete
+    category: dev-python
+    version: '>=0'
+  - name: x11-ssh-askpass
+    category: net-misc
+    version: '>=0'

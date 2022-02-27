@@ -1,1 +1,1 @@
-app-emulation/qemu -doc
+app-emulation/qemu fuse spice usb usbredir -doc

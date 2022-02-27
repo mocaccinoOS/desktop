@@ -1,0 +1,2 @@
+# Keep masked until upstream resolves https://bugs.gentoo.org/820674
+media-libs/openexr:3
