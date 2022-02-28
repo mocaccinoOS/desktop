@@ -58,10 +58,19 @@ provides:
   - name: pcscd
     category: acct-user
     version: '>=0'
+  - name: mit-krb5
+    category: app-crypt
+    version: '>=0'
+  - name: vala
+    category: dev-lang
+    version: '>=0'
   - name: ell
     category: dev-libs
     version: '>=0'
   - name: geoip
+    category: dev-libs
+    version: '>=0'
+  - name: libev
     category: dev-libs
     version: '>=0'
   - name: libical
@@ -70,59 +79,11 @@ provides:
   - name: libnl
     category: dev-libs
     version: '>=0'
-  - name: Encode-Locale
-    category: dev-perl
+  - name: libverto
+    category: dev-libs
     version: '>=0'
-  - name: File-Listing
-    category: dev-perl
-    version: '>=0'
-  - name: HTML-Parser
-    category: dev-perl
-    version: '>=0'
-  - name: HTML-Tagset
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Cookies
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Date
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Message
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Negotiate
-    category: dev-perl
-    version: '>=0'
-  - name: IO-HTML
-    category: dev-perl
-    version: '>=0'
-  - name: IO-Socket-INET6
-    category: dev-perl
-    version: '>=0'
-  - name: libwww-perl
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-MediaTypes
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-Protocol-https
-    category: dev-perl
-    version: '>=0'
-  - name: Net-HTTP
-    category: dev-perl
-    version: '>=0'
-  - name: Socket6
-    category: dev-perl
-    version: '>=0'
-  - name: Try-Tiny
-    category: dev-perl
-    version: '>=0'
-  - name: URI
-    category: dev-perl
-    version: '>=0'
-  - name: WWW-RobotRules
-    category: dev-perl
+  - name: vala-common
+    category: dev-libs
     version: '>=0'
   - name: m2crypto
     category: dev-python
@@ -161,6 +122,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: libnfnetlink
+    category: net-libs
+    version: '>=0'
+  - name: libpcap
     category: net-libs
     version: '>=0'
   - name: libproxy
@@ -214,33 +178,12 @@ provides:
   - name: wpa_supplicant
     category: net-wireless
     version: '>=0'
+  - name: keyutils
+    category: sys-apps
+    version: '>=0'
   - name: lsb-release
     category: sys-apps
     version: '>=0'
   - name: pcsc-lite
     category: sys-apps
-    version: '>=0'
-  - name: perl-Compress-Raw-Bzip2
-    category: virtual
-    version: '>=0'
-  - name: perl-Compress-Raw-Zlib
-    category: virtual
-    version: '>=0'
-  - name: perl-CPAN-Meta-Requirements
-    category: virtual
-    version: '>=0'
-  - name: perl-IO-Compress
-    category: virtual
-    version: '>=0'
-  - name: perl-IO-Socket-IP
-    category: virtual
-    version: '>=0'
-  - name: perl-Time-Local
-    category: virtual
-    version: '>=0'
-  - name: perl-parent
-    category: virtual
-    version: '>=0'
-  - name: perl-XSLoader
-    category: virtual
     version: '>=0'

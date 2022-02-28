@@ -16,6 +16,9 @@ provides:
   - name: kdiagram
     category: dev-libs
     version: '>=0'
+  - name: libphonenumber
+    category: dev-libs
+    version: '>=0'
   - name: akonadi
     category: kde-apps
     version: '>=0'
@@ -186,7 +189,4 @@ provides:
     version: '>=0'
   - name: syndication
     category: kde-frameworks
-    version: '>=0'
-  - name: zxing-cpp
-    category: media-libs
     version: '>=0'

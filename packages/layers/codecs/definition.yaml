@@ -109,6 +109,9 @@ provides:
   - name: gstreamer
     category: media-libs
     version: '>=0'
+  - name: ilmbase
+    category: media-libs
+    version: '>=0'
   - name: jbig2dec
     category: media-libs
     version: '>=0'
