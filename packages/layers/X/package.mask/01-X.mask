@@ -1,3 +1,1 @@
-# Do not yet pull in xorg-server 21 
-# see upstream bug https://gitlab.freedesktop.org/xorg/driver/xf86-video-glint/-/issues/1
->x11-base/xorg-server-1.20.99
+# Placeholder
