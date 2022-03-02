@@ -1,1 +1,2 @@
 >media-libs/ilmbase-2.5.7-r2
+>dev-libs/imath-3.1.4-r1
