@@ -46,6 +46,7 @@ net-libs/libsoup gnome introspection ssl vala
 net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls introspection iptables modemmanager nss wext -resolvconf
 net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
+net-vpn/networkmanager-fortisslvpn -gtk
 sys-apps/pciutils kmod udev -zlib
 sys-libs/binutils-libs nls
 sys-power/upower introspection
