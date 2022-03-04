@@ -20,10 +20,10 @@ excludes:
 - ^/usr/lib64/pkgconfig/poppler-cpp.pc
 - ^/usr/lib64/pkgconfig/poppler-glib.pc
 - ^/usr/lib64/pkgconfig/poppler.pc
-- ^/usr/share/doc/poppler-21.11.0/AUTHORS.bz2
-- ^/usr/share/doc/poppler-21.11.0/NEWS.bz2
-- ^/usr/share/doc/poppler-21.11.0/README-XPDF.bz2
-- ^/usr/share/doc/poppler-21.11.0/README.md.bz2
+- ^/usr/share/doc/poppler-*/AUTHORS.bz2
+- ^/usr/share/doc/poppler-*/NEWS.bz2
+- ^/usr/share/doc/poppler-*/README-XPDF.bz2
+- ^/usr/share/doc/poppler-*/README.md.bz2
 - ^/usr/share/gir-1.0/Poppler-0.18.gir
 - ^/usr/share/man/man1/pdfattach.1.bz2
 - ^/usr/share/man/man1/pdfdetach.1.bz2
