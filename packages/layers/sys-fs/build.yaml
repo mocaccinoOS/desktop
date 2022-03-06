@@ -9,8 +9,6 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp -rf patches /etc/portage/
-# net-libs/libtorrent-rasterbar requires boost-build. Bug in upstream ebuild
-- emerge -1 dev-util/boost-build
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
