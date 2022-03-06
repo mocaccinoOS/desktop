@@ -16,16 +16,46 @@ requires:
     name: "mysql"
     version: ">=0"
 provides:
+  - name: dhcp
+    category: acct-group
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-group
+    version: '>=0'
   - name: ldap
     category: acct-group
     version: '>=0'
   - name: mysql
     category: acct-group
+    version: '>=0'
+  - name: openct
+    category: acct-group
+    version: '>=0'
+  - name: openvpn
+    category: acct-group
+    version: '>=0'
+  - name: pcscd
+    category: acct-group
+    version: '>=0'
+  - name: usb
+    category: acct-group
+    version: '>=0'
+  - name: dhcp
+    category: acct-user
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-user
     version: '>=0'
   - name: ldap
     category: acct-user
     version: '>=0'
   - name: mysql
+    category: acct-user
+    version: '>=0'
+  - name: openvpn
+    category: acct-user
+    version: '>=0'
+  - name: pcscd
     category: acct-user
     version: '>=0'
   - name: cdrtools
@@ -39,6 +69,18 @@ provides:
     version: '>=0'
   - name: libusbmuxd
     category: app-pda
+    version: '>=0'
+  - name: build-docbook-catalog
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xsl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: sgml-common
+    category: app-text
     version: '>=0'
   - name: lmdb
     category: dev-db
@@ -55,7 +97,16 @@ provides:
   - name: unixODBC
     category: dev-db
     version: '>=0'
+  - name: vala
+    category: dev-lang
+    version: '>=0'
   - name: crypto++
+    category: dev-libs
+    version: '>=0'
+  - name: ell
+    category: dev-libs
+    version: '>=0'
+  - name: geoip
     category: dev-libs
     version: '>=0'
   - name: libatasmart
@@ -73,7 +124,13 @@ provides:
   - name: libfmt
     category: dev-libs
     version: '>=0'
+  - name: libical
+    category: dev-libs
+    version: '>=0'
   - name: libisofs
+    category: dev-libs
+    version: '>=0'
+  - name: libnl
     category: dev-libs
     version: '>=0'
   - name: libsodium
@@ -97,13 +154,13 @@ provides:
   - name: userspace-rcu
     category: dev-libs
     version: '>=0'
+  - name: vala-common
+    category: dev-libs
+    version: '>=0'
   - name: yajl
     category: dev-libs
     version: '>=0'
   - name: DBD-mysql
-    category: dev-perl
-    version: '>=0'
-  - name: Devel-CheckLib
     category: dev-perl
     version: '>=0'
   - name: Parse-Yapp
@@ -112,17 +169,44 @@ provides:
   - name: cffi
     category: dev-python
     version: '>=0'
+  - name: m2crypto
+    category: dev-python
+    version: '>=0'
   - name: ply
     category: dev-python
     version: '>=0'
   - name: pycparser
     category: dev-python
     version: '>=0'
+  - name: boost-build
+    category: dev-util
+    version: '>=0'
   - name: cmocka
+    category: dev-util
+    version: '>=0'
+  - name: gdbus-codegen
     category: dev-util
     version: '>=0'
   - name: musicbrainz
     category: media-libs
+    version: '>=0'
+  - name: traceroute
+    category: net-analyzer
+    version: '>=0'
+  - name: linux-atm
+    category: net-dialup
+    version: '>=0'
+  - name: ppp
+    category: net-dialup
+    version: '>=0'
+  - name: ppp-scripts
+    category: net-dialup
+    version: '>=0'
+  - name: dnsmasq
+    category: net-dns
+    version: '>=0'
+  - name: libidn
+    category: net-dns
     version: '>=0'
   - name: cifs-utils
     category: net-fs
@@ -133,14 +217,89 @@ provides:
   - name: sshfs
     category: net-fs
     version: '>=0'
+  - name: libasyncns
+    category: net-libs
+    version: '>=0'
+  - name: libmbim
+    category: net-libs
+    version: '>=0'
+  - name: libnatpmp
+    category: net-libs
+    version: '>=0'
+  - name: libndp
+    category: net-libs
+    version: '>=0'
+  - name: libnetfilter_conntrack
+    category: net-libs
+    version: '>=0'
+  - name: libnfnetlink
+    category: net-libs
+    version: '>=0'
+  - name: libpcap
+    category: net-libs
+    version: '>=0'
+  - name: libproxy
+    category: net-libs
+    version: '>=0'
+  - name: libpsl
+    category: net-libs
+    version: '>=0'
+  - name: libqmi
+    category: net-libs
+    version: '>=0'
+  - name: libssh
+    category: net-libs
+    version: '>=0'
+  - name: libssh2
+    category: net-libs
+    version: '>=0'
+  - name: libtorrent-rasterbar
+    category: net-libs
+    version: '>=0'
+  - name: libupnp
+    category: net-libs
+    version: '>=0'
+  - name: miniupnpc
+    category: net-libs
+    version: '>=0'
   - name: neon
     category: net-libs
     version: '>=0'
   - name: rpcsvc-proto
     category: net-libs
     version: '>=0'
+  - name: dhcp
+    category: net-misc
+    version: '>=0'
+  - name: mobile-broadband-provider-info
+    category: net-misc
+    version: '>=0'
+  - name: modemmanager
+    category: net-misc
+    version: '>=0'
   - name: openldap
     category: net-nds
+    version: '>=0'
+  - name: openfortivpn
+    category: net-vpn
+    version: '>=0'
+  - name: openvpn
+    category: net-vpn
+    version: '>=0'
+  - name: bluez
+    category: net-wireless
+    version: '>=0'
+  - name: crda
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-regdb
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-tools
+    category: net-wireless
+    version: '>=0'
+  - name: wpa_supplicant
+    category: net-wireless
     version: '>=0'
   - name: gptfdisk
     category: sys-apps
@@ -148,11 +307,20 @@ provides:
   - name: keyutils
     category: sys-apps
     version: '>=0'
+  - name: lsb-release
+    category: sys-apps
+    version: '>=0'
+  - name: pcsc-lite
+    category: sys-apps
+    version: '>=0'
   - name: tcp-wrappers
     category: sys-apps
     version: '>=0'
   - name: parted
     category: sys-block
+    version: '>=0'
+  - name: bison
+    category: sys-devel
     version: '>=0'
   - name: btrfs-progs
     category: sys-fs
@@ -181,10 +349,10 @@ provides:
   - name: fuse
     category: sys-fs
     version: '>=0'
-  - name: fuse-exfat
+  - name: fuse-common
     category: sys-fs
     version: '>=0'
-  - name: fuse-common
+  - name: fuse-exfat
     category: sys-fs
     version: '>=0'
   - name: mdadm
@@ -250,222 +418,9 @@ provides:
   - name: python-cffi
     category: virtual
     version: '>=0'
-  - name: libusb
+  - name: yacc
     category: virtual
     version: '>=0'
-  - name: dhcp
-    category: acct-group
-    version: '>=0'
-  - name: dnsmasq
-    category: acct-group
-    version: '>=0'
-  - name: openct
-    category: acct-group
-    version: '>=0'
-  - name: openvpn
-    category: acct-group
-    version: '>=0'
-  - name: pcscd
-    category: acct-group
-    version: '>=0'
-  - name: usb
-    category: acct-group
-    version: '>=0'
-  - name: dhcp
-    category: acct-user
-    version: '>=0'
-  - name: dnsmasq
-    category: acct-user
-    version: '>=0'
-  - name: openvpn
-    category: acct-user
-    version: '>=0'
-  - name: pcscd
-    category: acct-user
-    version: '>=0'
-  - name: ell
-    category: dev-libs
-    version: '>=0'
-  - name: geoip
-    category: dev-libs
-    version: '>=0'
-  - name: libical
-    category: dev-libs
-    version: '>=0'
-  - name: libnl
-    category: dev-libs
-    version: '>=0'
-  - name: Encode-Locale
-    category: dev-perl
-    version: '>=0'
-  - name: File-Listing
-    category: dev-perl
-    version: '>=0'
-  - name: HTML-Parser
-    category: dev-perl
-    version: '>=0'
-  - name: HTML-Tagset
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Cookies
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Date
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Message
-    category: dev-perl
-    version: '>=0'
-  - name: HTTP-Negotiate
-    category: dev-perl
-    version: '>=0'
-  - name: IO-HTML
-    category: dev-perl
-    version: '>=0'
-  - name: IO-Socket-INET6
-    category: dev-perl
-    version: '>=0'
-  - name: libwww-perl
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-MediaTypes
-    category: dev-perl
-    version: '>=0'
-  - name: LWP-Protocol-https
-    category: dev-perl
-    version: '>=0'
-  - name: Net-HTTP
-    category: dev-perl
-    version: '>=0'
-  - name: Socket6
-    category: dev-perl
-    version: '>=0'
-  - name: Try-Tiny
-    category: dev-perl
-    version: '>=0'
-  - name: URI
-    category: dev-perl
-    version: '>=0'
-  - name: WWW-RobotRules
-    category: dev-perl
-    version: '>=0'
-  - name: m2crypto
-    category: dev-python
-    version: '>=0'
-  - name: traceroute
-    category: net-analyzer
-    version: '>=0'
-  - name: linux-atm
-    category: net-dialup
-    version: '>=0'
-  - name: ppp
-    category: net-dialup
-    version: '>=0'
-  - name: ppp-scripts
-    category: net-dialup
-    version: '>=0'
-  - name: dnsmasq
-    category: net-dns
-    version: '>=0'
-  - name: libidn
-    category: net-dns
-    version: '>=0'
-  - name: libasyncns
-    category: net-libs
-    version: '>=0'
-  - name: libmbim
-    category: net-libs
-    version: '>=0'
-  - name: libnatpmp
-    category: net-libs
-    version: '>=0'
-  - name: libndp
-    category: net-libs
-    version: '>=0'
-  - name: libnetfilter_conntrack
-    category: net-libs
-    version: '>=0'
-  - name: libnfnetlink
-    category: net-libs
-    version: '>=0'
-  - name: libproxy
-    category: net-libs
-    version: '>=0'
-  - name: libpsl
-    category: net-libs
-    version: '>=0'
-  - name: libqmi
-    category: net-libs
-    version: '>=0'
-  - name: libssh
-    category: net-libs
-    version: '>=0'
-  - name: libtorrent-rasterbar
-    category: net-libs
-    version: '>=0'
-  - name: libupnp
-    category: net-libs
-    version: '>=0'
-  - name: miniupnpc
-    category: net-libs
-    version: '>=0'
-  - name: dhcp
-    category: net-misc
-    version: '>=0'
-  - name: mobile-broadband-provider-info
-    category: net-misc
-    version: '>=0'
-  - name: modemmanager
-    category: net-misc
-    version: '>=0'
-  - name: openfortivpn
-    category: net-vpn
-    version: '>=0'
-  - name: openvpn
-    category: net-vpn
-    version: '>=0'
-  - name: bluez
-    category: net-wireless
-    version: '>=0'
-  - name: crda
-    category: net-wireless
-    version: '>=0'
-  - name: wireless-regdb
-    category: net-wireless
-    version: '>=0'
-  - name: wireless-tools
-    category: net-wireless
-    version: '>=0'
-  - name: wpa_supplicant
-    category: net-wireless
-    version: '>=0'
-  - name: lsb-release
-    category: sys-apps
-    version: '>=0'
-  - name: pcsc-lite
-    category: sys-apps
-    version: '>=0'
-  - name: perl-Compress-Raw-Bzip2
-    category: virtual
-    version: '>=0'
-  - name: perl-Compress-Raw-Zlib
-    category: virtual
-    version: '>=0'
-  - name: perl-CPAN-Meta-Requirements
-    category: virtual
-    version: '>=0'
-  - name: perl-IO-Compress
-    category: virtual
-    version: '>=0'
-  - name: perl-IO-Socket-IP
-    category: virtual
-    version: '>=0'
-  - name: perl-Time-Local
-    category: virtual
-    version: '>=0'
-  - name: perl-parent
-    category: virtual
-    version: '>=0'
-  - name: perl-XSLoader
-    category: virtual
+  - name: makedepend
+    category: x11-misc
     version: '>=0'
