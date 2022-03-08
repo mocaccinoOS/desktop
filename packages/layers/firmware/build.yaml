@@ -1,6 +1,4 @@
-excludes:
-{{ template "portage_excludes" }}
-
+{{ if eq .Values.name "firmware" }}
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -11,3 +9,21 @@ requires:
 - category: "layers"
   name: "system-x"
   version: ">=0"
+includes:
+- ^/lib/firmware/.*\..*
+excludes:
+- ^/lib/firmware/.*/.*
+{{ template "portage_excludes" }}
+{{ else }}
+requires:
+- category: "layers"
+  name: "firmware"
+  version: ">=0"
+steps:
+- echo "Splitting {{ trimPrefix "firmware-" .Values.name }}"
+unpack: true
+includes:
+- ^/lib/firmware/{{ trimPrefix "firmware-" .Values.name }}/.*
+excludes:
+{{ template "portage_excludes" }}
+{{ end }}
