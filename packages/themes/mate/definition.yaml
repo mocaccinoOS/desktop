@@ -1,6 +1,6 @@
 category: "themes"
 name: "mate"
-version: 1+84
+version: 1+85
 labels:
 requires:
   - category: "layers"
