@@ -2,4 +2,5 @@ kde-apps/ark lzma
 kde-apps/dolphin semantic-desktop thumbnail
 kde-apps/gwenview kipi raw semantic-desktop
 kde-apps/kipi-plugins calendar gpssync
+kde-apps/okular chm crypt djvu ebook epub
 kde-apps/print-manager -gtk
