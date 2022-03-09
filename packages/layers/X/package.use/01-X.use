@@ -54,7 +54,9 @@ x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa
 x11-libs/cairo glib
+x11-libs/gtk+:2 cups introspection
 x11-libs/gtk+:3 cups introspection
+x11-libs/libnotify introspection
 # libva coolness
 x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms

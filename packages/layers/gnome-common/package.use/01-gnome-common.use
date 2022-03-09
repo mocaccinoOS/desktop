@@ -10,6 +10,4 @@ gnome-extra/polkit-gnome introspection
 media-libs/cogl gles2
 media-libs/clutter egl
 net-libs/gnome-online-accounts vala
-x11-libs/gtk+:2 cups introspection
-x11-libs/libnotify introspection
 x11-libs/wxGTK libnotify gstreamer sdl webkit
