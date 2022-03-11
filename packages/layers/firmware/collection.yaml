@@ -6,6 +6,19 @@ packages:
     emerge.jobs: "1"
     emerge.packages: >-
       sys-kernel/linux-firmware
+  requires:
+  - category: "layers"
+    name: "firmware-amdgpu"
+    version: ">=0"
+  - category: "layers"
+    name: "firmware-i915"
+    version: ">=0"
+  - category: "layers"
+    name: "firmware-nvidia"
+    version: ">=0"
+  - category: "layers"
+    name: "firmware-rtl_nic"
+    version: ">=0"
   provides:
   - name: linux-firmware
     category: sys-kernel
