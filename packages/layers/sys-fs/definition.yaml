@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 0.7+25
+version: 0.7+26
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -220,7 +220,7 @@ provides:
   - name: cifs-utils
     category: net-fs
     version: '>=0'
-  - name: nfs-utils 
+  - name: nfs-utils
     category: net-fs
     version: '>=0'
   - name: samba

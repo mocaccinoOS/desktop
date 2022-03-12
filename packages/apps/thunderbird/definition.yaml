@@ -1,6 +1,6 @@
 category: "apps"
 name: "thunderbird"
-version: 91.4.1+19
+version: 91.4.1+20
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
