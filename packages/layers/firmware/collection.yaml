@@ -64,7 +64,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-bnx2"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-bnx2x"
     version: "2"
