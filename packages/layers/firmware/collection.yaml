@@ -28,7 +28,7 @@ packages:
     version: "2"
   - category: "layers"
     name: "firmware-3com"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-advansys"
     version: "2"
