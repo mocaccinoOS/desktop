@@ -127,7 +127,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-kaweth"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-keyspan"
     version: "2"
