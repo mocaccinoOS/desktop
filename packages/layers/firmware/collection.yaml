@@ -115,7 +115,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-imx"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-inside-secure"
     version: "2"
