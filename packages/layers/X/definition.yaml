@@ -406,6 +406,12 @@ provides:
   - name: eselect-mpg123
     category: app-eselect
     version: '>=0'
+  - name: eselect-notify-send
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-rust
+    category: app-eselect
+    version: '>=0'
   - name: ibus
     category: app-i18n
     version: '>=0'
@@ -569,6 +575,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libsass
+    category: dev-libs
+    version: '>=0'
+  - name: libsigc++
     category: dev-libs
     version: '>=0'
   - name: libsigc++
@@ -802,6 +811,9 @@ provides:
   - name: bibtexu
     category: dev-tex
     version: '>=0'
+  - name: gperf
+    category: dev-util
+    version: '>=0'
   - name: gtk-doc
     category: dev-util
     version: '>=0'
@@ -871,6 +883,9 @@ provides:
   - name: sane-backends
     category: media-gfx
     version: '>=0'
+  - name: audiofile
+    category: media-libs
+    version: '>=0'
   - name: chromaprint
     category: media-libs
     version: '>=0'
@@ -929,6 +944,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: libgphoto2
+    category: media-libs
+    version: '>=0'
+  - name: libsdl
     category: media-libs
     version: '>=0'
   - name: libsdl2
@@ -1033,6 +1051,12 @@ provides:
   - name: ed
     category: sys-apps
     version: '>=0'
+  - name: help2man
+    category: sys-apps
+    version: '>=0'
+  - name: pciutils
+    category: sys-apps
+    version: '>=0'
   - name: xdg-dbus-proxy
     category: sys-apps
     version: '>=0'
@@ -1061,6 +1085,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: mta
+    category: virtual
+    version: '>=0'
+  - name: notification-daemon
     category: virtual
     version: '>=0'
   - name: opencl
@@ -1252,16 +1279,19 @@ provides:
   - name: gtk+
     category: x11-libs
     version: '>=0'
+  - name: gtk+
+    category: x11-libs
+    version: '>=0'
   - name: libdrm
     category: x11-libs
     version: '>=0'
   - name: libfontenc
     category: x11-libs
     version: '>=0'
-  - name: libpciaccess
+  - name: libnotify
     category: x11-libs
     version: '>=0'
-  - name: libnotify
+  - name: libpciaccess
     category: x11-libs
     version: '>=0'
   - name: libva
@@ -1277,6 +1307,9 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libXcursor
+    category: x11-libs
+    version: '>=0'
+  - name: libxcvt
     category: x11-libs
     version: '>=0'
   - name: libXdamage
@@ -1378,6 +1411,9 @@ provides:
   - name: colord
     category: x11-misc
     version: '>=0'
+  - name: notification-daemon
+    category: x11-misc
+    version: '>=0'
   - name: util-macros
     category: x11-misc
     version: '>=0'
@@ -1397,6 +1433,12 @@ provides:
     category: x11-terms
     version: '>=0'
   - name: adwaita-icon-theme
+    category: x11-themes
+    version: '>=0'
+  - name: gnome-themes-standard
+    category: x11-themes
+    version: '>=0'
+  - name: gtk-engines-adwaita
     category: x11-themes
     version: '>=0'
   - name: hicolor-icon-theme

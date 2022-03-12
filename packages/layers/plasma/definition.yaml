@@ -67,6 +67,9 @@ provides:
   - name: bluez-qt
     category: kde-frameworks
     version: '>=0'
+  - name: countryflags
+    category: kde-frameworks
+    version: '>=0'
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
@@ -283,6 +286,9 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
+  - name: zxing-cpp
+    category: media-libs
+    version: '>=0'
   - name: accounts-qml
     category: net-libs
     version: '>=0'
@@ -296,12 +302,6 @@ provides:
     category: net-libs
     version: '>=0'
   - name: libaccounts-glib
-    category: net-libs
-    version: '>=0'
-  - name: signon-oauth2
-    category: net-libs
-    version: '>=0'
-  - name: signond
     category: net-libs
     version: '>=0'
   - name: mailutils
