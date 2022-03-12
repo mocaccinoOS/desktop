@@ -205,7 +205,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-rtl_nic"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-rtlwifi"
     version: "2"
