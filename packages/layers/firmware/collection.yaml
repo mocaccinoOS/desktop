@@ -55,7 +55,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-atmel"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-atusb"
     version: "2"
