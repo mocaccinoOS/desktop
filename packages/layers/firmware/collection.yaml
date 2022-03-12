@@ -217,7 +217,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-slicoss"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-sxg"
     version: "2"
