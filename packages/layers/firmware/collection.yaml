@@ -130,7 +130,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-keyspan"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-keyspan_pda"
     version: "2"
