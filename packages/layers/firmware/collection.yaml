@@ -166,7 +166,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-mwlwifi"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-netronome"
     version: "2"
