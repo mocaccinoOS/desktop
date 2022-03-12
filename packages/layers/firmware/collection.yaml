@@ -94,7 +94,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-dpaa2"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-dsp56k"
     version: "2"
