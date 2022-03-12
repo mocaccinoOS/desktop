@@ -103,7 +103,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-emi26"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-ene-ub6250"
     version: "2"
