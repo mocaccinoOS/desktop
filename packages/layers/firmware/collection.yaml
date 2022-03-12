@@ -154,7 +154,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-microchip"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-moxa"
     version: "2"
