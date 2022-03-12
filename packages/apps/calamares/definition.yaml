@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+127
+version: 3.2.32+128
 provides:
   - name: calamares
     category: app-admin
