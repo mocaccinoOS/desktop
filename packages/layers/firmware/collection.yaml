@@ -43,7 +43,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-ath10k"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-ath11k"
     version: "2"
