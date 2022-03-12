@@ -133,7 +133,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-keyspan_pda"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-libertas"
     version: "2"
