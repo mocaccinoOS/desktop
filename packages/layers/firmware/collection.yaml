@@ -70,7 +70,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-brcm"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-cadence"
     version: "2"
