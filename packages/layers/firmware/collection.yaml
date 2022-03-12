@@ -31,7 +31,7 @@ packages:
     version: 2+1
   - category: "layers"
     name: "firmware-advansys"
-    version: "2"
+    version: 2+1
   - category: "layers"
     name: "firmware-amd-ucode"
     version: "2"
