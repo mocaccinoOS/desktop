@@ -1,4 +1,3 @@
-app-crypt/qca gpg ssl
 app-text/poppler nss qt5
 kde-frameworks/kitemmodels qml
 kde-frameworks/sonnet qml
