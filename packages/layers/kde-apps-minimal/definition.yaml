@@ -10,8 +10,11 @@ requires:
     name: "plasma"
     version: ">=0"
 provides:
-  - name: app-text
-    category: ebook-tools
+  - name: convertlit
+    category: app-text
+    version: '>=0'
+  - name: ebook-tools
+    category: app-text
     version: '>=0'
   - name: ark
     category: kde-apps
@@ -25,13 +28,13 @@ provides:
   - name: gwenview
     category: kde-apps
     version: '>=0'
+  - name: kcalc
+    category: kde-apps
+    version: '>=0'
   - name: kcron
     category: kde-apps
     version: '>=0'
   - name: kdeadmin-meta
-    category: kde-apps
-    version: '>=0'
-  - name: kcalc
     category: kde-apps
     version: '>=0'
   - name: kdenetwork-filesharing
@@ -67,9 +70,6 @@ provides:
   - name: krdc
     category: kde-apps
     version: '>=0'
-  - name: okular
-    category: kde-apps
-    version: '>=0'
   - name: ksystemlog
     category: kde-apps
     version: '>=0'
@@ -86,6 +86,9 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: libkipi
+    category: kde-apps
+    version: '>=0'
+  - name: okular
     category: kde-apps
     version: '>=0'
   - name: print-manager
