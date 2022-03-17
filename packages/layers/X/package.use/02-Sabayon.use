@@ -124,7 +124,6 @@ dev-util/nvidia-cuda-toolkit debugger eclipse profiler
 dev-util/xdelta lzma
 dev-vcs/subversion -java -apache2 -dso -kde
 net-misc/gnome-online-miners flickr
-media-plugins/grilo-plugins flickr
 gnome-base/libgnomecanvas glade
 gnome-extra/nautilus-sendto -cdr
 kde-apps/kget -bittorrent semantic-desktop
@@ -379,7 +378,6 @@ media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
 app-i18n/scim gtk3
 dev-libs/libgit2 ssh threads
->=media-plugins/grilo-plugins-0.2.10 tracker
 dev-cpp/commoncpp2 -gnutls ssl
 net-firewall/ipset -modules
 net-firewall/shorewall lite4 lite6
