@@ -37,6 +37,7 @@ media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_card
 media-libs/openal -qt5
 media-plugins/alsa-plugins libsamplerate
 media-plugins/gst-plugins-meta mms http
+media-plugins/gst-plugins-libav -abi_x86_32
 media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
 media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 openssl opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
