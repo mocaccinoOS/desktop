@@ -1,6 +1,6 @@
 category: "layers"
 name: "lxqt"
-version: 0.17.0+34
+version: 0.17.0+35
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
