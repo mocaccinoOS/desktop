@@ -181,14 +181,12 @@ media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
 media-libs/urt gs
 media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
-media-plugins/audacious-plugins chardet cue gnome gtk3 http icecast libsamplerate modplug sndfile speedpitch wavpack -gtk -qt5
 media-plugins/vdr-weatherng dxr3
 media-sound/alsa-tools -gtk
 media-sound/aqualung libsamplerate
 media-sound/ardour freesound lv2
 media-sound/asunder wavpack
 media-sound/audacity ladspa vamp soundtouch id3tag midi sbsms -ffmpeg
-media-sound/audacious gtk3 wma timidity lirc chardet -gtk -qt5
 media-sound/audiotools -gui
 media-sound/cantata replaygain taglib cdparanoia devices
 media-sound/cmus mikmod
