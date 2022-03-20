@@ -1,10 +1,10 @@
 category: "layers"
 name: "xfce"
-version: 4.16+68
+version: 4.16+69
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
-    app-editors/mousepad xfce-base/xfce4-meta xfce-extra/tumbler xfce-extra/xfce4-taskmanager xfce-extra/xfce4-power-manager xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screenshooter xfce-extra/xfce4-volumed-pulse
+    app-editors/mousepad media-video/parole xfce-base/xfce4-meta xfce-extra/tumbler xfce-extra/xfce4-taskmanager xfce-extra/xfce4-power-manager xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screenshooter xfce-extra/xfce4-volumed-pulse
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -18,6 +18,9 @@ provides:
     version: '>=0'
   - name: libopenraw
     category: media-libs
+    version: '>=0'
+  - name: parole
+    category: media-video
     version: '>=0'
   - name: xfce4-terminal
     category: x11-terms
