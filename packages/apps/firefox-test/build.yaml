@@ -1,0 +1,16 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.use /etc/portage/
+{{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
+# Moccacino OS customization for bookmarks, start site and bookmarks toolbar.
+- cp -rf distribution/distribution.ini /usr/lib64/firefox/distribution/
+requires:
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true
