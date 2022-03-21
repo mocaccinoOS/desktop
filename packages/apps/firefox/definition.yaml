@@ -1,5 +1,5 @@
 category: "apps"
-name: "firefox-test"
+name: "firefox"
 version: 91.6.0+1
 labels:
   emerge.jobs: "1"
