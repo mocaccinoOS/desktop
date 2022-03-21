@@ -1,6 +1,6 @@
 category: "apps"
 name: "firefox-test"
-version: 97.0.1+1
+version: 91.6.0+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
