@@ -1167,6 +1167,9 @@ provides:
   - name: binutils-config
     category: sys-devel
     version: '>=0'
+  - name: bison
+    category: sys-devel
+    version: '>=0'
   - name: clang
     category: sys-devel
     version: '>=0'

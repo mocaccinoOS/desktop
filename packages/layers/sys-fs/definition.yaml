@@ -70,18 +70,6 @@ provides:
   - name: libusbmuxd
     category: app-pda
     version: '>=0'
-  - name: build-docbook-catalog
-    category: app-text
-    version: '>=0'
-  - name: docbook-xml-dtd
-    category: app-text
-    version: '>=0'
-  - name: docbook-xsl-stylesheets
-    category: app-text
-    version: '>=0'
-  - name: sgml-common
-    category: app-text
-    version: '>=0'
   - name: lmdb
     category: dev-db
     version: '>=0'
@@ -181,14 +169,11 @@ provides:
   - name: ply
     category: dev-python
     version: '>=0'
-  - name: setproctitle
-    category: dev-python
-    version: '>=0'
   - name: pycparser
     category: dev-python
     version: '>=0'
-  - name: boost-build
-    category: dev-util
+  - name: setproctitle
+    category: dev-python
     version: '>=0'
   - name: cmocka
     category: dev-util
@@ -215,9 +200,6 @@ provides:
     category: net-dns
     version: '>=0'
   - name: libidn
-    category: net-dns
-    version: '>=0'
-  - name: rpcbind
     category: net-dns
     version: '>=0'
   - name: cifs-utils
@@ -298,6 +280,9 @@ provides:
   - name: openldap
     category: net-nds
     version: '>=0'
+  - name: rpcbind
+    category: net-nds
+    version: '>=0'
   - name: openfortivpn
     category: net-vpn
     version: '>=0'
@@ -336,9 +321,6 @@ provides:
     version: '>=0'
   - name: parted
     category: sys-block
-    version: '>=0'
-  - name: bison
-    category: sys-devel
     version: '>=0'
   - name: btrfs-progs
     category: sys-fs
