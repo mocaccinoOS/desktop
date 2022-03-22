@@ -1,3 +1,4 @@
 app-text/poppler nss qt5
+kde-frameworks/kfilemetadata taglib
 kde-frameworks/kitemmodels qml
 kde-frameworks/sonnet qml

@@ -88,9 +88,6 @@ provides:
   - name: kemoticons
     category: kde-frameworks
     version: '>=0'
-  - name: kfilemetadata
-    category: kde-frameworks
-    version: '>=0'
   - name: kholidays
     category: kde-frameworks
     version: '>=0'
