@@ -28,10 +28,10 @@ packages:
       - category: "layers"
         name: "firmware-nvidia"
         version: ">=0"
-     - category: "layers"
+      - category: "layers"
         name: "firmware-rtl_bt"
         version: ">=0" 
-     - category: "layers"
+      - category: "layers"
         name: "firmware-rtl_nic"
         version: ">=0"
     provides:
