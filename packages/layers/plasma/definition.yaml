@@ -136,9 +136,6 @@ provides:
   - name: syntax-highlighting
     category: kde-frameworks
     version: '>=0'
-  - name: threadweaver
-    category: kde-frameworks
-    version: '>=0'
   - name: bluedevil
     category: kde-plasma
     version: '>=0'
