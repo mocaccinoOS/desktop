@@ -55,9 +55,6 @@ provides:
   - name: khelpcenter
     category: kde-apps
     version: '>=0'
-  - name: kio-extras
-    category: kde-apps
-    version: '>=0'
   - name: baloo
     category: kde-frameworks
     version: '>=0'
