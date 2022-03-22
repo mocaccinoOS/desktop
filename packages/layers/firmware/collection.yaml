@@ -211,7 +211,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-rsi"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-RTL8192E"
     version: 2+2
