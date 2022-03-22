@@ -232,7 +232,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-slicoss"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-sxg"
     version: 2+1
