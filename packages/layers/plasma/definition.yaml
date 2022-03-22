@@ -106,9 +106,6 @@ provides:
   - name: krunner
     category: kde-frameworks
     version: '>=0'
-  - name: ktexteditor
-    category: kde-frameworks
-    version: '>=0'
   - name: kunitconversion
     category: kde-frameworks
     version: '>=0'
