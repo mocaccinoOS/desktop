@@ -130,7 +130,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-imx"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-inside-secure"
     version: 2+1
