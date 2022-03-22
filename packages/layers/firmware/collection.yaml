@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+2
+    version: 2+3
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -20,9 +20,18 @@ packages:
         name: "firmware-i915"
         version: ">=0"
       - category: "layers"
-        name: "firmware-nvidia"
+        name: "firmware-intel"
+        version: ">=0"
+      - category: "layers"    
+        name: "firmware-mediatek"
         version: ">=0"
       - category: "layers"
+        name: "firmware-nvidia"
+        version: ">=0"
+     - category: "layers"
+        name: "firmware-rtl_bt"
+        version: ">=0" 
+     - category: "layers"
         name: "firmware-rtl_nic"
         version: ">=0"
     provides:
