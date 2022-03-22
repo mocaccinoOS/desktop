@@ -190,7 +190,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-qca"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-qcom"
     version: 2+1
