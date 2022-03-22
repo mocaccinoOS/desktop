@@ -85,7 +85,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-brcm"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-cadence"
     version: 2+1
