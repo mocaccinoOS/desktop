@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+3
+    version: 2+4
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -22,7 +22,7 @@ packages:
       - category: "layers"
         name: "firmware-intel"
         version: ">=0"
-      - category: "layers"    
+      - category: "layers"
         name: "firmware-mediatek"
         version: ">=0"
       - category: "layers"
@@ -30,7 +30,7 @@ packages:
         version: ">=0"
       - category: "layers"
         name: "firmware-rtl_bt"
-        version: ">=0" 
+        version: ">=0"
       - category: "layers"
         name: "firmware-rtl_nic"
         version: ">=0"
