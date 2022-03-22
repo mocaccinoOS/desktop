@@ -1,6 +1,6 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.2+49
+version: 0.7.2+50
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
