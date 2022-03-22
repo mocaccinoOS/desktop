@@ -280,9 +280,6 @@ provides:
   - name: accounts-qt
     category: net-libs
     version: '>=0'
-  - name: kdsoap-ws-discovery-client
-    category: net-libs
-    version: '>=0'
   - name: libaccounts-glib
     category: net-libs
     version: '>=0'
