@@ -193,7 +193,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-qcom"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-qed"
     version: 2+1
