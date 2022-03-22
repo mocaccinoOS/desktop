@@ -106,7 +106,7 @@ packages:
     version: 2+2
   - category: "layers"
     name: "firmware-dabusb"
-    version: 2+1
+    version: 2+2
   - category: "layers"
     name: "firmware-dpaa2"
     version: 2+1
