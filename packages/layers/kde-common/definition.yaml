@@ -97,10 +97,10 @@ provides:
   - name: kdoctools
     category: kde-frameworks
     version: '>=0'
-  - name: kfilemetadata
+  - name: kf-env
     category: kde-frameworks
     version: '>=0'
-  - name: kf-env
+  - name: kfilemetadata
     category: kde-frameworks
     version: '>=0'
   - name: kglobalaccel
@@ -187,9 +187,6 @@ provides:
   - name: oxygen-icons
     category: kde-frameworks
     version: '>=0'
-  - name: threadweaver
-    category: kde-frameworks
-    version: '>=0'
   - name: solid
     category: kde-frameworks
     version: '>=0'
@@ -197,6 +194,9 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: syntax-highlighting
+    category: kde-frameworks
+    version: '>=0'
+  - name: threadweaver
     category: kde-frameworks
     version: '>=0'
   - name: libkscreen

@@ -12,8 +12,20 @@ requires:
     name: "gdm"
     version: ">=0"
 provides:
+  - name: brlapi
+    category: acct-group
+    version: '>=0'
+  - name: brltty
+    category: acct-group
+    version: '>=0'
   - name: gdm
     category: acct-group
+    version: '>=0'
+  - name: pulse-access
+    category: acct-group
+    version: '>=0'
+  - name: brltty
+    category: acct-user
     version: '>=0'
   - name: gdm
     category: acct-user
@@ -49,6 +61,9 @@ provides:
     category: app-misc
     version: '>=0'
   - name: evince
+    category: app-text
+    version: '>=0'
+  - name: yelp-tools
     category: app-text
     version: '>=0'
   - name: folks
@@ -147,15 +162,6 @@ provides:
   - name: yelp
     category: gnome-extra
     version: '>=0'
-  - name: amtk
-    category: gui-libs
-    version: '>=0'
-  - name: gtk
-    category: gui-libs
-    version: '>=0'
-  - name: tepl
-    category: gui-libs
-    version: '>=0'
   - name: cantarell
     category: media-fonts
     version: '>=0'
@@ -185,6 +191,9 @@ provides:
     version: '>=0'
   - name: grilo-plugins
     category: media-plugins
+    version: '>=0'
+  - name: pipewire
+    category: media-video
     version: '>=0'
   - name: totem
     category: media-video
@@ -228,8 +237,8 @@ provides:
   - name: libfprint
     category: sys-auth
     version: '>=0'
-  - name: libxcvt
-    category: x11-libs
+  - name: libusb
+    category: virtual
     version: '>=0'
   - name: gnome-terminal
     category: x11-terms
