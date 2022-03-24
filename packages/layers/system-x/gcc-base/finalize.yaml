@@ -1,2 +1,3 @@
 install:
+- etc-update -p
 - source /etc/profile && env-update
