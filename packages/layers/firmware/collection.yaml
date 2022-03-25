@@ -178,7 +178,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-mwl8k"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-mwlwifi"
     version: 2+2
