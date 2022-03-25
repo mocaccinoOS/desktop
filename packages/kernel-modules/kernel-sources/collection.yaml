@@ -14,7 +14,7 @@ packages:
       package.version: "5.15.25"
   - category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 5.16.11+7
+    version: 5.16.16+1
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
@@ -24,4 +24,4 @@ packages:
         curl -Ls https://raw.githubusercontent.com/mocaccinoOS/kernel-repo/master/packages/kernels/mocaccino/definition.yaml | yq r - 'version'
       autobump.version_hook: |
         curl -Ls https://raw.githubusercontent.com/mocaccinoOS/kernel-repo/master/packages/kernels/mocaccino/definition.yaml | yq r - 'version'
-      package.version: "5.16.11"
+      package.version: "5.16.16"
