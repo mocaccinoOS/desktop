@@ -1,6 +1,6 @@
 category: "layers"
 name: "maui-shell"
-version: 0.9999+28
+version: 0.9999+29
 maui_kit_commit: "8c78837442894bd0b795c799b5769e29fe3e8330"
 maui_shell_commit: "e2ae2aece53a176d845a0659249d66dc5aabc988"
 requires:
