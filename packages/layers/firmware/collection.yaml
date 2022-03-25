@@ -256,4 +256,4 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-vxge"
-    version: 2+2
+    version: 2+3
