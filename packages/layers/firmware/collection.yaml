@@ -169,7 +169,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-microchip"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-moxa"
     version: 2+2
