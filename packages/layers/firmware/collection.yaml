@@ -184,7 +184,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-netronome"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-nvidia"
     version: 2+2
