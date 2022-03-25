@@ -1,7 +1,7 @@
 packages:
   - category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 5.15.25+7
+    version: 5.15.25+8
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
