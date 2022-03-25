@@ -160,7 +160,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-mediatek"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-mellanox"
     version: 2+2
