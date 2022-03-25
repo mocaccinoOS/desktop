@@ -244,7 +244,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-ti-keystone"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-ti"
     version: 2+3
