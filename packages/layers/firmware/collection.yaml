@@ -46,7 +46,7 @@ packages:
     version: 2+3
   - category: "layers"
     name: "firmware-advansys"
-    version: 2+2
+    version: 2+3
   - category: "layers"
     name: "firmware-amd-ucode"
     version: 2+2
