@@ -1,7 +1,7 @@
 prelude:
 - git clone https://github.com/quintenvandamme/pangolin-linux.git  
 - |
-   cd pangolin-desktop && git checkout "{{.Values.commit}}" -b build
+   cd pangolin-linux && git checkout "{{.Values.commit}}" -b build
 steps:
 - cd pangolin-linux && chmod +x install.sh && ./install.sh
 requires:
