@@ -1,0 +1,19 @@
+package_dir: "/output"
+prelude:
+- cd mauikit && make install
+- cd maui-shell/build && make install
+
+- git clone {{.Values.repo}} repo
+- |
+   cd repo && git checkout "{{.Values.commit}}" -b build && \
+   mkdir -p build && cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_BSYMBOLICFUNCTIONS=OFF -DQUICK_COMPILER=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu .. && \
+   make
+steps:
+- cd repo/build && make DESTDIR="/output" install
+requires:
+- category: "layers"
+  name: "maui-shell"
+  version: ">=0"
+excludes:
+{{ template "portage_excludes" }}
