@@ -67,12 +67,6 @@ provides:
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
-  - name: kactivities
-    category: kde-frameworks
-    version: '>=0'
-  - name: kactivities-stats
-    category: kde-frameworks
-    version: '>=0'
   - name: kdelibs4support
     category: kde-frameworks
     version: '>=0'
