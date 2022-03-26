@@ -18,7 +18,7 @@ steps:
 - cd mauikit && make DESTDIR="/output" install
 - cd maui-shell/build && make DESTDIR="/output" install
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "kde-common"
   version: ">=0"
 requires_final_images: true
