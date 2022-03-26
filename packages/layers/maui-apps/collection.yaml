@@ -2,7 +2,7 @@ packages:
 - &base
   category: "apps"
   name: "maui-pix"
-  version: "0.0.0-20220326"
+  version: "0.0.20220326"
   repo: "https://invent.kde.org/maui/pix.git"
   commit: "aa91a6eca91659cfe41b0ac7b1663af153070129"
   requires:
