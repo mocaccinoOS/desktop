@@ -91,9 +91,6 @@ provides:
   - name: kquickcharts
     category: kde-frameworks
     version: '>=0'
-  - name: krunner
-    category: kde-frameworks
-    version: '>=0'
   - name: kunitconversion
     category: kde-frameworks
     version: '>=0'
