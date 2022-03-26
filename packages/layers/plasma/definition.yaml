@@ -232,9 +232,6 @@ provides:
   - name: hack
     category: media-fonts
     version: '>=0'
-  - name: qrencode
-    category: media-gfx
-    version: '>=0'
   - name: libdmtx
     category: media-libs
     version: '>=0'
