@@ -238,9 +238,6 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
-  - name: zxing-cpp
-    category: media-libs
-    version: '>=0'
   - name: accounts-qml
     category: net-libs
     version: '>=0'

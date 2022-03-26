@@ -187,6 +187,3 @@ provides:
   - name: syndication
     category: kde-frameworks
     version: '>=0'
-  - name: zxing-cpp
-    category: media-libs
-    version: '>=0'
