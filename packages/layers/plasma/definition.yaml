@@ -85,9 +85,6 @@ provides:
   - name: kjs
     category: kde-frameworks
     version: '>=0'
-  - name: kpeople
-    category: kde-frameworks
-    version: '>=0'
   - name: kpty
     category: kde-frameworks
     version: '>=0'
