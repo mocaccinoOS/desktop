@@ -85,9 +85,6 @@ provides:
   - name: kquickcharts
     category: kde-frameworks
     version: '>=0'
-  - name: kunitconversion
-    category: kde-frameworks
-    version: '>=0'
   - name: modemmanager-qt
     category: kde-frameworks
     version: '>=0'
