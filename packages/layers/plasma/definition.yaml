@@ -70,9 +70,6 @@ provides:
   - name: kdelibs4support
     category: kde-frameworks
     version: '>=0'
-  - name: kdesu
-    category: kde-frameworks
-    version: '>=0'
   - name: kemoticons
     category: kde-frameworks
     version: '>=0'
@@ -83,9 +80,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: kjs
-    category: kde-frameworks
-    version: '>=0'
-  - name: kpty
     category: kde-frameworks
     version: '>=0'
   - name: kquickcharts
