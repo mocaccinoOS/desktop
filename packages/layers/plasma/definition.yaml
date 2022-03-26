@@ -94,9 +94,6 @@ provides:
   - name: plasma
     category: kde-frameworks
     version: '>=0'
-  - name: prison
-    category: kde-frameworks
-    version: '>=0'
   - name: purpose
     category: kde-frameworks
     version: '>=0'
