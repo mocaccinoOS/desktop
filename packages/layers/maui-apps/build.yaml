@@ -1,8 +1,5 @@
 package_dir: "/output"
 prelude:
-- cd mauikit && make install
-- cd maui-shell/build && make install
-
 - git clone {{.Values.repo}} repo
 - |
    cd repo && git checkout "{{.Values.commit}}" -b build && \
