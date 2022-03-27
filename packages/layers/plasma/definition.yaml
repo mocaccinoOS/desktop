@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.23.5+18
+version: 5.23.5+19
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -231,9 +231,6 @@ provides:
     version: '>=0'
   - name: hack
     category: media-fonts
-    version: '>=0'
-  - name: phonon
-    category: media-libs
     version: '>=0'
   - name: phonon-vlc
     category: media-libs
