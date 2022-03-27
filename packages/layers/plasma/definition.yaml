@@ -91,9 +91,6 @@ provides:
   - name: networkmanager-qt
     category: kde-frameworks
     version: '>=0'
-  - name: plasma
-    category: kde-frameworks
-    version: '>=0'
   - name: purpose
     category: kde-frameworks
     version: '>=0'
