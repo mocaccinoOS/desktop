@@ -112,9 +112,6 @@ provides:
   - name: drkonqi
     category: kde-plasma
     version: '>=0'
-  - name: kactivitymanagerd
-    category: kde-plasma
-    version: '>=0'
   - name: kde-cli-tools
     category: kde-plasma
     version: '>=0'
