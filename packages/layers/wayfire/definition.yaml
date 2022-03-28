@@ -10,9 +10,9 @@ requires:
     name: "gnome-common"
     version: ">=0"
   - category: "entity"
-    name: "seat"
+    name: "greetd"
     version: ">=0"
-  - category: "greetd"
+  - category: "entity"
     name: "seat"
     version: ">=0"
 provides:
