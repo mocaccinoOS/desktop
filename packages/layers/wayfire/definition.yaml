@@ -1,10 +1,10 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.2+52
+version: 0.7.2+53
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/date dev-libs/spdlog gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wayfire-plugins-extra gui-libs/wf-config gui-libs/wlroots gui-wm/wayfire media-libs/glm
+    dev-libs/date dev-libs/spdlog gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wayfire-plugins-extra gui-libs/wf-config gui-libs/wlroots gui-wm/wayfire media-libs/glm sys-auth/seatd
 requires:
   - category: "layers"
     name: "gnome-common"
