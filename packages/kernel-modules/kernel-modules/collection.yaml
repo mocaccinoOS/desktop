@@ -11,7 +11,7 @@ packages:
   #      lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 4+51
+    version: 6.1.28+1
     lts: true
     emerge:
       jobs: "3"
@@ -22,7 +22,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.24+67
+    version: 6.1.28+1
     lts: true
     labels:
       emerge.jobs: "3"
@@ -55,7 +55,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 0.993+92
+    version: 470.103.01+1
     lts: true
     labels:
       emerge.jobs: "3"
@@ -71,6 +71,24 @@ packages:
       - name: nvpd
         category: entity
         version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+  - category: "kernel-modules"
+    name: "xpadneo "
+    version: 0.9.1+1
+    lts: true
+    labels:
+      emerge.jobs: "3"
+    emerge:
+      jobs: "3"
+      packages:
+        - games-util/xpadneo 
+    provides:
+      - name: xpadneo
+        category: games-util
+        version: '>=0'
+    requires:
       - category: "layers"
         name: "X"
         version: ">=0"

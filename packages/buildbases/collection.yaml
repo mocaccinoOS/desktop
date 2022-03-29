@@ -24,15 +24,15 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+36
+    version: 0+37
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-sources"
-    version: 0+36
+    version: 0+37
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+40
+    version: 0+41
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
