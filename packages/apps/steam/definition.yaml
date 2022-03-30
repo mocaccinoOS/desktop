@@ -1,6 +1,6 @@
 category: "apps"
 name: "steam"
-version: 20210323+110
+version: 20210323+111
 labels:
   emerge.jobs: "1"
   emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode "

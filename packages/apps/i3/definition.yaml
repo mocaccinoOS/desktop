@@ -1,6 +1,6 @@
 category: "apps"
 name: "i3"
-version: 4.20.1+25
+version: 4.20.1+26
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
