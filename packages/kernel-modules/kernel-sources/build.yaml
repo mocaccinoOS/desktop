@@ -1,16 +1,15 @@
 requires:
-- category: "layers"
-  name: "system-x"
+- category: "buildbase"
+  name: "X"
   version: ">=0"
-env:
-- LUET_NOLOCK=true
-- LUET_YES=true
-- HTTP_TIMEOUT=900
+- category: "kernel"
+  name: "{{.Values.name}}"
+  version: ">=0"
+- category: "kernel"
+  name: "{{ .Values.name | replace "sources" "modules" }}"
+  version: ">=0"
+requires_final_images: true
 prelude:
-- curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
-- luet install repository/mocaccino-kernel
-- luet install kernel/{{.Values.name}} && luet cleanup
-- luet install -y kernel/${PACKAGE_NAME/sources/modules}
 - |
     kernel=$(ls /usr/src | head -n1) && \ 
     emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources && \

@@ -1,0 +1,12 @@
+image: "quay.io/mocaccino/micro:master"
+
+package_dir: /sabayon-dracut
+steps:
+- | 
+   PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
+   mkdir -p /${PACKAGE_NAME}/usr/bin && \
+   cp -rfv sabayon-dracut  /${PACKAGE_NAME}/usr/bin/ && \
+   chmod +x /${PACKAGE_NAME}/usr/bin/sabayon-dracut && \
+   mkdir -p /${PACKAGE_NAME}/etc/dracut.conf.d/ && \
+   cp sabayon.conf /${PACKAGE_NAME}/etc/dracut.conf.d/99-sabayon.conf
+

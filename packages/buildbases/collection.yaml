@@ -22,17 +22,9 @@ packages:
     name: "qt"
     version: 0+41
   - !!merge <<: *X
-    real_category: "kernel-sources"
-    name: "mocaccino-lts-sources"
-    version: 0+41
-  - !!merge <<: *X
-    real_category: "kernel-sources"
-    name: "mocaccino-sources"
-    version: 0+41
-  - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+43
+    version: 0+44
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"

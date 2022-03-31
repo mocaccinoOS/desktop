@@ -1,0 +1,15 @@
+name: mocaccino-sources
+category: kernel
+version: "5.17.1"
+prefix: linux
+suffix: mocaccino
+labels:
+  autobump.revdeps: "false"
+  autobump.string_replace: '{ "prefix": "" }'
+  autobump.strategy: "custom"
+  autobump.prefix: "prefix"
+  autobump.hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
+  autobump.version_hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
+  package.version: "5.17.1"

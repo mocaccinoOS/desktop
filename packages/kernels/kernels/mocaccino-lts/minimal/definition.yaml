@@ -1,0 +1,21 @@
+name: mocaccino-lts-minimal
+category: kernel
+version: "5.15.32"
+kernelprefix: kernel-vanilla
+arch: "x86_64"
+suffix: mocaccino
+prefix: linux
+requires:
+  - category: mocaccino
+    name: cli
+    version: ">=0"
+labels:
+  autobump.revdeps: "false"
+  autobump.string_replace: '{ "prefix": "" }'
+  autobump.strategy: "custom"
+  autobump.prefix: "prefix"
+  autobump.hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
+  autobump.version_hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
+  package.version: "5.15.32"

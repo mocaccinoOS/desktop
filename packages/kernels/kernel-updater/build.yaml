@@ -1,0 +1,6 @@
+image: "alpine"
+package_dir: /package
+steps:
+- mkdir -p /package/usr/bin/
+- cp -rf kernel-updater.sh /package/usr/bin/kernel-updater
+- chmod +x /package/usr/bin/kernel-updater
