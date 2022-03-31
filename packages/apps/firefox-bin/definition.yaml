@@ -1,0 +1,18 @@
+category: "apps"
+name: "firefox-bin"
+version: 97.0.1+5
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    www-client/firefox-bin
+provides:
+  - name: freedesktop-icon-theme
+    category: virtual
+    version: '>=0'
+  - name: firefox-bin
+    category: www-client
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

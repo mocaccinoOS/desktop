@@ -10,6 +10,7 @@ env:
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
 - cp -rf package.license /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 
 steps:

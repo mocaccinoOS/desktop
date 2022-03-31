@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 0.9+59
+version: 0.9+73
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-admin/system-config-printer app-eselect/eselect-wxwidgets app-eselect/eselect-notify-send app-misc/geoclue app-pda/libimobiledevice dev-libs/keybinder dev-libs/libgdata dev-libs/libgee dev-libs/libpeas dev-python/pyatspi dev-python/pycups dev-python/setproctitle gnome-base/gnome-desktop gnome-base/gvfs gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/gtk:4 gui-libs/gtk-layer-shell gui-libs/libhandy gui-libs/libwpe gui-libs/wpebackend-fdo media-libs/clutter media-libs/cogl media-libs/gsound media-plugins/gst-plugins-opus net-fs/libnfs net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp net-libs/rest net-libs/webkit-gtk net-print/cups-pk-helper sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:4 x11-libs/libnotify x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-misc/xdg-user-dirs-gtk
+    app-admin/system-config-printer app-crypt/gcr app-crypt/libsecret app-eselect/eselect-wxwidgets app-misc/geoclue app-pda/libimobiledevice dev-libs/keybinder dev-libs/libgdata dev-libs/libgee dev-libs/libpeas dev-python/pyatspi dev-python/pycups gnome-base/gnome-desktop gnome-base/gvfs gnome-base/gnome-keyring gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/gtk:4 gui-libs/gtk-layer-shell gui-libs/libhandy gui-libs/libwpe gui-libs/wpebackend-fdo media-libs/clutter media-libs/cogl media-libs/gexiv2 media-libs/gsound media-plugins/gst-plugins-opus net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp net-libs/libnma net-libs/rest net-libs/webkit-gtk net-print/cups-pk-helper sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-misc/xdg-user-dirs-gtk
 requires:
   - category: "layers"
     name: "X"
@@ -22,8 +22,11 @@ provides:
   - name: system-config-printer
     category: app-admin
     version: '>=0'
-  - name: eselect-notify-send
-    category: app-eselect
+  - name: gcr
+    category: app-crypt
+    version: '>=0'
+  - name: libsecret
+    category: app-crypt
     version: '>=0'
   - name: eselect-wxwidgets
     category: app-eselect
@@ -55,13 +58,13 @@ provides:
   - name: pycups
     category: dev-python
     version: '>=0'
-  - name: setproctitle
-    category: dev-python
-    version: '>=0'
   - name: gnome-common
     category: gnome-base
     version: '>=0'
   - name: gnome-desktop
+    category: gnome-base
+    version: '>=0'
+  - name: gnome-keyring
     category: gnome-base
     version: '>=0'
   - name: gvfs
@@ -109,14 +112,14 @@ provides:
   - name: cogl
     category: media-libs
     version: '>=0'
+  - name: gexiv2
+    category: media-libs
+    version: '>=0'
   - name: gsound
     category: media-libs
     version: '>=0'
   - name: gst-plugins-opus
     category: media-plugins
-    version: '>=0'
-  - name: libnfs
-    category: net-fs
     version: '>=0'
   - name: gnome-online-accounts
     category: net-libs
@@ -128,6 +131,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: gupnp
+    category: net-libs
+    version: '>=0'
+  - name: libnma
     category: net-libs
     version: '>=0'
   - name: rest
@@ -157,9 +163,6 @@ provides:
   - name: imagemagick-tools
     category: virtual
     version: '>=0'
-  - name: notification-daemon
-    category: virtual
-    version: '>=0'
   - name: colord-gtk
     category: x11-libs
     version: '>=0'
@@ -167,9 +170,6 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: goffice
-    category: x11-libs
-    version: '>=0'
-  - name: libnotify
     category: x11-libs
     version: '>=0'
   - name: libwnck
@@ -180,9 +180,6 @@ provides:
     version: '>=0'
   - name: wxGTK
     category: x11-libs
-    version: '>=0'
-  - name: notification-daemon
-    category: x11-misc
     version: '>=0'
   - name: xdg-user-dirs-gtk
     category: x11-misc

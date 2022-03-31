@@ -1,5 +1,5 @@
 dev-libs/inih ~amd64
-games-util/steam-games-meta ~amd64
+games-util/esteam ~amd64
 games-util/steam-meta ~amd64
 games-util/steam-client-meta ~amd64
 games-util/steam-launcher ~amd64

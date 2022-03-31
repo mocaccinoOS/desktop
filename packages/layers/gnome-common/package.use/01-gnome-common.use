@@ -8,7 +8,7 @@ gnome-base/gvfs afp ios samba gnome gdu google gnome-online-accounts fuse archiv
 gnome-base/libgtop introspection
 gnome-extra/polkit-gnome introspection
 media-libs/cogl gles2
+media-libs/gexiv2 introspection
 media-libs/clutter egl
 net-libs/gnome-online-accounts vala
-x11-libs/libnotify introspection
 x11-libs/wxGTK libnotify gstreamer sdl webkit

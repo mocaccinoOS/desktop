@@ -1,0 +1,12 @@
+prelude:
+- git clone https://github.com/quintenvandamme/pangolin-linux.git  
+- |
+   cd pangolin-linux && git checkout "{{.Values.commit}}" -b build
+steps:
+- cd pangolin-linux && chmod +x install.sh && ./install.sh
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
+excludes:
+{{ template "portage_excludes" }}

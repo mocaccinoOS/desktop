@@ -3,7 +3,6 @@ excludes:
 - ^/etc/sasl2/sasldb2
 - ^/usr/share/icons/hicolor/icon-theme.cache
 - ^/var/spool/cups/tmp/
-
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -13,14 +12,10 @@ prelude:
 - cp -rf patches /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.env /etc/portage/
-- emerge -1 app-arch/rpm2targz dev-lang/rust-bin virtual/rust app-text/docbook-xsl-ns-stylesheets
-- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
-- USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
+- emerge -1 app-arch/rpm2targz dev-lang/rust-bin virtual/rust app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build" . }}
 steps:
-- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
-- USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
-- emerge -1 -j ${JOBS} dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
+- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa && emerge -1 -j ${JOBS} dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
 {{ template "portage_build" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:

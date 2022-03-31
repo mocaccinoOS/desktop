@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.23.5+8
+version: 5.23.5+21
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -43,9 +43,6 @@ provides:
   - name: trousers
     category: app-crypt
     version: '>=0'
-  - name: editorconfig-core-c
-    category: app-text
-    version: '>=0'
   - name: grantlee
     category: dev-libs
     version: '>=0'
@@ -58,34 +55,22 @@ provides:
   - name: khelpcenter
     category: kde-apps
     version: '>=0'
-  - name: kio-extras
-    category: kde-apps
-    version: '>=0'
   - name: baloo
     category: kde-frameworks
     version: '>=0'
   - name: bluez-qt
     category: kde-frameworks
     version: '>=0'
+  - name: countryflags
+    category: kde-frameworks
+    version: '>=0'
   - name: frameworkintegration
-    category: kde-frameworks
-    version: '>=0'
-  - name: kactivities
-    category: kde-frameworks
-    version: '>=0'
-  - name: kactivities-stats
     category: kde-frameworks
     version: '>=0'
   - name: kdelibs4support
     category: kde-frameworks
     version: '>=0'
-  - name: kdesu
-    category: kde-frameworks
-    version: '>=0'
   - name: kemoticons
-    category: kde-frameworks
-    version: '>=0'
-  - name: kfilemetadata
     category: kde-frameworks
     version: '>=0'
   - name: kholidays
@@ -97,22 +82,7 @@ provides:
   - name: kjs
     category: kde-frameworks
     version: '>=0'
-  - name: kpeople
-    category: kde-frameworks
-    version: '>=0'
-  - name: kpty
-    category: kde-frameworks
-    version: '>=0'
   - name: kquickcharts
-    category: kde-frameworks
-    version: '>=0'
-  - name: krunner
-    category: kde-frameworks
-    version: '>=0'
-  - name: ktexteditor
-    category: kde-frameworks
-    version: '>=0'
-  - name: kunitconversion
     category: kde-frameworks
     version: '>=0'
   - name: modemmanager-qt
@@ -121,22 +91,10 @@ provides:
   - name: networkmanager-qt
     category: kde-frameworks
     version: '>=0'
-  - name: plasma
-    category: kde-frameworks
-    version: '>=0'
-  - name: prison
-    category: kde-frameworks
-    version: '>=0'
   - name: purpose
     category: kde-frameworks
     version: '>=0'
   - name: qqc2-desktop-style
-    category: kde-frameworks
-    version: '>=0'
-  - name: syntax-highlighting
-    category: kde-frameworks
-    version: '>=0'
-  - name: threadweaver
     category: kde-frameworks
     version: '>=0'
   - name: bluedevil
@@ -149,9 +107,6 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: drkonqi
-    category: kde-plasma
-    version: '>=0'
-  - name: kactivitymanagerd
     category: kde-plasma
     version: '>=0'
   - name: kde-cli-tools
@@ -271,15 +226,6 @@ provides:
   - name: hack
     category: media-fonts
     version: '>=0'
-  - name: qrencode
-    category: media-gfx
-    version: '>=0'
-  - name: libdmtx
-    category: media-libs
-    version: '>=0'
-  - name: phonon
-    category: media-libs
-    version: '>=0'
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
@@ -289,19 +235,7 @@ provides:
   - name: accounts-qt
     category: net-libs
     version: '>=0'
-  - name: kdsoap
-    category: net-libs
-    version: '>=0'
-  - name: kdsoap-ws-discovery-client
-    category: net-libs
-    version: '>=0'
   - name: libaccounts-glib
-    category: net-libs
-    version: '>=0'
-  - name: signon-oauth2
-    category: net-libs
-    version: '>=0'
-  - name: signond
     category: net-libs
     version: '>=0'
   - name: mailutils

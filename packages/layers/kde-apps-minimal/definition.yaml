@@ -1,15 +1,21 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 20.12.3+89
+version: 20.12.3+99
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/print-manager kde-apps/krdc kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite sys-block/partitionmanager
+    app-text/ebook-tools kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/krdc kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite sys-block/partitionmanager
 requires:
   - category: "layers"
     name: "plasma"
     version: ">=0"
 provides:
+  - name: convertlit
+    category: app-text
+    version: '>=0'
+  - name: ebook-tools
+    category: app-text
+    version: '>=0'
   - name: ark
     category: kde-apps
     version: '>=0'
@@ -22,13 +28,13 @@ provides:
   - name: gwenview
     category: kde-apps
     version: '>=0'
+  - name: kcalc
+    category: kde-apps
+    version: '>=0'
   - name: kcron
     category: kde-apps
     version: '>=0'
   - name: kdeadmin-meta
-    category: kde-apps
-    version: '>=0'
-  - name: kcalc
     category: kde-apps
     version: '>=0'
   - name: kdenetwork-filesharing
@@ -80,6 +86,9 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: libkipi
+    category: kde-apps
+    version: '>=0'
+  - name: okular
     category: kde-apps
     version: '>=0'
   - name: print-manager

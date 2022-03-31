@@ -1,9 +1,9 @@
 category: "layers"
 name: "java"
-version: 8.302_p08+48
+version: 11.0.14_p91+5
 labels:
   emerge.jobs: "3"
-  emerge.packages: "dev-java/openjdk-jre-bin dev-java/openjdk-bin virtual/jre "
+  emerge.packages: "dev-java/openjdk-jre-bin dev-java/openjdk-bin virtual/jre virtual/jdk"
 provides:
   - name: eselect-java
     category: app-eselect
@@ -22,6 +22,9 @@ provides:
     version: '>=0'
   - name: baselayout-java
     category: sys-apps
+    version: '>=0'
+  - name: jdk
+    category: virtual
     version: '>=0'
   - name: jre
     category: virtual

@@ -1,10 +1,9 @@
 category: "apps"
 name: "steam"
-version: 20210323+101
+version: 20210323+111
 labels:
   emerge.jobs: "1"
-  emerge.packages: >-
-    games-util/game-device-udev-rules games-util/steam-games-meta games-util/steam-launcher games-util/gamemode
+  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode "
 provides:
   - name: gamemode
     category: acct-group

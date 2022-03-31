@@ -52,6 +52,7 @@ includes:
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib64$
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib$
 - /usr/lib/llvm/.*/lib.*/libLLVM.*.so
+- /usr/lib/llvm/.*/lib.*/libclang-cpp.so.*
 - /usr/share$
 - /usr/share/gcc-data$
 - /usr/share/gcc-data/x86_64-pc-linux-gnu$

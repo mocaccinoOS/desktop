@@ -1,15 +1,12 @@
 category: "apps"
 name: "firefox"
-version: 95.0.1+16
+version: 91.6.0+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    www-client/firefox-bin
+    www-client/firefox
 provides:
-  - name: freedesktop-icon-theme
-    category: virtual
-    version: '>=0'
-  - name: firefox-bin
+  - name: firefox
     category: www-client
     version: '>=0'
 requires:

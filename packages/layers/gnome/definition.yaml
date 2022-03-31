@@ -1,19 +1,34 @@
 category: "layers"
 name: "gnome"
-version: 40.5+21
+version: 40.5+34
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-arch/file-roller app-editors/gedit gnome-base/dconf-editor gnome-base/gnome gnome-extra/gnome-calculator gnome-extra/gnome-power-manager gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-weather media-gfx/gnome-screenshot media-gfx/shotwell sys-apps/gnome-disk-utility"
+  emerge.packages: "app-arch/file-roller app-editors/gedit gnome-base/dconf-editor gnome-base/gnome gnome-extra/gnome-calculator gnome-extra/gnome-power-manager gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-weather media-gfx/gnome-screenshot media-gfx/shotwell sys-apps/gnome-disk-utility x11-wm/mutter"
 requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
   - category: "entity"
+    name: "brltty"
+    version: ">=0"
+  - category: "entity"
     name: "gdm"
     version: ">=0"
 provides:
+  - name: brlapi
+    category: acct-group
+    version: '>=0'
+  - name: brltty
+    category: acct-group
+    version: '>=0'
   - name: gdm
     category: acct-group
+    version: '>=0'
+  - name: pulse-access
+    category: acct-group
+    version: '>=0'
+  - name: brltty
+    category: acct-user
     version: '>=0'
   - name: gdm
     category: acct-user
@@ -49,6 +64,9 @@ provides:
     category: app-misc
     version: '>=0'
   - name: evince
+    category: app-text
+    version: '>=0'
+  - name: yelp-tools
     category: app-text
     version: '>=0'
   - name: folks
@@ -147,15 +165,6 @@ provides:
   - name: yelp
     category: gnome-extra
     version: '>=0'
-  - name: amtk
-    category: gui-libs
-    version: '>=0'
-  - name: gtk
-    category: gui-libs
-    version: '>=0'
-  - name: tepl
-    category: gui-libs
-    version: '>=0'
   - name: cantarell
     category: media-fonts
     version: '>=0'
@@ -174,9 +183,6 @@ provides:
   - name: clutter-gtk
     category: media-libs
     version: '>=0'
-  - name: gexiv2
-    category: media-libs
-    version: '>=0'
   - name: grilo
     category: media-libs
     version: '>=0'
@@ -188,6 +194,9 @@ provides:
     version: '>=0'
   - name: grilo-plugins
     category: media-plugins
+    version: '>=0'
+  - name: pipewire
+    category: media-video
     version: '>=0'
   - name: totem
     category: media-video
@@ -231,8 +240,8 @@ provides:
   - name: libfprint
     category: sys-auth
     version: '>=0'
-  - name: libxcvt
-    category: x11-libs
+  - name: libusb
+    category: virtual
     version: '>=0'
   - name: gnome-terminal
     category: x11-terms
