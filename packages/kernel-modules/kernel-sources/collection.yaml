@@ -1,7 +1,7 @@
 packages:
   - category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    hidden: "true"
+    hidden: true
     version: 5.15.32+2
     labels:
       autobump.revdeps: "true"
@@ -15,7 +15,7 @@ packages:
       package.version: "5.15.32"
   - category: "kernel-sources"
     name: "mocaccino-sources"
-    hidden: "true"
+    hidden: true
     version: 5.17.1+2
     labels:
       autobump.revdeps: "true"
