@@ -169,7 +169,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-meson"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-microchip"
     version: 2+4
