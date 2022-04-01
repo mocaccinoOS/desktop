@@ -100,7 +100,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-cxgb3"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-cxgb4"
     version: 2+4
