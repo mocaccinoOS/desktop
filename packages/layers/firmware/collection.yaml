@@ -199,7 +199,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-qed"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-qlogic"
     version: 2+4
