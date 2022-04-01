@@ -85,7 +85,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-bnx2x"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-brcm"
     version: 2+4
