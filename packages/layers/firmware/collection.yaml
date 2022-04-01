@@ -157,7 +157,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-liquidio"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-matrox"
     version: 2+4
