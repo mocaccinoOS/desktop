@@ -52,7 +52,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-amd-ucode"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-amd"
     version: 2+5
