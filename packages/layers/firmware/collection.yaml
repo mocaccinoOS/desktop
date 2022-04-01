@@ -142,7 +142,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-isci"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-kaweth"
     version: 2+4
