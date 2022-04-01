@@ -250,7 +250,7 @@ packages:
     version: 2+4
   - category: "layers"
     name: "firmware-ti"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-tigon"
     version: 2+4
