@@ -145,7 +145,7 @@ packages:
     version: 2+5
   - category: "layers"
     name: "firmware-kaweth"
-    version: 2+4
+    version: 2+5
   - category: "layers"
     name: "firmware-keyspan"
     version: 2+4
