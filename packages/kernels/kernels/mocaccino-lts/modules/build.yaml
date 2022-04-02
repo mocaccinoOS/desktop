@@ -1,0 +1,15 @@
+steps:
+- bash build.sh
+package_dir: /luetbuild/modules
+requires:
+- name: "mocaccino-lts-full"
+  category: "kernel"
+  version: ">=0"
+env:
+- KERNEL_PREFIX=vanilla
+- SUFFIX={{ .Values.suffix }}
+excludes:
+- /boot/vmlinuz-.*
+- /build.sh$
+- /build.yaml$
+- /definition.yaml$

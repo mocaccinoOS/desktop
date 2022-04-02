@@ -1,0 +1,24 @@
+image: "ubuntu:20.04"
+env:
+#- LUET_YES=true
+- GCC_VERSION=10
+- ARCH={{.Values.arch}}
+- KERNEL_PREFIX=vanilla
+- SUFFIX={{.Values.suffix}}
+- KERNEL_TYPE=linux
+prelude:
+#- luet install repository/mocaccino-portage-stable
+#- luet install layers/system-x
+- | 
+  apt-get update               && \ 
+  apt-get -y -q upgrade        && \
+  apt-get install -y -q apt-utils dialog\
+      xz-utils wget sudo aptitude flex bison libncurses5-dev make git exuberant-ctags bc libssl-dev libelf-dev \
+      gcc-${GCC_VERSION} g++-${GCC_VERSION} gcc-${GCC_VERSION}-plugin-dev gcc g++ \
+      gcc-${GCC_VERSION}-aarch64-linux-gnu g++-${GCC_VERSION}-aarch64-linux-gnu \
+      gcc-aarch64-linux-gnu g++-aarch64-linux-gnu && \
+      apt-get install -y -q gcc-${GCC_VERSION}-plugin-dev-aarch64-linux-gnu
+- bash prepare.sh
+steps:
+  - bash build.sh
+package_dir: /luetbuild/output

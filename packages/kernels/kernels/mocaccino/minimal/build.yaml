@@ -1,0 +1,90 @@
+steps:
+- cp -rfv output/boot/* /luetbuild/modules/boot
+package_dir: /luetbuild/modules
+requires:
+- name: "mocaccino-modules"
+  category: "kernel"
+  version: ">=0"
+includes:
+# Kernel
+- /boot$
+- /boot/{{ .Values.kernelprefix }}-{{ .Values.arch }}-{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
+- /boot/System.map-.*-{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
+
+- /lib$
+- /lib/modules$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/modules.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/source
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/build
+
+# OverlayFS
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/mbcache.ko
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/overlayfs$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/overlayfs/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/lib$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/lib/.*
+
+# Crypto
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/crypto$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/crypto/.*
+
+# EXT
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/ext2$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/ext4$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/jbd2$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/ext2/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/ext4/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/fs/jbd2/.*
+
+# USB
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/storage$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/storage/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/host$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/host/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/common$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/usb/common/.*
+
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid/usbhid$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid/usbhid/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid/i2c-hid$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/hid/i2c-hid/.*
+
+
+# Input
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/keyboard$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/keyboard/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/misc$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/misc/.*
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/mouse$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/input/mouse/.*
+
+# block
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/block$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/block/.*
+
+# ATA
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/ata$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/ata/.*
+
+# md
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/md$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/md/.*
+
+# firewire
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/firewire$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/firewire/.*
+
+# virtio
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/virtio$
+- /lib/modules/{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}/kernel/drivers/virtio/.*

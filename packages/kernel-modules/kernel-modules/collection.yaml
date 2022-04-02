@@ -11,7 +11,7 @@ packages:
   #      lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 6.1.28+4
+    version: 6.1.28+6
     lts: true
     emerge:
       jobs: "3"
@@ -22,7 +22,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.28+4
+    version: 6.1.28+6
     lts: true
     labels:
       emerge.jobs: "3"
@@ -55,7 +55,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 470.103.01+4
+    version: 470.103.01+6
     lts: true
     labels:
       emerge.jobs: "3"
@@ -76,7 +76,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.1+5
+    version: 0.9.1+7
     lts: true
     labels:
       emerge.jobs: "3"

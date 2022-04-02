@@ -17,16 +17,10 @@ steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 
 requires:
+- category: "kernel-sources"
 {{- if .Values.lts }}
-- category: "buildbase"
   name: "mocaccino-lts-sources"
-  version: ">=0"
 {{- else}}
-- category: "buildbase"
   name: "mocaccino-sources"
-  version: ">=0"
 {{- end}}
-- category: "buildbase"
-  name: "X"
   version: ">=0"
-requires_final_images: true

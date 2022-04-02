@@ -1,0 +1,250 @@
+#!/bin/bash
+# Author: geaaru@sabayonlinux.org
+# Description: Scripting tool for simplify dracut mocaccino images creation.
+
+set -e
+
+# Permit to override default options to users.
+# ZFS integration needs systemd stuff.
+if [ -f "/etc/mocaccino-dracut.conf" ] ; then
+  source /etc/mocaccino-dracut.conf
+fi
+
+MOCACCINO_DRACUT_COMMON_ARGS="${MOCACCINO_DRACUT_COMMON_ARGS:--H -q -f -o systemd -o systemd-initrd -o systemd-networkd -o dracut-systemd}"
+MOCACCINO_INITRD_DIR="${MOCACCINO_INITRD_DIR:-/boot}"
+# Current initrd naming is: initramfs-vanilla-${ARCH}-${KVER}-mocaccino
+MOCACCINO_INITRD_PREFIX="${MOCACCINO_INITRD_PREFIX:-initramfs}"
+MOCACCINO_KERNEL_PREFIX="${MOCACCINO_KERNEL_PREFIX:-kernel}"
+MOCACCINO_INITRD_SUFFIX="${MOCACCINO_INITRD_SUFFIX:-mocaccino}"
+MOC_DEFAULT_KTYPE="${MOC_DEFAULT_KTYPE:-vanilla}"
+MOC_ARCH=${MOC_ARCH:-$(uname -m)}
+
+_error () {
+  echo "$@"
+  exit 1
+}
+
+_help () {
+  echo "
+------------------------------------
+Mocaccino Dracut Script
+Copyright (s) 2020-2021 Mocaccino
+------------------------------------
+
+Usage:
+
+[--rebuild-all]         Rebuild all Mocaccino kernel initrd images.
+                        Based on naming convention
+                        ${MOCACCINO_INITRD_PREFIX}-${MOC_DEFAULT_KTYPE}-${MOC_ARCH}-VERSION-${MOCACCINO_INITRD_SUFFIX}.
+[--build|-b version]    Rebuild image for a specific version.
+[--list-available|-L]   List available Mocaccino kernels and initrd images available.
+[--dry-run]             Doesn't execute final rebuild. Only print command
+                        execute.
+[--force]               Force creation of initramfs (required for new initramfs rather than rebuild).
+[--help|-h]             Help message.
+
+
+Examples:
+
+\$# mocaccino-dracut --list-available
+
+\$# mocaccino-dracut --build <MAJOR>.<MINOR>.<PATCH>
+
+\$# mocaccino-dracut --force --build <MAJOR>.<MINOR>.<PATCH>
+
+\$# mocaccino-dracut --rebuild-all
+"
+  return 1
+}
+
+_get_images () {
+  local n=$(ls ${MOCACCINO_INITRD_DIR}/${MOCACCINO_INITRD_PREFIX}*-${MOCACCINO_INITRD_SUFFIX} 2>/dev/null | wc -l)
+
+  if [ $n = 0 ] ; then
+    MOC_INITRD_IMAGES=()
+  else
+    MOC_INITRD_IMAGES=( $(ls ${MOCACCINO_INITRD_DIR}/${MOCACCINO_INITRD_PREFIX}*-${MOCACCINO_INITRD_SUFFIX} 2>/dev/null) )
+  fi
+  export MOC_INITRD_IMAGES
+}
+
+_get_kernels () {
+  local n=$(ls ${MOCACCINO_INITRD_DIR}/${MOCACCINO_KERNEL_PREFIX}-*-${MOCACCINO_INITRD_SUFFIX} 2>/dev/null | wc -l)
+
+  if [ $n = 0 ] ; then
+    MOC_KERNELS=()
+  else
+    MOC_KERNELS=( $(ls ${MOCACCINO_INITRD_DIR}/${MOCACCINO_KERNEL_PREFIX}-*-${MOCACCINO_INITRD_SUFFIX} 2>/dev/null) )
+  fi
+  export MOC_KERNELS
+}
+
+_list () {
+  local i=0
+  local n_kernels=${#MOC_KERNELS[@]}
+  local file
+  local version
+  local ktype
+
+  if [ "$n_kernels" = 0 ] ; then
+    echo "No kernels found."
+  else
+    echo "=============================================================================="
+    echo " Kernels Available: ${n_kernels}"
+    echo "=============================================================================="
+    echo -e " Version\tKernel Type\tImage Initrd"
+    echo "=============================================================================="
+    for i in ${MOC_KERNELS[@]} ; do
+      file=$(basename $i)
+
+      ktype=$(echo ${file/${MOCACCINO_KERNEL_PREFIX}-/} | sed -e "s/-${MOC_ARCH}-.*//g")
+      v=$(echo ${file} | sed -e "s/${MOCACCINO_KERNEL_PREFIX}-\w*-${MOC_ARCH}-//g")
+      v=${v/-${MOCACCINO_INITRD_SUFFIX}/}
+
+      # Check if initrd image is available.
+      initrdfile="${MOCACCINO_INITRD_PREFIX}-${ktype}-${MOC_ARCH}-${v}-${MOCACCINO_INITRD_SUFFIX}"
+      if [ ! -e ${MOCACCINO_INITRD_DIR}/${initrdfile} ] ; then
+      	initrdfile="N/A"
+      fi
+      echo -e " $v  \t${ktype} t\t${initrdfile}"
+    done
+    echo "=============================================================================="
+  fi
+}
+
+_rebuild_all () {
+  local i=""
+  # Check if version is available
+  if [ "${#MOC_KERNELS[@]}" == "0" ] ; then
+    echo "No kernels found. Try to install it with luet."
+    return 1
+  fi
+
+    for i in ${MOC_KERNELS[@]} ; do
+      file=$(basename $i)
+      v=$(echo ${file} | sed -e "s/${MOCACCINO_KERNEL_PREFIX}-\w*-${MOC_ARCH}-//g")
+      v=${v/-${MOCACCINO_INITRD_SUFFIX}/}
+      _build "$v" || {
+        echo "Something is wrong with kernel $v but I go ahead."
+      }
+    done
+
+  return 0
+}
+
+_build () {
+  local i
+  local found=0
+  local version=$1
+  local ktype
+  local kernelfile=""
+
+  if [ "$(id -u)" != "0" ]; then
+    echo "This script must be run as root" 1>&2
+    exit 1
+  fi
+
+  _get_images
+
+  # Check if version is available
+  for i in ${MOC_INITRD_IMAGES[@]} ; do
+    file=$(basename $i)
+    ktype=$(echo ${file/initramfs-/} | sed -e "s/-${MOC_ARCH}-.*//g")
+    v=$(echo ${file} | sed -e "s/${MOCACCINO_INITRD_PREFIX}-\w*-${MOC_ARCH}-//g")
+    v=${v/-${MOCACCINO_INITRD_SUFFIX}/}
+    if [ "$version" = "$v" ] ; then
+      found=1
+      break
+    fi
+  done
+
+  if [ "$found" = 0 ] ; then
+    if [ "${MOC_BUILD_FORCE}" != 1 ] ; then
+      echo "No image with version $version found."
+      return 1
+    fi
+    ktype=${MOC_DEFAULT_KTYPE}
+  fi
+
+  kernelfile="kernel-${ktype}-${MOC_ARCH}-${version}-${MOCACCINO_INITRD_SUFFIX}"
+  if [ ! -e "${MOCACCINO_INITRD_DIR}/${kernelfile}" ] ; then
+    echo "Error: kernel image ${kernelfile} not found."
+    return 1
+  fi
+
+  local image_name="${MOCACCINO_INITRD_PREFIX}-${ktype}-${MOC_ARCH}-${version}-${MOCACCINO_INITRD_SUFFIX}"
+  local kver="${version}-${MOCACCINO_INITRD_SUFFIX}"
+
+  echo "Building ${MOCACCINO_INITRD_DIR}/${image_name}"
+
+  if [ "${MOC_DRYRUN}" = 1 ] ; then
+    echo "dracut ${MOCACCINO_DRACUT_COMMON_ARGS} --kver=${kver} ${MOCACCINO_INITRD_DIR}/${image_name}"
+  else
+    dracut ${MOCACCINO_DRACUT_COMMON_ARGS} --kver=${kver} ${MOCACCINO_INITRD_DIR}/${image_name}
+  fi
+}
+
+main () {
+  _parse_args() {
+    if [ $# -lt 1 ] ; then
+      _help
+      return 1
+    fi
+
+    MOC_REBUILD_ALL=0
+    MOC_BUILD_VERSION=""
+    MOC_BUILD_FORCE=0
+    MOC_INITRD_LIST=0
+    MOC_DRYRUN=0
+
+    while [ $# -gt 0 ] ; do
+      case "$1" in
+        --help|-h)
+          _help || return 1
+          ;;
+        --rebuild-all)
+          MOC_REBUILD_ALL=1
+          ;;
+        --build|-b)
+          MOC_BUILD_VERSION=$2
+          shift
+          ;;
+        --list-available|-L)
+          MOC_INITRD_LIST=1
+          ;;
+        --dry-run)
+          MOC_DRYRUN=1
+          ;;
+        --force)
+          MOC_BUILD_FORCE=1
+          ;;
+        *|--)
+          _error "Invalid parameter $1"
+          ;;
+      esac
+      shift
+    done
+
+    if [[ "${MOC_REBUILD_ALL}" = 1 && -n "${MOC_BUILD_VERSION}" ]] ; then
+      _error "Both --rebuild-all and --build options used."
+    fi
+
+    export MOC_REBUILD_ALL MOC_BUILD_VERSION MOC_INITRD_LIST MOC_DRYRUN MOC_BUILD_FORCE
+    return 0
+  }
+
+  _parse_args "$@"
+
+  unset -f _parse_args
+
+  _get_kernels
+
+  [ "${MOC_INITRD_LIST}" = 1 ] && _list
+  [ -n "${MOC_BUILD_VERSION}" ] && _build "${MOC_BUILD_VERSION}"
+  [ "${MOC_REBUILD_ALL}" = 1 ] && _rebuild_all
+
+  return 0
+}
+
+main $@
+exit $?

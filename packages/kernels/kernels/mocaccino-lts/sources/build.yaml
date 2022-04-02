@@ -1,0 +1,10 @@
+prelude:
+- bash copy.sh
+env:
+- KERNEL_TYPE={{ .Values.prefix }}
+- SUFFIX={{ .Values.suffix }}
+package_dir: /luetbuild/sources
+requires:
+- name: "mocaccino-lts-full"
+  category: "kernel"
+  version: ">=0"

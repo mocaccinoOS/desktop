@@ -1,0 +1,25 @@
+name: mocaccino-full
+category: kernel
+version: "5.17.1"
+requires:
+  - name: "mocaccino-modules"
+    category: "kernel"
+    version: ">=0"
+  - name: "kmod"
+    category: "system"
+    version: ">=0"
+  - category: "system"
+    name: "kernel-updater"
+    version: ">=0"
+arch: "x86_64"
+suffix: mocaccino
+labels:
+  autobump.revdeps: "false"
+  autobump.string_replace: '{ "prefix": "" }'
+  autobump.strategy: "custom"
+  autobump.prefix: "prefix"
+  autobump.hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
+  autobump.version_hook: |
+    curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
+  package.version: "5.17.1"
