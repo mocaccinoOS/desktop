@@ -14,7 +14,7 @@ steps:
 # Keep requires so the bot can check revdeps. Note join takes precedence and requires get ignored
 requires:
 - category: "gentoo"
-  version:  "0.20220320"
+  version:  ">=0.1"
   name:     "stage3"
 
 requires_final_images: true
