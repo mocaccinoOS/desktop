@@ -17,7 +17,6 @@ prelude:
 - cp -rf bashrc /etc/portage/
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
-- emerge -C dev-lang/python:3.9
 steps:
 # prevent softblock, see https://bugs.gentoo.org/831980
 # - emerge -1 sys-apps/shadow sys-apps/util-linux
