@@ -25,7 +25,7 @@ steps:
 {{ template "portage_build" . }}
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d && chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
 # Clean up build deps
-- emerge -C app-eselect/eselect-rust virtual/rust dev-lang/rust-bin dev-lang/yasm dev-lang/python:3.9 dev-util/gdbus-codegen dev-util/gperf dev-util/ragel sys-apps/help2man virtual/yacc
+- emerge -C app-eselect/eselect-rust virtual/rust dev-lang/rust-bin dev-lang/yasm dev-lang/python:3.10 dev-util/gdbus-codegen dev-util/gperf dev-util/ragel sys-apps/help2man virtual/yacc
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
