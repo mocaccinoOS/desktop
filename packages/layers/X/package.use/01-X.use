@@ -19,7 +19,7 @@ dev-python/pyudev -qt5
 mail-mta/postfix mbox sasl
 media-fonts/noto -cjk
 media-gfx/graphite2 perl
-media-gfx/imagemagick fftw gs jpeg perl q32 xml
+media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
 media-gfx/sane-backends threads -v4l
 media-libs/chromaprint tools -abi_x86_32
 media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs

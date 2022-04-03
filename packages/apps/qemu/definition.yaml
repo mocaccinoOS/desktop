@@ -1,6 +1,6 @@
 category: "apps"
 name: "qemu"
-version: 6.2.0+22
+version: 6.2.0+23
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
