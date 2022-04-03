@@ -9,11 +9,11 @@ prelude:
 steps:
 # TODO: checksum
 
-# Gentoo stage3 are broken due to https://bugs.gentoo.org/780810
+# Gentoo stage3 are broken due to python threading issues. 
 
-- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+#- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
-#- curl -L https://get.mocaccino.org/gentoo-stage3/stage3-amd64-systemd-20201129T214504Z.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+- curl -L https://bouncer.gentoo.org/fetch/root/all/releases/arm64/autobuilds/20220320T232720Z/stage3-arm64-systemd-20220320T232720Z.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
 - LUET_YES=true
