@@ -1,4 +1,3 @@
-app-text/poppler nss qt5
 kde-apps/kio-extras mtp samba taglib
 kde-frameworks/kfilemetadata taglib
 kde-frameworks/kitemmodels qml

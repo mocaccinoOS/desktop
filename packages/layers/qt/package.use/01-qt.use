@@ -1,4 +1,5 @@
 app-crypt/qca gpg ssl
+app-text/poppler nss qt5
 dev-python/PyQt5 declarative gui help network webchannel webkit webengine websockets widgets sql xmlpatterns
 >=dev-qt/qtprintsupport-5.15.1 cups
 dev-qt/linguist-tools qml
