@@ -1,0 +1,14 @@
+category: "apps"
+name: "drawing"
+version: 9999+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "media-gfx/drawing"
+provides:
+  - name: drawing
+    category: media-gfx
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
