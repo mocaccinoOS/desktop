@@ -7,7 +7,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
-- echo "y" | layman -a dev1990-overlay
+- echo "y" | layman -a stefantalpalaru
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C app-portage/layman dev-python/ssl-fetch
