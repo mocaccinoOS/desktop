@@ -1,6 +1,6 @@
 category: "apps"
 name: "drawing"
-version: 9999+1
+version: 9999+2
 labels:
   emerge.jobs: "1"
   emerge.packages: "media-gfx/drawing"
