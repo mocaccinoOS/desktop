@@ -178,9 +178,6 @@ provides:
   - name: kcalendarcore
     category: kde-frameworks
     version: '>=0'
-  - name: kcontacts
-    category: kde-frameworks
-    version: '>=0'
   - name: kdav
     category: kde-frameworks
     version: '>=0'
