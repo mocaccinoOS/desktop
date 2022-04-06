@@ -94,9 +94,6 @@ provides:
   - name: purpose
     category: kde-frameworks
     version: '>=0'
-  - name: qqc2-desktop-style
-    category: kde-frameworks
-    version: '>=0'
   - name: bluedevil
     category: kde-plasma
     version: '>=0'
