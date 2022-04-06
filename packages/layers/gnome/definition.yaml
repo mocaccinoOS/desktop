@@ -180,9 +180,6 @@ provides:
   - name: clutter-gst
     category: media-libs
     version: '>=0'
-  - name: clutter-gtk
-    category: media-libs
-    version: '>=0'
   - name: grilo
     category: media-libs
     version: '>=0'
