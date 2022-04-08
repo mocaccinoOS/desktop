@@ -3,5 +3,5 @@ name: "shortwave"
 version: 2.0.1+1
 requires:
   - category: "layers"
-    name: "X"
+    name: "gnome-common"
     version: ">=0"

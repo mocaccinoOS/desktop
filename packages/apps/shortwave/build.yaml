@@ -6,7 +6,6 @@ prelude:
 steps:
 - cd Shortwave && ninja -C build/ install
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "layers"
+  name: "gnome-common"
   version: ">=0"
-requires_final_images: true
