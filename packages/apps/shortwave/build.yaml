@@ -1,0 +1,12 @@
+excludes:
+{{ template "portage_excludes" }}
+prelude:
+- git clone https://gitlab.gnome.org/World/Shortwave.git
+- cd Shortwave && git checkout 9bfc5ee2d857035cf0d3c72e211b3d76b85d7414 && meson --prefix=/usr build/ && ninja -C build/
+steps:
+- cd Shortwave && ninja -C build/ install
+requires:
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true
