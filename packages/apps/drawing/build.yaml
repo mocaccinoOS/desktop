@@ -6,7 +6,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
-- echo "y" | layman -a Miezhiko
+- echo "y" | layman -a src_prepare-overlay
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C app-portage/layman dev-python/ssl-fetch
