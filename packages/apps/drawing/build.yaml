@@ -1,7 +1,5 @@
 excludes:
 {{ template "portage_excludes" }}
-env:
-{{ template "portage_env" . }}
 prelude:
 - git clone https://github.com/maoschanz/drawing.git
 - cd drawing && git checkout 2b477b191da431da49fc82f28ad7760df9f1698e && meson build/ && ninja -C build/
