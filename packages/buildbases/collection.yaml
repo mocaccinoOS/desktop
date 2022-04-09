@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+42
+    version: 0+43
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
@@ -16,7 +16,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+46
+    version: 0+47
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
