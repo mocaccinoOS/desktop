@@ -165,9 +165,6 @@ provides:
   - name: yelp
     category: gnome-extra
     version: '>=0'
-  - name: cantarell
-    category: media-fonts
-    version: '>=0'
   - name: eog
     category: media-gfx
     version: '>=0'
