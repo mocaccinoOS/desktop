@@ -1,10 +1,10 @@
 category: "layers"
 name: "kde-common"
-version: 4+80
+version: 4+81
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-text/discount app-text/editorconfig-core-c dev-libs/libdbusmenu-qt kde-apps/kdegraphics-mobipocket kde-apps/kio-extras kde-apps/libkcddb kde-apps/libkexiv2 kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/breeze-icons kde-frameworks/kactivities kde-frameworks/kactivities-stats kde-frameworks/karchive kde-frameworks/kauth kde-frameworks/kbookmarks kde-frameworks/kcmutils kde-frameworks/kcodecs kde-frameworks/kcompletion kde-frameworks/kconfig kde-frameworks/kconfigwidgets kde-frameworks/kcoreaddons kde-frameworks/kcrash kde-frameworks/kdbusaddons kde-frameworks/kdeclarative kde-frameworks/kded kde-frameworks/kdesu kde-frameworks/kdnssd kde-frameworks/kdoctools kde-frameworks/kfilemetadata kde-frameworks/kglobalaccel kde-frameworks/kguiaddons kde-frameworks/ki18n kde-frameworks/kiconthemes kde-frameworks/kidletime kde-frameworks/kimageformats kde-frameworks/kio kde-frameworks/kirigami kde-frameworks/kitemmodels kde-frameworks/kitemviews kde-frameworks/kjobwidgets kde-frameworks/knewstuff kde-frameworks/knotifications kde-frameworks/knotifyconfig kde-frameworks/kpackage kde-frameworks/kparts kde-frameworks/kpeople kde-frameworks/kplotting kde-frameworks/kross kde-frameworks/krunner kde-frameworks/kservice kde-frameworks/ktexteditor kde-frameworks/ktextwidgets kde-frameworks/kpty kde-frameworks/kunitconversion kde-frameworks/kwallet kde-frameworks/kwayland kde-frameworks/kwidgetsaddons kde-frameworks/kwindowsystem kde-frameworks/kxmlgui kde-frameworks/threadweaver kde-frameworks/solid kde-frameworks/sonnet kde-frameworks/syntax-highlighting kde-frameworks/oxygen-icons kde-frameworks/plasma kde-frameworks/prison kde-plasma/kactivitymanagerd kde-plasma/libkscreen kde-plasma/polkit-kde-agent media-gfx/qrencode media-libs/libdmtx media-libs/phonon media-video/movit net-libs/kdsoap net-libs/kdsoap-ws-discovery-client net-libs/signon-oauth2 net-libs/signond sys-auth/polkit-qt sys-libs/kpmcore
+    app-text/discount app-text/editorconfig-core-c dev-libs/libdbusmenu-qt kde-apps/kdegraphics-mobipocket kde-apps/kio-extras kde-apps/libkcddb kde-apps/libkexiv2 kde-apps/libkomparediff2 kde-apps/libksane kde-frameworks/attica kde-frameworks/breeze-icons kde-frameworks/kactivities kde-frameworks/kactivities-stats kde-frameworks/karchive kde-frameworks/kauth kde-frameworks/kbookmarks kde-frameworks/kcmutils kde-frameworks/kcodecs kde-frameworks/kcompletion kde-frameworks/kconfig kde-frameworks/kconfigwidgets kde-frameworks/kcontacts kde-frameworks/kcoreaddons kde-frameworks/kcrash kde-frameworks/kdbusaddons kde-frameworks/kdeclarative kde-frameworks/kded kde-frameworks/kdesu kde-frameworks/kdnssd kde-frameworks/kdoctools kde-frameworks/kfilemetadata kde-frameworks/kglobalaccel kde-frameworks/kguiaddons kde-frameworks/ki18n kde-frameworks/kiconthemes kde-frameworks/kidletime kde-frameworks/kimageformats kde-frameworks/kio kde-frameworks/kirigami kde-frameworks/kitemmodels kde-frameworks/kitemviews kde-frameworks/kjobwidgets kde-frameworks/knewstuff kde-frameworks/knotifications kde-frameworks/knotifyconfig kde-frameworks/kpackage kde-frameworks/kparts kde-frameworks/kpeople kde-frameworks/kplotting kde-frameworks/kross kde-frameworks/krunner kde-frameworks/kservice kde-frameworks/ktexteditor kde-frameworks/ktextwidgets kde-frameworks/kpty kde-frameworks/kunitconversion kde-frameworks/kwallet kde-frameworks/kwayland kde-frameworks/kwidgetsaddons kde-frameworks/kwindowsystem kde-frameworks/kxmlgui kde-frameworks/threadweaver kde-frameworks/solid kde-frameworks/sonnet kde-frameworks/syntax-highlighting kde-frameworks/oxygen-icons kde-frameworks/plasma kde-frameworks/prison kde-frameworks/qqc2-desktop-style kde-plasma/kactivitymanagerd kde-plasma/libkscreen kde-plasma/polkit-kde-agent media-gfx/qrencode media-libs/libdmtx media-libs/phonon media-video/movit net-libs/kdsoap net-libs/kdsoap-ws-discovery-client net-libs/signon-oauth2 net-libs/signond sys-auth/polkit-qt sys-libs/kpmcore
 requires:
   - category: "layers"
     name: "qt"
@@ -80,6 +80,9 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: kconfigwidgets
+    category: kde-frameworks
+    version: '>=0'
+  - name: kcontacts
     category: kde-frameworks
     version: '>=0'
   - name: kcoreaddons
@@ -212,6 +215,9 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: prison
+    category: kde-frameworks
+    version: '>=0'
+  - name: qqc2-desktop-style
     category: kde-frameworks
     version: '>=0'
   - name: solid

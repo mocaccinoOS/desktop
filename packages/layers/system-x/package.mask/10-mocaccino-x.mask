@@ -1,2 +1,1 @@
->sys-libs/glibc-2.33-r7
 >=dev-lang/python-3.10.0
