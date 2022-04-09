@@ -175,9 +175,6 @@ provides:
   - name: pimcommon
     category: kde-apps
     version: '>=0'
-  - name: kcalendarcore
-    category: kde-frameworks
-    version: '>=0'
   - name: kdav
     category: kde-frameworks
     version: '>=0'
