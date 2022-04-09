@@ -13,9 +13,6 @@ provides:
   - name: paperkey
     category: app-crypt
     version: '>=0'
-  - name: kdiagram
-    category: dev-libs
-    version: '>=0'
   - name: akonadi
     category: kde-apps
     version: '>=0'
