@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: 40.5+37
+version: 40.5+39
 labels:
   emerge.jobs: "3"
   emerge.packages: "app-arch/file-roller app-editors/gedit gnome-base/dconf-editor gnome-base/gnome gnome-extra/gnome-calculator gnome-extra/gnome-power-manager gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-weather media-gfx/gnome-screenshot media-gfx/shotwell sys-apps/baobab sys-apps/gnome-disk-utility x11-wm/mutter"
