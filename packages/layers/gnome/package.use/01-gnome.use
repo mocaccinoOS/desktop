@@ -18,3 +18,4 @@ media-libs/gsound vala
 media-libs/libmediaart -qt5
 media-plugins/grilo-plugins upnp-av
 sys-apps/gnome-disk-utility -nautilus -avahi
+x11-wm/mutter screencast
