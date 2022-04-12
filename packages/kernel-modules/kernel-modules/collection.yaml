@@ -75,6 +75,27 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
+    name: "nvidia-drivers-legacy-lts"
+    version: 390.147+1
+    lts: true
+    labels:
+      emerge.jobs: "3"
+    emerge:
+      jobs: "3"
+      packages:
+        - =x11-drivers/nvidia-drivers-390.147
+    provides:
+      - name: nvidia-drivers
+        category: x11-drivers
+        version: '>=0'
+    requires:
+      - name: nvpd
+        category: entity
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+  - category: "kernel-modules"
     name: "xpadneo-lts"
     version: 0.9.1+9
     lts: true
