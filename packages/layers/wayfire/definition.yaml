@@ -19,9 +19,6 @@ provides:
   - name: greetd
     category: acct-user
     version: '>=0'
-  - name: scdoc
-    category: app-text
-    version: '>=0'
   - name: date
     category: dev-libs
     version: '>=0'
