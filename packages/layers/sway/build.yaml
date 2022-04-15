@@ -8,7 +8,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "apps"
+  name: "wlroots"
   version: ">=0"
-requires_final_images: true
