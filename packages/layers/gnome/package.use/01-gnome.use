@@ -12,7 +12,6 @@ gnome-base/gnome -extras -accessibility
 gnome-base/gnome-control-center networkmanager input_devices_wacom
 gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
 gnome-base/nautilus gnome sendto
-gnome-extra/evolution-data-server oauth kerberos vala
 media-gfx/eog-plugins flickr
 media-libs/gsound vala
 media-libs/libmediaart -qt5

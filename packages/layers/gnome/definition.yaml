@@ -126,9 +126,6 @@ provides:
   - name: chrome-gnome-shell
     category: gnome-extra
     version: '>=0'
-  - name: evolution-data-server
-    category: gnome-extra
-    version: '>=0'
   - name: gnome-calculator
     category: gnome-extra
     version: '>=0'
@@ -194,9 +191,6 @@ provides:
     version: '>=0'
   - name: totem
     category: media-video
-    version: '>=0'
-  - name: telepathy-mission-control
-    category: net-im
     version: '>=0'
   - name: dleyna-connector-dbus
     category: net-libs
