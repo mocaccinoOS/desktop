@@ -553,6 +553,9 @@ provides:
   - name: libappindicator
     category: dev-libs
     version: '>=0'
+  - name: libatomic_ops
+    category: dev-libs
+    version: '>=0'
   - name: libclc
     category: dev-libs
     version: '>=0'

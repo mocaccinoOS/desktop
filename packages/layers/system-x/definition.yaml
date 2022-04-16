@@ -489,9 +489,6 @@ provides:
   - name: tcl
     category: dev-lang
     version: '>=0'
-  - name: boehm-gc
-    category: dev-libs
-    version: '>=0'
   - name: boost
     category: dev-libs
     version: '>=0'
@@ -535,9 +532,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libassuan
-    category: dev-libs
-    version: '>=0'
-  - name: libatomic_ops
     category: dev-libs
     version: '>=0'
   - name: libbsd
@@ -786,6 +780,9 @@ provides:
   - name: YAML-Tiny
     category: dev-perl
     version: '>=0'
+  - name: appdirs
+    category: dev-python
+    version: '>=0'
   - name: certifi
     category: dev-python
     version: '>=0'
@@ -807,7 +804,19 @@ provides:
   - name: idna
     category: dev-python
     version: '>=0'
+  - name: importlib_metadata
+    category: dev-python
+    version: '>=0'
   - name: installer
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-context
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-functools
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-text
     category: dev-python
     version: '>=0'
   - name: jinja
@@ -819,7 +828,13 @@ provides:
   - name: markupsafe
     category: dev-python
     version: '>=0'
+  - name: more-itertools
+    category: dev-python
+    version: '>=0'
   - name: numpy
+    category: dev-python
+    version: '>=0'
+  - name: ordered-set
     category: dev-python
     version: '>=0'
   - name: packaging
@@ -867,6 +882,9 @@ provides:
   - name: wheel
     category: dev-python
     version: '>=0'
+  - name: zipp
+    category: dev-python
+    version: '>=0'
   - name: bundler
     category: dev-ruby
     version: '>=0'
@@ -908,9 +926,6 @@ provides:
     version: '>=0'
   - name: xmlrpc
     category: dev-ruby
-    version: '>=0'
-  - name: guile
-    category: dev-scheme
     version: '>=0'
   - name: boost-build
     category: dev-util
@@ -1153,9 +1168,6 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: autoconf-wrapper
-    category: sys-devel
-    version: '>=0'
-  - name: autogen
     category: sys-devel
     version: '>=0'
   - name: automake
