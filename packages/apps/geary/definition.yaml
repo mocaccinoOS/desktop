@@ -1,0 +1,15 @@
+category: "apps"
+name: "geary"
+version: 40.0+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    mail-client/geary
+provides:
+  - name: geary
+    category: mail-client
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
