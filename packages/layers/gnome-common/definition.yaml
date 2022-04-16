@@ -4,7 +4,7 @@ version: 0.9+78
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-admin/system-config-printer app-crypt/gcr app-crypt/libsecret app-eselect/eselect-wxwidgets app-misc/geoclue app-pda/libimobiledevice app-text/gspell dev-libs/gmime dev-libs/keybinder dev-libs/libgdata dev-libs/libgee dev-libs/libpeas dev-python/pyatspi dev-python/pycups gnome-base/gnome-desktop gnome-base/gvfs gnome-base/gnome-keyring gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/libadwaita gui-libs/gtk:4 gui-libs/libhandy gui-libs/libwpe gui-libs/wpebackend-fdo media-libs/clutter media-libs/clutter-gtk media-libs/cogl media-libs/gexiv2 media-libs/gsound media-plugins/gst-plugins-opus net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp net-libs/libnma net-libs/rest net-libs/webkit-gtk net-print/cups-pk-helper sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-misc/xdg-user-dirs-gtk
+    app-admin/system-config-printer app-crypt/gcr app-crypt/libsecret app-eselect/eselect-wxwidgets app-misc/geoclue app-pda/libimobiledevice app-text/gspell dev-libs/gmime dev-libs/keybinder dev-libs/libgdata dev-libs/libgee dev-libs/libpeas dev-python/pyatspi dev-python/pycups gnome-base/gnome-desktop gnome-base/gvfs gnome-base/gnome-keyring gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/libadwaita gui-libs/gtk:4 gui-libs/libhandy gui-libs/libwpe gui-libs/wpebackend-fdo media-libs/clutter media-libs/clutter-gtk media-libs/cogl media-libs/gexiv2 media-libs/gsound media-plugins/gst-plugins-opus net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp net-libs/libnma net-libs/rest net-libs/telepathy-glib net-libs/webkit-gtk net-print/cups-pk-helper sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/wxGTK x11-misc/xdg-user-dirs-gtk
 requires:
   - category: "layers"
     name: "X"
@@ -146,6 +146,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: rest
+    category: net-libs
+    version: '>=0'
+  - name: telepathy-glib
     category: net-libs
     version: '>=0'
   - name: webkit-gtk

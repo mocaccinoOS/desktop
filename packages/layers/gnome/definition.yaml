@@ -213,9 +213,6 @@ provides:
   - name: liboauth
     category: net-libs
     version: '>=0'
-  - name: telepathy-glib
-    category: net-libs
-    version: '>=0'
   - name: dleyna-server
     category: net-misc
     version: '>=0'
