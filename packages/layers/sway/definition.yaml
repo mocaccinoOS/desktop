@@ -6,7 +6,7 @@ labels:
   emerge.packages: >-
     gui-apps/swaybg gui-apps/swayidle gui-apps/swaylock gui-wm/sway sys-libs/basu
 requires:
-  - category: "layers"
+  - category: "apps"
     name: "wlroots"
     version: ">=0"
   - category: "entity"
