@@ -1,7 +1,6 @@
 app-arch/file-roller -nautilus -packagekit
 app-editors/gedit-plugins terminal
 app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
-dev-libs/folks eds
 dev-libs/libgdata vala
 dev-libs/libgee introspection
 dev-libs/libgweather vala

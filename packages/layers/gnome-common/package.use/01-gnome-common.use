@@ -3,6 +3,7 @@ app-crypt/gcr vala gtk
 # see https://bugs.gentoo.org/570512
 app-crypt/pinentry gnome-keyring
 app-crypt/libsecret crypt introspection vala
+dev-libs/folks eds
 dev-libs/libgdata gnome-online-accounts
 gnome-base/gvfs afp ios samba gnome gdu google gnome-online-accounts fuse archive gnome-keyring mtp nfs udisks
 gnome-base/libgtop introspection
