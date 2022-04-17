@@ -16,10 +16,10 @@ provides:
   - name: editorconfig-core-c
     category: app-text
     version: '>=0'
-  - name: libdbusmenu-qt
+  - name: kdiagram
     category: dev-libs
     version: '>=0'
-  - name: kdiagram
+  - name: libdbusmenu-qt
     category: dev-libs
     version: '>=0'
   - name: plasma-wayland-protocols
@@ -52,13 +52,13 @@ provides:
   - name: breeze-icons
     category: kde-frameworks
     version: '>=0'
+  - name: extra-cmake-modules
+    category: kde-frameworks
+    version: '>=0'
   - name: kactivities
     category: kde-frameworks
     version: '>=0'
   - name: kactivities-stats
-    category: kde-frameworks
-    version: '>=0'
-  - name: extra-cmake-modules
     category: kde-frameworks
     version: '>=0'
   - name: karchive
@@ -178,6 +178,9 @@ provides:
   - name: kplotting
     category: kde-frameworks
     version: '>=0'
+  - name: kpty
+    category: kde-frameworks
+    version: '>=0'
   - name: kross
     category: kde-frameworks
     version: '>=0'
@@ -191,9 +194,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: ktextwidgets
-    category: kde-frameworks
-    version: '>=0'
-  - name: kpty
     category: kde-frameworks
     version: '>=0'
   - name: kunitconversion
