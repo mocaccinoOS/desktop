@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 21.04.3+90
+version: 21.04.3+92
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -12,9 +12,6 @@ requires:
 provides:
   - name: paperkey
     category: app-crypt
-    version: '>=0'
-  - name: kdiagram
-    category: dev-libs
     version: '>=0'
   - name: akonadi
     category: kde-apps
@@ -174,9 +171,6 @@ provides:
     version: '>=0'
   - name: pimcommon
     category: kde-apps
-    version: '>=0'
-  - name: kcalendarcore
-    category: kde-frameworks
     version: '>=0'
   - name: kdav
     category: kde-frameworks

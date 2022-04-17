@@ -1,10 +1,6 @@
 app-arch/file-roller -nautilus -packagekit
 app-editors/gedit-plugins terminal
 app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
-dev-libs/folks eds
-dev-libs/libgdata vala
-dev-libs/libgee introspection
-dev-libs/libgweather vala
 dev-libs/libgusb vala
 dev-lua/lpeg luajit
 gnome-base/gdm gnome-keyring smartcard accessibility fprint -plymouth
@@ -12,7 +8,6 @@ gnome-base/gnome -extras -accessibility
 gnome-base/gnome-control-center networkmanager input_devices_wacom
 gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
 gnome-base/nautilus gnome sendto
-gnome-extra/evolution-data-server oauth kerberos vala
 media-gfx/eog-plugins flickr
 media-libs/gsound vala
 media-libs/libmediaart -qt5

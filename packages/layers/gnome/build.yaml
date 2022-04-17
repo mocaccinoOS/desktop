@@ -4,13 +4,11 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
+{{ template "portage_prelude_build" . }}
 steps:
-- groupadd -g 32 gdm
-- useradd -g 32 -u 32 gdm
 - mkdir -p /var/lib/gdm/.config
 - touch /var/lib/gdm/.config/.keep
 {{ template "portage_build" . }}
-- emerge -C app-misc/jq
 - chown -R 32:32 /var/lib/gdm
 requires:
 - category: "layers"

@@ -78,7 +78,6 @@ dev-lang/rakudo moar
 dev-libs/apr-util openssl
 dev-libs/botan threads -gmp
 dev-libs/c-blosc hdf5
-dev-libs/gmime smime -mono
 dev-libs/libjcat gpg pkcs7
 dev-libs/libdazzle vala
 dev-libs/libf2c static-libs

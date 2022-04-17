@@ -1,15 +1,15 @@
 category: "apps"
-name: "slim"
-version: 1.3.6+121
+name: "geary"
+version: 40.0+3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    x11-misc/slim
+    mail-client/geary
 provides:
-  - name: slim
-    category: x11-misc
+  - name: geary
+    category: mail-client
     version: '>=0'
 requires:
   - category: "layers"
-    name: "X"
+    name: "gnome-common"
     version: ">=0"

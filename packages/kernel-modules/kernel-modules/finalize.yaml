@@ -4,3 +4,6 @@ install:
   do
     depmod -a $KER
   done
+{{ if contains "nvidia" .Values.name }}
+- mocaccino-dracut --rebuild-all
+{{ end }}
