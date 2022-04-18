@@ -226,15 +226,6 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
-  - name: accounts-qml
-    category: net-libs
-    version: '>=0'
-  - name: accounts-qt
-    category: net-libs
-    version: '>=0'
-  - name: libaccounts-glib
-    category: net-libs
-    version: '>=0'
   - name: mailutils
     category: net-mail
     version: '>=0'
