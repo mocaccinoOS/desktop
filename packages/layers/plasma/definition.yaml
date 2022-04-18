@@ -61,9 +61,6 @@ provides:
   - name: bluez-qt
     category: kde-frameworks
     version: '>=0'
-  - name: countryflags
-    category: kde-frameworks
-    version: '>=0'
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
