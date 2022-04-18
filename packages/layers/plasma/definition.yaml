@@ -76,9 +76,6 @@ provides:
   - name: kjs
     category: kde-frameworks
     version: '>=0'
-  - name: kquickcharts
-    category: kde-frameworks
-    version: '>=0'
   - name: modemmanager-qt
     category: kde-frameworks
     version: '>=0'
