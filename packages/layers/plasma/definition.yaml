@@ -70,9 +70,6 @@ provides:
   - name: kdelibs4support
     category: kde-frameworks
     version: '>=0'
-  - name: kemoticons
-    category: kde-frameworks
-    version: '>=0'
   - name: kholidays
     category: kde-frameworks
     version: '>=0'
