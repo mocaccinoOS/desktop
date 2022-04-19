@@ -73,9 +73,6 @@ provides:
   - name: khtml
     category: kde-frameworks
     version: '>=0'
-  - name: kjs
-    category: kde-frameworks
-    version: '>=0'
   - name: modemmanager-qt
     category: kde-frameworks
     version: '>=0'
