@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 21.04.3+92
+version: 21.04.3+93
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -137,9 +137,6 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: libkdepim
-    category: kde-apps
-    version: '>=0'
-  - name: libkgapi
     category: kde-apps
     version: '>=0'
   - name: libkleo

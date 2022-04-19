@@ -1,10 +1,10 @@
 category: "layers"
 name: "plasma"
-version: 5.23.5+25
+version: 5.23.5+26
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    kde-plasma/plasma-meta
+    kde-apps/kaccounts-providers kde-apps/libkgapi kde-plasma/plasma-meta kde-misc/kio-gdrive net-libs/signon-ui
 requires:
   - category: "layers"
     name: "kde-common"
@@ -52,6 +52,12 @@ provides:
   - name: kaccounts-integration
     category: kde-apps
     version: '>=0'
+  - name: kaccounts-providers
+    category: kde-apps
+    version: '>=0'
+  - name: libkgapi
+    category: kde-apps
+    version: '>=0'
   - name: khelpcenter
     category: kde-apps
     version: '>=0'
@@ -61,16 +67,10 @@ provides:
   - name: bluez-qt
     category: kde-frameworks
     version: '>=0'
-  - name: countryflags
-    category: kde-frameworks
-    version: '>=0'
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
   - name: kdelibs4support
-    category: kde-frameworks
-    version: '>=0'
-  - name: kemoticons
     category: kde-frameworks
     version: '>=0'
   - name: kholidays
@@ -82,9 +82,6 @@ provides:
   - name: kjs
     category: kde-frameworks
     version: '>=0'
-  - name: kquickcharts
-    category: kde-frameworks
-    version: '>=0'
   - name: modemmanager-qt
     category: kde-frameworks
     version: '>=0'
@@ -93,6 +90,9 @@ provides:
     version: '>=0'
   - name: purpose
     category: kde-frameworks
+    version: '>=0'
+  - name: kio-gdrive
+    category: kde-misc
     version: '>=0'
   - name: bluedevil
     category: kde-plasma
@@ -226,13 +226,7 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
-  - name: accounts-qml
-    category: net-libs
-    version: '>=0'
-  - name: accounts-qt
-    category: net-libs
-    version: '>=0'
-  - name: libaccounts-glib
+  - name: signon-ui
     category: net-libs
     version: '>=0'
   - name: mailutils
