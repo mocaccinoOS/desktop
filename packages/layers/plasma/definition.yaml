@@ -4,7 +4,7 @@ version: 5.23.5+26
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    kde-apps/libkgapi kde-plasma/plasma-meta
+    kde-apps/libkgapi kde-plasma/plasma-meta net-libs/signon-ui
 requires:
   - category: "layers"
     name: "kde-common"
@@ -219,6 +219,9 @@ provides:
     version: '>=0'
   - name: phonon-vlc
     category: media-libs
+    version: '>=0'
+  - name: signon-ui
+    category: net-libs
     version: '>=0'
   - name: mailutils
     category: net-mail
