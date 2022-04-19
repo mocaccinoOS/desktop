@@ -4,7 +4,7 @@ version: 5.23.5+26
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    kde-apps/kaccounts-providers kde-apps/libkgapi kde-plasma/plasma-meta net-libs/signon-ui
+    kde-apps/kaccounts-providers kde-apps/libkgapi kde-plasma/plasma-meta kde-misc/kio-gdrive net-libs/signon-ui
 requires:
   - category: "layers"
     name: "kde-common"
@@ -90,6 +90,9 @@ provides:
     version: '>=0'
   - name: purpose
     category: kde-frameworks
+    version: '>=0'
+  - name: kio-gdrive
+    category: kde-misc
     version: '>=0'
   - name: bluedevil
     category: kde-plasma
