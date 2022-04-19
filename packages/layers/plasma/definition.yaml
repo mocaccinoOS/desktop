@@ -1,10 +1,10 @@
 category: "layers"
 name: "plasma"
-version: 5.23.5+25
+version: 5.23.5+26
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    kde-plasma/plasma-meta
+    kde-apps/libkgapi kde-plasma/plasma-meta
 requires:
   - category: "layers"
     name: "kde-common"
@@ -50,6 +50,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: kaccounts-integration
+    category: kde-apps
+    version: '>=0'
+  - name: libkgapi
     category: kde-apps
     version: '>=0'
   - name: khelpcenter
