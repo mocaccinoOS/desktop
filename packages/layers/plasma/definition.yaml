@@ -70,9 +70,6 @@ provides:
   - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
-  - name: kholidays
-    category: kde-frameworks
-    version: '>=0'
   - name: khtml
     category: kde-frameworks
     version: '>=0'
