@@ -256,7 +256,7 @@ packages:
     version: 2+7
   - category: "layers"
     name: "firmware-tigon"
-    version: 2+6
+    version: 2+7
   - category: "layers"
     name: "firmware-ueagle-atm"
     version: 2+6
