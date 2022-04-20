@@ -199,7 +199,7 @@ packages:
     version: 2+7
   - category: "layers"
     name: "firmware-qcom"
-    version: 2+6
+    version: 2+7
   - category: "layers"
     name: "firmware-qed"
     version: 2+6
