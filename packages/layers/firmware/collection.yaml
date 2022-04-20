@@ -151,7 +151,7 @@ packages:
     version: 2+7
   - category: "layers"
     name: "firmware-keyspan"
-    version: 2+6
+    version: 2+7
   - category: "layers"
     name: "firmware-keyspan_pda"
     version: 2+6
