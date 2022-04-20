@@ -49,9 +49,6 @@ provides:
   - name: xapian
     category: dev-libs
     version: '>=0'
-  - name: kaccounts-integration
-    category: kde-apps
-    version: '>=0'
   - name: kaccounts-providers
     category: kde-apps
     version: '>=0'
@@ -234,9 +231,6 @@ provides:
     version: '>=0'
   - name: libqalculate
     category: sci-libs
-    version: '>=0'
-  - name: smartmontools
-    category: sys-apps
     version: '>=0'
   - name: cryfs
     category: sys-fs
