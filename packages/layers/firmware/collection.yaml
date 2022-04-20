@@ -130,7 +130,7 @@ packages:
     version: 2+7
   - category: "layers"
     name: "firmware-go7007"
-    version: 2+6
+    version: 2+7
   - category: "layers"
     name: "firmware-i915"
     version: 2+6
