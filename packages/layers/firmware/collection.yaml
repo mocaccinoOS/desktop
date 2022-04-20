@@ -49,7 +49,7 @@ packages:
     version: 2+6
   - category: "layers"
     name: "firmware-3com"
-    version: 2+6
+    version: 2+7
   - category: "layers"
     name: "firmware-advansys"
     version: 2+6
