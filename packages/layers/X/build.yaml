@@ -1,6 +1,5 @@
 excludes:
 {{ template "portage_excludes" }}
-- ^/etc/sasl2/sasldb2
 - ^/usr/share/icons/hicolor/icon-theme.cache
 - ^/var/spool/cups/tmp/
 env:
