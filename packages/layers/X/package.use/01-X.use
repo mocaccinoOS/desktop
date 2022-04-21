@@ -16,7 +16,6 @@ dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
 dev-python/pygobject introspection
 dev-python/pyudev -qt5
-mail-mta/postfix mbox sasl
 media-fonts/noto -cjk
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
