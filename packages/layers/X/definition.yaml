@@ -61,12 +61,6 @@ provides:
   - name: netdev
     category: acct-group
     version: '>=0'
-  - name: postdrop
-    category: acct-group
-    version: '>=0'
-  - name: postfix
-    category: acct-group
-    version: '>=0'
   - name: scanner
     category: acct-group
     version: '>=0'
@@ -77,9 +71,6 @@ provides:
     category: acct-user
     version: '>=0'
   - name: colord
-    category: acct-user
-    version: '>=0'
-  - name: postfix
     category: acct-user
     version: '>=0'
   - name: saned
