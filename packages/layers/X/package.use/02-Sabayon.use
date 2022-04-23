@@ -367,7 +367,6 @@ net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 media-libs/libmng static-libs
 media-libs/babl introspection
-net-libs/gtk-vnc gtk3
 media-libs/avidemux-core vaapi vdpau
 media-libs/xine-lib vaapi vdpau
 media-tv/kodi vaapi vdpau

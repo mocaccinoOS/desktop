@@ -1,5 +1,6 @@
 kde-apps/kio-extras mtp samba taglib
 kde-frameworks/kfilemetadata taglib
 kde-frameworks/kitemmodels qml
+kde-frameworks/prison qml
 kde-frameworks/sonnet qml
 media-libs/phonon -vlc

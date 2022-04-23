@@ -1,16 +1,22 @@
 category: "layers"
 name: "sys-fs"
-version: 0.8+1
+version: 0.8+3
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-arch/snappy app-cdr/cdrtools app-crypt/mit-krb5 app-pda/libplist app-pda/libusbmuxd dev-db/lmdb dev-db/mariadb dev-db/mariadb-connector-c dev-db/unixODBC dev-libs/chmlib dev-libs/crypto++ dev-libs/ell dev-libs/geoip dev-libs/libatasmart dev-libs/libburn dev-libs/libbytesize dev-libs/libev dev-libs/libfmt dev-libs/libical dev-libs/libisofs dev-libs/libnl dev-libs/libsodium dev-libs/libtommath dev-libs/libudfread dev-libs/libusb-compat dev-libs/libverto dev-libs/libzip dev-libs/pugixml dev-libs/userspace-rcu dev-libs/yajl dev-python/setproctitle media-libs/musicbrainz net-analyzer/traceroute net-dialup/linux-atm net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-nds/rpcbind net-fs/libnfs net-fs/nfs-utils net-fs/samba net-fs/sshfs net-libs/libasyncns net-libs/libmbim net-libs/libnatpmp net-libs/libndp net-libs/libnetfilter_conntrack net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libqmi net-libs/libssh net-libs/libssh2 net-libs/libtorrent-rasterbar net-libs/libupnp net-libs/miniupnpc net-libs/neon net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-nds/openldap net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant sys-apps/gptfdisk sys-apps/keyutils sys-apps/pcsc-lite sys-apps/tcp-wrappers sys-block/parted sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/exfat-utils sys-fs/f2fs-tools sys-fs/fuse-exfat sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/mdadm sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g sys-fs/squashfs-tools sys-fs/udisks sys-fs/zfs sys-libs/cracklib sys-libs/ldb sys-libs/libblockdev sys-libs/libraw1394 sys-libs/libunwind sys-libs/liburing sys-libs/talloc sys-libs/tdb sys-libs/tevent sys-process/lsof virtual/libusb virtual/mysql
+    app-arch/snappy app-cdr/cdrtools app-crypt/mit-krb5 app-pda/libplist app-pda/libusbmuxd dev-db/lmdb dev-db/mariadb dev-db/mariadb-connector-c dev-db/unixODBC dev-libs/chmlib dev-libs/crypto++ dev-libs/cyrus-sasl dev-libs/ell dev-libs/geoip dev-libs/libatasmart dev-libs/libburn dev-libs/libbytesize dev-libs/libev dev-libs/libfmt dev-libs/libical dev-libs/libisofs dev-libs/libnl dev-libs/libsodium dev-libs/libtommath dev-libs/libudfread dev-libs/libusb-compat dev-libs/libverto dev-libs/libzip dev-libs/pugixml dev-libs/userspace-rcu dev-libs/yajl dev-python/setproctitle mail-mta/postfix media-libs/musicbrainz net-analyzer/traceroute net-dialup/linux-atm net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-dns/libidn net-nds/rpcbind net-fs/libnfs net-fs/nfs-utils net-fs/samba net-fs/sshfs net-libs/libasyncns net-libs/libmbim net-libs/libnatpmp net-libs/libndp net-libs/libnetfilter_conntrack net-libs/libpcap net-libs/libproxy net-libs/libpsl net-libs/libqmi net-libs/libssh net-libs/libssh2 net-libs/libtorrent-rasterbar net-libs/libupnp net-libs/miniupnpc net-libs/neon net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-nds/openldap net-vpn/openfortivpn net-vpn/openvpn net-wireless/bluez net-wireless/crda net-wireless/wireless-regdb net-wireless/wireless-tools net-wireless/wpa_supplicant sys-apps/gptfdisk sys-apps/keyutils sys-apps/pcsc-lite sys-apps/smartmontools sys-apps/tcp-wrappers sys-block/parted sys-fs/btrfs-progs sys-fs/compsize sys-fs/dmraid sys-fs/dosfstools sys-fs/duperemove sys-fs/exfat-utils sys-fs/f2fs-tools sys-fs/fuse-exfat sys-fs/fuse:0 sys-fs/fuse:3 sys-fs/mdadm sys-fs/mtools sys-fs/multipath-tools sys-fs/ntfs3g sys-fs/squashfs-tools sys-fs/udisks sys-fs/zfs sys-libs/cracklib sys-libs/ldb sys-libs/libblockdev sys-libs/libraw1394 sys-libs/libunwind sys-libs/liburing sys-libs/talloc sys-libs/tdb sys-libs/tevent sys-process/lsof virtual/libusb virtual/mta virtual/mysql
 requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
   - category: "entity"
     name: "ldap"
+    version: ">=0"
+  - name: postfix
+    category: entity
+    version: ">=0"
+  - name: postdrop
+    category: entity
     version: ">=0"
   - category: "entity"
     name: "mysql"
@@ -100,6 +106,9 @@ provides:
   - name: crypto++
     category: dev-libs
     version: '>=0'
+  - name: cyrus-sasl
+    category: dev-libs
+    version: '>=0'
   - name: ell
     category: dev-libs
     version: '>=0'
@@ -186,6 +195,9 @@ provides:
     version: '>=0'
   - name: gdbus-codegen
     category: dev-util
+    version: '>=0'
+  - name: postfix
+    category: mail-mta
     version: '>=0'
   - name: musicbrainz
     category: media-libs
@@ -322,6 +334,9 @@ provides:
   - name: pcsc-lite
     category: sys-apps
     version: '>=0'
+  - name: smartmontools
+    category: sys-apps
+    version: '>=0'
   - name: tcp-wrappers
     category: sys-apps
     version: '>=0'
@@ -416,6 +431,9 @@ provides:
     category: sys-process
     version: '>=0'
   - name: krb5
+    category: virtual
+    version: '>=0'
+  - name: mta
     category: virtual
     version: '>=0'
   - name: mysql

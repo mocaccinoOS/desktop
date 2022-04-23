@@ -2,6 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 - ^/run
 - ^/etc/openldap/ssl/ldap.*
+- ^/etc/sasl2/sasldb2
 env:
 {{ template "portage_env" . }}
 prelude:
