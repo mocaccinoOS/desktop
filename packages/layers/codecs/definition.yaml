@@ -1,15 +1,18 @@
 category: "layers"
 name: "codecs"
-version: 5+28
+version: 6+1
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-arch/brotli app-i18n/uchardet app-text/iso-codes app-text/libwpd app-text/libwpg dev-libs/imath dev-libs/libcdio dev-libs/libcdio-paranoia dev-libs/libebml dev-libs/librevenge dev-util/glslang dev-util/spirv-tools media-gfx/exiv2 media-gfx/potrace media-libs/a52dec media-libs/aalib media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/exiftool media-libs/faac media-libs/fdk-aac media-libs/flac media-libs/giflib media-libs/graphene media-libs/gstreamer media-libs/jbig2dec media-libs/lcms media-libs/lensfun media-libs/libart_lgpl media-libs/libcddb media-libs/libcuefile media-libs/libcdr media-libs/libcue media-libs/libdvbpsi media-libs/libdvdnav media-libs/libdvdread media-libs/libexif media-libs/libid3tag media-libs/libjpeg-turbo media-libs/libmad media-libs/libmatroska media-libs/libmms media-libs/libmodplug media-libs/libmtp media-libs/libogg media-libs/libraw media-libs/libreplaygain media-libs/libsamplerate media-libs/libsndfile media-libs/libtheora media-libs/libv4l media-libs/libvorbis media-libs/libvpx media-libs/opencore-amr media-libs/openexr:0 media-libs/openh264 media-libs/openjpeg media-libs/opus media-libs/opusfile media-libs/portaudio media-libs/sbc media-libs/shaderc media-libs/soxr media-libs/speex media-libs/speexdsp media-libs/taglib media-libs/tiff media-libs/vidstab media-libs/webrtc-audio-processing media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-libs/zxing-cpp media-plugins/live media-sound/alac_decoder media-sound/cdparanoia media-sound/gsm media-sound/jack2 media-sound/lame media-sound/musepack-tools media-sound/wavpack media-video/mjpegtools sci-libs/fftw
+    app-arch/brotli app-i18n/uchardet app-text/iso-codes app-text/libwpd app-text/libwpg dev-libs/imath dev-libs/libcdio dev-libs/libcdio-paranoia dev-libs/libebml dev-libs/librevenge dev-util/glslang dev-util/spirv-tools media-gfx/exiv2 media-gfx/potrace media-libs/a52dec media-libs/aalib media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/dav1d media-libs/exiftool media-libs/faac media-libs/fdk-aac media-libs/flac media-libs/giflib media-libs/graphene media-libs/gstreamer media-libs/jbig2dec media-libs/lcms media-libs/lensfun media-libs/libart_lgpl media-libs/libcddb media-libs/libcuefile media-libs/libcdr media-libs/libcue media-libs/libdvbpsi media-libs/libdvdnav media-libs/libdvdread media-libs/libexif media-libs/libid3tag media-libs/libjpeg-turbo media-libs/libmad media-libs/libmatroska media-libs/libmms media-libs/libmodplug media-libs/libmtp media-libs/libogg media-libs/libraw media-libs/libreplaygain media-libs/libsamplerate media-libs/libsndfile media-libs/libtheora media-libs/libv4l media-libs/libvorbis media-libs/libvpx media-libs/opencore-amr media-libs/openexr:0 media-libs/openh264 media-libs/openjpeg media-libs/opus media-libs/opusfile media-libs/portaudio media-libs/sbc media-libs/shaderc media-libs/soxr media-libs/speex media-libs/speexdsp media-libs/taglib media-libs/tiff media-libs/vidstab media-libs/webrtc-audio-processing media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-libs/zxing-cpp media-plugins/live media-sound/alac_decoder media-sound/cdparanoia media-sound/gsm media-sound/jack2 media-sound/lame media-sound/musepack-tools media-sound/wavpack media-video/mjpegtools media-video/pipewire sci-libs/fftw
 requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
   - name: realtime
+    category: entity
+    version: ">=0"
+  - name: pipewire
     category: entity
     version: ">=0"
 provides:
