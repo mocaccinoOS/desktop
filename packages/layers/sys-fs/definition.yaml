@@ -43,6 +43,12 @@ provides:
   - name: pcscd
     category: acct-group
     version: '>=0'
+  - name: postdrop
+    category: acct-group
+    version: '>=0'
+  - name: postfix
+    category: acct-group
+    version: '>=0'
   - name: usb
     category: acct-group
     version: '>=0'
@@ -62,6 +68,9 @@ provides:
     category: acct-user
     version: '>=0'
   - name: pcscd
+    category: acct-user
+    version: '>=0'
+  - name: postfix
     category: acct-user
     version: '>=0'
   - name: snappy
@@ -286,6 +295,9 @@ provides:
   - name: rpcsvc-proto
     category: net-libs
     version: '>=0'
+  - name: mailutils
+    category: net-mail
+    version: '>=0'
   - name: dhcp
     category: net-misc
     version: '>=0'
@@ -431,6 +443,9 @@ provides:
     category: sys-process
     version: '>=0'
   - name: krb5
+    category: virtual
+    version: '>=0'
+  - name: mailx
     category: virtual
     version: '>=0'
   - name: mta
