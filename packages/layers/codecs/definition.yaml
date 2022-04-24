@@ -286,6 +286,9 @@ provides:
   - name: mjpegtools
     category: media-video
     version: '>=0'
+  - name: pipewire
+    category: media-video
+    version: '>=0'
   - name: fftw
     category: sci-libs
     version: '>=0'
