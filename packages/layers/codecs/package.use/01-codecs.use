@@ -7,6 +7,7 @@ media-libs/libvpx postproc svc
 media-libs/opus custom-modes
 media-libs/tiff cxx jpeg lzma zlib
 media-video/mjpegtools -gtk
+media-video/pipewire pipewire-alsa -X
 sci-libs/fftw threads
 virtual/jpeg static-libs
 x11-libs/gdk-pixbuf introspection jpeg
