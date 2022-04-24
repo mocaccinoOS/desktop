@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+46
+    version: 0+47
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
@@ -32,7 +32,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+52
+    version: 0+53
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
