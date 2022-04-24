@@ -127,7 +127,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "4"
   emerge.packages: >-
-    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/docutils dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/six dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-kernel/dracut sys-process/cronie
+    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/docutils dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/six dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-kernel/dracut sys-process/cronie
 provides:
   - name: adm
     category: acct-group
@@ -372,6 +372,9 @@ provides:
   - name: eselect-lib-bin-symlink
     category: app-eselect
     version: '>=0'
+  - name: eselect-lua
+    category: app-eselect
+    version: '>=0'
   - name: eselect-pinentry
     category: app-eselect
     version: '>=0'
@@ -464,6 +467,9 @@ provides:
     version: '>=0'
   - name: sqlite
     category: dev-db
+    version: '>=0'
+  - name: lua
+    category: dev-lang
     version: '>=0'
   - name: perl
     category: dev-lang
