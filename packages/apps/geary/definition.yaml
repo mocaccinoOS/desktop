@@ -1,6 +1,6 @@
 category: "apps"
 name: "geary"
-version: 40.0+4
+version: 40.0+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

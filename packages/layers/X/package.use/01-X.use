@@ -6,7 +6,6 @@ app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-T
 app-text/poppler jpeg2k -qt5
 app-text/texlive-core xetex
 app-text/xmlto text
-dev-lang/lua deprecated
 dev-lang/luajit lua52compat
 dev-libs/appstream -qt5
 dev-libs/atk introspection
