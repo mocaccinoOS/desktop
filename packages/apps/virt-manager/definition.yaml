@@ -1,6 +1,6 @@
 category: "apps"
 name: "virt-manager"
-version: 3.2.0+25
+version: 3.2.0+26
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
