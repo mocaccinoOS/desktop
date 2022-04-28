@@ -43,7 +43,6 @@ excludes:
 - ^/etc/udev/hwdb.bin
 - ^/etc/ld.so.cache
 - ^/etc/localtime
-- ^/etc/portage
 - ^/etc/profile.env
 - ^/etc/csh.env
 - ^/etc/subgid
