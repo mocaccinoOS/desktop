@@ -1,6 +1,6 @@
 category: "layers"
 name: "sway"
-version: 1.7+7
+version: 1.7+8
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

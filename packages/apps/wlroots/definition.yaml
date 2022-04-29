@@ -1,6 +1,6 @@
 category: "apps"
 name: "wlroots"
-version: 0.15.0+6
+version: 0.15.0+7
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
