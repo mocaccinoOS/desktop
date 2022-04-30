@@ -18,7 +18,6 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
     PACKAGE_VERSION=$(echo "$i" | jq -r ".version")
     PACKAGE_VERSION=${PACKAGE_VERSION//\+/\-}
     PACKAGE=$PACKAGE_NAME-$PACKAGE_CATEGORY-$PACKAGE_VERSION           
-    echo "Checking quay.io/mocaccino/desktop:$PACKAGE"
     if ! luet util image-exist "quay.io/mocaccino/desktop:$PACKAGE"; then
        echo "$PACKAGE_CATEGORY/$PACKAGE_NAME missing"
        error="missing package"
