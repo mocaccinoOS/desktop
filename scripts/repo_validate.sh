@@ -22,7 +22,6 @@ for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
        echo "$PACKAGE_CATEGORY/$PACKAGE_NAME missing"
        error="missing package"
     fi
-    echo "Checking quay.io/mocaccino/desktop:$PACKAGE.metadata.yaml"
     if ! luet util image-exist "quay.io/mocaccino/desktop:$PACKAGE.metadata.yaml"; then
        echo "$PACKAGE_CATEGORY/$PACKAGE_NAME metadata missing"
        error="missing package"
