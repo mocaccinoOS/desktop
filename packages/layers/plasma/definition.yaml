@@ -28,10 +28,16 @@ provides:
   - name: nm-openconnect
     category: acct-group
     version: '>=0'
+  - name: sddm
+    category: acct-group
+    version: '>=0'
   - name: tss
     category: acct-group
     version: '>=0'
   - name: nm-openconnect
+    category: acct-user
+    version: '>=0'
+  - name: sddm
     category: acct-user
     version: '>=0'
   - name: tss
@@ -55,10 +61,10 @@ provides:
   - name: kaccounts-providers
     category: kde-apps
     version: '>=0'
-  - name: libkgapi
+  - name: khelpcenter
     category: kde-apps
     version: '>=0'
-  - name: khelpcenter
+  - name: libkgapi
     category: kde-apps
     version: '>=0'
   - name: baloo
@@ -214,14 +220,8 @@ provides:
   - name: hack
     category: media-fonts
     version: '>=0'
-  - name: phonon-vlc
-    category: media-libs
-    version: '>=0'
   - name: signon-ui
     category: net-libs
-    version: '>=0'
-  - name: mailutils
-    category: net-mail
     version: '>=0'
   - name: socat
     category: net-misc
@@ -238,14 +238,8 @@ provides:
   - name: libqalculate
     category: sci-libs
     version: '>=0'
-  - name: smartmontools
-    category: sys-apps
-    version: '>=0'
   - name: cryfs
     category: sys-fs
-    version: '>=0'
-  - name: mailx
-    category: virtual
     version: '>=0'
   - name: appmenu-gtk-module
     category: x11-misc
