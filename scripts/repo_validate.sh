@@ -1,7 +1,7 @@
 #!/bin/bash
 
 out="$(luet search -o json | luet filter)"
-excludes="${EXCLUDES:-runit|kernel|skopeo|system\/luet|mocaccino-release}"
+excludes="${EXCLUDES:-runit|kernel|skopeo|system\/luet|mocaccino-release|default-protect}"
 
 error=
 
