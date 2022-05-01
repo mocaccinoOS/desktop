@@ -70,7 +70,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-ath6k"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-ath9k_htc"
     version: 2+9
