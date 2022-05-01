@@ -181,7 +181,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-mrvl"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-mwl8k"
     version: 2+9
