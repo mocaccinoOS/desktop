@@ -193,7 +193,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-qca"
     version: 2+9
