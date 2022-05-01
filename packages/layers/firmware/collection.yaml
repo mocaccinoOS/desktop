@@ -160,7 +160,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-liquidio"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-matrox"
     version: 2+9
