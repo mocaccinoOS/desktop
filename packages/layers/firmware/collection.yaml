@@ -109,7 +109,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-cypress"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-dabusb"
     version: 2+9
