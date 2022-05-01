@@ -85,7 +85,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-bnx2"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-bnx2x"
     version: 2+9
