@@ -124,7 +124,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-emi26"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-ene-ub6250"
     version: 2+9
