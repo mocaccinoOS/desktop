@@ -163,7 +163,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-matrox"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-mediatek"
     version: 2+9
