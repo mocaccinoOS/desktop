@@ -247,7 +247,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-ti-keystone"
     version: 2+9
