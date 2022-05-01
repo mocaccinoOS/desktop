@@ -253,7 +253,7 @@ packages:
     version: 2+9
   - category: "layers"
     name: "firmware-ti"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-tigon"
     version: 2+9
