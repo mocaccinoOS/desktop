@@ -91,7 +91,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-brcm"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-cadence"
     version: 2+9
