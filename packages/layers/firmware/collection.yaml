@@ -118,7 +118,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-dsp56k"
-    version: 2+9
+    version: 2+10
   - category: "layers"
     name: "firmware-e100"
     version: 2+9
