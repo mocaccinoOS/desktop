@@ -1,5 +1,4 @@
 app-accessibility/at-spi2-core introspection -X
-app-crypt/p11-kit asn1 libffi trust
 app-i18n/ibus dconf gtk vala -emoji -gtk2
 app-text/enchant aspell
 app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
