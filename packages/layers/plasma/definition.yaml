@@ -18,9 +18,6 @@ requires:
   - name: nm-openconnect
     category: entity
     version: ">=0"
-  - name: tss
-    category: entity
-    version: ">=0"
   - category: "entity"
     name: "sddm"
     version: ">=0"
@@ -31,20 +28,11 @@ provides:
   - name: sddm
     category: acct-group
     version: '>=0'
-  - name: tss
-    category: acct-group
-    version: '>=0'
   - name: nm-openconnect
     category: acct-user
     version: '>=0'
   - name: sddm
     category: acct-user
-    version: '>=0'
-  - name: tss
-    category: acct-user
-    version: '>=0'
-  - name: tpm2-tss
-    category: app-crypt
     version: '>=0'
   - name: trousers
     category: app-crypt
