@@ -54,7 +54,7 @@ provides:
     version: '>=0'
   - name: tss
     category: acct-group
-    version: '>=0
+    version: '>=0'
   - name: usb
     category: acct-group
     version: '>=0'
