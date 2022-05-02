@@ -2,7 +2,7 @@ packages:
   - category: "kernel-sources"
     name: "mocaccino-lts-sources"
     hidden: true
-    version: 5.15.32+13
+    version: 5.15.32+14
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
@@ -16,7 +16,7 @@ packages:
   - category: "kernel-sources"
     name: "mocaccino-sources"
     hidden: true
-    version: 5.17.1+13
+    version: 5.17.1+14
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
