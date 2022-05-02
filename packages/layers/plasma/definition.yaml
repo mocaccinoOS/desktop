@@ -34,9 +34,6 @@ provides:
   - name: sddm
     category: acct-user
     version: '>=0'
-  - name: trousers
-    category: app-crypt
-    version: '>=0'
   - name: grantlee
     category: dev-libs
     version: '>=0'
