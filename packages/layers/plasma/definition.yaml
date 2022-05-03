@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.23.5+34
+version: 5.23.5+35
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
