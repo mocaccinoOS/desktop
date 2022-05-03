@@ -18,7 +18,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- source /etc/profile && env-update && MAKEOPTS="-j1" emerge -1 sys-apps/portage
+- emerge -1 sys-apps/portage
 - emerge -1 dev-lang/rust-bin virtual/rust dev-util/ragel && emerge -1 sys-apps/systemd && emerge -1 dev-libs/openssl net-misc/openssh net-misc/curl net-dns/unbound && emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
