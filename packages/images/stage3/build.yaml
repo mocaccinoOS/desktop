@@ -1,5 +1,6 @@
 {{ if ne .Values.image "" }}
 image: {{.Values.image}}
+unpack: true
 {{else}}
 image: "quay.io/mocaccino/extra:latest"
 
