@@ -1,0 +1,26 @@
+category: "apps"
+name: "lutris"
+version: 0.5.10.1+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "games-util/lutris"
+provides:
+  - name: python-evdev
+    category: dev-python
+    version: '>=0'
+  - name: python-magic
+    category: dev-python
+    version: '>=0'
+  - name: lutris
+    category: games-util
+    version: '>=0'
+  - name: fluid-soundfont
+    category: media-sound
+    version: '>=0'
+  - name: xgamma
+    category: x11-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"

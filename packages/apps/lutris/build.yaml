@@ -1,0 +1,17 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.accept_keywords /etc/portage/
+# alter an ebuild
+# see this https://gitweb.gentoo.org/repo/gentoo.git/commit/?id=2f63a06672fc2d739428ceeb6764d4ac2aad6256
+- sed -i '/RDEPEND/d' /var/db/repos/gentoo/dev-python/python-magic/python-magic-*.ebuild
+- ebuild /var/db/repos/gentoo/dev-python/python-magic/python-magic-*.ebuild manifest
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
+requires_final_images: true
