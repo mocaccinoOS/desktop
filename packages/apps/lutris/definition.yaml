@@ -3,7 +3,7 @@ name: "lutris"
 version: 0.5.10.1+1
 labels:
   emerge.jobs: "1"
-  emerge.packages: "games-util/lutris"
+  emerge.packages: "media-sound/fluid-soundfont x11-apps/xgamma dev-python/python-evdev dev-python/python-magic games-util/lutris"
 provides:
   - name: python-evdev
     category: dev-python

@@ -9,7 +9,7 @@ prelude:
 - sed -i '/RDEPEND/d' /var/db/repos/gentoo/dev-python/python-magic/python-magic-*.ebuild
 - ebuild /var/db/repos/gentoo/dev-python/python-magic/python-magic-*.ebuild manifest
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -O -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
   name: "gnome-common"
