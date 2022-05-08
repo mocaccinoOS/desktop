@@ -38,6 +38,7 @@ excludes:
 - ^/etc/machine-id
 - ^/etc/fstab
 - ^/etc/passwd
+- ^/etc/portage
 - ^/etc/machineid
 - ^/etc/udev/hwdb.bin
 - ^/etc/ld.so.cache

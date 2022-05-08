@@ -1,4 +1,5 @@
 app-crypt/mit-krb5 keyutils nls pkinit threads
+app-crypt/p11-kit asn1 libffi trust
 dev-db/mariadb -berkdb client-libs extraengine odbc
 dev-db/mariadb-connector-c kerberos
 dev-libs/libevent ssl threads

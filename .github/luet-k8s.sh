@@ -47,6 +47,7 @@ REPOSITORY_TYPE=${REPOSITORY_TYPE:-http}
 REPOSITORY_URL=${REPOSITORY_URL:-https://get.mocaccino.org/mocaccino-desktop}
 
 create_repo() {
+    set -e
     mkdir build
     for i in $(echo "$PKG_LIST" | jq -rc '.packages[]'); do
         PACKAGE_PATH=$(echo "$i" | jq -r ".path")

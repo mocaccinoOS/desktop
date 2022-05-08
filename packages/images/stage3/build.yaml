@@ -1,3 +1,7 @@
+{{ if ne .Values.image "" }}
+image: {{.Values.image}}
+unpack: true
+{{else}}
 image: "quay.io/mocaccino/extra:latest"
 
 package_dir: /gentoo
@@ -7,18 +11,12 @@ prelude:
 - mkdir /gentoo
 
 steps:
-# TODO: checksum
-
-# Gentoo stage3 are broken due to python threading issues. 
-
-#- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
-
-- curl -L https://gentoo.osuosl.org//releases/amd64/autobuilds/20220320T170531Z/stage3-amd64-systemd-20220320T170531Z.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
 - LUET_YES=true
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
-
+{{end}}
 # Add some common excludes
 excludes:
 - ^/etc/os-release

@@ -1,4 +1,5 @@
 includes:
+- /etc/portage/.*
 - /usr$
 - /usr/include$
 - /usr/include/.*

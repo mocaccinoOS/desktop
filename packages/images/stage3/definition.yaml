@@ -1,9 +1,10 @@
 category: "gentoo"
 name: "stage3"
-version: "0.20220320+1"
+version: "0.20220320+3"
 labels:
-  package.version: "20220320T170531Z"
+  package.version: "20220411T215334Z"
   autobump.strategy: "custom"
   autobump.hook: "wget -4 -O - http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64-systemd.txt --quiet | tail -n 1 | awk 'match($1, /^[0-9a-zA-Z]+/)  { print substr($1, RSTART, RLENGTH) }'"
   autobump.version_hook: "wget -4 -O - http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64-systemd.txt --quiet | tail -n 1 | awk 'match($1, /^[0-9]+/)  { print substr($1, RSTART, RLENGTH) }'"
 hidden: true
+image: "quay.io/mocaccino/desktop:stage3-gentoo-0.20220320-1"

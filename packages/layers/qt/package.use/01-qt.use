@@ -9,8 +9,8 @@ dev-qt/qtbluetooth qml
 dev-qt/qtcharts qml
 dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
-dev-qt/qtdeclarative jit widgets
-dev-qt/qtgui:5 accessibility egl ibus jpeg libinput png udev
+dev-qt/qtdeclarative jit widgets vulkan
+dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtnetwork ssl
 dev-qt/qtquickcontrols:5 widgets
@@ -22,6 +22,7 @@ dev-qt/qtsql mysql
 dev-qt/qtvirtualkeyboard spell
 dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
+dev-qt/qtwayland vulkan
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine geolocation kerberos system-icu widgets -system-ffmpeg
 net-libs/nodejs icu inspector

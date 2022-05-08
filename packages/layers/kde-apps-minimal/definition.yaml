@@ -1,10 +1,10 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 20.12.3+106
+version: 20.12.3+112
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-text/ebook-tools kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kipi-plugins kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/krdc kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite sys-block/partitionmanager
+    app-text/ebook-tools kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kmag kde-apps/kmousetool kde-apps/knetwalk kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/krdc kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/skanlite sys-block/partitionmanager
 requires:
   - category: "layers"
     name: "plasma"
@@ -52,9 +52,6 @@ provides:
   - name: kfind
     category: kde-apps
     version: '>=0'
-  - name: kipi-plugins
-    category: kde-apps
-    version: '>=0'
   - name: kmag
     category: kde-apps
     version: '>=0'
@@ -86,9 +83,6 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: libkdegames
-    category: kde-apps
-    version: '>=0'
-  - name: libkipi
     category: kde-apps
     version: '>=0'
   - name: okular
