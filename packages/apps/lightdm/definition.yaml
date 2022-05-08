@@ -1,6 +1,6 @@
 category: "apps"
 name: "lightdm"
-version: 1.30.0+130
+version: 1.30.0+131
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
