@@ -14,6 +14,9 @@ requires:
   - category: "entity"
     name: "gdm"
     version: ">=0"
+  - category: "pulse-access"
+    name: "gdm"
+    version: ">=0"
 provides:
   - name: brlapi
     category: acct-group
