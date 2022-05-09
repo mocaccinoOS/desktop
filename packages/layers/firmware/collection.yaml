@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+12
+    version: 2+13
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
