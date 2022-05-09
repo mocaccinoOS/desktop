@@ -94,7 +94,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-cadence"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-cavium"
     version: 2+10
