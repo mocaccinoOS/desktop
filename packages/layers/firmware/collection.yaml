@@ -229,7 +229,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-rtlwifi"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-rtw88"
     version: 2+10
