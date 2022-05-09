@@ -106,7 +106,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-cxgb4"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-cypress"
     version: 2+10
