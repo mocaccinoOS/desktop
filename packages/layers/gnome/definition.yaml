@@ -14,8 +14,8 @@ requires:
   - category: "entity"
     name: "gdm"
     version: ">=0"
-  - category: "pulse-access"
-    name: "gdm"
+  - category: "entity"
+    name: "pulse-access"
     version: ">=0"
 provides:
   - name: brlapi
