@@ -51,7 +51,7 @@ provides:
     version: '>=0'
   - name: libebml
     category: dev-libs
-    version: '>=0'w
+    version: '>=0'
   - name: librevenge
     category: dev-libs
     version: '>=0'
