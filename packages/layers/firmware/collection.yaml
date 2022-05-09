@@ -145,7 +145,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-isci"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-kaweth"
     version: 2+10
