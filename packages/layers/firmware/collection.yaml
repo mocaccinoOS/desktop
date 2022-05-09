@@ -61,7 +61,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-ar3k"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-ath10k"
     version: 2+10
