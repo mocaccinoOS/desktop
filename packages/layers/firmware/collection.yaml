@@ -139,7 +139,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-inside-secure"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-intel"
     version: 2+10
