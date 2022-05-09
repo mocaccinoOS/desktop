@@ -262,4 +262,4 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-vxge"
-    version: 2+10
+    version: 2+11
