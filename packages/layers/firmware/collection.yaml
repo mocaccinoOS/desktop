@@ -220,7 +220,7 @@ packages:
     version: 2+10
   - category: "layers"
     name: "firmware-RTL8192E"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-rtl_bt"
     version: 2+10
