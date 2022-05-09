@@ -54,10 +54,10 @@ sys-devel/gettext acl cxx ncurses nls openmp -git
 # clang wants USE=clang for llvm
 sys-devel/llvm clang
 sys-fs/cryptsetup luks1_default
+sys-fs/e2fsprogs split-usr static-libs
 sys-fs/udev extras
 sys-apps/kmod lzma static-libs
 sys-libs/gdbm berkdb nls readline
-sys-libs/e2fsprogs-libs split-usr static-libs
 sys-libs/libseccomp static-libs
 sys-fs/udev static-libs
 # Use flag dbus is required for evolution
