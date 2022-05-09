@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 5.0.6+29
+version: 5.0.6+30
 labels:
   emerge.jobs: "3"
   emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/distro dev-python/pexpect dev-python/ptyprocess dev-python/pyinotify dev-python/pypam dev-python/python3-xapp dev-python/pytz dev-python/tinycss2 dev-python/webencodings gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo x11-libs/xapp x11-wm/muffin"
