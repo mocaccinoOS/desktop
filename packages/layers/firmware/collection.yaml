@@ -235,7 +235,7 @@ packages:
     version: 2+11
   - category: "layers"
     name: "firmware-silabs"
-    version: 2+10
+    version: 2+11
   - category: "layers"
     name: "firmware-slicoss"
     version: 2+10
