@@ -22,7 +22,7 @@ packages:
       lts.kernel: "true"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 6.1.28+21
+    version: 6.1.28+22
     lts: true
     labels:
       emerge.jobs: "3"
