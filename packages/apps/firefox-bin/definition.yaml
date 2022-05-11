@@ -1,6 +1,6 @@
 category: "apps"
 name: "firefox-bin"
-version: 97.0.1+17
+version: 97.0.1+18
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
