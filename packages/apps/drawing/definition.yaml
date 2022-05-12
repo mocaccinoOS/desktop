@@ -1,6 +1,6 @@
 category: "apps"
 name: "drawing"
-version: 1.0.0+11
+version: 1.0.1+2
 requires:
   - category: "layers"
     name: "X"

@@ -1,0 +1,14 @@
+excludes:
+{{ template "portage_excludes" }}
+prelude:
+- USE="-subversion -mercurial" emerge app-portage/layman
+- layman -L
+- echo "y" | layman -a ROKO__
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-portage/layman dev-python/ssl-fetch
+requires:
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true
