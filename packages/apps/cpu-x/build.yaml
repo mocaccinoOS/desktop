@@ -4,7 +4,10 @@ prelude:
 # LibCPUID
 - git clone https://github.com/anrieff/libcpuid
 - cd libcpuid
-- libtoolize && autoreconf --install && ./configure && make -j`nproc`
+- libtoolize
+- autoreconf --install
+- ./configure
+- make -j`nproc`
 # CPU-X
 - git clone https://github.com/X0rg/CPU-X.git CPU-X && cd $_
 - cmake -B build -DCMAKE_BUILD_TYPE=Release
