@@ -2,6 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 # LibCPUID
+- emerge autoconf automake
 - git clone https://github.com/anrieff/libcpuid --branch v0.4.1
 - cd libcpuid
 - libtoolize
