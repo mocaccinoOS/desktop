@@ -2,7 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 - git clone https://github.com/maoschanz/drawing.git
-- cd drawing && git checkout 2b477b191da431da49fc82f28ad7760df9f1698e && meson build/ && ninja -C build/
+- cd drawing && git checkout eeaed882c3a69796a4af426ea02f8f9f967c0cce && meson build/ && ninja -C build/
 steps:
 - cd drawing && ninja -C build/ install
 requires:

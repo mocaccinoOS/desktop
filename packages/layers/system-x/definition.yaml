@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20220506+2
+version: 0.20220506+3
 gcc_version: "11.2.1"
 category: layers
 requires:
@@ -70,6 +70,9 @@ requires:
     category: entity
     version: ">=0"
   - name: render
+    category: entity
+    version: ">=0"
+  - name: root
     category: entity
     version: ">=0"
   - name: systemd-coredump
@@ -468,6 +471,9 @@ provides:
   - name: sqlite
     category: dev-db
     version: '>=0'
+  - name: duktape
+    category: dev-lang
+    version: '>=0'
   - name: lua
     category: dev-lang
     version: '>=0'
@@ -487,9 +493,6 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: ruby
-    category: dev-lang
-    version: '>=0'
-  - name: spidermonkey
     category: dev-lang
     version: '>=0'
   - name: swig
@@ -613,9 +616,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: npth
-    category: dev-libs
-    version: '>=0'
-  - name: nspr
     category: dev-libs
     version: '>=0'
   - name: openssl
@@ -808,6 +808,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: flit_core
+    category: dev-python
+    version: '>=0'
+  - name: gpep517
     category: dev-python
     version: '>=0'
   - name: idna
@@ -1169,9 +1172,6 @@ provides:
     version: '>=0'
   - name: thin-provisioning-tools
     category: sys-block
-    version: '>=0'
-  - name: autoconf
-    category: sys-devel
     version: '>=0'
   - name: autoconf
     category: sys-devel
