@@ -72,6 +72,9 @@ requires:
   - name: render
     category: entity
     version: ">=0"
+  - name: root
+    category: entity
+    version: ">=0"
   - name: systemd-coredump
     category: entity
     version: ">=0"
