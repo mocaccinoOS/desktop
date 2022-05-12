@@ -1,23 +1,12 @@
 excludes:
 {{ template "portage_excludes" }}
 prelude:
-# LibCPUID
-- emerge autoconf automake
-- git clone https://github.com/anrieff/libcpuid --branch v0.4.1
-- cd libcpuid
-- libtoolize
-- autoreconf --install
-- ./configure
-- make -j`nproc`
-# CPU-X
-- git clone https://github.com/X0rg/CPU-X.git CPU-X && cd $_
-- cmake -B build -DCMAKE_BUILD_TYPE=Release
-- cmake --build build
+- USE="-subversion -mercurial" emerge app-portage/layman
+- layman -L
+- echo "y" | layman -a ROKO__
 steps:
-# Install LibCPUID
-- cd libcpuid && make install
-# Install CPU-X
-- cd CPU-X && cmake --install build
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "buildbase"
   name: "X"
