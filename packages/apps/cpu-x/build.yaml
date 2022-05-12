@@ -2,7 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 # LibCPUID
-- git clone https://github.com/anrieff/libcpuid
+- git clone https://github.com/anrieff/libcpuid --branch 0.5.1
 - cd libcpuid
 - libtoolize
 - autoreconf --install
