@@ -5,7 +5,7 @@ prelude:
 - git clone https://github.com/anrieff/libcpuid --branch v0.5.1
 - cd libcpuid
 - libtoolize
-- autoreconf --install
+# - autoreconf --install
 - ./configure
 - make -j`nproc`
 # CPU-X
