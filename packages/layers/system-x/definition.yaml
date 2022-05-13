@@ -51,6 +51,9 @@ requires:
   - name: messagebus
     category: entity
     version: ">=0"
+  - name: nobody
+    category: entity
+    version: ">=0"
   - name: ntp
     category: entity
     version: ">=0"
