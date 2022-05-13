@@ -2,7 +2,7 @@
 # In a near future this might not be needed anymore because we now ship dev-lang/duktape in layers/system-x
 category: "layers"
 name: "gnome-common"
-version: 0.9+93
+version: 0.9+94
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
