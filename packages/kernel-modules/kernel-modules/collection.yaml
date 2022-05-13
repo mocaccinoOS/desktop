@@ -20,6 +20,10 @@ packages:
     labels:
       emerge.jobs: "3"
       lts.kernel: "true"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 6.1.28+23
@@ -44,6 +48,9 @@ packages:
         category: app-emulation
         version: '>=0'
     requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
       - category: "layers"
         name: "X"
         version: ">=0"
@@ -68,6 +75,9 @@ packages:
         category: x11-drivers
         version: '>=0'
     requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
       - name: nvpd
         category: entity
         version: ">=0"
@@ -89,6 +99,9 @@ packages:
         category: x11-drivers
         version: '>=0'
     requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
       - name: nvpd
         category: entity
         version: ">=0"
@@ -110,6 +123,9 @@ packages:
         category: games-util
         version: '>=0'
     requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
       - category: "layers"
         name: "X"
         version: ">=0"
