@@ -1,5 +1,5 @@
 category: "apps"
-name: "htop"
+name: "bottom"
 version: 0.6.8+1
 labels:
   emerge.jobs: "1"
