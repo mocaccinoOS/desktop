@@ -9,6 +9,8 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+prelude:
+- emerge -1 dev-lang/rust-bin virtual/rust
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
