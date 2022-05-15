@@ -1,0 +1,15 @@
+category: "apps"
+name: "htop"
+version: 0.6.8+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-process/bottom
+provides:
+  - name: bottom
+    category: sys-process
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
