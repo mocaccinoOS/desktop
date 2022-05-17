@@ -1,0 +1,23 @@
+category: "layers"
+name: "budgie"
+version: 10.6.1+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "gnome-extra/budgie-control-center gnome-extra/budgie-screensaver gnome-extra/budgie-screenshot-applet gnome-extra/budgie-desktop"
+provides:
+  - name: budgie-control-center
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screensaver
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screenshot-applet
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-desktop
+    category: gnome-extra
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome"
+    version: ">=0"
