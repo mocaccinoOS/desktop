@@ -1,6 +1,6 @@
 category: "apps"
 name: "lutris"
-version: 0.5.10.1+5
+version: 0.5.10.1+6
 labels:
   emerge.jobs: "1"
   emerge.packages: "media-sound/fluid-soundfont x11-apps/xgamma dev-python/python-evdev dev-python/python-magic games-util/lutris"
