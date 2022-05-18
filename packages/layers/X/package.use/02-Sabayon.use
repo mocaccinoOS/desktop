@@ -330,7 +330,6 @@ www-apps/owncloud mysql postgres sqlite3
 www-apps/phpBB mysqli sqlite
 www-apps/postfixadmin mysql
 www-apps/rt mysql
-www-client/chromium jumbo-build widevine
 www-client/midori sqlite
 www-client/surf savedconfig
 www-client/uget gstreamer aria2
