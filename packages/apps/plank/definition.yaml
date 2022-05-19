@@ -1,6 +1,9 @@
 category: "apps"
 name: "plank"
 version: 0.11.89+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "unity-base/bamf x11-misc/plank"
 requires:
   - category: "layers"
     name: "gnome-common"
