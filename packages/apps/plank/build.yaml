@@ -2,11 +2,10 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 - git clone https://github.com/ricotz/plank.git
-- cd plank && git checkout 27c7863bc0e3def48697f281802a56587baff378 && ./configure && make
+- cd plank && git checkout 27c7863bc0e3def48697f281802a56587baff378 && make
 steps:
 - cd plank && make install
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "layers"
+  name: "gnome-common"
   version: ">=0"
-requires_final_images: true

@@ -3,5 +3,5 @@ name: "plank"
 version: 0.11.89+1
 requires:
   - category: "layers"
-    name: "X"
+    name: "gnome-common"
     version: ">=0"
