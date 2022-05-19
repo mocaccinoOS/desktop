@@ -1,3 +1,4 @@
+dev-libs/dee ~amd64
 dev-libs/libunity ~amd64
 unity-base/bamf ~amd64
 x11-misc/plank ~amd64
