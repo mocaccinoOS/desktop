@@ -7,6 +7,7 @@ prelude:
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
 - echo "y" | layman -a unity-gentoo
+- eselect profile set unity-gentoo:linux/amd64/17.1/hirsute
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - emerge -C app-portage/layman dev-python/ssl-fetch
