@@ -11,10 +11,7 @@ app-arch/rpm lua
 app-backup/backintime gnome -kde
 app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
-app-cdr/brasero nautilus
-app-cdr/xfburn gstreamer
 app-doc/doxygen latex dot
-app-editors/bluefish gnome -python
 app-editors/retext -spell
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
@@ -311,7 +308,6 @@ sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 sys-devel/distcc -avahi -gtk
 sys-firmware/intel-microcode initramfs
 sys-fs/mtd-utils xattr
-sys-fs/reiser4progs static static-libs
 sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
 sys-libs/gpm split-usr static-libs
@@ -330,7 +326,6 @@ www-apps/owncloud mysql postgres sqlite3
 www-apps/phpBB mysqli sqlite
 www-apps/postfixadmin mysql
 www-apps/rt mysql
-www-client/midori sqlite
 www-client/surf savedconfig
 www-client/uget gstreamer aria2
 www-servers/apache apache2_modules_macro apache2_modules_slotmem_shm apache2_modules_asis apache2_modules_auth_digest apache2_modules_authn_dbd apache2_modules_cern_meta apache2_modules_cgi apache2_modules_cgid apache2_modules_charset_lite apache2_modules_dbd apache2_modules_dumpio apache2_modules_imagemap apache2_modules_log_forensic apache2_modules_proxy apache2_modules_proxy_ajp apache2_modules_proxy_balancer apache2_modules_proxy_connect apache2_modules_proxy_fcgi apache2_modules_proxy_ftp apache2_modules_proxy_http apache2_modules_proxy_html apache2_modules_substitute apache2_modules_version apache2_modules_proxy_wstunnel apache2_modules_xml2enc ident suexec
@@ -344,14 +339,12 @@ dev-lang/tk threads
 dev-tcltk/tclx threads
 x11-terms/rxvt-unicode 256-color blink fading-colors xft
 x11-misc/bumblebee video_cards_nvidia video_cards_nouveau
-x11-misc/cairo-dock xcomposite
 x11-misc/gpaste gnome-shell keybinder
 x11-misc/obconf -lxde
 x11-misc/shutter drawing webphoto
 x11-misc/xaos aalib
 x11-misc/xmobar xft
 x11-plugins/pidgin-sipe voice
->=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
