@@ -9,7 +9,7 @@ env:
 # Add custom package.use for each package in the collection
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
-{{- if .Values.xone }}
+{{ if contains "xone" .Values.name }}
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
 - echo "y" | layman -a src_prepare-overlay
