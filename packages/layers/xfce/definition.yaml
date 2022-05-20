@@ -4,12 +4,15 @@ version: 4.16+90
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
-    app-editors/mousepad media-libs/libopenraw media-video/parole x11-terms/xfce4-terminal xfce-base/exo xfce-base/garcon xfce-base/libxfce4ui xfce-base/libxfce4util xfce-base/thunar xfce-base/xfce4-appfinder xfce-base/xfce4-meta xfce-base/xfce4-panel xfce-base/xfce4-session xfce-base/xfce4-settings xfce-base/xfconf xfce-base/xfdesktop xfce-base/xfwm4 xfce-extra/thunar-volman xfce-extra/tumbler xfce-extra/xfce4-power-manager xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screensaver xfce-extra/xfce4-screenshooter xfce-extra/xfce4-taskmanager xfce-extra/xfce4-volumed-pulse
+    app-cdr/xfburn app-editors/mousepad media-libs/libopenraw media-video/parole x11-terms/xfce4-terminal xfce-base/exo xfce-base/garcon xfce-base/libxfce4ui xfce-base/libxfce4util xfce-base/thunar xfce-base/xfce4-appfinder xfce-base/xfce4-meta xfce-base/xfce4-panel xfce-base/xfce4-session xfce-base/xfce4-settings xfce-base/xfconf xfce-base/xfdesktop xfce-base/xfwm4 xfce-extra/thunar-volman xfce-extra/tumbler xfce-extra/xfce4-power-manager xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screensaver xfce-extra/xfce4-screenshooter xfce-extra/xfce4-taskmanager xfce-extra/xfce4-volumed-pulse
 requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
 provides:
+  - name: xfburn
+    category: app-cdr
+    version: '>=0'
   - name: mousepad
     category: app-editors
     version: '>=0'
