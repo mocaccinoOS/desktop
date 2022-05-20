@@ -22,6 +22,7 @@ sys-fs/udisks acl cryptsetup crypt introspection
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs
+sys-fs/reiser4progs static static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/zfs kernel-builtin
 sys-libs/ldb -ldap
