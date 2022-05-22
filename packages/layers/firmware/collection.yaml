@@ -166,7 +166,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-mediatek"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-mellanox"
     version: 2+12
