@@ -1,9 +1,9 @@
 category: "layers"
 name: "cinnamon"
-version: 5.0.6+28
+version: 5.0.6+34
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/distro dev-python/pexpect dev-python/ptyprocess dev-python/pyinotify dev-python/pypam dev-python/python3-xapp dev-python/pytz dev-python/tinycss2 dev-python/webencodings gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo x11-wm/muffin"
+  emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/distro dev-python/pexpect dev-python/ptyprocess dev-python/pyinotify dev-python/pypam dev-python/python3-xapp dev-python/pytz dev-python/tinycss2 gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo x11-libs/xapp x11-wm/muffin"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -40,9 +40,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: tinycss2
-    category: dev-python
-    version: '>=0'
-  - name: webencodings
     category: dev-python
     version: '>=0'
   - name: cinnamon

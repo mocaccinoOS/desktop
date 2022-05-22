@@ -46,10 +46,10 @@ net-misc/networkmanager -bluetooth connection-sharing dhclient -dhcpcd -gnutls i
 net-print/cups acl kerberos pam ssl threads usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-vpn/networkmanager-fortisslvpn -gtk
-sys-apps/pciutils kmod udev -zlib
 sys-libs/binutils-libs nls
 sys-power/upower introspection
 www-client/w3m fbcon imlib
+x11-apps/mesa-progs egl
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
 x11-drivers/xf86-video-intel dri3 sna uxa

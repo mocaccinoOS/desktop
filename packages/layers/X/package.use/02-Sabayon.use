@@ -11,10 +11,7 @@ app-arch/rpm lua
 app-backup/backintime gnome -kde
 app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
-app-cdr/brasero nautilus
-app-cdr/xfburn gstreamer
 app-doc/doxygen latex dot
-app-editors/bluefish gnome -python
 app-editors/retext -spell
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
@@ -37,8 +34,6 @@ app-office/glabels doc
 app-office/gnucash aqbanking chipcard hbci ofx quotes sqlite
 app-office/homebank ofx
 app-office/kmymoney hbci ofx
-app-office/libreoffice -nsplugin gnome java templates -kde pdfimport binfilter -gtk3 gstreamer
-app-office/libreoffice-l10n-meta linguas_am linguas_as linguas_as_IN linguas_ast linguas_be linguas_be_BY linguas_bo linguas_brx linguas_ca_XV linguas_dgo linguas_dz linguas_en_ZA linguas_fo linguas_gd linguas_gu linguas_gug linguas_hi_IN linguas_ia linguas_id linguas_ka linguas_kn linguas_kok linguas_ks linguas_ku linguas_ky linguas_lb linguas_lo linguas_mai linguas_mi linguas_ml linguas_ml_IN linguas_mni linguas_mr linguas_mr_IN linguas_my linguas_ne linguas_nr linguas_ns linguas_nso linguas_oc linguas_om linguas_or linguas_or_IN linguas_pa_IN linguas_pap linguas_ps linguas_sa_IN linguas_sat linguas_sd linguas_sh linguas_si linguas_sid linguas_sq linguas_st linguas_sw linguas_sw_TZ linguas_te linguas_te_IN linguas_th linguas_ti linguas_ti_ER linguas_tn linguas_ts linguas_tt linguas_ug linguas_ur_IN linguas_ve linguas_xh linguas_zu
 app-office/magicpoint mng
 app-pda/barry boost gui
 app-portage/eix sqlite
@@ -117,7 +112,6 @@ dev-util/codeblocks contrib
 dev-util/geany gtk3
 dev-util/geany-plugins ctags enchant git gtkspell pretty-printer gtk3
 dev-util/glade -gnome
-dev-util/kdevelop php qthelp ruby
 dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
 dev-util/xdelta lzma
@@ -228,7 +222,6 @@ net-dns/getdns nettle stubby
 net-dns/mydns mysql
 net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
-net-fs/cifs-utils ads upcall
 net-fs/netatalk -avahi
 net-ftp/proftpd authfile openssl
 net-im/bitlbee twitter
@@ -311,7 +304,6 @@ sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 sys-devel/distcc -avahi -gtk
 sys-firmware/intel-microcode initramfs
 sys-fs/mtd-utils xattr
-sys-fs/reiser4progs static static-libs
 sys-libs/libcxx -libunwind
 sys-libs/libcxxabi -libunwind
 sys-libs/gpm split-usr static-libs
@@ -330,8 +322,6 @@ www-apps/owncloud mysql postgres sqlite3
 www-apps/phpBB mysqli sqlite
 www-apps/postfixadmin mysql
 www-apps/rt mysql
-www-client/chromium jumbo-build widevine
-www-client/midori sqlite
 www-client/surf savedconfig
 www-client/uget gstreamer aria2
 www-servers/apache apache2_modules_macro apache2_modules_slotmem_shm apache2_modules_asis apache2_modules_auth_digest apache2_modules_authn_dbd apache2_modules_cern_meta apache2_modules_cgi apache2_modules_cgid apache2_modules_charset_lite apache2_modules_dbd apache2_modules_dumpio apache2_modules_imagemap apache2_modules_log_forensic apache2_modules_proxy apache2_modules_proxy_ajp apache2_modules_proxy_balancer apache2_modules_proxy_connect apache2_modules_proxy_fcgi apache2_modules_proxy_ftp apache2_modules_proxy_http apache2_modules_proxy_html apache2_modules_substitute apache2_modules_version apache2_modules_proxy_wstunnel apache2_modules_xml2enc ident suexec
@@ -345,14 +335,12 @@ dev-lang/tk threads
 dev-tcltk/tclx threads
 x11-terms/rxvt-unicode 256-color blink fading-colors xft
 x11-misc/bumblebee video_cards_nvidia video_cards_nouveau
-x11-misc/cairo-dock xcomposite
 x11-misc/gpaste gnome-shell keybinder
 x11-misc/obconf -lxde
 x11-misc/shutter drawing webphoto
 x11-misc/xaos aalib
 x11-misc/xmobar xft
 x11-plugins/pidgin-sipe voice
->=x11-themes/elementary-icon-theme-2.7.1 monochrome branding
 x11-themes/gnome-colors-common branding
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding

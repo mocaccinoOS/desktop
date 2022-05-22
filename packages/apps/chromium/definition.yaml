@@ -1,0 +1,15 @@
+category: "apps"
+name: "chromium"
+version: 101.0.4951.54+2
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    www-client/chromium
+provides:
+  - name: chromium
+    category: www-client
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

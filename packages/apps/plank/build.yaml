@@ -1,0 +1,18 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.accept_keywords /etc/portage/
+- USE="-subversion -mercurial" emerge app-portage/layman
+- layman -L
+- echo "y" | layman -a unity-gentoo
+- eselect profile set unity-gentoo:linux/amd64/17.1/hirsute
+- emerge unity-base/unity-build-env:0/hirsute
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-portage/layman dev-python/ssl-fetch unity-base/unity-build-env
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"

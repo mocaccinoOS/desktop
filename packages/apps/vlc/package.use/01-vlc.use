@@ -1,1 +1,1 @@
-media-video/vlc aalib a52 cddb chromecast egl fontconfig httpd libass live lua matroska microdns musepack rtsp samba skins soxr taglib upnp vlm ogg vorbis truetype x265 xml vaapi vdpau -svg
+media-video/vlc aalib a52 aom cddb chromecast egl fontconfig httpd libass live lua matroska microdns mpeg musepack rtsp samba skins soxr taglib upnp vlm ogg vorbis truetype x265 xml vaapi vdpau -svg

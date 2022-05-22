@@ -48,6 +48,7 @@ jobs:
         sudo luet install -y repository/mocaccino-extra-stable
         sudo luet install -y system/luet-extensions system/luet-devkit utils/jq net-fs/minio-client container/kubectl container/stern container/skopeo
         sudo curl https://raw.githubusercontent.com/Luet-lab/extensions/master/extensions/k8s-build-scheduler/luet-k8s-build-scheduler -o /usr/bin/luet-k8s-build-scheduler
+        luet tree validate --only-buildtime
   #  - name: Validate 🔧
   #    run: |
   #      make validate

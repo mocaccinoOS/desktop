@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20220506+1
+version: 0.20220506+4
 gcc_version: "11.2.1"
 category: layers
 requires:
@@ -51,6 +51,9 @@ requires:
   - name: messagebus
     category: entity
     version: ">=0"
+  - name: nobody
+    category: entity
+    version: ">=0"
   - name: ntp
     category: entity
     version: ">=0"
@@ -70,6 +73,9 @@ requires:
     category: entity
     version: ">=0"
   - name: render
+    category: entity
+    version: ">=0"
+  - name: root
     category: entity
     version: ">=0"
   - name: systemd-coredump
@@ -127,7 +133,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "4"
   emerge.packages: >-
-    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/docutils dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/six dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-kernel/dracut sys-process/cronie
+    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/docutils dev-python/html5lib dev-python/isodate dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-kernel/dracut sys-process/cronie
 provides:
   - name: adm
     category: acct-group
@@ -468,6 +474,9 @@ provides:
   - name: sqlite
     category: dev-db
     version: '>=0'
+  - name: duktape
+    category: dev-lang
+    version: '>=0'
   - name: lua
     category: dev-lang
     version: '>=0'
@@ -487,9 +496,6 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: ruby
-    category: dev-lang
-    version: '>=0'
-  - name: spidermonkey
     category: dev-lang
     version: '>=0'
   - name: swig
@@ -613,9 +619,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: npth
-    category: dev-libs
-    version: '>=0'
-  - name: nspr
     category: dev-libs
     version: '>=0'
   - name: openssl
@@ -810,6 +813,12 @@ provides:
   - name: flit_core
     category: dev-python
     version: '>=0'
+  - name: gpep517
+    category: dev-python
+    version: '>=0'
+  - name: html5lib
+    category: dev-python
+    version: '>=0'
   - name: idna
     category: dev-python
     version: '>=0'
@@ -846,6 +855,9 @@ provides:
   - name: numpy
     category: dev-python
     version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
   - name: ordered-set
     category: dev-python
     version: '>=0'
@@ -873,6 +885,9 @@ provides:
   - name: pyyaml
     category: dev-python
     version: '>=0'
+  - name: rdflib
+    category: dev-python
+    version: '>=0'
   - name: requests
     category: dev-python
     version: '>=0'
@@ -889,6 +904,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: urllib3
+    category: dev-python
+    version: '>=0'
+  - name: webencodings
     category: dev-python
     version: '>=0'
   - name: wheel
@@ -1169,9 +1187,6 @@ provides:
     version: '>=0'
   - name: thin-provisioning-tools
     category: sys-block
-    version: '>=0'
-  - name: autoconf
-    category: sys-devel
     version: '>=0'
   - name: autoconf
     category: sys-devel
