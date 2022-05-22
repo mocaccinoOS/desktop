@@ -1,6 +1,6 @@
 category: "layers"
 name: "budgie"
-version: 10.6.1+2
+version: 10.6.1+3
 labels:
   emerge.jobs: "1"
   emerge.packages: "gnome-extra/budgie-control-center gnome-extra/budgie-screensaver gnome-extra/budgie-screenshot-applet gnome-extra/budgie-desktop gnome-extra/budgie-desktop-view "
