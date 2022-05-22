@@ -11,7 +11,6 @@ app-arch/rpm lua
 app-backup/backintime gnome -kde
 app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
-app-doc/doxygen latex dot
 app-editors/retext -spell
 app-editors/xemacs xft
 app-emacs/auctex preview-latex
@@ -29,7 +28,6 @@ app-misc/lirc -lirc_devices_audio -lirc_devices_audio_alsa -lirc_devices_serial
 app-misc/recoll -fam inotify
 app-misc/sphinx mysql
 app-mobilephone/gnokii sms -X
-app-office/calligra kdepim semantic-desktop
 app-office/glabels doc
 app-office/gnucash aqbanking chipcard hbci ofx quotes sqlite
 app-office/homebank ofx
@@ -51,7 +49,6 @@ dev-cpp/glog gflags
 dev-db/freetds mssql odbc
 dev-db/mongodb v8 embedded-v8
 dev-db/postgis address-standardizer topology
-dev-db/postgresql server threads
 dev-db/tora -oracle
 dev-embedded/avr-libc -selinux
 dev-embedded/openocd ftdi
@@ -72,7 +69,6 @@ dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd h
 dev-lang/rakudo moar
 dev-libs/apr-util openssl
 dev-libs/botan threads -gmp
-dev-libs/c-blosc hdf5
 dev-libs/libjcat gpg pkcs7
 dev-libs/libdazzle vala
 dev-libs/libf2c static-libs
@@ -80,7 +76,6 @@ dev-libs/libgit2-glib ssh
 dev-libs/tntnet sdk
 dev-libs/xerces-c xqilla icu
 dev-libs/xmlrpc-c curl
-dev-libs/xmlsec gcrypt nss
 dev-libs/openct pcsc-lite
 dev-lua/luv luajit
 dev-lua/mpack luajit
@@ -106,7 +101,6 @@ dev-db/mysql-cluster embedded
 dev-tcltk/blt -X
 dev-tcltk/tclxml expat
 dev-util/anjuta subversion
-dev-util/astyle java
 dev-util/biew mmx sse
 dev-util/codeblocks contrib
 dev-util/geany gtk3
@@ -119,7 +113,6 @@ dev-vcs/subversion -java -apache2 -dso -kde
 net-misc/gnome-online-miners flickr
 gnome-base/libgnomecanvas glade
 gnome-extra/nautilus-sendto -cdr
-kde-apps/kget -bittorrent semantic-desktop
 kde-apps/kopete addbookmarks alias autoreplace connectionstatus contactnotes gadu groupwise highlight history irc -kdeenablefinal netmeeting nowlistening oscar otr qq sametime skype statistics texteffect translator webpresence winpopup yahoo
 kde-apps/ktp-common-internals otr
 kde-apps/poxml extras
@@ -137,7 +130,6 @@ media-fonts/baekmuk-fonts -X
 media-gfx/asymptote -latex
 media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
 media-gfx/gimageview mng
-media-gfx/gimp aalib mng webp wmf smp
 media-gfx/gmic gimp fftw -ffmpeg -qt5
 media-gfx/gphoto2 aalib
 media-gfx/graphicsmagick q16 -lcms
@@ -146,43 +138,30 @@ media-gfx/kphotoalbum kipi
 media-gfx/librecad doc
 media-gfx/luminance-hdr sse2
 media-gfx/nomacs -tiff
-media-gfx/pstoedit plotutils
 media-gfx/sane-frontends gimp
 media-gfx/zbar imagemagick v4l
 media-libs/blib aalib
-media-libs/coin doc
-media-libs/devil mng
-media-libs/gegl raw jpeg2k umfpack
-media-libs/glfw -wayland
 media-libs/libkate -wxwidgets
 media-libs/leptonica jpeg2k
-media-libs/libcaca imlib
 media-libs/libepoxy X egl
 media-libs/libffado -qt5
 media-libs/libggi aalib
-media-libs/libmypaint gegl
 media-libs/libsfml doc examples
-media-libs/libsoundtouch sse2
 media-libs/libxtract fftw
-media-libs/mlt melt frei0r kdenlive quicktime python
 media-libs/oyranos -exif
 app-admin/elektra -abi_x86_32
 media-libs/oyranos -abi_x86_32
 media-libs/sdl-mixer midi timidity mod mikmod
 media-libs/sdl2-mixer midi timidity
-media-libs/sdl-sound modplug mikmod
 media-libs/svgalib -kernel-helper
 media-libs/urt gs
-media-libs/xine-lib aalib fbcon mng vdr vidix dxr3 -win32codecs -gtk
 media-plugins/vdr-weatherng dxr3
 media-sound/alsa-tools -gtk
 media-sound/aqualung libsamplerate
 media-sound/ardour freesound lv2
 media-sound/asunder wavpack
-media-sound/audacity ladspa vamp soundtouch id3tag midi sbsms -ffmpeg
 media-sound/audiotools -gui
 media-sound/cantata replaygain taglib cdparanoia devices
-media-sound/cmus mikmod
 media-sound/deadbeef alac ape cover curl lastfm m3u hotkeys sndfile supereq wavpack wma
 media-sound/gmusicbrowser gstreamer
 media-sound/gpodder gstreamer
@@ -229,9 +208,7 @@ net-im/centerim gadu
 net-im/ejabberd mod_irc mod_muc mod_pubsub odbc web
 net-im/empathy gnome
 net-im/gajim -zeroconf
-net-im/pidgin bonjour console gadu groupwise meanwhile msn prediction qq sasl silc -zephyr
 net-im/psi jingle
-net-im/telepathy-connection-managers -icq -yahoo
 net-im/mcabber otr
 net-irc/inspircd mysql sqlite
 net-irc/irssi otr
@@ -239,9 +216,7 @@ net-irc/kvirc -audiofile dcc_video
 net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
-net-libs/libgadu ssl threads
 net-libs/libmicrohttpd messages
-net-libs/telepathy-qt farstream
 net-libs/zeromq drafts unwind
 net-mail/dbmail sqlite3
 net-mail/dovecot managesieve mbox sieve sqlite
@@ -283,7 +258,6 @@ sci-geosciences/grass tcl tk fftw
 sci-geosciences/mapserver flash threads -tiff
 sci-geosciences/qgis -grass webkit -python
 sci-libs/gdal curl geos
->=sci-libs/gsl-1.15 cblas-external
 sci-libs/itpp fftw
 sci-libs/netcdf -fortran hdf5
 sci-libs/plplot -wxwidgets
@@ -298,7 +272,6 @@ sci-visualization/gwyddion fftw
 sci-visualization/paraview -python
 sys-block/open-iscsi -modules
 sys-cluster/ceph cephfs
-sys-cluster/openmpi romio
 sys-cluster/torque server
 sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 sys-devel/distcc -avahi -gtk
@@ -331,7 +304,6 @@ x11-apps/igt-gpu-tools video_cards_intel
 x11-drivers/nvidia-drivers distribution libglvnd uvm tools -gtk
 x11-libs/qwt designer
 x11-libs/fltk threads xft -cairo
-dev-lang/tk threads
 dev-tcltk/tclx threads
 x11-terms/rxvt-unicode 256-color blink fading-colors xft
 x11-misc/bumblebee video_cards_nvidia video_cards_nouveau
@@ -340,7 +312,6 @@ x11-misc/obconf -lxde
 x11-misc/shutter drawing webphoto
 x11-misc/xaos aalib
 x11-misc/xmobar xft
-x11-plugins/pidgin-sipe voice
 x11-themes/gnome-colors-common branding
 x11-themes/qtcurve plasma
 x11-themes/tango-icon-theme branding
@@ -348,20 +319,15 @@ x11-themes/zuki-themes gnome-shell
 x11-wm/fluxbox imlib
 x11-wm/fvwm imlib
 x11-wm/icewm imlib
-media-libs/xine-lib -css
 media-tv/mythtv -css
 media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
-media-libs/libmng static-libs
-media-libs/babl introspection
 media-libs/avidemux-core vaapi vdpau
-media-libs/xine-lib vaapi vdpau
 media-tv/kodi vaapi vdpau
 media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
 app-i18n/scim gtk3
-dev-libs/libgit2 ssh threads
 dev-cpp/commoncpp2 -gnutls ssl
 net-firewall/ipset -modules
 net-firewall/shorewall lite4 lite6
