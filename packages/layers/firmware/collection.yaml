@@ -103,7 +103,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-cxgb3"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-cxgb4"
     version: 2+12
