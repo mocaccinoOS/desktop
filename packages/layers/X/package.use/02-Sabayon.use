@@ -34,8 +34,6 @@ app-office/glabels doc
 app-office/gnucash aqbanking chipcard hbci ofx quotes sqlite
 app-office/homebank ofx
 app-office/kmymoney hbci ofx
-app-office/libreoffice -nsplugin gnome java templates -kde pdfimport binfilter -gtk3 gstreamer
-app-office/libreoffice-l10n-meta linguas_am linguas_as linguas_as_IN linguas_ast linguas_be linguas_be_BY linguas_bo linguas_brx linguas_ca_XV linguas_dgo linguas_dz linguas_en_ZA linguas_fo linguas_gd linguas_gu linguas_gug linguas_hi_IN linguas_ia linguas_id linguas_ka linguas_kn linguas_kok linguas_ks linguas_ku linguas_ky linguas_lb linguas_lo linguas_mai linguas_mi linguas_ml linguas_ml_IN linguas_mni linguas_mr linguas_mr_IN linguas_my linguas_ne linguas_nr linguas_ns linguas_nso linguas_oc linguas_om linguas_or linguas_or_IN linguas_pa_IN linguas_pap linguas_ps linguas_sa_IN linguas_sat linguas_sd linguas_sh linguas_si linguas_sid linguas_sq linguas_st linguas_sw linguas_sw_TZ linguas_te linguas_te_IN linguas_th linguas_ti linguas_ti_ER linguas_tn linguas_ts linguas_tt linguas_ug linguas_ur_IN linguas_ve linguas_xh linguas_zu
 app-office/magicpoint mng
 app-pda/barry boost gui
 app-portage/eix sqlite
@@ -114,7 +112,6 @@ dev-util/codeblocks contrib
 dev-util/geany gtk3
 dev-util/geany-plugins ctags enchant git gtkspell pretty-printer gtk3
 dev-util/glade -gnome
-dev-util/kdevelop php qthelp ruby
 dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
 dev-util/xdelta lzma
