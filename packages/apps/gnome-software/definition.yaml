@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-software"
-version: 40.4+46
+version: 40.4+47
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
