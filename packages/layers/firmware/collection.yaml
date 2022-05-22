@@ -154,7 +154,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-keyspan_pda"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-libertas"
     version: 2+12
