@@ -175,7 +175,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-microchip"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-moxa"
     version: 2+12
