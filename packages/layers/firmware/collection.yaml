@@ -232,7 +232,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-rtw88"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-silabs"
     version: 2+12
