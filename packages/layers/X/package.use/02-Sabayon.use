@@ -222,7 +222,6 @@ net-dns/getdns nettle stubby
 net-dns/mydns mysql
 net-firewall/fwknop firewalld server -iptables
 net-firewall/nftables xtables
-net-fs/cifs-utils ads upcall
 net-fs/netatalk -avahi
 net-ftp/proftpd authfile openssl
 net-im/bitlbee twitter
