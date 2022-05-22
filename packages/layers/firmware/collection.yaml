@@ -238,7 +238,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-slicoss"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-sxg"
     version: 2+12
