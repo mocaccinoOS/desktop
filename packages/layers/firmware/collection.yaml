@@ -112,7 +112,7 @@ packages:
     version: 2+13
   - category: "layers"
     name: "firmware-dabusb"
-    version: 2+12
+    version: 2+13
   - category: "layers"
     name: "firmware-dpaa2"
     version: 2+12
