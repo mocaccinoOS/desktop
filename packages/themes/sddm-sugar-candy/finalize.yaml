@@ -1,3 +1,2 @@
 install:
-- MY_FILE=/etc/sddm.conf.d/kde_settings.conf
-- if [ -e $MY_FILE ]; then sed -i '/Theme/{n;s/.*/Current=sugar-candy/}' $MY_FILE; else echo "Did not change sddm config"; fi
+- MY_FILE=/etc/sddm.conf.d/kde_settings.conf;if [ -e $MY_FILE ]; then sed -i '/Theme/{n;s/.*/Current=sugar-candy/}' $MY_FILE; else echo "Did not change sddm config"; fi
