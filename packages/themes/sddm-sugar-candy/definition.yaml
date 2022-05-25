@@ -1,3 +1,7 @@
 category: "themes"
 name: "sddm-sugar-candy"
 version: "1.1+1"
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
