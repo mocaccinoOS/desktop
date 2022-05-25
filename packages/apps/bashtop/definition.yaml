@@ -1,6 +1,10 @@
 category: "apps"
 name: "bashtop"
 version: 0.9.25+40
+uri:
+  - https://github.com/aristocratos/bashtop
+license: "Apache-2.0"
+description: "Resource monitor that shows usage and stats"
 requires:
   - category: "layers"
     name: "system-x"
