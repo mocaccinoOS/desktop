@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 21.04.3+110
+version: 21.04.3+111
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
