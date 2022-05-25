@@ -1,0 +1,5 @@
+prelude:
+- wget -O sddm-sugar-candy.tar.gz https://framagit.org/MarianArlt/sddm-sugar-candy/-/archive/v.1.1/sddm-sugar-candy-v.1.1.tar.gz
+steps:
+- mkdir -p /usr/share/sddm/themes
+- tar -xzvf sddm-sugar-candy.tar.gz -C /usr/share/sddm/themes
