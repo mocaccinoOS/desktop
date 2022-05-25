@@ -9,7 +9,7 @@ dev-qt/qtbluetooth qml
 dev-qt/qtcharts qml
 dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
-dev-qt/qtdeclarative jit widgets vulkan
+dev-qt/qtdeclarative jit localstorage widgets vulkan
 dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtnetwork ssl
