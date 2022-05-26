@@ -1,6 +1,10 @@
 category: "apps"
 name: "guake"
 version: 3.8.0+45
+uri:
+  - http://guake-project.org
+license: "GPL-2+"
+description: "Drop-down terminal for GNOME"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
