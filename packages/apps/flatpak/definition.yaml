@@ -1,6 +1,10 @@
 category: "apps"
 name: "flatpak"
 version: 1.12.3+1
+uri:
+  - https://flatpak.org
+license: "LGPL-2.1+"
+description: "Linux application sandboxing and distribution framework"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
