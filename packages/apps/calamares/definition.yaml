@@ -1,6 +1,10 @@
 category: "apps"
 name: "calamares"
 version: 3.2.32+156
+uri:
+  - https://calamares.io
+license: "GPL-3"
+description: "Distribution-independent installer framework"
 provides:
   - name: calamares
     category: app-admin
