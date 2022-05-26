@@ -1,6 +1,6 @@
 category: "apps"
 name: "pavucontrol-qt"
-version: 0.17.0+87
+version: 0.17.0+88
 labels:
   emerge.jobs: "3"
   emerge.packages: >-

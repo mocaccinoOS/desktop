@@ -1,7 +1,9 @@
 media-gfx/exiv2 xmp
+media-libs/faad2 digitalradio
 media-libs/gstreamer introspection
 media-libs/libdvdread -css
 media-libs/libjpeg-turbo static-libs
+media-libs/libmng lcms
 media-libs/libsndfile minimal
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes

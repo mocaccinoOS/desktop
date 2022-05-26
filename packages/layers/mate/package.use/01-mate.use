@@ -1,6 +1,5 @@
 app-editors/pluma spell
 app-text/atril djvu epub
-dev-libs/tinyxml stl
 mate-base/mate base extras themes -notification
 mate-base/mate-applets cpupower upower
 mate-base/mate-control-center -accountsservice -appindicator -debug
