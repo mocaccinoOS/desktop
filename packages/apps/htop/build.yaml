@@ -1,18 +1,10 @@
 excludes:
-- ^/var/cache/distfiles
-- ^/usr/portage/distfiles
-- ^/var/db/repos
-- ^/var/cache/edb
-- ^/usr/portage
-- ^/var/db/pkg
-- ^/var/lib/portage
-- ^/var/log
+{{ template "portage_excludes" }}
+- ^/usr/share/applications/mimeinfo.cache
 env:
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{ template "portage_env" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-excludes:
-- ^/usr/share/applications/mimeinfo.cache
 requires:
 - category: "layers"
   name: "system-x"

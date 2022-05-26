@@ -1,6 +1,10 @@
 category: "apps"
 name: "htop"
 version: 3.0.5+102
+uri:
+  - https://htop.dev
+license: "BSD GPL-2+"
+description: "Interactive process viewer"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
