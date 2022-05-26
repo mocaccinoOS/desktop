@@ -1,6 +1,10 @@
 category: "apps"
 name: "firefox-bin"
-version: 97.0.1+22
+version: 100.0.2+1
+uri:
+  - https://www.mozilla.com/firefox
+license: "MPL-2.0 GPL-2 LGPL-2.1"
+description: "Firefox Web Browser, compiled by Mozilla"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
