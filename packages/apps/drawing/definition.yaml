@@ -1,6 +1,10 @@
 category: "apps"
 name: "drawing"
 version: 1.0.1+6
+uri:
+  - https://github.com/maoschanz/drawing
+license: "GPL-3"
+description: "A drawing application for the GNOME desktop"
 requires:
   - category: "layers"
     name: "X"
