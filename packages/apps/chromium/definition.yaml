@@ -1,6 +1,10 @@
 category: "apps"
 name: "chromium"
 version: 101.0.4951.54+4
+uri:
+  - https://chromium.org
+license: "BSD"
+description: "Open-source version of Google Chrome web browser"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
