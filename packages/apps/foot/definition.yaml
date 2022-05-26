@@ -1,6 +1,10 @@
 category: "apps"
 name: "foot"
 version: 1.12.1+1
+uri:
+  - https://codeberg.org/dnkl/foot
+license: "MIT"
+description: "A fast, lightweight and minimalistic Wayland terminal emulator"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
