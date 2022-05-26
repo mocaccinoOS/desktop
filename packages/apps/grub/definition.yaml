@@ -1,6 +1,10 @@
 category: "apps"
 name: "grub"
 version: 2.04+143
+uri:
+  - https://www.gnu.org/software/grub
+license: "GPL-3+ BSD MIT"
+description: "GNU GRUB boot loader"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
