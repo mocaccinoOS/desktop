@@ -1,6 +1,10 @@
 category: "apps"
 name: "discover"
 version: 5.22.5+91
+uri:
+  - https://userbase.kde.org/Discover
+license: "GPL-2"
+description: "KDE Plasma resources management GUI"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
