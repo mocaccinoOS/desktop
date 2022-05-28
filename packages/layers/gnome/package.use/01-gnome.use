@@ -1,5 +1,4 @@
 app-arch/file-roller -nautilus -packagekit
-app-cdr/brasero nautilus -css
 app-editors/gedit-plugins terminal
 app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
 dev-libs/libgusb vala
