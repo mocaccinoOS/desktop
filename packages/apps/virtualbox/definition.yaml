@@ -1,6 +1,10 @@
 category: "apps"
 name: "virtualbox"
-version: 6.1.24+89
+version: 6.1.32+1
+uri:
+  - https://www.virtualbox.org
+license: "GPL-2"
+description: "Family of powerful x86 virtualization products for enterprise and home use"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
