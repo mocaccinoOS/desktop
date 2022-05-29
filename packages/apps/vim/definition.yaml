@@ -1,6 +1,10 @@
 category: "apps"
 name: "vim"
-version: 8.2.3741+44
+version: 8.2.4328+1
+uri:
+  - https://github.com/vim/vim
+license: "vim"
+description: "Vim, an improved vi-style text editor"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
