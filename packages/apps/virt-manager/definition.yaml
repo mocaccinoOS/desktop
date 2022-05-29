@@ -1,6 +1,10 @@
 category: "apps"
 name: "virt-manager"
-version: 3.2.0+38
+version: 4.0.0+1
+uri:
+  - https://virt-manager.org
+license: "GPL-2"
+description: "A graphical tool for administering virtual machines"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
