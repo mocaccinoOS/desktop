@@ -1,6 +1,10 @@
 category: "apps"
 name: "i3"
 version: 4.20.1+44
+uri:
+  - https://i3wm.org
+license: "BSD"
+description: "An improved dynamic tiling window manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
