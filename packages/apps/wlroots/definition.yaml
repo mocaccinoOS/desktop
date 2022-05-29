@@ -1,6 +1,10 @@
 category: "apps"
 name: "wlroots"
 version: 0.15.0+17
+uri:
+  - https://github.com/danvd/wlroots-eglstreams
+license: "MIT"
+description: "wlroots (EGLStreams fork)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
