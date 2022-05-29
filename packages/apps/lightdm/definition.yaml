@@ -1,6 +1,10 @@
 category: "apps"
 name: "lightdm"
 version: 1.30.0+139
+uri:
+  - https://launchpad.net/lightdm
+license: "GPL-3 LGPL-3"
+description: "A lightweight display manager"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
