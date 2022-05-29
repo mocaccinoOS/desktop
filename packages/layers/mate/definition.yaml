@@ -1,6 +1,10 @@
 category: "layers"
 name: "mate"
-version: 1.24+155
+version: 1.24.1+1
+uri:
+  - https://mate-desktop.org
+license: "FDL-1.1 GPL-2+ LGPL-2+ MIT-with-advertising"
+description: "The MATE Desktop Environment is the continuation of GNOME 2."
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -20,6 +24,9 @@ provides:
     category: app-text
     version: '>=0'
   - name: rarian
+    category: app-text
+    version: '>=0'
+  - name: yelp-tools
     category: app-text
     version: '>=0'
   - name: libmateweather

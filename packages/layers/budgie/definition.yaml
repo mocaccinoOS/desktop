@@ -1,23 +1,33 @@
 category: "layers"
 name: "budgie"
-version: 10.6.1+5
+version: 10.6.1+7
+uri:
+  - https://getsol.us/categories/budgie
+license: "GPL-2 LGPL-2.1"
+description: "Desktop Environment based on GNOME 3"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "gnome-extra/budgie-control-center gnome-extra/budgie-screensaver gnome-extra/budgie-screenshot-applet gnome-extra/budgie-desktop gnome-extra/budgie-desktop-view "
+  emerge.packages: "gnome-extra/budgie-clipboard-applet gnome-extra/budgie-control-center gnome-extra/budgie-desktop gnome-extra/budgie-desktop-view gnome-extra/budgie-haste-applet gnome-extra/budgie-screensaver gnome-extra/budgie-screenshot-applet"
 provides:
+  - name: budgie-clipboard-applet
+    category: gnome-extra
+    version: '>=0'
   - name: budgie-control-center
-    category: gnome-extra
-    version: '>=0'
-  - name: budgie-screensaver
-    category: gnome-extra
-    version: '>=0'
-  - name: budgie-screenshot-applet
     category: gnome-extra
     version: '>=0'
   - name: budgie-desktop
     category: gnome-extra
     version: '>=0'
   - name: budgie-desktop-view
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-haste-applet
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screensaver
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screenshot-applet
     category: gnome-extra
     version: '>=0'
 requires:

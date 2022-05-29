@@ -1,6 +1,10 @@
 category: "layers"
 name: "kde-pim"
-version: 21.04.3+112
+version: 21.12.3+1
+uri:
+  - https://community.kde.org/KDE_PIM
+license: "GPL-2+ LGPL-2.1+"
+description: "KDE PIM is a package that contains personal information management tools."
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -12,6 +16,9 @@ requires:
 provides:
   - name: paperkey
     category: app-crypt
+    version: '>=0'
+  - name: libphonenumber
+    category: dev-libs
     version: '>=0'
   - name: akonadi
     category: kde-apps
@@ -174,4 +181,7 @@ provides:
     version: '>=0'
   - name: syndication
     category: kde-frameworks
+    version: '>=0'
+  - name: zanshin
+    category: kde-misc
     version: '>=0'
