@@ -1,6 +1,10 @@
 category: "apps"
 name: "qemu"
 version: 6.2.0+40
+uri:
+  - https://www.qemu.org
+license: "GPL-2 LGPL-2 BSD-2"
+description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
