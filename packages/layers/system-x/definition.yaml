@@ -828,6 +828,9 @@ provides:
   - name: installer
     category: dev-python
     version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
   - name: jaraco-context
     category: dev-python
     version: '>=0'
@@ -853,9 +856,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: numpy
-    category: dev-python
-    version: '>=0'
-  - name: isodate
     category: dev-python
     version: '>=0'
   - name: ordered-set

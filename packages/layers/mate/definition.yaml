@@ -22,6 +22,9 @@ provides:
   - name: rarian
     category: app-text
     version: '>=0'
+  - name: yelp-tools
+    category: app-text
+    version: '>=0'
   - name: libmateweather
     category: dev-libs
     version: '>=0'

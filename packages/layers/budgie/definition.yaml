@@ -8,16 +8,16 @@ provides:
   - name: budgie-control-center
     category: gnome-extra
     version: '>=0'
-  - name: budgie-screensaver
-    category: gnome-extra
-    version: '>=0'
-  - name: budgie-screenshot-applet
-    category: gnome-extra
-    version: '>=0'
   - name: budgie-desktop
     category: gnome-extra
     version: '>=0'
   - name: budgie-desktop-view
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screensaver
+    category: gnome-extra
+    version: '>=0'
+  - name: budgie-screenshot-applet
     category: gnome-extra
     version: '>=0'
 requires:

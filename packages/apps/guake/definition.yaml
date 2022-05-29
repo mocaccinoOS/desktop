@@ -10,9 +10,6 @@ labels:
   emerge.packages: >-
     x11-terms/guake
 provides:
-  - name: pbr
-    category: dev-python
-    version: '>=0'
   - name: guake
     category: x11-terms
     version: '>=0'

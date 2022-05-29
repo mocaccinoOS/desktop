@@ -13,6 +13,9 @@ provides:
   - name: paperkey
     category: app-crypt
     version: '>=0'
+  - name: libphonenumber
+    category: dev-libs
+    version: '>=0'
   - name: akonadi
     category: kde-apps
     version: '>=0'
@@ -174,4 +177,7 @@ provides:
     version: '>=0'
   - name: syndication
     category: kde-frameworks
+    version: '>=0'
+  - name: zanshin
+    category: kde-misc
     version: '>=0'

@@ -30,7 +30,7 @@ provides:
   - name: pypam
     category: dev-python
     version: '>=0'
-  - name: pyproject2setuppy
+  - name: python-pam
     category: dev-python
     version: '>=0'
   - name: python3-xapp
@@ -40,6 +40,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: tinycss2
+    category: dev-python
+    version: '>=0'
+  - name: toml
     category: dev-python
     version: '>=0'
   - name: cinnamon
@@ -71,6 +74,9 @@ provides:
     version: '>=0'
   - name: nemo
     category: gnome-extra
+    version: '>=0'
+  - name: xapp
+    category: x11-libs
     version: '>=0'
   - name: muffin
     category: x11-wm
