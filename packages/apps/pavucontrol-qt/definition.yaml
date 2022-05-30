@@ -1,6 +1,10 @@
 category: "apps"
 name: "pavucontrol-qt"
-version: 0.17.0+88
+version: 1.0.0+1
+uri:
+  - https://lxqt-project.org
+license: "GPL-2 GPL-2+"
+description: "Qt GUI Pulseaudio Mixer"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
