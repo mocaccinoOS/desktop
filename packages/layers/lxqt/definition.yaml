@@ -1,6 +1,10 @@
 category: "layers"
 name: "lxqt"
-version: 1.0.0+6
+version: 1.0.0+8
+uri:
+  - https://lxqt-project.org
+license: "LGPL-2.1+"
+description: "The Lightweight Qt Desktop Environment"
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
