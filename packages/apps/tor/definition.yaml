@@ -1,6 +1,6 @@
 category: "apps"
 name: "tor"
-version: net-vpn/tor+1
+version: 0.4.6.10+1
 uri:
   - https://www.torproject.org
 license: "BSD GPL-2"
