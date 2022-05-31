@@ -57,6 +57,8 @@ sys-devel/llvm clang
 sys-fs/cryptsetup luks1_default
 sys-fs/e2fsprogs split-usr static-libs
 sys-fs/udev extras
+# We use dev-python/python-magic
+sys-apps/file -python
 sys-apps/kmod lzma static-libs
 sys-libs/gdbm berkdb nls readline
 sys-libs/libseccomp static-libs

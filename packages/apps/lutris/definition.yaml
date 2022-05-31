@@ -12,9 +12,6 @@ provides:
   - name: python-evdev
     category: dev-python
     version: '>=0'
-  - name: python-magic
-    category: dev-python
-    version: '>=0'
   - name: lutris
     category: games-util
     version: '>=0'
