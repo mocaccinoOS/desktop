@@ -1,0 +1,22 @@
+category: "apps"
+name: "tor"
+version: net-vpn/tor+1
+uri:
+  - https://www.torproject.org
+license: "BSD GPL-2"
+description: "Anonymizing overlay network for TCP"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    net-vpn/tor
+provides:
+  - name: tor
+    category: net-vpn
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+  - category: "entity"
+    name: "tor"
+    version: ">=0"
