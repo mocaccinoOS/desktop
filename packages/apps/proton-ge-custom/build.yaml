@@ -1,0 +1,17 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.accept_keywords /etc/portage/
+- USE="-subversion -mercurial" emerge app-portage/layman
+- layman -L
+- echo "y" | layman -a touchfish-os
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-portage/layman dev-python/ssl-fetch
+requires:
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true

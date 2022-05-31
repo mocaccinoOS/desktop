@@ -1,0 +1,18 @@
+category: "apps"
+name: "proton-ge-custom"
+version: 7.20+1
+uri:
+  - https://github.com/GloriousEggroll/proton-ge-custom
+license: "BSD"
+description: "A fancy custom distribution of Valves Proton with various patches"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "app-emulation/proton-ge-custom-bin"
+provides:
+  - name: proton-ge-custom-bin
+    category: app-emulation
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
