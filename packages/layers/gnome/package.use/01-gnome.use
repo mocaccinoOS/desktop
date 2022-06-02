@@ -2,6 +2,7 @@ app-arch/file-roller -nautilus -packagekit
 app-editors/gedit-plugins terminal
 app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
 dev-libs/libgusb vala
+dev-libs/libportal -qt5
 dev-lua/lpeg luajit
 gnome-base/gdm gnome-keyring smartcard accessibility fprint -plymouth
 gnome-base/gnome -extras -accessibility
