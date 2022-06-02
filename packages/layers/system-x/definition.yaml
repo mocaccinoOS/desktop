@@ -1,6 +1,6 @@
 name: system-x
-version: 0.20220506+6
-gcc_version: "11.2.1"
+version: 0.20220602+1
+gcc_version: "11.3.0"
 category: layers
 requires:
   - category: "system"
@@ -837,6 +837,9 @@ provides:
   - name: jaraco-functools
     category: dev-python
     version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
   - name: jaraco-text
     category: dev-python
     version: '>=0'
@@ -852,16 +855,10 @@ provides:
   - name: more-itertools
     category: dev-python
     version: '>=0'
-  - name: python-magic
-    category: dev-python
-    version: '>=0'
   - name: nspektr
     category: dev-python
     version: '>=0'
   - name: numpy
-    category: dev-python
-    version: '>=0'
-  - name: isodate
     category: dev-python
     version: '>=0'
   - name: ordered-set
@@ -886,6 +883,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: python-dateutil
+    category: dev-python
+    version: '>=0'
+  - name: python-magic
     category: dev-python
     version: '>=0'
   - name: pyyaml
