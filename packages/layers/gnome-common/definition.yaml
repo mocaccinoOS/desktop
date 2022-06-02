@@ -1,4 +1,4 @@
-# dev-lang/spidermonkey:78 is required downstream by layers/gnome and layers/cinnamon
+# dev-lang/spidermonkey:78 is required downstream by layers/cinnamon
 # In a near future this might not be needed anymore because we now ship dev-lang/duktape in layers/system-x
 category: "layers"
 name: "gnome-common"

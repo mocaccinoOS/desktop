@@ -7,7 +7,7 @@ license: "GPL-2+"
 description: "The GNOME desktop environment"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/brltty app-accessibility/flite app-accessibility/orca app-arch/file-roller app-arch/gnome-autoar app-crypt/seahorse app-editors/gedit app-misc/tracker app-misc/tracker-miners app-text/evince dev-libs/gjs dev-libs/gom dev-libs/liblouis dev-libs/totem-pl-parser gnome-base/dconf-editor gnome-base/gdm gnome-base/gnome gnome-base/gnome-control-center gnome-base/gnome-core-apps gnome-base/gnome-core-libs gnome-base/gnome-session gnome-base/gnome-settings-daemon gnome-base/gnome-shell gnome-base/nautilus gnome-extra/chrome-gnome-shell gnome-extra/gnome-calculator gnome-extra/gnome-contacts gnome-extra/gnome-power-manager gnome-extra/gnome-shell-extensions gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-user-docs gnome-extra/gnome-weather gnome-extra/mousetweaks gnome-extra/nautilus-sendto gnome-extra/sushi gnome-extra/yelp net-libs/libgrss media-gfx/eog media-gfx/gnome-screenshot media-gfx/shotwell media-libs/clutter-gst media-libs/grilo media-libs/gupnp-dlna media-libs/libmediaart media-plugins/grilo-plugins media-video/totem net-libs/dleyna-connector-dbus net-libs/dleyna-core net-libs/gupnp-av net-libs/libgrss net-libs/liboauth net-misc/dleyna-server net-wireless/gnome-bluetooth sys-apps/baobab sys-apps/gnome-disk-utility sys-auth/fprintd sys-auth/libfprint x11-terms/gnome-terminal x11-themes/gnome-backgrounds x11-wm/mutter"
+  emerge.packages: "app-accessibility/brltty app-accessibility/flite app-accessibility/orca app-arch/file-roller app-arch/gnome-autoar app-crypt/seahorse app-editors/gedit app-misc/tracker app-misc/tracker-miners app-text/evince dev-lang/spidermonkey:91 dev-libs/gjs dev-libs/gom dev-libs/liblouis dev-libs/totem-pl-parser gnome-base/dconf-editor gnome-base/gdm gnome-base/gnome gnome-base/gnome-control-center gnome-base/gnome-core-apps gnome-base/gnome-core-libs gnome-base/gnome-session gnome-base/gnome-settings-daemon gnome-base/gnome-shell gnome-base/nautilus gnome-extra/chrome-gnome-shell gnome-extra/gnome-calculator gnome-extra/gnome-contacts gnome-extra/gnome-power-manager gnome-extra/gnome-shell-extensions gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-user-docs gnome-extra/gnome-weather gnome-extra/mousetweaks gnome-extra/nautilus-sendto gnome-extra/sushi gnome-extra/yelp net-libs/libgrss media-gfx/eog media-gfx/gnome-screenshot media-gfx/shotwell media-libs/clutter-gst media-libs/grilo media-libs/gupnp-dlna media-libs/libmediaart media-plugins/grilo-plugins media-video/totem net-libs/dleyna-connector-dbus net-libs/dleyna-core net-libs/gupnp-av net-libs/libgrss net-libs/liboauth net-misc/dleyna-server net-wireless/gnome-bluetooth sys-apps/baobab sys-apps/gnome-disk-utility sys-auth/fprintd sys-auth/libfprint x11-terms/gnome-terminal x11-themes/gnome-backgrounds x11-wm/mutter"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -75,6 +75,9 @@ provides:
     version: '>=0'
   - name: yelp-tools
     category: app-text
+    version: '>=0'
+  - name: spidermonkey
+    category: dev-lang
     version: '>=0'
   - name: gjs
     category: dev-libs
