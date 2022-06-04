@@ -1,5 +1,4 @@
 app-accessibility/julius -alsa -oss -portaudio
-app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
 app-admin/keepassxc browser
 app-eselect/eselect-php fpm apache2
 app-admin/gkrellm hddtemp lm_sensors
@@ -128,7 +127,6 @@ mail-mta/exim exiscan-acl maildir
 mail-mta/netqmail qmail-spp
 media-fonts/baekmuk-fonts -X
 media-gfx/asymptote -latex
-media-gfx/blender collada cycles fftw doc jpeg2k openimageio ffmpeg
 media-gfx/gimageview mng
 media-gfx/gmic gimp fftw -ffmpeg -qt5
 media-gfx/gphoto2 aalib
@@ -190,7 +188,6 @@ media-video/xine-ui aalib vdr
 media-video/dvdrip -xine subtitles fping
 net-analyzer/fping suid
 net-analyzer/gvmd sqlite
-net-analyzer/net-snmp ucd-compat -kmem -python -python_single_target_python2_7 -X
 net-analyzer/rrdtool graph
 net-analyzer/snmptt mysql
 net-analyzer/snort dynamicplugin
