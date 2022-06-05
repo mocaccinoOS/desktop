@@ -1,9 +1,4 @@
-excludes:
-env:
+image: "alpine"
 prelude:
 steps:
 - cp 10-udisks2.rules /etc/polkit-1/rules.d/
-requires:
-- category: "layers"
-  name: "system-x"
-  version: ">=0"
