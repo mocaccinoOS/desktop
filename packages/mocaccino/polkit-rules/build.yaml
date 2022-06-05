@@ -2,4 +2,4 @@ image: "alpine"
 prelude:
 steps:
 - mkdir -p /etc/polkit-1/rules.d/
-- cp 10-udisks2.rules /etc/polkit-1/rules.d/
+- cp *.rules /etc/polkit-1/rules.d/

@@ -1,0 +1,23 @@
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.kde.kpmcore.externalcommand.init" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    else
+    {
+       return polkit.Result.AUTH_ADMIN;
+    }
+
+});
+
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.gnome.gparted" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    else
+    {
+       return polkit.Result.AUTH_ADMIN;
+    }
+
+});
