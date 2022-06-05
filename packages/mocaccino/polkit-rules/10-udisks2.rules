@@ -22,7 +22,7 @@ polkit.addRule(function(action, subject) {
     "org.freedesktop.udisks2.eject-media-other-seat": YES,
     "org.freedesktop.udisks2.power-off-drive-other-seat": YES
   };
-  if (subject.isInGroup("storage")) {
+  if (subject.isInGroup("wheel")) {
     return permission[action.id];
   }
 });
