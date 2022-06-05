@@ -1,0 +1,2 @@
+install:
+- mos config-update update --interactive=false -p /etc/polkit-1/rules.d/*
