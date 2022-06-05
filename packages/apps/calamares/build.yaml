@@ -14,6 +14,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- cp 30-calamares.rules /etc/polkit-1/rules.d/
 - cp grub-default /etc/default/grub
 requires:
 - category: "buildbase"
