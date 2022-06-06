@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-software"
-version: 42.2+3
+version: 42.1+25
 uri:
   - https://wiki.gnome.org/Apps/Software
 license: "GPL-2+"
@@ -8,7 +8,7 @@ description: "Gnome install & update software"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gnome-extra/gnome-software
+    =gnome-extra/gnome-software-42.1
 provides:
   - name: gnome-software
     category: gnome-extra
