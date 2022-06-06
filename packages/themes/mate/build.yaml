@@ -1,9 +1,4 @@
-excludes:
-env:
+image: "alpine"
 prelude:
 steps:
 - cp org.mocaccino.mate.gschema.override /usr/share/glib-2.0/schemas
-requires:
-- category: "layers"
-  name: "mate"
-  version: ">=0"
