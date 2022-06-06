@@ -3,3 +3,4 @@ prelude:
 steps:
 - mkdir -p /etc/polkit-1/rules.d/
 - cp *.rules /etc/polkit-1/rules.d/
+- chown 102:0 /etc/polkit-1/rules.d/*.rules
