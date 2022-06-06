@@ -15,6 +15,8 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp 30-calamares.rules /etc/polkit-1/rules.d/
+- chown 102:0 /etc/polkit-1/rules.d/*.rules
+- chmod 700 /etc/polkit-1/rules.d/*.rules
 - cp grub-default /etc/default/grub
 requires:
 - category: "buildbase"
