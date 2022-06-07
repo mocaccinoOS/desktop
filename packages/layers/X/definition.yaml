@@ -27,9 +27,6 @@ requires:
   - name: colord
     category: entity
     version: ">=0"
-  - category: "entity"
-    name: "disk"
-    version: ">=0"
   - name: dhcpcd
     category: entity
     version: ">=0"
