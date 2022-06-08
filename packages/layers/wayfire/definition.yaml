@@ -55,6 +55,3 @@ provides:
   - name: wayfire
     category: gui-wm
     version: '>=0'
-  - name: alacritty
-    category: x11-terms
-    version: '>=0'

@@ -831,13 +831,13 @@ provides:
   - name: installer
     category: dev-python
     version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
   - name: jaraco-context
     category: dev-python
     version: '>=0'
   - name: jaraco-functools
-    category: dev-python
-    version: '>=0'
-  - name: isodate
     category: dev-python
     version: '>=0'
   - name: jaraco-text

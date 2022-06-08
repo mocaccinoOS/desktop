@@ -16,6 +16,9 @@ provides:
   - name: mousepad
     category: app-editors
     version: '>=0'
+  - name: xfce4-dev-tools
+    category: dev-util
+    version: '>=0'
   - name: libopenraw
     category: media-libs
     version: '>=0'
