@@ -1,6 +1,6 @@
 category: "apps"
 name: "qemu"
-version: 6.2.0+42
+version: 6.2.0+43
 uri:
   - https://www.qemu.org
 license: "GPL-2 LGPL-2 BSD-2"
