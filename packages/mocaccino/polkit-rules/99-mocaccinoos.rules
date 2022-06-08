@@ -1,0 +1,70 @@
+// Allow users in wheel	to mount disks
+polkit.addRule(function(action, subject) {
+  var YES = polkit.Result.YES;
+  var permission = {
+    "org.freedesktop.udisks2.filesystem-mount": YES,
+    "org.freedesktop.udisks2.filesystem-mount-system": YES,
+    "org.freedesktop.udisks2.encrypted-unlock": YES,
+    "org.freedesktop.udisks2.encrypted-unlock-system": YES,
+    "org.freedesktop.udisks2.eject-media": YES,
+    "org.freedesktop.udisks2.eject-media-system": YES,
+    "org.freedesktop.udisks2.power-off-drive": YES,
+    "org.freedesktop.udisks2.power-off-drive-system": YES,
+    // required for udisks2 if using udiskie from another seat (e.g. systemd):
+    "org.freedesktop.udisks2.filesystem-mount-other-seat": YES,
+    "org.freedesktop.udisks2.filesystem-unmount-others": YES,
+    "org.freedesktop.udisks2.encrypted-unlock-other-seat": YES,
+    "org.freedesktop.udisks2.eject-media-other-seat": YES,
+    "org.freedesktop.udisks2.power-off-drive-other-seat": YES
+  };
+  if (subject.isInGroup("wheel")) {
+    return permission[action.id];
+  }
+});
+
+// Allow users in video to use colord
+polkit.addRule(function(action, subject) {
+   if ((action.id == "org.freedesktop.color-manager.create-device" ||
+        action.id == "org.freedesktop.color-manager.create-profile" ||
+        action.id == "org.freedesktop.color-manager.delete-device" ||
+        action.id == "org.freedesktop.color-manager.delete-profile" ||
+        action.id == "org.freedesktop.color-manager.modify-device" ||
+        action.id == "org.freedesktop.color-manager.modify-profile") &&
+       subject.isInGroup("video")) {
+      return polkit.Result.YES;
+   }
+});
+
+// Allow users in wheel	to suspend the system
+polkit.addRule(function(action, subject) {
+        if ((action.id == "org.freedesktop.login1.suspend-multiple-sessions")
+            && subject.isInGroup("wheel")) {
+                return polkit.Result.YES;
+        }
+});
+
+// Allow users in wheel to open kpartitionmanager
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.kde.kpmcore.externalcommand.init" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    else
+    {
+       return polkit.Result.AUTH_ADMIN;
+    }
+
+});
+
+// Allow users in wheel	to open	gparted
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.gnome.gparted" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+    else
+    {
+       return polkit.Result.AUTH_ADMIN;
+    }
+
+});
