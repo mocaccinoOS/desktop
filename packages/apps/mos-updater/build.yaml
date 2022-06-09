@@ -8,8 +8,7 @@ prelude:
 # - ssh-keyscan github.com 2>/dev/null > ~/.ssh/known_hosts
 - wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
 - tar -C /usr/local -xzf golang.tar.gz
-- go get fyne.io/fyne/v2
-- go get fyne.io/fyne/v2/cmd/fyne
+- go install fyne.io/fyne/v2/cmd/fyne
 - | 
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
     git clone https://github.com/mocaccinoOS/mos-updater.git && cd mos-updater && git checkout "v${PACKAGE_VERSION}" -b build

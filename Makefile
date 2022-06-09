@@ -88,3 +88,6 @@ auto-bump:
 	TREE_DIR=$(ROOT_DIR)/$(TREE) $(LUET) autobump-github
 
 autobump: auto-bump
+
+repo-validate:
+	./scripts/repo_validate.sh
