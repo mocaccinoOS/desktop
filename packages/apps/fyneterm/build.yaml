@@ -7,7 +7,7 @@ env:
 prelude:
 - wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
 - tar -C /usr/local -xzf golang.tar.gz
-- go install fyne.io/fyne/v2/cmd/fyne
+- go get fyne.io/fyne/v2/cmd/fyne@v2.1.4
 - | 
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
     git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && cd $GITHUB_REPO && git checkout "{{.Values.sha}}" -b build
