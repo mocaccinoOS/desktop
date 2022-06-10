@@ -45,3 +45,7 @@ packages:
     real_category: "apps"
     name: "qemu"
     version: 0+36
+  - !!merge <<: *X
+    real_category: "layers"
+    name: "haskell"
+    version: 0+1
