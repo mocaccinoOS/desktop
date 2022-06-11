@@ -6,7 +6,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
-- echo "y" | layman -a phoenix591
+- echo "y" | layman -a thegreatmcpain
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
