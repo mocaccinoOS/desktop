@@ -1,14 +1,17 @@
 category: "apps"
 name: "goverlay"
-version: 0.8.1+1
+version: 0.8.1+2
 uri:
   - https://github.com/benjamimgois/goverlay
 license: "GPL-3"
 description: "GOverlay is an opensource project that aims to create a Graphical UI to help manage Linux overlays."
 labels:
   emerge.jobs: "1"
-  emerge.packages: "games-util/goverlay"
+  emerge.packages: "games-util/goverlay dev-libs/qt5pas"
 provides:
+  - name: qt5pas
+    category: dev-libs
+    version: '>=0'
   - name: goverlay
     category: games-util
     version: '>=0'
