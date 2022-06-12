@@ -1,10 +1,10 @@
 category: "layers"
 name: "haskell"
-version: 1+1
+version: 1+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-admin/haskell-updater dev-lang/ghc dev-haskell/adjunctions dev-haskell/aeson dev-haskell/aeson-diff dev-haskell/aeson-pretty dev-haskell/alex dev-haskell/ansi-terminal dev-haskell/ansi-wl-pprint dev-haskell/appar dev-haskell/asn1-encoding dev-haskell/asn1-parse dev-haskell/asn1-types dev-haskell/async dev-haskell/attoparsec dev-haskell/auto-update dev-haskell/base-compat dev-haskell/base-compat-batteries dev-haskell/base-orphans dev-haskell/base-prelude dev-haskell/base16-bytestring dev-haskell/base64-bytestring dev-haskell/basement dev-haskell/bifunctors dev-haskell/binary dev-haskell/blaze-builder dev-haskell/blaze-html dev-haskell/blaze-markup dev-haskell/bsb-http-chunked dev-haskell/bytestring-builder dev-haskell/byteorder dev-haskell/cabal dev-haskell/cabal-doctest dev-haskell/call-stack dev-haskell/case-insensitive dev-haskell/cereal dev-haskell/charset dev-haskell/citeproc dev-haskell/clock dev-haskell/cmdargs dev-haskell/code-page dev-haskell/colour dev-haskell/comonad dev-haskell/commonmark dev-haskell/commonmark-extensions dev-haskell/commonmark-pandoc dev-haskell/concurrent-output dev-haskell/conduit dev-haskell/conduit-extra dev-haskell/connection dev-haskell/constraints dev-haskell/contravariant dev-haskell/contravariant-extras dev-haskell/cookie dev-haskell/cpphs dev-haskell/crypto-api dev-haskell/crypto-api-tests dev-haskell/cryptohash-md5 dev-haskell/cryptohash-sha1 dev-haskell/cryptonite dev-haskell/data-default dev-haskell/data-default-class dev-haskell/data-default-instances-containers dev-haskell/data-default-instances-dlist dev-haskell/data-default-instances-old-locale dev-haskell/diff dev-haskell/digest dev-haskell/distributive dev-haskell/dlist dev-haskell/doclayout dev-haskell/doctemplates dev-haskell/doctest dev-haskell/easy-file dev-haskell/edit-distance-vector dev-haskell/either dev-haskell/emojis dev-haskell/entropy dev-haskell/erf dev-haskell/errors dev-haskell/exceptions dev-haskell/extensible-exceptions dev-haskell/extra dev-haskell/fail dev-haskell/fast-logger dev-haskell/file-embed dev-haskell/filepattern dev-haskell/fingertree dev-haskell/foldl dev-haskell/foundation dev-haskell/free dev-haskell/generic-deriving dev-haskell/generics-sop dev-haskell/getopt-generics dev-haskell/ghc-lib-parser dev-haskell/ghc-lib-parser-ex dev-haskell/ghc-paths dev-haskell/glob dev-haskell/haddock-library dev-haskell/happy dev-haskell/hashable dev-haskell/hashable-time dev-haskell/hedgehog dev-haskell/haskell-lexer dev-haskell/haskell-src-exts dev-haskell/hlint dev-haskell/hostname dev-haskell/hourglass dev-haskell/hs-bibutils dev-haskell/hscolour dev-haskell/hslua dev-haskell/hslua-module-path dev-haskell/hslua-module-system dev-haskell/hslua-module-text dev-haskell/hspec dev-haskell/hspec-core dev-haskell/hspec-discover dev-haskell/hspec-expectations dev-haskell/hspec-meta dev-haskell/hsyaml dev-haskell/hsyaml-aeson dev-haskell/http dev-haskell/http-client dev-haskell/http-client-tls dev-haskell/http-date dev-haskell/http-types dev-haskell/http2 dev-haskell/httpd-shed dev-haskell/hunit dev-haskell/indexed-traversable dev-haskell/integer-logarithms dev-haskell/invariant dev-haskell/iproute dev-haskell/ipynb dev-haskell/jira-wiki-markup dev-haskell/juicypixels dev-haskell/kan-extensions dev-haskell/lens dev-haskell/libyaml dev-haskell/lifted-async dev-haskell/lifted-base dev-haskell/logging-facade dev-haskell/logict dev-haskell/math-functions dev-haskell/memory dev-haskell/memotrie dev-haskell/microlens dev-haskell/microlens-aeson dev-haskell/mime-types dev-haskell/mmorph dev-haskell/mockery dev-haskell/monad-control dev-haskell/mono-traversable dev-haskell/mtl dev-haskell/mwc-random dev-haskell/nanospec dev-haskell/nats dev-haskell/network dev-haskell/network-bsd dev-haskell/network-byte-order dev-haskell/network-uri dev-haskell/network-info dev-haskell/newtype-generics dev-haskell/old-locale dev-haskell/old-time dev-haskell/optparse-applicative dev-haskell/pandoc-types dev-haskell/parallel dev-haskell/parsec dev-haskell/parsers dev-haskell/pcre-light dev-haskell/pem dev-haskell/pgp-wordlist dev-haskell/polyparse dev-haskell/pretty-show dev-haskell/primitive dev-haskell/prettyprinter dev-haskell/prettyprinter-ansi-terminal dev-haskell/profunctors dev-haskell/psqueues dev-haskell/puremd5 dev-haskell/quickcheck dev-haskell/quickcheck-instances dev-haskell/quickcheck-io dev-haskell/random dev-haskell/raw-strings-qq dev-haskell/rebase dev-haskell/reducers dev-haskell/refact dev-haskell/reflection dev-haskell/regex-base dev-haskell/regex-posix dev-haskell/rerebase dev-haskell/resourcet dev-haskell/retry dev-haskell/rfc5051 dev-haskell/safe dev-haskell/scientific dev-haskell/selective dev-haskell/semigroupoids dev-haskell/semigroups dev-haskell/setenv dev-haskell/setlocale dev-haskell/sha dev-haskell/silently dev-haskell/simple-reflect dev-haskell/simple-sendfile dev-haskell/skylighting dev-haskell/skylighting-core dev-haskell/smallcheck dev-haskell/socks dev-haskell/sop-core dev-haskell/split dev-haskell/splitmix dev-haskell/statevar dev-haskell/stm dev-haskell/streaming-commons dev-haskell/string-qq dev-haskell/stringbuilder dev-haskell/syb dev-haskell/tagged dev-haskell/tagsoup dev-haskell/tasty dev-haskell/tasty-expected-failure dev-haskell/tasty-golden dev-haskell/tasty-hedgehog dev-haskell/tasty-hunit dev-haskell/tasty-kat dev-haskell/tasty-lua dev-haskell/tasty-quickcheck dev-haskell/tasty-smallcheck dev-haskell/tasty-th dev-haskell/temporary dev-haskell/temporary-rc dev-haskell/template-haskell-compat-v0208 dev-haskell/terminal-size dev-haskell/test-framework dev-haskell/test-framework-hunit dev-haskell/test-framework-quickcheck2 dev-haskell/texmath dev-haskell/text dev-haskell/text-conversions dev-haskell/text-icu dev-haskell/th-abstraction dev-haskell/tf-random dev-haskell/time-compat dev-haskell/time-manager dev-haskell/timeit dev-haskell/tls dev-haskell/transformers dev-haskell/transformers-base dev-haskell/transformers-compat dev-haskell/tree-diff dev-haskell/trifecta dev-haskell/type-equality dev-haskell/typed-process dev-haskell/unbounded-delays dev-haskell/utf8-string dev-haskell/unicode-transforms dev-haskell/unliftio dev-haskell/unliftio-core dev-haskell/uniplate dev-haskell/unix-compat dev-haskell/unix-time dev-haskell/unordered-containers dev-haskell/uuid dev-haskell/uuid-types dev-haskell/vault dev-haskell/vector dev-haskell/vector-algorithms dev-haskell/vector-builder dev-haskell/vector-th-unbox dev-haskell/void dev-haskell/wai dev-haskell/wai-extra dev-haskell/wai-logger dev-haskell/warp dev-haskell/wcwidth dev-haskell/word8 dev-haskell/wl-pprint-annotated dev-haskell/x509 dev-haskell/x509-store dev-haskell/x509-system dev-haskell/x509-validation dev-haskell/xml dev-haskell/xml-conduit dev-haskell/xml-types dev-haskell/yaml dev-haskell/zip-archive dev-haskell/zlib
+    app-admin/haskell-updater dev-lang/ghc dev-haskell/adjunctions dev-haskell/aeson dev-haskell/aeson-diff dev-haskell/aeson-pretty dev-haskell/alex dev-haskell/ansi-terminal dev-haskell/ansi-wl-pprint dev-haskell/appar dev-haskell/asn1-encoding dev-haskell/asn1-parse dev-haskell/asn1-types dev-haskell/async dev-haskell/attoparsec dev-haskell/auto-update dev-haskell/base-compat dev-haskell/base-compat-batteries dev-haskell/base-noprelude dev-haskell/base-orphans dev-haskell/base-prelude dev-haskell/base16-bytestring dev-haskell/base64-bytestring dev-haskell/basement dev-haskell/bifunctors dev-haskell/binary dev-haskell/blaze-builder dev-haskell/blaze-html dev-haskell/blaze-markup dev-haskell/bsb-http-chunked dev-haskell/bytestring-builder dev-haskell/byteorder dev-haskell/c2hs dev-haskell/cabal dev-haskell/cabal-doctest dev-haskell/call-stack dev-haskell/case-insensitive dev-haskell/cereal dev-haskell/charset dev-haskell/citeproc dev-haskell/clock dev-haskell/cmark-gfm dev-haskell/cmdargs dev-haskell/code-page dev-haskell/colour dev-haskell/comonad dev-haskell/commonmark dev-haskell/commonmark-extensions dev-haskell/commonmark-pandoc dev-haskell/concurrent-output dev-haskell/conduit dev-haskell/conduit-extra dev-haskell/connection dev-haskell/constraints dev-haskell/contravariant dev-haskell/contravariant-extras dev-haskell/cookie dev-haskell/cpphs dev-haskell/crypto-api dev-haskell/crypto-api-tests dev-haskell/cryptohash-md5 dev-haskell/cryptohash-sha1 dev-haskell/cryptonite dev-haskell/data-default dev-haskell/data-default-class dev-haskell/data-default-instances-containers dev-haskell/data-default-instances-dlist dev-haskell/data-default-instances-old-locale dev-haskell/diff dev-haskell/digest dev-haskell/distributive dev-haskell/dlist dev-haskell/doclayout dev-haskell/doctemplates dev-haskell/doctest dev-haskell/easy-file dev-haskell/edit-distance-vector dev-haskell/either dev-haskell/emojis dev-haskell/enclosed-exceptions dev-haskell/entropy dev-haskell/erf dev-haskell/errors dev-haskell/exceptions dev-haskell/extensible-exceptions dev-haskell/extra dev-haskell/fail dev-haskell/fast-logger dev-haskell/file-embed dev-haskell/filepattern dev-haskell/fingertree dev-haskell/foldl dev-haskell/foundation dev-haskell/free dev-haskell/generic-deriving dev-haskell/generics-sop dev-haskell/getopt-generics dev-haskell/ghc-lib-parser dev-haskell/ghc-lib-parser-ex dev-haskell/ghc-paths dev-haskell/glob dev-haskell/haddock-library dev-haskell/happy dev-haskell/hashable dev-haskell/hashable-time dev-haskell/hedgehog dev-haskell/haskell-lexer dev-haskell/haskell-src-exts dev-haskell/hlint dev-haskell/hostname dev-haskell/hourglass dev-haskell/hs-bibutils dev-haskell/hscolour dev-haskell/hslua dev-haskell/hslua-module-path dev-haskell/hslua-module-system dev-haskell/hslua-module-text dev-haskell/hspec dev-haskell/hspec-contrib dev-haskell/hspec-core dev-haskell/hspec-discover dev-haskell/hspec-expectations dev-haskell/hspec-meta dev-haskell/hsyaml dev-haskell/hsyaml-aeson dev-haskell/http dev-haskell/http-client dev-haskell/http-client-tls dev-haskell/http-date dev-haskell/http-types dev-haskell/http2 dev-haskell/httpd-shed dev-haskell/hunit dev-haskell/indexed-traversable dev-haskell/integer-logarithms dev-haskell/invariant dev-haskell/iproute dev-haskell/ipynb dev-haskell/jira-wiki-markup dev-haskell/juicypixels dev-haskell/kan-extensions dev-haskell/language-c dev-haskell/lens dev-haskell/libyaml dev-haskell/lifted-async dev-haskell/lifted-base dev-haskell/logging-facade dev-haskell/logict dev-haskell/math-functions dev-haskell/memory dev-haskell/memotrie dev-haskell/microlens dev-haskell/microlens-aeson dev-haskell/mime-types dev-haskell/mmorph dev-haskell/mockery dev-haskell/monad-control dev-haskell/mono-traversable dev-haskell/mtl dev-haskell/mwc-random dev-haskell/nanospec dev-haskell/nats dev-haskell/network dev-haskell/network-bsd dev-haskell/network-byte-order dev-haskell/network-uri dev-haskell/network-info dev-haskell/newtype-generics dev-haskell/old-locale dev-haskell/old-time dev-haskell/optparse-applicative dev-haskell/pandoc-types dev-haskell/parallel dev-haskell/parsec dev-haskell/parsers dev-haskell/pcre-light dev-haskell/pem dev-haskell/pgp-wordlist dev-haskell/polyparse dev-haskell/pretty-show dev-haskell/primitive dev-haskell/prettyprinter dev-haskell/prettyprinter-ansi-terminal dev-haskell/profunctors dev-haskell/psqueues dev-haskell/puremd5 dev-haskell/quickcheck dev-haskell/quickcheck-instances dev-haskell/quickcheck-io dev-haskell/random dev-haskell/raw-strings-qq dev-haskell/rebase dev-haskell/reducers dev-haskell/refact dev-haskell/reflection dev-haskell/regex-base dev-haskell/regex-posix dev-haskell/rerebase dev-haskell/resourcet dev-haskell/retry dev-haskell/rfc5051 dev-haskell/safe dev-haskell/scientific dev-haskell/selective dev-haskell/semigroupoids dev-haskell/semigroups dev-haskell/setenv dev-haskell/setlocale dev-haskell/sha dev-haskell/shelly dev-haskell/silently dev-haskell/simple-reflect dev-haskell/simple-sendfile dev-haskell/skylighting dev-haskell/skylighting-core dev-haskell/smallcheck dev-haskell/socks dev-haskell/sop-core dev-haskell/split dev-haskell/splitmix dev-haskell/statevar dev-haskell/stm dev-haskell/streaming-commons dev-haskell/string-qq dev-haskell/stringbuilder dev-haskell/syb dev-haskell/tagged dev-haskell/tagsoup dev-haskell/tasty dev-haskell/tasty-expected-failure dev-haskell/tasty-golden dev-haskell/tasty-hedgehog dev-haskell/tasty-hunit dev-haskell/tasty-kat dev-haskell/tasty-lua dev-haskell/tasty-quickcheck dev-haskell/tasty-smallcheck dev-haskell/tasty-th dev-haskell/temporary dev-haskell/temporary-rc dev-haskell/template-haskell-compat-v0208 dev-haskell/terminal-size dev-haskell/test-framework dev-haskell/test-framework-hunit dev-haskell/test-framework-quickcheck2 dev-haskell/texmath dev-haskell/text dev-haskell/text-conversions dev-haskell/text-icu dev-haskell/th-abstraction dev-haskell/tf-random dev-haskell/time-compat dev-haskell/time-manager dev-haskell/timeit dev-haskell/tls dev-haskell/transformers dev-haskell/transformers-base dev-haskell/transformers-compat dev-haskell/tree-diff dev-haskell/trifecta dev-haskell/type-equality dev-haskell/typed-process dev-haskell/unbounded-delays dev-haskell/utf8-string dev-haskell/unicode-transforms dev-haskell/unliftio dev-haskell/unliftio-core dev-haskell/uniplate dev-haskell/unix-compat dev-haskell/unix-time dev-haskell/unordered-containers dev-haskell/uuid dev-haskell/uuid-types dev-haskell/vault dev-haskell/vector dev-haskell/vector-algorithms dev-haskell/vector-builder dev-haskell/vector-th-unbox dev-haskell/void dev-haskell/wai dev-haskell/wai-extra dev-haskell/wai-logger dev-haskell/warp dev-haskell/wcwidth dev-haskell/word8 dev-haskell/wl-pprint-annotated dev-haskell/x509 dev-haskell/x509-store dev-haskell/x509-system dev-haskell/x509-validation dev-haskell/xml dev-haskell/xml-conduit dev-haskell/xml-types dev-haskell/yaml dev-haskell/zip-archive dev-haskell/zlib
 requires:
   - category: "layers"
     name: "system-x"
@@ -15,4 +15,886 @@ provides:
     version: '>=0'
   - name: ghc
     category: dev-lang
+    version: '>=0'
+  - name: adjunctions
+    category: dev-haskell
+    version: '>=0'
+  - name: aeson
+    category: dev-haskell
+    version: '>=0'
+  - name: aeson-diff
+    category: dev-haskell
+    version: '>=0'
+  - name: aeson-pretty
+    category: dev-haskell
+    version: '>=0'
+  - name: alex
+    category: dev-haskell
+    version: '>=0'
+  - name: ansi-terminal
+    category: dev-haskell
+    version: '>=0'
+  - name: ansi-wl-pprint
+    category: dev-haskell
+    version: '>=0'
+  - name: appar
+    category: dev-haskell
+    version: '>=0'
+  - name: asn1-encoding
+    category: dev-haskell
+    version: '>=0'
+  - name: asn1-parse
+    category: dev-haskell
+    version: '>=0'
+  - name: asn1-types
+    category: dev-haskell
+    version: '>=0'
+  - name: async
+    category: dev-haskell
+    version: '>=0'
+  - name: attoparsec
+    category: dev-haskell
+    version: '>=0'
+  - name: auto-update
+    category: dev-haskell
+    version: '>=0'
+  - name: base-compat
+    category: dev-haskell
+    version: '>=0'
+  - name: base-compat-batteries
+    category: dev-haskell
+    version: '>=0'
+  - name: base-noprelude
+    category: dev-haskell
+    version: '>=0'
+  - name: base-orphans
+    category: dev-haskell
+    version: '>=0'
+  - name: base-prelude
+    category: dev-haskell
+    version: '>=0'
+  - name: base16-bytestring
+    category: dev-haskell
+    version: '>=0'
+  - name: base64-bytestring
+    category: dev-haskell
+    version: '>=0'
+  - name: basement
+    category: dev-haskell
+    version: '>=0'
+  - name: bifunctors
+    category: dev-haskell
+    version: '>=0'
+  - name: binary
+    category: dev-haskell
+    version: '>=0'
+  - name: blaze-builder
+    category: dev-haskell
+    version: '>=0'
+  - name: blaze-html
+    category: dev-haskell
+    version: '>=0'
+  - name: blaze-markup
+    category: dev-haskell
+    version: '>=0'
+  - name: bsb-http-chunked
+    category: dev-haskell
+    version: '>=0'
+  - name: bytestring-builder
+    category: dev-haskell
+    version: '>=0'
+  - name: byteorder
+    category: dev-haskell
+    version: '>=0'
+  - name: c2hs
+    category: dev-haskell
+    version: '>=0'
+  - name: cabal
+    category: dev-haskell
+    version: '>=0'
+  - name: cabal-doctest
+    category: dev-haskell
+    version: '>=0'
+  - name: call-stack
+    category: dev-haskell
+    version: '>=0'
+  - name: case-insensitive
+    category: dev-haskell
+    version: '>=0'
+  - name: cereal
+    category: dev-haskell
+    version: '>=0'
+  - name: charset
+    category: dev-haskell
+    version: '>=0'
+  - name: citeproc
+    category: dev-haskell
+    version: '>=0'
+  - name: clock
+    category: dev-haskell
+    version: '>=0'
+  - name: cmark-gfm
+    category: dev-haskell
+    version: '>=0'
+  - name: cmdargs
+    category: dev-haskell
+    version: '>=0'
+  - name: code-page
+    category: dev-haskell
+    version: '>=0'
+  - name: colour
+    category: dev-haskell
+    version: '>=0'
+  - name: comonad
+    category: dev-haskell
+    version: '>=0'
+  - name: commonmark
+    category: dev-haskell
+    version: '>=0'
+  - name: commonmark-extensions
+    category: dev-haskell
+    version: '>=0'
+  - name: commonmark-pandoc
+    category: dev-haskell
+    version: '>=0'
+  - name: concurrent-output
+    category: dev-haskell
+    version: '>=0'
+  - name: conduit
+    category: dev-haskell
+    version: '>=0'
+  - name: conduit-extra
+    category: dev-haskell
+    version: '>=0'
+  - name: connection
+    category: dev-haskell
+    version: '>=0'
+  - name: constraints
+    category: dev-haskell
+    version: '>=0'
+  - name: contravariant
+    category: dev-haskell
+    version: '>=0'
+  - name: contravariant-extras
+    category: dev-haskell
+    version: '>=0'
+  - name: cookie
+    category: dev-haskell
+    version: '>=0'
+  - name: cpphs
+    category: dev-haskell
+    version: '>=0'
+  - name: crypto-api
+    category: dev-haskell
+    version: '>=0'
+  - name: crypto-api-tests
+    category: dev-haskell
+    version: '>=0'
+  - name: cryptohash-md5
+    category: dev-haskell
+    version: '>=0'
+  - name: cryptohash-sha1
+    category: dev-haskell
+    version: '>=0'
+  - name: cryptonite
+    category: dev-haskell
+    version: '>=0'
+  - name: data-default
+    category: dev-haskell
+    version: '>=0'
+  - name: data-default-class
+    category: dev-haskell
+    version: '>=0'
+  - name: data-default-instances-containers
+    category: dev-haskell
+    version: '>=0'
+  - name: data-default-instances-dlist
+    category: dev-haskell
+    version: '>=0'
+  - name: data-default-instances-old-locale
+    category: dev-haskell
+    version: '>=0'
+  - name: diff
+    category: dev-haskell
+    version: '>=0'
+  - name: digest
+    category: dev-haskell
+    version: '>=0'
+  - name: distributive
+    category: dev-haskell
+    version: '>=0'
+  - name: dlist
+    category: dev-haskell
+    version: '>=0'
+  - name: doclayout
+    category: dev-haskell
+    version: '>=0'
+  - name: doctemplates
+    category: dev-haskell
+    version: '>=0'
+  - name: doctest
+    category: dev-haskell
+    version: '>=0'
+  - name: easy-file
+    category: dev-haskell
+    version: '>=0'
+  - name: edit-distance-vector
+    category: dev-haskell
+    version: '>=0'
+  - name: either
+    category: dev-haskell
+    version: '>=0'
+  - name: emojis
+    category: dev-haskell
+    version: '>=0'
+  - name: enclosed-exceptions
+    category: dev-haskell
+    version: '>=0'
+  - name: entropy
+    category: dev-haskell
+    version: '>=0'
+  - name: erf
+    category: dev-haskell
+    version: '>=0'
+  - name: errors
+    category: dev-haskell
+    version: '>=0'
+  - name: exceptions
+    category: dev-haskell
+    version: '>=0'
+  - name: extensible-exceptions
+    category: dev-haskell
+    version: '>=0'
+  - name: extra
+    category: dev-haskell
+    version: '>=0'
+  - name: fail
+    category: dev-haskell
+    version: '>=0'
+  - name: fast-logger
+    category: dev-haskell
+    version: '>=0'
+  - name: file-embed
+    category: dev-haskell
+    version: '>=0'
+  - name: filepattern
+    category: dev-haskell
+    version: '>=0'
+  - name: fingertree
+    category: dev-haskell
+    version: '>=0'
+  - name: foldl
+    category: dev-haskell
+    version: '>=0'
+  - name: foundation
+    category: dev-haskell
+    version: '>=0'
+  - name: free
+    category: dev-haskell
+    version: '>=0'
+  - name: generic-deriving
+    category: dev-haskell
+    version: '>=0'
+  - name: generics-sop
+    category: dev-haskell
+    version: '>=0'
+  - name: getopt-generics
+    category: dev-haskell
+    version: '>=0'
+  - name: ghc-lib-parser
+    category: dev-haskell
+    version: '>=0'
+  - name: ghc-lib-parser-ex
+    category: dev-haskell
+    version: '>=0'
+  - name: ghc-paths
+    category: dev-haskell
+    version: '>=0'
+  - name: glob
+    category: dev-haskell
+    version: '>=0'
+  - name: haddock-library
+    category: dev-haskell
+    version: '>=0'
+  - name: happy
+    category: dev-haskell
+    version: '>=0'
+  - name: hashable
+    category: dev-haskell
+    version: '>=0'
+  - name: hashable-time
+    category: dev-haskell
+    version: '>=0'
+  - name: hedgehog
+    category: dev-haskell
+    version: '>=0'
+  - name: haskell-lexer
+    category: dev-haskell
+    version: '>=0'
+  - name: haskell-src-exts
+    category: dev-haskell
+    version: '>=0'
+  - name: hlint
+    category: dev-haskell
+    version: '>=0'
+  - name: hostname
+    category: dev-haskell
+    version: '>=0'
+  - name: hourglass
+    category: dev-haskell
+    version: '>=0'
+  - name: hs-bibutils
+    category: dev-haskell
+    version: '>=0'
+  - name: hscolour
+    category: dev-haskell
+    version: '>=0'
+  - name: hslua
+    category: dev-haskell
+    version: '>=0'
+  - name: hslua-module-path
+    category: dev-haskell
+    version: '>=0'
+  - name: hslua-module-system
+    category: dev-haskell
+    version: '>=0'
+  - name: hslua-module-text
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec-contrib
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec-core
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec-discover
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec-expectations
+    category: dev-haskell
+    version: '>=0'
+  - name: hspec-meta
+    category: dev-haskell
+    version: '>=0'
+  - name: hsyaml
+    category: dev-haskell
+    version: '>=0'
+  - name: hsyaml-aeson
+    category: dev-haskell
+    version: '>=0'
+  - name: http
+    category: dev-haskell
+    version: '>=0'
+  - name: http-client
+    category: dev-haskell
+    version: '>=0'
+  - name: http-client-tls
+    category: dev-haskell
+    version: '>=0'
+  - name: http-date
+    category: dev-haskell
+    version: '>=0'
+  - name: http-types
+    category: dev-haskell
+    version: '>=0'
+  - name: http2
+    category: dev-haskell
+    version: '>=0'
+  - name: httpd-shed
+    category: dev-haskell
+    version: '>=0'
+  - name: hunit
+    category: dev-haskell
+    version: '>=0'
+  - name: indexed-traversable
+    category: dev-haskell
+    version: '>=0'
+  - name: integer-logarithms
+    category: dev-haskell
+    version: '>=0'
+  - name: invariant
+    category: dev-haskell
+    version: '>=0'
+  - name: iproute
+    category: dev-haskell
+    version: '>=0'
+  - name: ipynb
+    category: dev-haskell
+    version: '>=0'
+  - name: jira-wiki-markup
+    category: dev-haskell
+    version: '>=0'
+  - name: juicypixels
+    category: dev-haskell
+    version: '>=0'
+  - name: kan-extensions
+    category: dev-haskell
+    version: '>=0'
+  - name: language-c
+    category: dev-haskell
+    version: '>=0'
+  - name: lens
+    category: dev-haskell
+    version: '>=0'
+  - name: libyaml
+    category: dev-haskell
+    version: '>=0'
+  - name: lifted-async
+    category: dev-haskell
+    version: '>=0'
+  - name: lifted-base
+    category: dev-haskell
+    version: '>=0'
+  - name: logging-facade
+    category: dev-haskell
+    version: '>=0'
+  - name: logict
+    category: dev-haskell
+    version: '>=0'
+  - name: math-functions
+    category: dev-haskell
+    version: '>=0'
+  - name: memory
+    category: dev-haskell
+    version: '>=0'
+  - name: memotrie
+    category: dev-haskell
+    version: '>=0'
+  - name: microlens
+    category: dev-haskell
+    version: '>=0'
+  - name: microlens-aeson
+    category: dev-haskell
+    version: '>=0'
+  - name: mime-types
+    category: dev-haskell
+    version: '>=0'
+  - name: mmorph
+    category: dev-haskell
+    version: '>=0'
+  - name: mockery
+    category: dev-haskell
+    version: '>=0'
+  - name: monad-control
+    category: dev-haskell
+    version: '>=0'
+  - name: mono-traversable
+    category: dev-haskell
+    version: '>=0'
+  - name: mtl
+    category: dev-haskell
+    version: '>=0'
+  - name: mwc-random
+    category: dev-haskell
+    version: '>=0'
+  - name: nanospec
+    category: dev-haskell
+    version: '>=0'
+  - name: nats
+    category: dev-haskell
+    version: '>=0'
+  - name: network
+    category: dev-haskell
+    version: '>=0'
+  - name: network-bsd
+    category: dev-haskell
+    version: '>=0'
+  - name: network-byte-order
+    category: dev-haskell
+    version: '>=0'
+  - name: network-uri
+    category: dev-haskell
+    version: '>=0'
+  - name: network-info
+    category: dev-haskell
+    version: '>=0'
+  - name: newtype-generics
+    category: dev-haskell
+    version: '>=0'
+  - name: old-locale
+    category: dev-haskell
+    version: '>=0'
+  - name: old-time
+    category: dev-haskell
+    version: '>=0'
+  - name: optparse-applicative
+    category: dev-haskell
+    version: '>=0'
+  - name: pandoc-types
+    category: dev-haskell
+    version: '>=0'
+  - name: parallel
+    category: dev-haskell
+    version: '>=0'
+  - name: parsec
+    category: dev-haskell
+    version: '>=0'
+  - name: parsers
+    category: dev-haskell
+    version: '>=0'
+  - name: pcre-light
+    category: dev-haskell
+    version: '>=0'
+  - name: pem
+    category: dev-haskell
+    version: '>=0'
+  - name: pgp-wordlist
+    category: dev-haskell
+    version: '>=0'
+  - name: polyparse
+    category: dev-haskell
+    version: '>=0'
+  - name: pretty-show
+    category: dev-haskell
+    version: '>=0'
+  - name: primitive
+    category: dev-haskell
+    version: '>=0'
+  - name: prettyprinter
+    category: dev-haskell
+    version: '>=0'
+  - name: prettyprinter-ansi-terminal
+    category: dev-haskell
+    version: '>=0'
+  - name: profunctors
+    category: dev-haskell
+    version: '>=0'
+  - name: psqueues
+    category: dev-haskell
+    version: '>=0'
+  - name: puremd5
+    category: dev-haskell
+    version: '>=0'
+  - name: quickcheck
+    category: dev-haskell
+    version: '>=0'
+  - name: quickcheck-instances
+    category: dev-haskell
+    version: '>=0'
+  - name: quickcheck-io
+    category: dev-haskell
+    version: '>=0'
+  - name: random
+    category: dev-haskell
+    version: '>=0'
+  - name: raw-strings-qq
+    category: dev-haskell
+    version: '>=0'
+  - name: rebase
+    category: dev-haskell
+    version: '>=0'
+  - name: reducers
+    category: dev-haskell
+    version: '>=0'
+  - name: refact
+    category: dev-haskell
+    version: '>=0'
+  - name: reflection
+    category: dev-haskell
+    version: '>=0'
+  - name: regex-base
+    category: dev-haskell
+    version: '>=0'
+  - name: regex-posix
+    category: dev-haskell
+    version: '>=0'
+  - name: rerebase
+    category: dev-haskell
+    version: '>=0'
+  - name: resourcet
+    category: dev-haskell
+    version: '>=0'
+  - name: retry
+    category: dev-haskell
+    version: '>=0'
+  - name: rfc5051
+    category: dev-haskell
+    version: '>=0'
+  - name: safe
+    category: dev-haskell
+    version: '>=0'
+  - name: scientific
+    category: dev-haskell
+    version: '>=0'
+  - name: selective
+    category: dev-haskell
+    version: '>=0'
+  - name: semigroupoids
+    category: dev-haskell
+    version: '>=0'
+  - name: semigroups
+    category: dev-haskell
+    version: '>=0'
+  - name: setenv
+    category: dev-haskell
+    version: '>=0'
+  - name: setlocale
+    category: dev-haskell
+    version: '>=0'
+  - name: sha
+    category: dev-haskell
+    version: '>=0'
+  - name: shelly
+    category: dev-haskell
+    version: '>=0'
+  - name: silently
+    category: dev-haskell
+    version: '>=0'
+  - name: simple-reflect
+    category: dev-haskell
+    version: '>=0'
+  - name: simple-sendfile
+    category: dev-haskell
+    version: '>=0'
+  - name: skylighting
+    category: dev-haskell
+    version: '>=0'
+  - name: skylighting-core
+    category: dev-haskell
+    version: '>=0'
+  - name: smallcheck
+    category: dev-haskell
+    version: '>=0'
+  - name: socks
+    category: dev-haskell
+    version: '>=0'
+  - name: sop-core
+    category: dev-haskell
+    version: '>=0'
+  - name: split
+    category: dev-haskell
+    version: '>=0'
+  - name: splitmix
+    category: dev-haskell
+    version: '>=0'
+  - name: statevar
+    category: dev-haskell
+    version: '>=0'
+  - name: stm
+    category: dev-haskell
+    version: '>=0'
+  - name: streaming-commons
+    category: dev-haskell
+    version: '>=0'
+  - name: string-qq
+    category: dev-haskell
+    version: '>=0'
+  - name: stringbuilder
+    category: dev-haskell
+    version: '>=0'
+  - name: syb
+    category: dev-haskell
+    version: '>=0'
+  - name: tagged
+    category: dev-haskell
+    version: '>=0'
+  - name: tagsoup
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-expected-failure
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-golden
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-hedgehog
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-hunit
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-kat
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-lua
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-quickcheck
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-smallcheck
+    category: dev-haskell
+    version: '>=0'
+  - name: tasty-th
+    category: dev-haskell
+    version: '>=0'
+  - name: temporary
+    category: dev-haskell
+    version: '>=0'
+  - name: temporary-rc
+    category: dev-haskell
+    version: '>=0'
+  - name: template-haskell-compat-v0208
+    category: dev-haskell
+    version: '>=0'
+  - name: terminal-size
+    category: dev-haskell
+    version: '>=0'
+  - name: test-framework
+    category: dev-haskell
+    version: '>=0'
+  - name: test-framework-hunit
+    category: dev-haskell
+    version: '>=0'
+  - name: test-framework-quickcheck2
+    category: dev-haskell
+    version: '>=0'
+  - name: texmath
+    category: dev-haskell
+    version: '>=0'
+  - name: text
+    category: dev-haskell
+    version: '>=0'
+  - name: text-conversions
+    category: dev-haskell
+    version: '>=0'
+  - name: text-icu
+    category: dev-haskell
+    version: '>=0'
+  - name: th-abstraction
+    category: dev-haskell
+    version: '>=0'
+  - name: tf-random
+    category: dev-haskell
+    version: '>=0'
+  - name: time-compat
+    category: dev-haskell
+    version: '>=0'
+  - name: time-manager
+    category: dev-haskell
+    version: '>=0'
+  - name: timeit
+    category: dev-haskell
+    version: '>=0'
+  - name: tls
+    category: dev-haskell
+    version: '>=0'
+  - name: transformers
+    category: dev-haskell
+    version: '>=0'
+  - name: transformers-base
+    category: dev-haskell
+    version: '>=0'
+  - name: transformers-compat
+    category: dev-haskell
+    version: '>=0'
+  - name: tree-diff
+    category: dev-haskell
+    version: '>=0'
+  - name: trifecta
+    category: dev-haskell
+    version: '>=0'
+  - name: type-equality
+    category: dev-haskell
+    version: '>=0'
+  - name: typed-process
+    category: dev-haskell
+    version: '>=0'
+  - name: unbounded-delays
+    category: dev-haskell
+    version: '>=0'
+  - name: utf8-string
+    category: dev-haskell
+    version: '>=0'
+  - name: unicode-transforms
+    category: dev-haskell
+    version: '>=0'
+  - name: unliftio
+    category: dev-haskell
+    version: '>=0'
+  - name: unliftio-core
+    category: dev-haskell
+    version: '>=0'
+  - name: uniplate
+    category: dev-haskell
+    version: '>=0'
+  - name: unix-compat
+    category: dev-haskell
+    version: '>=0'
+  - name: unix-time
+    category: dev-haskell
+    version: '>=0'
+  - name: unordered-containers
+    category: dev-haskell
+    version: '>=0'
+  - name: uuid
+    category: dev-haskell
+    version: '>=0'
+  - name: uuid-types
+    category: dev-haskell
+    version: '>=0'
+  - name: vault
+    category: dev-haskell
+    version: '>=0'
+  - name: vector
+    category: dev-haskell
+    version: '>=0'
+  - name: vector-algorithms
+    category: dev-haskell
+    version: '>=0'
+  - name: vector-builder
+    category: dev-haskell
+    version: '>=0'
+  - name: vector-th-unbox
+    category: dev-haskell
+    version: '>=0'
+  - name: void
+    category: dev-haskell
+    version: '>=0'
+  - name: wai
+    category: dev-haskell
+    version: '>=0'
+  - name: wai-extra
+    category: dev-haskell
+    version: '>=0'
+  - name: wai-logger
+    category: dev-haskell
+    version: '>=0'
+  - name: warp
+    category: dev-haskell
+    version: '>=0'
+  - name: wcwidth
+    category: dev-haskell
+    version: '>=0'
+  - name: word8
+    category: dev-haskell
+    version: '>=0'
+  - name: wl-pprint-annotated
+    category: dev-haskell
+    version: '>=0'
+  - name: x509
+    category: dev-haskell
+    version: '>=0'
+  - name: x509-store
+    category: dev-haskell
+    version: '>=0'
+  - name: x509-system
+    category: dev-haskell
+    version: '>=0'
+  - name: x509-validation
+    category: dev-haskell
+    version: '>=0'
+  - name: xml
+    category: dev-haskell
+    version: '>=0'
+  - name: xml-conduit
+    category: dev-haskell
+    version: '>=0'
+  - name: xml-types
+    category: dev-haskell
+    version: '>=0'
+  - name: yaml
+    category: dev-haskell
+    version: '>=0'
+  - name: zip-archive
+    category: dev-haskell
+    version: '>=0'
+  - name: zlib
+    category: dev-haskell
     version: '>=0'

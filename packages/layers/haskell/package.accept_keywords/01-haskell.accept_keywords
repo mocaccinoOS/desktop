@@ -16,6 +16,7 @@ dev-haskell/attoparsec ~amd64
 dev-haskell/auto-update ~amd64
 dev-haskell/base-compat ~amd64
 dev-haskell/base-compat-batteries ~amd64
+dev-haskell/base-noprelude ~amd64
 dev-haskell/base-orphans ~amd64
 dev-haskell/base-prelude ~amd64
 dev-haskell/base16-bytestring ~amd64
@@ -29,6 +30,7 @@ dev-haskell/blaze-markup ~amd64
 dev-haskell/bsb-http-chunked ~amd64
 dev-haskell/bytestring-builder ~amd64
 dev-haskell/byteorder ~amd64
+dev-haskell/c2hs ~amd64
 dev-haskell/cabal ~amd64
 dev-haskell/cabal-doctest ~amd64
 dev-haskell/call-stack ~amd64
@@ -37,6 +39,7 @@ dev-haskell/cereal ~amd64
 dev-haskell/charset ~amd64
 dev-haskell/citeproc ~amd64
 dev-haskell/clock ~amd64
+dev-haskell/cmark-gfm ~amd64
 dev-haskell/cmdargs ~amd64
 dev-haskell/code-page ~amd64
 dev-haskell/colour ~amd64
@@ -74,6 +77,7 @@ dev-haskell/easy-file ~amd64
 dev-haskell/edit-distance-vector ~amd64
 dev-haskell/either ~amd64
 dev-haskell/emojis ~amd64
+dev-haskell/enclosed-exceptions ~amd64
 dev-haskell/entropy ~amd64
 dev-haskell/erf ~amd64
 dev-haskell/errors ~amd64
@@ -112,6 +116,7 @@ dev-haskell/hslua-module-path ~amd64
 dev-haskell/hslua-module-system ~amd64
 dev-haskell/hslua-module-text ~amd64
 dev-haskell/hspec ~amd64
+dev-haskell/hspec-contrib ~amd64
 dev-haskell/hspec-core ~amd64
 dev-haskell/hspec-discover ~amd64
 dev-haskell/hspec-expectations ~amd64
@@ -134,6 +139,7 @@ dev-haskell/ipynb ~amd64
 dev-haskell/jira-wiki-markup ~amd64
 dev-haskell/juicypixels ~amd64
 dev-haskell/kan-extensions ~amd64
+dev-haskell/language-c ~amd64
 dev-haskell/lens ~amd64
 dev-haskell/libyaml ~amd64
 dev-haskell/lifted-async ~amd64
@@ -201,6 +207,7 @@ dev-haskell/semigroups ~amd64
 dev-haskell/setenv ~amd64
 dev-haskell/setlocale ~amd64
 dev-haskell/sha ~amd64
+dev-haskell/shelly ~amd64
 dev-haskell/silently ~amd64
 dev-haskell/simple-reflect ~amd64
 dev-haskell/simple-sendfile ~amd64
