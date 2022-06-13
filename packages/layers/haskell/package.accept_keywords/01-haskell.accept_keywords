@@ -169,7 +169,6 @@ dev-haskell/newtype-generics ~amd64
 dev-haskell/old-locale ~amd64
 dev-haskell/old-time ~amd64
 dev-haskell/optparse-applicative ~amd64
-dev-haskell/pandoc-citeproc ~amd64
 dev-haskell/pandoc-types ~amd64
 dev-haskell/parallel ~amd64
 dev-haskell/parsec ~amd64
