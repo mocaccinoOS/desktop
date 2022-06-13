@@ -7,7 +7,7 @@ prelude:
 - cp AppleUSBVideoSupport /tmp
 steps:
 - mkdir -p /lib/firmware/isight
-- ift-extract --apple-driver /tmp/AppleUSBVideoSupport -d /lib/firmware/isight
+- ift-extract --apple-driver /tmp/AppleUSBVideoSupport
 - rm /tmp/AppleUSBVideoSupport
 {{ template "portage_build" . }}
 requires:

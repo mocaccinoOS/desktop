@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+18
+    version: 2+19
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -157,9 +157,6 @@ packages:
     version: 2+14
   - category: "layers"
     name: "firmware-isci"
-    version: 2+14
-  - category: "layers"
-    name: "firmware-isight"
     version: 2+14
   - category: "layers"
     name: "firmware-kaweth"
