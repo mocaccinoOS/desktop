@@ -83,6 +83,7 @@ dev-haskell/erf ~amd64
 dev-haskell/errors ~amd64
 dev-haskell/exceptions ~amd64
 dev-haskell/extensible-exceptions ~amd64
+dev-haskell/executable-path ~amd64
 dev-haskell/extra ~amd64
 dev-haskell/fail ~amd64
 dev-haskell/fast-logger ~amd64
@@ -131,6 +132,10 @@ dev-haskell/http-types ~amd64
 dev-haskell/http2 ~amd64
 dev-haskell/httpd-shed ~amd64
 dev-haskell/hunit ~amd64
+dev-haskell/hxt ~amd64
+dev-haskell/hxt-charproperties ~amd64
+dev-haskell/hxt-regex-xmlschema ~amd64
+dev-haskell/hxt-unicode ~amd64
 dev-haskell/indexed-traversable ~amd64
 dev-haskell/integer-logarithms ~amd64
 dev-haskell/invariant ~amd64
