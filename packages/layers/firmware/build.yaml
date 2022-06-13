@@ -3,7 +3,11 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.license /etc/portage/
+- emerge -1 media-video/isight-firmware-tools
+- cp AppleUSBVideoSupport /tmp
 steps:
+- ift-extract --apple-driver /tmp/AppleUSBVideoSupport -d /lib/firmware/isight
+- rm /tmp/AppleUSBVideoSupport
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
