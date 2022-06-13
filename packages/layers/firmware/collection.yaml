@@ -1,11 +1,11 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+16
+    version: 2+17
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
-        sys-kernel/linux-firmware
+        sys-firmware/b43-firmware sys-kernel/linux-firmware
     requires:
       - category: "layers"
         name: "firmware-amd"
@@ -44,6 +44,9 @@ packages:
         name: "firmware-rtl_nic"
         version: ">=0"
     provides:
+      - name: b43-firmware
+        category: sys-firmware
+        version: '>=0'
       - name: linux-firmware
         category: sys-kernel
         version: '>=0'
