@@ -48,4 +48,4 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "haskell"
-    version: 0+2
+    version: 0+3
