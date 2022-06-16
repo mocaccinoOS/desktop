@@ -1,0 +1,31 @@
+category: "apps"
+name: "emacs"
+version: 28.1+1
+uri:
+  - https://www.gnu.org/software/emacs
+license: "GPL-3+ FDL-1.3+ BSD HPND MIT W3C unicode PSF-2 "
+description: "The extensible, customizable, self-documenting real-time display editor"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-editors/emacs app-emacs/emacs-common net-libs/liblockfile
+provides:
+  - name: emacs
+    category: app-editors
+    version: '>=0'
+  - name: emacs-common
+    category: app-emacs
+    version: '>=0'
+  - name: eselect-ctags
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-emacs
+    category: app-eselect
+    version: '>=0'
+  - name: liblockfile
+    category: net-libs
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "codecs"
+    version: ">=0"
