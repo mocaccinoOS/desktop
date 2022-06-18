@@ -18,6 +18,15 @@ requires:
     version: ">=0"
 provides:
   - name: lightdm
+    category: acct-group
+    version: '>=0'
+  - name: lightdm
+    category: acct-user
+    version: '>=0'
+  - name: xfce4-dev-tools
+    category: dev-util
+    version: '>=0'
+  - name: lightdm
     category: x11-misc
     version: '>=0'
   - name: lightdm-gtk-greeter
