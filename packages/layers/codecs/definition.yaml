@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 6+18
+version: 6+19
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
@@ -163,10 +163,10 @@ provides:
   - name: libmatroska
     category: media-libs
     version: '>=0'
-  - name: libmng
+  - name: libmms
     category: media-libs
     version: '>=0'
-  - name: libmms
+  - name: libmng
     category: media-libs
     version: '>=0'
   - name: libmodplug
