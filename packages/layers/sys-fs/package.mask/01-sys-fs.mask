@@ -1,2 +1,2 @@
 # Broken with current boost
->net-libs/libtorrent-rasterbar-1.2.14-r1
+>net-libs/libtorrent-rasterbar-1.2.15-r1
