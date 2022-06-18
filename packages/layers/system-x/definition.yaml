@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20220602+2
+version: 0.20220618+1
 gcc_version: "11.3.0"
 category: layers
 requires:
@@ -831,13 +831,13 @@ provides:
   - name: installer
     category: dev-python
     version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
   - name: jaraco-context
     category: dev-python
     version: '>=0'
   - name: jaraco-functools
-    category: dev-python
-    version: '>=0'
-  - name: isodate
     category: dev-python
     version: '>=0'
   - name: jaraco-text
