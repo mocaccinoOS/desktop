@@ -32,13 +32,11 @@ media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/mesa gbm g3dvl nptl openvg pic shared-dricore shared-glapi video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg gles2 opencl vaapi vdpau
 media-libs/openal -qt5
-media-plugins/alsa-plugins libsamplerate
 media-plugins/gst-plugins-meta mms http
 media-plugins/gst-plugins-libav -abi_x86_32
-media-sound/pulseaudio -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
+media-sound/pulseaudio -daemon -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
 media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 openssl opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
-# keep pipewire-alsa disabled, conflicts media-plugins/alsa-plugins
-media-video/pipewire -pipewire-alsa
+media-video/pipewire pipewire-alsa
 net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
 net-libs/glib-networking gnome
 net-libs/libsoup gnome introspection ssl vala
