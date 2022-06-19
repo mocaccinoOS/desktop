@@ -1,6 +1,6 @@
 category: "apps"
 name: "firefox"
-version: 91.9.0+10
+version: 91.9.0+11
 uri:
   - https://www.mozilla.com/firefox
 license: "MPL-2.0 GPL-2 LGPL-2.1"
