@@ -13,6 +13,9 @@ steps:
 # Fix plymouth service file
 - sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
 - sed -i -e 's/KillMode=none/KillMode=mixed/g' /lib/systemd/system/plymouth-start.service
+- sed -i -e '/GRUB_DISTRIBUTOR/ s/Gentoo/Mocaccino/' /etc/default/grub
+- sed -i -e '/GRUB_CMDLINE_LINUX_DEFAULT/ s/#GRUB_CMDLINE_LINUX_DEFAULT=""/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
+- echo -e "\nGRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 requires:
 - category: "buildbase"
   name: "X"
