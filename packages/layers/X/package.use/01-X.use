@@ -26,8 +26,7 @@ media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite icu introspection truetype
 media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
 media-libs/lcms static-libs
-# Pulseuadio use is required for gnome-extra/cinnamon-settings-daemon
-media-libs/libcanberra pulseaudio -gtk
+media-libs/libcanberra -gtk
 media-libs/libgphoto2 exif
 media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
