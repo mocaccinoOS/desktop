@@ -18,6 +18,9 @@ requires:
   - category: "entity"
     name: "audio"
     version: ">=0"
+  - category: "system-profile"
+    name: "pipewire"
+    version: ">=0"
   - name: avahi
     category: entity
     version: ">=0"
