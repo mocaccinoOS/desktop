@@ -5,3 +5,7 @@ install:
 - ldconfig
 - source /etc/profile && env-update
 - systemctl daemon-reload
+# During migration to pipewire a broken symlink in
+# /etc/alsa/conf.d (10-samplerate.conf) prevents 
+# pipewire from working properly
+- find /etc/alsa/conf.d -xtype l -delete
