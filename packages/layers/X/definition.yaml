@@ -94,6 +94,12 @@ provides:
   - name: sudo
     category: app-admin
     version: '>=0'
+  - name: lzlib
+    category: app-arch
+    version: '>=0'
+  - name: plzip
+    category: app-arch
+    version: '>=0'
   - name: rpm2targz
     category: app-arch
     version: '>=0'
@@ -388,9 +394,6 @@ provides:
   - name: eselect-notify-send
     category: app-eselect
     version: '>=0'
-  - name: eselect-rust
-    category: app-eselect
-    version: '>=0'
   - name: ibus
     category: app-i18n
     version: '>=0'
@@ -481,13 +484,7 @@ provides:
   - name: orc
     category: dev-lang
     version: '>=0'
-  - name: rust-bin
-    category: dev-lang
-    version: '>=0'
   - name: sassc
-    category: dev-lang
-    version: '>=0'
-  - name: vala
     category: dev-lang
     version: '>=0'
   - name: appstream
@@ -823,6 +820,9 @@ provides:
   - name: librsvg
     category: gnome-base
     version: '>=0'
+  - name: gtk
+    category: gui-libs
+    version: '>=0'
   - name: gtk-layer-shell
     category: gui-libs
     version: '>=0'
@@ -991,9 +991,6 @@ provides:
   - name: gst-plugins-libav
     category: media-plugins
     version: '>=0'
-  - name: gst-plugins-libmms
-    category: media-plugins
-    version: '>=0'
   - name: gst-plugins-meta
     category: media-plugins
     version: '>=0'
@@ -1121,9 +1118,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Test-Simple
-    category: virtual
-    version: '>=0'
-  - name: rust
     category: virtual
     version: '>=0'
   - name: tex-base
