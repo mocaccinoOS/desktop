@@ -1,6 +1,6 @@
 category: "apps"
 name: "libvirt"
-version: 7.7.0+43
+version: 7.7.0+44
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
