@@ -1,5 +1,5 @@
 image: "alpine"
 prelude:
-- mkdir -p /usr/share/plymouth/themes/mocaccino
+- mkdir -p /usr/share/plymouth/themes
 steps:
-- cp -rf mocaccino /usr/share/plymouth/themes/mocaccino
+- cp -rf mocaccino /usr/share/plymouth/themes
