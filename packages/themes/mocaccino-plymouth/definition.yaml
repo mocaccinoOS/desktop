@@ -1,7 +1,11 @@
 category: "themes"
 name: "mocaccino-plymouth"
-version: "1.0+2"
+version: "1.0+3"
 uri:
   - https://mocaccino.org
 license: "GPL-3"
 description: "Plymouth theme created by Mihai Dobrescu"
+requires:
+  - category: "sys-kernel"
+    name: "mocaccino-dracut"
+    version: ">=0"
