@@ -1,3 +1,6 @@
 install:
 - plymouth-set-default-theme mocaccino
-- mocaccino-dracut --rebuild-all
+# We do not want to run this during iso creation
+# It results in broken dracut on the live image. 
+# Needs some investigation
+# - mocaccino-dracut --rebuild-all
