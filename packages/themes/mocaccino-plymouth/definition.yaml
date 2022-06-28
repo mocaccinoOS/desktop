@@ -9,3 +9,6 @@ requires:
   - category: "sys-kernel"
     name: "mocaccino-dracut"
     version: ">=0"
+  - category: "apps"
+    name: "grub"
+    version: ">=0"
