@@ -1,0 +1,22 @@
+logoImage = Image("mocaccino.png");
+logoSprite = Sprite(logoImage);
+
+logoSprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - logoImage.GetWidth() / 2));
+logoSprite.SetY(Window.GetY() + (Window.GetHeight() / 2 - logoImage.GetHeight() / 2));
+
+opacity = 0.0;
+opacity_angle = 0;
+//sign = 1;
+//logoSprite.SetOpacity(opacity);
+
+fun refresh_callback()
+{
+    opacity_angle += ((2 * 3.14) / 50) * 0.5;
+    min_opacity = 0.3;
+    opacity = (Math.Cos(opacity_angle) + 1) / 2;
+    opacity *= 1 - min_opacity;
+    opacity += min_opacity;
+    logoSprite.SetOpacity (opacity);
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);

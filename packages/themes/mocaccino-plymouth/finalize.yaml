@@ -1,0 +1,3 @@
+install:
+- plymouth-set-default-theme mocaccino
+- mocaccino-dracut --rebuild-all
