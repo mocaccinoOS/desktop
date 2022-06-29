@@ -1,6 +1,10 @@
-category: "layers"
+category: "apps"
 name: "qtile"
 version: 0.21.0+1
+uri:
+  - http://qtile.org
+license: "MIT"
+description: "A full-featured, hackable tiling window manager written in Python"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
