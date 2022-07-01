@@ -11,6 +11,7 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -r 10_linux /etc/grub.d/10_linux
+- mkdir -p /boot/grub
 - cp -r grub-background.png /boot/grub/grub-background.png
 # Fix plymouth service file
 - sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
