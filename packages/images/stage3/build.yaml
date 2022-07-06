@@ -2,7 +2,7 @@
 # image: {{.Values.image}}
 # unpack: true
 # {{else}}
-# image: "quay.io/mocaccino/extra:latest"
+image: "quay.io/mocaccino/extra:latest"
 
 package_dir: /gentoo
 
