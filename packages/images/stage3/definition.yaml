@@ -1,6 +1,6 @@
 category: "gentoo"
 name: "stage3"
-version: "0.20220703+1"
+version: "0.20220703+2"
 labels:
   package.version: "20220703T170542Z"
   autobump.strategy: "custom"
