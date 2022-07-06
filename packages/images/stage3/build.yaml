@@ -1,7 +1,7 @@
-# {{ if ne .Values.image "" }}
-# image: {{.Values.image}}
-# unpack: true
-# {{else}}
+{{ if ne .Values.image "" }}
+image: {{.Values.image}}
+unpack: true
+{{else}}
 image: "quay.io/mocaccino/extra:latest"
 
 package_dir: /gentoo
@@ -16,7 +16,7 @@ steps:
 env:
 - LUET_YES=true
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
-# {{end}}
+{{end}}
 # Add some common excludes
 excludes:
 - ^/etc/os-release
