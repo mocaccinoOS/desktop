@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 0.8+26
+version: 0.8+27
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
