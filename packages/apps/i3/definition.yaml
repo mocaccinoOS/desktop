@@ -1,6 +1,6 @@
 category: "apps"
 name: "i3"
-version: 4.20.1+53
+version: 4.20.1+54
 uri:
   - https://i3wm.org
 license: "BSD"

@@ -11,7 +11,7 @@ packages:
   #      lts.kernel: "false"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 6.1.28+40
+    version: 6.1.28+41
     lts: true
     emerge:
       jobs: "3"
@@ -62,7 +62,7 @@ packages:
   #       version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 470.103.01+41
+    version: 470.103.01+42
     lts: true
     labels:
       emerge.jobs: "3"
@@ -86,7 +86,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-legacy-lts"
-    version: 390.151+12
+    version: 390.151+13
     lts: true
     labels:
       emerge.jobs: "3"
@@ -110,7 +110,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.1+41
+    version: 0.9.1+42
     lts: true
     labels:
       emerge.jobs: "3"
@@ -131,7 +131,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.2+18
+    version: 0.2+19
     lts: true
     labels:
       emerge.jobs: "3"
