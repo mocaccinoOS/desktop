@@ -1,1 +1,1 @@
-app-emulation/qemu fuse spice usb usbredir -doc
+app-emulation/qemu fuse spice usb usbredir qemu_user_targets_arm -doc
