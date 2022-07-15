@@ -32,19 +32,19 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+82
+    version: 0+83
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
-    version: 0+44
+    version: 0+45
   - !!merge <<: *X
     real_category: "apps"
     name: "libvirt"
-    version: 0+43
+    version: 0+44
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
-    version: 0+43
+    version: 0+44
   - !!merge <<: *X
     real_category: "development"
     name: "ghc"
