@@ -36,15 +36,15 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
-    version: 0+45
+    version: 0+46
   - !!merge <<: *X
     real_category: "apps"
     name: "libvirt"
-    version: 0+44
+    version: 0+45
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
-    version: 0+44
+    version: 0+45
   - !!merge <<: *X
     real_category: "development"
     name: "ghc"
