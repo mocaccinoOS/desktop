@@ -14,13 +14,13 @@ requires:
     name: "X"
     version: ">=0"
 provides:
-  - name: xcffib
+  - name: cairocffi
     category: dev-python
     version: '>=0'
   - name: dbus-next
     category: dev-python
     version: '>=0'
-  - name: cairocffi
+  - name: xcffib
     category: dev-python
     version: '>=0'
   - name: qtile

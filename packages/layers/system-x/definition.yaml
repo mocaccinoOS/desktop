@@ -408,9 +408,6 @@ provides:
   - name: editor-wrapper
     category: app-misc
     version: '>=0'
-  - name: mime-types
-    category: app-misc
-    version: '>=0'
   - name: pax-utils
     category: app-misc
     version: '>=0'
@@ -825,9 +822,6 @@ provides:
   - name: idna
     category: dev-python
     version: '>=0'
-  - name: importlib_metadata
-    category: dev-python
-    version: '>=0'
   - name: installer
     category: dev-python
     version: '>=0'
@@ -916,9 +910,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: wheel
-    category: dev-python
-    version: '>=0'
-  - name: zipp
     category: dev-python
     version: '>=0'
   - name: bundler
