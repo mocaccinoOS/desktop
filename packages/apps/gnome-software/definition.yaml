@@ -8,7 +8,7 @@ description: "Gnome install & update software"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    =gnome-extra/gnome-software-42.1
+    gnome-extra/gnome-software
 provides:
   - name: gnome-software
     category: gnome-extra
