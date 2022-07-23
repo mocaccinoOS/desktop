@@ -1,5 +1,5 @@
-# >=dev-lang/python-3.10.0
-# Mask newer glibc until we have a fresh stage3
-# >sys-libs/glibc-2.33-r13
-# Mask newer baselayout until we have a fresh stage3
-# >sys-apps/baselayout-2.7-r3
+# Mask newer systemd for now.
+# see https://pastebin.com/raw/y16ZpeN2
+# This issue was reproduced in Gentoo IRC
+# Needs more investigation. No bug open yet.
+>=sys-apps/systemd-251.2
