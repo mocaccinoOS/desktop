@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.32+170
+version: 3.2.60+1
 uri:
   - https://calamares.io
 license: "GPL-3"
@@ -12,7 +12,7 @@ provides:
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =app-admin/calamares-3.2.32.1-r1
+    app-admin/calamares
 requires:
   - category: "layers"
     name: "sys-fs"

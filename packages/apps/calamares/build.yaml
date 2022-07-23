@@ -12,10 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-# Hack ebuild that is not compatible with python 3.10
-# see https://bugs.gentoo.org/845423
-- sed -i -e '/PYTHON_COMPAT/ s/9/10/' /var/db/repos/gentoo/app-admin/calamares/calamares-3.2.32.1-r1.ebuild
-- ebuild /var/db/repos/gentoo/app-admin/calamares/calamares-3.2.32.1-r1.ebuild manifest
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp 49-calamares.rules /etc/polkit-1/rules.d/

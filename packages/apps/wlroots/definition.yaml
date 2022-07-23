@@ -1,6 +1,6 @@
 category: "apps"
 name: "wlroots"
-version: 0.15.0+27
+version: 0.15.0+28
 uri:
   - https://github.com/danvd/wlroots-eglstreams
 license: "MIT"
