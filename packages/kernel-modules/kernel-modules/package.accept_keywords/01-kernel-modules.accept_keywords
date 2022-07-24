@@ -1,2 +1,3 @@
 games-util/xpadneo ~amd64
 games-util/xone ~amd64
+app-emulation/virtualbox-modules ~amd64
