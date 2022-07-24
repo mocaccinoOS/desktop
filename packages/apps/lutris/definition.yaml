@@ -1,17 +1,14 @@
 category: "apps"
 name: "lutris"
-version: 0.5.10.1+24
+version: 0.5.10.1+25
 uri:
   - https://lutris.net
 license: "GPL-3+ CC0-1.0"
 description: "An open source gaming platform for GNU/Linux"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "media-sound/fluid-soundfont x11-apps/xgamma dev-python/python-evdev dev-python/python-magic games-util/lutris"
+  emerge.packages: "media-sound/fluid-soundfont x11-apps/xgamma games-util/lutris"
 provides:
-  - name: python-evdev
-    category: dev-python
-    version: '>=0'
   - name: lutris
     category: games-util
     version: '>=0'
