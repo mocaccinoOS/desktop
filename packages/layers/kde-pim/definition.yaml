@@ -17,8 +17,14 @@ provides:
   - name: paperkey
     category: app-crypt
     version: '>=0'
+  - name: kalendar
+    category: app-office
+    version: '>=0'
   - name: libphonenumber
     category: dev-libs
+    version: '>=0'
+  - name: qtlocation
+    category: dev-qt
     version: '>=0'
   - name: akonadi
     category: kde-apps
@@ -69,9 +75,6 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: kalarm
-    category: kde-apps
-    version: '>=0'
-  - name: kalarmcal
     category: kde-apps
     version: '>=0'
   - name: kcalutils
