@@ -212,7 +212,6 @@ net-irc/kvirc -audiofile dcc_video
 net-irc/znc -python
 net-libs/aqbanking chipcard ofx
 net-libs/c-client chappa
-net-libs/libmicrohttpd messages
 net-libs/zeromq drafts unwind
 net-mail/dbmail sqlite3
 net-mail/dovecot managesieve mbox sieve sqlite
