@@ -257,7 +257,6 @@ sci-libs/gdal curl geos
 sci-libs/itpp fftw
 sci-libs/netcdf -fortran hdf5
 sci-libs/plplot -wxwidgets
-sci-libs/ViSP opencv
 sci-mathematics/maxima latex sbcl
 sci-mathematics/octave fftw curl gui doc gnuplot hdf5 graphicsmagick
 sci-physics/root htmldoc doc fftw graphviz
@@ -282,7 +281,6 @@ sys-libs/gwenhywfar designer qml sensors serialport webkit
 virtual/blas eselect-ldso
 virtual/cblas eselect-ldso
 virtual/mpi romio
-virtual/ooo java
 virtual/opencl video_cards_nvidia video_cards_fglrx
 www-apache/mod_dav_svn -dso
 www-apache/mod_jk java
@@ -316,7 +314,6 @@ x11-wm/fluxbox imlib
 x11-wm/fvwm imlib
 x11-wm/icewm imlib
 media-tv/mythtv -css
-media-video/avidemux amr
 net-dns/bind dlz resolvconf
 net-misc/connman iptables networkmanager resolvconf
 media-libs/avidemux-core vaapi vdpau
@@ -324,7 +321,6 @@ media-tv/kodi vaapi vdpau
 media-tv/mythtv vaapi vdpau
 media-video/avidemux vaapi vdpau
 app-i18n/scim gtk3
-dev-cpp/commoncpp2 -gnutls ssl
 net-firewall/ipset -modules
 net-firewall/shorewall lite4 lite6
 app-emulation/lxc doc
