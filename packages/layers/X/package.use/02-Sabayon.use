@@ -67,7 +67,6 @@ dev-lang/parrot pcre
 dev-lang/php -threads apache2 bcmath calendar cgi ctype curl filter fpm ftp gd hash imap inifile intl json mhash mysql mysqli mysqlnd odbc pcntl pcre pdo posix postgres reflection simplexml snmp soap sockets spl sqlite sqlite3 tidy tokenizer truetype wddx xml xmlreader xmlwriter xsl zip sysvipc xslt
 dev-lang/rakudo moar
 dev-libs/apr-util openssl
-dev-libs/botan threads -gmp
 dev-libs/libjcat gpg pkcs7
 dev-libs/libdazzle vala
 dev-libs/libf2c static-libs
