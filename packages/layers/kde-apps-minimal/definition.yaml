@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 21.12.3+2
+version: 21.12.3+3
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
