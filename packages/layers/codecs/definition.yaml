@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 6+25
+version: 6+26
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
