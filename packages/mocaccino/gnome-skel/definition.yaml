@@ -1,6 +1,6 @@
 category: mocaccino
 name: gnome-skel
-version: "0.7"
+version: "0.8"
 dashtoclock: "v45"
 requires:
 - category: "layers"
@@ -9,8 +9,8 @@ requires:
 - name: mocaccino-wallpaper
   category: system
   version: ">=0"
-- name: tela
-  category: gnome-icons
+- name: tela-icon-theme
+  category: themes
   version: ">=0"
 - category: "gnome-themes"
   name: "plano"
