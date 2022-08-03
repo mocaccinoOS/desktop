@@ -3,7 +3,7 @@ image: "alpine"
 prelude:
 - apk add git bash
 - git clone https://github.com/vinceliuice/Tela-icon-theme.git
-- cd Tela-icon-theme && git checkout "79a367f7982bc10d7aacb51b7ae63bd20d8f5bec" -b build
+- cd Tela-icon-theme && git checkout "a0697e3277eb49818d739a50c35d2561306423ef" -b build
 steps:
 - echo '#!/bin/sh' > /usr/bin/gtk-update-icon-cache
 - chmod +x /usr/bin/gtk-update-icon-cache
