@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20220731+1
+version: 0.20220804+1
 gcc_version: "11.3.0"
 category: layers
 requires:
@@ -804,7 +804,7 @@ provides:
   - name: dbus-python
     category: dev-python
     version: '>=0'
-  - name: dev-python/distro
+  - name: distro
     category: dev-python
     version: '>=0'
   - name: docutils
@@ -907,6 +907,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: tomli
+    category: dev-python
+    version: '>=0'
+  - name: typing-extensions
     category: dev-python
     version: '>=0'
   - name: urllib3

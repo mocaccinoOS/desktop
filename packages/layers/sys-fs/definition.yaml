@@ -259,9 +259,6 @@ provides:
   - name: setuptools-rust
     category: dev-python
     version: '>=0'
-  - name: typing-extensions
-    category: dev-python
-    version: '>=0'
   - name: cmocka
     category: dev-util
     version: '>=0'

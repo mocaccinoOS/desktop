@@ -11,6 +11,12 @@ labels:
     net-vpn/tor
 provides:
   - name: tor
+    category: acct-group
+    version: '>=0'
+  - name: tor
+    category: acct-user
+    version: '>=0'
+  - name: tor
     category: net-vpn
     version: '>=0'
 requires:
