@@ -1,5 +1,1 @@
-# Mask newer systemd for now.
-# see https://pastebin.com/raw/y16ZpeN2
-# This issue was reproduced in Gentoo IRC
-# Needs more investigation. No bug open yet.
->=sys-apps/systemd-251.2
+# Placeholder
