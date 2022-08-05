@@ -1215,6 +1215,9 @@ provides:
   - name: binutils
     category: sys-devel
     version: '>=0'
+  - name: binutils
+    category: sys-devel
+    version: '>=0'
   - name: binutils-config
     category: sys-devel
     version: '>=0'
