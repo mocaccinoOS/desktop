@@ -1,6 +1,6 @@
 category: "apps"
 name: "proton-ge-custom"
-version: 7.20+15
+version: 7.20+16
 uri:
   - https://github.com/GloriousEggroll/proton-ge-custom
 license: "BSD"

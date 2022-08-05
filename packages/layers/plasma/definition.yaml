@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.24.5+4
+version: 5.24.5+5
 uri:
   - https://kde.org/plasma-desktop
 license: "GPL-2"

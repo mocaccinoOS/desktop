@@ -1,6 +1,6 @@
 category: "apps"
 name: "qtile"
-version: 0.21.0+7
+version: 0.21.0+8
 uri:
   - http://qtile.org
 license: "MIT"
