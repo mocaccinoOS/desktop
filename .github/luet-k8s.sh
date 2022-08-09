@@ -39,6 +39,7 @@ DOCKER_HOST=${DOCKER_HOST:-}
 PRIVILEGED=${PRIVILEGED:-true}
 REF=${REF:-}
 NAMESPACE=${NAMESPACE:-}
+VALUES_FILE=${VALUES_FILE:-values/amd64.yaml}
 PKG_LIST=$(luet tree pkglist $TREE_ARGS -o json)
 COMPRESSION_TYPE=${COMPRESSION_TYPE:-gzip}
 K8S_SCHEDULER=${K8S_SCHEDULER:-}
@@ -99,6 +100,8 @@ spec:
         path: ""
     options:
         pull: true
+        values:
+        - $VALUES_FILE
         push: true
         imageRepository: "$CACHE_REPOSITORY"
         pullRepository:

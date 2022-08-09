@@ -11,7 +11,7 @@ prelude:
 - mkdir /gentoo
 
 steps:
-- curl -L http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+- curl -L http://distfiles.gentoo.org/releases/{{.Values.arch}}/autobuilds/current-stage3-{{.Values.arch}}-systemd/stage3-{{.Values.arch}}-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
 - LUET_YES=true
