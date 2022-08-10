@@ -1,6 +1,6 @@
-name: Build packages
+name: Build ARM packages
 concurrency:
-  group: ci-${{ github.head_ref || github.ref }}-${{ github.repository }}
+  group: ci-ARM-${{ github.head_ref || github.ref }}-${{ github.repository }}
 
 on:
   push:
