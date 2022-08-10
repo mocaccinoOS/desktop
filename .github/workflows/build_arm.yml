@@ -1,0 +1,98 @@
+name: Build packages
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}-${{ github.repository }}
+
+on:
+  push:
+    branches: [ master ]
+  create:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # runs-on: [self-hosted]
+    env:
+      DOCKER_CFG: ${{ secrets.DOCKER_HOST }}
+      ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG_ARM }}
+      #MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+      #MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+      REPOSITORY_TYPE: docker
+      REPOSITORY_URL: quay.io/mocaccino/desktop-arm64
+      #$MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      #IMAGE_REPOSITORY: quay.io/mocaccino/desktop
+      IMAGE_REPOSITORY: ${{ secrets.REGISTRY_IMAGE_ARM }}
+      CACHE_REPOSITORY: ${{ secrets.REGISTRY_IMAGE_ARM }}
+      NODE_SELECTOR: "luet.io/workload: jobs"
+      REPO: desktop
+      BUCKET: mocaccino-desktop
+      TREE_DIR: packages
+      BACKEND: docker-sidecar
+      DOCKER_REGISTRY: ${{ secrets.REGISTRY_URL }}
+      DOCKER_USER: ${{ secrets.REGISTRY_USERNAME }}
+      DOCKER_PASS: ${{ secrets.REGISTRY_PASSWORD }}
+      #DOCKER_REGISTRY: quay.io
+      #DOCKER_USER: ${{ secrets.QUAY_ROBOT_USERNAME }}
+      #DOCKER_PASS: ${{ secrets.QUAY_ROBOT_PASSWORD }}
+      NAMESPACE: "workload-desktop"
+#      EDGEVPN: ${{ secrets.EDGEVPN }}
+      MASTER: 10.1.0.20
+      ADDRESS: "10.1.0.201/24"
+    steps:
+    - uses: actions/checkout@v2
+    - uses: fkirc/skip-duplicate-actions@master
+    - run: |
+        git fetch --prune --unshallow
+    - name: Installing dependencies
+      run: |
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+        sudo luet install -y repository/mocaccino-extra-stable
+        sudo luet install -y system/luet-extensions system/luet-devkit utils/jq net-fs/minio-client container/kubectl container/stern container/skopeo
+        sudo curl https://raw.githubusercontent.com/Luet-lab/extensions/master/extensions/k8s-build-scheduler/luet-k8s-build-scheduler -o /usr/bin/luet-k8s-build-scheduler
+        luet tree validate --only-buildtime
+  #  - name: Validate 🔧
+  #    run: |
+  #      make validate
+    - name: Login to Quay Registry
+      run: echo ${{ secrets.QUAY_ROBOT_PASSWORD }} | sudo -E docker login -u ${{ secrets.QUAY_ROBOT_USERNAME }} --password-stdin quay.io
+    - name: Build repository 🔧
+      if: github.ref == 'refs/heads/master' && !startsWith(github.ref, 'refs/tags/')
+      run: |
+        if [ -z "$EDGEVPN" ]; then
+          export KUBECONFIG=$GITHUB_WORKSPACE/kubeconfig
+          echo "$ENCODED_KUBECONFIG" | base64 -d > $KUBECONFIG
+        else
+          source .github/helpers.sh
+          start_vpn
+          prepare_jumpbox
+          export KUBECONFIG=$PWD/k3s.yaml
+        fi
+        export REF=$GITHUB_SHA
+        export GITHUB_REPO=$GITHUB_REPOSITORY
+        export DOCKER_HOST=$DOCKER_CFG
+        export VALUES_FILE=values/arm64.yaml
+        kubectl create namespace $NAMESPACE || true
+        bash .github/luet-k8s.sh
+    - name: Create repository 🔧
+      if: github.ref == 'refs/heads/master' && !startsWith(github.ref, 'refs/tags/')
+      run: |
+        BUILD_PHASE=false CREATE_PHASE=true bash .github/luet-k8s.sh
+    - name: Repository integrity checks 🔧
+      if: github.ref == 'refs/heads/master' && !startsWith(github.ref, 'refs/tags/')
+      run: |
+        ./scripts/run.sh repo_validate.sh
+    - name: Push to stable repository 🚀
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        src="quay.io/mocaccino/desktop-arm64"
+        dst="quay.io/mocaccino/desktop-arm64-stable"
+
+        skopeo login quay.io
+
+        tags=$(skopeo list-tags docker://$src | jq '.Tags')
+
+        for i in $(echo "$tags" | jq -rc '.[]'); do
+         if echo $i | grep -qEiw "repository|compilertree|tree" || ! luet util image-exist $dst:$i; then
+          echo "Copy docker://$src:$i docker://$dst:$i"
+          skopeo copy docker://$src:$i docker://$dst:$i
+         fi
+        done
