@@ -37,14 +37,13 @@ jobs:
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         build: true
-        fromIndex: false
-        onlyMissing: false
+        fromIndex: true
+        onlyMissing: true
         buildx: true
         platform: linux/arm/v8
         FINAL_REPO: quay.io/mocaccino/desktop-arm64
         DOCKER_USERNAME: ${{ secrets.QUAY_ROBOT_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.QUAY_ROBOT_PASSWORD }}
-        CURRENT_PACKAGE: "gentoo/stage3"
         DOCKER_ENDPOINT: quay.io
         REPOSITORY_TYPE: docker
         pushFinalImages: true
