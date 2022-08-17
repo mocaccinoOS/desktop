@@ -34,7 +34,7 @@ jobs:
     #     downloadMeta: true
     - name: Build packages 🔧
       uses: luet-lab/luet-github-action@master
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         build: true
         fromIndex: false
@@ -52,7 +52,7 @@ jobs:
         values: values/arm64.yaml
     - name: Create repo 🔧
       uses: luet-lab/luet-github-action@master
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         FINAL_REPO: quay.io/mocaccino/desktop-arm64
         DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
