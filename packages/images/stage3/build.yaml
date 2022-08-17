@@ -2,19 +2,18 @@
 image: {{.Values.image}}
 unpack: true
 {{else}}
-image: "quay.io/mocaccino/extra:latest"
+image: "alpine"
 
 package_dir: /gentoo
 
 prelude:
-- luet upgrade && luet install -y --force utils/tar utils/curl utils/xz
+- apk add curl xz
 - mkdir /gentoo
 
 steps:
 - curl -L http://distfiles.gentoo.org/releases/{{.Values.arch}}/autobuilds/current-stage3-{{.Values.arch}}-systemd/stage3-{{.Values.arch}}-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
-- LUET_YES=true
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
 {{end}}
 # Add some common excludes
