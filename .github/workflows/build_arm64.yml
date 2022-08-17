@@ -42,8 +42,8 @@ jobs:
         buildx: true
         platform: linux/arm/v8
         FINAL_REPO: quay.io/mocaccino/desktop-arm64
-        DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        DOCKER_USERNAME: ${{ secrets.QUAY_ROBOT_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.QUAY_ROBOT_PASSWORD }}
         CURRENT_PACKAGE: "gentoo/stage3"
         DOCKER_ENDPOINT: quay.io
         REPOSITORY_TYPE: docker
@@ -55,8 +55,8 @@ jobs:
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         FINAL_REPO: quay.io/mocaccino/desktop-arm64
-        DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        DOCKER_USERNAME: ${{ secrets.QUAY_ROBOT_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.QUAY_ROBOT_PASSWORD }}
         DOCKER_ENDPOINT: quay.io
         REPOSITORY_TYPE: docker
         createRepo: true
