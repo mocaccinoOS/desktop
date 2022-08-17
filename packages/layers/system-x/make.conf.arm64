@@ -1,0 +1,35 @@
+COMMON_FLAGS="-march=x86-64 -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CHOST="x86_64-pc-linux-gnu"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+EMERGE_DEFAULT_OPTS="--quiet"
+FEATURES="-preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+LINGUAS="en en_US af ar az bg bn br bs ca cs cy da de el en_GB eo es et eu fa fi fr fy ga gl he hi hr hu is it ja kk km ko lt lv mk mn ms nb nds nl nl_NL nn pa pl pt pt_BR ro ru rw se sk sl sr sr@Latn ss sv ta tg tr uk uz vi zh_CN zh_TW es_AR es_ES fy_NL ga_IE gu gu_IN nb_NO nn_NO pt_PT sv_SE zh"
+L10N="en af ar az bg bn br bs ca cs cy da de el en-GB eo es et eu fa fi fr fy ga gl he hi hr hu is it ja kk km ko lt lv mk mn ms nb nds nl nn pa pl pt pt-BR ro ru rw se sk sl sr sr-Latn ss sv ta tg tr uk uz vi zh-CN zh-TW es-AR es-ES fy ga gu nb nn pt-PT sv zh"
+
+# Global use flags
+GLOB_USE_SYSTEM="bash-completion bzip2 clang dbus gmp gnutls lzo nptl perl policykit python rar systemd udev usb"
+GLOB_USE_SYSTEM_X="cairo X opengl png gif gtk qt5 xpm tiff xinerama svg gphoto2 dga lcd openexr wayland"
+GLOB_USE_SYSTEM_MEDIA="alsa pipewire pulseaudio screencast"
+USE="${GLOB_USE_SYSTEM} ${GLOB_USE_SYSTEM_X} ${GLOB_USE_SYSTEM_MEDIA}"
+
+PYTHON_TARGETS="python3_10"
+PYTHON_SINGLE_TARGET="python3_10"
+USE_PYTHON="3.10"
+RUBY_TARGETS="ruby27"
+
+# Support both 64bit and 32bit
+ABI_X86="64 32"
