@@ -7,7 +7,7 @@ image: "alpine"
 package_dir: /gentoo
 
 prelude:
-- apk add curl xz
+- apk add curl xz tar
 - mkdir /gentoo
 
 steps:
