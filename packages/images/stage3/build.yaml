@@ -14,7 +14,11 @@ steps:
 - curl -L http://distfiles.gentoo.org/releases/{{.Values.arch}}/autobuilds/current-stage3-{{.Values.arch}}-systemd/stage3-{{.Values.arch}}-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
+{{ if ne .Values.arch "amd64"}}
+- STAGE_VERSION={{ ( index .Values.labels (print "package.version." .Values.arch ) }}
+{{ else }}
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
+{{ end }}
 {{end}}
 # Add some common excludes
 excludes:
