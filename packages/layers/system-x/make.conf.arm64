@@ -1,6 +1,6 @@
-COMMON_FLAGS="-march=x86-64 -O2 -pipe"
+COMMON_FLAGS="-O2 -pipe"
 CFLAGS="${COMMON_FLAGS}"
-CHOST="x86_64-pc-linux-gnu"
+CHOST="aarch64-unknown-linux-gnu"
 CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
