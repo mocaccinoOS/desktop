@@ -1,0 +1,63 @@
+name: Build ARM64
+concurrency:
+  group: "master-arm64-build"
+  #cancel-in-progress: true
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ARCH: amd64
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        git fetch --prune --unshallow
+        mkdir build
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@master
+      with:
+        platforms: all
+    - name: Set up Docker Buildx
+      id: buildx
+      uses: docker/setup-buildx-action@master
+    # - name: Download meta 🔧
+    #   uses: luet-lab/luet-github-action@master
+    #   with:
+    #     FINAL_REPO: quay.io/c3os/packages-arm64
+    #     REPOSITORY_TYPE: docker
+    #     downloadAllMeta: true
+    #     downloadFromList: true
+    #     downloadMeta: true
+    - name: Build packages 🔧
+      uses: luet-lab/luet-github-action@master
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      with:
+        build: true
+        fromIndex: false
+        onlyMissing: false
+        buildx: true
+        platform: linux/arm/v8
+        FINAL_REPO: quay.io/mocaccino/desktop-arm64
+        DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        CURRENT_PACKAGE: "gentoo/stage3"
+        DOCKER_ENDPOINT: quay.io
+        REPOSITORY_TYPE: docker
+        pushFinalImages: true
+        pushCache: true
+        values: values/arm64.yaml
+    - name: Create repo 🔧
+      uses: luet-lab/luet-github-action@master
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      with:
+        FINAL_REPO: quay.io/mocaccino/desktop-arm64
+        DOCKER_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        DOCKER_ENDPOINT: quay.io
+        REPOSITORY_TYPE: docker
+        createRepo: true
+        pushCache: true
