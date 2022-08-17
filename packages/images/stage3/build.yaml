@@ -15,7 +15,7 @@ steps:
 
 env:
 {{ if ne .Values.arch "amd64"}}
-- STAGE_VERSION={{ ( index .Values.labels (print "package.version." .Values.arch ) }}
+- STAGE_VERSION={{ ( index .Values.labels (print "package.version." .Values.arch ) ) }}
 {{ else }}
 - STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
 {{ end }}
