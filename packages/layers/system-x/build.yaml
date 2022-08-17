@@ -10,7 +10,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf profile /etc/portage/
 {{ if ne .Values.arch "amd64" }}
-- cp -rf make.conf.{{.Values.arch}} /etc/portage/
+- cp -rf make.conf.{{.Values.arch}} /etc/portage/make.conf
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
