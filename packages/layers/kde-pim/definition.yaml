@@ -182,9 +182,6 @@ provides:
   - name: kdav
     category: kde-frameworks
     version: '>=0'
-  - name: syndication
-    category: kde-frameworks
-    version: '>=0'
   - name: zanshin
     category: kde-misc
     version: '>=0'
