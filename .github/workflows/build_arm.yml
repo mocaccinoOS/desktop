@@ -69,7 +69,7 @@ jobs:
         export REF=$GITHUB_SHA
         export GITHUB_REPO=$GITHUB_REPOSITORY
         export DOCKER_HOST=$DOCKER_CFG
-        export VALUES_FILE=values/arm64.yaml
+        export VALUES_FILE=/values/arm64.yaml
         kubectl create namespace $NAMESPACE || true
         bash .github/luet-k8s.sh
     - name: Create repository 🔧
