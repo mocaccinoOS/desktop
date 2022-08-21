@@ -1,6 +1,6 @@
 category: "apps"
 name: "chromium"
-version: 103.0.5060.134+4
+version: 103.0.5060.134+5
 uri:
   - https://chromium.org
 license: "BSD"
@@ -10,6 +10,12 @@ labels:
   emerge.packages: >-
     www-client/chromium
 provides:
+  - name: gn
+    category: dev-util
+    version: '>=0'
+  - name: nodejs
+    category: net-libs
+    version: '>=0'
   - name: chromium
     category: www-client
     version: '>=0'

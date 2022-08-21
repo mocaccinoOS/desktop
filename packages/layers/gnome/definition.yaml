@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: 42.2+10
+version: 42.2+11
 uri:
   - https://gnome.org
 license: "GPL-2+"
@@ -64,6 +64,9 @@ provides:
   - name: eselect-gnome-shell-extensions
     category: app-eselect
     version: '>=0'
+  - name: jq
+    category: app-misc
+    version: '>=0'
   - name: tracker
     category: app-misc
     version: '>=0'
@@ -120,6 +123,9 @@ provides:
     version: '>=0'
   - name: nautilus
     category: gnome-base
+    version: '>=0'
+  - name: gnome-browser-connector
+    category: gnome-extra
     version: '>=0'
   - name: gnome-calculator
     category: gnome-extra
