@@ -35,7 +35,7 @@ excludes:
 - ^/usr/share/man/man1/pdftotext.1.bz2
 - ^/usr/share/man/man1/pdfunite.1.bz2
 # Gpgme split. Only ship Qt module
-- ^/usr/share/doc/gpgme-.*/README.bz2
+- ^/usr/share/doc/gpgme-.*/.*
 - ^/usr/lib64/pkgconfig/gpgme.pc
 - ^/usr/lib/python.*/site-packages/gpg
 - ^/usr/share/info/gpgme.info.*
