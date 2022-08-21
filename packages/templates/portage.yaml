@@ -4,6 +4,8 @@
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/usr/tmp/portage
+- ^/usr/lib/cmake
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
