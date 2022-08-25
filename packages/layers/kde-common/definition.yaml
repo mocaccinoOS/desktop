@@ -34,9 +34,6 @@ provides:
   - name: designer
     category: dev-qt
     version: '>=0'
-  - name: qtwaylandscanner
-    category: dev-qt
-    version: '>=0'
   - name: kdegraphics-mobipocket
     category: kde-apps
     version: '>=0'
