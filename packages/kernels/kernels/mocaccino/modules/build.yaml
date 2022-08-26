@@ -13,7 +13,7 @@ env:
 {{if eq .Values.arch "amd64" }}
 {{$arch = "X86_64"}}
 {{end}}
-- ARCH={{arch}}
+- ARCH={{$arch}}
 excludes:
 
 - /boot/vmlinuz-.*
