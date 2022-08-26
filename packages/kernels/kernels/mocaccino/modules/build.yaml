@@ -8,11 +8,12 @@ requires:
 env:
 - SUFFIX={{ .Values.suffix }}
 - KERNEL_TYPE={{ .Values.prefix }}
-- ARCH={{.Values.arch}}
 # $ARCH can't be amd64 here, X86_64 is used here
-if [ $ARCH == "amd64" ];
-  ARCH = "x86_64"
-fi
+{{$arch := ""}}
+{{if eq .Values.arch "amd64" }}
+{{$arch = "X86_64"}}
+{{end}}
+- ARCH={{.Values.arch}}
 excludes:
 
 - /boot/vmlinuz-.*
