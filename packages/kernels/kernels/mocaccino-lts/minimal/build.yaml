@@ -1,3 +1,8 @@
+# $ARCH can't be amd64 here, x86_64 is used here
+{{$arch := ""}}
+{{if eq .Values.arch "amd64" }}
+{{$arch = "x86_64"}}
+{{end}}
 steps:
 - cp -rfv output/boot/* /luetbuild/modules/boot
 package_dir: /luetbuild/modules
@@ -8,7 +13,7 @@ requires:
 includes:
 # Kernel
 - /boot$
-- /boot/{{ .Values.kernelprefix }}-{{ .Values.arch }}-{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
+- /boot/{{ .Values.kernelprefix }}-{{ $arch }}-{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
 - /boot/System.map-.*-{{ ( index .Values.labels "package.version" ) }}-{{ .Values.suffix }}$
 
 - /lib$
