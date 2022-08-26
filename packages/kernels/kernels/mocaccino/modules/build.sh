@@ -5,6 +5,11 @@ outdir="/luetbuild/modules"
 mkdir -p $outdir/boot
 pushd linux
 
+# $ARCH can't be amd64 here, X86_64 is used here
+if [ $ARCH == "amd64" ];
+  ARCH = "x86_64"
+fi
+
 if [ ! -e "arch/x86/boot/bzImage" ]; then
     cp -rfv ../output/* arch/x86/boot/bzImage || true
 fi

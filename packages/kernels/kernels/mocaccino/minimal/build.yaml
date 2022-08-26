@@ -1,3 +1,8 @@
+# $ARCH can't be amd64 here, X86_64 is used here
+{{$arch := ""}}
+{{if eq .Values.arch "amd64" }}
+{{$arch = "X86_64"}}
+{{end}}
 steps:
 - cp -rfv output/boot/* /luetbuild/modules/boot
 package_dir: /luetbuild/modules
