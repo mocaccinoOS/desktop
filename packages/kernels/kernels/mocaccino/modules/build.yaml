@@ -8,10 +8,10 @@ requires:
 env:
 - SUFFIX={{ .Values.suffix }}
 - KERNEL_TYPE={{ .Values.prefix }}
-# $ARCH can't be amd64 here, X86_64 is used here
+# $ARCH can't be amd64 here, x86_64 is used here
 {{$arch := ""}}
 {{if eq .Values.arch "amd64" }}
-{{$arch = "X86_64"}}
+{{$arch = "x86_64"}}
 {{end}}
 - ARCH={{$arch}}
 excludes:
