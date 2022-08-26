@@ -131,7 +131,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.2+28
+    version: 0.2+29
     lts: true
     labels:
       emerge.jobs: "3"
