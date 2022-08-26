@@ -7,7 +7,7 @@ pushd ${KERNEL_TYPE}
 make -j$(nproc --ignore=1) KBUILD_BUILD_VERSION="$PACKAGE_VERSION-Mocaccino"
 
 # $ARCH can't be amd64 here, x86_64 is used here
-if [ $ARCH == "amd64" ];
+if [ $ARCH == "amd64" ]; then
   ARCH = "x86_64"
 fi
 

@@ -6,7 +6,7 @@ mkdir -p $outdir/boot
 pushd linux
 
 # $ARCH can't be amd64 here, x86_64 is used here
-if [ $ARCH == "amd64" ];
+if [ $ARCH == "amd64" ]; then
   ARCH = "x86_64"
 fi
 
