@@ -868,9 +868,6 @@ provides:
   - name: sane-backends
     category: media-gfx
     version: '>=0'
-  - name: audiofile
-    category: media-libs
-    version: '>=0'
   - name: chromaprint
     category: media-libs
     version: '>=0'
