@@ -1,4 +1,5 @@
 kde-apps/kio-extras mtp samba taglib
+kde-frameworks/kconfig qml
 kde-frameworks/kfilemetadata taglib
 kde-frameworks/kitemmodels qml
 kde-frameworks/prison qml
