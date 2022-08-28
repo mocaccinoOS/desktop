@@ -223,6 +223,9 @@ provides:
   - name: gnome-disk-utility
     category: sys-apps
     version: '>=0'
+  - name: xdg-desktop-portal-gnome
+    category: sys-apps
+    version: '>=0'
   - name: fprintd
     category: sys-auth
     version: '>=0'
