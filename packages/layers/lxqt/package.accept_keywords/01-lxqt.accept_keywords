@@ -1,4 +1,4 @@
-=app-editors/featherpad-1.0.0 ~amd64
+app-editors/featherpad ~amd64
 # Need newer lxqt-build-tools. Current stable (0.10.0) has a bug against current tree.
 # see also https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1008416
 =dev-util/lxqt-build-tools-0.11.0 ~amd64
