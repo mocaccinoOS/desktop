@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 2+22
+    version: 2+23
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -45,6 +45,9 @@ packages:
         version: ">=0"
       - category: "layers"
         name: "firmware-rtl_nic"
+        version: ">=0"
+      - category: "layers"
+        name: "firmware-rtlwifi"
         version: ">=0"
     provides:
       - name: b43-firmware
