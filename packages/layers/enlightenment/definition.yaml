@@ -1,6 +1,6 @@
 category: "layers"
 name: "enlightenment"
-version: 0.25.3+25
+version: 0.25.3+26
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
