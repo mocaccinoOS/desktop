@@ -10,7 +10,7 @@ dev-util/cmake -qt5 server
 dev-db/sqlite icu readline
 dev-lang/python sqlite berkdb
 dev-libs/boehm-gc threads
-dev-libs/boost bzip2 context icu nls python threads zlib zstd
+dev-libs/boost bzip2 context icu nls numpy python threads zlib zstd
 dev-libs/gmp asm cxx static-libs
 dev-libs/libassuan static-libs
 dev-libs/libgcrypt static-libs
