@@ -133,7 +133,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "8"
   emerge.packages: >-
-    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/distro dev-python/docutils dev-python/filelock dev-python/html5lib dev-python/isodate dev-python/python-evdev dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sci-libs/hdf5 sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/gdb sys-kernel/dracut sys-process/cronie
+    acct-group/mail acct-group/plugdev acct-user/mail acct-user/postmaster app-arch/cpio app-arch/p7zip app-arch/unrar app-arch/zip app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-lang/ruby dev-libs/double-conversion dev-libs/jemalloc dev-libs/libgudev dev-perl/DBD-SQLite dev-perl/DBI dev-perl/JSON dev-perl/Net-Daemon dev-perl/PlRPC dev-perl/Types-Serialiser dev-perl/XML-Simple dev-python/dbus-python dev-python/distro dev-python/docutils dev-python/filelock dev-python/h5py dev-python/html5lib dev-python/isodate dev-python/python-evdev dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng net-mail/mailbase net-misc/ntp sci-libs/hdf5 sys-apps/dmidecode sys-apps/lm-sensors sys-apps/usbutils sys-devel/gdb sys-kernel/dracut sys-process/cronie
 provides:
   - name: adm
     category: acct-group
@@ -817,6 +817,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: gpep517
+    category: dev-python
+    version: '>=0'
+  - name: h5py
     category: dev-python
     version: '>=0'
   - name: html5lib
