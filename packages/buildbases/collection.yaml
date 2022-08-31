@@ -45,7 +45,3 @@ packages:
     real_category: "apps"
     name: "qemu"
     version: 0+54
-  - !!merge <<: *X
-    real_category: "development"
-    name: "ghc"
-    version: 0+3
