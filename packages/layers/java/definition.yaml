@@ -1,6 +1,6 @@
 category: "layers"
 name: "java"
-version: 17.0.3_p7+2
+version: 17.0.3_p7+3
 labels:
   emerge.jobs: "3"
   emerge.packages: "dev-java/openjdk-jre-bin dev-java/openjdk-bin virtual/jre virtual/jdk"
