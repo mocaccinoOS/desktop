@@ -235,7 +235,7 @@ packages:
     version: 2+18
   - category: "layers"
     name: "firmware-RTL8192E"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-rtl_bt"
     version: 2+18
