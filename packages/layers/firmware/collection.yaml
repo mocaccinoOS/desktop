@@ -112,7 +112,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-cavium"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-cis"
     version: 2+18
