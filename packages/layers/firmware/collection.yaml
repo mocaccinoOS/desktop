@@ -151,7 +151,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-imx"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-inside-secure"
     version: 2+18
