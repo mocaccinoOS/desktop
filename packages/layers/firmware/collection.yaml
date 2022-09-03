@@ -181,7 +181,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-mediatek"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-mellanox"
     version: 2+18
