@@ -1,6 +1,6 @@
 name: mocaccino-lts-sources
 category: kernel
-version: "5.15.64"
+version: "5.15.64+1"
 prefix: linux
 suffix: mocaccino
 labels:
