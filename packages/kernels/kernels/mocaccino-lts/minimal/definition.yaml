@@ -1,6 +1,6 @@
 name: mocaccino-lts-minimal
 category: kernel
-version: "5.15.64"
+version: "5.15.64+1"
 kernelprefix: kernel-vanilla
 arch: "x86_64"
 suffix: mocaccino
