@@ -1,7 +1,7 @@
 category: "layers"
 name: "maui-shell"
 version: 0.5.5+1
-maui_kit_commit: "2e5ada2ff895095f027e2619231e9a17749cb7c1"
+maui_kit_commit: "535bd57e7dc44c006dfcfafeec102990f6a0575c"
 maui_kit_filebrowsing_commit: "3fd0caaee456bda985682b0821743d2eb41f5c19"
 maui_shell_commit: "a162c09a4cec287258a8b27a3dd083f8513184a0"
 requires:
