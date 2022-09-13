@@ -166,7 +166,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-keyspan"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-keyspan_pda"
     version: 2+18
