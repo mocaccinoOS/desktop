@@ -67,7 +67,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-amd-ucode"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-amd"
     version: 2+19
