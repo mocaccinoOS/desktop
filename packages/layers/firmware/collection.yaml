@@ -208,7 +208,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-qca"
     version: 2+18
