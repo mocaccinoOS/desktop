@@ -262,7 +262,7 @@ packages:
     version: 2+19
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+18
+    version: 2+19
   - category: "layers"
     name: "firmware-ti-keystone"
     version: 2+18
