@@ -62,7 +62,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 510.85.02+10
+    version: 515.65.01+1
     lts: true
     labels:
       emerge.jobs: "3"
@@ -110,7 +110,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.1+62
+    version: 0.9.5+1
     lts: true
     labels:
       emerge.jobs: "3"
@@ -131,7 +131,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.2+39
+    version: 0.3+1
     lts: true
     labels:
       emerge.jobs: "3"
