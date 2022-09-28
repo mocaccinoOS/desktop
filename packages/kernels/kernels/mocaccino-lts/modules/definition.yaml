@@ -1,6 +1,6 @@
 name: mocaccino-lts-modules
 category: kernel
-version: "5.15.68"
+version: "5.15.71"
 prefix: linux
 arch: "x86_64"
 suffix: mocaccino
@@ -13,4 +13,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
-  package.version: "5.15.68"
+  package.version: "5.15.71"
