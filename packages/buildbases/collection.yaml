@@ -2,46 +2,46 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+85
+    version: 0+86
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
-    version: 0+82
+    version: 0+83
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+80
+    version: 0+81
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+95
+    version: 0+96
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+90
+    version: 0+91
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+98
+    version: 0+99
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
-    version: 0+83
+    version: 0+84
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+98
+    version: 0+99
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
-    version: 0+58
+    version: 0+59
   - !!merge <<: *X
     real_category: "apps"
     name: "libvirt"
-    version: 0+57
+    version: 0+58
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
-    version: 0+57
+    version: 0+58
