@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 1.1+6
+version: 1.1+7
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -724,9 +724,6 @@ provides:
   - name: Ref-Util-XS
     category: dev-perl
     version: '>=0'
-  - name: Role-Tiny
-    category: dev-perl
-    version: '>=0'
   - name: Specio
     category: dev-perl
     version: '>=0'
@@ -740,12 +737,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Sub-Install
-    category: dev-perl
-    version: '>=0'
-  - name: Sub-Name
-    category: dev-perl
-    version: '>=0'
-  - name: Sub-Quote
     category: dev-perl
     version: '>=0'
   - name: Test-Fatal
