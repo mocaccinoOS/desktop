@@ -85,6 +85,30 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
+    name: "nvidia-drivers"
+    version: 515.65.01+2
+    lts: false
+    labels:
+      emerge.jobs: "3"
+    emerge:
+      jobs: "3"
+      packages:
+        - x11-drivers/nvidia-drivers
+    provides:
+      - name: nvidia-drivers
+        category: x11-drivers
+        version: '>=0'
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
+      - name: nvpd
+        category: entity
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+  - category: "kernel-modules"
     name: "nvidia-drivers-legacy-lts"
     version: 390.154+11
     lts: true
