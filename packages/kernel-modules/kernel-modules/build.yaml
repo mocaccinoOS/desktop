@@ -14,6 +14,11 @@ prelude:
 - layman -L
 - echo "y" | layman -a src_prepare-overlay
 {{- end}}
+{{ if contains "rtl8812au" .Values.name }}
+- USE="-subversion -mercurial" emerge app-portage/layman
+- layman -L
+- echo "y" | layman -a rasdark
+{{- end}}
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
