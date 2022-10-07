@@ -8,7 +8,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "flatpak"
-    version: 0+83
+    version: 0+84
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
