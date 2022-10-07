@@ -157,7 +157,7 @@ packages:
     version: 2+20
   - category: "layers"
     name: "firmware-intel"
-    version: 2+19
+    version: 2+20
   - category: "layers"
     name: "firmware-isci"
     version: 2+19
