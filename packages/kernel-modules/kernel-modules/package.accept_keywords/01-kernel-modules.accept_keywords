@@ -1,3 +1,4 @@
 games-util/xpadneo ~amd64
 games-util/xone ~amd64
 net-wireless/rtl8812au ~amd64
+net-wireless/rtl8822bu ~amd64
