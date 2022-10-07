@@ -19,11 +19,6 @@ prelude:
 - layman -L
 - echo "y" | layman -a rasdark
 {{- end}}
-{{ if contains "rtl8822bu" .Values.name }}
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a pentoo
-{{- end}}
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
