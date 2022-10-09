@@ -74,6 +74,9 @@ provides:
   - name: purpose
     category: kde-frameworks
     version: '>=0'
+  - name: kio-fuse
+    category: kde-misc
+    version: '>=0'
   - name: kio-gdrive
     category: kde-misc
     version: '>=0'
@@ -150,6 +153,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: oxygen
+    category: kde-plasma
+    version: '>=0'
+  - name: oxygen-sounds
     category: kde-plasma
     version: '>=0'
   - name: plasma-browser-integration
