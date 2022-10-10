@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 5.24.6+3
+version: 5.25.5+1
 uri:
   - https://kde.org/plasma-desktop
 license: "GPL-2"
@@ -73,6 +73,9 @@ provides:
     version: '>=0'
   - name: purpose
     category: kde-frameworks
+    version: '>=0'
+  - name: kio-fuse
+    category: kde-misc
     version: '>=0'
   - name: kio-gdrive
     category: kde-misc
@@ -150,6 +153,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: oxygen
+    category: kde-plasma
+    version: '>=0'
+  - name: oxygen-sounds
     category: kde-plasma
     version: '>=0'
   - name: plasma-browser-integration
