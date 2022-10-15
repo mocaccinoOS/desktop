@@ -8,7 +8,7 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/libcacard app-emulation/qemu app-emulation/spice sys-apps/usbredir
+    app-emulation/libcacard app-emulation/qemu app-emulation/spice net-libs/libslirp sys-apps/usbredir
 provides:
   - name: libcacard
     category: app-emulation
@@ -18,6 +18,9 @@ provides:
     version: '>=0'
   - name: spice
     category: app-emulation
+    version: '>=0'
+  - name: libslirp
+    category: net-libs
     version: '>=0'
   - name: usbredir
     category: sys-apps
