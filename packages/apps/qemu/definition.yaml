@@ -1,6 +1,6 @@
 category: "apps"
 name: "qemu"
-version: 7.0.0+16
+version: 7.0.0-r3+1
 uri:
   - https://www.qemu.org
 license: "GPL-2 LGPL-2 BSD-2"
@@ -8,8 +8,11 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/qemu app-emulation/spice sys-apps/usbredir
+    app-emulation/libcacard app-emulation/qemu app-emulation/spice sys-apps/usbredir
 provides:
+  - name: libcacard
+    category: app-emulation
+    version: '>=0'
   - name: qemu
     category: app-emulation
     version: '>=0'
