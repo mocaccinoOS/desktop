@@ -1,0 +1,22 @@
+category: "apps"
+name: "gnome-boxes"
+version: 42.3+1
+uri:
+  - https://wiki.gnome.org/Apps/Boxes
+license: "LGPL-2+ CC-BY-2.0"
+description: "Simple GNOME application to access remote or virtual systems"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    gnome-extra/gnome-boxes
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+  - category: "apps"
+    name: "spice-gtk"
+    version: ">=0"
+provides:
+  - name: gnome-boxes
+    category: gnome-extra
+    version: '>=0'

@@ -1,0 +1,16 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "buildbase"
+  name: "spice-gtk"
+  version: ">=0"
+- category: "buildbase"
+  name: "gnome-common"
+  version: ">=0"
+requires_final_images: true
