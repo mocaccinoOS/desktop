@@ -8,8 +8,11 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/libcacard app-emulation/qemu app-emulation/spice net-libs/libslirp sys-apps/usbredir
+    sys-apps/dtc app-emulation/libcacard app-emulation/qemu app-emulation/spice net-libs/libslirp sys-apps/usbredir sys-firmware/edk2-ovmf sys-firmware/ipxe sys-firmware/seabios sys-firmware/sgabios
 provides:
+  - name: dtc
+    category: sys-apps
+    version: '>=0'
   - name: libcacard
     category: app-emulation
     version: '>=0'
@@ -24,6 +27,18 @@ provides:
     version: '>=0'
   - name: usbredir
     category: sys-apps
+    version: '>=0'
+  - name: edk2-ovmf
+    category: sys-firmware
+    version: '>=0'
+  - name: ipxe
+    category: sys-firmware
+    version: '>=0'
+  - name: seabios
+    category: sys-firmware
+    version: '>=0'
+  - name: sgabios
+    category: sys-firmware
     version: '>=0'
 requires:
   - category: "layers"
