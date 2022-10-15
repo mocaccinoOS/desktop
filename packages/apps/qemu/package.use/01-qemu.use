@@ -1,1 +1,2 @@
 app-emulation/qemu fuse smartcard spice usb usbredir qemu_softmmu_targets_arm qemu_user_targets_arm -doc
+app-emulation/spice smartcard
