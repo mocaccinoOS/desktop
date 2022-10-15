@@ -13,6 +13,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- USE="-smartcard" emerge app-emulation/spice
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "buildbase"
