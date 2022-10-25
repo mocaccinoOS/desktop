@@ -265,24 +265,24 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-  - category: "kernel-modules"
-    name: "realtek-rtl88x2bu-lts"
-    version: 0_p20211010+1
-    lts: true
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-misc/realtek-rtl88x2bu
-    provides:
-      - name: realtek-rtl88x2bu
-        category: net-misc
-        version: '>=0'
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
+#  - category: "kernel-modules"
+#    name: "realtek-rtl88x2bu-lts"
+#    version: 0_p20211010+1
+#    lts: true
+#    labels:
+#      emerge.jobs: "3"
+#    emerge:
+#      jobs: "3"
+#      packages:
+#        - net-misc/realtek-rtl88x2bu
+#    provides:
+#      - name: realtek-rtl88x2bu
+#        category: net-misc
+#        version: '>=0'
+#    requires:
+#      - name: mocaccino-lts-full
+#        category: kernel
+#        version: ">=0"
+#      - category: "layers"
+#        name: "X"
+#        version: ">=0"
