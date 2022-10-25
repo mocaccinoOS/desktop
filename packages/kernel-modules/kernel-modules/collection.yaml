@@ -267,7 +267,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "realtek-rtl88x2bu-lts"
-    version: 0_p20211010
+    version: 0_p20211010+1
     lts: true
     labels:
       emerge.jobs: "3"
