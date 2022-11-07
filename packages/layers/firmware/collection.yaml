@@ -97,7 +97,7 @@ packages:
     version: 2+21
   - category: "layers"
     name: "firmware-b43"
-    version: 2+20
+    version: 2+21
   - category: "layers"
     name: "firmware-bnx2"
     version: 2+20
