@@ -256,7 +256,7 @@ packages:
     version: 2+21
   - category: "layers"
     name: "firmware-sxg"
-    version: 2+20
+    version: 2+21
   - category: "layers"
     name: "firmware-tehuti"
     version: 2+20
