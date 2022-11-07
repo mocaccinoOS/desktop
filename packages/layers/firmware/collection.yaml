@@ -211,7 +211,7 @@ packages:
     version: 2+21
   - category: "layers"
     name: "firmware-qca"
-    version: 2+20
+    version: 2+21
   - category: "layers"
     name: "firmware-qcom"
     version: 2+20
