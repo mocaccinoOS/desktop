@@ -247,7 +247,7 @@ packages:
     version: 2+21
   - category: "layers"
     name: "firmware-rtw88"
-    version: 2+20
+    version: 2+21
   - category: "layers"
     name: "firmware-silabs"
     version: 2+20
