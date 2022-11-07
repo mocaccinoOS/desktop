@@ -259,7 +259,7 @@ packages:
     version: 2+21
   - category: "layers"
     name: "firmware-tehuti"
-    version: 2+20
+    version: 2+21
   - category: "layers"
     name: "firmware-ti-connectivity"
     version: 2+20
