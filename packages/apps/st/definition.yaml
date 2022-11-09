@@ -1,6 +1,6 @@
 category: "apps"
 name: "st"
-version: 0.8.4+17
+version: 0.8.4+18
 uri:
   - https://st.suckless.org
 license: "MIT-with-advertising"
