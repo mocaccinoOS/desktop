@@ -166,7 +166,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-keyspan"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-keyspan_pda"
     version: 2+21
