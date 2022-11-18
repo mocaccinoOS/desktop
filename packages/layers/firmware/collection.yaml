@@ -79,7 +79,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-ath11k"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-ath6k"
     version: 2+21
