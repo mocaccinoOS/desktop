@@ -22,7 +22,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- emerge -1 sys-devel/clang sys-devel/llvm -j $JOBS
+- emerge -1 sys-devel/gcc-config sys-devel/clang sys-devel/llvm -j $JOBS
 - emerge -1 dev-util/ragel -j $JOBS && emerge -1 sys-apps/systemd -j $JOBS && emerge -1 dev-libs/openssl net-misc/openssh net-misc/curl net-dns/unbound -j $JOBS && emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
