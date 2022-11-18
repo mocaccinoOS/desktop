@@ -226,7 +226,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-radeon"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-rockchip"
     version: 2+21
