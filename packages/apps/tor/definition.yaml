@@ -1,6 +1,6 @@
 category: "apps"
 name: "tor"
-version: 0.4.6.10+7
+version: 0.4.6.10+8
 uri:
   - https://www.torproject.org
 license: "BSD GPL-2"
