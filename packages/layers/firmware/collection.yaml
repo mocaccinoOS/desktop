@@ -88,7 +88,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-atmel"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-atusb"
     version: 2+21
