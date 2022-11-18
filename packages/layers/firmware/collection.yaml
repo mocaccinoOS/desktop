@@ -73,7 +73,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-ar3k"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-ath10k"
     version: 2+21
