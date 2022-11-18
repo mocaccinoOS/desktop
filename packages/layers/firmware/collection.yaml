@@ -217,7 +217,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-qed"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-qlogic"
     version: 2+21
