@@ -262,7 +262,7 @@ packages:
     version: 2+22
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+21
+    version: 2+22
   - category: "layers"
     name: "firmware-ti-keystone"
     version: 2+21
