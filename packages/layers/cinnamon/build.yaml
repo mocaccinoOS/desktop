@@ -7,6 +7,8 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 {{ template "portage_prelude_build" . }}
 steps:
+# test with older glib version
+- emerge -1 =dev-libs/glib-2.72.3
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
