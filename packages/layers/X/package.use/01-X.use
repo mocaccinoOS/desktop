@@ -36,7 +36,7 @@ media-plugins/gst-plugins-meta mms http
 media-plugins/gst-plugins-libav -abi_x86_32
 media-sound/pulseaudio -daemon -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
 media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal openh264 openssl opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
-media-video/pipewire bluetooth pipewire-alsa sound-server
+media-video/pipewire bluetooth gstreamer pipewire-alsa sound-server
 media-video/wireplumber system-service
 net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
 net-libs/glib-networking gnome
