@@ -8,7 +8,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 # test with older glib version
-- emerge -1 =dev-libs/glib-2.72.3
+- emerge -C dev-libs/glib && emerge -1 =dev-libs/glib-2.72.3
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
