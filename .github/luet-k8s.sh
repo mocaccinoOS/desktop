@@ -70,7 +70,7 @@ create_repo() {
 
 create_job() {
     cat <<EOF | kubectl apply -n $NAMESPACE -f -
-apiVersion: luet.k8s.io/v1alpha1
+apiVersion: build.luet.io/v1alpha1
 kind: RepoBuild
 metadata:
     name: $JOB_NAME
