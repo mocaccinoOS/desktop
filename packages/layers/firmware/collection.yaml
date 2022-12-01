@@ -133,7 +133,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-dsp56k"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-e100"
     version: 2+23
