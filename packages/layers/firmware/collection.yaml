@@ -205,7 +205,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-netronome"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-nvidia"
     version: 2+23
