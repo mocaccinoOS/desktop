@@ -32,7 +32,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+104
+    version: 0+105
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
