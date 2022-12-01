@@ -268,7 +268,7 @@ packages:
     version: 2+23
   - category: "layers"
     name: "firmware-ti"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-tigon"
     version: 2+23
