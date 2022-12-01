@@ -100,7 +100,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-bnx2"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-bnx2x"
     version: 2+23
