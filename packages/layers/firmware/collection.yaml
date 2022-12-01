@@ -82,7 +82,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-ath6k"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-ath9k_htc"
     version: 2+23
