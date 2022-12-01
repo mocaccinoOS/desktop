@@ -160,7 +160,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-isci"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-kaweth"
     version: 2+23
