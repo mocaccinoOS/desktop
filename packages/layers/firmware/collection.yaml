@@ -199,7 +199,7 @@ packages:
     version: 2+24
   - category: "layers"
     name: "firmware-mwl8k"
-    version: 2+23
+    version: 2+24
   - category: "layers"
     name: "firmware-mwlwifi"
     version: 2+23
