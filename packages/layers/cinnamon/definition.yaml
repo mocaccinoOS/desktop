@@ -37,9 +37,6 @@ provides:
   - name: tinycss2
     category: dev-python
     version: '>=0'
-  - name: toml
-    category: dev-python
-    version: '>=0'
   - name: cinnamon
     category: gnome-extra
     version: '>=0'

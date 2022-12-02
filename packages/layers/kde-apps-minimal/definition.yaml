@@ -35,6 +35,9 @@ provides:
   - name: gwenview
     category: kde-apps
     version: '>=0'
+  - name: kate-lib
+    category: kde-apps
+    version: '>=0'
   - name: kcalc
     category: kde-apps
     version: '>=0'

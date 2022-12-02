@@ -274,6 +274,9 @@ provides:
   - name: qrencode
     category: media-gfx
     version: '>=0'
+  - name: ksanecore
+    category: media-libs
+    version: '>=0'
   - name: libdmtx
     category: media-libs
     version: '>=0'
