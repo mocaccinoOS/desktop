@@ -5,9 +5,6 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-# Try last known to work version
-# - cp gnome-software-42.1.ebuild /var/db/repos/gentoo/gnome-extra/gnome-software
-# - ebuild /var/db/repos/gentoo/gnome-extra/gnome-software/gnome-software-42.1.ebuild manifest
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:

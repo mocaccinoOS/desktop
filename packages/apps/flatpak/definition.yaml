@@ -8,7 +8,7 @@ description: "Linux application sandboxing and distribution framework"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-apps/flatpak sys-apps/fwupd
+    dev-libs/libxmlb sys-apps/flatpak sys-apps/fwupd
 provides:
   - name: flatpak
     category: acct-group
