@@ -1,7 +1,7 @@
 gnome-extra/budgie-screenshot-applet ~amd64
 gnome-extra/budgie-control-center ~amd64
-=gnome-extra/budgie-clipboard-applet-1.1.0 ~amd64
-=gnome-extra/budgie-desktop-10.6.1 ~amd64
-=gnome-extra/budgie-desktop-view-1.2 ~amd64
-=gnome-extra/budgie-haste-applet-0.3.0 ~amd64
-=gnome-extra/budgie-screensaver-5.0.1 ~amd64
+gnome-extra/budgie-clipboard-applet ~amd64
+gnome-extra/budgie-desktop ~amd64
+gnome-extra/budgie-desktop-view ~amd64
+gnome-extra/budgie-haste-applet ~amd64
+gnome-extra/budgie-screensaver ~amd64
