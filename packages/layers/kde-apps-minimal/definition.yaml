@@ -5,7 +5,7 @@ description: "A bundle of Plasma applications useful on the Plasma desktop"
 labels:
   emerge.jobs: "4"
   emerge.packages: >-
-    app-cdr/dolphin-plugins-mountiso app-text/ebook-tools dev-libs/kpeoplevcard kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kmag kde-apps/kmousetool kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/krdc kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/kdeconnect kde-misc/skanlite sys-block/partitionmanager
+    app-cdr/dolphin-plugins-mountiso app-text/ebook-tools dev-libs/kpeoplevcard kde-apps/ark kde-apps/dolphin kde-apps/gwenview kde-apps/kate-lib kde-apps/kdeadmin-meta kde-apps/kcalc kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kmag kde-apps/kmousetool kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/krdc kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/kdeconnect kde-misc/skanlite sys-block/partitionmanager
 requires:
   - category: "layers"
     name: "plasma"
@@ -33,6 +33,9 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: gwenview
+    category: kde-apps
+    version: '>=0'
+  - name: kate-lib
     category: kde-apps
     version: '>=0'
   - name: kcalc
