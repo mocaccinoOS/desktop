@@ -1,6 +1,6 @@
 category: "apps"
 name: "flatpak"
-version: 1.13.2+27
+version: 1.13.2+28
 uri:
   - https://flatpak.org
 license: "LGPL-2.1+"
@@ -8,7 +8,7 @@ description: "Linux application sandboxing and distribution framework"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/libxmlb sys-apps/flatpak sys-apps/fwupd
+    sys-apps/flatpak sys-apps/fwupd
 provides:
   - name: flatpak
     category: acct-group
@@ -20,9 +20,6 @@ provides:
     category: app-arch
     version: '>=0'
   - name: libjcat
-    category: dev-libs
-    version: '>=0'
-  - name: libxmlb
     category: dev-libs
     version: '>=0'
   - name: ostree
