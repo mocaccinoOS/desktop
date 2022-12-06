@@ -1,6 +1,7 @@
 media-gfx/exiv2 xmp
 media-libs/faad2 digitalradio
 media-libs/gstreamer introspection
+media-libs/lcms static-libs
 media-libs/libdvdread -css
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms
