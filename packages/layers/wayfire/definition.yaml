@@ -1,6 +1,6 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.3+19
+version: 0.7.3+20
 uri:
   - https://github.com/WayfireWM/wayfire
 license: "MIT"
@@ -8,7 +8,7 @@ description: "Compiz like 3D wayland compositor"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/date gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wayfire-plugins-extra gui-libs/wf-config gui-wm/wayfire
+    dev-libs/date gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wf-config gui-wm/wayfire
 requires:
   - category: "apps"
     name: "wlroots"
@@ -45,9 +45,6 @@ provides:
     category: gui-apps
     version: '>=0'
   - name: greetd
-    category: gui-libs
-    version: '>=0'
-  - name: wayfire-plugins-extra
     category: gui-libs
     version: '>=0'
   - name: wf-config
