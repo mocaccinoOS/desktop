@@ -8,6 +8,7 @@ prelude:
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.mask /etc/portage/
+- emerge -1 dev-lang/rust-bin
 {{ template "portage_prelude_build" . }}
 steps:
 # We need this in env.d until this is in stable tree. See https://bugs.gentoo.org/832773
