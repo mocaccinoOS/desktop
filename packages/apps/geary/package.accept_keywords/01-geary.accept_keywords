@@ -1,2 +1,2 @@
 mail-client/geary ~amd64
-=net-libs/webkit-gtk-2.38:4.1 ~amd64
+=net-libs/webkit-gtk-2.38.2-r410 ~amd64
