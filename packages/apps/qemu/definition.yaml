@@ -1,6 +1,10 @@
 category: "apps"
 name: "qemu"
+<<<<<<< HEAD
 version: 7.0.0-r3+9
+=======
+version: 7.1.0-r2+1
+>>>>>>> 1c757db3 (apps/qemu: tweak minor stuff)
 uri:
   - https://www.qemu.org
 license: "GPL-2 LGPL-2 BSD-2"
@@ -8,7 +12,7 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    sys-apps/dtc app-emulation/libcacard app-emulation/qemu app-emulation/spice net-libs/libslirp sys-apps/usbredir sys-firmware/edk2-ovmf sys-firmware/ipxe sys-firmware/seabios sys-firmware/sgabios
+    sys-apps/dtc app-emulation/libcacard app-emulation/qemu app-emulation/spice net-libs/libslirp sys-apps/usbredir sys-firmware/edk2-ovmf-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
 provides:
   - name: dtc
     category: sys-apps
@@ -28,13 +32,13 @@ provides:
   - name: usbredir
     category: sys-apps
     version: '>=0'
-  - name: edk2-ovmf
+  - name: edk2-ovmf-bin
     category: sys-firmware
     version: '>=0'
   - name: ipxe
     category: sys-firmware
     version: '>=0'
-  - name: seabios
+  - name: seabios-bin
     category: sys-firmware
     version: '>=0'
   - name: sgabios
