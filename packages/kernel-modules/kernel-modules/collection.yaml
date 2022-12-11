@@ -286,7 +286,7 @@ packages:
         #        name: "X"
         #        version: ">=0"
   - category: "kernel-modules"
-    name: "vhba"
+    name: "vhba-lts"
     version: 20211218+4
     lts: true
     labels:

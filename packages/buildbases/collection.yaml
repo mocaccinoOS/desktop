@@ -45,3 +45,7 @@ packages:
     real_category: "apps"
     name: "qemu"
     version: 0+68
+  - !!merge <<: *X
+    real_category: "kernel-modules"
+    name: "vba-lts"
+    version: 0+1
