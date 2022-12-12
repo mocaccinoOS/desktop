@@ -265,6 +265,9 @@ provides:
   - name: kactivitymanagerd
     category: kde-plasma
     version: '>=0'
+  - name: kwayland-integration
+    category: kde-plasma
+    version: '>=0'
   - name: libkscreen
     category: kde-plasma
     version: '>=0'

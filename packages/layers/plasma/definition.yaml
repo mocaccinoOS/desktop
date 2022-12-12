@@ -131,9 +131,6 @@ provides:
   - name: kwallet-pam
     category: kde-plasma
     version: '>=0'
-  - name: kwayland-integration
-    category: kde-plasma
-    version: '>=0'
   - name: kwin
     category: kde-plasma
     version: '>=0'
