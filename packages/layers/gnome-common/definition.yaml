@@ -3,7 +3,7 @@
 # Unstable net-libs/libsoup:3.1 is required by unstable gnome-software
 category: "layers"
 name: "gnome-common"
-version: 1.0+37
+version: 1.0+38
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
