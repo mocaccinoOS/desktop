@@ -31,9 +31,6 @@ provides:
   - name: python-pam
     category: dev-python
     version: '>=0'
-  - name: pytz
-    category: dev-python
-    version: '>=0'
   - name: tinycss2
     category: dev-python
     version: '>=0'

@@ -13,6 +13,9 @@ provides:
   - name: geary
     category: mail-client
     version: '>=0'
+  - name: webkit-gtk
+    category: net-libs
+    version: '>=0'
 requires:
   - category: "layers"
     name: "gnome-common"
