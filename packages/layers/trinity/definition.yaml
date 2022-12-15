@@ -16,9 +16,6 @@ provides:
   - name: enscript
     category: app-text
     version: '>=0'
-  - name: psutils
-    category: app-text
-    version: '>=0'
   - name: dbus-1-tqt
     category: dev-libs
     version: '>=0'
