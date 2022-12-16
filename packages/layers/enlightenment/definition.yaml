@@ -1,10 +1,10 @@
 category: "layers"
 name: "enlightenment"
-version: 0.25.3+39
+version: 0.25.4+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-editors/ecrire dev-libs/check dev-libs/efl sys-process/evisum x11-wm/enlightenment x11-terms/terminology
+    app-editors/ecrire dev-libs/check dev-libs/efl media-gfx/ephoto sys-process/evisum x11-wm/enlightenment x11-terms/terminology
 requires:
   - category: "layers"
     name: "X"
@@ -18,6 +18,9 @@ provides:
     version: '>=0'
   - name: efl
     category: dev-libs
+    version: '>=0'
+  - name: ephoto
+    category: media-gfx
     version: '>=0'
   - name: evisum
     category: sys-process
