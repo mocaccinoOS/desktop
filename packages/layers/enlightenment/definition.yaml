@@ -1,10 +1,11 @@
+# media-video/rage requires changes in layers/X: media-plugins/gst-plugins-meta[ffmpeg] and several multilib changes
 category: "layers"
 name: "enlightenment"
 version: 0.25.4+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-editors/ecrire dev-libs/check dev-libs/efl dev-util/edi media-gfx/ephoto media-video/rage sys-process/evisum x11-wm/enlightenment x11-terms/terminology
+    app-editors/ecrire dev-libs/check dev-libs/efl dev-util/edi media-gfx/ephoto sys-process/evisum x11-wm/enlightenment x11-terms/terminology
 requires:
   - category: "layers"
     name: "X"
@@ -24,9 +25,6 @@ provides:
     version: '>=0'
   - name: ephoto
     category: media-gfx
-    version: '>=0'
-  - name: rage
-    category: media-video
     version: '>=0'
   - name: evisum
     category: sys-process
