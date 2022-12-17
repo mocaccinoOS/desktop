@@ -1,6 +1,7 @@
 name: system-x
 version: 0.20221212+3
 gcc_version: "11.3.0"
+python_version: "3.10"
 category: layers
 requires:
   - category: "system"

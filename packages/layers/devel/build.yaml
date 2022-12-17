@@ -3,6 +3,7 @@ includes:
 - /usr$
 - /usr/include$
 - /usr/include/.*
+- /usr/lib/python3.10/test
 unpack: true
 requires:
 - name: {{.Values.package}}
