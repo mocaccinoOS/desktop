@@ -1,5 +1,5 @@
 app-editors/pluma spell
-app-text/atril djvu epub
+app-text/atril djvu
 mate-base/mate base extras themes -notification
 mate-base/mate-applets cpupower upower
 mate-base/mate-control-center -accountsservice -appindicator -debug
