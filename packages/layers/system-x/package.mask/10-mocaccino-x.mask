@@ -1,2 +1,4 @@
 # Keep python 3.11 masked
 dev-lang/python:3.11
+# Keep perl 5.36 masked
+>=dev-lang/perl-5.36.0-r1
