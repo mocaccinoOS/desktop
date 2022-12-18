@@ -2,3 +2,4 @@
 dev-lang/python:3.11
 # Keep perl 5.36 masked
 >=dev-lang/perl-5.36.0-r1
+=virtual/perl-File-Spec-3.840.0
