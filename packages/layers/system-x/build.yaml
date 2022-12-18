@@ -67,7 +67,7 @@ excludes:
 - ^/tmp/tree.tar.tgz
 - ^/proc
 - ^/luetbuild
-- ^/usr/lib/python{{.Values.gcc_version}}/test
+- ^/usr/lib/python{{.Values.python_version}}/test
 
 # GCC split
 - ^/etc/env.d/04gcc-x86_64-pc-linux-gnu
