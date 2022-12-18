@@ -1,7 +1,7 @@
 # media-video/rage requires changes in layers/X: media-plugins/gst-plugins-meta[ffmpeg] and several multilib changes
 category: "layers"
 name: "enlightenment"
-version: 0.25.4+3
+version: 0.25.4+4
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
