@@ -45,7 +45,3 @@ packages:
     real_category: "apps"
     name: "qemu"
     version: 0+71
-  - !!merge <<: *X
-    real_category: "kernel-modules"
-    name: "vhba-lts"
-    version: 0+5
