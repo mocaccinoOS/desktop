@@ -243,27 +243,6 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-  - category: "kernel-modules"
-    name: "rtl8812au"
-    version: 20220827+20
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-wireless/rtl8812au
-    provides:
-      - name: rtl8812au
-        category: net-wireless
-        version: '>=0'
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
         #  - category: "kernel-modules"
         #    name: "realtek-rtl88x2bu-lts"
         #    version: 0_p20211010+1
