@@ -5,7 +5,7 @@ requires:
   - name: "mocaccino-lts-modules"
     category: "kernel"
     version: ">=0"
- - name: "mocaccino-lts-initramfs"
+  - name: "mocaccino-lts-initramfs"
     category: "kernel"
     version: ">=0"
   - name: "kmod"
