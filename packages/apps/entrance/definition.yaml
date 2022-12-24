@@ -14,6 +14,12 @@ requires:
     name: "enlightenment"
     version: ">=0"
 provides:
+  - name: layman
+    category: app-portage
+    version: '>=0'
+  - name: ssl-fetch
+    category: dev-python
+    version: '>=0'
   - name: entrance
     category: x11-misc
     version: '>=0'
