@@ -1,0 +1,9 @@
+prelude:
+- git clone https://github.com/aristocratos/btop.git
+- cd btop && make
+steps:
+- cd btop && make install
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"

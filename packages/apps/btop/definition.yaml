@@ -1,0 +1,11 @@
+category: "apps"
+name: "bashtop"
+version: 1.2.13+1
+uri:
+  - https://github.com/aristocratos/btop
+license: "Apache-2.0"
+description: "A monitor of resources"
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
