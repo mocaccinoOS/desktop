@@ -5,6 +5,7 @@ prelude:
 - git clone https://gitlab.gnome.org/World/Shortwave.git
 - cd Shortwave && git checkout de062d5f2a2f395bb2c3f8149793d4203593e912 && meson --prefix=/usr build && ninja -C build
 steps:
+- emerge -1 media-libs/libshumate
 - cd Shortwave && ninja -C build install
 requires:
 - category: "layers"
