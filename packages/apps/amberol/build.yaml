@@ -5,7 +5,7 @@ excludes:
 - ^/usr/local/share/glib-2.0/schemas/gschemas.compiled
 prelude:
 - git clone https://gitlab.gnome.org/World/amberol.git
-- cd amberol && git checkout c23ec2f11fa441c402b80f7a1733ac9aea65c81d && meson build
+- cd amberol && git checkout c23ec2f11fa441c402b80f7a1733ac9aea65c81d && meson --prefix=/usr build
 steps:
 - cd amberol && ninja -C build install
 requires:
