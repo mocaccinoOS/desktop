@@ -1,0 +1,7 @@
+category: "apps"
+name: "video-trimmer"
+version: 0.8.0+1
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"

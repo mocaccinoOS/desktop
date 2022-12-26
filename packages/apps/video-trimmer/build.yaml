@@ -1,0 +1,11 @@
+excludes:
+{{ template "portage_excludes" }}
+prelude:
+- git clone https://gitlab.gnome.org/YaLTeR/video-trimmer.git
+- cd video-trimmer && git checkout 58ae3bffe98025543af8e563659f60438ee586d6 && meson --prefix=/usr build && ninja -C build
+steps:
+- cd video-trimmer && ninja -C build install
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
