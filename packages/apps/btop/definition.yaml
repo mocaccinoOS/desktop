@@ -1,5 +1,5 @@
 category: "apps"
-name: "bashtop"
+name: "btop"
 version: 1.2.13+1
 uri:
   - https://github.com/aristocratos/btop
