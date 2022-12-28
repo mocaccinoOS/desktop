@@ -1,0 +1,19 @@
+category: "apps"
+name: "evolution"
+version: 3.46.2+1
+uri:
+  - https://wiki.gnome.org/Apps/Evolution
+license: "LGPL-3"
+description: "Integrated mail, addressbook and calendaring functionality"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    mail-client/evolution
+provides:
+  - name: evolution
+    category: mail-client
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
