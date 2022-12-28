@@ -10,6 +10,9 @@ labels:
   emerge.packages: >-
     mail-client/evolution
 provides:
+  - name: cmark
+    category: app-text
+    version: '>=0'
   - name: evolution
     category: mail-client
     version: '>=0'
