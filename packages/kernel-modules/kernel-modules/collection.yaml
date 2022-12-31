@@ -110,7 +110,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-510-lts"
-    version: 510.108.03+9
+    version: 510.108.03+10
     lts: true
     labels:
       emerge.jobs: "3"
