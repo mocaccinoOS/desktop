@@ -106,7 +106,7 @@ packages:
     version: 2+26
   - category: "layers"
     name: "firmware-brcm"
-    version: 2+25
+    version: 2+26
   - category: "layers"
     name: "firmware-cadence"
     version: 2+25
