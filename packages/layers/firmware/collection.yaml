@@ -124,7 +124,7 @@ packages:
     version: 2+26
   - category: "layers"
     name: "firmware-cypress"
-    version: 2+25
+    version: 2+26
   - category: "layers"
     name: "firmware-dabusb"
     version: 2+25
