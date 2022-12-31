@@ -172,7 +172,7 @@ packages:
     version: 2+26
   - category: "layers"
     name: "firmware-libertas"
-    version: 2+25
+    version: 2+26
   - category: "layers"
     name: "firmware-liquidio"
     version: 2+25
