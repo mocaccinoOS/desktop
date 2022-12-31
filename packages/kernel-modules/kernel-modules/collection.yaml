@@ -203,7 +203,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.3+21
+    version: 0.3+22
     lts: true
     labels:
       emerge.jobs: "3"
