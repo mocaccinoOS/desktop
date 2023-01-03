@@ -8,7 +8,7 @@ media-libs/libmng lcms
 media-libs/libsndfile minimal
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes
-media-libs/tiff cxx jpeg lzma zlib
+media-libs/tiff cxx jpeg lzma zlib zstd
 media-video/mjpegtools -gtk
 sci-libs/fftw threads
 virtual/jpeg static-libs
