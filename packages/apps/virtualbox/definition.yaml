@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 6.1.40+10
+version: 6.1.40+11
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"

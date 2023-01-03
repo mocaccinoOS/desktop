@@ -1,6 +1,6 @@
 category: "apps"
 name: "amberol"
-version: 0.9.2+6
+version: 0.9.2+7
 uri:
   - https://gitlab.gnome.org/World/amberol
 license: "GPL-3+"
