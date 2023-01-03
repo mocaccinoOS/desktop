@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20221218+4
+version: 0.20230103+1
 gcc_version: "11"
 python_version: "3.10"
 category: layers
@@ -1084,6 +1084,9 @@ provides:
   - name: lapack
     category: sci-libs
     version: '>=0'
+  - name: libaec
+    category: sci-libs
+    version: '>=0'
   - name: openpgp-keys-gentoo-release
     category: sec-keys
     version: '>=0'
@@ -1535,6 +1538,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: ssh
+    category: virtual
+    version: '>=0'
+  - name: szip
     category: virtual
     version: '>=0'
   - name: tmpfiles
