@@ -109,7 +109,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-cadence"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-cavium"
     version: 2+26
