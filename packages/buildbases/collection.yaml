@@ -16,7 +16,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+112
+    version: 0+113
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
