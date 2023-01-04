@@ -58,7 +58,7 @@ packages:
         version: '>=0'
   - category: "layers"
     name: "firmware-amdgpu"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-3com"
     version: 2+27
