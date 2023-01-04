@@ -118,7 +118,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-cxgb3"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-cxgb4"
     version: 2+26
