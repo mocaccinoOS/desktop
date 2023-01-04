@@ -1,6 +1,6 @@
 category: "apps"
 name: "google-chrome"
-version: 108.0.5359.124+5
+version: 108.0.5359.124+6
 uri:
   - https://www.google.com/chrome
 license: "google-chrome"
