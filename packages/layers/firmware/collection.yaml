@@ -250,7 +250,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-silabs"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-slicoss"
     version: 2+26
