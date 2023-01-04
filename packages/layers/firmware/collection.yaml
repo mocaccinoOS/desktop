@@ -277,4 +277,4 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-vxge"
-    version: 2+26
+    version: 2+27
