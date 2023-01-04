@@ -265,7 +265,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-ti-keystone"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-ti"
     version: 2+27
