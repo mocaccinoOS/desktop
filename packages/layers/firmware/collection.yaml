@@ -94,7 +94,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-av7110"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-b43"
     version: 2+26
