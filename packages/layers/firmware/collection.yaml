@@ -202,7 +202,7 @@ packages:
     version: 2+27
   - category: "layers"
     name: "firmware-mwlwifi"
-    version: 2+26
+    version: 2+27
   - category: "layers"
     name: "firmware-netronome"
     version: 2+26
