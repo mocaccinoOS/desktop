@@ -57,6 +57,8 @@ sys-devel/gettext acl cxx ncurses nls openmp -git
 sys-devel/llvm clang
 sys-fs/cryptsetup luks1_default
 sys-fs/e2fsprogs split-usr static-libs
+# required by sys-fs/dmraid
+sys-fs/lvm2 lvm
 sys-fs/udev extras
 # We use dev-python/python-magic
 sys-apps/file -python
