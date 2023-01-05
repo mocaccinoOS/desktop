@@ -1,6 +1,6 @@
 category: "apps"
 name: "shortwave"
-version: 3.1.0+6
+version: 3.1.0+7
 requires:
   - category: "layers"
     name: "gnome-common"
