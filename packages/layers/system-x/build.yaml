@@ -25,8 +25,6 @@ steps:
 # Do not ship python 3.11
 - emerge -C dev-lang/python:3.11
 - emerge -1uDN @system -j $JOBS
-# - emerge -1 sys-devel/gcc-config sys-devel/clang sys-devel/llvm -j $JOBS
-# - emerge -1 dev-util/ragel -j $JOBS && emerge -1 sys-apps/systemd -j $JOBS && emerge -1 dev-libs/openssl net-misc/openssh net-misc/curl net-dns/unbound -j $JOBS && emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
 - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d && chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
