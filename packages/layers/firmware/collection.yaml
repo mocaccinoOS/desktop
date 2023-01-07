@@ -229,7 +229,7 @@ packages:
     version: 2+28
   - category: "layers"
     name: "firmware-rockchip"
-    version: 2+27
+    version: 2+28
   - category: "layers"
     name: "firmware-rsi"
     version: 2+27
