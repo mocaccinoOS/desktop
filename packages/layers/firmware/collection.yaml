@@ -193,7 +193,7 @@ packages:
     version: 2+28
   - category: "layers"
     name: "firmware-moxa"
-    version: 2+27
+    version: 2+28
   - category: "layers"
     name: "firmware-mrvl"
     version: 2+27
