@@ -24,7 +24,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+122
+    version: 0+123
   - !!merge <<: *X
     real_category: "apps"
     name: "pavucontrol-qt"
