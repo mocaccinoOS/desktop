@@ -241,7 +241,7 @@ packages:
     version: 2+28
   - category: "layers"
     name: "firmware-rtl_nic"
-    version: 2+27
+    version: 2+28
   - category: "layers"
     name: "firmware-rtlwifi"
     version: 2+27
