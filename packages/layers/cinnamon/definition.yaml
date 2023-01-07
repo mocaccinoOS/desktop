@@ -67,6 +67,21 @@ provides:
   - name: nemo
     category: gnome-extra
     version: '>=0'
+  - name: clang
+    category: sys-devel
+    version: '>=0'
+  - name: clang-runtime
+    category: sys-devel
+    version: '>=0'
+  - name: llvm
+    category: sys-devel
+    version: '>=0'
+  - name: compiler-rt
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: sys-libs
+    version: '>=0'
   - name: muffin
     category: x11-wm
     version: '>=0'
