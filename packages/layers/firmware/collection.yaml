@@ -130,7 +130,7 @@ packages:
     version: 2+28
   - category: "layers"
     name: "firmware-dpaa2"
-    version: 2+27
+    version: 2+28
   - category: "layers"
     name: "firmware-dsp56k"
     version: 2+27
