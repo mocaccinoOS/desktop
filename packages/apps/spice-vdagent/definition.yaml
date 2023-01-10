@@ -1,0 +1,15 @@
+category: "apps"
+name: "spice-vdagent"
+version: 0.21.0+1
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-emulation/spice-vdagent
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: spice-vdagent
+    category: app-emulation
+    version: '>=0'
