@@ -1,6 +1,10 @@
 category: "apps"
 name: "spice-vdagent"
-version: 0.21.0+2
+version: 0.21.0+3
+uri:
+  - https://www.spice-space.org/
+license: "LGPL-2.1"
+description: "SPICE VD Linux Guest Agent"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
