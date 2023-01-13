@@ -26,6 +26,9 @@ provides:
   - name: rarian
     category: app-text
     version: '>=0'
+  - name: scrollkeeper-dtd
+    category: app-text
+    version: '>=0'
   - name: yelp-tools
     category: app-text
     version: '>=0'
