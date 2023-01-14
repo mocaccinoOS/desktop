@@ -1,0 +1,7 @@
+category: "apps"
+name: "fragments"
+version: 2.1
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
