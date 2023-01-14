@@ -2,7 +2,7 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 - git clone https://gitlab.gnome.org/World/Fragments.git
-- cd Fragments && git checkout 7d94fd0107df498139817842a2b4b22103640c61 && meson --prefix=/usr build && ninja -C build
+- cd Fragments && git checkout 7a20eb0d8e1377ea0e93449047a8f24d6336e5d5 && meson --prefix=/usr build && ninja -C build
 steps:
 - cd Fragments && ninja -C build install
 requires:
