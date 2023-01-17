@@ -115,7 +115,7 @@ packages:
     version: 2+29
   - category: "layers"
     name: "firmware-cis"
-    version: 2+28
+    version: 2+29
   - category: "layers"
     name: "firmware-cxgb3"
     version: 2+28
