@@ -175,7 +175,7 @@ packages:
     version: 2+29
   - category: "layers"
     name: "firmware-liquidio"
-    version: 2+28
+    version: 2+29
   - category: "layers"
     name: "firmware-matrox"
     version: 2+28
