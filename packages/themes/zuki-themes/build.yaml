@@ -5,7 +5,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
-{ template "portage_build" . }}
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "X"
