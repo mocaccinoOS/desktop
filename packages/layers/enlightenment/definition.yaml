@@ -1,6 +1,10 @@
 category: "layers"
 name: "enlightenment"
 version: 0.25.4+13
+uri:
+  - https://www.enlightenment.org
+license: "BSD-2"
+description: "Enlightenment DR19 window manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
