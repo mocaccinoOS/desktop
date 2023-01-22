@@ -1,0 +1,11 @@
+category: "themes"
+name: "mocaccino-slick-greeter"
+version: "0.1"
+uri:
+  - https://mocaccino.org
+license: "GPL-3"
+description: "Slick greeter theme"
+requires:
+  - category: "apps"
+    name: "slick-greeter"
+    version: ">=0"
