@@ -1,5 +1,0 @@
-image: "alpine"
-prelude:
-- mkdir -p /etc/lightdm/
-steps:
-- cp slick-greeter.conf /etc/lightdm/
