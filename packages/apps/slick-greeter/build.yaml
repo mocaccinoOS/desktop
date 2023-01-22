@@ -10,7 +10,7 @@ prelude:
 - echo "y" | layman -a binaryden
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-# - sed -i '/[Greeter]/a background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg' /etc/lightdm/slick-greeter.conf
+- sed '/\[Greeter\]/ a\background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg' /etc/lightdm/slick-greeter.conf
 requires:
 - category: "layers"
   name: "gnome-common"
