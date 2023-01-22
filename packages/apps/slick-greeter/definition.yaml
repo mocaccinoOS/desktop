@@ -1,10 +1,10 @@
 category: "apps"
-name: "slick-greeter "
+name: "slick-greeter"
 version: "1.6.1"
 uri:
   - https://github.com/linuxmint/slick-greeter
 license: "GPL-3"
-description: "x11-misc/slick-greeter"
+description: "A slick-looking LightDM greeter"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
