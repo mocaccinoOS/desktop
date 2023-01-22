@@ -3,7 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- emerge -1 x11-misc/lightdm
+- USE="introspection vala -qt5" emerge -1 x11-misc/lightdm
 - cp -rf package.accept_keywords /etc/portage/
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
