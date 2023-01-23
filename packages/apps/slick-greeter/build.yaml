@@ -3,7 +3,6 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- USE="introspection vala -qt5" emerge -1 x11-misc/lightdm
 - cp -rf package.accept_keywords /etc/portage/
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
@@ -12,6 +11,6 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - sed -i '/\[Greeter\]/ a\background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg' /etc/lightdm/slick-greeter.conf
 requires:
-- category: "layers"
-  name: "gnome-common"
+- category: "apps"
+  name: "lightdm"
   version: ">=0"
