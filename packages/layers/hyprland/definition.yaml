@@ -1,0 +1,19 @@
+category: "layers"
+name: "hyprland"
+version: "0.20.1_beta"
+uri:
+  - https://github.com/hyprwm/Hyprland
+license: "MIT"
+description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its looks."
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    gui-wm/hyprland
+requires:
+  - category: "apps"
+    name: "wlroots"
+    version: ">=0"
+provides:
+  - name: hyprland
+    category: gui-wm
+    version: '>=0'
