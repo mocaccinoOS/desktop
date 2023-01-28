@@ -8,6 +8,8 @@ prelude:
 - USE="-subversion -mercurial" emerge app-portage/layman
 - layman -L
 - echo "y" | layman -a thegreatmcpain
+# needed for hyprpaper
+- echo "y" | layman -a wayland-desktop
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}

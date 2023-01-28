@@ -8,12 +8,15 @@ description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its 
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-wm/hyprland
+    gui-apps/hyprpaper gui-wm/hyprland
 requires:
   - category: "apps"
     name: "wlroots"
     version: ">=0"
 provides:
+  - name: hyprpaper
+    category: gui-apps
+    version: '>=0'
   - name: hyprland
     category: gui-wm
     version: '>=0'
