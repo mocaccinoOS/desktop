@@ -17,6 +17,9 @@ requires:
     name: "seat"
     version: ">=0"
 provides:
+  - name: date
+    category: dev-libs
+    version: '>=0'
   - name: waybar
     category: gui-apps
     version: '>=0'

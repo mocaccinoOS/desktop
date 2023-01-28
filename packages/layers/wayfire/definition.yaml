@@ -23,9 +23,6 @@ provides:
   - name: greetd
     category: acct-user
     version: '>=0'
-  - name: date
-    category: dev-libs
-    version: '>=0'
   - name: grim
     category: gui-apps
     version: '>=0'
