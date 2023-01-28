@@ -8,7 +8,7 @@ description: "Compiz like 3D wayland compositor"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/date gui-apps/grim gui-apps/gtkgreet gui-apps/waybar gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wf-config gui-wm/wayfire
+    dev-libs/date gui-apps/grim gui-apps/gtkgreet gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wf-config gui-wm/wayfire
 requires:
   - category: "apps"
     name: "wlroots"
@@ -30,9 +30,6 @@ provides:
     category: gui-apps
     version: '>=0'
   - name: gtkgreet
-    category: gui-apps
-    version: '>=0'
-  - name: waybar
     category: gui-apps
     version: '>=0'
   - name: wayland-logout
