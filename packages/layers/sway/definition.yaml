@@ -1,6 +1,10 @@
 category: "layers"
 name: "sway"
-version: 1.7+62
+version: "1.8-r1"
+uri:
+  - https://swaywm.org
+license: "MIT"
+description: "i3-compatible Wayland window manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
