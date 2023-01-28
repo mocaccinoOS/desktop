@@ -1,6 +1,6 @@
 category: "apps"
 name: "i3"
-version: 4.20.1+87
+version: 4.20.1+88
 uri:
   - https://i3wm.org
 license: "BSD"
@@ -22,9 +22,6 @@ provides:
     version: '>=0'
   - name: AnyEvent-I3
     category: dev-perl
-    version: '>=0'
-  - name: xcb-util-xrm
-    category: x11-libs
     version: '>=0'
   - name: dmenu
     category: x11-misc

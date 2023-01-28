@@ -1,6 +1,6 @@
 category: "apps"
 name: "hyprland"
-version: 0.20.1_beta+1
+version: 0.20.1_beta+2
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"
