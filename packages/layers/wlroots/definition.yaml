@@ -1,14 +1,14 @@
-category: "apps"
+category: "layers"
 name: "wlroots"
-version: 0.15.1+1
+version: 0.15.1+2
 uri:
   - https://github.com/danvd/wlroots-eglstreams
-license: "MIT"
+license: "GPL-3 MIT"
 description: "wlroots (EGLStreams fork)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-libs/date gui-apps/waybar gui-libs/wlroots sys-auth/seatd
+    dev-libs/date gui-apps/mako gui-apps/wl-clipboard gui-apps/waybar gui-apps/wofi gui-libs/wlroots sys-auth/seatd
 requires:
   - category: "layers"
     name: "X"
@@ -20,7 +20,16 @@ provides:
   - name: date
     category: dev-libs
     version: '>=0'
+  - name: mako
+    category: gui-apps
+    version: '>=0'
   - name: waybar
+    category: gui-apps
+    version: '>=0'
+  - name: wofi
+    category: gui-apps
+    version: '>=0'
+  - name: wl-clipboard
     category: gui-apps
     version: '>=0'
   - name: wlroots

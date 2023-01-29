@@ -1,6 +1,6 @@
 category: "layers"
 name: "sway"
-version: 1.8-r1+2
+version: 1.8-r1+3
 uri:
   - https://swaywm.org
 license: "MIT"
@@ -10,11 +10,8 @@ labels:
   emerge.packages: >-
     gui-apps/swaybg gui-apps/swayidle gui-apps/swaylock gui-wm/sway sys-libs/basu
 requires:
-  - category: "apps"
+  - category: "layers"
     name: "wlroots"
-    version: ">=0"
-  - category: "entity"
-    name: "seat"
     version: ">=0"
 provides:
   - name: swaybg

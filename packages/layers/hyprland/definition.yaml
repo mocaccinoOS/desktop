@@ -1,6 +1,6 @@
 category: "apps"
 name: "hyprland"
-version: 0.20.1_beta+2
+version: 0.20.1_beta+3
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"
@@ -10,7 +10,7 @@ labels:
   emerge.packages: >-
     gui-apps/hyprpaper gui-wm/hyprland
 requires:
-  - category: "apps"
+  - category: "layers"
     name: "wlroots"
     version: ">=0"
 provides:

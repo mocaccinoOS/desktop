@@ -1,6 +1,6 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.3-r3+3
+version: 0.7.3-r3+4
 uri:
   - https://github.com/WayfireWM/wayfire
 license: "MIT"
@@ -10,7 +10,7 @@ labels:
   emerge.packages: >-
     gui-apps/grim gui-apps/gtkgreet gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/greetd gui-libs/wf-config gui-wm/wayfire
 requires:
-  - category: "apps"
+  - category: "layers"
     name: "wlroots"
     version: ">=0"
   - category: "entity"
