@@ -10,6 +10,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "layers"
   name: "enlightenment"
