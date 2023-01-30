@@ -1,9 +1,10 @@
+{{- if .Values.lts }}
+  KER = "5.15.88-mocaccino"
+{{- else}}
+  KER = "6.1.6-mocaccino"
+{{- end}}
 install:
-- |
-  for KER in  $(ls -Art /lib/modules/ | tail -n 1)
-  do
-    depmod -a $KER
-  done
+- depmod -a $KER
 {{ if contains "nvidia" .Values.name }}
 - mocaccino-dracut --rebuild-all
 {{ end }}
