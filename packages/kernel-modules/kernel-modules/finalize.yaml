@@ -1,7 +1,7 @@
 install:
-KER = "6.1.6-mocaccino"
+- KER = "6.1.6-mocaccino"
 {{ if contains "lts" .Values.name }}
-  KER = "5.15.88-mocaccino"
+- KER = "5.15.88-mocaccino"
 {{ end }}
 - depmod -a $KER
 {{ if contains "nvidia" .Values.name }}
