@@ -1,8 +1,8 @@
-{{- if .Values.lts }}
+{{ if contains "lts" .Values.name }}
   KER = "5.15.88-mocaccino"
-{{- else}}
+{{ else }}
   KER = "6.1.6-mocaccino"
-{{- end}}
+{{ end }}
 install:
 - depmod -a $KER
 {{ if contains "nvidia" .Values.name }}
