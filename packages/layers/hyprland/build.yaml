@@ -10,6 +10,8 @@ prelude:
 - echo "y" | layman -a thegreatmcpain
 # needed for hyprpaper
 - echo "y" | layman -a wayland-desktop
+# needed for clipman
+- echo "y" | layman -a guru
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
