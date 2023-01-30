@@ -9,6 +9,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "apps"
+- category: "layers"
   name: "wlroots"
   version: ">=0"

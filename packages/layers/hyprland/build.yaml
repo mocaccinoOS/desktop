@@ -15,6 +15,6 @@ steps:
 {{ template "portage_build" . }}
 - emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
-- category: "apps"
+- category: "layers"
   name: "wlroots"
   version: ">=0"
