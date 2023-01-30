@@ -1,10 +1,9 @@
 install:
-KER="6.1.6-mocaccino"
 - |
-  {{ if contains "lts" .Values.name }}
-  KER="5.15.88-mocaccino"
-  {{ end }}
-  depmod -a $KER
+  for KER in  $(ls -Art /lib/modules/ | tail -n 1)
+  do
+    depmod -a $KER
+  done
 {{ if contains "nvidia" .Values.name }}
 - mocaccino-dracut --rebuild-all
 {{ end }}
