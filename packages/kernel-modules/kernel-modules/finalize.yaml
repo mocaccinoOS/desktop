@@ -1,7 +1,7 @@
 install:
 {{ if index .Values.labels "lts.kernel" }}
 - depmod -a 5.15.88-mocaccino
-{ else }}
+{{ else }}
 - depmod -a 6.1.6-mocaccino
 {{ end }}
 {{ if contains "nvidia" .Values.name }}
