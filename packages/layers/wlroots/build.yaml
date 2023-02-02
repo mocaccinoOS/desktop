@@ -13,6 +13,8 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
+- echo "y" | layman -d guru
+- emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "layers"
   name: "X"
