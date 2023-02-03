@@ -110,6 +110,9 @@ provides:
   - name: kmenuedit
     category: kde-plasma
     version: '>=0'
+  - name: kpipewire
+    category: kde-plasma
+    version: '>=0'
   - name: kscreen
     category: kde-plasma
     version: '>=0'
