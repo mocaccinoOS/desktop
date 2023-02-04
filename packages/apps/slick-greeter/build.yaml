@@ -10,6 +10,8 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - sed -i '/\[Greeter\]/ a\background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg' /etc/lightdm/slick-greeter.conf
+- echo "y" | layman -d binaryden
+- emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "apps"
   name: "lightdm"

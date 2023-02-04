@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: 43.2+10
+version: 43.2+11
 uri:
   - https://gnome.org
 license: "GPL-2+"
@@ -184,9 +184,6 @@ provides:
   - name: totem
     category: media-video
     version: '>=0'
-  - name: libcloudproviders
-    category: net-libs
-    version: '>=0'
   - name: dleyna-connector-dbus
     category: net-libs
     version: '>=0'
@@ -194,6 +191,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: gupnp-av
+    category: net-libs
+    version: '>=0'
+  - name: libcloudproviders
     category: net-libs
     version: '>=0'
   - name: liboauth

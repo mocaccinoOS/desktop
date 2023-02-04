@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.26.0+17
+version: 1.26.0+18
 uri:
   - https://mate-desktop.org
 license: "FDL-1.1 GPL-2+ LGPL-2+ MIT-with-advertising"
@@ -24,6 +24,9 @@ provides:
     category: app-text
     version: '>=0'
   - name: rarian
+    category: app-text
+    version: '>=0'
+  - name: scrollkeeper-dtd
     category: app-text
     version: '>=0'
   - name: yelp-tools
