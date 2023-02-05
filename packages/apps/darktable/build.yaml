@@ -5,6 +5,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
+- USE="graphite" emerge -1 sys-devel/gcc
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
