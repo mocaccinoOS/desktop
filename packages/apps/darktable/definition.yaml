@@ -1,0 +1,19 @@
+category: "apps"
+name: "darktable"
+version: "4.0.1-r1"
+uri:
+  - https://www.darktable.org
+license: "GPL-3 CC-BY-3.0"
+description: "A virtual lighttable and darkroom for photographers"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    media-gfx/darktable
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+provides:
+  - name: darktable
+    category: media-gfx
+    version: '>=0'
