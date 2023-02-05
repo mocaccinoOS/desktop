@@ -19,7 +19,7 @@ media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
 media-gfx/sane-backends threads -v4l
 media-libs/chromaprint tools -abi_x86_32
-media-libs/freetype -X -auto-hinter adobe-cff bzip2 cleartype_hinting harfbuzz infinality png static-libs
+media-libs/freetype -auto-hinter adobe-cff brotli bzip2 cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
