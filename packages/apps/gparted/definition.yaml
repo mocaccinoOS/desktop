@@ -1,6 +1,6 @@
 category: "apps"
 name: "gparted"
-version: 1.4.0+44
+version: 1.4.0+45
 uri:
   - https://gparted.org
 license: "GPL-2+ FDL-1.2+"
