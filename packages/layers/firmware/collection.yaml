@@ -190,7 +190,7 @@ packages:
     version: 2+31
   - category: "layers"
     name: "firmware-microchip"
-    version: 2+30
+    version: 2+31
   - category: "layers"
     name: "firmware-moxa"
     version: 2+30
