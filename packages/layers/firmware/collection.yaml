@@ -184,7 +184,7 @@ packages:
     version: 2+31
   - category: "layers"
     name: "firmware-mellanox"
-    version: 2+30
+    version: 2+31
   - category: "layers"
     name: "firmware-meson"
     version: 2+30
