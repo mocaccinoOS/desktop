@@ -231,7 +231,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8812au-lts"
-    version: 20220827+32
+    version: 20220827+33
     lts: true
     labels:
       emerge.jobs: "3"
