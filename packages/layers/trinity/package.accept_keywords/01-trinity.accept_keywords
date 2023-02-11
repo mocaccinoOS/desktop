@@ -172,7 +172,7 @@
 ~trinity-base/kpager-9999 **
 ~trinity-base/kpat-9999 **
 ~trinity-base/kpdf-9999 **
-~trinity-base/kpersonalizer-9999 **
+=trinity-base/kpersonalizer-14.0.13 ~amd64
 ~trinity-base/kpf-9999 **
 ~trinity-base/kpoker-9999 **
 ~trinity-base/kpovmodeler-9999 **
