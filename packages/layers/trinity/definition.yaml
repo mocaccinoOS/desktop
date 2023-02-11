@@ -2,7 +2,7 @@ category: "layers"
 name: "trinity"
 version: "14.0.13"
 labels:
-  emerge.jobs: "6"
+  emerge.jobs: "1"
   emerge.packages: >-
     =trinity-base/tdebase-meta-14.0.13
 requires:
