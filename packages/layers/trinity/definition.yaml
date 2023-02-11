@@ -1,10 +1,10 @@
 category: "layers"
 name: "trinity"
-version: 9999+111
+version: "14.0.13"
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    trinity-base/tdebase-meta
+    =trinity-base/tdebase-meta-14.0.13
 requires:
   - category: "layers"
     name: "X"
