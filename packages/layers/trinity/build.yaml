@@ -1,15 +1,17 @@
 excludes:
 {{ template "portage_excludes" }}
-
 env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.env /etc/portage/
 - USE="-subversion -mercurial" emerge layman
 - echo "y" | layman -o https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo/raw/branch/master/Documentation/overlay.xml -f -a trinity-official
 steps:
 {{ template "portage_build" . }}
+- echo "y" | layman -d trinity-official
+- emerge -C app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "buildbase"
   name: "X"
