@@ -136,7 +136,7 @@ packages:
     version: 2+32
   - category: "layers"
     name: "firmware-e100"
-    version: 2+31
+    version: 2+32
   - category: "layers"
     name: "firmware-emi26"
     version: 2+31
