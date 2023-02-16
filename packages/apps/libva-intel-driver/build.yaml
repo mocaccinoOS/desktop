@@ -1,0 +1,10 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
