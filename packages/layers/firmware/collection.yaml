@@ -76,7 +76,7 @@ packages:
     version: 2+32
   - category: "layers"
     name: "firmware-ath10k"
-    version: 2+31
+    version: 2+32
   - category: "layers"
     name: "firmware-ath11k"
     version: 2+31
