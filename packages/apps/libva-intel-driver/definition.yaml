@@ -1,6 +1,6 @@
 category: "apps"
 name: "libva-intel-driver"
-version: "2.4.1-r4"
+version: "2.4.1-r4+1"
 uri:
   - https://github.com/intel/intel-vaapi-driver
 license: "MIT"
@@ -8,10 +8,13 @@ description: "HW video decode support for Intel integrated graphics"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-libs/libva-intel-driver
+    media-libs/libva-intel-driver media-video/libva-utils
 provides:
   - name: libva-intel-driver
     category: media-libs
+    version: '>=0'
+  - name: libva-utils
+    category: media-video
     version: '>=0'
 requires:
   - category: "layers"
