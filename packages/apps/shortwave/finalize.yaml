@@ -1,4 +1,0 @@
-install:
-- glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
-- update-mime-database /usr/share/mime
-- ldconfig
