@@ -103,7 +103,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-bnx2"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-bnx2x"
     version: 2+32
