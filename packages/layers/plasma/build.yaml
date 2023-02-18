@@ -7,15 +7,10 @@ prelude:
 - emerge -1 media-libs/phonon
 {{ template "portage_prelude_build" . }}
 steps:
-- groupadd -g 219 sddm
-- useradd -g 219 -u 219 sddm
-- mkdir -p /var/lib/sddm/.config
-- touch /var/lib/sddm/.config/.keep
 {{ template "portage_build" . }}
 - sed -i 's/Gentoo Linux/MocaccinoOS/g' /etc/xdg/kcm-about-distrorc
 - sed -i 's/www.gentoo.org/www.mocaccino.org/g' /etc/xdg/kcm-about-distrorc
 - sed -i 's/kinfocenter\/glogo-small.png/icons\/mOS-icons\/mOS_outlined_hl.png/g' /etc/xdg/kcm-about-distrorc
-- chown -R 219:219 /var/lib/sddm
 requires:
 - category: "layers"
   name: "kde-common"
