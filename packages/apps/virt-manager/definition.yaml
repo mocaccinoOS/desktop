@@ -1,6 +1,6 @@
 category: "apps"
 name: "virt-manager"
-version: 4.0.0+67
+version: 4.0.0+68
 uri:
   - https://virt-manager.org
 license: "GPL-2"
