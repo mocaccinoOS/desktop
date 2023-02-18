@@ -241,7 +241,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-rtl_bt"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-rtl_nic"
     version: 2+32
