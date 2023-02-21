@@ -107,6 +107,9 @@ provides:
   - name: libmatemixer
     category: media-libs
     version: '>=0'
+  - name: gtk+
+    category: x11-libs
+    version: '>=0'
   - name: icon-naming-utils
     category: x11-misc
     version: '>=0'
@@ -116,7 +119,13 @@ provides:
   - name: mate-terminal
     category: x11-terms
     version: '>=0'
+  - name: gnome-themes-standard
+    category: x11-themes
+    version: '>=0'
   - name: gtk-engines
+    category: x11-themes
+    version: '>=0'
+  - name: gtk-engines-adwaita
     category: x11-themes
     version: '>=0'
   - name: mate-backgrounds
