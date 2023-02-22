@@ -1,0 +1,19 @@
+category: "system"
+name: "shim"
+version: "15.6"
+uri:
+  - https://github.com/rhboot/shim
+license: "BSD"
+description: "Fedora's signed UEFI shim"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    sys-boot/shim
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+provides:
+  - name: shim
+    category: sys-boot
+    version: '>=0'

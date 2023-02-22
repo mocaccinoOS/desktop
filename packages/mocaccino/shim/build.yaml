@@ -1,0 +1,12 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+excludes:
+{{ template "portage_excludes" }}
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
