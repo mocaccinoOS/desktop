@@ -55,10 +55,10 @@ provides:
   - name: countryflags
     category: kde-frameworks
     version: '>=0'
-  - name: frameworkintegration
+  - name: extra-cmake-modules
     category: kde-frameworks
     version: '>=0'
-  - name: extra-cmake-modules
+  - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
   - name: kactivities
