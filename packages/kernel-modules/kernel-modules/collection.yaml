@@ -3,12 +3,10 @@ packages:
     name: "virtualbox-modules"
     version: 7.0.4+12
     lts: false
-    emerge:
-      jobs: "3"
       packages:
         - app-emulation/virtualbox-modules
     labels:
-      lts.kernel: "false"
+      emerge.jobs: "3"
     requires:
       - name: mocaccino-full
         category: kernel
