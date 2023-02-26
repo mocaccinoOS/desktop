@@ -1,14 +1,18 @@
 packages:
-  #  - category: "kernel-modules"
-  #    name: "virtualbox-modules"
-  #    version: 4+4
-  #    lts: false
-  #    emerge:
-  #      jobs: "3"
-  #      packages:
-  #        - app-emulation/virtualbox-modules
-  #    labels:
-  #      lts.kernel: "false"
+  - category: "kernel-modules"
+    name: "virtualbox-modules"
+    version: 7.0.4+12
+    lts: false
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-modules
+    labels:
+      lts.kernel: "false"
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 7.0.4+12
@@ -251,27 +255,6 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-        #  - category: "kernel-modules"
-        #    name: "realtek-rtl88x2bu-lts"
-        #    version: 0_p20211010+1
-        #    lts: true
-        #    labels:
-        #      emerge.jobs: "3"
-        #    emerge:
-        #      jobs: "3"
-        #      packages:
-        #        - net-misc/realtek-rtl88x2bu
-        #    provides:
-        #      - name: realtek-rtl88x2bu
-        #        category: net-misc
-        #        version: '>=0'
-        #    requires:
-        #      - name: mocaccino-lts-full
-        #        category: kernel
-        #        version: ">=0"
-        #      - category: "layers"
-        #        name: "X"
-        #        version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
     version: 20211218+30
