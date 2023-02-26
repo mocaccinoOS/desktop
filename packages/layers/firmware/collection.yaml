@@ -169,7 +169,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-keyspan"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-keyspan_pda"
     version: 2+32
