@@ -181,7 +181,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-matrox"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-mediatek"
     version: 2+32
