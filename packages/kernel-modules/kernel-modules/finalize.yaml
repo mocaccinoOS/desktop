@@ -4,7 +4,7 @@ install:
 # - cd /lib/modules/ && rm -rf !("5.15.94-mocaccino")
 {{ else }}
 - depmod -a 6.2.1-mocaccino
-- cd /lib/modules/ && rm -rf \!("6.2.1-mocaccino")
+- find /lib/modules -mindepth 1 ! -regex '^/lib/modules/6.2.1-mocaccino\(/.*\)?' -delete
 {{ end }}
 {{ if contains "nvidia" .Values.name }}
 - mocaccino-dracut --rebuild-all
