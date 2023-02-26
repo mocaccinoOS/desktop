@@ -223,7 +223,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-qlogic"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-r128"
     version: 2+32
