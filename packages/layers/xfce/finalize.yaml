@@ -3,4 +3,3 @@ install:
 - gtk-update-icon-cache -q -t -f /usr/share/icons/Adwaita
 - gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 - ldconfig
-- source /etc/profile && env-update

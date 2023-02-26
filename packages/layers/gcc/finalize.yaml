@@ -1,2 +1,2 @@
 install:
-- source /etc/profile && env-update
+- source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1

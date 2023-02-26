@@ -3,7 +3,6 @@ install:
 - chmod u+s /usr/bin/bwrap
 - chmod u+s /usr/bin/sudo
 - ldconfig
-- source /etc/profile && env-update
 # During migration to pipewire a broken symlink in
 # /etc/alsa/conf.d (10-samplerate.conf) prevents 
 # pipewire from working properly

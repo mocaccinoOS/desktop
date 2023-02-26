@@ -6,4 +6,4 @@ install:
 - chmod +s /usr/lib/polkit-1/polkit-agent-helper-1
 - if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
 - ldconfig
-- source /etc/profile && env-update
+- source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
