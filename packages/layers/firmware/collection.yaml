@@ -280,4 +280,4 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-vxge"
-    version: 2+32
+    version: 2+33
