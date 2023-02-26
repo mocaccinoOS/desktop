@@ -259,7 +259,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-sxg"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-tehuti"
     version: 2+32
