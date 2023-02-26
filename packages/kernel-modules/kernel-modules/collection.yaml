@@ -1,18 +1,18 @@
 packages:
-#  - category: "kernel-modules"
-#    name: "virtualbox-modules"
-#    version: 7.0.4+12
-#    lts: false
-#    emerge:
-#      jobs: "3"
-#      packages:
-#        - app-emulation/virtualbox-modules
-#    labels:
-#      emerge.jobs: "3"
-#    requires:
-#      - name: mocaccino-full
-#        category: kernel
-#        version: ">=0"
+  #  - category: "kernel-modules"
+  #    name: "virtualbox-modules"
+  #    version: 7.0.4+12
+  #    lts: false
+  #    emerge:
+  #      jobs: "3"
+  #      packages:
+  #        - app-emulation/virtualbox-modules
+  #    labels:
+  #      emerge.jobs: "3"
+  #    requires:
+  #      - name: mocaccino-full
+  #        category: kernel
+  #        version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 7.0.4+12
@@ -141,7 +141,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.161.03+28
+    version: 470.161.03+29
     lts: true
     labels:
       emerge.jobs: "3"
