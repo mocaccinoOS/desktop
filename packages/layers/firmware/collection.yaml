@@ -112,7 +112,7 @@ packages:
     version: 2+33
   - category: "layers"
     name: "firmware-cadence"
-    version: 2+32
+    version: 2+33
   - category: "layers"
     name: "firmware-cavium"
     version: 2+32
