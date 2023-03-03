@@ -2,14 +2,12 @@ excludes:
 {{ template "portage_excludes" }}
 - ^/etc/plymouth/plymouthd.conf
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-- LUET_YES=true
-- LUET_NOLOCK=true
+{{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
+{{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 - cp -r 10_linux /etc/grub.d/10_linux
 - mkdir -p /boot/grub
 - cp -r grub-background.png /boot/grub/grub-background.png
