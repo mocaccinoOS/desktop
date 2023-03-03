@@ -1,4 +1,4 @@
-image: "ubuntu"
+image: "ubuntu:23.04"
 
 prelude:
 - apt-get update
