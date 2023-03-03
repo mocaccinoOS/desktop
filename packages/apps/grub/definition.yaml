@@ -1,6 +1,6 @@
 category: "apps"
 name: "grub"
-version: "2.06-r4"
+version: "2.06-r4+1"
 uri:
   - https://www.gnu.org/software/grub
 license: "GPL-3+ BSD MIT"
@@ -8,7 +8,7 @@ description: "GNU GRUB boot loader"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-boot/grub sys-boot/plymouth sys-boot/os-prober
+    sys-boot/grub sys-boot/plymouth sys-boot/os-prober sys-libs/efivar
 requires:
   - category: "layers"
     name: "X"
