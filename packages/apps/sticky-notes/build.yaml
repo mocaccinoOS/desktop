@@ -6,6 +6,7 @@ prelude:
 - cd sticky && git checkout 9a750614323e630547443c3f10c67311630f58b0 && meson --prefix=/usr build
 steps:
 - cd sticky && ninja -C build install
+- emerge -C sys-apps/yarn && emerge --depclean
 requires:
 - category: "layers"
   name: "gnome-common"
