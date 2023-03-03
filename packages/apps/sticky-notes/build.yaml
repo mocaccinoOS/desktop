@@ -1,12 +1,9 @@
-excludes:
-{{ template "portage_excludes" }}
+image: "debian:stable"
+
 prelude:
-- emerge -1 sys-apps/yarn
+- apt-get update
+- apt-get install -y yarn ninja-build git meson
 - git clone https://github.com/vixalien/sticky.git --recurse-submodules
 - cd sticky && git checkout 9a750614323e630547443c3f10c67311630f58b0 && meson build
 steps:
 - cd sticky && ninja -C build install
-requires:
-- category: "layers"
-  name: "gnome-common"
-  version: ">=0"
