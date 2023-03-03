@@ -1,4 +1,4 @@
-image: "debian:stable"
+image: "ubuntu"
 
 prelude:
 - apt-get update
