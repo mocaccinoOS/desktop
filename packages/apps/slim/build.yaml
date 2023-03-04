@@ -3,9 +3,8 @@ excludes:
 env:
 {{ template "portage_env" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "X"
   version: ">=0"
-requires_final_images: true
