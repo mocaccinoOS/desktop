@@ -9,3 +9,10 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
+provides:
+  - name: nodejs
+    category: net-libs
+    version: '>=0'
+  - name: yarn
+    category: sys-apps
+    version: '>=0'
