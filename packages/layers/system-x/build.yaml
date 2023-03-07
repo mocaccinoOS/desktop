@@ -27,7 +27,9 @@ steps:
 - emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
-- chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d && chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
+# - chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d && chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
+# As per sys-auth/polkit-122 it seems no file is installed in /etc/polkit-1/rules.d anymore
+- chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
 - emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf dev-util/ragel sys-apps/help2man virtual/yacc
 excludes:
