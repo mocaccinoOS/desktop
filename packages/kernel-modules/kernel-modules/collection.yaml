@@ -67,7 +67,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 525.85.05+6
+    version: 525.85.05+7
     lts: true
     labels:
       emerge.jobs: "3"
