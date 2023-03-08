@@ -1,6 +1,6 @@
 category: "apps"
 name: "spice-vdagent"
-version: 0.21.0+14
+version: 0.21.0+15
 uri:
   - https://www.spice-space.org/
 license: "LGPL-2.1"
