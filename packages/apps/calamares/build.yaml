@@ -6,7 +6,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 steps:
 {{ template "portage_build" . }}
-- cp 49-calamares.rules /etc/polkit-1/rules.d/
+- cp -r 49-calamares.rules /etc/polkit-1/rules.d/
 - chown 102:0 /etc/polkit-1/rules.d/*.rules
 - chmod 700 /etc/polkit-1/rules.d/*.rules
 requires:
