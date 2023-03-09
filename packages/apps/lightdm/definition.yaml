@@ -32,3 +32,6 @@ provides:
   - name: lightdm-gtk-greeter
     category: x11-misc
     version: '>=0'
+  - name: gnome-themes-standard
+    category: x11-themes
+    version: '>=0'
