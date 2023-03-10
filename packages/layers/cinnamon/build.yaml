@@ -9,6 +9,9 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
+# Be sure to remove these BDEPS they are shipped in C-R and cause a collision otherwise.
+# Once we do not require llvm:14 anymore (required by dev-lang/spidermonkey:78 )
+- emerge -C sys-devel/clang:14 sys-devel/clang-common:14 sys-devel/clang-runtime:14 sys-devel/llvm:14 sys-libs/compiler-rt:14 compiler-rt-sanitizers:14 && emerge --depclean
 requires:
 - category: "layers"
   name: "gnome-common"
