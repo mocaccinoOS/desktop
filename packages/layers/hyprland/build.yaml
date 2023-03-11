@@ -15,7 +15,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- emerge -C dev-lang/go dev-lang/go-bootstrap dev-libs/oniguruma app-misc/jq app-portage/layman dev-python/ssl-fetch
 requires:
 - category: "layers"
   name: "wlroots"
