@@ -2,3 +2,4 @@ dev-libs/date ~amd64
 gui-apps/waybar ~amd64
 gui-apps/wlogout ~amd64
 gui-apps/wofi ~amd64
+media-libs/libdisplay-info ~amd64
