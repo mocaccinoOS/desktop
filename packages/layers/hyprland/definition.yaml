@@ -1,6 +1,6 @@
 category: "layers"
 name: "hyprland"
-version: 0.20.1_beta+14
+version: "0.22.0-r1"
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"
@@ -8,7 +8,7 @@ description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its 
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-apps/clipman::guru gui-apps/hyprpaper::wayland-desktop gui-wm/hyprland::thegreatmcpain
+    gui-apps/clipman::guru gui-apps/hyprpaper::wayland-desktop gui-wm/hyprland::wayland-desktop
 requires:
   - category: "layers"
     name: "wlroots"
