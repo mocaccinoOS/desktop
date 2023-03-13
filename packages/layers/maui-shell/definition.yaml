@@ -1,6 +1,6 @@
 category: "layers"
 name: "maui-shell"
-version: "0.6.0"
+version: 0.6.0+1
 maui_man_commit: "1eb8452d1307237fffb3ec4b155f63a8b1a7094a"
 maui_kit_commit: "29ea1dc70d15ffefa59a43631591d61e65d0f20a"
 # known to work: maui_kit_commit: "535bd57e7dc44c006dfcfafeec102990f6a0575c"
