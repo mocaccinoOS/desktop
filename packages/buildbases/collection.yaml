@@ -40,7 +40,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "libvirt"
-    version: 0+90
+    version: 0+91
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
