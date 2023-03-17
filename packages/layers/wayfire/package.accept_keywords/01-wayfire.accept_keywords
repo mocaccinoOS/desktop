@@ -1,3 +1,6 @@
 gui-apps/gtkgreet ~amd64
 gui-libs/greetd ~amd64
 dev-libs/spdlog ~amd64
+# see https://bugs.gentoo.org/901807
+# entry can be removed on next portage sync
+=gui-apps/grim-1.4.0-r3 ~amd64
