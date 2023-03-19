@@ -1,6 +1,6 @@
 category: "apps"
 name: "slick-greeter"
-version: 1.6.1+19
+version: 1.6.1+20
 uri:
   - https://github.com/linuxmint/slick-greeter
 license: "GPL-3"
