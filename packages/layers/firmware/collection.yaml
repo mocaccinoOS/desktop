@@ -151,7 +151,7 @@ packages:
     version: 2+35
   - category: "layers"
     name: "firmware-i915"
-    version: 2+34
+    version: 2+35
   - category: "layers"
     name: "firmware-imx"
     version: 2+34
