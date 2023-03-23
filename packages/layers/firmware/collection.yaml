@@ -70,7 +70,7 @@ packages:
     version: 2+35
   - category: "layers"
     name: "firmware-amd-ucode"
-    version: 2+34
+    version: 2+35
   - category: "layers"
     name: "firmware-amd"
     version: 2+35
