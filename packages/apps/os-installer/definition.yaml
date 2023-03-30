@@ -1,11 +1,11 @@
 category: "apps"
 name: "os-installer"
-version: "0.3"
+version: "0.3+1"
 uri:
   - https://gitlab.gnome.org/p3732/os-installer
 license: "GPL-3"
 description: "A generic OS-Installer that can be customized by distributions"
 requires:
   - category: "layers"
-    name: "gnome-comon"
+    name: "gnome-common"
     version: ">=0"
