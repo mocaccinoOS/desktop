@@ -1,0 +1,19 @@
+category: "apps"
+name: "gnome-disk-utility"
+version: "43.0"
+uri:
+  - https://wiki.gnome.org/Apps/Disks
+license: "GPL-2+"
+description: "Disk Utility for GNOME using udisks"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-apps/gnome-disk-utility
+provides:
+  - name: gnome-disk-utility
+    category: sys-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
