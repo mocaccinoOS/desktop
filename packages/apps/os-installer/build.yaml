@@ -10,6 +10,8 @@ steps:
 - cd os-installer && ninja -C build/ install
 # MoccacinoOS config for os-installer
 - mkdir -p /etc/os-installer && cp -rf distribution/config.yaml /etc/os-installer/
+# MoccacinoOS logo
+- mkdir -p /usr/share/os-installer && cp -rf distribution/mocaccino.png /usr/share/os-installer
 requires:
 - category: "layers"
   name: "gnome-common"

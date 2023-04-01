@@ -1,23 +1,9 @@
 %YAML 1.2
 ---
-# This is an example config file for OS-Installer.
-# Place your config under /etc/os-installer/config.yaml for it to be used.
-# If a value is not defined, it's default will be used.
-
-# Some strings can have translations by appending an underscore followed by a
-# language code, e.g. "name_fr" or "description_pt_BR". These parameters have
-# the _LC suffix in their description. No suffix is needed for English.
-
-# Name of the distribution.
-# Default: 'Untitled'
 distribution_name: 'MocaccinoOS'
 
-# Whether the installation needs an internet connection.
-# Default: yes
 internet_connection_required: yes
 
-# A URL/IP address to be used to check for an existing internet connection.
-# Default: 'http://nmcheck.gnome.org/check_network_status.txt'
 internet_checker_url: 'http://nmcheck.gnome.org/check_network_status.txt'
 
 # Skip the language selection dialog by specifing a language, e.g. 'pt_BR'
@@ -46,7 +32,7 @@ suggested_languages:
 #
 # Default: logo: None, text: None, usage: yes
 welcome_page:
-    logo    : '/your/distribution/logo.png'
+    logo    : '/usr/share/os-installer/mocaccino.png'
     text    : 'Welcome to MocaccinoOS'
     text_de : 'Willkommen zum MocaccinoOS'
     usage   : yes
