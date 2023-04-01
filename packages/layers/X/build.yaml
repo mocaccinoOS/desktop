@@ -1,6 +1,8 @@
 excludes:
 {{ template "portage_excludes" }}
 - ^/usr/share/icons/hicolor/icon-theme.cache
+- ^/usr/share/applications/avahi-discover.desktop
+- ^/usr/share/applications/uxterm.desktop
 - ^/var/spool/cups/tmp/
 env:
 {{ template "portage_env" . }}
