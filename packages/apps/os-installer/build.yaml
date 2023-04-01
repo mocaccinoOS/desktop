@@ -9,7 +9,9 @@ prelude:
 steps:
 - cd os-installer && ninja -C build/ install
 # MoccacinoOS config for os-installer
-- mkdir -p /etc/os-installer && cp -rf distribution/config.yaml /etc/os-installer/
+- mkdir -p /etc/os-installer && cp -rf distribution/config.yaml /etc/os-installer
+# MoccacinoOS scripts for os-installer
+- mkdir -p /etc/os-installer/scripts && cp -rf distribution/*.sh /etc/os-installer/scripts
 # MoccacinoOS logo
 - mkdir -p /usr/share/os-installer && cp -rf distribution/mocaccino.png /usr/share/os-installer
 requires:
