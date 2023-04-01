@@ -8,6 +8,8 @@ prelude:
 - cd os-installer && meson build/ && ninja -C build/
 steps:
 - cd os-installer && ninja -C build/ install
+# MoccacinoOS config for os-installer
+- cp -rf distribution/config.yaml /etc/os-installer/
 requires:
 - category: "layers"
   name: "gnome-common"
