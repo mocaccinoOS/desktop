@@ -11,9 +11,9 @@ steps:
 # MoccacinoOS config for os-installer
 - mkdir -p /etc/os-installer && cp -rf distribution/config.yaml /etc/os-installer
 # MoccacinoOS scripts for os-installer
-- mkdir -p /etc/os-installer/scripts && cp -rf distribution/*.sh /etc/os-installer/scripts
+- mkdir -p /etc/os-installer/scripts && cp -rf distribution/scripts/*.sh /etc/os-installer/scripts
 # MoccacinoOS logo
-- mkdir -p /usr/share/os-installer && cp -rf distribution/mocaccino.png /usr/share/os-installer
+- mkdir -p /usr/share/os-installer && cp -rf distribution/artwork/mocaccino.png /usr/share/os-installer
 requires:
 - category: "layers"
   name: "gnome-common"
