@@ -115,8 +115,8 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
-    name: "nvidia-drivers-510-lts"
-    version: 510.108.03+37
+    name: "nvidia-drivers-515-lts"
+    version: "515.86.01"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -124,7 +124,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =x11-drivers/nvidia-drivers-510.108.03
+        - =x11-drivers/nvidia-drivers-515.86.01
     provides:
       - name: nvidia-drivers
         category: x11-drivers
