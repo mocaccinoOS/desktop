@@ -13,7 +13,6 @@ steps:
 # Moccacino OS customization for bookmarks, start site and bookmarks toolbar.
 - cp -rf distribution/distribution.ini /usr/lib64/firefox/distribution/
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "X"
   version: ">=0"
-requires_final_images: true
