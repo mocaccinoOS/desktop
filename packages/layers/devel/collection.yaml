@@ -4,7 +4,7 @@ packages:
     version: 0.20230307+3
     category: layers
     package: "system-x"
- - <<: *base
+  - <<: *base
     name: X-devel
     package: "X"
 # - <<: *base
