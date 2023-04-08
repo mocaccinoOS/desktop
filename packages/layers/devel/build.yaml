@@ -1,5 +1,7 @@
 includes:
+{{ if contains "system-x" .Values.name }}
 - /etc/portage/.*
+{{- end}}
 - /usr$
 - /usr/include$
 - /usr/include/.*
