@@ -10,9 +10,9 @@ packages:
 #  - <<: *base
 #    name: codecs-devel
 #    package: "sys-fs"
-  - <<: *base
-    name: X-devel
-    package: "X"
+#  - <<: *base
+#    name: X-devel
+#    package: "X"
 # - <<: *base
 #   name: xfce-devel
 #   package: "xfce"
