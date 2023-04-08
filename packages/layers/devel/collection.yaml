@@ -4,12 +4,12 @@ packages:
     version: 0.20230307+5
     category: layers
     package: "system-x"
-  - <<: *base
-    name: sys-fs-devel
-    package: "sys-fs"
-  - <<: *base
-    name: codecs-devel
-    package: "sys-fs"
+#  - <<: *base
+#    name: sys-fs-devel
+#    package: "sys-fs"
+#  - <<: *base
+#    name: codecs-devel
+#    package: "sys-fs"
   - <<: *base
     name: X-devel
     package: "X"
