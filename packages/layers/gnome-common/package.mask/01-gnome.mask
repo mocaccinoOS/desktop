@@ -1,1 +1,1 @@
-# Placeholder
+>=dev-lang/ruby-3.0
