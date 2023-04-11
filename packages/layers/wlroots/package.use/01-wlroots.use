@@ -1,1 +1,1 @@
-gui-apps/waybar network popups tray
+gui-apps/waybar network popups tray -pulseaudio
