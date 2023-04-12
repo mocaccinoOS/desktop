@@ -193,7 +193,7 @@ packages:
     version: 2+38
   - category: "layers"
     name: "firmware-microchip"
-    version: 2+37
+    version: 2+38
   - category: "layers"
     name: "firmware-moxa"
     version: 2+37
