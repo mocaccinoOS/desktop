@@ -247,7 +247,7 @@ packages:
     version: 2+38
   - category: "layers"
     name: "firmware-rtlwifi"
-    version: 2+37
+    version: 2+38
   - category: "layers"
     name: "firmware-rtw88"
     version: 2+37
