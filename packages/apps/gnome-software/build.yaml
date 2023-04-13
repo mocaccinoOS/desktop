@@ -5,7 +5,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-- mkdir /var/db/repos/gentoo/gnome-extra/gnome-software
+- mkdir -p /var/db/repos/gentoo/gnome-extra/gnome-software
 - cd /var/db/repos/gentoo/gnome-extra/gnome-software && wget https://raw.githubusercontent.com/gentoo/gentoo/e6780323b71c7a6a72f7942060195f04df27d2f2/gnome-extra/gnome-software/gnome-software-43.5.ebuild
 - ebuild /var/db/repos/gentoo/gnome-extra/gnome-software/gnome-software-43.5.ebuild manifest
 steps:
