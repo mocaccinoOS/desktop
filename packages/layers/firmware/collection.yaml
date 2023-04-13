@@ -139,7 +139,7 @@ packages:
     version: 2+39
   - category: "layers"
     name: "firmware-e100"
-    version: 2+38
+    version: 2+39
   - category: "layers"
     name: "firmware-emi26"
     version: 2+38
