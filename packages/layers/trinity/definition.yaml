@@ -1,6 +1,6 @@
 category: "layers"
 name: "trinity"
-version: 14.0.13+10
+version: 14.0.13+11
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -10,9 +10,6 @@ requires:
     name: "X"
     version: ">=0"
 provides:
-  - name: layman
-    category: app-portage
-    version: '>=0'
   - name: enscript
     category: app-text
     version: '>=0'
@@ -24,9 +21,6 @@ provides:
     version: '>=0'
   - name: libconfig
     category: dev-libs
-    version: '>=0'
-  - name: ssl-fetch
-    category: dev-python
     version: '>=0'
   - name: tqt
     category: dev-tqt

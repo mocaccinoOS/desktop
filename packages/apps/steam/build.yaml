@@ -10,6 +10,7 @@ prelude:
 - emaint sync -r steam-overlay
 steps:
 {{ template "portage_build" . }}
+- eselect repository remove steam-overlay
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"

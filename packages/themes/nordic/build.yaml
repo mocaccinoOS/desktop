@@ -4,12 +4,14 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a gentoo-zh
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable gentoo-zh
+- emaint sync -r gentoo-zh
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- eselect repository remove gentoo-zh
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "X"

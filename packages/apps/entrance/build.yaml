@@ -4,13 +4,14 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a enlightenment-live
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable enlightenment-live
+- emaint sync -r enlightenment-live
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- eselect repository remove enlightenment-live
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "enlightenment"
