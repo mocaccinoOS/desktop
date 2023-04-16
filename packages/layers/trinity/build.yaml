@@ -7,11 +7,11 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.env /etc/portage/
 - emerge -1 app-eselect/eselect-repository
-- eselect repository add trinity-official git https://github.com/Fat-Zer/trinity.git
-- emaint sync -r trinity-official
+- eselect repository add trinity git https://github.com/Fat-Zer/trinity.git
+- emaint sync -r trinity
 steps:
 {{ template "portage_build" . }}
-- eselect repository remove -f trinity-official
+- eselect repository remove -f trinity
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
