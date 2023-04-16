@@ -299,3 +299,25 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
+  - category: "kernel-modules"
+    name: "rtl8192eu-lts"
+    version: "0_pre20230313"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - net-wireless/rtl8192eu
+    provides:
+      - name: rtl8192eu
+        category: net-wireless
+        version: '>=0'
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
