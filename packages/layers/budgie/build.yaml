@@ -4,12 +4,13 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a SarahMiaOverlay
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable SarahMiaOverlay
+- emaint sync -r SarahMiaOverlay
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- eselect repository remove SarahMiaOverlay
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "gnome"

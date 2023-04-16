@@ -5,17 +5,20 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a thegreatmcpain
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable thegreatmcpain
+- emaint sync -r thegreatmcpain
 # needed for hyprpaper
-- echo "y" | layman -a wayland-desktop
+- eselect repository enable wayland-desktop
+- emaint sync -r wayland-desktop
 # needed for clipman
-- echo "y" | layman -a guru
+- eselect repository enable guru
+- emaint sync -r guru
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- eselect repository remove thegreatmcpain wayland-desktop guru
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "wlroots"
