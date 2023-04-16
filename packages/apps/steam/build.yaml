@@ -5,13 +5,12 @@ env:
 prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a steam-overlay
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable steam-overlay
+- emaint sync -r steam-overlay
 steps:
 {{ template "portage_build" . }}
-- echo "y" | layman -d steam-overlay
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "X"

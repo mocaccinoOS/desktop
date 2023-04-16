@@ -10,24 +10,24 @@ env:
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
 prelude:
 {{ if contains "xone" .Values.name }}
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a src_prepare-overlay
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable src_prepare-overlay
+- emaint sync -r src_prepare-overlay
 {{- end}}
 {{ if contains "rtl8812au" .Values.name }}
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a rasdark
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable rasdark
+- emaint sync -r rasdark
 {{- end}}
 {{ if contains "rtl8192eu" .Values.name }}
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a guru
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable guru
+- emaint sync -r guru
 {{- end}}
 {{ if contains "rtl88x2bu" .Values.name }}
-- USE="-subversion -mercurial" emerge app-portage/layman
-- layman -L
-- echo "y" | layman -a sam_c
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable sam_c
+- emaint sync -r sam_c
 {{- end}}
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
@@ -36,7 +36,7 @@ prelude:
 steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
 {{- if .Values.xone }}
-- emerge -C app-portage/layman dev-python/ssl-fetch
+- emerge -C app-eselect/eselect-repository
 {{- end}}
 requires:
 - category: "kernel-sources"
