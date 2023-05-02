@@ -67,6 +67,9 @@ provides:
   - name: nemo
     category: gnome-extra
     version: '>=0'
+  - name: gnome-themes-standard
+    category: x11-themes
+    version: '>=0'
   - name: muffin
     category: x11-wm
     version: '>=0'

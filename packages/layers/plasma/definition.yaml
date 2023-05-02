@@ -179,6 +179,9 @@ provides:
   - name: plasma-vault
     category: kde-plasma
     version: '>=0'
+  - name: plasma-welcome
+    category: kde-plasma
+    version: '>=0'
   - name: plasma-workspace
     category: kde-plasma
     version: '>=0'
