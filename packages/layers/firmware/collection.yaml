@@ -277,7 +277,7 @@ packages:
     version: 2+40
   - category: "layers"
     name: "firmware-ueagle-atm"
-    version: 2+39
+    version: 2+40
   - category: "layers"
     name: "firmware-vxge"
     version: 2+39
