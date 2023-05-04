@@ -92,7 +92,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 525.89.02+9
+    version: 525.89.02+10
     lts: false
     labels:
       emerge.jobs: "3"
