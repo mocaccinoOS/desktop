@@ -5,8 +5,8 @@ env:
 prelude:
 # - cp -rf package.use /etc/portage/
 - mkdir -p /var/db/repos/gentoo/x11-wm/qtile
-- cd /var/db/repos/gentoo/gentoo/x11-wm/qtile && wget https://raw.githubusercontent.com/gentoo/gentoo/master/x11-wm/qtile/qtile-0.22.1-r1.ebuild
-- ebuild /var/db/repos/gentoo/gentoo/x11-wm/qtile/qtile-0.22.1-r1.ebuild manifest
+- cd /var/db/repos/gentoo/x11-wm/qtile && wget https://raw.githubusercontent.com/gentoo/gentoo/master/x11-wm/qtile/qtile-0.22.1-r1.ebuild
+- ebuild /var/db/repos/gentoo/x11-wm/qtile/qtile-0.22.1-r1.ebuild manifest
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
