@@ -1,6 +1,6 @@
 category: "apps"
 name: "qtile"
-version: "22.1-r1"
+version: "0.22.1-r1"
 uri:
   - http://qtile.org
 license: "MIT"
@@ -8,7 +8,7 @@ description: "A full-featured, hackable tiling window manager written in Python"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-python/xcffib dev-python/dbus-next dev-python/cairocffi =x11-wm/qtile-22.1-r1
+    dev-python/xcffib dev-python/dbus-next dev-python/cairocffi =x11-wm/qtile-0.22.1-r1
 requires:
   - category: "layers"
     name: "wlroots"
