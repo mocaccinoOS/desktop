@@ -1,6 +1,6 @@
 category: "apps"
 name: "qtile"
-version: 0.21.0-r1+5
+version: "22.1-r1"
 uri:
   - http://qtile.org
 license: "MIT"
@@ -11,7 +11,7 @@ labels:
     dev-python/xcffib dev-python/dbus-next dev-python/cairocffi x11-wm/qtile
 requires:
   - category: "layers"
-    name: "X"
+    name: "wlroots"
     version: ">=0"
 provides:
   - name: cairocffi
