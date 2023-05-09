@@ -124,7 +124,7 @@ packages:
     version: 2+40
   - category: "layers"
     name: "firmware-cxgb4"
-    version: 2+39
+    version: 2+40
   - category: "layers"
     name: "firmware-cypress"
     version: 2+39
