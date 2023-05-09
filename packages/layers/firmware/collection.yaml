@@ -202,7 +202,7 @@ packages:
     version: 2+40
   - category: "layers"
     name: "firmware-mwl8k"
-    version: 2+39
+    version: 2+40
   - category: "layers"
     name: "firmware-mwlwifi"
     version: 2+39
