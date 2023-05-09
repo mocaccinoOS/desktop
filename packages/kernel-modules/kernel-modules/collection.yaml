@@ -191,7 +191,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.5+58
+    version: 0.9.5+59
     lts: true
     labels:
       emerge.jobs: "3"
