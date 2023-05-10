@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.60+60
+version: "3.2.60-r2"
 uri:
   - https://calamares.io
 license: "GPL-3"
@@ -22,9 +22,6 @@ requires:
     version: ">=0"
   - category: "entity"
     name: "vboxguest"
-    version: ">=0"
-  - category: "layers"
-    name: "sys-fs"
     version: ">=0"
   - category: "layers"
     name: "kde-common"
