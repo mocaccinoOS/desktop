@@ -20,5 +20,5 @@ steps:
 - echo -e "\nGRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 requires:
 - category: "layers"
-  name: "system-x"
+  name: "sys-fs"
   version: ">=0"
