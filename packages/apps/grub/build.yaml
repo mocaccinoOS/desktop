@@ -19,7 +19,6 @@ steps:
 - sed -i -e '/GRUB_BACKGROUND/ s/#GRUB_BACKGROUND="\/boot\/grub\/mybackground.png"/GRUB_BACKGROUND="\/boot\/grub\/grub-background.png"/' /etc/default/grub
 - echo -e "\nGRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "layers"
+  name: "sys-fs"
   version: ">=0"
-requires_final_images: true

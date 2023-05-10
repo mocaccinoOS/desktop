@@ -10,10 +10,9 @@ steps:
 - chown 102:0 /usr/share/polkit-1/rules.d/49-calamares.rules
 - chmod 700 /usr/share/polkit-1/rules.d/49-calamares.rules
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "kde-common"
   version: ">=0"
-- category: "buildbase"
+- category: "apps"
   name: "grub"
   version: ">=0"
-requires_final_images: true
