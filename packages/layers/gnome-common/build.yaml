@@ -14,7 +14,7 @@ prelude:
 # - sed 's/ruby27 //' /var/db/repos/gentoo/dev-ruby/racc/racc-1.6.2.ebuild
 - ebuild /var/db/repos/gentoo/dev-ruby/racc/racc-1.6.2.ebuild manifest
 - mkdir -p /var/db/repos/gentoo/eclass
-- cd /var/db/repos/gentoo/eclass && wget https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-utils.eclass
+- cd /var/db/repos/gentoo/eclass && wget https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-utils.eclass && https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-ng.eclass
 - emerge -1 dev-lang/ruby
 steps:
 {{ template "portage_build" . }}
