@@ -1,8 +1,8 @@
 app-arch/file-roller -nautilus -packagekit
 app-editors/gedit-plugins terminal
-app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
+app-text/evince djvu dvi keyring nautilus -nsplugin
 dev-libs/libgusb vala
-gnome-base/gdm gnome-keyring smartcard accessibility fprint -plymouth
+gnome-base/gdm accessibility fprint -plymouth
 gnome-base/gnome -extras -accessibility
 gnome-base/gnome-control-center networkmanager input_devices_wacom
 gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
