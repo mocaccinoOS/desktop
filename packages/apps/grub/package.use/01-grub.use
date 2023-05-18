@@ -1,2 +1,2 @@
 sys-boot/grub device-mapper libzfs mount
-sys-boot/plymouth -drm -gtk -pango -static-libs
+sys-boot/plymouth -gtk -pango -static-libs
