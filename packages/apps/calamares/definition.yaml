@@ -285,6 +285,9 @@ provides:
   - name: eselect
     category: app-admin
     version: '>=0'
+  - name: eselect
+    category: app-admin
+    version: '>=0'
   - name: perl-cleaner
     category: app-admin
     version: '>=0'
@@ -750,6 +753,9 @@ provides:
   - name: ca-certificates
     category: app-misc
     version: '>=0'
+  - name: ca-certificates
+    category: app-misc
+    version: '>=0'
   - name: editor-wrapper
     category: app-misc
     version: '>=0'
@@ -829,6 +835,9 @@ provides:
     category: app-text
     version: '>=0'
   - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-xsl-stylesheets
     category: app-text
     version: '>=0'
   - name: docbook-xsl-stylesheets
@@ -948,6 +957,9 @@ provides:
   - name: unixODBC
     category: dev-db
     version: '>=0'
+  - name: unixODBC
+    category: dev-db
+    version: '>=0'
   - name: duktape
     category: dev-lang
     version: '>=0'
@@ -964,6 +976,9 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: perl
+    category: dev-lang
+    version: '>=0'
+  - name: python
     category: dev-lang
     version: '>=0'
   - name: python
@@ -1794,6 +1809,9 @@ provides:
   - name: filelock
     category: dev-python
     version: '>=0'
+  - name: flit-core
+    category: dev-python
+    version: '>=0'
   - name: flit_core
     category: dev-python
     version: '>=0'
@@ -1954,6 +1972,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pyelftools
+    category: dev-python
+    version: '>=0'
+  - name: pygments
     category: dev-python
     version: '>=0'
   - name: pygments
@@ -2257,6 +2278,9 @@ provides:
     category: dev-util
     version: '>=0'
   - name: cargo-c
+    category: dev-util
+    version: '>=0'
+  - name: cmake
     category: dev-util
     version: '>=0'
   - name: cmake
@@ -3144,6 +3168,9 @@ provides:
   - name: sshfs
     category: net-fs
     version: '>=0'
+  - name: sshfs
+    category: net-fs
+    version: '>=0'
   - name: accounts-qml
     category: net-libs
     version: '>=0'
@@ -3219,6 +3246,9 @@ provides:
   - name: libssh
     category: net-libs
     version: '>=0'
+  - name: libssh
+    category: net-libs
+    version: '>=0'
   - name: libssh2
     category: net-libs
     version: '>=0'
@@ -3286,6 +3316,9 @@ provides:
     category: net-misc
     version: '>=0'
   - name: ofono
+    category: net-misc
+    version: '>=0'
+  - name: openssh
     category: net-misc
     version: '>=0'
   - name: openssh
@@ -3430,6 +3463,9 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: help2man
+    category: sys-apps
+    version: '>=0'
+  - name: hwdata
     category: sys-apps
     version: '>=0'
   - name: hwdata
@@ -3672,6 +3708,9 @@ provides:
   - name: lvm2
     category: sys-fs
     version: '>=0'
+  - name: lvm2
+    category: sys-fs
+    version: '>=0'
   - name: mdadm
     category: sys-fs
     version: '>=0'
@@ -3729,6 +3768,9 @@ provides:
   - name: glibc
     category: sys-libs
     version: '>=0'
+  - name: glibc
+    category: sys-libs
+    version: '>=0'
   - name: kpmcore
     category: sys-libs
     version: '>=0'
@@ -3736,6 +3778,9 @@ provides:
     category: sys-libs
     version: '>=0'
   - name: libblockdev
+    category: sys-libs
+    version: '>=0'
+  - name: libcap
     category: sys-libs
     version: '>=0'
   - name: libcap
@@ -3766,6 +3811,9 @@ provides:
     category: sys-libs
     version: '>=0'
   - name: mtdev
+    category: sys-libs
+    version: '>=0'
+  - name: ncurses
     category: sys-libs
     version: '>=0'
   - name: ncurses
@@ -3886,6 +3934,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: openssh
     category: virtual
     version: '>=0'
   - name: os-headers
@@ -4036,6 +4087,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: service-manager
+    category: virtual
+    version: '>=0'
+  - name: ssh
     category: virtual
     version: '>=0'
   - name: ssh
@@ -4330,6 +4384,9 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libxshmfence
+    category: x11-libs
+    version: '>=0'
+  - name: libXt
     category: x11-libs
     version: '>=0'
   - name: libXt

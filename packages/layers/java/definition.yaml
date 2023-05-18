@@ -1775,7 +1775,7 @@ provides:
   - name: filelock
     category: dev-python
     version: '>=0'
-  - name: flit_core
+  - name: flit-core
     category: dev-python
     version: '>=0'
   - name: fqdn
@@ -3423,6 +3423,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: openssh
     category: virtual
     version: '>=0'
   - name: os-headers
