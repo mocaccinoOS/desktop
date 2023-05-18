@@ -9,13 +9,14 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf package.unmask /etc/portage/
 # Need this until next cycle.
-- mkdir -p /var/db/repos/gentoo/dev-ruby/racc
-- cd /var/db/repos/gentoo/dev-ruby/racc && wget https://raw.githubusercontent.com/gentoo/gentoo/master/dev-ruby/racc/racc-1.6.2.ebuild
+# - mkdir -p /var/db/repos/gentoo/dev-ruby/racc
+# - cd /var/db/repos/gentoo/dev-ruby/racc && wget https://raw.githubusercontent.com/gentoo/gentoo/master/dev-ruby/racc/racc-1.6.2.ebuild
 # - sed 's/ruby27 //' /var/db/repos/gentoo/dev-ruby/racc/racc-1.6.2.ebuild
-- ebuild /var/db/repos/gentoo/dev-ruby/racc/racc-1.6.2.ebuild manifest
-- mkdir -p /var/db/repos/gentoo/eclass
-- cd /var/db/repos/gentoo/eclass && wget https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-utils.eclass && https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-ng.eclass
-- emerge -1 dev-lang/ruby
+# - ebuild /var/db/repos/gentoo/dev-ruby/racc/racc-1.6.2.ebuild manifest
+# - mkdir -p /var/db/repos/gentoo/eclass
+# - cd /var/db/repos/gentoo/eclass && wget https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-utils.eclass && https://raw.githubusercontent.com/gentoo/gentoo/master/eclass/ruby-ng.eclass
+# - emerge -1 dev-lang/ruby
+- emerge --sync
 steps:
 {{ template "portage_build" . }}
 - emerge --depclean
