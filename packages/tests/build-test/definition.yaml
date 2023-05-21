@@ -1,0 +1,19 @@
+category: "tests"
+name: "build-test"
+version: "9999"
+uri:
+  - http://mocaccino.org
+license: "GPL-2+"
+description: "Test: do not install"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    media-libs/opencv
+provides:
+  - name: opencv
+    category: media-libs
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
