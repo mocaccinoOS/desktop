@@ -1,14 +1,9 @@
+excludes:
+{{ template "portage_excludes" }}
 env:
-- GITHUB_REPO={{ ( index .Values.labels "github.repo" ) }}
-- GITHUB_ORG={{ ( index .Values.labels "github.owner" ) }}
-prelude:
-# - git clone https://github.com/aristocratos/btop.git
-# - cd btop && make
-- PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
-- git clone https://github.com/$GITHUB_ORG/$GITHUB_REPO.git && cd $GITHUB_REPO && git checkout "${PACKAGE_VERSION}" -b build
-- cd $GITHUB_REPO && make
+{{ template "portage_env" . }}
 steps:
-- cd $GITHUB_REPO && make install
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "system-x"

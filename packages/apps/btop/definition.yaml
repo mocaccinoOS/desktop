@@ -10,5 +10,6 @@ requires:
     name: "system-x"
     version: ">=0"
 labels:
-  github.repo: "btop"
-  github.owner: "aristocratos"
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-process/btop
