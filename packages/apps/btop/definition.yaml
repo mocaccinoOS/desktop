@@ -9,3 +9,6 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
+labels:
+  github.repo: "btop"
+  github.owner: "aristocratos"
