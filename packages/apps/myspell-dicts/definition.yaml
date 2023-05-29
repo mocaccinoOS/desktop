@@ -1,0 +1,19 @@
+category: "apps"
+name: "myspell-dicts"
+version: "0.1"
+uri:
+  - https://extensions.openoffice.org
+license: "LGPL-3"
+description: "dictionaries for myspell/hunspell"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-dicts/myspell-af app-dicts/myspell-bg app-dicts/myspell-ca app-dicts/myspell-cs app-dicts/myspell-cy app-dicts/myspell-da app-dicts/myspell-de app-dicts/myspell-el app-dicts/myspell-en app-dicts/myspell-eo app-dicts/myspell-es app-dicts/myspell-et app-dicts/myspell-fr app-dicts/myspell-ga app-dicts/myspell-gl app-dicts/myspell-he app-dicts/myspell-hr app-dicts/myspell-hu app-dicts/myspell-is app-dicts/myspell-it app-dicts/myspell-kk app-dicts/myspell-km app-dicts/myspell-lt app-dicts/myspell-lv app-dicts/myspell-mk app-dicts/myspell-ms app-dicts/myspell-nb app-dicts/myspell-nl app-dicts/myspell-nn app-dicts/myspell-pl app-dicts/myspell-pt app-dicts/myspell-pt-br app-dicts/myspell-ro app-dicts/myspell-ru app-dicts/myspell-sk app-dicts/myspell-sl app-dicts/myspell-sv app-dicts/myspell-uk
+provides:
+  - name: myspell-af
+    category: app-dicts
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
