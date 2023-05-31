@@ -61,6 +61,9 @@ provides:
   - name: spirv-headers
     category: dev-util
     version: '>=0'
+  - name: spirv-llvm-translator
+    category: dev-util
+    version: '>=0'
   - name: spirv-tools
     category: dev-util
     version: '>=0'
