@@ -1,6 +1,5 @@
 excludes:
 {{ template "portage_excludes" }}
-
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -9,11 +8,9 @@ prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.mask /etc/portage/
 - emerge -1 dev-lang/rust-bin
-{{ template "portage_prelude_build" . }}
 steps:
-# We need this in env.d until this is in stable tree. See https://bugs.gentoo.org/832773
-- echo "LDPATH=/usr/lib64/Imath-3" > /etc/env.d/99imath
 {{ template "portage_build" . }}
+- emerge --depclean
 requires:
 - category: "layers"
   name: "system-x"
