@@ -8,9 +8,9 @@ prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.mask /etc/portage/
 - emerge -1 dev-lang/rust-bin
+- {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- emerge --depclean
 requires:
 - category: "layers"
   name: "system-x"
