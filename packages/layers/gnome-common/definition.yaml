@@ -1882,9 +1882,6 @@ provides:
   - name: filelock
     category: dev-python
     version: '>=0'
-  - name: flit_core
-    category: dev-python
-    version: '>=0'
   - name: fqdn
     category: dev-python
     version: '>=0'
@@ -2119,9 +2116,6 @@ provides:
   - name: rfc3987
     category: dev-python
     version: '>=0'
-  - name: semantic_version
-    category: dev-python
-    version: '>=0'
   - name: service_identity
     category: dev-python
     version: '>=0'
@@ -2192,9 +2186,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: wheel
-    category: dev-python
-    version: '>=0'
-  - name: zope-interface
     category: dev-python
     version: '>=0'
   - name: bundler

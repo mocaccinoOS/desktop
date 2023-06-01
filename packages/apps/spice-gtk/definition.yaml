@@ -2116,9 +2116,6 @@ provides:
   - name: wheel
     category: dev-python
     version: '>=0'
-  - name: zope-interface
-    category: dev-python
-    version: '>=0'
   - name: bibtexu
     category: dev-tex
     version: '>=0'

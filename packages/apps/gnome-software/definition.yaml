@@ -2206,9 +2206,6 @@ provides:
   - name: wheel
     category: dev-python
     version: '>=0'
-  - name: zope-interface
-    category: dev-python
-    version: '>=0'
   - name: bundler
     category: dev-ruby
     version: '>=0'

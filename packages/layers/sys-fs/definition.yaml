@@ -301,7 +301,7 @@ provides:
   - name: rencode
     category: dev-python
     version: '>=0'
-  - name: semantic_version
+  - name: semantic-version
     category: dev-python
     version: '>=0'
   - name: service_identity
