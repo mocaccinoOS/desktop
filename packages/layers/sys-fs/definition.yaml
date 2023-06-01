@@ -33,9 +33,6 @@ requires:
   - name: "tss"
     category: "entity"
     version: ">=0"
-  - category: "entity"
-    name: "mysql"
-    version: ">=0"
 provides:
   - name: dhcpcd
     category: acct-group
