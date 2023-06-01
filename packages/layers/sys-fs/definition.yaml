@@ -9,20 +9,29 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
-  - name: dhcpcd
-    category: entity
+  - name: "dhcpcd"
+    category: "entity"
+    version: ">=0"
+  - name: "dnsmasq"
+    category: "entity"
     version: ">=0"
   - category: "entity"
     name: "ldap"
     version: ">=0"
-  - name: postfix
-    category: entity
+  - category: "entity"
+    name: "mysql"
     version: ">=0"
-  - name: postdrop
-    category: entity
+  - category: "entity"
+    name: "openct"
     version: ">=0"
-  - name: tss
-    category: entity
+  - name: "postfix"
+    category: "entity"
+    version: ">=0"
+  - name: "postdrop"
+    category: "entity"
+    version: ">=0"
+  - name: "tss"
+    category: "entity"
     version: ">=0"
   - category: "entity"
     name: "mysql"

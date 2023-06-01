@@ -40,9 +40,6 @@ provides:
   - name: disk
     category: acct-group
     version: '>=0'
-  - name: dnsmasq
-    category: acct-group
-    version: '>=0'
   - name: floppy
     category: acct-group
     version: '>=0'
@@ -73,9 +70,6 @@ provides:
   - name: messagebus
     category: acct-group
     version: '>=0'
-  - name: mysql
-    category: acct-group
-    version: '>=0'
   - name: netdev
     category: acct-group
     version: '>=0'
@@ -83,9 +77,6 @@ provides:
     category: acct-group
     version: '>=0'
   - name: ntp
-    category: acct-group
-    version: '>=0'
-  - name: openct
     category: acct-group
     version: '>=0'
   - name: openvpn
@@ -188,9 +179,6 @@ provides:
     category: acct-user
     version: '>=0'
   - name: cron
-    category: acct-user
-    version: '>=0'
-  - name: dnsmasq
     category: acct-user
     version: '>=0'
   - name: ldap
@@ -2813,9 +2801,6 @@ provides:
     category: net-dns
     version: '>=0'
   - name: c-ares
-    category: net-dns
-    version: '>=0'
-  - name: dnsmasq
     category: net-dns
     version: '>=0'
   - name: dnssec-root
