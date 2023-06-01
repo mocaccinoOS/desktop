@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 1.2+15
+version: 1.2+16
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -28,9 +28,6 @@ requires:
     category: entity
     version: ">=0"
   - name: colord
-    category: entity
-    version: ">=0"
-  - name: dhcpcd
     category: entity
     version: ">=0"
   - name: lpadmin

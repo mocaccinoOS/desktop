@@ -34,9 +34,6 @@ provides:
   - name: crontab
     category: acct-group
     version: '>=0'
-  - name: dhcp
-    category: acct-group
-    version: '>=0'
   - name: dialout
     category: acct-group
     version: '>=0'
@@ -191,9 +188,6 @@ provides:
     category: acct-user
     version: '>=0'
   - name: cron
-    category: acct-user
-    version: '>=0'
-  - name: dhcp
     category: acct-user
     version: '>=0'
   - name: dnsmasq
@@ -2095,6 +2089,9 @@ provides:
   - name: wheel
     category: dev-python
     version: '>=0'
+  - name: zope-interface
+    category: dev-python
+    version: '>=0'
   - name: linguist-tools
     category: dev-qt
     version: '>=0'
@@ -2957,9 +2954,6 @@ provides:
     category: net-mail
     version: '>=0'
   - name: curl
-    category: net-misc
-    version: '>=0'
-  - name: dhcp
     category: net-misc
     version: '>=0'
   - name: freerdp

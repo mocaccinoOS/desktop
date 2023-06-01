@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 7+46
+version: 7+43
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -59,9 +59,6 @@ provides:
     category: dev-util
     version: '>=0'
   - name: spirv-headers
-    category: dev-util
-    version: '>=0'
-  - name: spirv-llvm-translator
     category: dev-util
     version: '>=0'
   - name: spirv-tools

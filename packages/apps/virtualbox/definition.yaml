@@ -2107,6 +2107,9 @@ provides:
   - name: wheel
     category: dev-python
     version: '>=0'
+  - name: zope-interface
+    category: dev-python
+    version: '>=0'
   - name: linguist-tools
     category: dev-qt
     version: '>=0'
