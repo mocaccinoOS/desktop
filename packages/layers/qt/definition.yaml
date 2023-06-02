@@ -763,9 +763,6 @@ provides:
   - name: bash
     category: app-shells
     version: '>=0'
-  - name: bash-completion
-    category: app-shells
-    version: '>=0'
   - name: gentoo-bashcomp
     category: app-shells
     version: '>=0'
@@ -1019,9 +1016,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: glib
-    category: dev-libs
-    version: '>=0'
-  - name: gmp
     category: dev-libs
     version: '>=0'
   - name: gobject-introspection

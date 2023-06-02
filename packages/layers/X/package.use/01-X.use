@@ -8,8 +8,6 @@ app-text/xmlto text
 dev-lang/luajit lua52compat
 dev-libs/appstream -qt5
 dev-libs/atk introspection
-# Needed by directvnc
-dev-libs/dbus-glib bash-completion
 dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
 dev-python/pygobject introspection
@@ -17,14 +15,14 @@ dev-python/pyudev -qt5
 media-fonts/noto -cjk
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
-media-gfx/sane-backends threads -v4l
+media-gfx/sane-backends -v4l
 media-libs/chromaprint tools -abi_x86_32
-media-libs/freetype -auto-hinter adobe-cff brotli bzip2 cleartype_hinting harfbuzz infinality png static-libs
+media-libs/freetype -auto-hinter adobe-cff brotli cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite icu introspection truetype
-media-libs/imlib2 bzip2 jpeg mp3 png shm webp zlib
+media-libs/imlib2 jpeg mp3 png shm webp zlib
 media-libs/libcanberra -gtk
 media-libs/libgphoto2 exif
 media-libs/libsdl aalib
@@ -34,14 +32,14 @@ media-libs/openal -qt5
 media-plugins/gst-plugins-meta ffmpeg mms http
 # media-plugins/gst-plugins-libav -abi_x86_32
 media-sound/pulseaudio -daemon -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
-media-video/ffmpeg amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k libaom libass mp3 network openal openh264 openssl opus postproc sdl speex test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx vulkan webp x264 x265 xvid zlib
+media-video/ffmpeg amr bluray cpudetection encode fdk gnutls gpl gsm iconv ieee1394 jack jpeg2k libaom libass mp3 network openal openh264 openssl opus postproc sdl speex test theora truetype v4l vaapi vdpau vidstab vorbis vpx vulkan webp x264 x265 xvid zlib
 media-video/pipewire bluetooth gstreamer pipewire-alsa sound-server
 media-video/wireplumber system-service
 net-dns/avahi howl-compat mdnsresponder-compat gdbm python autoipd -gtk -qt5 introspection
 net-libs/glib-networking gnome
 net-libs/libsoup gnome introspection ssl vala
 net-misc/networkmanager -bluetooth connection-sharing -dhclient dhcpcd -gnutls introspection iptables modemmanager nss wext -resolvconf
-net-print/cups acl kerberos pam ssl threads usb zeroconf
+net-print/cups acl kerberos pam ssl usb zeroconf
 net-print/cups-filters ipp_autosetup pclm
 net-vpn/networkmanager-fortisslvpn -gtk
 sys-apps/bubblewrap -suid
