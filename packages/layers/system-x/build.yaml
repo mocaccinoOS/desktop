@@ -22,7 +22,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-- emerge -1uDN @system -j $JOBS
+- emerge -1uDN @system -j 8
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
