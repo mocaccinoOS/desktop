@@ -3049,9 +3049,6 @@ provides:
   - name: keyutils
     category: sys-apps
     version: '>=0'
-  - name: kmod
-    category: sys-apps
-    version: '>=0'
   - name: less
     category: sys-apps
     version: '>=0'

@@ -382,9 +382,6 @@ provides:
   - name: qca
     category: app-crypt
     version: '>=0'
-  - name: rhash
-    category: app-crypt
-    version: '>=0'
   - name: tpm2-tss
     category: app-crypt
     version: '>=0'
@@ -737,9 +734,6 @@ provides:
     category: app-misc
     version: '>=0'
   - name: mime-types
-    category: app-misc
-    version: '>=0'
-  - name: pax-utils
     category: app-misc
     version: '>=0'
   - name: wayland-utils
@@ -1234,9 +1228,6 @@ provides:
   - name: mpfr
     category: dev-libs
     version: '>=0'
-  - name: nettle
-    category: dev-libs
-    version: '>=0'
   - name: newt
     category: dev-libs
     version: '>=0'
@@ -1250,9 +1241,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: opencl-icd-loader
-    category: dev-libs
-    version: '>=0'
-  - name: openssl
     category: dev-libs
     version: '>=0'
   - name: popt
@@ -1909,9 +1897,6 @@ provides:
   - name: pydantic
     category: dev-python
     version: '>=0'
-  - name: pyelftools
-    category: dev-python
-    version: '>=0'
   - name: pygments
     category: dev-python
     version: '>=0'
@@ -1919,9 +1904,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pyhamcrest
-    category: dev-python
-    version: '>=0'
-  - name: pyopenssl
     category: dev-python
     version: '>=0'
   - name: pyparsing
@@ -2950,9 +2932,6 @@ provides:
   - name: openssh
     category: net-misc
     version: '>=0'
-  - name: rsync
-    category: net-misc
-    version: '>=0'
   - name: wget
     category: net-misc
     version: '>=0'
@@ -3028,12 +3007,6 @@ provides:
   - name: accountsservice
     category: sys-apps
     version: '>=0'
-  - name: acl
-    category: sys-apps
-    version: '>=0'
-  - name: attr
-    category: sys-apps
-    version: '>=0'
   - name: baselayout
     category: sys-apps
     version: '>=0'
@@ -3041,9 +3014,6 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: bubblewrap
-    category: sys-apps
-    version: '>=0'
-  - name: coreutils
     category: sys-apps
     version: '>=0'
   - name: dbus
@@ -3104,9 +3074,6 @@ provides:
     category: sys-apps
     version: '>=0'
   - name: keyutils
-    category: sys-apps
-    version: '>=0'
-  - name: kmod
     category: sys-apps
     version: '>=0'
   - name: less
@@ -3245,9 +3212,6 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: gdb
-    category: sys-devel
-    version: '>=0'
-  - name: gettext
     category: sys-devel
     version: '>=0'
   - name: gnuconfig
@@ -3452,9 +3416,6 @@ provides:
     category: sys-process
     version: '>=0'
   - name: procps
-    category: sys-process
-    version: '>=0'
-  - name: psmisc
     category: sys-process
     version: '>=0'
   - name: acl

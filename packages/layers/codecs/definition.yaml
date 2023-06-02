@@ -1,6 +1,6 @@
 category: "layers"
 name: "codecs"
-version: 7+46
+version: 7+47
 labels:
   emerge.jobs: "8"
   emerge.packages: >-
@@ -9,8 +9,8 @@ requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
-  - name: realtime
-    category: entity
+  - name: "realtime"
+    category: "entity"
     version: ">=0"
 provides:
   - name: realtime

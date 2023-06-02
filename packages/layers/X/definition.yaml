@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 1.2+16
+version: 1.2+17
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -21,29 +21,29 @@ requires:
   - category: "system-profile"
     name: "pipewire"
     version: ">=0"
-  - name: avahi
-    category: entity
+  - name: "avahi"
+    category: "entity"
     version: ">=0"
-  - name: avahi-autoipd
-    category: entity
+  - name: "avahi-autoipd"
+    category: "entity"
     version: ">=0"
-  - name: colord
-    category: entity
+  - name: "colord"
+    category: "entity"
     version: ">=0"
-  - name: lpadmin
-    category: entity
+  - name: "lpadmin"
+    category: "entity"
     version: ">=0"
-  - name: netdev
-    category: entity
+  - name: "netdev"
+    category: "entity"
     version: ">=0"
-  - name: pipewire
-    category: entity
+  - name: "pipewire"
+    category: "entity"
     version: ">=0"
-  - name: saned
-    category: entity
+  - name: "saned"
+    category: "entity"
     version: ">=0"
-  - name: scanner
-    category: entity
+  - name: "scanner"
+    category: "entity"
     version: ">=0"
 provides:
   - name: avahi

@@ -41,7 +41,7 @@ net-misc/openssh -X -ldap
 net-misc/openssh libedit
 # Add xattr support to rsync
 net-misc/rsync examples xattr
-sci-libs/hdf5 cxx szip
+sci-libs/hdf5 cxx szip -threads
 sci-libs/lapack eselect-ldso
 sys-apps/groff -X
 # Do we really want berkdb?
