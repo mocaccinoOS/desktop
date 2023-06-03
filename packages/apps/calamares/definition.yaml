@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.60-r2+5
+version: 3.2.60-r2+6
 uri:
   - https://calamares.io
 license: "GPL-3"
@@ -319,9 +319,6 @@ provides:
     category: app-alternatives
     version: '>=0'
   - name: brotli
-    category: app-arch
-    version: '>=0'
-  - name: bzip2
     category: app-arch
     version: '>=0'
   - name: cabextract

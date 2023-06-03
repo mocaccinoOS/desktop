@@ -1,6 +1,6 @@
 category: "apps"
 name: "libvirt"
-version: 8.9.0-r2+9
+version: 8.9.0-r2+10
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -344,9 +344,6 @@ provides:
     category: app-alternatives
     version: '>=0'
   - name: brotli
-    category: app-arch
-    version: '>=0'
-  - name: bzip2
     category: app-arch
     version: '>=0'
   - name: cabextract

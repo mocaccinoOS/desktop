@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-boxes"
-version: 43.1+25
+version: 43.1+26
 uri:
   - https://wiki.gnome.org/Apps/Boxes
 license: "LGPL-2+ CC-BY-2.0"
@@ -357,9 +357,6 @@ provides:
     category: app-alternatives
     version: '>=0'
   - name: brotli
-    category: app-arch
-    version: '>=0'
-  - name: bzip2
     category: app-arch
     version: '>=0'
   - name: cabextract

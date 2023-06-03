@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 7.0.6-r2+23
+version: 7.0.6-r2+24
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"
@@ -323,9 +323,6 @@ provides:
     category: app-alternatives
     version: '>=0'
   - name: brotli
-    category: app-arch
-    version: '>=0'
-  - name: bzip2
     category: app-arch
     version: '>=0'
   - name: cabextract

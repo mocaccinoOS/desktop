@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.9+4
+version: 5.15.9+5
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -10,12 +10,6 @@ requires:
     name: "X"
     version: ">=0"
 provides:
-  - name: floppy
-    category: acct-group
-    version: '>=0'
-  - name: pipewire
-    category: acct-group
-    version: '>=0'
   - name: awk
     category: app-alternatives
     version: '>=0'
@@ -39,9 +33,6 @@ provides:
     version: '>=0'
   - name: yacc
     category: app-alternatives
-    version: '>=0'
-  - name: bzip2
-    category: app-arch
     version: '>=0'
   - name: qca
     category: app-crypt
