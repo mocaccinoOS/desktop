@@ -1,4 +1,1 @@
 gui-apps/gnome-console ~amd64
-# see https://bugs.gentoo.org/907626
-=media-plugins/grilo-plugins-0.3.16 ~amd64
-
