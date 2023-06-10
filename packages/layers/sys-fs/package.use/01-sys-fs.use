@@ -15,7 +15,6 @@ net-libs/libpcap -bluetooth
 net-libs/libssh server
 net-libs/libtorrent-rasterbar -gnutls
 net-wireless/bluez obex
-net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
 # udisks, we want cryptsetup support
