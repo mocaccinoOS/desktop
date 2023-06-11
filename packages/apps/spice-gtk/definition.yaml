@@ -1,6 +1,6 @@
 category: "apps"
 name: "spice-gtk"
-version: 0.41-r1+25
+version: "0.42-r2"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -62,15 +62,6 @@ provides:
     category: acct-group
     version: '>=0'
   - name: libvirt
-    category: acct-group
-    version: '>=0'
-  - name: lp
-    category: acct-group
-    version: '>=0'
-  - name: lpadmin
-    category: acct-group
-    version: '>=0'
-  - name: mail
     category: acct-group
     version: '>=0'
   - name: man

@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.9+6
+version: 5.15.9+7
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -10,30 +10,6 @@ requires:
     name: "X"
     version: ">=0"
 provides:
-  - name: awk
-    category: app-alternatives
-    version: '>=0'
-  - name: bc
-    category: app-alternatives
-    version: '>=0'
-  - name: cpio
-    category: app-alternatives
-    version: '>=0'
-  - name: gzip
-    category: app-alternatives
-    version: '>=0'
-  - name: lex
-    category: app-alternatives
-    version: '>=0'
-  - name: sh
-    category: app-alternatives
-    version: '>=0'
-  - name: tar
-    category: app-alternatives
-    version: '>=0'
-  - name: yacc
-    category: app-alternatives
-    version: '>=0'
   - name: qca
     category: app-crypt
     version: '>=0'
