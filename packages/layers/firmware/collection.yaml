@@ -205,7 +205,7 @@ packages:
     version: 2+41
   - category: "layers"
     name: "firmware-mwlwifi"
-    version: 2+40
+    version: 2+41
   - category: "layers"
     name: "firmware-netronome"
     version: 2+40
