@@ -22,6 +22,8 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
+# This step can be removed once stage3 has >=virtual/libudev-232-r8
+- emerge -1 virtual/systemd-utils
 - emerge -1uDN @system -j 8
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
