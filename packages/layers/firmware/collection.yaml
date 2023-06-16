@@ -232,7 +232,7 @@ packages:
     version: 2+41
   - category: "layers"
     name: "firmware-rockchip"
-    version: 2+40
+    version: 2+41
   - category: "layers"
     name: "firmware-rsi"
     version: 2+40
