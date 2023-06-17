@@ -16,9 +16,6 @@ provides:
   - name: vim-core
     category: app-editors
     version: '>=0'
-  - name: eselect-vi
-    category: app-eselect
-    version: '>=0'
   - name: gentoo-syntax
     category: app-vim
     version: '>=0'
