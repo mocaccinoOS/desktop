@@ -100,7 +100,7 @@ packages:
     version: 2+42
   - category: "layers"
     name: "firmware-b43"
-    version: 2+41
+    version: 2+42
   - category: "layers"
     name: "firmware-bnx2"
     version: 2+41
