@@ -141,7 +141,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.182.03-r2+1
+    version: 470.182.03-r2+2
     lts: true
     labels:
       emerge.jobs: "3"
