@@ -157,7 +157,7 @@ packages:
     version: 2+42
   - category: "layers"
     name: "firmware-inside-secure"
-    version: 2+41
+    version: 2+42
   - category: "layers"
     name: "firmware-intel"
     version: 2+41
