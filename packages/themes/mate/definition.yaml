@@ -12,4 +12,3 @@ requires:
   - category: "system"
     name: "mocaccino-wallpaper"
     version: ">=0"
-provides:
