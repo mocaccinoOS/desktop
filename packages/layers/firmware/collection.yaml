@@ -256,7 +256,7 @@ packages:
     version: 2+42
   - category: "layers"
     name: "firmware-slicoss"
-    version: 2+41
+    version: 2+42
   - category: "layers"
     name: "firmware-sxg"
     version: 2+41
