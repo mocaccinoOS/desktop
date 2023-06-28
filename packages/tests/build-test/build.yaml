@@ -5,7 +5,7 @@ env:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
-  name: "qt"
+- category: "layers"
+  name: "X"
   version: ">=0"
 requires_final_images: true
