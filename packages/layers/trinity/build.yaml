@@ -7,6 +7,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.env /etc/portage/
+- cp -rf patches /etc/portage
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
