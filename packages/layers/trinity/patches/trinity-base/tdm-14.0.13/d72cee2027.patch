@@ -1,0 +1,25 @@
+From d72cee2027c515581d6c1adc6b66b7d82403fc23 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sl=C3=A1vek=20Banko?= <slavek.banko@axis.cz>
+Date: Mon, 3 Jul 2023 22:50:32 +0200
+Subject: [PATCH] tdm/backend: Add include <sys/ioctl.h> for ioctl() prototype.
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Slávek Banko <slavek.banko@axis.cz>
+---
+ tdm/backend/ctrl.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tdm/backend/ctrl.c b/tdm/backend/ctrl.c
+index 1e7cfd07a..cc9540745 100644
+--- a/tdm/backend/ctrl.c
++++ b/tdm/backend/ctrl.c
+@@ -41,6 +41,7 @@ from the copyright holder.
+ #include <string.h>
+ #include <signal.h>
+ #include <pwd.h>
++#include <sys/ioctl.h>
+ #include <sys/stat.h>
+ 
+ #ifdef __linux__
