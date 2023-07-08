@@ -1,6 +1,6 @@
 category: "apps"
 name: "docker-compose"
-version: 2.17.2
+version: 2.17.2+1
 uri:
   - https://github.com/docker/compose
 license: "Apache-2.0"
