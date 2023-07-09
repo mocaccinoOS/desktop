@@ -115,33 +115,8 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
-    name: "nvidia-drivers-515-lts"
-    version: 515.105.01-r2+5
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - =x11-drivers/nvidia-drivers-515.105.01-r2
-    provides:
-      - name: nvidia-drivers
-        category: x11-drivers
-        version: '>=0'
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - name: nvpd
-        category: entity
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.182.03-r2+5
+    version: "470.199.02"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -149,7 +124,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =x11-drivers/nvidia-drivers-470.182.03-r2
+        - =x11-drivers/nvidia-drivers-470.199.02
     provides:
       - name: nvidia-drivers
         category: x11-drivers
