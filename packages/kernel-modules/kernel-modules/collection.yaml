@@ -141,7 +141,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-legacy-lts"
-    version: 390.157+62
+    version: 390.157+63
     lts: true
     labels:
       emerge.jobs: "3"
