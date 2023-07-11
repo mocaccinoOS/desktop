@@ -1,0 +1,19 @@
+category: "themes"
+name: "arc-theme"
+version: "20221218"
+uri:
+  - https://github.com/jnsh/arc-theme
+license: "GPL-3"
+description: "A flat theme with transparent elements for GTK 2/3/4 and GNOME Shell"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-themes/arc-theme
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+provides:
+  - name: arc-theme
+    category: x11-themes
+    version: '>=0'
