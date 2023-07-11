@@ -38,6 +38,9 @@ provides:
   - name: sddm
     category: acct-user
     version: '>=0'
+  - name: qcoro5
+    category: dev-libs
+    version: '>=0'
   - name: xapian
     category: dev-libs
     version: '>=0'
