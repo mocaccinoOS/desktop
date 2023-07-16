@@ -12,6 +12,8 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.env /etc/portage/
+# build dep required for dev-util/bindgen (mesa)
+- USE="rustfmt" emerge -1 dev-lang/rust-bin virtual/rust
 - emerge -1 app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && USE="-vaapi" emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build" . }}
 steps:
