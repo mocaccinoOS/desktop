@@ -1,1 +1,3 @@
 gui-apps/waybar network popups tray -pulseaudio
+# x11-backend is required for hyprland
+gui-libs/wlroots x11-backend
