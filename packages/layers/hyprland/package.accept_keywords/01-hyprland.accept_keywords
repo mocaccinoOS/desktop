@@ -1,3 +1,4 @@
+dev-libs/hyprland-protocols ~amd64
 dev-libs/libliftoff ~amd64
 gui-apps/clipman ~amd64
 gui-apps/hyprpaper ~amd64
