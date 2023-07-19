@@ -40,5 +40,6 @@ reverse_bump() {
 } 
   
 for i in $(luet tree pkglist -b -m $1 --revdeps); do
+    echo "$i"
     reverse_bump "$i"
 done
