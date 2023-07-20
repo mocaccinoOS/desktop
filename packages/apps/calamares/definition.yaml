@@ -30,9 +30,6 @@ provides:
   - name: crontab
     category: acct-group
     version: '>=0'
-  - name: dhcp
-    category: acct-group
-    version: '>=0'
   - name: dialout
     category: acct-group
     version: '>=0'
@@ -189,9 +186,6 @@ provides:
   - name: cron
     category: acct-user
     version: '>=0'
-  - name: dhcp
-    category: acct-user
-    version: '>=0'
   - name: dnsmasq
     category: acct-user
     version: '>=0'
@@ -321,6 +315,9 @@ provides:
   - name: brotli
     category: app-arch
     version: '>=0'
+  - name: bzip2
+    category: app-arch
+    version: '>=0'
   - name: cabextract
     category: app-arch
     version: '>=0'
@@ -337,6 +334,9 @@ provides:
     category: app-arch
     version: '>=0'
   - name: lzlib
+    category: app-arch
+    version: '>=0'
+  - name: ncompress
     category: app-arch
     version: '>=0'
   - name: p7zip
@@ -1080,10 +1080,16 @@ provides:
   - name: json-glib
     category: dev-libs
     version: '>=0'
+  - name: json-parser
+    category: dev-libs
+    version: '>=0'
   - name: jsoncpp
     category: dev-libs
     version: '>=0'
   - name: kdiagram
+    category: dev-libs
+    version: '>=0'
+  - name: kirigami-addons
     category: dev-libs
     version: '>=0'
   - name: kpathsea
@@ -1323,6 +1329,9 @@ provides:
   - name: userspace-rcu
     category: dev-libs
     version: '>=0'
+  - name: uthash
+    category: dev-libs
+    version: '>=0'
   - name: vala-common
     category: dev-libs
     version: '>=0'
@@ -1366,6 +1375,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Class-Method-Modifiers
+    category: dev-perl
+    version: '>=0'
+  - name: Class-XSAccessor
     category: dev-perl
     version: '>=0'
   - name: Clone
@@ -1725,9 +1737,6 @@ provides:
   - name: attrs
     category: dev-python
     version: '>=0'
-  - name: autocommand
-    category: dev-python
-    version: '>=0'
   - name: automat
     category: dev-python
     version: '>=0'
@@ -1749,7 +1758,7 @@ provides:
   - name: chardet
     category: dev-python
     version: '>=0'
-  - name: charset_normalizer
+  - name: charset-normalizer
     category: dev-python
     version: '>=0'
   - name: click
@@ -1791,7 +1800,7 @@ provides:
   - name: filelock
     category: dev-python
     version: '>=0'
-  - name: flit_core
+  - name: flit-core
     category: dev-python
     version: '>=0'
   - name: fqdn
@@ -1837,9 +1846,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: imagesize
-    category: dev-python
-    version: '>=0'
-  - name: inflect
     category: dev-python
     version: '>=0'
   - name: installer
@@ -1947,9 +1953,6 @@ provides:
   - name: pycryptodome
     category: dev-python
     version: '>=0'
-  - name: pydantic
-    category: dev-python
-    version: '>=0'
   - name: pyelftools
     category: dev-python
     version: '>=0'
@@ -2031,10 +2034,10 @@ provides:
   - name: rfc3987
     category: dev-python
     version: '>=0'
-  - name: semantic_version
+  - name: semantic-version
     category: dev-python
     version: '>=0'
-  - name: service_identity
+  - name: service-identity
     category: dev-python
     version: '>=0'
   - name: setproctitle
@@ -2085,9 +2088,6 @@ provides:
   - name: tomli
     category: dev-python
     version: '>=0'
-  - name: tomlkit
-    category: dev-python
-    version: '>=0'
   - name: trove-classifiers
     category: dev-python
     version: '>=0'
@@ -2098,6 +2098,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: urllib3
+    category: dev-python
+    version: '>=0'
+  - name: versioneer
     category: dev-python
     version: '>=0'
   - name: webcolors
@@ -2250,6 +2253,9 @@ provides:
   - name: b2
     category: dev-util
     version: '>=0'
+  - name: bindgen
+    category: dev-util
+    version: '>=0'
   - name: cargo-c
     category: dev-util
     version: '>=0'
@@ -2311,6 +2317,9 @@ provides:
     category: dev-util
     version: '>=0'
   - name: spirv-headers
+    category: dev-util
+    version: '>=0'
+  - name: spirv-llvm-translator
     category: dev-util
     version: '>=0'
   - name: spirv-tools
@@ -2985,6 +2994,9 @@ provides:
   - name: gst-plugins-a52dec
     category: media-plugins
     version: '>=0'
+  - name: gst-plugins-aom
+    category: media-plugins
+    version: '>=0'
   - name: gst-plugins-faac
     category: media-plugins
     version: '>=0'
@@ -3258,7 +3270,7 @@ provides:
   - name: curl
     category: net-misc
     version: '>=0'
-  - name: dhcp
+  - name: dhcpcd
     category: net-misc
     version: '>=0'
   - name: freerdp
@@ -3327,13 +3339,13 @@ provides:
   - name: crda
     category: net-wireless
     version: '>=0'
+  - name: iwd
+    category: net-wireless
+    version: '>=0'
   - name: wireless-regdb
     category: net-wireless
     version: '>=0'
   - name: wireless-tools
-    category: net-wireless
-    version: '>=0'
-  - name: wpa_supplicant
     category: net-wireless
     version: '>=0'
   - name: Compress-Raw-Zlib
@@ -3441,10 +3453,16 @@ provides:
   - name: keyutils
     category: sys-apps
     version: '>=0'
+  - name: kmod
+    category: sys-apps
+    version: '>=0'
   - name: less
     category: sys-apps
     version: '>=0'
   - name: lm-sensors
+    category: sys-apps
+    version: '>=0'
+  - name: locale-gen
     category: sys-apps
     version: '>=0'
   - name: lsb-release
@@ -3877,6 +3895,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: openssh
     category: virtual
     version: '>=0'
   - name: os-headers

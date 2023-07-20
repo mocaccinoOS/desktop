@@ -20,6 +20,9 @@ provides:
   - name: kalendar
     category: app-office
     version: '>=0'
+  - name: ktextaddons
+    category: dev-libs
+    version: '>=0'
   - name: libphonenumber
     category: dev-libs
     version: '>=0'
