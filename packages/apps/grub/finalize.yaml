@@ -1,2 +1,5 @@
 install:
+# We want to prevent users overwriting their /etc/default/grub with a vanilla one and make them loose changes they made in that file
+- if [ ! -f /etc/env.d/07grub ]; then { echo "CONFIG_PROTECT_MASK=\"/etc/default/grub\""; } >> /etc/env.d/07grub; fi
 - ldconfig
+- source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
