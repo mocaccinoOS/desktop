@@ -15,7 +15,7 @@ prelude:
 # needed for clipman
 - eselect repository enable guru
 - emaint sync -r guru
-{{ template "portage_prelude_build" . }}
+# {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove thegreatmcpain wayland-desktop guru
