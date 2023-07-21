@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 22.12.3+13
+version: 23.04.2+1
 uri:
   - https://community.kde.org/KDE_PIM
 license: "GPL-2+ LGPL-2.1+"
@@ -19,6 +19,9 @@ provides:
     version: '>=0'
   - name: kalendar
     category: app-office
+    version: '>=0'
+  - name: ktextaddons
+    category: dev-libs
     version: '>=0'
   - name: libphonenumber
     category: dev-libs
