@@ -253,7 +253,7 @@ packages:
     version: 2+44
   - category: "layers"
     name: "firmware-silabs"
-    version: 2+43
+    version: 2+44
   - category: "layers"
     name: "firmware-slicoss"
     version: 2+43
