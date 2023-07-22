@@ -199,7 +199,7 @@ packages:
     version: 2+44
   - category: "layers"
     name: "firmware-mrvl"
-    version: 2+43
+    version: 2+44
   - category: "layers"
     name: "firmware-mwl8k"
     version: 2+43
