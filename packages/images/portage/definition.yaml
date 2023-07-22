@@ -3,7 +3,7 @@ version: "0.20230722"
 category: layers
 labels:
   autobump.strategy: git_hash
-  git.hash: "68959b2e4d13d78b3475005f6718e41fe692b937"
+  git.hash: "e5148bcca6a9be398db0834319674d46ec7be431"
   github.owner: gentoo
   github.repo: gentoo
 hidden: true
