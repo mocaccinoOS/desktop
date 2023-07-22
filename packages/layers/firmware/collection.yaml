@@ -115,7 +115,7 @@ packages:
     version: 2+44
   - category: "layers"
     name: "firmware-cavium"
-    version: 2+43
+    version: 2+44
   - category: "layers"
     name: "firmware-cis"
     version: 2+43
