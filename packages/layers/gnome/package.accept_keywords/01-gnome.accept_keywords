@@ -2,4 +2,5 @@ gui-apps/gnome-console ~amd64
 # Upstream must fix this first: https://bugs.gentoo.org/907626
 # They already bumped media-libs/grilo to 0.3.16 but did not
 # stabilize media-plugins/grilo-plugins
-media-plugins/grilo-plugins ~amd64
+media-plugins/grilo-0.3.16::gentoo ~amd64
+media-plugins/grilo-plugins-0.3.16::gentoo ~amd64
