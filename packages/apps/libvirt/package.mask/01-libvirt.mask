@@ -1,0 +1,3 @@
+# We must enable pkcs11 useflag on net-libs/gnutls
+# this is required by app-crypt/swtpm
+>app-emulation/libvirt-9.3.0
