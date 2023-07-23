@@ -1,4 +1,1 @@
-# Upstream must fix this first: https://bugs.gentoo.org/907626
-# They already bumped media-libs/grilo to 0.3.16 but did not
-# stabilize media-plugins/grilo-plugins
->media-libs/grilo-0.3.15
+# Placeholder
