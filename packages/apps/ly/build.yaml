@@ -1,0 +1,9 @@
+image: "debian:stable"
+
+prelude:
+- apt-get update
+- apt-get install -y git
+- git clone --recurse-submodules https://github.com/fairyglade/ly
+- cd ly && make
+steps:
+- cd ly && make install installsystemd
