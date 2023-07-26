@@ -1,9 +1,0 @@
-image: "debian:stable"
-
-prelude:
-- apt-get update
-- apt-get install -y libpam0g-dev libx11-xcb-dev gcc git make
-- git clone --recurse-submodules https://github.com/fairyglade/ly
-- cd ly && make
-steps:
-- cd ly && make install installsystemd
