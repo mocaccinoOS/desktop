@@ -118,7 +118,7 @@ packages:
     version: 2+45
   - category: "layers"
     name: "firmware-cis"
-    version: 2+44
+    version: 2+45
   - category: "layers"
     name: "firmware-cxgb3"
     version: 2+44
