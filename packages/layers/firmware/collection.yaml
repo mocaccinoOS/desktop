@@ -265,7 +265,7 @@ packages:
     version: 2+45
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+44
+    version: 2+45
   - category: "layers"
     name: "firmware-ti-keystone"
     version: 2+44
