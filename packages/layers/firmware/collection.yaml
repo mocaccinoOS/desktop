@@ -160,7 +160,7 @@ packages:
     version: 2+45
   - category: "layers"
     name: "firmware-intel"
-    version: 2+44
+    version: 2+45
   - category: "layers"
     name: "firmware-isci"
     version: 2+44
