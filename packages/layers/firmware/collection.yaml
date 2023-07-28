@@ -88,7 +88,7 @@ packages:
     version: 2+45
   - category: "layers"
     name: "firmware-ath9k_htc"
-    version: 2+44
+    version: 2+45
   - category: "layers"
     name: "firmware-atmel"
     version: 2+44
