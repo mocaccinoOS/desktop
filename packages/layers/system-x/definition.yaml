@@ -64,9 +64,6 @@ requires:
   - name: polkitd
     category: entity
     version: ">=0"
-  - name: polkituser
-    category: entity
-    version: ">=0"
   - name: portage
     category: entity
     version: ">=0"
