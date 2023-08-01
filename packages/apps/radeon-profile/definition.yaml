@@ -1,6 +1,6 @@
 category: "apps"
 name: "radeon-profile"
-version: "20200824-r1"
+version: 20200824-r1+1
 uri:
   - https://github.com/marazmista/radeon-profile
 license: "GPL-2"
@@ -8,9 +8,12 @@ description: "Read current clocks of ATi/AMD Radeon cards"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    x11-apps/radeon-profile
+    x11-apps/radeon-profile x11-apps/radeon-profile-daemon
 provides:
   - name: radeon-profile
+    category: x11-apps
+    version: '>=0'
+  - name: radeon-profile-daemon
     category: x11-apps
     version: '>=0'
 requires:
