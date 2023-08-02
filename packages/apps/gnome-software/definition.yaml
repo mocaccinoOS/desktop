@@ -34,9 +34,6 @@ provides:
   - name: crontab
     category: acct-group
     version: '>=0'
-  - name: dhcp
-    category: acct-group
-    version: '>=0'
   - name: dialout
     category: acct-group
     version: '>=0'
@@ -202,9 +199,6 @@ provides:
   - name: cron
     category: acct-user
     version: '>=0'
-  - name: dhcp
-    category: acct-user
-    version: '>=0'
   - name: dnsmasq
     category: acct-user
     version: '>=0'
@@ -343,6 +337,9 @@ provides:
   - name: brotli
     category: app-arch
     version: '>=0'
+  - name: bzip2
+    category: app-arch
+    version: '>=0'
   - name: cabextract
     category: app-arch
     version: '>=0'
@@ -362,6 +359,9 @@ provides:
     category: app-arch
     version: '>=0'
   - name: lzlib
+    category: app-arch
+    version: '>=0'
+  - name: ncompress
     category: app-arch
     version: '>=0'
   - name: p7zip
@@ -1165,6 +1165,9 @@ provides:
   - name: json-glib
     category: dev-libs
     version: '>=0'
+  - name: json-parser
+    category: dev-libs
+    version: '>=0'
   - name: jsoncpp
     category: dev-libs
     version: '>=0'
@@ -1423,6 +1426,9 @@ provides:
   - name: userspace-rcu
     category: dev-libs
     version: '>=0'
+  - name: uthash
+    category: dev-libs
+    version: '>=0'
   - name: vala-common
     category: dev-libs
     version: '>=0'
@@ -1466,6 +1472,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Class-Method-Modifiers
+    category: dev-perl
+    version: '>=0'
+  - name: Class-XSAccessor
     category: dev-perl
     version: '>=0'
   - name: Clone
@@ -1825,9 +1834,6 @@ provides:
   - name: attrs
     category: dev-python
     version: '>=0'
-  - name: autocommand
-    category: dev-python
-    version: '>=0'
   - name: automat
     category: dev-python
     version: '>=0'
@@ -1849,7 +1855,7 @@ provides:
   - name: chardet
     category: dev-python
     version: '>=0'
-  - name: charset_normalizer
+  - name: charset-normalizer
     category: dev-python
     version: '>=0'
   - name: click
@@ -1891,7 +1897,7 @@ provides:
   - name: filelock
     category: dev-python
     version: '>=0'
-  - name: flit_core
+  - name: flit-core
     category: dev-python
     version: '>=0'
   - name: fqdn
@@ -1937,9 +1943,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: imagesize
-    category: dev-python
-    version: '>=0'
-  - name: inflect
     category: dev-python
     version: '>=0'
   - name: installer
@@ -2053,9 +2056,6 @@ provides:
   - name: pycups
     category: dev-python
     version: '>=0'
-  - name: pydantic
-    category: dev-python
-    version: '>=0'
   - name: pyelftools
     category: dev-python
     version: '>=0'
@@ -2128,10 +2128,10 @@ provides:
   - name: rfc3987
     category: dev-python
     version: '>=0'
-  - name: semantic_version
+  - name: semantic-version
     category: dev-python
     version: '>=0'
-  - name: service_identity
+  - name: service-identity
     category: dev-python
     version: '>=0'
   - name: setproctitle
@@ -2179,9 +2179,6 @@ provides:
   - name: tomli
     category: dev-python
     version: '>=0'
-  - name: tomlkit
-    category: dev-python
-    version: '>=0'
   - name: trove-classifiers
     category: dev-python
     version: '>=0'
@@ -2192,6 +2189,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: urllib3
+    category: dev-python
+    version: '>=0'
+  - name: versioneer
     category: dev-python
     version: '>=0'
   - name: webcolors
@@ -2221,6 +2221,9 @@ provides:
   - name: power_assert
     category: dev-ruby
     version: '>=0'
+  - name: psych
+    category: dev-ruby
+    version: '>=0'
   - name: racc
     category: dev-ruby
     version: '>=0'
@@ -2242,6 +2245,9 @@ provides:
   - name: rubygems
     category: dev-ruby
     version: '>=0'
+  - name: stringio
+    category: dev-ruby
+    version: '>=0'
   - name: test-unit
     category: dev-ruby
     version: '>=0'
@@ -2254,13 +2260,13 @@ provides:
   - name: b2
     category: dev-util
     version: '>=0'
+  - name: bindgen
+    category: dev-util
+    version: '>=0'
   - name: cargo-c
     category: dev-util
     version: '>=0'
   - name: cmake
-    category: dev-util
-    version: '>=0'
-  - name: cmocka
     category: dev-util
     version: '>=0'
   - name: colm
@@ -2324,6 +2330,9 @@ provides:
     category: dev-util
     version: '>=0'
   - name: spirv-headers
+    category: dev-util
+    version: '>=0'
+  - name: spirv-llvm-translator
     category: dev-util
     version: '>=0'
   - name: spirv-tools
@@ -2408,6 +2417,9 @@ provides:
     category: gui-libs
     version: '>=0'
   - name: gtk-layer-shell
+    category: gui-libs
+    version: '>=0'
+  - name: gtksourceview
     category: gui-libs
     version: '>=0'
   - name: libadwaita
@@ -2827,6 +2839,9 @@ provides:
   - name: gst-plugins-a52dec
     category: media-plugins
     version: '>=0'
+  - name: gst-plugins-aom
+    category: media-plugins
+    version: '>=0'
   - name: gst-plugins-faac
     category: media-plugins
     version: '>=0'
@@ -3121,7 +3136,7 @@ provides:
   - name: curl
     category: net-misc
     version: '>=0'
-  - name: dhcp
+  - name: dhcpcd
     category: net-misc
     version: '>=0'
   - name: freerdp
@@ -3196,13 +3211,13 @@ provides:
   - name: crda
     category: net-wireless
     version: '>=0'
+  - name: iwd
+    category: net-wireless
+    version: '>=0'
   - name: wireless-regdb
     category: net-wireless
     version: '>=0'
   - name: wireless-tools
-    category: net-wireless
-    version: '>=0'
-  - name: wpa_supplicant
     category: net-wireless
     version: '>=0'
   - name: Compress-Raw-Zlib
@@ -3328,6 +3343,9 @@ provides:
   - name: lm-sensors
     category: sys-apps
     version: '>=0'
+  - name: locale-gen
+    category: sys-apps
+    version: '>=0'
   - name: lsb-release
     category: sys-apps
     version: '>=0'
@@ -3448,10 +3466,19 @@ provides:
   - name: clang
     category: sys-devel
     version: '>=0'
+  - name: clang
+    category: sys-devel
+    version: '>=0'
   - name: clang-common
     category: sys-devel
     version: '>=0'
   - name: clang-runtime
+    category: sys-devel
+    version: '>=0'
+  - name: clang-runtime
+    category: sys-devel
+    version: '>=0'
+  - name: clang-toolchain-symlinks
     category: sys-devel
     version: '>=0'
   - name: clang-toolchain-symlinks
@@ -3481,7 +3508,13 @@ provides:
   - name: llvm
     category: sys-devel
     version: '>=0'
+  - name: llvm
+    category: sys-devel
+    version: '>=0'
   - name: llvm-common
+    category: sys-devel
+    version: '>=0'
+  - name: llvm-toolchain-symlinks
     category: sys-devel
     version: '>=0'
   - name: llvm-toolchain-symlinks
@@ -3578,6 +3611,12 @@ provides:
     category: sys-libs
     version: '>=0'
   - name: compiler-rt
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt-sanitizers
     category: sys-libs
     version: '>=0'
   - name: compiler-rt-sanitizers
@@ -3758,6 +3797,9 @@ provides:
     category: virtual
     version: '>=0'
   - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: openssh
     category: virtual
     version: '>=0'
   - name: os-headers
