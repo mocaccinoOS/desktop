@@ -1,0 +1,19 @@
+category: "apps"
+name: "neofetch"
+version: "7.1.0-r1"
+uri:
+  - https://github.com/dylanaraps/neofetch
+license: "MIT-with-advertising"
+description: "Simple information system script"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-misc/neofetch
+provides:
+  - name: neofetch
+    category: app-misc
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
