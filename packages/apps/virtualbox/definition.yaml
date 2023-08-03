@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 7.0.8a+14
+version: 7.0.8a+15
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"
@@ -25,4 +25,19 @@ provides:
     version: '>=0'
   - name: virtualbox
     category: app-emulation
+    version: '>=0'
+  - name: libIDL
+    category: dev-libs
+    version: '>=0'
+  - name: libtpms
+    category: dev-libs
+    version: '>=0'
+  - name: kbuild
+    category: dev-util
+    version: '>=0'
+  - name: bin86
+    category: sys-devel
+    version: '>=0'
+  - name: iasl
+    category: sys-power
     version: '>=0'
