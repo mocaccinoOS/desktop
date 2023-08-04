@@ -217,7 +217,7 @@ packages:
     version: 2+46
   - category: "layers"
     name: "firmware-qcom"
-    version: 2+45
+    version: 2+46
   - category: "layers"
     name: "firmware-qed"
     version: 2+45
