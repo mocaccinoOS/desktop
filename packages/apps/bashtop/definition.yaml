@@ -1,6 +1,6 @@
 category: "apps"
 name: "bashtop"
-version: 0.9.25+71
+version: 0.9.25+72
 uri:
   - https://github.com/aristocratos/bashtop
 license: "Apache-2.0"
