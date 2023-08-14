@@ -7,5 +7,8 @@ install:
 - chmod u+s /bin/su
 - chmod +s /usr/lib/polkit-1/polkit-agent-helper-1
 - if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
+# We want to prevent users overwriting their /etc/locale.conf with a vanilla one and make them loose changes they made in that file
+- if [ -f /etc/._cfg0001_locale.conf ]; then rm /etc/._cfg0001_locale.conf; fi
+- if [ -f /etc/._cfg0001_locale.gen ]; then rm /etc/._cfg0001_locale.gen; fi
 - ldconfig
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
