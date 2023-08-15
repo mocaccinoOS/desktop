@@ -3,7 +3,6 @@ env:
 prelude:
 - wget https://github.com/gentoo/gentoo/archive/${PORTAGE_HASH}.tar.gz -O /tmp/tree.tar.gz
 steps:
-- cp -rf repos.conf /etc/portage/
 - mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles
 - tar xf /tmp/tree.tar.gz -C  /var/db/repos
 - mv /var/db/repos/* /var/db/repos/gentoo

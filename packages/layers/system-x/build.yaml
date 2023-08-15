@@ -14,6 +14,7 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
+- cp -rf repos.conf /etc/portage
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.mask /etc/portage/
