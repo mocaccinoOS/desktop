@@ -4,6 +4,7 @@
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/usr/share/portage
 - ^/usr/tmp/portage
 - ^/usr/lib/cmake
 - ^/var/db/pkg
@@ -20,7 +21,7 @@
 {{end}}
 
 {{ define "portage_prelude_build" }}
-- | 
+- |
   emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
   emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
   /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
