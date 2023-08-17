@@ -24,6 +24,7 @@ env:
 {{ template "portage_env" . }}
 steps:
 {{ template "portage_build" . }}
+unpack: true
 requires:
 - category: "layers"
   name: "system-x"
