@@ -1,6 +1,6 @@
 category: "apps"
 name: "gentoo-tools"
-version: "0.2"
+version: "0.2+1"
 uri:
   - https://mocaccino.org
   - https://gentoo.org

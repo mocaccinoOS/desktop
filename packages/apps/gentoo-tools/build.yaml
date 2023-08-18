@@ -10,8 +10,6 @@ includes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
-# Excluded from layers/system-x
-- ^/etc/portage
 # Emerge/portage
 - ^/usr/bin/emerge
 - ^/usr/bin/emerge-webrsync
