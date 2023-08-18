@@ -4,9 +4,10 @@ packages:
     version: "0.20230815+1"
     category: layers
     package: "system-x"
-#  - <<: *base
-#    name: sys-fs-devel
-#    package: "sys-fs"
+  - <<: *base
+    name: sys-fs-devel
+    version: "0.20230815+1" 
+    package: "sys-fs"
 #  - <<: *base
 #    name: codecs-devel
 #    package: "sys-fs"
