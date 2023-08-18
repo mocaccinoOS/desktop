@@ -1,3 +1,12 @@
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
+unpack: true
+env:
+{{ template "portage_env" . }}
+steps:
+{{ template "portage_build" . }}
 includes:
 # portage_excludes template
 - ^/var/cache/distfiles
@@ -18,12 +27,3 @@ includes:
 - ^/usr/lib/python-exec/python.*/dispatch-conf
 - ^/usr/share/man/man1/dispatch-conf.1.bz2
 - ^/usr/share/man/man1/emerge.1.bz2
-env:
-{{ template "portage_env" . }}
-steps:
-{{ template "portage_build" . }}
-unpack: true
-requires:
-- category: "layers"
-  name: "system-x"
-  version: ">=0"
