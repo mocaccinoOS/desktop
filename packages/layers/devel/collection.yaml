@@ -6,7 +6,7 @@ packages:
     package: "system-x"
   - <<: *base
     name: sys-fs-devel
-    version: "0.20230815+1" 
+    version: "0.20230815+2"
     package: "sys-fs"
 #  - <<: *base
 #    name: codecs-devel

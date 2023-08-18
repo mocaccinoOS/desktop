@@ -6,7 +6,9 @@ includes:
 - /usr/include$
 - /usr/include/.*
 - /usr/lib/python3.10/test
+{{ if contains "system-x" .Values.name }}
 unpack: true
+{{- end}}
 requires:
 - name: {{.Values.package}}
   version: ">=0"
