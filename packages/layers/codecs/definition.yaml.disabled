@@ -1,0 +1,330 @@
+category: "layers"
+name: "codecs"
+version: 7+61
+labels:
+  emerge.jobs: "8"
+  emerge.packages: >-
+    app-arch/brotli app-i18n/uchardet app-text/iso-codes app-text/libwpd app-text/libwpg dev-libs/imath dev-libs/libcdio dev-libs/libcdio-paranoia dev-libs/libebml dev-libs/librevenge dev-util/glslang dev-util/spirv-tools media-gfx/exiv2 media-gfx/potrace media-gfx/qrencode media-libs/a52dec media-libs/aalib media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/audiofile media-libs/dav1d media-libs/exiftool media-libs/faac media-libs/faad2 media-libs/fdk-aac media-libs/flac media-libs/giflib media-libs/graphene media-libs/gstreamer media-libs/jbig2dec media-libs/lcms media-libs/lensfun media-libs/libaom media-libs/libart_lgpl media-libs/libcddb media-libs/libcdr media-libs/libcue media-libs/libcuefile media-libs/libdca media-libs/libde265 media-libs/libdvbpsi media-libs/libdvdnav media-libs/libdvdread media-libs/libexif media-libs/libid3tag media-libs/libjpeg-turbo media-libs/libmad media-libs/libmatroska media-libs/libmng media-libs/libmms media-libs/libmodplug media-libs/libmtp media-libs/libnsgif media-libs/libogg media-libs/libraw media-libs/libreplaygain media-libs/libsamplerate media-libs/libsndfile media-libs/libtheora media-libs/libv4l media-libs/libvorbis media-libs/libvpx media-libs/opencore-amr media-libs/openexr:0 media-libs/openh264 media-libs/openjpeg media-libs/opus media-libs/opusfile media-libs/portaudio media-libs/portmidi media-libs/sbc media-libs/shaderc media-libs/soxr media-libs/speex media-libs/speexdsp media-libs/taglib media-libs/tiff media-libs/tremor media-libs/vidstab media-libs/webrtc-audio-processing media-libs/woff2 media-libs/x264 media-libs/x265 media-libs/xvid media-libs/zxing-cpp media-plugins/live media-sound/alac_decoder media-sound/alsa-utils media-sound/cdparanoia media-sound/gsm media-sound/jack2 media-sound/lame media-sound/musepack-tools media-sound/wavpack media-video/mjpegtools media-video/rav1e sci-libs/fftw
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+  - name: "realtime"
+    category: "entity"
+    version: ">=0"
+provides:
+  - name: realtime
+    category: acct-group
+    version: '>=0'
+  - name: brotli
+    category: app-arch
+    version: '>=0'
+  - name: eselect-cdparanoia
+    category: app-eselect
+    version: '>=0'
+  - name: uchardet
+    category: app-i18n
+    version: '>=0'
+  - name: iso-codes
+    category: app-text
+    version: '>=0'
+  - name: libwpd
+    category: app-text
+    version: '>=0'
+  - name: libwpg
+    category: app-text
+    version: '>=0'
+  - name: nasm
+    category: dev-lang
+    version: '>=0'
+  - name: yasm
+    category: dev-lang
+    version: '>=0'
+  - name: imath
+    category: dev-libs
+    version: '>=0'
+  - name: libcdio
+    category: dev-libs
+    version: '>=0'
+  - name: libcdio-paranoia
+    category: dev-libs
+    version: '>=0'
+  - name: libebml
+    category: dev-libs
+    version: '>=0'
+  - name: librevenge
+    category: dev-libs
+    version: '>=0'
+  - name: glslang
+    category: dev-util
+    version: '>=0'
+  - name: spirv-headers
+    category: dev-util
+    version: '>=0'
+  - name: spirv-tools
+    category: dev-util
+    version: '>=0'
+  - name: exiv2
+    category: media-gfx
+    version: '>=0'
+  - name: potrace
+    category: media-gfx
+    version: '>=0'
+  - name: qrencode
+    category: media-gfx
+    version: '>=0'
+  - name: a52dec
+    category: media-libs
+    version: '>=0'
+  - name: aalib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-lib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-topology-conf
+    category: media-libs
+    version: '>=0'
+  - name: alsa-ucm-conf
+    category: media-libs
+    version: '>=0'
+  - name: audiofile
+    category: media-libs
+    version: '>=0'
+  - name: dav1d
+    category: media-libs
+    version: '>=0'
+  - name: exiftool
+    category: media-libs
+    version: '>=0'
+  - name: faac
+    category: media-libs
+    version: '>=0'
+  - name: faad2
+    category: media-libs
+    version: '>=0'
+  - name: fdk-aac
+    category: media-libs
+    version: '>=0'
+  - name: flac
+    category: media-libs
+    version: '>=0'
+  - name: giflib
+    category: media-libs
+    version: '>=0'
+  - name: graphene
+    category: media-libs
+    version: '>=0'
+  - name: gstreamer
+    category: media-libs
+    version: '>=0'
+  - name: jbig2dec
+    category: media-libs
+    version: '>=0'
+  - name: lcms
+    category: media-libs
+    version: '>=0'
+  - name: lensfun
+    category: media-libs
+    version: '>=0'
+  - name: libaom
+    category: media-libs
+    version: '>=0'
+  - name: libart_lgpl
+    category: media-libs
+    version: '>=0'
+  - name: libcddb
+    category: media-libs
+    version: '>=0'
+  - name: libcdr
+    category: media-libs
+    version: '>=0'
+  - name: libcue
+    category: media-libs
+    version: '>=0'
+  - name: libcuefile
+    category: media-libs
+    version: '>=0'
+  - name: libdca
+    category: media-libs
+    version: '>=0'
+  - name: libde265
+    category: media-libs
+    version: '>=0'
+  - name: libdvbpsi
+    category: media-libs
+    version: '>=0'
+  - name: libdvdnav
+    category: media-libs
+    version: '>=0'
+  - name: libdvdread
+    category: media-libs
+    version: '>=0'
+  - name: libexif
+    category: media-libs
+    version: '>=0'
+  - name: libid3tag
+    category: media-libs
+    version: '>=0'
+  - name: libjpeg-turbo
+    category: media-libs
+    version: '>=0'
+  - name: libmad
+    category: media-libs
+    version: '>=0'
+  - name: libmatroska
+    category: media-libs
+    version: '>=0'
+  - name: libmms
+    category: media-libs
+    version: '>=0'
+  - name: libmng
+    category: media-libs
+    version: '>=0'
+  - name: libmodplug
+    category: media-libs
+    version: '>=0'
+  - name: libmtp
+    category: media-libs
+    version: '>=0'
+  - name: libnsgif
+    category: media-libs
+    version: '>=0'
+  - name: libogg
+    category: media-libs
+    version: '>=0'
+  - name: libraw
+    category: media-libs
+    version: '>=0'
+  - name: libreplaygain
+    category: media-libs
+    version: '>=0'
+  - name: libsamplerate
+    category: media-libs
+    version: '>=0'
+  - name: libsndfile
+    category: media-libs
+    version: '>=0'
+  - name: libtheora
+    category: media-libs
+    version: '>=0'
+  - name: libv4l
+    category: media-libs
+    version: '>=0'
+  - name: libvorbis
+    category: media-libs
+    version: '>=0'
+  - name: libvpx
+    category: media-libs
+    version: '>=0'
+  - name: opencore-amr
+    category: media-libs
+    version: '>=0'
+  - name: openexr
+    category: media-libs
+    version: '>=0'
+  - name: openh264
+    category: media-libs
+    version: '>=0'
+  - name: openjpeg
+    category: media-libs
+    version: '>=0'
+  - name: opus
+    category: media-libs
+    version: '>=0'
+  - name: opusfile
+    category: media-libs
+    version: '>=0'
+  - name: portaudio
+    category: media-libs
+    version: '>=0'
+  - name: portmidi
+    category: media-libs
+    version: '>=0'
+  - name: sbc
+    category: media-libs
+    version: '>=0'
+  - name: shaderc
+    category: media-libs
+    version: '>=0'
+  - name: soxr
+    category: media-libs
+    version: '>=0'
+  - name: speex
+    category: media-libs
+    version: '>=0'
+  - name: speexdsp
+    category: media-libs
+    version: '>=0'
+  - name: taglib
+    category: media-libs
+    version: '>=0'
+  - name: tiff
+    category: media-libs
+    version: '>=0'
+  - name: tremor
+    category: media-libs
+    version: '>=0'
+  - name: vidstab
+    category: media-libs
+    version: '>=0'
+  - name: webrtc-audio-processing
+    category: media-libs
+    version: '>=0'
+  - name: woff2
+    category: media-libs
+    version: '>=0'
+  - name: x264
+    category: media-libs
+    version: '>=0'
+  - name: x265
+    category: media-libs
+    version: '>=0'
+  - name: xvid
+    category: media-libs
+    version: '>=0'
+  - name: zxing-cpp
+    category: media-libs
+    version: '>=0'
+  - name: live
+    category: media-plugins
+    version: '>=0'
+  - name: alac_decoder
+    category: media-sound
+    version: '>=0'
+  - name: alsa-utils
+    category: media-sound
+    version: '>=0'
+  - name: cdparanoia
+    category: media-sound
+    version: '>=0'
+  - name: gsm
+    category: media-sound
+    version: '>=0'
+  - name: jack2
+    category: media-sound
+    version: '>=0'
+  - name: lame
+    category: media-sound
+    version: '>=0'
+  - name: musepack-tools
+    category: media-sound
+    version: '>=0'
+  - name: wavpack
+    category: media-sound
+    version: '>=0'
+  - name: mjpegtools
+    category: media-video
+    version: '>=0'
+  - name: rav1e
+    category: media-video
+    version: '>=0'
+  - name: fftw
+    category: sci-libs
+    version: '>=0'
+  - name: realtime-base
+    category: sys-auth
+    version: '>=0'
+  - name: jpeg
+    category: virtual
+    version: '>=0'
