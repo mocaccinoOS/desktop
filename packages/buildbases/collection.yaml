@@ -16,7 +16,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+68
+    version: 0+69
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
