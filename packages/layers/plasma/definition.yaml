@@ -224,6 +224,9 @@ provides:
   - name: cryfs
     category: sys-fs
     version: '>=0'
+  - name: power-profiles-daemon
+    category: sys-power
+    version: '>=0'
   - name: appmenu-gtk-module
     category: x11-misc
     version: '>=0'
