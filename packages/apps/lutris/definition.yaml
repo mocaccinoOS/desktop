@@ -1,0 +1,22 @@
+category: "apps"
+name: "lutris"
+version: 0.5.13-r2+3
+uri:
+  - https://lutris.net/
+license: "GPL-3+ CC0-1.0"
+description: "An open source gaming platform for GNU/Linux"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    games-util/lutris media-sound/fluid-soundfont
+provides:
+  - name: lutris
+    category: games-util
+    version: '>=0'
+  - name: fluid-soundfont
+    category: media-sound
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
