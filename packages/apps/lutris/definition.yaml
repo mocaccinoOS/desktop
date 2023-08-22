@@ -8,8 +8,11 @@ description: "An open source gaming platform for GNU/Linux"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-python/pypresence =games-util/lutris-0.5.13-r2 media-sound/fluid-soundfont x11-apps/xgamma
+    dev-python/moddb dev-python/pypresence =games-util/lutris-0.5.13-r2 media-sound/fluid-soundfont x11-apps/xgamma
 provides:
+  - name: moddb
+    category: dev-python
+    version: '>=0'
   - name: pypresence
     category: dev-python
     version: '>=0'
