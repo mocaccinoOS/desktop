@@ -1,10 +1,10 @@
 category: "layers"
 name: "gnome-common"
-version: 1.1+53
+version: "1.2"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-admin/system-config-printer app-crypt/gcr app-crypt/libsecret app-eselect/eselect-wxwidgets app-misc/geoclue app-misc/tracker app-misc/tracker-miners app-pda/libimobiledevice app-text/gspell dev-lang/spidermonkey:102 dev-libs/folks dev-libs/gjs dev-libs/gmime dev-libs/keybinder dev-libs/libdazzle dev-libs/libgdata dev-libs/libgee dev-libs/libgweather dev-libs/libpeas dev-libs/libpeas dev-libs/libportal dev-libs/totem-pl-parser dev-python/pyatspi dev-python/pycups dev-python/python3-xapp gnome-base/gnome-desktop:3 gnome-base/gnome-desktop:4 gnome-base/gvfs gnome-base/gnome-keyring gnome-base/gnome-menus gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/evolution-data-server gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/gtksourceview:5 gui-libs/libadwaita gui-libs/libhandy gui-libs/libwpe gui-libs/vte gui-libs/wpebackend-fdo media-libs/clutter media-libs/clutter-gtk media-libs/cogl media-libs/gexiv2 media-libs/gsound media-libs/libshumate media-plugins/gst-plugins-opus net-im/telepathy-mission-control net-irc/telepathy-idle net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp:0 net-libs/gupnp:1.6 net-libs/libgrss net-libs/libnma net-libs/rest net-libs/telepathy-glib net-libs/webkit-gtk:4 net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6 net-print/cups-pk-helper net-vpn/networkmanager-openvpn sci-geosciences/geocode-glib sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:3.0 x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/xapp x11-misc/xdg-user-dirs-gtk
+    app-admin/system-config-printer app-crypt/gcr app-crypt/libsecret app-eselect/eselect-wxwidgets app-misc/geoclue app-misc/tracker app-misc/tracker-miners app-pda/libimobiledevice app-text/gspell dev-lang/spidermonkey:102 dev-libs/folks dev-libs/gjs dev-libs/gmime dev-libs/keybinder dev-libs/libdazzle dev-libs/libgdata dev-libs/libgee dev-libs/libgweather dev-libs/libpeas dev-libs/libpeas dev-libs/libportal dev-libs/totem-pl-parser dev-python/pyatspi dev-python/pycups dev-python/python3-xapp gnome-base/gnome-desktop:3 gnome-base/gnome-desktop:4 gnome-base/gvfs gnome-base/gnome-keyring gnome-base/gnome-menus gnome-base/libgnomekbd gnome-base/libgtop gnome-extra/evolution-data-server gnome-extra/gnome-color-manager gnome-extra/libgsf gnome-extra/nm-applet gnome-extra/polkit-gnome gnome-extra/yelp-xsl gnome-extra/zenity gui-libs/gtksourceview:5 gui-libs/libadwaita gui-libs/libhandy gui-libs/libwpe gui-libs/vte gui-libs/wpebackend-fdo media-libs/clutter media-libs/clutter-gtk media-libs/cogl media-libs/gexiv2 media-libs/gsound media-libs/libshumate media-plugins/gst-plugins-opus net-im/telepathy-mission-control net-irc/telepathy-idle net-libs/gnome-online-accounts net-libs/gssdp net-libs/gtk-vnc net-libs/gupnp:0 net-libs/gupnp:1.6 net-libs/libgrss net-libs/libnma net-libs/rest net-libs/telepathy-glib net-libs/webkit-gtk:4 net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6 net-print/cups-pk-helper net-vpn/networkmanager-openvpn sci-geosciences/geocode-glib sys-apps/osinfo-db sys-apps/osinfo-db-tools sys-apps/xdg-desktop-portal-gtk sys-libs/libosinfo x11-libs/colord-gtk x11-libs/goffice x11-libs/gtksourceview:3.0 x11-libs/gtksourceview:4 x11-libs/libwnck x11-libs/vte x11-libs/xapp x11-misc/xdg-user-dirs-gtk x11-misc/xdotool
 requires:
   - category: "layers"
     name: "X"
@@ -590,5 +590,8 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: xdg-user-dirs-gtk
+    category: x11-misc
+    version: '>=0'
+  - name: xdotool
     category: x11-misc
     version: '>=0'
