@@ -1,0 +1,19 @@
+category: "layers"
+name: "pantheon"
+version: "7.0.0"
+uri:
+  - https://elementary.io/
+license: "GPL-3"
+description: "Pantheon Desktop Environment"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    pantheon-base/pantheon-meta
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: pantheon-meta
+    category: pantheon-base
+    version: '>=0'
