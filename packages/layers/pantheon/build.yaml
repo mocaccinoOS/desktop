@@ -26,6 +26,6 @@ requires:
 - category: "layers"
   name: "gnome"
   version: ">=0"
-- category: "layers"
+- category: "apps"
   name: "flatpak"
   version: ">=0"
