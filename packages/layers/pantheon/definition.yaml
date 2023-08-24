@@ -11,7 +11,7 @@ labels:
     pantheon-base/pantheon-meta
 requires:
   - category: "layers"
-    name: "gnome-common"
+    name: "gnome"
     version: ">=0"
 provides:
   - name: pantheon-meta

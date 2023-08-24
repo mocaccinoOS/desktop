@@ -16,5 +16,5 @@ steps:
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
-  name: "gnome-common"
+  name: "gnome"
   version: ">=0"
