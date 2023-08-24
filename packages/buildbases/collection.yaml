@@ -38,6 +38,10 @@ packages:
     name: "gnome-common"
     version: 0+166
   - !!merge <<: *X
+    real_category: "layers"
+    name: "latex"
+    version: 0.9+6
+  - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
     version: 0+123
