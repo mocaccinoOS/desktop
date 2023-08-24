@@ -7,13 +7,12 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-# not sure if we wanna change this in layers/X
-- USE="vala" emerge -1 dev-libs/appstream
 # might wanna change this in layers/gnome
 - USE="vala" emerge -1 net-libs/libcloudproviders
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable elementary
 - emaint sync -r elementary
+- USE="-qt5 vala" emerge -1 dev-libs/appstream::elementary
 - cp pantheon-meta-7.0.0-r1.ebuild /var/db/repos/elementary/pantheon-base/pantheon-meta/
 - ebuild /var/db/repos/elementary/pantheon-base/pantheon-meta/pantheon-meta-7.0.0-r1.ebuild manifest
 - cp plank-0.11.89-r1.ebuild /var/db/repos/elementary/x11-misc/plank/
