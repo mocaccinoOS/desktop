@@ -1,2 +1,0 @@
-# find out what is pulling in flatpak
-sys-apps/flatpak
