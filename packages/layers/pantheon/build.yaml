@@ -6,9 +6,14 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
+- USE="vala" emerge -1 net-libs/libcloudproviders
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable elementary
 - emaint sync -r elementary
+- cp pantheon-meta-7.0.0-r1.ebuild /var/db/repos/elementary/pantheon-base/pantheon-meta/
+- ebuild /var/db/repos/elementary/pantheon-base/pantheon-meta/pantheon-meta-7.0.0-r1.ebuild manifest
+- cp plank-0.11.89-r1.ebuild /var/db/repos/elementary/x11-misc/plank/
+- ebuild /var/db/repos/elementary/x11-misc/plank/plank-0.11.89-r1.ebuild manifest
 # {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
