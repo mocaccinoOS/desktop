@@ -6,8 +6,6 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-# not sure if we wanna change this in layers/X
-- USE="vala" emerge -1 dev-libs/appstream
 # might wanna change this in layers/gnome
 - USE="vala" emerge -1 net-libs/libcloudproviders
 - emerge -1 app-eselect/eselect-repository
@@ -25,7 +23,4 @@ steps:
 requires:
 - category: "layers"
   name: "gnome"
-  version: ">=0"
-- category: "apps"
-  name: "flatpak"
   version: ">=0"
