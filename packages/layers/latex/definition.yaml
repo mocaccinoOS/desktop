@@ -12,7 +12,7 @@ description: |
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-text/texlive dev-tex/culmus-latex dev-tex/tth dev-tex/html2latex
+    app-text/texlive dev-perl/HTML-Tree dev-tex/culmus-latex dev-tex/tth dev-tex/html2latex
 requires:
   - category: "layers"
     name: "X"
