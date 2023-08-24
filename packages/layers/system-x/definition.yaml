@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20230820"
+version: 0.20230820+1
 gcc_version: "12"
 python_version: "3.11"
 category: layers
