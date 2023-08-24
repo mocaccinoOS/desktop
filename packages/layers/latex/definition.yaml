@@ -2,10 +2,9 @@ category: "layers"
 name: "latex"
 version: 0.9+6
 uri:
-- http://www.tug.org/texlive/
-- http://hutchinson.belmont.ma.us/tth/
-- http://ivritex.sourceforge.net/
-license: "metapackage"
+  - http://www.tug.org/texlive/
+  - http://hutchinson.belmont.ma.us/tth/
+  - http://ivritex.sourceforge.net/
 description: |
   A complete TeX distribution
   Translate TEX into HTML
@@ -19,7 +18,7 @@ requires:
     name: "X"
     version: ">=0"
 provides:
- - category: "app-text"
+  - category: "app-text"
     name: "dvipng"
     version: ">=0"
   - category: "app-text"
