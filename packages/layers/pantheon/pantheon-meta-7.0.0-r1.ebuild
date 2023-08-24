@@ -71,6 +71,7 @@ RDEPEND="${DEPEND}
 	pantheon-base/pantheon-settings
 	pantheon-base/pantheon-settings-daemon
 	pantheon-base/switchboard
+	pantheon-base/switchboard-plug-applications
 	pantheon-base/switchboard-plug-datetime
 	pantheon-base/switchboard-plug-display
 	pantheon-base/switchboard-plug-keyboard
@@ -78,6 +79,7 @@ RDEPEND="${DEPEND}
 	pantheon-base/switchboard-plug-mouse-touchpad
 	pantheon-base/switchboard-plug-onlineaccounts
 	pantheon-base/switchboard-plug-pantheon-shell
+	pantheon-base/switchboard-plug-parental-controls
 	pantheon-base/switchboard-plug-security-privacy
 	pantheon-base/switchboard-plug-useraccounts
 	pantheon-base/wingpanel
