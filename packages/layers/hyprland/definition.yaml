@@ -1,6 +1,6 @@
 category: "layers"
 name: "hyprland"
-version: 0.26.0+14
+version: 0.26.0+15
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"

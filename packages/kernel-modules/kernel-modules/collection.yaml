@@ -1,25 +1,25 @@
 packages:
-#
-# In near future if we want virtualbox supported for the non-lts kernel
-# we need to figure out a way how to make apps/virtualbox depend on app-emulation/virtualbox-modules
-# 
-#   - category: "kernel-modules"
-#     name: "virtualbox-modules"
-#     version: 7.0.8+20
-#     lts: false
-#     emerge:
-#       jobs: "3"
-#       packages:
-#         - app-emulation/virtualbox-modules
-#     labels:
-#       emerge.jobs: "3"
-#     requires:
-#       - name: mocaccino-full
-#         category: kernel
-#         version: ">=0"
+  #
+  # In near future if we want virtualbox supported for the non-lts kernel
+  # we need to figure out a way how to make apps/virtualbox depend on app-emulation/virtualbox-modules
+  # 
+  #   - category: "kernel-modules"
+  #     name: "virtualbox-modules"
+  #     version: 7.0.8+20
+  #     lts: false
+  #     emerge:
+  #       jobs: "3"
+  #       packages:
+  #         - app-emulation/virtualbox-modules
+  #     labels:
+  #       emerge.jobs: "3"
+  #     requires:
+  #       - name: mocaccino-full
+  #         category: kernel
+  #         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.0.8+20
+    version: 7.0.8+21
     lts: true
     emerge:
       jobs: "3"
@@ -34,7 +34,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.0.8+20
+    version: 7.0.8+21
     lts: true
     labels:
       emerge.jobs: "3"
@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 525.116.04+22
+    version: 525.116.04+23
     lts: true
     labels:
       emerge.jobs: "3"
@@ -96,7 +96,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 525.116.04+21
+    version: 525.116.04+22
     lts: false
     labels:
       emerge.jobs: "3"
@@ -120,7 +120,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.199.02+15
+    version: 470.199.02+16
     lts: true
     labels:
       emerge.jobs: "3"
@@ -145,7 +145,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-legacy-lts"
-    version: 390.157+77
+    version: 390.157+78
     lts: true
     labels:
       emerge.jobs: "3"
@@ -170,7 +170,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.5+89
+    version: 0.9.5+90
     lts: true
     labels:
       emerge.jobs: "3"
@@ -192,7 +192,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.3+89
+    version: 0.3+90
     lts: true
     labels:
       emerge.jobs: "3"
@@ -214,7 +214,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8812au-lts"
-    version: 20220827+87
+    version: 20220827+88
     lts: true
     labels:
       emerge.jobs: "3"
@@ -236,7 +236,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20211218+79
+    version: 20211218+80
     lts: true
     labels:
       emerge.jobs: "3"
@@ -258,7 +258,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl88x2bu-lts"
-    version: 20211010+70
+    version: 20211010+71
     lts: true
     labels:
       emerge.jobs: "3"
@@ -280,7 +280,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
-    version: 20230313+36
+    version: 20230313+37
     lts: true
     labels:
       emerge.jobs: "3"
