@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnustep"
-version: "1.27"
+version: 1.27+1
 uri:
   - https://gnustep.github.io/
 license: "GPL-2 LGPL-2.1"
