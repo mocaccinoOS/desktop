@@ -18,193 +18,4231 @@ requires:
     name: "X"
     version: ">=0"
 provides:
-  - category: "app-text"
-    name: "dvipng"
-    version: ">=0"
-  - category: "app-text"
-    name: "dvisvgm"
-    version: ">=0"
-  - category: "app-text"
-    name: "lcdf-typetools"
-    version: ">=0"
-  - category: "app-text"
-    name: "ps2eps"
-    version: ">=0"
-  - category: "app-text"
-    name: "t1utils"
-    version: ">=0"
-  - category: "app-text"
-    name: "texi2html"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "File-ShareDir"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "HTML-Tree"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "libintl-perl"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "List-MoreUtils"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "Pod-LaTeX"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "Spreadsheet-ParseExcel"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "Text-CSV_XS"
-    version: ">=0"
-  - category: "dev-perl"
-    name: "Unicode-EastAsianWidth"
-    version: ">=0"
-  - category: "app-text"
-    name: "ttf2pk2"
-    version: ">=0"
-  - category: "app-text"
-    name: "xdvik"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "glossaries"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "latex-beamer"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "latexdiff"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "latexmk"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "pdfannotextractor"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "pgf"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "tex4ht"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-basic"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-bibtexextra"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-context"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-fontsextra"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-fontsrecommended"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-fontutils"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-formatsextra"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-games"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-humanities"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langarabic"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langcyrillic"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langczechslovak"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langenglish"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langeuropean"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langfrench"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langgerman"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langgreek"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langitalian"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langother"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langpolish"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langportuguese"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-langspanish"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-latex"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-latexextra"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-latexrecommended"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-luatex"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-mathscience"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-metapost"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-music"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-pictures"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-plaingeneric"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-pstricks"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-publishers"
-    version: ">=0"
-  - category: "dev-texlive"
-    name: "texlive-xetex"
-    version: ">=0"
-  - category: "media-gfx"
-    name: "sam2p"
-    version: ">=0"
-  - category: "virtual"
-    name: "latex-base"
-    version: ">=0"
-  - category: "virtual"
-    name: "texi2dvi"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "tth"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "culmus-latex"
-    version: ">=0"
-  - category: "dev-tex"
-    name: "html2latex"
-    version: ">=0"
+  - name: adm
+    category: acct-group
+    version: '>=0'
+  - name: audio
+    category: acct-group
+    version: '>=0'
+  - name: avahi
+    category: acct-group
+    version: '>=0'
+  - name: avahi-autoipd
+    category: acct-group
+    version: '>=0'
+  - name: cdrom
+    category: acct-group
+    version: '>=0'
+  - name: colord
+    category: acct-group
+    version: '>=0'
+  - name: cron
+    category: acct-group
+    version: '>=0'
+  - name: crontab
+    category: acct-group
+    version: '>=0'
+  - name: dialout
+    category: acct-group
+    version: '>=0'
+  - name: disk
+    category: acct-group
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-group
+    version: '>=0'
+  - name: floppy
+    category: acct-group
+    version: '>=0'
+  - name: input
+    category: acct-group
+    version: '>=0'
+  - name: kmem
+    category: acct-group
+    version: '>=0'
+  - name: kvm
+    category: acct-group
+    version: '>=0'
+  - name: ldap
+    category: acct-group
+    version: '>=0'
+  - name: lp
+    category: acct-group
+    version: '>=0'
+  - name: lpadmin
+    category: acct-group
+    version: '>=0'
+  - name: mail
+    category: acct-group
+    version: '>=0'
+  - name: man
+    category: acct-group
+    version: '>=0'
+  - name: messagebus
+    category: acct-group
+    version: '>=0'
+  - name: mysql
+    category: acct-group
+    version: '>=0'
+  - name: netdev
+    category: acct-group
+    version: '>=0'
+  - name: nobody
+    category: acct-group
+    version: '>=0'
+  - name: ntp
+    category: acct-group
+    version: '>=0'
+  - name: openct
+    category: acct-group
+    version: '>=0'
+  - name: openvpn
+    category: acct-group
+    version: '>=0'
+  - name: pcscd
+    category: acct-group
+    version: '>=0'
+  - name: pipewire
+    category: acct-group
+    version: '>=0'
+  - name: plugdev
+    category: acct-group
+    version: '>=0'
+  - name: polkitd
+    category: acct-group
+    version: '>=0'
+  - name: portage
+    category: acct-group
+    version: '>=0'
+  - name: postdrop
+    category: acct-group
+    version: '>=0'
+  - name: postfix
+    category: acct-group
+    version: '>=0'
+  - name: realtime
+    category: acct-group
+    version: '>=0'
+  - name: render
+    category: acct-group
+    version: '>=0'
+  - name: root
+    category: acct-group
+    version: '>=0'
+  - name: scanner
+    category: acct-group
+    version: '>=0'
+  - name: sgx
+    category: acct-group
+    version: '>=0'
+  - name: sshd
+    category: acct-group
+    version: '>=0'
+  - name: systemd-coredump
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal-remote
+    category: acct-group
+    version: '>=0'
+  - name: systemd-network
+    category: acct-group
+    version: '>=0'
+  - name: systemd-oom
+    category: acct-group
+    version: '>=0'
+  - name: systemd-resolve
+    category: acct-group
+    version: '>=0'
+  - name: systemd-timesync
+    category: acct-group
+    version: '>=0'
+  - name: tape
+    category: acct-group
+    version: '>=0'
+  - name: tss
+    category: acct-group
+    version: '>=0'
+  - name: tty
+    category: acct-group
+    version: '>=0'
+  - name: unbound
+    category: acct-group
+    version: '>=0'
+  - name: usb
+    category: acct-group
+    version: '>=0'
+  - name: users
+    category: acct-group
+    version: '>=0'
+  - name: utmp
+    category: acct-group
+    version: '>=0'
+  - name: video
+    category: acct-group
+    version: '>=0'
+  - name: wheel
+    category: acct-group
+    version: '>=0'
+  - name: avahi
+    category: acct-user
+    version: '>=0'
+  - name: avahi-autoipd
+    category: acct-user
+    version: '>=0'
+  - name: colord
+    category: acct-user
+    version: '>=0'
+  - name: cron
+    category: acct-user
+    version: '>=0'
+  - name: dnsmasq
+    category: acct-user
+    version: '>=0'
+  - name: ldap
+    category: acct-user
+    version: '>=0'
+  - name: mail
+    category: acct-user
+    version: '>=0'
+  - name: man
+    category: acct-user
+    version: '>=0'
+  - name: messagebus
+    category: acct-user
+    version: '>=0'
+  - name: mysql
+    category: acct-user
+    version: '>=0'
+  - name: nobody
+    category: acct-user
+    version: '>=0'
+  - name: ntp
+    category: acct-user
+    version: '>=0'
+  - name: openvpn
+    category: acct-user
+    version: '>=0'
+  - name: pcscd
+    category: acct-user
+    version: '>=0'
+  - name: polkitd
+    category: acct-user
+    version: '>=0'
+  - name: portage
+    category: acct-user
+    version: '>=0'
+  - name: postfix
+    category: acct-user
+    version: '>=0'
+  - name: postmaster
+    category: acct-user
+    version: '>=0'
+  - name: root
+    category: acct-user
+    version: '>=0'
+  - name: saned
+    category: acct-user
+    version: '>=0'
+  - name: sshd
+    category: acct-user
+    version: '>=0'
+  - name: systemd-coredump
+    category: acct-user
+    version: '>=0'
+  - name: systemd-journal-remote
+    category: acct-user
+    version: '>=0'
+  - name: systemd-network
+    category: acct-user
+    version: '>=0'
+  - name: systemd-oom
+    category: acct-user
+    version: '>=0'
+  - name: systemd-resolve
+    category: acct-user
+    version: '>=0'
+  - name: systemd-timesync
+    category: acct-user
+    version: '>=0'
+  - name: tss
+    category: acct-user
+    version: '>=0'
+  - name: unbound
+    category: acct-user
+    version: '>=0'
+  - name: at-spi2-atk
+    category: app-accessibility
+    version: '>=0'
+  - name: at-spi2-core
+    category: app-accessibility
+    version: '>=0'
+  - name: espeak-ng
+    category: app-accessibility
+    version: '>=0'
+  - name: speech-dispatcher
+    category: app-accessibility
+    version: '>=0'
+  - name: eselect
+    category: app-admin
+    version: '>=0'
+  - name: perl-cleaner
+    category: app-admin
+    version: '>=0'
+  - name: sudo
+    category: app-admin
+    version: '>=0'
+  - name: awk
+    category: app-alternatives
+    version: '>=0'
+  - name: bc
+    category: app-alternatives
+    version: '>=0'
+  - name: bzip2
+    category: app-alternatives
+    version: '>=0'
+  - name: cpio
+    category: app-alternatives
+    version: '>=0'
+  - name: gzip
+    category: app-alternatives
+    version: '>=0'
+  - name: lex
+    category: app-alternatives
+    version: '>=0'
+  - name: sh
+    category: app-alternatives
+    version: '>=0'
+  - name: tar
+    category: app-alternatives
+    version: '>=0'
+  - name: yacc
+    category: app-alternatives
+    version: '>=0'
+  - name: brotli
+    category: app-arch
+    version: '>=0'
+  - name: bzip2
+    category: app-arch
+    version: '>=0'
+  - name: cabextract
+    category: app-arch
+    version: '>=0'
+  - name: cpio
+    category: app-arch
+    version: '>=0'
+  - name: gzip
+    category: app-arch
+    version: '>=0'
+  - name: libarchive
+    category: app-arch
+    version: '>=0'
+  - name: lz4
+    category: app-arch
+    version: '>=0'
+  - name: lzlib
+    category: app-arch
+    version: '>=0'
+  - name: ncompress
+    category: app-arch
+    version: '>=0'
+  - name: p7zip
+    category: app-arch
+    version: '>=0'
+  - name: rpm2targz
+    category: app-arch
+    version: '>=0'
+  - name: snappy
+    category: app-arch
+    version: '>=0'
+  - name: tar
+    category: app-arch
+    version: '>=0'
+  - name: unrar
+    category: app-arch
+    version: '>=0'
+  - name: unzip
+    category: app-arch
+    version: '>=0'
+  - name: xz-utils
+    category: app-arch
+    version: '>=0'
+  - name: zip
+    category: app-arch
+    version: '>=0'
+  - name: zstd
+    category: app-arch
+    version: '>=0'
+  - name: cdrtools
+    category: app-cdr
+    version: '>=0'
+  - name: argon2
+    category: app-crypt
+    version: '>=0'
+  - name: gnupg
+    category: app-crypt
+    version: '>=0'
+  - name: gpgme
+    category: app-crypt
+    version: '>=0'
+  - name: libb2
+    category: app-crypt
+    version: '>=0'
+  - name: libmd
+    category: app-crypt
+    version: '>=0'
+  - name: mit-krb5
+    category: app-crypt
+    version: '>=0'
+  - name: p11-kit
+    category: app-crypt
+    version: '>=0'
+  - name: pinentry
+    category: app-crypt
+    version: '>=0'
+  - name: rhash
+    category: app-crypt
+    version: '>=0'
+  - name: tpm2-tss
+    category: app-crypt
+    version: '>=0'
+  - name: trousers
+    category: app-crypt
+    version: '>=0'
+  - name: aspell-af
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ar
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-az
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-bg
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-bn
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-br
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ca
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-cs
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-cy
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-da
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-de
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-el
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-en
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-eo
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-es
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-et
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-fa
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-fi
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-fr
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-fy
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ga
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-gl
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-gu
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-he
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-hi
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-hr
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-hu
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-is
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-it
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-lt
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-lv
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-mk
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-mn
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ms
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-nb
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-nds
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-nl
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-nn
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-pa
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-pl
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-pt
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-pt-br
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ro
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ru
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-rw
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-sk
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-sl
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-sr
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-sv
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-ta
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-tr
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-uk
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-uz
+    category: app-dicts
+    version: '>=0'
+  - name: aspell-vi
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-af
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-bg
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ca
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-cs
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-cy
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-da
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-de
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-el
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-en
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-eo
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-es
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-et
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-fr
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ga
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-gl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-he
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-hr
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-hu
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-is
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-it
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-kk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-km
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-lt
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-lv
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-mk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ms
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nb
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-nn
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pt
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-pt-br
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ro
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-ru
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sk
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sl
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-sv
+    category: app-dicts
+    version: '>=0'
+  - name: myspell-uk
+    category: app-dicts
+    version: '>=0'
+  - name: xmltoman
+    category: app-doc
+    version: '>=0'
+  - name: nano
+    category: app-editors
+    version: '>=0'
+  - name: spice-protocol
+    category: app-emulation
+    version: '>=0'
+  - name: eselect-blas
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-cdparanoia
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-fontconfig
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-iptables
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-lapack
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-lib-bin-symlink
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-lua
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-mpg123
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-notify-send
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-pinentry
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-ruby
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-rust
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-vi
+    category: app-eselect
+    version: '>=0'
+  - name: ibus
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-ja
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-l10n
+    category: app-i18n
+    version: '>=0'
+  - name: man-pages-zh_CN
+    category: app-i18n
+    version: '>=0'
+  - name: uchardet
+    category: app-i18n
+    version: '>=0'
+  - name: unicode-data
+    category: app-i18n
+    version: '>=0'
+  - name: ca-certificates
+    category: app-misc
+    version: '>=0'
+  - name: editor-wrapper
+    category: app-misc
+    version: '>=0'
+  - name: mime-types
+    category: app-misc
+    version: '>=0'
+  - name: pax-utils
+    category: app-misc
+    version: '>=0'
+  - name: wayland-utils
+    category: app-misc
+    version: '>=0'
+  - name: libplist
+    category: app-pda
+    version: '>=0'
+  - name: libusbmuxd
+    category: app-pda
+    version: '>=0'
+  - name: elt-patches
+    category: app-portage
+    version: '>=0'
+  - name: gemato
+    category: app-portage
+    version: '>=0'
+  - name: portage-utils
+    category: app-portage
+    version: '>=0'
+  - name: bash
+    category: app-shells
+    version: '>=0'
+  - name: bash-completion
+    category: app-shells
+    version: '>=0'
+  - name: gentoo-bashcomp
+    category: app-shells
+    version: '>=0'
+  - name: push
+    category: app-shells
+    version: '>=0'
+  - name: asciidoc
+    category: app-text
+    version: '>=0'
+  - name: aspell
+    category: app-text
+    version: '>=0'
+  - name: build-docbook-catalog
+    category: app-text
+    version: '>=0'
+  - name: cmark
+    category: app-text
+    version: '>=0'
+  - name: djvu
+    category: app-text
+    version: '>=0'
+  - name: docbook-dsssl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-xsl-ns-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-xsl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: dvipng
+    category: app-text
+    version: '>=0'
+  - name: dvipsk
+    category: app-text
+    version: '>=0'
+  - name: dvisvgm
+    category: app-text
+    version: '>=0'
+  - name: editorconfig-core-c
+    category: app-text
+    version: '>=0'
+  - name: enchant
+    category: app-text
+    version: '>=0'
+  - name: ghostscript-gpl
+    category: app-text
+    version: '>=0'
+  - name: hunspell
+    category: app-text
+    version: '>=0'
+  - name: iso-codes
+    category: app-text
+    version: '>=0'
+  - name: lcdf-typetools
+    category: app-text
+    version: '>=0'
+  - name: libpaper
+    category: app-text
+    version: '>=0'
+  - name: libspectre
+    category: app-text
+    version: '>=0'
+  - name: libwpd
+    category: app-text
+    version: '>=0'
+  - name: libwpg
+    category: app-text
+    version: '>=0'
+  - name: manpager
+    category: app-text
+    version: '>=0'
+  - name: opensp
+    category: app-text
+    version: '>=0'
+  - name: po4a
+    category: app-text
+    version: '>=0'
+  - name: poppler
+    category: app-text
+    version: '>=0'
+  - name: poppler-data
+    category: app-text
+    version: '>=0'
+  - name: ps2eps
+    category: app-text
+    version: '>=0'
+  - name: ps2pkm
+    category: app-text
+    version: '>=0'
+  - name: psutils
+    category: app-text
+    version: '>=0'
+  - name: qpdf
+    category: app-text
+    version: '>=0'
+  - name: sgml-common
+    category: app-text
+    version: '>=0'
+  - name: t1utils
+    category: app-text
+    version: '>=0'
+  - name: teckit
+    category: app-text
+    version: '>=0'
+  - name: texi2html
+    category: app-text
+    version: '>=0'
+  - name: texlive
+    category: app-text
+    version: '>=0'
+  - name: texlive-core
+    category: app-text
+    version: '>=0'
+  - name: ttf2pk2
+    category: app-text
+    version: '>=0'
+  - name: xdvik
+    category: app-text
+    version: '>=0'
+  - name: xmlto
+    category: app-text
+    version: '>=0'
+  - name: atkmm
+    category: dev-cpp
+    version: '>=0'
+  - name: cairomm
+    category: dev-cpp
+    version: '>=0'
+  - name: eigen
+    category: dev-cpp
+    version: '>=0'
+  - name: glibmm
+    category: dev-cpp
+    version: '>=0'
+  - name: gtkmm
+    category: dev-cpp
+    version: '>=0'
+  - name: muParser
+    category: dev-cpp
+    version: '>=0'
+  - name: pangomm
+    category: dev-cpp
+    version: '>=0'
+  - name: yaml-cpp
+    category: dev-cpp
+    version: '>=0'
+  - name: lmdb
+    category: dev-db
+    version: '>=0'
+  - name: mariadb
+    category: dev-db
+    version: '>=0'
+  - name: mariadb-connector-c
+    category: dev-db
+    version: '>=0'
+  - name: mysql-connector-c
+    category: dev-db
+    version: '>=0'
+  - name: mysql-init-scripts
+    category: dev-db
+    version: '>=0'
+  - name: sqlite
+    category: dev-db
+    version: '>=0'
+  - name: unixODBC
+    category: dev-db
+    version: '>=0'
+  - name: duktape
+    category: dev-lang
+    version: '>=0'
+  - name: lua
+    category: dev-lang
+    version: '>=0'
+  - name: lua
+    category: dev-lang
+    version: '>=0'
+  - name: nasm
+    category: dev-lang
+    version: '>=0'
+  - name: orc
+    category: dev-lang
+    version: '>=0'
+  - name: perl
+    category: dev-lang
+    version: '>=0'
+  - name: python
+    category: dev-lang
+    version: '>=0'
+  - name: python-exec
+    category: dev-lang
+    version: '>=0'
+  - name: python-exec-conf
+    category: dev-lang
+    version: '>=0'
+  - name: ruby
+    category: dev-lang
+    version: '>=0'
+  - name: rust-bin
+    category: dev-lang
+    version: '>=0'
+  - name: sassc
+    category: dev-lang
+    version: '>=0'
+  - name: swig
+    category: dev-lang
+    version: '>=0'
+  - name: tcl
+    category: dev-lang
+    version: '>=0'
+  - name: vala
+    category: dev-lang
+    version: '>=0'
+  - name: yasm
+    category: dev-lang
+    version: '>=0'
+  - name: appstream
+    category: dev-libs
+    version: '>=0'
+  - name: appstream-glib
+    category: dev-libs
+    version: '>=0'
+  - name: atk
+    category: dev-libs
+    version: '>=0'
+  - name: boehm-gc
+    category: dev-libs
+    version: '>=0'
+  - name: boost
+    category: dev-libs
+    version: '>=0'
+  - name: chmlib
+    category: dev-libs
+    version: '>=0'
+  - name: crypto++
+    category: dev-libs
+    version: '>=0'
+  - name: cyrus-sasl
+    category: dev-libs
+    version: '>=0'
+  - name: dbus-glib
+    category: dev-libs
+    version: '>=0'
+  - name: dotconf
+    category: dev-libs
+    version: '>=0'
+  - name: double-conversion
+    category: dev-libs
+    version: '>=0'
+  - name: elfutils
+    category: dev-libs
+    version: '>=0'
+  - name: ell
+    category: dev-libs
+    version: '>=0'
+  - name: expat
+    category: dev-libs
+    version: '>=0'
+  - name: fribidi
+    category: dev-libs
+    version: '>=0'
+  - name: geoip
+    category: dev-libs
+    version: '>=0'
+  - name: glib
+    category: dev-libs
+    version: '>=0'
+  - name: gmp
+    category: dev-libs
+    version: '>=0'
+  - name: gobject-introspection
+    category: dev-libs
+    version: '>=0'
+  - name: gobject-introspection-common
+    category: dev-libs
+    version: '>=0'
+  - name: hyphen
+    category: dev-libs
+    version: '>=0'
+  - name: icu
+    category: dev-libs
+    version: '>=0'
+  - name: imath
+    category: dev-libs
+    version: '>=0'
+  - name: isl
+    category: dev-libs
+    version: '>=0'
+  - name: jansson
+    category: dev-libs
+    version: '>=0'
+  - name: jemalloc
+    category: dev-libs
+    version: '>=0'
+  - name: json-c
+    category: dev-libs
+    version: '>=0'
+  - name: json-glib
+    category: dev-libs
+    version: '>=0'
+  - name: json-parser
+    category: dev-libs
+    version: '>=0'
+  - name: jsoncpp
+    category: dev-libs
+    version: '>=0'
+  - name: kpathsea
+    category: dev-libs
+    version: '>=0'
+  - name: libaio
+    category: dev-libs
+    version: '>=0'
+  - name: libappindicator
+    category: dev-libs
+    version: '>=0'
+  - name: libassuan
+    category: dev-libs
+    version: '>=0'
+  - name: libatasmart
+    category: dev-libs
+    version: '>=0'
+  - name: libatomic_ops
+    category: dev-libs
+    version: '>=0'
+  - name: libbsd
+    category: dev-libs
+    version: '>=0'
+  - name: libburn
+    category: dev-libs
+    version: '>=0'
+  - name: libbytesize
+    category: dev-libs
+    version: '>=0'
+  - name: libcdio
+    category: dev-libs
+    version: '>=0'
+  - name: libcdio-paranoia
+    category: dev-libs
+    version: '>=0'
+  - name: libclc
+    category: dev-libs
+    version: '>=0'
+  - name: libdaemon
+    category: dev-libs
+    version: '>=0'
+  - name: libdbusmenu
+    category: dev-libs
+    version: '>=0'
+  - name: libebml
+    category: dev-libs
+    version: '>=0'
+  - name: libedit
+    category: dev-libs
+    version: '>=0'
+  - name: libev
+    category: dev-libs
+    version: '>=0'
+  - name: libevdev
+    category: dev-libs
+    version: '>=0'
+  - name: libevent
+    category: dev-libs
+    version: '>=0'
+  - name: libffi
+    category: dev-libs
+    version: '>=0'
+  - name: libfmt
+    category: dev-libs
+    version: '>=0'
+  - name: libgcrypt
+    category: dev-libs
+    version: '>=0'
+  - name: libgit2
+    category: dev-libs
+    version: '>=0'
+  - name: libgpg-error
+    category: dev-libs
+    version: '>=0'
+  - name: libgudev
+    category: dev-libs
+    version: '>=0'
+  - name: libgusb
+    category: dev-libs
+    version: '>=0'
+  - name: libical
+    category: dev-libs
+    version: '>=0'
+  - name: libinput
+    category: dev-libs
+    version: '>=0'
+  - name: libisofs
+    category: dev-libs
+    version: '>=0'
+  - name: libksba
+    category: dev-libs
+    version: '>=0'
+  - name: libltdl
+    category: dev-libs
+    version: '>=0'
+  - name: libmspack
+    category: dev-libs
+    version: '>=0'
+  - name: libnl
+    category: dev-libs
+    version: '>=0'
+  - name: libpcre
+    category: dev-libs
+    version: '>=0'
+  - name: libpcre2
+    category: dev-libs
+    version: '>=0'
+  - name: libpipeline
+    category: dev-libs
+    version: '>=0'
+  - name: libpwquality
+    category: dev-libs
+    version: '>=0'
+  - name: librevenge
+    category: dev-libs
+    version: '>=0'
+  - name: libsass
+    category: dev-libs
+    version: '>=0'
+  - name: libsigc++
+    category: dev-libs
+    version: '>=0'
+  - name: libsigc++
+    category: dev-libs
+    version: '>=0'
+  - name: libsodium
+    category: dev-libs
+    version: '>=0'
+  - name: libtasn1
+    category: dev-libs
+    version: '>=0'
+  - name: libtomcrypt
+    category: dev-libs
+    version: '>=0'
+  - name: libtommath
+    category: dev-libs
+    version: '>=0'
+  - name: libudfread
+    category: dev-libs
+    version: '>=0'
+  - name: libunistring
+    category: dev-libs
+    version: '>=0'
+  - name: libusb
+    category: dev-libs
+    version: '>=0'
+  - name: libusb-compat
+    category: dev-libs
+    version: '>=0'
+  - name: libuv
+    category: dev-libs
+    version: '>=0'
+  - name: libverto
+    category: dev-libs
+    version: '>=0'
+  - name: libwacom
+    category: dev-libs
+    version: '>=0'
+  - name: libxml2
+    category: dev-libs
+    version: '>=0'
+  - name: libxmlb
+    category: dev-libs
+    version: '>=0'
+  - name: libxslt
+    category: dev-libs
+    version: '>=0'
+  - name: libyaml
+    category: dev-libs
+    version: '>=0'
+  - name: libzip
+    category: dev-libs
+    version: '>=0'
+  - name: lzo
+    category: dev-libs
+    version: '>=0'
+  - name: mpc
+    category: dev-libs
+    version: '>=0'
+  - name: mpfr
+    category: dev-libs
+    version: '>=0'
+  - name: nettle
+    category: dev-libs
+    version: '>=0'
+  - name: newt
+    category: dev-libs
+    version: '>=0'
+  - name: npth
+    category: dev-libs
+    version: '>=0'
+  - name: nspr
+    category: dev-libs
+    version: '>=0'
+  - name: nss
+    category: dev-libs
+    version: '>=0'
+  - name: opencl-icd-loader
+    category: dev-libs
+    version: '>=0'
+  - name: openssl
+    category: dev-libs
+    version: '>=0'
+  - name: popt
+    category: dev-libs
+    version: '>=0'
+  - name: protobuf
+    category: dev-libs
+    version: '>=0'
+  - name: ptexenc
+    category: dev-libs
+    version: '>=0'
+  - name: pugixml
+    category: dev-libs
+    version: '>=0'
+  - name: re2
+    category: dev-libs
+    version: '>=0'
+  - name: snowball-stemmer
+    category: dev-libs
+    version: '>=0'
+  - name: spdlog
+    category: dev-libs
+    version: '>=0'
+  - name: tinyxml
+    category: dev-libs
+    version: '>=0'
+  - name: userspace-rcu
+    category: dev-libs
+    version: '>=0'
+  - name: uthash
+    category: dev-libs
+    version: '>=0'
+  - name: vala-common
+    category: dev-libs
+    version: '>=0'
+  - name: wayland
+    category: dev-libs
+    version: '>=0'
+  - name: wayland-protocols
+    category: dev-libs
+    version: '>=0'
+  - name: xxhash
+    category: dev-libs
+    version: '>=0'
+  - name: yajl
+    category: dev-libs
+    version: '>=0'
+  - name: zziplib
+    category: dev-libs
+    version: '>=0'
+  - name: Algorithm-Diff
+    category: dev-perl
+    version: '>=0'
+  - name: Authen-SASL
+    category: dev-perl
+    version: '>=0'
+  - name: B-Hooks-EndOfScope
+    category: dev-perl
+    version: '>=0'
+  - name: Cairo
+    category: dev-perl
+    version: '>=0'
+  - name: Cairo-GObject
+    category: dev-perl
+    version: '>=0'
+  - name: Canary-Stability
+    category: dev-perl
+    version: '>=0'
+  - name: Capture-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: Class-Data-Inheritable
+    category: dev-perl
+    version: '>=0'
+  - name: Class-Inspector
+    category: dev-perl
+    version: '>=0'
+  - name: Class-Method-Modifiers
+    category: dev-perl
+    version: '>=0'
+  - name: Class-XSAccessor
+    category: dev-perl
+    version: '>=0'
+  - name: Clone
+    category: dev-perl
+    version: '>=0'
+  - name: common-sense
+    category: dev-perl
+    version: '>=0'
+  - name: Config-AutoConf
+    category: dev-perl
+    version: '>=0'
+  - name: CPAN-Meta-Check
+    category: dev-perl
+    version: '>=0'
+  - name: Crypt-RC4
+    category: dev-perl
+    version: '>=0'
+  - name: Data-OptList
+    category: dev-perl
+    version: '>=0'
+  - name: DBD-mysql
+    category: dev-perl
+    version: '>=0'
+  - name: DBD-SQLite
+    category: dev-perl
+    version: '>=0'
+  - name: DBI
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-Caller
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-CheckLib
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-GlobalDestruction
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-LexAlias
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-StackTrace
+    category: dev-perl
+    version: '>=0'
+  - name: Digest-HMAC
+    category: dev-perl
+    version: '>=0'
+  - name: Digest-Perl-MD5
+    category: dev-perl
+    version: '>=0'
+  - name: Dist-CheckConflicts
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-EUCJPASCII
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-HanExtra
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-Locale
+    category: dev-perl
+    version: '>=0'
+  - name: Error
+    category: dev-perl
+    version: '>=0'
+  - name: Eval-Closure
+    category: dev-perl
+    version: '>=0'
+  - name: Exception-Class
+    category: dev-perl
+    version: '>=0'
+  - name: Exporter-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-Depends
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-HasCompiler
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-PkgConfig
+    category: dev-perl
+    version: '>=0'
+  - name: File-BaseDir
+    category: dev-perl
+    version: '>=0'
+  - name: File-DesktopEntry
+    category: dev-perl
+    version: '>=0'
+  - name: File-HomeDir
+    category: dev-perl
+    version: '>=0'
+  - name: File-Listing
+    category: dev-perl
+    version: '>=0'
+  - name: File-MimeInfo
+    category: dev-perl
+    version: '>=0'
+  - name: File-ShareDir
+    category: dev-perl
+    version: '>=0'
+  - name: File-ShareDir-Install
+    category: dev-perl
+    version: '>=0'
+  - name: File-Slurper
+    category: dev-perl
+    version: '>=0'
+  - name: File-Which
+    category: dev-perl
+    version: '>=0'
+  - name: Glib-Object-Introspection
+    category: dev-perl
+    version: '>=0'
+  - name: glib-perl
+    category: dev-perl
+    version: '>=0'
+  - name: Gtk3
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tagset
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tree
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Cookies
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Date
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Message
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Negotiate
+    category: dev-perl
+    version: '>=0'
+  - name: IO-HTML
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-INET6
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-SSL
+    category: dev-perl
+    version: '>=0'
+  - name: IO-stringy
+    category: dev-perl
+    version: '>=0'
+  - name: IPC-Run3
+    category: dev-perl
+    version: '>=0'
+  - name: IPC-System-Simple
+    category: dev-perl
+    version: '>=0'
+  - name: JSON
+    category: dev-perl
+    version: '>=0'
+  - name: JSON-XS
+    category: dev-perl
+    version: '>=0'
+  - name: libintl-perl
+    category: dev-perl
+    version: '>=0'
+  - name: libwww-perl
+    category: dev-perl
+    version: '>=0'
+  - name: List-MoreUtils
+    category: dev-perl
+    version: '>=0'
+  - name: List-MoreUtils-XS
+    category: dev-perl
+    version: '>=0'
+  - name: Locale-gettext
+    category: dev-perl
+    version: '>=0'
+  - name: Locale-Maketext-Lexicon
+    category: dev-perl
+    version: '>=0'
+  - name: Log-Agent
+    category: dev-perl
+    version: '>=0'
+  - name: Log-Dispatch
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-MediaTypes
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-Protocol-https
+    category: dev-perl
+    version: '>=0'
+  - name: MailTools
+    category: dev-perl
+    version: '>=0'
+  - name: MIME-Charset
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Build
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Implementation
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Runtime
+    category: dev-perl
+    version: '>=0'
+  - name: Moo
+    category: dev-perl
+    version: '>=0'
+  - name: Mozilla-CA
+    category: dev-perl
+    version: '>=0'
+  - name: MRO-Compat
+    category: dev-perl
+    version: '>=0'
+  - name: namespace-autoclean
+    category: dev-perl
+    version: '>=0'
+  - name: namespace-clean
+    category: dev-perl
+    version: '>=0'
+  - name: Net-Daemon
+    category: dev-perl
+    version: '>=0'
+  - name: Net-HTTP
+    category: dev-perl
+    version: '>=0'
+  - name: Net-SSLeay
+    category: dev-perl
+    version: '>=0'
+  - name: OLE-StorageLite
+    category: dev-perl
+    version: '>=0'
+  - name: Package-Stash
+    category: dev-perl
+    version: '>=0'
+  - name: Package-Stash-XS
+    category: dev-perl
+    version: '>=0'
+  - name: PadWalker
+    category: dev-perl
+    version: '>=0'
+  - name: Params-Util
+    category: dev-perl
+    version: '>=0'
+  - name: Params-ValidationCompiler
+    category: dev-perl
+    version: '>=0'
+  - name: Parse-Yapp
+    category: dev-perl
+    version: '>=0'
+  - name: Perl-Tidy
+    category: dev-perl
+    version: '>=0'
+  - name: PerlIO-utf8_strict
+    category: dev-perl
+    version: '>=0'
+  - name: PlRPC
+    category: dev-perl
+    version: '>=0'
+  - name: Pod-LaTeX
+    category: dev-perl
+    version: '>=0'
+  - name: Pod-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: Ref-Util
+    category: dev-perl
+    version: '>=0'
+  - name: Ref-Util-XS
+    category: dev-perl
+    version: '>=0'
+  - name: Regexp-IPv6
+    category: dev-perl
+    version: '>=0'
+  - name: Role-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: SGMLSpm
+    category: dev-perl
+    version: '>=0'
+  - name: Socket6
+    category: dev-perl
+    version: '>=0'
+  - name: Specio
+    category: dev-perl
+    version: '>=0'
+  - name: Spreadsheet-ParseExcel
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Exporter
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Exporter-Progressive
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Identify
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Install
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Name
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Quote
+    category: dev-perl
+    version: '>=0'
+  - name: TermReadKey
+    category: dev-perl
+    version: '>=0'
+  - name: Test-Fatal
+    category: dev-perl
+    version: '>=0'
+  - name: Text-CharWidth
+    category: dev-perl
+    version: '>=0'
+  - name: Text-CSV_XS
+    category: dev-perl
+    version: '>=0'
+  - name: Text-Unidecode
+    category: dev-perl
+    version: '>=0'
+  - name: Text-WrapI18N
+    category: dev-perl
+    version: '>=0'
+  - name: TimeDate
+    category: dev-perl
+    version: '>=0'
+  - name: Try-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: Types-Serialiser
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-EastAsianWidth
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-LineBreak
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-Map
+    category: dev-perl
+    version: '>=0'
+  - name: URI
+    category: dev-perl
+    version: '>=0'
+  - name: Variable-Magic
+    category: dev-perl
+    version: '>=0'
+  - name: WWW-RobotRules
+    category: dev-perl
+    version: '>=0'
+  - name: XML-NamespaceSupport
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Base
+    category: dev-perl
+    version: '>=0'
+  - name: XML-SAX-Expat
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Simple
+    category: dev-perl
+    version: '>=0'
+  - name: XML-XPath
+    category: dev-perl
+    version: '>=0'
+  - name: XString
+    category: dev-perl
+    version: '>=0'
+  - name: YAML-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: alabaster
+    category: dev-python
+    version: '>=0'
+  - name: arrow
+    category: dev-python
+    version: '>=0'
+  - name: attrs
+    category: dev-python
+    version: '>=0'
+  - name: automat
+    category: dev-python
+    version: '>=0'
+  - name: Babel
+    category: dev-python
+    version: '>=0'
+  - name: bcrypt
+    category: dev-python
+    version: '>=0'
+  - name: calver
+    category: dev-python
+    version: '>=0'
+  - name: certifi
+    category: dev-python
+    version: '>=0'
+  - name: cffi
+    category: dev-python
+    version: '>=0'
+  - name: chardet
+    category: dev-python
+    version: '>=0'
+  - name: charset-normalizer
+    category: dev-python
+    version: '>=0'
+  - name: click
+    category: dev-python
+    version: '>=0'
+  - name: constantly
+    category: dev-python
+    version: '>=0'
+  - name: cryptography
+    category: dev-python
+    version: '>=0'
+  - name: cython
+    category: dev-python
+    version: '>=0'
+  - name: dbus-python
+    category: dev-python
+    version: '>=0'
+  - name: distro
+    category: dev-python
+    version: '>=0'
+  - name: docutils
+    category: dev-python
+    version: '>=0'
+  - name: editables
+    category: dev-python
+    version: '>=0'
+  - name: ensurepip-pip
+    category: dev-python
+    version: '>=0'
+  - name: ensurepip-setuptools
+    category: dev-python
+    version: '>=0'
+  - name: ensurepip-wheels
+    category: dev-python
+    version: '>=0'
+  - name: entrypoints
+    category: dev-python
+    version: '>=0'
+  - name: filelock
+    category: dev-python
+    version: '>=0'
+  - name: flit-core
+    category: dev-python
+    version: '>=0'
+  - name: fqdn
+    category: dev-python
+    version: '>=0'
+  - name: gentoo-common
+    category: dev-python
+    version: '>=0'
+  - name: gpep517
+    category: dev-python
+    version: '>=0'
+  - name: gst-python
+    category: dev-python
+    version: '>=0'
+  - name: h2
+    category: dev-python
+    version: '>=0'
+  - name: h5py
+    category: dev-python
+    version: '>=0'
+  - name: hatch-fancy-pypi-readme
+    category: dev-python
+    version: '>=0'
+  - name: hatch-vcs
+    category: dev-python
+    version: '>=0'
+  - name: hatchling
+    category: dev-python
+    version: '>=0'
+  - name: hpack
+    category: dev-python
+    version: '>=0'
+  - name: html5lib
+    category: dev-python
+    version: '>=0'
+  - name: hyperframe
+    category: dev-python
+    version: '>=0'
+  - name: hyperlink
+    category: dev-python
+    version: '>=0'
+  - name: idna
+    category: dev-python
+    version: '>=0'
+  - name: imagesize
+    category: dev-python
+    version: '>=0'
+  - name: installer
+    category: dev-python
+    version: '>=0'
+  - name: isodate
+    category: dev-python
+    version: '>=0'
+  - name: isoduration
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-context
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-functools
+    category: dev-python
+    version: '>=0'
+  - name: jaraco-text
+    category: dev-python
+    version: '>=0'
+  - name: jinja
+    category: dev-python
+    version: '>=0'
+  - name: jsonpointer
+    category: dev-python
+    version: '>=0'
+  - name: jsonschema
+    category: dev-python
+    version: '>=0'
+  - name: lark
+    category: dev-python
+    version: '>=0'
+  - name: lxml
+    category: dev-python
+    version: '>=0'
+  - name: m2crypto
+    category: dev-python
+    version: '>=0'
+  - name: mako
+    category: dev-python
+    version: '>=0'
+  - name: markupsafe
+    category: dev-python
+    version: '>=0'
+  - name: meson-python
+    category: dev-python
+    version: '>=0'
+  - name: more-itertools
+    category: dev-python
+    version: '>=0'
+  - name: nspektr
+    category: dev-python
+    version: '>=0'
+  - name: numpy
+    category: dev-python
+    version: '>=0'
+  - name: olefile
+    category: dev-python
+    version: '>=0'
+  - name: ordered-set
+    category: dev-python
+    version: '>=0'
+  - name: packaging
+    category: dev-python
+    version: '>=0'
+  - name: pathspec
+    category: dev-python
+    version: '>=0'
+  - name: pillow
+    category: dev-python
+    version: '>=0'
+  - name: pkgconfig
+    category: dev-python
+    version: '>=0'
+  - name: platformdirs
+    category: dev-python
+    version: '>=0'
+  - name: pluggy
+    category: dev-python
+    version: '>=0'
+  - name: ply
+    category: dev-python
+    version: '>=0'
+  - name: poetry-core
+    category: dev-python
+    version: '>=0'
+  - name: protobuf-python
+    category: dev-python
+    version: '>=0'
+  - name: psutil
+    category: dev-python
+    version: '>=0'
+  - name: pyasn1
+    category: dev-python
+    version: '>=0'
+  - name: pyasn1-modules
+    category: dev-python
+    version: '>=0'
+  - name: pybind11
+    category: dev-python
+    version: '>=0'
+  - name: pycairo
+    category: dev-python
+    version: '>=0'
+  - name: pycparser
+    category: dev-python
+    version: '>=0'
+  - name: pycryptodome
+    category: dev-python
+    version: '>=0'
+  - name: pyelftools
+    category: dev-python
+    version: '>=0'
+  - name: pygments
+    category: dev-python
+    version: '>=0'
+  - name: pygobject
+    category: dev-python
+    version: '>=0'
+  - name: pyhamcrest
+    category: dev-python
+    version: '>=0'
+  - name: pyopenssl
+    category: dev-python
+    version: '>=0'
+  - name: pyparsing
+    category: dev-python
+    version: '>=0'
+  - name: pyproject-metadata
+    category: dev-python
+    version: '>=0'
+  - name: pyrsistent
+    category: dev-python
+    version: '>=0'
+  - name: pyserial
+    category: dev-python
+    version: '>=0'
+  - name: PySocks
+    category: dev-python
+    version: '>=0'
+  - name: python-dateutil
+    category: dev-python
+    version: '>=0'
+  - name: python-evdev
+    category: dev-python
+    version: '>=0'
+  - name: python-magic
+    category: dev-python
+    version: '>=0'
+  - name: python-xlib
+    category: dev-python
+    version: '>=0'
+  - name: pyudev
+    category: dev-python
+    version: '>=0'
+  - name: pyxdg
+    category: dev-python
+    version: '>=0'
+  - name: pyyaml
+    category: dev-python
+    version: '>=0'
+  - name: rdflib
+    category: dev-python
+    version: '>=0'
+  - name: regex
+    category: dev-python
+    version: '>=0'
+  - name: rencode
+    category: dev-python
+    version: '>=0'
+  - name: requests
+    category: dev-python
+    version: '>=0'
+  - name: rfc3339-validator
+    category: dev-python
+    version: '>=0'
+  - name: rfc3986-validator
+    category: dev-python
+    version: '>=0'
+  - name: rfc3987
+    category: dev-python
+    version: '>=0'
+  - name: semantic-version
+    category: dev-python
+    version: '>=0'
+  - name: service-identity
+    category: dev-python
+    version: '>=0'
+  - name: setproctitle
+    category: dev-python
+    version: '>=0'
+  - name: setuptools
+    category: dev-python
+    version: '>=0'
+  - name: setuptools-rust
+    category: dev-python
+    version: '>=0'
+  - name: setuptools-scm
+    category: dev-python
+    version: '>=0'
+  - name: six
+    category: dev-python
+    version: '>=0'
+  - name: snowballstemmer
+    category: dev-python
+    version: '>=0'
+  - name: sphinx
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-applehelp
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-devhelp
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-htmlhelp
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-jsmath
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-qthelp
+    category: dev-python
+    version: '>=0'
+  - name: sphinxcontrib-serializinghtml
+    category: dev-python
+    version: '>=0'
+  - name: strict-rfc3339
+    category: dev-python
+    version: '>=0'
+  - name: tomli
+    category: dev-python
+    version: '>=0'
+  - name: trove-classifiers
+    category: dev-python
+    version: '>=0'
+  - name: typing-extensions
+    category: dev-python
+    version: '>=0'
+  - name: uri-template
+    category: dev-python
+    version: '>=0'
+  - name: urllib3
+    category: dev-python
+    version: '>=0'
+  - name: versioneer
+    category: dev-python
+    version: '>=0'
+  - name: webcolors
+    category: dev-python
+    version: '>=0'
+  - name: webencodings
+    category: dev-python
+    version: '>=0'
+  - name: wheel
+    category: dev-python
+    version: '>=0'
+  - name: bundler
+    category: dev-ruby
+    version: '>=0'
+  - name: did_you_mean
+    category: dev-ruby
+    version: '>=0'
+  - name: json
+    category: dev-ruby
+    version: '>=0'
+  - name: kpeg
+    category: dev-ruby
+    version: '>=0'
+  - name: minitest
+    category: dev-ruby
+    version: '>=0'
+  - name: power_assert
+    category: dev-ruby
+    version: '>=0'
+  - name: psych
+    category: dev-ruby
+    version: '>=0'
+  - name: racc
+    category: dev-ruby
+    version: '>=0'
+  - name: rake
+    category: dev-ruby
+    version: '>=0'
+  - name: rbs
+    category: dev-ruby
+    version: '>=0'
+  - name: rdoc
+    category: dev-ruby
+    version: '>=0'
+  - name: rexml
+    category: dev-ruby
+    version: '>=0'
+  - name: rss
+    category: dev-ruby
+    version: '>=0'
+  - name: rubygems
+    category: dev-ruby
+    version: '>=0'
+  - name: stringio
+    category: dev-ruby
+    version: '>=0'
+  - name: test-unit
+    category: dev-ruby
+    version: '>=0'
+  - name: typeprof
+    category: dev-ruby
+    version: '>=0'
+  - name: bibtexu
+    category: dev-tex
+    version: '>=0'
+  - name: culmus-latex
+    category: dev-tex
+    version: '>=0'
+  - name: glossaries
+    category: dev-tex
+    version: '>=0'
+  - name: html2latex
+    category: dev-tex
+    version: '>=0'
+  - name: latex-beamer
+    category: dev-tex
+    version: '>=0'
+  - name: latexdiff
+    category: dev-tex
+    version: '>=0'
+  - name: latexmk
+    category: dev-tex
+    version: '>=0'
+  - name: pgf
+    category: dev-tex
+    version: '>=0'
+  - name: tex4ht
+    category: dev-tex
+    version: '>=0'
+  - name: tth
+    category: dev-tex
+    version: '>=0'
+  - name: texlive-basic
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-bibtexextra
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-context
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-fontsextra
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-fontsrecommended
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-fontutils
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-formatsextra
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-games
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-humanities
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langarabic
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langcyrillic
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langczechslovak
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langenglish
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langeuropean
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langfrench
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langgerman
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langgreek
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langitalian
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langother
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langpolish
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langportuguese
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-langspanish
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-latex
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-latexextra
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-latexrecommended
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-luatex
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-mathscience
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-metapost
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-music
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-pictures
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-plaingeneric
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-pstricks
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-publishers
+    category: dev-texlive
+    version: '>=0'
+  - name: texlive-xetex
+    category: dev-texlive
+    version: '>=0'
+  - name: b2
+    category: dev-util
+    version: '>=0'
+  - name: bindgen
+    category: dev-util
+    version: '>=0'
+  - name: cargo-c
+    category: dev-util
+    version: '>=0'
+  - name: cmake
+    category: dev-util
+    version: '>=0'
+  - name: colm
+    category: dev-util
+    version: '>=0'
+  - name: desktop-file-utils
+    category: dev-util
+    version: '>=0'
+  - name: gdbus-codegen
+    category: dev-util
+    version: '>=0'
+  - name: glib-utils
+    category: dev-util
+    version: '>=0'
+  - name: glslang
+    category: dev-util
+    version: '>=0'
+  - name: gperf
+    category: dev-util
+    version: '>=0'
+  - name: gtk-doc
+    category: dev-util
+    version: '>=0'
+  - name: gtk-doc-am
+    category: dev-util
+    version: '>=0'
+  - name: gtk-update-icon-cache
+    category: dev-util
+    version: '>=0'
+  - name: intltool
+    category: dev-util
+    version: '>=0'
+  - name: itstool
+    category: dev-util
+    version: '>=0'
+  - name: meson
+    category: dev-util
+    version: '>=0'
+  - name: meson-format-array
+    category: dev-util
+    version: '>=0'
+  - name: netsurf-buildsystem
+    category: dev-util
+    version: '>=0'
+  - name: ninja
+    category: dev-util
+    version: '>=0'
+  - name: opencl-headers
+    category: dev-util
+    version: '>=0'
+  - name: patchelf
+    category: dev-util
+    version: '>=0'
+  - name: pkgconf
+    category: dev-util
+    version: '>=0'
+  - name: ragel
+    category: dev-util
+    version: '>=0'
+  - name: re2c
+    category: dev-util
+    version: '>=0'
+  - name: spirv-headers
+    category: dev-util
+    version: '>=0'
+  - name: spirv-llvm-translator
+    category: dev-util
+    version: '>=0'
+  - name: spirv-tools
+    category: dev-util
+    version: '>=0'
+  - name: umockdev
+    category: dev-util
+    version: '>=0'
+  - name: vulkan-headers
+    category: dev-util
+    version: '>=0'
+  - name: vulkan-tools
+    category: dev-util
+    version: '>=0'
+  - name: wayland-scanner
+    category: dev-util
+    version: '>=0'
+  - name: git
+    category: dev-vcs
+    version: '>=0'
+  - name: dconf
+    category: gnome-base
+    version: '>=0'
+  - name: gsettings-desktop-schemas
+    category: gnome-base
+    version: '>=0'
+  - name: librsvg
+    category: gnome-base
+    version: '>=0'
+  - name: gtk
+    category: gui-libs
+    version: '>=0'
+  - name: gtk-layer-shell
+    category: gui-libs
+    version: '>=0'
+  - name: postfix
+    category: mail-mta
+    version: '>=0'
+  - name: cantarell
+    category: media-fonts
+    version: '>=0'
+  - name: corefonts
+    category: media-fonts
+    version: '>=0'
+  - name: culmus
+    category: media-fonts
+    version: '>=0'
+  - name: dejavu
+    category: media-fonts
+    version: '>=0'
+  - name: encodings
+    category: media-fonts
+    version: '>=0'
+  - name: font-alias
+    category: media-fonts
+    version: '>=0'
+  - name: font-misc-misc
+    category: media-fonts
+    version: '>=0'
+  - name: font-util
+    category: media-fonts
+    version: '>=0'
+  - name: liberation-fonts
+    category: media-fonts
+    version: '>=0'
+  - name: noto
+    category: media-fonts
+    version: '>=0'
+  - name: noto-emoji
+    category: media-fonts
+    version: '>=0'
+  - name: urw-fonts
+    category: media-fonts
+    version: '>=0'
+  - name: exiv2
+    category: media-gfx
+    version: '>=0'
+  - name: graphite2
+    category: media-gfx
+    version: '>=0'
+  - name: imagemagick
+    category: media-gfx
+    version: '>=0'
+  - name: potrace
+    category: media-gfx
+    version: '>=0'
+  - name: qrencode
+    category: media-gfx
+    version: '>=0'
+  - name: sam2p
+    category: media-gfx
+    version: '>=0'
+  - name: sane-backends
+    category: media-gfx
+    version: '>=0'
+  - name: a52dec
+    category: media-libs
+    version: '>=0'
+  - name: aalib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-lib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-topology-conf
+    category: media-libs
+    version: '>=0'
+  - name: alsa-ucm-conf
+    category: media-libs
+    version: '>=0'
+  - name: audiofile
+    category: media-libs
+    version: '>=0'
+  - name: chromaprint
+    category: media-libs
+    version: '>=0'
+  - name: dav1d
+    category: media-libs
+    version: '>=0'
+  - name: exiftool
+    category: media-libs
+    version: '>=0'
+  - name: faac
+    category: media-libs
+    version: '>=0'
+  - name: faad2
+    category: media-libs
+    version: '>=0'
+  - name: fdk-aac
+    category: media-libs
+    version: '>=0'
+  - name: flac
+    category: media-libs
+    version: '>=0'
+  - name: fontconfig
+    category: media-libs
+    version: '>=0'
+  - name: freeglut
+    category: media-libs
+    version: '>=0'
+  - name: freetype
+    category: media-libs
+    version: '>=0'
+  - name: gd
+    category: media-libs
+    version: '>=0'
+  - name: giflib
+    category: media-libs
+    version: '>=0'
+  - name: glew
+    category: media-libs
+    version: '>=0'
+  - name: glm
+    category: media-libs
+    version: '>=0'
+  - name: glu
+    category: media-libs
+    version: '>=0'
+  - name: graphene
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-bad
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-base
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-good
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-ugly
+    category: media-libs
+    version: '>=0'
+  - name: gstreamer
+    category: media-libs
+    version: '>=0'
+  - name: harfbuzz
+    category: media-libs
+    version: '>=0'
+  - name: imlib2
+    category: media-libs
+    version: '>=0'
+  - name: jbig2dec
+    category: media-libs
+    version: '>=0'
+  - name: lcms
+    category: media-libs
+    version: '>=0'
+  - name: lensfun
+    category: media-libs
+    version: '>=0'
+  - name: libaom
+    category: media-libs
+    version: '>=0'
+  - name: libart_lgpl
+    category: media-libs
+    version: '>=0'
+  - name: libass
+    category: media-libs
+    version: '>=0'
+  - name: libbluray
+    category: media-libs
+    version: '>=0'
+  - name: libcanberra
+    category: media-libs
+    version: '>=0'
+  - name: libcddb
+    category: media-libs
+    version: '>=0'
+  - name: libcdr
+    category: media-libs
+    version: '>=0'
+  - name: libcue
+    category: media-libs
+    version: '>=0'
+  - name: libcuefile
+    category: media-libs
+    version: '>=0'
+  - name: libdc1394
+    category: media-libs
+    version: '>=0'
+  - name: libdca
+    category: media-libs
+    version: '>=0'
+  - name: libde265
+    category: media-libs
+    version: '>=0'
+  - name: libdvbpsi
+    category: media-libs
+    version: '>=0'
+  - name: libdvdnav
+    category: media-libs
+    version: '>=0'
+  - name: libdvdread
+    category: media-libs
+    version: '>=0'
+  - name: libepoxy
+    category: media-libs
+    version: '>=0'
+  - name: libexif
+    category: media-libs
+    version: '>=0'
+  - name: libfreeaptx
+    category: media-libs
+    version: '>=0'
+  - name: libglvnd
+    category: media-libs
+    version: '>=0'
+  - name: libgphoto2
+    category: media-libs
+    version: '>=0'
+  - name: libid3tag
+    category: media-libs
+    version: '>=0'
+  - name: libjpeg-turbo
+    category: media-libs
+    version: '>=0'
+  - name: libldac
+    category: media-libs
+    version: '>=0'
+  - name: libmad
+    category: media-libs
+    version: '>=0'
+  - name: libmatroska
+    category: media-libs
+    version: '>=0'
+  - name: libmms
+    category: media-libs
+    version: '>=0'
+  - name: libmng
+    category: media-libs
+    version: '>=0'
+  - name: libmodplug
+    category: media-libs
+    version: '>=0'
+  - name: libmpeg2
+    category: media-libs
+    version: '>=0'
+  - name: libmtp
+    category: media-libs
+    version: '>=0'
+  - name: libnsgif
+    category: media-libs
+    version: '>=0'
+  - name: libogg
+    category: media-libs
+    version: '>=0'
+  - name: libpng
+    category: media-libs
+    version: '>=0'
+  - name: libpulse
+    category: media-libs
+    version: '>=0'
+  - name: libraw
+    category: media-libs
+    version: '>=0'
+  - name: libreplaygain
+    category: media-libs
+    version: '>=0'
+  - name: libsamplerate
+    category: media-libs
+    version: '>=0'
+  - name: libsdl
+    category: media-libs
+    version: '>=0'
+  - name: libsdl2
+    category: media-libs
+    version: '>=0'
+  - name: libsndfile
+    category: media-libs
+    version: '>=0'
+  - name: libtheora
+    category: media-libs
+    version: '>=0'
+  - name: libv4l
+    category: media-libs
+    version: '>=0'
+  - name: libva
+    category: media-libs
+    version: '>=0'
+  - name: libvorbis
+    category: media-libs
+    version: '>=0'
+  - name: libvpx
+    category: media-libs
+    version: '>=0'
+  - name: libwebp
+    category: media-libs
+    version: '>=0'
+  - name: libwmf
+    category: media-libs
+    version: '>=0'
+  - name: mesa
+    category: media-libs
+    version: '>=0'
+  - name: musicbrainz
+    category: media-libs
+    version: '>=0'
+  - name: netpbm
+    category: media-libs
+    version: '>=0'
+  - name: openal
+    category: media-libs
+    version: '>=0'
+  - name: opencore-amr
+    category: media-libs
+    version: '>=0'
+  - name: openexr
+    category: media-libs
+    version: '>=0'
+  - name: openh264
+    category: media-libs
+    version: '>=0'
+  - name: openjpeg
+    category: media-libs
+    version: '>=0'
+  - name: opus
+    category: media-libs
+    version: '>=0'
+  - name: opusfile
+    category: media-libs
+    version: '>=0'
+  - name: pcaudiolib
+    category: media-libs
+    version: '>=0'
+  - name: portaudio
+    category: media-libs
+    version: '>=0'
+  - name: portmidi
+    category: media-libs
+    version: '>=0'
+  - name: sbc
+    category: media-libs
+    version: '>=0'
+  - name: shaderc
+    category: media-libs
+    version: '>=0'
+  - name: soxr
+    category: media-libs
+    version: '>=0'
+  - name: speex
+    category: media-libs
+    version: '>=0'
+  - name: speexdsp
+    category: media-libs
+    version: '>=0'
+  - name: taglib
+    category: media-libs
+    version: '>=0'
+  - name: tiff
+    category: media-libs
+    version: '>=0'
+  - name: tremor
+    category: media-libs
+    version: '>=0'
+  - name: vidstab
+    category: media-libs
+    version: '>=0'
+  - name: vulkan-loader
+    category: media-libs
+    version: '>=0'
+  - name: webrtc-audio-processing
+    category: media-libs
+    version: '>=0'
+  - name: woff2
+    category: media-libs
+    version: '>=0'
+  - name: x264
+    category: media-libs
+    version: '>=0'
+  - name: x265
+    category: media-libs
+    version: '>=0'
+  - name: xvid
+    category: media-libs
+    version: '>=0'
+  - name: zxing-cpp
+    category: media-libs
+    version: '>=0'
+  - name: alsa-plugins
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-a52dec
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-aom
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-faac
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-flac
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-gdkpixbuf
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-lame
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-libav
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-meta
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-mpg123
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-openh264
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-pulse
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-soup
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-taglib
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-vpx
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-wavpack
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-x264
+    category: media-plugins
+    version: '>=0'
+  - name: live
+    category: media-plugins
+    version: '>=0'
+  - name: alac_decoder
+    category: media-sound
+    version: '>=0'
+  - name: alsa-utils
+    category: media-sound
+    version: '>=0'
+  - name: cdparanoia
+    category: media-sound
+    version: '>=0'
+  - name: gsm
+    category: media-sound
+    version: '>=0'
+  - name: jack-example-tools
+    category: media-sound
+    version: '>=0'
+  - name: jack2
+    category: media-sound
+    version: '>=0'
+  - name: lame
+    category: media-sound
+    version: '>=0'
+  - name: mpg123
+    category: media-sound
+    version: '>=0'
+  - name: musepack-tools
+    category: media-sound
+    version: '>=0'
+  - name: pulseaudio
+    category: media-sound
+    version: '>=0'
+  - name: sox
+    category: media-sound
+    version: '>=0'
+  - name: wavpack
+    category: media-sound
+    version: '>=0'
+  - name: ffmpeg
+    category: media-video
+    version: '>=0'
+  - name: ffmpegthumbnailer
+    category: media-video
+    version: '>=0'
+  - name: mjpegtools
+    category: media-video
+    version: '>=0'
+  - name: pipewire
+    category: media-video
+    version: '>=0'
+  - name: rav1e
+    category: media-video
+    version: '>=0'
+  - name: wireplumber
+    category: media-video
+    version: '>=0'
+  - name: traceroute
+    category: net-analyzer
+    version: '>=0'
+  - name: linux-atm
+    category: net-dialup
+    version: '>=0'
+  - name: ppp
+    category: net-dialup
+    version: '>=0'
+  - name: ppp-scripts
+    category: net-dialup
+    version: '>=0'
+  - name: avahi
+    category: net-dns
+    version: '>=0'
+  - name: c-ares
+    category: net-dns
+    version: '>=0'
+  - name: dnsmasq
+    category: net-dns
+    version: '>=0'
+  - name: dnssec-root
+    category: net-dns
+    version: '>=0'
+  - name: libidn
+    category: net-dns
+    version: '>=0'
+  - name: libidn2
+    category: net-dns
+    version: '>=0'
+  - name: unbound
+    category: net-dns
+    version: '>=0'
+  - name: iptables
+    category: net-firewall
+    version: '>=0'
+  - name: cifs-utils
+    category: net-fs
+    version: '>=0'
+  - name: libnfs
+    category: net-fs
+    version: '>=0'
+  - name: nfs-utils
+    category: net-fs
+    version: '>=0'
+  - name: samba
+    category: net-fs
+    version: '>=0'
+  - name: sshfs
+    category: net-fs
+    version: '>=0'
+  - name: glib-networking
+    category: net-libs
+    version: '>=0'
+  - name: gnutls
+    category: net-libs
+    version: '>=0'
+  - name: http-parser
+    category: net-libs
+    version: '>=0'
+  - name: libasyncns
+    category: net-libs
+    version: '>=0'
+  - name: libmbim
+    category: net-libs
+    version: '>=0'
+  - name: libmicrohttpd
+    category: net-libs
+    version: '>=0'
+  - name: libmnl
+    category: net-libs
+    version: '>=0'
+  - name: libnatpmp
+    category: net-libs
+    version: '>=0'
+  - name: libndp
+    category: net-libs
+    version: '>=0'
+  - name: libnetfilter_conntrack
+    category: net-libs
+    version: '>=0'
+  - name: libnfnetlink
+    category: net-libs
+    version: '>=0'
+  - name: libnsl
+    category: net-libs
+    version: '>=0'
+  - name: libpcap
+    category: net-libs
+    version: '>=0'
+  - name: libproxy
+    category: net-libs
+    version: '>=0'
+  - name: libpsl
+    category: net-libs
+    version: '>=0'
+  - name: libqmi
+    category: net-libs
+    version: '>=0'
+  - name: libqrtr-glib
+    category: net-libs
+    version: '>=0'
+  - name: libsoup
+    category: net-libs
+    version: '>=0'
+  - name: libsoup
+    category: net-libs
+    version: '>=0'
+  - name: libssh
+    category: net-libs
+    version: '>=0'
+  - name: libssh2
+    category: net-libs
+    version: '>=0'
+  - name: libtirpc
+    category: net-libs
+    version: '>=0'
+  - name: libtorrent-rasterbar
+    category: net-libs
+    version: '>=0'
+  - name: libupnp
+    category: net-libs
+    version: '>=0'
+  - name: libvncserver
+    category: net-libs
+    version: '>=0'
+  - name: miniupnpc
+    category: net-libs
+    version: '>=0'
+  - name: neon
+    category: net-libs
+    version: '>=0'
+  - name: nghttp2
+    category: net-libs
+    version: '>=0'
+  - name: rpcsvc-proto
+    category: net-libs
+    version: '>=0'
+  - name: mailbase
+    category: net-mail
+    version: '>=0'
+  - name: mailutils
+    category: net-mail
+    version: '>=0'
+  - name: curl
+    category: net-misc
+    version: '>=0'
+  - name: dhcpcd
+    category: net-misc
+    version: '>=0'
+  - name: freerdp
+    category: net-misc
+    version: '>=0'
+  - name: iputils
+    category: net-misc
+    version: '>=0'
+  - name: mobile-broadband-provider-info
+    category: net-misc
+    version: '>=0'
+  - name: modemmanager
+    category: net-misc
+    version: '>=0'
+  - name: networkmanager
+    category: net-misc
+    version: '>=0'
+  - name: ntp
+    category: net-misc
+    version: '>=0'
+  - name: ofono
+    category: net-misc
+    version: '>=0'
+  - name: openssh
+    category: net-misc
+    version: '>=0'
+  - name: rsync
+    category: net-misc
+    version: '>=0'
+  - name: wget
+    category: net-misc
+    version: '>=0'
+  - name: whois
+    category: net-misc
+    version: '>=0'
+  - name: openldap
+    category: net-nds
+    version: '>=0'
+  - name: rpcbind
+    category: net-nds
+    version: '>=0'
+  - name: cups
+    category: net-print
+    version: '>=0'
+  - name: cups-filters
+    category: net-print
+    version: '>=0'
+  - name: networkmanager-fortisslvpn
+    category: net-vpn
+    version: '>=0'
+  - name: openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: openfortivpn
+    category: net-vpn
+    version: '>=0'
+  - name: openvpn
+    category: net-vpn
+    version: '>=0'
+  - name: vpnc-scripts
+    category: net-vpn
+    version: '>=0'
+  - name: bluez
+    category: net-wireless
+    version: '>=0'
+  - name: crda
+    category: net-wireless
+    version: '>=0'
+  - name: iwd
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-regdb
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-tools
+    category: net-wireless
+    version: '>=0'
+  - name: Compress-Raw-Zlib
+    category: perl-core
+    version: '>=0'
+  - name: File-Temp
+    category: perl-core
+    version: '>=0'
+  - name: fftw
+    category: sci-libs
+    version: '>=0'
+  - name: gsl
+    category: sci-libs
+    version: '>=0'
+  - name: hdf5
+    category: sci-libs
+    version: '>=0'
+  - name: lapack
+    category: sci-libs
+    version: '>=0'
+  - name: libaec
+    category: sci-libs
+    version: '>=0'
+  - name: openpgp-keys-gentoo-release
+    category: sec-keys
+    version: '>=0'
+  - name: accountsservice
+    category: sys-apps
+    version: '>=0'
+  - name: acl
+    category: sys-apps
+    version: '>=0'
+  - name: attr
+    category: sys-apps
+    version: '>=0'
+  - name: baselayout
+    category: sys-apps
+    version: '>=0'
+  - name: bolt
+    category: sys-apps
+    version: '>=0'
+  - name: bubblewrap
+    category: sys-apps
+    version: '>=0'
+  - name: coreutils
+    category: sys-apps
+    version: '>=0'
+  - name: dbus
+    category: sys-apps
+    version: '>=0'
+  - name: debianutils
+    category: sys-apps
+    version: '>=0'
+  - name: diffutils
+    category: sys-apps
+    version: '>=0'
+  - name: dmidecode
+    category: sys-apps
+    version: '>=0'
+  - name: ed
+    category: sys-apps
+    version: '>=0'
+  - name: file
+    category: sys-apps
+    version: '>=0'
+  - name: findutils
+    category: sys-apps
+    version: '>=0'
+  - name: gawk
+    category: sys-apps
+    version: '>=0'
+  - name: gentoo-functions
+    category: sys-apps
+    version: '>=0'
+  - name: gentoo-systemd-integration
+    category: sys-apps
+    version: '>=0'
+  - name: gptfdisk
+    category: sys-apps
+    version: '>=0'
+  - name: grep
+    category: sys-apps
+    version: '>=0'
+  - name: groff
+    category: sys-apps
+    version: '>=0'
+  - name: hdparm
+    category: sys-apps
+    version: '>=0'
+  - name: help2man
+    category: sys-apps
+    version: '>=0'
+  - name: hwdata
+    category: sys-apps
+    version: '>=0'
+  - name: install-xattr
+    category: sys-apps
+    version: '>=0'
+  - name: iproute2
+    category: sys-apps
+    version: '>=0'
+  - name: kbd
+    category: sys-apps
+    version: '>=0'
+  - name: keyutils
+    category: sys-apps
+    version: '>=0'
+  - name: kmod
+    category: sys-apps
+    version: '>=0'
+  - name: less
+    category: sys-apps
+    version: '>=0'
+  - name: lm-sensors
+    category: sys-apps
+    version: '>=0'
+  - name: locale-gen
+    category: sys-apps
+    version: '>=0'
+  - name: lsb-release
+    category: sys-apps
+    version: '>=0'
+  - name: man-db
+    category: sys-apps
+    version: '>=0'
+  - name: man-pages
+    category: sys-apps
+    version: '>=0'
+  - name: miscfiles
+    category: sys-apps
+    version: '>=0'
+  - name: net-tools
+    category: sys-apps
+    version: '>=0'
+  - name: pciutils
+    category: sys-apps
+    version: '>=0'
+  - name: pcsc-lite
+    category: sys-apps
+    version: '>=0'
+  - name: portage
+    category: sys-apps
+    version: '>=0'
+  - name: sandbox
+    category: sys-apps
+    version: '>=0'
+  - name: sed
+    category: sys-apps
+    version: '>=0'
+  - name: shadow
+    category: sys-apps
+    version: '>=0'
+  - name: smartmontools
+    category: sys-apps
+    version: '>=0'
+  - name: systemd
+    category: sys-apps
+    version: '>=0'
+  - name: tcp-wrappers
+    category: sys-apps
+    version: '>=0'
+  - name: texinfo
+    category: sys-apps
+    version: '>=0'
+  - name: usbutils
+    category: sys-apps
+    version: '>=0'
+  - name: util-linux
+    category: sys-apps
+    version: '>=0'
+  - name: which
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-dbus-proxy
+    category: sys-apps
+    version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
+  - name: pambase
+    category: sys-auth
+    version: '>=0'
+  - name: passwdqc
+    category: sys-auth
+    version: '>=0'
+  - name: polkit
+    category: sys-auth
+    version: '>=0'
+  - name: realtime-base
+    category: sys-auth
+    version: '>=0'
+  - name: parted
+    category: sys-block
+    version: '>=0'
+  - name: zram-init
+    category: sys-block
+    version: '>=0'
+  - name: autoconf
+    category: sys-devel
+    version: '>=0'
+  - name: autoconf-archive
+    category: sys-devel
+    version: '>=0'
+  - name: autoconf-wrapper
+    category: sys-devel
+    version: '>=0'
+  - name: automake
+    category: sys-devel
+    version: '>=0'
+  - name: automake-wrapper
+    category: sys-devel
+    version: '>=0'
+  - name: bc
+    category: sys-devel
+    version: '>=0'
+  - name: binutils
+    category: sys-devel
+    version: '>=0'
+  - name: binutils-config
+    category: sys-devel
+    version: '>=0'
+  - name: bison
+    category: sys-devel
+    version: '>=0'
+  - name: clang
+    category: sys-devel
+    version: '>=0'
+  - name: clang-common
+    category: sys-devel
+    version: '>=0'
+  - name: clang-runtime
+    category: sys-devel
+    version: '>=0'
+  - name: clang-toolchain-symlinks
+    category: sys-devel
+    version: '>=0'
+  - name: flex
+    category: sys-devel
+    version: '>=0'
+  - name: gcc
+    category: sys-devel
+    version: '>=0'
+  - name: gcc-config
+    category: sys-devel
+    version: '>=0'
+  - name: gdb
+    category: sys-devel
+    version: '>=0'
+  - name: gettext
+    category: sys-devel
+    version: '>=0'
+  - name: gnuconfig
+    category: sys-devel
+    version: '>=0'
+  - name: libtool
+    category: sys-devel
+    version: '>=0'
+  - name: llvm
+    category: sys-devel
+    version: '>=0'
+  - name: llvm-common
+    category: sys-devel
+    version: '>=0'
+  - name: llvm-toolchain-symlinks
+    category: sys-devel
+    version: '>=0'
+  - name: llvmgold
+    category: sys-devel
+    version: '>=0'
+  - name: m4
+    category: sys-devel
+    version: '>=0'
+  - name: make
+    category: sys-devel
+    version: '>=0'
+  - name: patch
+    category: sys-devel
+    version: '>=0'
+  - name: btrfs-progs
+    category: sys-fs
+    version: '>=0'
+  - name: compsize
+    category: sys-fs
+    version: '>=0'
+  - name: cryptsetup
+    category: sys-fs
+    version: '>=0'
+  - name: dmraid
+    category: sys-fs
+    version: '>=0'
+  - name: dosfstools
+    category: sys-fs
+    version: '>=0'
+  - name: duperemove
+    category: sys-fs
+    version: '>=0'
+  - name: e2fsprogs
+    category: sys-fs
+    version: '>=0'
+  - name: exfat-utils
+    category: sys-fs
+    version: '>=0'
+  - name: f2fs-tools
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: fuse-common
+    category: sys-fs
+    version: '>=0'
+  - name: fuse-exfat
+    category: sys-fs
+    version: '>=0'
+  - name: lvm2
+    category: sys-fs
+    version: '>=0'
+  - name: mdadm
+    category: sys-fs
+    version: '>=0'
+  - name: mtools
+    category: sys-fs
+    version: '>=0'
+  - name: multipath-tools
+    category: sys-fs
+    version: '>=0'
+  - name: ntfs3g
+    category: sys-fs
+    version: '>=0'
+  - name: squashfs-tools
+    category: sys-fs
+    version: '>=0'
+  - name: udev-init-scripts
+    category: sys-fs
+    version: '>=0'
+  - name: udisks
+    category: sys-fs
+    version: '>=0'
+  - name: zfs
+    category: sys-fs
+    version: '>=0'
+  - name: dracut
+    category: sys-kernel
+    version: '>=0'
+  - name: installkernel-gentoo
+    category: sys-kernel
+    version: '>=0'
+  - name: linux-headers
+    category: sys-kernel
+    version: '>=0'
+  - name: binutils-libs
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt
+    category: sys-libs
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: sys-libs
+    version: '>=0'
+  - name: cracklib
+    category: sys-libs
+    version: '>=0'
+  - name: db
+    category: sys-libs
+    version: '>=0'
+  - name: gdbm
+    category: sys-libs
+    version: '>=0'
+  - name: glibc
+    category: sys-libs
+    version: '>=0'
+  - name: ldb
+    category: sys-libs
+    version: '>=0'
+  - name: libblockdev
+    category: sys-libs
+    version: '>=0'
+  - name: libcap
+    category: sys-libs
+    version: '>=0'
+  - name: libcap-ng
+    category: sys-libs
+    version: '>=0'
+  - name: libomp
+    category: sys-libs
+    version: '>=0'
+  - name: libraw1394
+    category: sys-libs
+    version: '>=0'
+  - name: libseccomp
+    category: sys-libs
+    version: '>=0'
+  - name: libunwind
+    category: sys-libs
+    version: '>=0'
+  - name: liburing
+    category: sys-libs
+    version: '>=0'
+  - name: libutempter
+    category: sys-libs
+    version: '>=0'
+  - name: libxcrypt
+    category: sys-libs
+    version: '>=0'
+  - name: mtdev
+    category: sys-libs
+    version: '>=0'
+  - name: ncurses
+    category: sys-libs
+    version: '>=0'
+  - name: pam
+    category: sys-libs
+    version: '>=0'
+  - name: readline
+    category: sys-libs
+    version: '>=0'
+  - name: slang
+    category: sys-libs
+    version: '>=0'
+  - name: talloc
+    category: sys-libs
+    version: '>=0'
+  - name: tdb
+    category: sys-libs
+    version: '>=0'
+  - name: tevent
+    category: sys-libs
+    version: '>=0'
+  - name: timezone-data
+    category: sys-libs
+    version: '>=0'
+  - name: zlib
+    category: sys-libs
+    version: '>=0'
+  - name: cpupower
+    category: sys-power
+    version: '>=0'
+  - name: upower
+    category: sys-power
+    version: '>=0'
+  - name: cronbase
+    category: sys-process
+    version: '>=0'
+  - name: cronie
+    category: sys-process
+    version: '>=0'
+  - name: lsof
+    category: sys-process
+    version: '>=0'
+  - name: procps
+    category: sys-process
+    version: '>=0'
+  - name: psmisc
+    category: sys-process
+    version: '>=0'
+  - name: acl
+    category: virtual
+    version: '>=0'
+  - name: cblas
+    category: virtual
+    version: '>=0'
+  - name: dev-manager
+    category: virtual
+    version: '>=0'
+  - name: editor
+    category: virtual
+    version: '>=0'
+  - name: fortran
+    category: virtual
+    version: '>=0'
+  - name: glu
+    category: virtual
+    version: '>=0'
+  - name: jack
+    category: virtual
+    version: '>=0'
+  - name: jpeg
+    category: virtual
+    version: '>=0'
+  - name: krb5
+    category: virtual
+    version: '>=0'
+  - name: lapack
+    category: virtual
+    version: '>=0'
+  - name: latex-base
+    category: virtual
+    version: '>=0'
+  - name: libc
+    category: virtual
+    version: '>=0'
+  - name: libcrypt
+    category: virtual
+    version: '>=0'
+  - name: libelf
+    category: virtual
+    version: '>=0'
+  - name: libiconv
+    category: virtual
+    version: '>=0'
+  - name: libintl
+    category: virtual
+    version: '>=0'
+  - name: libudev
+    category: virtual
+    version: '>=0'
+  - name: libusb
+    category: virtual
+    version: '>=0'
+  - name: mailx
+    category: virtual
+    version: '>=0'
+  - name: man
+    category: virtual
+    version: '>=0'
+  - name: mta
+    category: virtual
+    version: '>=0'
+  - name: mysql
+    category: virtual
+    version: '>=0'
+  - name: notification-daemon
+    category: virtual
+    version: '>=0'
+  - name: opencl
+    category: virtual
+    version: '>=0'
+  - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: openssh
+    category: virtual
+    version: '>=0'
+  - name: os-headers
+    category: virtual
+    version: '>=0'
+  - name: package-manager
+    category: virtual
+    version: '>=0'
+  - name: pager
+    category: virtual
+    version: '>=0'
+  - name: perl-Carp
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Bzip2
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Zlib
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-Requirements
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-YAML
+    category: virtual
+    version: '>=0'
+  - name: perl-Data-Dumper
+    category: virtual
+    version: '>=0'
+  - name: perl-Digest-MD5
+    category: virtual
+    version: '>=0'
+  - name: perl-Digest-SHA
+    category: virtual
+    version: '>=0'
+  - name: perl-Encode
+    category: virtual
+    version: '>=0'
+  - name: perl-Exporter
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-CBuilder
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-Install
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-MakeMaker
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-Manifest
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-ParseXS
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Path
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Spec
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Temp
+    category: virtual
+    version: '>=0'
+  - name: perl-Getopt-Long
+    category: virtual
+    version: '>=0'
+  - name: perl-if
+    category: virtual
+    version: '>=0'
+  - name: perl-IO
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Compress
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Socket-IP
+    category: virtual
+    version: '>=0'
+  - name: perl-IPC-Cmd
+    category: virtual
+    version: '>=0'
+  - name: perl-JSON-PP
+    category: virtual
+    version: '>=0'
+  - name: perl-libnet
+    category: virtual
+    version: '>=0'
+  - name: perl-Locale-Maketext
+    category: virtual
+    version: '>=0'
+  - name: perl-MIME-Base64
+    category: virtual
+    version: '>=0'
+  - name: perl-Module-Metadata
+    category: virtual
+    version: '>=0'
+  - name: perl-parent
+    category: virtual
+    version: '>=0'
+  - name: perl-Parse-CPAN-Meta
+    category: virtual
+    version: '>=0'
+  - name: perl-Perl-OSType
+    category: virtual
+    version: '>=0'
+  - name: perl-podlators
+    category: virtual
+    version: '>=0'
+  - name: perl-Scalar-List-Utils
+    category: virtual
+    version: '>=0'
+  - name: perl-Storable
+    category: virtual
+    version: '>=0'
+  - name: perl-Sys-Syslog
+    category: virtual
+    version: '>=0'
+  - name: perl-Test-Harness
+    category: virtual
+    version: '>=0'
+  - name: perl-Test-Simple
+    category: virtual
+    version: '>=0'
+  - name: perl-Text-ParseWords
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-HiRes
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-Local
+    category: virtual
+    version: '>=0'
+  - name: perl-version
+    category: virtual
+    version: '>=0'
+  - name: perl-XSLoader
+    category: virtual
+    version: '>=0'
+  - name: pkgconfig
+    category: virtual
+    version: '>=0'
+  - name: ruby-ssl
+    category: virtual
+    version: '>=0'
+  - name: rubygems
+    category: virtual
+    version: '>=0'
+  - name: rust
+    category: virtual
+    version: '>=0'
+  - name: service-manager
+    category: virtual
+    version: '>=0'
+  - name: ssh
+    category: virtual
+    version: '>=0'
+  - name: szip
+    category: virtual
+    version: '>=0'
+  - name: tex-base
+    category: virtual
+    version: '>=0'
+  - name: texi2dvi
+    category: virtual
+    version: '>=0'
+  - name: tmpfiles
+    category: virtual
+    version: '>=0'
+  - name: ttf-fonts
+    category: virtual
+    version: '>=0'
+  - name: udev
+    category: virtual
+    version: '>=0'
+  - name: w3m
+    category: virtual
+    version: '>=0'
+  - name: w3m
+    category: www-client
+    version: '>=0'
+  - name: bdftopcf
+    category: x11-apps
+    version: '>=0'
+  - name: fonttosfnt
+    category: x11-apps
+    version: '>=0'
+  - name: iceauth
+    category: x11-apps
+    version: '>=0'
+  - name: luit
+    category: x11-apps
+    version: '>=0'
+  - name: mesa-progs
+    category: x11-apps
+    version: '>=0'
+  - name: mkfontscale
+    category: x11-apps
+    version: '>=0'
+  - name: rgb
+    category: x11-apps
+    version: '>=0'
+  - name: sessreg
+    category: x11-apps
+    version: '>=0'
+  - name: setxkbmap
+    category: x11-apps
+    version: '>=0'
+  - name: xauth
+    category: x11-apps
+    version: '>=0'
+  - name: xconsole
+    category: x11-apps
+    version: '>=0'
+  - name: xdm
+    category: x11-apps
+    version: '>=0'
+  - name: xdpyinfo
+    category: x11-apps
+    version: '>=0'
+  - name: xhost
+    category: x11-apps
+    version: '>=0'
+  - name: xinit
+    category: x11-apps
+    version: '>=0'
+  - name: xinput
+    category: x11-apps
+    version: '>=0'
+  - name: xkbcomp
+    category: x11-apps
+    version: '>=0'
+  - name: xmessage
+    category: x11-apps
+    version: '>=0'
+  - name: xmodmap
+    category: x11-apps
+    version: '>=0'
+  - name: xprop
+    category: x11-apps
+    version: '>=0'
+  - name: xrandr
+    category: x11-apps
+    version: '>=0'
+  - name: xrdb
+    category: x11-apps
+    version: '>=0'
+  - name: xrefresh
+    category: x11-apps
+    version: '>=0'
+  - name: xset
+    category: x11-apps
+    version: '>=0'
+  - name: xsetroot
+    category: x11-apps
+    version: '>=0'
+  - name: xsm
+    category: x11-apps
+    version: '>=0'
+  - name: xcb-proto
+    category: x11-base
+    version: '>=0'
+  - name: xorg-drivers
+    category: x11-base
+    version: '>=0'
+  - name: xorg-proto
+    category: x11-base
+    version: '>=0'
+  - name: xorg-server
+    category: x11-base
+    version: '>=0'
+  - name: xwayland
+    category: x11-base
+    version: '>=0'
+  - name: xf86-input-evdev
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-joystick
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-libinput
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-mtrack
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-synaptics
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-vmmouse
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-void
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-wacom
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-amdgpu
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-ast
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-ati
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-dummy
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-fbdev
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-intel
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-nouveau
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-openchrome
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-qxl
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-r128
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-siliconmotion
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-vboxvideo
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-vesa
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-vmware
+    category: x11-drivers
+    version: '>=0'
+  - name: cairo
+    category: x11-libs
+    version: '>=0'
+  - name: gdk-pixbuf
+    category: x11-libs
+    version: '>=0'
+  - name: gtk+
+    category: x11-libs
+    version: '>=0'
+  - name: libdrm
+    category: x11-libs
+    version: '>=0'
+  - name: libfakekey
+    category: x11-libs
+    version: '>=0'
+  - name: libfontenc
+    category: x11-libs
+    version: '>=0'
+  - name: libICE
+    category: x11-libs
+    version: '>=0'
+  - name: libnotify
+    category: x11-libs
+    version: '>=0'
+  - name: libpciaccess
+    category: x11-libs
+    version: '>=0'
+  - name: libSM
+    category: x11-libs
+    version: '>=0'
+  - name: libvdpau
+    category: x11-libs
+    version: '>=0'
+  - name: libX11
+    category: x11-libs
+    version: '>=0'
+  - name: libXau
+    category: x11-libs
+    version: '>=0'
+  - name: libXaw
+    category: x11-libs
+    version: '>=0'
+  - name: libxcb
+    category: x11-libs
+    version: '>=0'
+  - name: libXcomposite
+    category: x11-libs
+    version: '>=0'
+  - name: libXcursor
+    category: x11-libs
+    version: '>=0'
+  - name: libxcvt
+    category: x11-libs
+    version: '>=0'
+  - name: libXdamage
+    category: x11-libs
+    version: '>=0'
+  - name: libXdmcp
+    category: x11-libs
+    version: '>=0'
+  - name: libXext
+    category: x11-libs
+    version: '>=0'
+  - name: libXfixes
+    category: x11-libs
+    version: '>=0'
+  - name: libXfont2
+    category: x11-libs
+    version: '>=0'
+  - name: libXft
+    category: x11-libs
+    version: '>=0'
+  - name: libXi
+    category: x11-libs
+    version: '>=0'
+  - name: libXinerama
+    category: x11-libs
+    version: '>=0'
+  - name: libxkbcommon
+    category: x11-libs
+    version: '>=0'
+  - name: libxkbfile
+    category: x11-libs
+    version: '>=0'
+  - name: libxklavier
+    category: x11-libs
+    version: '>=0'
+  - name: libXmu
+    category: x11-libs
+    version: '>=0'
+  - name: libXpm
+    category: x11-libs
+    version: '>=0'
+  - name: libXpresent
+    category: x11-libs
+    version: '>=0'
+  - name: libXrandr
+    category: x11-libs
+    version: '>=0'
+  - name: libXrender
+    category: x11-libs
+    version: '>=0'
+  - name: libXres
+    category: x11-libs
+    version: '>=0'
+  - name: libXScrnSaver
+    category: x11-libs
+    version: '>=0'
+  - name: libxshmfence
+    category: x11-libs
+    version: '>=0'
+  - name: libXt
+    category: x11-libs
+    version: '>=0'
+  - name: libXtst
+    category: x11-libs
+    version: '>=0'
+  - name: libXv
+    category: x11-libs
+    version: '>=0'
+  - name: libXvMC
+    category: x11-libs
+    version: '>=0'
+  - name: libXxf86dga
+    category: x11-libs
+    version: '>=0'
+  - name: libXxf86vm
+    category: x11-libs
+    version: '>=0'
+  - name: pango
+    category: x11-libs
+    version: '>=0'
+  - name: pixman
+    category: x11-libs
+    version: '>=0'
+  - name: startup-notification
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-cursor
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-image
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-keysyms
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-renderutil
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-wm
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-xrm
+    category: x11-libs
+    version: '>=0'
+  - name: xtrans
+    category: x11-libs
+    version: '>=0'
+  - name: colord
+    category: x11-misc
+    version: '>=0'
+  - name: compose-tables
+    category: x11-misc
+    version: '>=0'
+  - name: makedepend
+    category: x11-misc
+    version: '>=0'
+  - name: notification-daemon
+    category: x11-misc
+    version: '>=0'
+  - name: shared-mime-info
+    category: x11-misc
+    version: '>=0'
+  - name: util-macros
+    category: x11-misc
+    version: '>=0'
+  - name: xbitmaps
+    category: x11-misc
+    version: '>=0'
+  - name: xdg-user-dirs
+    category: x11-misc
+    version: '>=0'
+  - name: xdg-utils
+    category: x11-misc
+    version: '>=0'
+  - name: xkeyboard-config
+    category: x11-misc
+    version: '>=0'
+  - name: xterm
+    category: x11-terms
+    version: '>=0'
+  - name: adwaita-icon-theme
+    category: x11-themes
+    version: '>=0'
+  - name: hicolor-icon-theme
+    category: x11-themes
+    version: '>=0'
+  - name: sound-theme-freedesktop
+    category: x11-themes
+    version: '>=0'
 # app-eselect/eselect-ruby dev-lang/ruby virtual/ruby-ssl dev-ruby/rubygems virtual/rubygems dev-ruby/rbs dev-ruby/typeprof dev-ruby/minitest dev-ruby/did_you_mean dev-ruby/rake dev-ruby/json dev-ruby/rexml dev-ruby/rss dev-ruby/power_assert dev-ruby/test-unit dev-ruby/bundler dev-ruby/kpeg dev-ruby/racc dev-ruby/stringio dev-ruby/psych dev-ruby/rdoc
