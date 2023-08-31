@@ -43,7 +43,7 @@ BDEPEND="${DEPEND}
 	dev-util/ninja
 "
 src_prepare(){
-	sed -e 's|CMAKE_CXX_STANDARD 14|CMAKE_CXX_STANDARD 17|' -i libcutefish-0.7/CMakeLists.txt
+	sed -e 's|CMAKE_CXX_STANDARD 14|CMAKE_CXX_STANDARD 17|' -i src/libcutefish-0.7/CMakeLists.txt || die "Sed failed!"
 	eapply "${FILESDIR}/libkscreen-5.27.patch"
 	eapply_user
 }
