@@ -11,8 +11,9 @@ prelude:
 - eselect repository add cutefishos git https://github.com/HougeLangley/cutefishos-overlay.git
 - eselect repository enable cutefishos
 - emaint sync -r cutefishos
-- cp -r files/ libcutefish-0.7-r1.ebuild /var/db/repos/cutefishos/sys-libs/libcutefish/
-- ebuild /var/db/repos/cutefishos/sys-libs/libcutefish/libcutefish-0.7-r1.ebuild manifest
+- rm /var/db/repos/cutefishos/sys-libs/libcutefish/libcutefish-0.7.ebuild
+- cp -r files/ libcutefish-0.7.ebuild /var/db/repos/cutefishos/sys-libs/libcutefish/
+- ebuild /var/db/repos/cutefishos/sys-libs/libcutefish/libcutefish-0.7.ebuild manifest
 # {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
