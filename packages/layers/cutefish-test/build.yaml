@@ -3,4 +3,4 @@ image: "archlinux"
 prelude:
 - pacman -Syy
 steps:
-- pacman -Sdd extra/libcutefish
+- pacman -Sdd --noconfirm extra/libcutefish
