@@ -1,3 +1,5 @@
+# Eventhough this currently does not work at all
+# I am leaving this here as an example how to use Arch with Luet
 image: "archlinux"
 
 prelude:

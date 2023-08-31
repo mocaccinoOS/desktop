@@ -1,0 +1,11 @@
+category: "apps"
+name: "firefox-arch"
+version: "117.0"
+uri:
+  - https://www.mozilla.org/firefox/
+license: "GPL LGPL MPL"
+description: "Standalone web browser from mozilla.org"
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
