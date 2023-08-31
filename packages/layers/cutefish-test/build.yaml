@@ -1,6 +1,0 @@
-image: "archlinux"
-
-prelude:
-- pacman -Syy
-steps:
-- pacman -Sdd --noconfirm extra/libcutefish
