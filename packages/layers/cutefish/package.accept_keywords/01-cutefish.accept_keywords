@@ -17,3 +17,4 @@ cutefish-base/cutefish-videoplayer ~amd64
 cutefish-base/cutefish-wallpapers ~amd64
 sys-libs/cutefish-core ~amd64
 sys-libs/fishui ~amd64
+sys-libs/libcutefish ~amd64

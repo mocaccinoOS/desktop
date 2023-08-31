@@ -8,7 +8,7 @@ description: "CutefishOS Linux Desktop Environment"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    cutefish-base/cutefish-appmotor cutefish-base/cutefish-calculator cutefish-base/cutefish-dock cutefish-base/cutefish-filemanager cutefish-base/cutefish-launcher cutefish-base/cutefish-icons cutefish-base/cutefish-kwin-plugins cutefish-base/cutefish-meta cutefish-base/cutefish-qt-plugins cutefish-base/cutefish-screenlocker cutefish-base/cutefish-screenshot cutefish-base/cutefish-settings cutefish-base/cutefish-statusbar cutefish-base/cutefish-terminal cutefish-base/cutefish-texteditor cutefish-base/cutefish-videoplayer cutefish-base/cutefish-wallpapers sys-libs/cutefish-core sys-libs/fishui
+    cutefish-base/cutefish-appmotor cutefish-base/cutefish-calculator cutefish-base/cutefish-dock cutefish-base/cutefish-filemanager cutefish-base/cutefish-launcher cutefish-base/cutefish-icons cutefish-base/cutefish-kwin-plugins cutefish-base/cutefish-meta cutefish-base/cutefish-qt-plugins cutefish-base/cutefish-screenlocker cutefish-base/cutefish-screenshot cutefish-base/cutefish-settings cutefish-base/cutefish-statusbar cutefish-base/cutefish-terminal cutefish-base/cutefish-texteditor cutefish-base/cutefish-videoplayer cutefish-base/cutefish-wallpapers sys-libs/cutefish-core sys-libs/fishui sys-libs/libcutefish
 requires:
   - category: "layers"
     name: "plasma"
@@ -69,5 +69,8 @@ provides:
     category: sys-libs
     version: '>=0'
   - name: fishui
+    category: sys-libs
+    version: '>=0'
+  - name: libcutefish
     category: sys-libs
     version: '>=0'
