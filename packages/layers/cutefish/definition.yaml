@@ -1,6 +1,10 @@
 category: "layers"
 name: "cutefish"
-version: "0.8+2"
+version: "0.8+3"
+uri:
+  - https://github.com/cutefishos/
+license: "GPLv3"
+description: "CutefishOS Linux Desktop Environment"
 requires:
   - category: "layers"
     name: "plasma"
