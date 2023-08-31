@@ -1,0 +1,7 @@
+category: "layers"
+name: "cutefish"
+version: "0.8"
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
