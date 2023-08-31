@@ -1,3 +1,4 @@
+cutefish-base/cutefish-appmotor ~amd64
 cutefish-base/cutefish-calculator ~amd64
 cutefish-base/cutefish-dock ~amd64
 cutefish-base/cutefish-filemanager ~amd64
@@ -6,8 +7,13 @@ cutefish-base/cutefish-icons ~amd64
 cutefish-base/cutefish-kwin-plugins ~amd64
 cutefish-base/cutefish-meta ~amd64
 cutefish-base/cutefish-qt-plugins ~amd64
+cutefish-base/cutefish-screenlocker ~amd64
+cutefish-base/cutefish-screenshot ~amd64
 cutefish-base/cutefish-settings ~amd64
 cutefish-base/cutefish-statusbar ~amd64
+cutefish-base/cutefish-terminal ~amd64
+cutefish-base/cutefish-texteditor ~amd64
+cutefish-base/cutefish-videoplayer ~amd64
 cutefish-base/cutefish-wallpapers ~amd64
 sys-libs/cutefish-core ~amd64
 sys-libs/fishui ~amd64

@@ -10,6 +10,8 @@ prelude:
 - eselect repository add cutefishos git https://github.com/HougeLangley/cutefishos-overlay.git
 - eselect repository enable cutefishos
 - emaint sync -r cutefishos
+- cp cutefish-meta-0.8-r1.ebuild /var/db/repos/cutefishos/cutefish-base/cutefish-meta/
+- ebuild /var/db/repos/cutefishos/cutefish-base/cutefish-meta/cutefish-meta-0.8-r1.ebuild manifest
 # {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
