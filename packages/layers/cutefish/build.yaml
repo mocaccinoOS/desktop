@@ -19,5 +19,5 @@ steps:
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
-  name: "kde-common"
+  name: "plasma"
   version: ">=0"
