@@ -1,0 +1,21 @@
+excludes:
+{{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.use /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
+- emerge -1 app-eselect/eselect-repository
+- eselect repository add cutefishos git https://github.com/HougeLangley/cutefishos-overlay.git
+- eselect repository enable cutefishos
+- emaint sync -r cutefishos
+# {{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
+- eselect repository remove cutefishos
+- emerge -C app-eselect/eselect-repository
+requires:
+- category: "layers"
+  name: "kde-common"
+  version: ">=0"
