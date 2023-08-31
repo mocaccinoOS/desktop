@@ -44,6 +44,8 @@ BDEPEND="${DEPEND}
 "
 src_prepare(){
 	sed -e 's|CMAKE_CXX_STANDARD 14|CMAKE_CXX_STANDARD 17|' -i libcutefish-0.7/CMakeLists.txt
+	eapply "${FILESDIR}/libkscreen-5.27.patch"
+	eapply_user
 }
 
 src_configure(){
