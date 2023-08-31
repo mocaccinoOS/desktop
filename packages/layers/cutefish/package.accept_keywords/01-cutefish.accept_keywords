@@ -1,1 +1,4 @@
+cutefish-base/cutefish-icons ~amd64
+cutefish-base/cutefish-kwin-plugins ~amd64
 cutefish-base/cutefish-meta ~amd64
+sys-libs/cutefish-core ~amd64
