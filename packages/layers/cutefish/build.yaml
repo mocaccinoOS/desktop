@@ -1,6 +1,12 @@
 image: "archlinux"
 
 prelude:
+# Update pacman DB
 - pacman -Syy
 steps:
+# Install packages
 - pacman -Sdd --noconfirm extra/libcutefish extra/fishui extra/cutefish-core extra/cutefish-calculator extra/cutefish-dock extra/cutefish-filemanager extra/cutefish-icons extra/cutefish-kwin-plugins extra/cutefish-launcher extra/cutefish-qt-plugins extra/cutefish-screenlocker extra/cutefish-settings extra/cutefish-statusbar extra/cutefish-terminal extra/cutefish-wallpapers 
+excludes:
+# Exclude stuff we do not need to ship to user
+- ^var/lib/pacman/local
+- ^var/cache/pacman/pkg
