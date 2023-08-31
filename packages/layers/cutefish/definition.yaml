@@ -8,12 +8,24 @@ description: "CutefishOS Linux Desktop Environment"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    cutefish-base/cutefish-icons cutefish-base/cutefish-kwin-plugins cutefish-base/cutefish-meta sys-libs/cutefish-core
+    cutefish-base/cutefish-calculator cutefish-base/cutefish-dock cutefish-base/cutefish-filemanager cutefish-base/cutefish-launcher cutefish-base/cutefish-icons cutefish-base/cutefish-kwin-plugins cutefish-base/cutefish-meta cutefish-base/cutefish-qt-plugins cutefish-base/cutefish-settings cutefish-base/cutefish-statusbar cutefish-base/cutefish-wallpapers sys-libs/cutefish-core sys-libs/fishui
 requires:
   - category: "layers"
     name: "kde-common"
     version: ">=0"
 provides:
+  - name: cutefish-calculator
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-dock
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-filemanager
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-launcher
+    category: cutefish-base
+    version: '>=0'
   - name: cutefish-icons
     category: cutefish-base
     version: '>=0'
@@ -23,6 +35,21 @@ provides:
   - name: cutefish-meta
     category: cutefish-base
     version: '>=0'
+  - name: cutefish-qt-plugins
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-settings
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-statusbar
+    category: cutefish-base
+    version: '>=0'
+  - name: cutefish-wallpapers
+    category: cutefish-base
+    version: '>=0'
   - name: cutefish-core
+    category: sys-libs
+    version: '>=0'
+  - name: fishui
     category: sys-libs
     version: '>=0'
