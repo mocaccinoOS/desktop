@@ -27,7 +27,6 @@ RDEPEND="
 		>=cutefish-base/cutefish-screenlocker-0.8:${SLOT}
 		>=cutefish-base/cutefish-screenshot-0.8:${SLOT}
 		>=cutefish-base/cutefish-videoplayer-0.7:${SLOT}
-#		x11-misc/sddm
 		x11-misc/xdg-user-dirs
 		appmotor?	(	>=cutefish-base/cutefish-appmotor-0.8:${SLOT}	)
 		terminal?	(	>=cutefish-base/cutefish-terminal-0.8:${SLOT}	)
