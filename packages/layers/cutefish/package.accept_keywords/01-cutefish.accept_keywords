@@ -9,6 +9,7 @@ cutefish-base/cutefish-meta ~amd64
 cutefish-base/cutefish-qt-plugins ~amd64
 cutefish-base/cutefish-screenlocker ~amd64
 cutefish-base/cutefish-screenshot ~amd64
+cutefish-base/cutefish-sddm-theme ~amd64
 cutefish-base/cutefish-settings ~amd64
 cutefish-base/cutefish-statusbar ~amd64
 cutefish-base/cutefish-terminal ~amd64
