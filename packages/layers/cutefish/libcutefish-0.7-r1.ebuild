@@ -11,7 +11,7 @@ if [[ ${PV} == 9999* ]] ; then
 	EGIT_CHECKOUT_DIR=${PN}-${PV}
 	KEYWORDS=""
 else
-	EGIT_COMMIT="6bf2df8e91bcc21b116fec7df35d30d415122b39"
+	EGIT_COMMIT="7a1f2fa580de0e4fab554793c7915a8258cd0f40"
 	SRC_URI="https://github.com/cutefishos/libcutefish/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm64 ~riscv ~loong"
 	S="${WORKDIR}/${PN}-${EGIT_COMMIT}"
@@ -43,7 +43,7 @@ BDEPEND="${DEPEND}
 	dev-util/ninja
 "
 src_prepare(){
-	sed -e 's|CMAKE_CXX_STANDARD 14|CMAKE_CXX_STANDARD 17|' -i "${S}/${PN}-${EGIT_COMMIT}/CMakeLists.txt" || die "Sed failed!"
+	sed -e 's|CMAKE_CXX_STANDARD 14|CMAKE_CXX_STANDARD 17|' -i "${S}/CMakeLists.txt" || die "Sed failed!"
 	eapply "${FILESDIR}/libkscreen-5.27.patch"
 	eapply_user
 }
