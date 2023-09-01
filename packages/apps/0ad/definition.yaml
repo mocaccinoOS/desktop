@@ -8,12 +8,15 @@ description: "A free, real-time strategy game"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    games-strategy/0ad
+    games-strategy/0ad net-libs/enet net-libs/gloox
 provides:
   - name: 0ad
     category: games-strategy
     version: '>=0'
   - name: enet
+    category: net-libs
+    version: '>=0'
+  - name: gloox
     category: net-libs
     version: '>=0'
 requires:
