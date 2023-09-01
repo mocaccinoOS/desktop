@@ -1,2 +1,3 @@
 games-strategy/0ad ~amd64
 net-libs/gloox ~amd64
+dev-util/premake ~amd64
