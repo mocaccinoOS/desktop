@@ -4,7 +4,6 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
