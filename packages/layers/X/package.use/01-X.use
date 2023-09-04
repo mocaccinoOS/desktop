@@ -2,7 +2,7 @@ app-accessibility/at-spi2-core introspection -X
 app-i18n/ibus dconf gtk vala -emoji -gtk2
 app-text/enchant aspell
 app-text/ghostscript-gpl cups -cjk -gtk -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
-app-text/poppler jpeg2k -qt5
+app-text/poppler jpeg2k nss -qt5
 app-text/texlive-core xetex
 app-text/xmlto text
 dev-lang/luajit lua52compat
