@@ -5,7 +5,6 @@ requires:
 unpack: true
 env:
 {{ template "portage_env" . }}
-
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf profile /etc/portage/
@@ -22,6 +21,9 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
+# new perl in tree we can remove this step once newer stage3 has perl 5.38.x
+- emerge -uDNav --backtrack=100 --autounmask-keep-masks=y @world
+- perl-cleaner --all
 - emerge -1uDN @system -j 8
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
