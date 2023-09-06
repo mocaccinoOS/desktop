@@ -1,1 +1,2 @@
-# Placeholder
+# mask new perl until newer stage3 features that
+dev-lang/perl:0/5.38
