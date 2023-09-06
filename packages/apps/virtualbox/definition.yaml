@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 7.0.8a+25
+version: 7.0.8a+26
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"
@@ -8,7 +8,7 @@ description: "Family of powerful x86 virtualization products for enterprise and 
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/virtualbox
+    app-emulation/virtualbox dev-libs/libtpms
 requires:
   - category: "layers"
     name: "qt"
