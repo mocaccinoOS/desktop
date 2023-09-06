@@ -23,6 +23,7 @@ prelude:
 steps:
 # test step replacing perl and see what happens..
 - emerge -C dev-lang/perl && emerge dev-lang/perl:0/5.38 && perl-cleaner --all
+- emerge virtual/libudev
 - emerge -1uDN @system -j 8
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
