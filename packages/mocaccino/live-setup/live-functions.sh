@@ -189,7 +189,7 @@ setup_desktop_session() {
 setup_display_manager() {
     # SDDM
     if [ -f "$SDDM_FILE" ]; then
-        sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1breeze/" $SDDM_FILE
+        sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1Breeze/" $SDDM_FILE
     fi
 }
 
