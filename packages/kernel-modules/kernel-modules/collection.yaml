@@ -19,7 +19,7 @@ packages:
   #         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.0.8+23
+    version: 7.0.8+24
     lts: true
     emerge:
       jobs: "3"
