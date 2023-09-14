@@ -236,7 +236,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20211218+83
+    version: 20211218+84
     lts: true
     labels:
       emerge.jobs: "3"
