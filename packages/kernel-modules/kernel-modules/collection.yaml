@@ -258,7 +258,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl88x2bu-lts"
-    version: 20211010+74
+    version: 20211010+75
     lts: true
     labels:
       emerge.jobs: "3"
