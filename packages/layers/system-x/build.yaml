@@ -21,8 +21,6 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 steps:
-# test step replacing perl and see what happens..
-- emerge -C dev-lang/perl && emerge dev-lang/perl:0/5.38 && perl-cleaner --all
 # Try to fix circular dependencies
 - USE="-udev" emerge -1 sys-apps/util-linux && USE="-cryptsetup" emerge -1 sys-apps/systemd
 - emerge -1uDN @system -j 8
