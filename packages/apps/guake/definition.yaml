@@ -1,6 +1,6 @@
 category: "apps"
 name: "guake"
-version: 3.9.0+37
+version: 3.9.0+38
 uri:
   - http://guake-project.org
 license: "GPL-2+"
