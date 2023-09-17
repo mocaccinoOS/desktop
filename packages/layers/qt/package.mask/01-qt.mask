@@ -1,3 +1,4 @@
 # Do not pull in Qt6
 dev-qt/qtbase
 dev-qt/qtwebengine:6
+dev-qt/qtwebsockets:6
