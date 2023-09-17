@@ -1,0 +1,2 @@
+# Do not pull in Qt6
+dev-qt/qtbase
