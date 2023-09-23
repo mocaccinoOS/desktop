@@ -121,7 +121,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-cxgb3"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-cxgb4"
     version: 2+47
