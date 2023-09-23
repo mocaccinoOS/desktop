@@ -85,7 +85,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-ath6k"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-ath9k_htc"
     version: 2+47
