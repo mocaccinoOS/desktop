@@ -44,7 +44,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "spice-gtk"
-    version: 0+127
+    version: 0+128
   - !!merge <<: *X
     real_category: "apps"
     name: "libvirt"
