@@ -1,6 +1,6 @@
 category: "layers"
 name: "fluxbox"
-version: 1.3.7-r4+30
+version: 1.3.7-r4+31
 uri:
   - http://www.fluxbox.org
 license: "MIT"
