@@ -145,7 +145,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-ene-ub6250"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-go7007"
     version: 2+47
