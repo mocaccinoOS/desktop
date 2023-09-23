@@ -226,7 +226,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-r128"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-radeon"
     version: 2+47
