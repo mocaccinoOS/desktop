@@ -107,6 +107,7 @@
 ~trinity-base/kcminit-14.0.13 ~amd64
 ~trinity-base/kcoloredit-14.0.13 ~amd64
 ~trinity-base/kcontrol-14.0.13 ~amd64
+~trinity-base/kcron-14.0.13 ~amd64
 ~trinity-base/kdcop-14.0.13 ~amd64
 ~trinity-base/kdesktop-14.0.13 ~amd64
 ~trinity-base/kdf-14.0.13 ~amd64
@@ -151,6 +152,7 @@
 ~trinity-base/kmtrace-14.0.13 ~amd64
 ~trinity-base/knetattach-14.0.13 ~amd64
 ~trinity-base/knetwalk-14.0.13 ~amd64
+~trinity-base/knetworkconf-14.0.13 ~amd64
 ~trinity-base/knewsticker-14.0.13 ~amd64
 ~trinity-base/knewsticker-scripts-14.0.13 ~amd64
 ~trinity-base/knode-14.0.13 ~amd64
@@ -212,6 +214,7 @@
 ~trinity-base/ktux-14.0.13 ~amd64
 ~trinity-base/kuickshow-14.0.13 ~amd64
 ~trinity-base/kuiviewer-14.0.13 ~amd64
+~trinity-base/kuser-14.0.13 ~amd64
 ~trinity-base/kview-14.0.13 ~amd64
 ~trinity-base/kviewshell-14.0.13 ~amd64
 ~trinity-base/kweather-14.0.13 ~amd64
@@ -242,6 +245,7 @@
 ~trinity-base/quanta-14.0.13 ~amd64
 ~trinity-base/renamedlg-plugins-14.0.13 ~amd64
 ~trinity-base/superkaramba-14.0.13 ~amd64
+~trinity-base/tdeadmin-doc-14.0.13 ~amd64
 ~trinity-base/tdeaddons-doc-14.0.13 ~amd64
 ~trinity-base/tdeaddons-meta-14.0.13 ~amd64
 ~trinity-base/tdeaddons-tdefile-plugins-14.0.13 ~amd64
@@ -264,6 +268,7 @@
 ~trinity-base/tdednssd-14.0.13 ~amd64
 ~trinity-base/tdeeject-14.0.13 ~amd64
 ~trinity-base/tdefilereplace-14.0.13 ~amd64
+~trinity-base/tdefile-plugins-14.0.13 ~amd64
 ~trinity-base/tdegames-doc-14.0.13 ~amd64
 ~trinity-base/tdegames-meta-14.0.13 ~amd64
 ~trinity-base/tdegraphics-doc-14.0.13 ~amd64

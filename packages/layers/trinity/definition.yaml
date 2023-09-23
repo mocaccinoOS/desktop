@@ -4,7 +4,7 @@ version: 14.0.13+43
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =trinity-base/tdebase-meta-14.0.13 trinity-base/tdewallet
+    =trinity-base/tdebase-meta-14.0.13 =trinity-base/tdeadmin-meta-14.0.13
 requires:
   - category: "layers"
     name: "X"
@@ -49,6 +49,9 @@ provides:
   - name: kcontrol
     category: trinity-base
     version: '>=0'
+  - name: kcron
+    category: trinity-base
+    version: '>=0'
   - name: kdcop
     category: trinity-base
     version: '>=0'
@@ -77,6 +80,9 @@ provides:
     category: trinity-base
     version: '>=0'
   - name: knetattach
+    category: trinity-base
+    version: '>=0'
+  - name: knetworkconf
     category: trinity-base
     version: '>=0'
   - name: konqueror
@@ -115,6 +121,9 @@ provides:
   - name: ktip
     category: trinity-base
     version: '>=0'
+  - name: kuser
+    category: trinity-base
+    version: '>=0'
   - name: kxkb
     category: trinity-base
     version: '>=0'
@@ -145,6 +154,12 @@ provides:
   - name: tdeeject
     category: trinity-base
     version: '>=0'
+  - name: tdeadmin-doc
+    category: trinity-base
+    version: '>=0'
+  - name: tdefile-plugins
+    category: trinity-base
+    version: '>=0'
   - name: tdeinit
     category: trinity-base
     version: '>=0'
@@ -161,9 +176,6 @@ provides:
     category: trinity-base
     version: '>=0'
   - name: tdesu
-    category: trinity-base
-    version: '>=0'
-  - name: tdewallet
     category: trinity-base
     version: '>=0'
   - name: tdm
