@@ -1,6 +1,6 @@
 category: "apps"
 name: "discover"
-version: 5.27.7+2
+version: 5.27.7+3
 uri:
   - https://userbase.kde.org/Discover
 license: "GPL-2"
