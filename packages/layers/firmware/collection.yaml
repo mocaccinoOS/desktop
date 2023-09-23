@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 20230515+5
+    version: 20230515+6
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
