@@ -70,7 +70,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-amd-ucode"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-amd"
     version: 2+48
