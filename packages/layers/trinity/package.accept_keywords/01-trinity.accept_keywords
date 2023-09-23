@@ -246,6 +246,7 @@
 ~trinity-base/renamedlg-plugins-14.0.13 ~amd64
 ~trinity-base/superkaramba-14.0.13 ~amd64
 ~trinity-base/tdeadmin-doc-14.0.13 ~amd64
+~trinity-base/tdeadmin-meta-14.0.13 ~amd64
 ~trinity-base/tdeaddons-doc-14.0.13 ~amd64
 ~trinity-base/tdeaddons-meta-14.0.13 ~amd64
 ~trinity-base/tdeaddons-tdefile-plugins-14.0.13 ~amd64
