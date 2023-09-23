@@ -91,7 +91,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-atmel"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-atusb"
     version: 2+47
