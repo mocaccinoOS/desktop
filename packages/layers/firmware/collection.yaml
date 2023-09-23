@@ -211,7 +211,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-qca"
     version: 2+47
