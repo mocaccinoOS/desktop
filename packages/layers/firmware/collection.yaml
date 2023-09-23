@@ -265,7 +265,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+47
+    version: 2+48
   - category: "layers"
     name: "firmware-ti-keystone"
     version: 2+47
