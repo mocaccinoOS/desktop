@@ -166,7 +166,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-kaweth"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-keyspan"
     version: 2+48
