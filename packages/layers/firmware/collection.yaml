@@ -229,7 +229,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-radeon"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-rockchip"
     version: 2+48
