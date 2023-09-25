@@ -238,7 +238,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-RTL8192E"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-rtl_bt"
     version: 2+48
