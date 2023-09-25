@@ -94,7 +94,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-atusb"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-av7110"
     version: 2+48
