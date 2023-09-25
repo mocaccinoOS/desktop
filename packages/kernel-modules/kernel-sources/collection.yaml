@@ -16,7 +16,7 @@ packages:
   - category: "kernel-sources"
     name: "mocaccino-sources"
     hidden: true
-    version: "6.5.5"
+    version: 6.5.5+1
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
