@@ -64,7 +64,7 @@ packages:
     version: 2+48
   - category: "layers"
     name: "firmware-3com"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-advansys"
     version: 2+48
