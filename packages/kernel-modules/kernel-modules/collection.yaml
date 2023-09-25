@@ -34,7 +34,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.0.10+4
+    version: 7.0.10+5
     lts: true
     labels:
       emerge.jobs: "3"
