@@ -5,6 +5,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.license /etc/portage/
+- cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable steam-overlay
