@@ -244,7 +244,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-rtl_nic"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-rtlwifi"
     version: 2+48
