@@ -106,7 +106,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-bnx2x"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-brcm"
     version: 2+48
