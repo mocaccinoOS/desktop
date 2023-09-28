@@ -214,7 +214,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-qca"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-qcom"
     version: 2+48
