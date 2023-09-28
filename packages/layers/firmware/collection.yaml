@@ -175,7 +175,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-libertas"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-liquidio"
     version: 2+48
