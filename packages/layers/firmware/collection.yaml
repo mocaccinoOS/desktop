@@ -109,7 +109,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-brcm"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-cadence"
     version: 2+48
