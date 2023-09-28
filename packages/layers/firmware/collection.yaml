@@ -217,7 +217,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-qcom"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-qed"
     version: 2+48
