@@ -1,6 +1,6 @@
 category: "apps"
 name: "os-installer"
-version: 0.3+40
+version: 0.3+41
 uri:
   - https://gitlab.gnome.org/p3732/os-installer
 license: "GPL-3"
