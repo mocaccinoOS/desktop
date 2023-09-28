@@ -274,7 +274,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-tigon"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-ueagle-atm"
     version: 2+48
