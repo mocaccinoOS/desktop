@@ -190,7 +190,7 @@ packages:
     version: 2+49
   - category: "layers"
     name: "firmware-meson"
-    version: 2+48
+    version: 2+49
   - category: "layers"
     name: "firmware-microchip"
     version: 2+48
