@@ -1,6 +1,6 @@
 name: system-x
-version: "0.20230924"
-gcc_version: "12"
+version: "0.20230930"
+gcc_version: "13"
 python_version: "3.11"
 category: layers
 requires:

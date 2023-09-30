@@ -1,7 +1,7 @@
 packages:
   - &base
     name: system-x-devel
-    version: "0.20230924"
+    version: "0.20230930"
     category: layers
     package: "system-x"
 #  - <<: *base

@@ -1,7 +1,7 @@
 name: "gcc-base"
 category: "system"
-version: 12.2.1+22
-gcc_version: "12"
+version: "13.2.1"
+gcc_version: "13"
 requires:
   - category: "mocaccino"
     name: "cli"
