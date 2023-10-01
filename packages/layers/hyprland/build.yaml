@@ -19,6 +19,7 @@ prelude:
 # clipman upstream git repo got removed, grab sources here
 # see https://www.reddit.com/r/swaywm/comments/16v6eat/clipman_repository_has_disappeared/
 - mkdir -p /usr/portage/distfiles/ && wget https://github.com/chmouel/clipman/archive/refs/tags/v1.6.2.tar.gz -O /usr/portage/distfiles/clipman-1.6.2.tar.gz
+- ebuild /var/db/repos/guru/gui-apps/clipman/clipman-1.6.2.ebuild manifest
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove thegreatmcpain wayland-desktop guru
