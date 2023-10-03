@@ -316,3 +316,6 @@ provides:
   - name: kpmcore
     category: sys-libs
     version: '>=0'
+  - name: switcheroo-control
+    category: sys-power
+    version: '>=0'
