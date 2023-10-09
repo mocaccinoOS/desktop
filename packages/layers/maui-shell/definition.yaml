@@ -1,6 +1,6 @@
 category: "layers"
 name: "maui-shell"
-version: 0.5.0+127
+version: 0.5.0+128
 maui_kit_commit: "535bd57e7dc44c006dfcfafeec102990f6a0575c"
 maui_kit_filebrowsing_commit: "1f9bcce1c31304db95335a5ed4d14545fd643f3e"
 maui_shell_commit: "61ae7f296097700359efc96ad91b7d984434c543"

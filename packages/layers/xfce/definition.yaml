@@ -1,6 +1,6 @@
 category: "layers"
 name: "xfce"
-version: 4.18.2+39
+version: 4.18.2+40
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
