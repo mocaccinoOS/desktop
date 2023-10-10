@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.60-r2+35
+version: 3.2.60-r2+36
 uri:
   - https://calamares.io
 license: "GPL-3"
