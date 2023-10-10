@@ -24,7 +24,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+158
+    version: 0+159
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
