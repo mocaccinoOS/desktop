@@ -127,7 +127,7 @@ packages:
     version: 2+50
   - category: "layers"
     name: "firmware-cypress"
-    version: 2+49
+    version: 2+50
   - category: "layers"
     name: "firmware-dabusb"
     version: 2+49
