@@ -28,7 +28,7 @@ steps:
 {{ template "portage_build" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
-- emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man
+- emerge -C dev-lang/rust-bin dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man
 - emerge --depclean
 excludes:
 - ^/dev
