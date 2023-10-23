@@ -1,6 +1,6 @@
 category: "apps"
 name: "entrance"
-version: 9999+61
+version: 9999+62
 uri:
   - https://launchpad.net/lightdm
 license: "GPL-3"
