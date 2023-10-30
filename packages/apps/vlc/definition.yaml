@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 3.0.18-r3+26
+version: 3.0.18-r3+27
 uri:
   - https://www.videolan.org/vlc
 license: "LGPL-2.1 GPL-2"

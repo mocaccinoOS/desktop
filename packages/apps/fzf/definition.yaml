@@ -1,6 +1,6 @@
 category: "apps"
 name: "fzf"
-version: 0.39.0+9
+version: 0.39.0+10
 uri:
   - https://github.com/junegunn/fzf
 license: "MIT BSD-with-disclosure"

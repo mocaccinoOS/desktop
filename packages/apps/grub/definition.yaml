@@ -1,6 +1,6 @@
 category: "apps"
 name: "grub"
-version: 2.06-r7+13
+version: 2.06-r7+14
 uri:
   - https://www.gnu.org/software/grub
 license: "GPL-3+ BSD MIT"
