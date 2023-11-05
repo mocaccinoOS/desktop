@@ -16,7 +16,7 @@ labels:
     games-util/lutris
 requires:
   - category: "layers"
-    name: "gnome-common"
+    name: "X"
     version: ">=0"
 provides:
   - category: "dev-python"
