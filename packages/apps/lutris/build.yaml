@@ -9,5 +9,5 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "X"
+  name: "gnome-common"
   version: ">=0"
