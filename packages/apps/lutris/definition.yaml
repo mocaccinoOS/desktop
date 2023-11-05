@@ -1,6 +1,6 @@
 category: "apps"
 name: "lutris"
-version: "0.5.14+4"
+version: "0.5.14+5"
 uri:
   - https://lutris.net
 license: "GPL-3+ CC0-1.0"
@@ -11,6 +11,8 @@ labels:
     dev-python/moddb
     dev-python/pypresence
     dev-python/pyrate-limiter
+    dev-python/redis
+    dev-python/toolz
     media-sound/fluid-soundfont
     x11-apps/xgamma
     games-util/lutris
@@ -20,13 +22,19 @@ requires:
     version: ">=0"
 provides:
   - category: "dev-python"
+    name: "moddb"
+    version: ">=0"
+  - category: "dev-python"
     name: "pyrate-limiter"
     version: ">=0"
   - category: "dev-python"
     name: "pypresence"
     version: ">=0"
   - category: "dev-python"
-    name: "moddb"
+    name: "redis"
+    version: ">=0"
+  - category: "dev-python"
+    name: "toolz"
     version: ">=0"
   - category: "games-util"
     name: "lutris"
