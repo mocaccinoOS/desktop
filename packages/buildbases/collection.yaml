@@ -7,10 +7,6 @@ packages:
     hidden: true
   - !!merge <<: *X
     real_category: "apps"
-    name: "flatpak"
-    version: 0+153
-  - !!merge <<: *X
-    real_category: "apps"
     name: "grub"
     version: 0+143
   - !!merge <<: *X
