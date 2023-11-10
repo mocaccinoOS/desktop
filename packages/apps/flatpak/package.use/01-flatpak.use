@@ -1,2 +1,2 @@
 dev-util/ostree curl introspection
-sys-apps/flatpak introspection -gtk -kde
+sys-apps/flatpak introspection
