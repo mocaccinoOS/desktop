@@ -1,6 +1,6 @@
 category: "apps"
 name: "discover"
-version: "5.27.8"
+version: "5.27.8+1"
 uri:
   - https://userbase.kde.org/Discover
 license: "GPL-2"
@@ -8,9 +8,12 @@ description: "KDE Plasma resources management GUI"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/appstream kde-plasma/discover
+    dev-libs/appstream kde-plasma/discover kde-plasma/flatpak-kcm
 provides:
   - name: discover
+    category: kde-plasma
+    version: '>=0'
+  - name: flatpak-kcm
     category: kde-plasma
     version: '>=0'
 requires:
