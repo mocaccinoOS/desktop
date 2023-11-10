@@ -1,6 +1,6 @@
 category: "apps"
 name: "flatpak"
-version: 1.14.4-r3+25
+version: 1.14.4-r3+26
 uri:
   - https://flatpak.org
 license: "LGPL-2.1+"
@@ -8,13 +8,16 @@ description: "Linux application sandboxing and distribution framework"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-apps/flatpak sys-apps/fwupd
+    app-text/aha sys-apps/flatpak sys-apps/fwupd
 provides:
   - name: flatpak
     category: acct-group
     version: '>=0'
   - name: flatpak
     category: acct-user
+    version: '>=0'
+  - name: aha
+    category: app-text
     version: '>=0'
   - name: flatpak
     category: sys-apps
