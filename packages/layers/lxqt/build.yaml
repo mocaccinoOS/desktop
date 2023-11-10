@@ -5,14 +5,11 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
+- emerge -1 media-sound/pavucontrol-qt
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "kde-common"
   version: ">=0"
-- category: "buildbase"
-  name: "pavucontrol-qt"
-  version: ">=0"
-requires_final_images: true
