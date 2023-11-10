@@ -26,10 +26,6 @@ packages:
     name: "virtualbox-modules-lts"
     version: 0+207
   - !!merge <<: *X
-    real_category: "apps"
-    name: "pavucontrol-qt"
-    version: 0+157
-  - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
     version: 0+177
