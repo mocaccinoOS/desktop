@@ -5,14 +5,11 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
+- USE="introspection curl" emerge -1 sys-apps/flatpak sys-apps/fwupd
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "gnome-common"
   version: ">=0"
-- category: "buildbase"
-  name: "flatpak"
-  version: ">=0"
-requires_final_images: true
