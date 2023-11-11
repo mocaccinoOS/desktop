@@ -1,6 +1,6 @@
 category: "apps"
 name: "spice-gtk"
-version: "0.42-r3"
+version: 0.42-r3+1
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

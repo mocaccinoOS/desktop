@@ -1,6 +1,6 @@
 category: "layers"
 name: "wayfire"
-version: 0.7.5+36
+version: 0.7.5+37
 uri:
   - https://github.com/WayfireWM/wayfire
 license: "MIT"
