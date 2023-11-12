@@ -5,10 +5,9 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
+{{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-# remove build deps
-- emerge -C app-text/docbook-xml-simple-dtd:1.0 app-text/docbook-xml-simple-dtd:4.1.2.4 app-text/docbook-sgml-utils app-text/openjade app-text/docbook-sgml-dtd:3.0 app-text/docbook-sgml-dtd:3.1 app-text/docbook-sgml-dtd:4.0 app-text/docbook-sgml-dtd:4.1 app-text/docbook-sgml-dtd:4.2 app-text/docbook-sgml-dtd:4.4 app-text/docbook-dsssl-stylesheets
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "X"
