@@ -1,8 +1,8 @@
 package_dir: "/output"
 prelude:
-- git clone --depth 1 --branch master https://invent.kde.org/maui/mauiman.git
+- git clone https://invent.kde.org/maui/mauiman.git
 - |
-  mkdir -p mauiman/build && cd mauiman/build && \
+  cd mauiman && git checkout ae3d4649ba4e8fc0587099bcb6f09dd61d7c4834 -b build && \
   cmake \
       -DCMAKE_INSTALL_PREFIX=/usr \
       -DENABLE_BSYMBOLICFUNCTIONS=OFF \
