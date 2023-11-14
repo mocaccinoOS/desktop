@@ -1,5 +1,12 @@
 package_dir: "/output"
 prelude:
+- git clone https://invent.kde.org/maui/mauiman.git
+- |
+  cd mauiman \
+  cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib && make && make install
 - git clone https://github.com/KDE/mauikit.git
 - |
    cd mauikit && git checkout "{{.Values.maui_kit_commit}}" -b build && \
