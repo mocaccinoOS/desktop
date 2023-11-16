@@ -5,6 +5,7 @@ app-editors/featherpad ~amd64
 
 # Accept unstable keywords for 1.4
 app-arch/lxqt-archiver ~amd64
+app-misc/qtxdg-tools ~amd64
 dev-libs/libqtxdg ~amd64
 =lxqt-base/lxqt-about-1.4* ~amd64
 =lxqt-base/lxqt-admin-1.4* ~amd64
