@@ -12,6 +12,7 @@ dev-libs/libqtxdg ~amd64
 =lxqt-base/lxqt-globalkeys-1.4* ~amd64
 =lxqt-base/liblxqt-1.4* ~amd64
 =lxqt-base/lxqt-menu-data-1.4* ~amd64
+=lxqt-base/lxqt-meta-1.4* ~amd64
 =lxqt-base/lxqt-notificationd-1.4* ~amd64
 =lxqt-base/lxqt-panel-1.4* ~amd64
 =lxqt-base/lxqt-openssh-askpass-1.4* ~amd64
