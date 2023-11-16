@@ -20,4 +20,6 @@ dev-libs/libqtxdg ~amd64
 =lxqt-base/lxqt-session-1.4* ~amd64
 =media-gfx/lximage-qt-1.4* ~amd64
 =x11-libs/libfm-qt-1.4* ~amd64
+=x11-libs/qtermwidget-1.4* ~amd64
 =x11-misc/pcmanfm-qt-1.4* ~amd64
+=x11-terms/qterminal-1.4* ~amd64
