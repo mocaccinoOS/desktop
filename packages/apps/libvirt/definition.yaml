@@ -1,10 +1,10 @@
 category: "apps"
 name: "libvirt"
-version: 9.4.0-r3+16
+version: 9.4.0-r3+17
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/libvirt app-emulation/libvirt-glib app-misc/scrub dev-python/libvirt-python net-analyzer/openbsd-netcat net-firewall/ebtables net-misc/ethertypes net-misc/radvd
+    app-crypt/swtpm app-emulation/libvirt app-emulation/libvirt-glib app-misc/scrub dev-python/libvirt-python net-analyzer/openbsd-netcat net-firewall/ebtables net-misc/ethertypes net-misc/radvd
 requires:
   - category: "apps"
     name: "qemu"
@@ -19,6 +19,9 @@ requires:
     name: "radvd"
     version: ">=0"
 provides:
+  - name: swtpm
+    category: app-crypt
+    version: '>=0'
   - name: libvirt
     category: app-emulation
     version: '>=0'

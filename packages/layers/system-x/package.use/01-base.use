@@ -6,6 +6,7 @@ app-arch/tar xattr
 app-arch/zstd lz4
 app-crypt/gnupg nls readline smartcard ssl usb
 app-crypt/gpgme -qt5
+app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses -gtk -qt5
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
@@ -31,7 +32,7 @@ media-libs/libpng apng static-libs
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
 net-dns/unbound ecdsa python
-net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
+net-libs/gnutls cxx dane idn nls openssl pkcs11 seccomp sslv2 sslv3 tls-heartbeat tools
 # Disable cxx, otherwise we have curl pulling in boost
 net-libs/nghttp2 -cxx
 # nss breaks git https:// checkouts

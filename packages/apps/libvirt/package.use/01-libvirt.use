@@ -1,1 +1,2 @@
+app-crypt/swtpm fuse
 app-emulation/libvirt fuse lvm
