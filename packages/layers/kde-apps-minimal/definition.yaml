@@ -5,7 +5,7 @@ description: "A bundle of Plasma applications useful on the Plasma desktop"
 labels:
   emerge.jobs: "4"
   emerge.packages: >-
-    app-cdr/dolphin-plugins-mountiso app-text/convertlit app-text/ebook-tools dev-libs/kpeoplevcard kde-apps/ark kde-apps/baloo-widgets kde-apps/dolphin kde-apps/gwenview kde-apps/kate-lib kde-apps/kcalc kde-apps/kcron kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kmag kde-apps/kmousetool kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/libkdcraw kde-apps/krdc kde-apps/ksystemlog kde-apps/okular kde-apps/print-manager kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/kdeconnect kde-misc/skanlite media-libs/kcolorpicker media-libs/kimageannotator sys-block/partitionmanager
+    app-cdr/dolphin-plugins-mountiso app-text/convertlit app-text/ebook-tools dev-libs/kpeoplevcard kde-apps/ark kde-apps/baloo-widgets kde-apps/dolphin kde-apps/gwenview kde-apps/kate-lib kde-apps/kcalc kde-apps/kcron kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing kde-apps/kdf kde-apps/kdialog kde-apps/keditbookmarks kde-apps/kfind kde-apps/kmag kde-apps/kmousetool kde-apps/kolourpaint kde-apps/konsole kde-apps/kwalletmanager kde-apps/kwrite kde-apps/libkdcraw kde-apps/krdc kde-apps/ksystemlog kde-apps/okular kde-apps/spectacle kde-apps/svgpart kde-apps/thumbnailers kde-apps/yakuake kde-misc/kdeconnect kde-misc/skanlite kde-plasma/print-manager media-libs/kcolorpicker media-libs/kimageannotator sys-block/partitionmanager
 requires:
   - category: "layers"
     name: "plasma"
@@ -92,9 +92,6 @@ provides:
   - name: okular
     category: kde-apps
     version: '>=0'
-  - name: print-manager
-    category: kde-apps
-    version: '>=0'
   - name: spectacle
     category: kde-apps
     version: '>=0'
@@ -112,6 +109,9 @@ provides:
     version: '>=0'
   - name: skanlite
     category: kde-misc
+    version: '>=0'
+  - name: print-manager
+    category: kde-plasma
     version: '>=0'
   - name: kcolorpicker
     category: media-libs
