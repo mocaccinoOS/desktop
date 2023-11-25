@@ -1,0 +1,15 @@
+category: "layers"
+name: "qt6"
+version: "6.5.3-r1"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    dev-qt/qtbase
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: qtbase
+    category: dev-qt
+    version: '>=0'
