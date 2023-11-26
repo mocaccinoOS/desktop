@@ -1,1 +1,6 @@
 # placeholder
+dev-qt/qtbase:6 cups vulkan
+dev-qt/qtdeclarative:6 vulkan
+dev-qt/qtquick3d:6 vulkan
+dev-qt/qttools:6 vulkan
+dev-qt/qtwayland:6 vulkan
