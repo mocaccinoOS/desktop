@@ -4,7 +4,7 @@ version: "6.5.3-r1+2"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-python/PyQt6 dev-python/PyQt6-sip dev-qt/qtbase:6 dev-qt/qtquick3d:6 dev-qt/qtquicktimeline:6 dev-qt/qtshadertools:6 dev-qt/qtsvg:6 dev-qt/qttools:6 dev-qt/qttranslations:6 dev-qt/qtwayland:6 media-libs/assimp
+    dev-python/PyQt6 dev-python/PyQt6-sip dev-qt/qtbase:6 dev-qt/qtmultimedia:6 dev-qt/qtquick3d:6 dev-qt/qtquicktimeline:6 dev-qt/qtshadertools:6 dev-qt/qtsvg:6 dev-qt/qttools:6 dev-qt/qttranslations:6 dev-qt/qtwayland:6 media-libs/assimp
 requires:
   - category: "layers"
     name: "X"
@@ -23,6 +23,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: qtbase
+    category: dev-qt
+    version: '>=0'
+  - name: qtmultimedia
     category: dev-qt
     version: '>=0'
   - name: qtquicktimeline
