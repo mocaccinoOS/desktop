@@ -47,6 +47,7 @@ includes:
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libquadmath.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/vtv_.*
+- /usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins$
 - /usr/lib/llvm$
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}$
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib64$
