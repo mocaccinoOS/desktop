@@ -72,7 +72,6 @@ excludes:
 # Emerge cache files
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
-- ^/usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/omp*
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/openacc*
 - ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc\+\+.so.*
