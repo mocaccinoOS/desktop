@@ -47,7 +47,6 @@ includes:
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libquadmath.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/vtv_.*
-- /usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins$
 - /usr/lib/llvm$
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}$
 - /usr/lib/llvm/{{ ( index .Values.labels "llvm_slot" ) }}/lib64$
@@ -73,6 +72,7 @@ excludes:
 # Emerge cache files
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
+- ^/usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/omp*
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/finclude/openacc*
 - ^/usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/libstdc\+\+.so.*

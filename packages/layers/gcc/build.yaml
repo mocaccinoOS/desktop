@@ -40,6 +40,7 @@ includes:
 - /usr/share/gdb/auto-load/usr/lib/gcc$
 - /usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu$
 - /usr/share/gdb/auto-load/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}.*
+- /usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins$
 - /usr/x86_64-pc-linux-gnu$
 - /usr/x86_64-pc-linux-gnu/gcc-bin$
 - /usr/x86_64-pc-linux-gnu/gcc-bin/{{.Values.gcc_version}}.*
@@ -51,7 +52,6 @@ excludes:
 - ^/usr/lib/llvm/.*/lib.*/libLLVM.*.so
 - ^/usr/lib/llvm/.*/lib.*/libclang-cpp.so.*
 - ^/usr/lib/debug/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/.*
-- ^/usr/x86_64-pc-linux-gnu/binutils-bin/lib/bfd-plugins
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/crtbegin.o
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/crtbeginS.o
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.gcc_version}}/32/crtbeginT.o
