@@ -1,10 +1,10 @@
 category: "layers"
 name: "xfce"
-version: 4.18.2+46
+version: 4.18.2+47
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
-    app-arch/xarchiver app-cdr/xfburn app-editors/mousepad media-gfx/ristretto media-libs/libopenraw media-sound/pavucontrol media-video/parole x11-terms/xfce4-terminal xfce-base/exo xfce-base/garcon xfce-base/libxfce4ui xfce-base/libxfce4util xfce-base/thunar xfce-base/thunar-volman xfce-base/tumbler xfce-base/xfce4-appfinder xfce-base/xfce4-meta xfce-base/xfce4-panel xfce-base/xfce4-power-manager xfce-base/xfce4-session xfce-base/xfce4-settings xfce-base/xfconf xfce-base/xfdesktop xfce-base/xfwm4 xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screensaver xfce-extra/xfce4-screenshooter xfce-extra/xfce4-taskmanager xfce-extra/xfce4-volumed-pulse xfce-extra/xfce4-whiskermenu-plugin
+    app-arch/xarchiver app-cdr/xfburn app-editors/mousepad media-gfx/ristretto media-libs/libopenraw media-sound/pavucontrol media-video/parole x11-terms/xfce4-terminal x11-themes/xfwm4-themes xfce-base/exo xfce-base/garcon xfce-base/libxfce4ui xfce-base/libxfce4util xfce-base/thunar xfce-base/thunar-volman xfce-base/tumbler xfce-base/xfce4-appfinder xfce-base/xfce4-meta xfce-base/xfce4-panel xfce-base/xfce4-power-manager xfce-base/xfce4-session xfce-base/xfce4-settings xfce-base/xfconf xfce-base/xfdesktop xfce-base/xfwm4 xfce-extra/xfce4-pulseaudio-plugin xfce-extra/xfce4-screensaver xfce-extra/xfce4-screenshooter xfce-extra/xfce4-taskmanager xfce-extra/xfce4-volumed-pulse xfce-extra/xfce4-whiskermenu-plugin
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -36,6 +36,9 @@ provides:
     version: '>=0'
   - name: xfce4-terminal
     category: x11-terms
+    version: '>=0'
+  - name: xfwm4-themes
+    category: x11-themes
     version: '>=0'
   - name: exo
     category: xfce-base
