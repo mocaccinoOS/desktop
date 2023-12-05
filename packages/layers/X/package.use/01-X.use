@@ -74,4 +74,5 @@ media-libs/opus custom-modes
 media-libs/tiff cxx jpeg lzma zlib zstd
 media-video/mjpegtools -gtk
 virtual/jpeg static-libs
+x11-base/xwayland libei
 x11-libs/gdk-pixbuf introspection jpeg

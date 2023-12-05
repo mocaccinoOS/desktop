@@ -1,3 +1,1 @@
-# requires >=x11-base/xwayland-23.2.1[libei(+)]
-# We should enable this next cycle in layers/X
-games-util/steam-launcher -wayland
+games-util/steam-launcher wayland
