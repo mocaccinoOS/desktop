@@ -1,6 +1,6 @@
 category: "apps"
 name: "mocaccino-statusbar"
-version: 0.4.4+180
+version: 0.4.4+181
 requires:
   - category: "layers"
     name: "X"
