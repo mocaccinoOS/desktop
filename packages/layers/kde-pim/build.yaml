@@ -5,6 +5,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 steps:
+- emerge kde-apps/konsolekalendar
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
