@@ -28,9 +28,8 @@ steps:
 {{ template "portage_build" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
-- emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man
-# Depclean was removing sys-devel/gcc-12.3.1_p20230526, skip for now
-# - emerge --depclean
+- emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
+- emerge --depclean
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
