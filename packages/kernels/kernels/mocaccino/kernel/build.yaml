@@ -12,10 +12,8 @@ env:
 - SUFFIX={{.Values.suffix}}
 - KERNEL_TYPE=linux
 prelude:
-#- luet install repository/mocaccino-portage-stable
-#- luet install layers/system-x
-- | 
-  apt-get update               && \ 
+- |
+  apt-get update               && \
   apt-get -y -q upgrade        && \
   apt-get install -y -q apt-utils dialog\
       xz-utils wget sudo aptitude flex bison libncurses5-dev make git exuberant-ctags bc libssl-dev libelf-dev \

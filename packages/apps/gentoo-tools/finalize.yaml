@@ -1,5 +1,0 @@
-install:
-- ldconfig
-- source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
-- echo -e "THIS PACKAGE IS HIGHLY EXPERIMENTAL\n"
-- echo -e "PLEASE DO NOT ATTEMPT USING PORTAGE UNLESS YOU KNOW WHAT YOU ARE DOING"
