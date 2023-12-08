@@ -1,6 +1,5 @@
 # New splashutils wants static-libs see Gentoo bug #356231
 app-arch/bzip2 split-usr static-libs
-app-arch/p7zip -kde -wxwidgets
 # vzctl and other packages now require xattr support in tar
 app-arch/tar xattr
 app-arch/zstd lz4
@@ -37,9 +36,7 @@ net-libs/gnutls cxx dane idn nls openssl pkcs11 seccomp sslv2 sslv3 tls-heartbea
 net-libs/nghttp2 -cxx
 # nss breaks git https:// checkouts
 net-misc/curl adns http2 idn ssl sslv3 -nss -gnutls static-libs
-net-misc/ntp -zeroconf
-net-misc/openssh -X -ldap
-net-misc/openssh libedit
+net-misc/openssh libedit -X -ldap
 # Add xattr support to rsync
 net-misc/rsync examples xattr
 sci-libs/hdf5 cxx szip -threads

@@ -13,6 +13,7 @@ net-dns/dnsmasq tftp conntrack dnssec dhcp script dhcp-tools
 net-libs/libpcap -bluetooth
 net-libs/libssh server
 net-libs/libtorrent-rasterbar -gnutls
+net-misc/ntp -zeroconf
 net-wireless/bluez obex
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
