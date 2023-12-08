@@ -91,7 +91,7 @@ provides:
   - name: ldap
     category: acct-user
     version: '>=0'
- - name: mail
+  - name: mail
     category: acct-user
     version: '>=0'
   - name: mysql
