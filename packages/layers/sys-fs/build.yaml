@@ -9,6 +9,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
+- cp -rf package.license /etc/portage/
 - cp -rf patches /etc/portage/
 - USE="rustfmt" emerge -1 dev-lang/rust-bin virtual/rust
 {{ template "portage_prelude_build" . }}
