@@ -1,6 +1,6 @@
 category: "apps"
 name: "xboxdrv"
-version: "0.8.8_p20190118-r2"
+version: "0.8.8_p20190118-r2+1"
 uri:
   - https://xboxdrv.gitlab.io
 license: "GPL-3"
@@ -15,5 +15,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "system-x"
+    name: "X"
     version: ">=0"
