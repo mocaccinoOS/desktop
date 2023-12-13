@@ -1,0 +1,19 @@
+category: "apps"
+name: "xboxdrv"
+version: "0.8.8_p20190118-r2"
+uri:
+  - https://xboxdrv.gitlab.io
+license: "GPL-3"
+description: "Userspace Xbox 360 Controller driver"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    games-util/xboxdrv
+provides:
+  - name: vboxdrv
+    category: games-util
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
