@@ -1,6 +1,6 @@
 category: "apps"
 name: "xboxdrv"
-version: "0.8.8_p20190118-r2+2"
+version: "0.8.8_p20190118-r2+3"
 uri:
   - https://xboxdrv.gitlab.io
 license: "GPL-3"
@@ -8,8 +8,11 @@ description: "Userspace Xbox 360 Controller driver"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    games-util/xboxdrv
+    games-util/xboxdrv dev-python/pyusb
 provides:
+  - name: pyusb
+    category: dev-python
+    version: '>=0'
   - name: vboxdrv
     category: games-util
     version: '>=0'
