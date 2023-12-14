@@ -562,9 +562,6 @@ provides:
   - name: Authen-SASL
     category: dev-perl
     version: '>=0'
-  - name: Canary-Stability
-    category: dev-perl
-    version: '>=0'
   - name: common-sense
     category: dev-perl
     version: '>=0'
@@ -614,12 +611,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: IO-Socket-SSL
-    category: dev-perl
-    version: '>=0'
-  - name: JSON
-    category: dev-perl
-    version: '>=0'
-  - name: JSON-XS
     category: dev-perl
     version: '>=0'
   - name: libwww-perl
