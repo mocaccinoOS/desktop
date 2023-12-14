@@ -119,7 +119,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "1"
   emerge.packages: >-
-    acct-group/plugdev app-arch/cpio app-crypt/p11-kit app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-perl/Crypt-RC4 dev-perl/DBI dev-perl/Digest-Perl-MD5 dev-perl/Exporter-Tiny dev-perl/IO-stringy dev-perl/JSON dev-perl/Moo dev-perl/Net-Daemon dev-perl/OLE-StorageLite dev-perl/PlRPC dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XML-Simple dev-python/distro dev-python/docutils dev-python/filelock dev-python/html5lib dev-python/isodate dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyudev dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sci-libs/hdf5 sys-apps/lsb-release sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-devel/llvm sys-kernel/dracut sys-process/cronie x11-libs/libdrm x11-libs/libpciaccess
+    acct-group/plugdev app-arch/cpio app-crypt/p11-kit app-shells/bash-completion dev-cpp/eigen dev-lang/lua dev-lang/lua:5.1 dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-perl/Crypt-RC4 dev-perl/DBI dev-perl/Digest-Perl-MD5 dev-perl/Exporter-Tiny dev-perl/IO-stringy dev-perl/JSON dev-perl/Net-Daemon dev-perl/OLE-StorageLite dev-perl/PlRPC dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XML-Simple dev-python/distro dev-python/docutils dev-python/filelock dev-python/html5lib dev-python/isodate dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/python-dateutil dev-python/pyudev dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sci-libs/hdf5 sys-apps/lsb-release sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-devel/llvm sys-kernel/dracut sys-process/cronie x11-libs/libdrm x11-libs/libpciaccess
 provides:
   - name: adm
     category: acct-group
@@ -656,9 +656,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Module-Build
-    category: dev-perl
-    version: '>=0'
-  - name: Moo
     category: dev-perl
     version: '>=0'
   - name: Mozilla-CA
