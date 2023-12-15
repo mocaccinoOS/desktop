@@ -19,7 +19,6 @@ dev-libs/libassuan static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/libksba static-libs
-dev-libs/libpcre cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
 dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit split-usr static-libs unicode zlib
 dev-libs/libxml2 icu ipv6 python readline
 dev-libs/openssl:0 asm sslv3 static-libs zlib
@@ -39,7 +38,6 @@ net-misc/curl adns http2 idn ssl sslv3 -nss -gnutls static-libs
 net-misc/openssh libedit -X -ldap
 # Add xattr support to rsync
 net-misc/rsync examples xattr
-sci-libs/hdf5 cxx szip -threads
 sci-libs/lapack eselect-ldso
 sys-apps/groff -X
 # Do we really want berkdb?

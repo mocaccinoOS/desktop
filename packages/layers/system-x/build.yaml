@@ -22,8 +22,8 @@ prelude:
 - cp -rf package.env /etc/portage/
 steps:
 # Try to fix circular dependencies
-- USE="-udev" emerge -1 sys-apps/util-linux && USE="-cryptsetup" emerge -1 sys-apps/systemd
-- emerge -1uDN @system -j 8
+- USE="-udev" emerge -1 -j $JOBS sys-apps/util-linux && USE="-cryptsetup" emerge -1 sys-apps/systemd -j $JOBS
+- emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
