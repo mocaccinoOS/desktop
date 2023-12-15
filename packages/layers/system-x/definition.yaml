@@ -113,7 +113,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "1"
   emerge.packages: >-
-    acct-group/plugdev app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XML-Simple dev-python/distro dev-python/docutils dev-python/filelock dev-python/html5lib dev-python/isodate dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/pyudev dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-devel/llvm sys-kernel/dracut x11-libs/libdrm x11-libs/libpciaccess
+    acct-group/plugdev app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre2 dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XML-Simple dev-python/distro dev-python/docutils dev-python/filelock dev-python/html5lib dev-python/isodate dev-python/python-magic dev-python/numpy dev-python/psutil dev-python/pygments dev-python/pyudev dev-python/pyyaml dev-python/rdflib dev-python/six dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/clang sys-devel/gdb sys-devel/llvm sys-kernel/dracut x11-libs/libdrm x11-libs/libpciaccess
 provides:
   - name: adm
     category: acct-group
@@ -476,9 +476,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libltdl
-    category: dev-libs
-    version: '>=0'
-  - name: libpcre
     category: dev-libs
     version: '>=0'
   - name: libpcre2
