@@ -1,6 +1,6 @@
 category: "layers"
 name: "latex"
-version: 0.9+24
+version: 0.9+25
 uri:
   - http://www.tug.org/texlive/
   - http://hutchinson.belmont.ma.us/tth/

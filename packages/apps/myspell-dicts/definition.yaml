@@ -1,6 +1,6 @@
 category: "apps"
 name: "myspell-dicts"
-version: 0.1+16
+version: 0.1+17
 uri:
   - https://extensions.openoffice.org
 license: "LGPL-3"
