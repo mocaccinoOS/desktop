@@ -10,6 +10,7 @@ dev-libs/appstream -qt5
 dev-libs/atk introspection
 dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
+dev-python/pillow webp truetype
 dev-python/pygobject introspection
 dev-python/pyudev -qt5
 media-fonts/noto -cjk
