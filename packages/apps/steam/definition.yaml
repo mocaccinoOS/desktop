@@ -7,13 +7,10 @@ license: "ValveSteamLicense MIT BSD"
 description: "Installer, launcher and supplementary files for Valve's Steam client"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "dev-libs/inih games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode"
+  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode"
 provides:
   - name: gamemode
     category: acct-group
-    version: '>=0'
-  - name: inih
-    category: dev-libs
     version: '>=0'
   - name: game-device-udev-rules
     category: games-util
