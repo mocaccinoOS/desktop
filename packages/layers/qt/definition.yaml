@@ -349,9 +349,6 @@ provides:
   - name: http-parser
     category: net-libs
     version: '>=0'
-  - name: nodejs
-    category: net-libs
-    version: '>=0'
   - name: less
     category: sys-apps
     version: '>=0'

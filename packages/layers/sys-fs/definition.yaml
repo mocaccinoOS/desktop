@@ -562,6 +562,9 @@ provides:
   - name: neon
     category: net-libs
     version: '>=0'
+  - name: nodejs
+    category: net-libs
+    version: '>=0'
   - name: rpcsvc-proto
     category: net-libs
     version: '>=0'

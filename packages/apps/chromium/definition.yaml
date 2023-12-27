@@ -13,9 +13,6 @@ provides:
   - name: gn
     category: dev-util
     version: '>=0'
-  - name: nodejs
-    category: net-libs
-    version: '>=0'
   - name: chromium
     category: www-client
     version: '>=0'
