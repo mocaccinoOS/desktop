@@ -9,9 +9,9 @@ app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses -gtk -qt5
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
-dev-db/sqlite icu readline
+dev-db/sqlite readline
 dev-lang/python sqlite berkdb
-dev-libs/boost context icu nls numpy python zlib zstd
+dev-libs/boost context nls numpy python zlib zstd
 # We want packages with static-libs (add here)
 dev-libs/expat static-libs
 dev-libs/gmp asm cxx static-libs
@@ -21,7 +21,7 @@ dev-libs/libgpg-error static-libs
 dev-libs/libksba static-libs
 dev-libs/libpcre cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
 dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit split-usr static-libs unicode zlib
-dev-libs/libxml2 icu ipv6 python readline
+dev-libs/libxml2 ipv6 python readline
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-python/numpy lapack

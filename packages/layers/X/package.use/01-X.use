@@ -22,7 +22,7 @@ media-libs/freetype -auto-hinter adobe-cff brotli cleartype_hinting harfbuzz inf
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
-media-libs/harfbuzz glib graphite icu introspection truetype
+media-libs/harfbuzz glib graphite introspection truetype
 media-libs/imlib2 jpeg mp3 png shm webp zlib
 media-libs/libcanberra -gtk
 media-libs/libgphoto2 exif

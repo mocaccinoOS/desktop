@@ -8,7 +8,6 @@ dev-qt/qt-creator autotools cmake designer git lsp modeling qmldesigner qmlprofi
 dev-qt/qt3d qml
 dev-qt/qtbluetooth qml
 dev-qt/qtcharts qml
-dev-qt/qtcore:5 icu
 dev-qt/qtcharts qml
 dev-qt/qtdeclarative jit localstorage widgets vulkan
 dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
@@ -26,4 +25,4 @@ dev-qt/qtxmlpatterns qml
 dev-qt/qtwayland vulkan
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine geolocation kerberos system-icu widgets -system-ffmpeg
-net-libs/nodejs icu inspector
+net-libs/nodejs inspector
