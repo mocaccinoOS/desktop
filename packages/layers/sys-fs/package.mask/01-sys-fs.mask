@@ -1,2 +1,1 @@
 # Placeholder
-x11-libs/cairo
