@@ -18,8 +18,6 @@ net-wireless/bluez obex
 sci-libs/hdf5 cxx szip -threads
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
-# udisks, we want cryptsetup support
-sys-fs/udisks acl cryptsetup crypt introspection
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs

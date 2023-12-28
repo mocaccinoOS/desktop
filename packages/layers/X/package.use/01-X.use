@@ -46,6 +46,8 @@ net-print/cups-filters ipp_autosetup pclm
 net-vpn/networkmanager-fortisslvpn -gtk
 sys-apps/bubblewrap -suid
 sys-libs/binutils-libs nls
+# udisks, we want cryptsetup support
+sys-fs/udisks acl cryptsetup crypt introspection
 sys-power/upower introspection
 www-client/w3m fbcon imlib
 x11-apps/mesa-progs egl
