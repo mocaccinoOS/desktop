@@ -19,4 +19,5 @@ media-libs/gexiv2 introspection
 media-libs/clutter egl
 net-libs/gnome-online-accounts vala
 net-libs/gtk-vnc gtk3
+net-libs/webkit-gtk keyring lcms pdf spell
 x11-libs/xapp introspection
