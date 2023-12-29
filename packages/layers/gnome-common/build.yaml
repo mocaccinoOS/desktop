@@ -13,6 +13,7 @@ steps:
 {{ template "portage_build" . }}
 - FEATURES="${FEATURES} binpkg-request-signature" emerge -g net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6
 - rm -rf /etc/portage/gnupg
+- rm -r /var/cache/binpkgs/*
 requires:
 - category: "buildbase"
   name: "X"

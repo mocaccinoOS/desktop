@@ -65,6 +65,7 @@ steps:
 {{ template "portage_build" . }}
 - FEATURES="${FEATURES} binpkg-request-signature" emerge -g dev-qt/qtwebengine
 - rm -rf /etc/portage/gnupg
+- rm -r /var/cache/binpkgs/*
 - emerge -1 dev-python/PyQtWebEngine
 requires:
 - category: "buildbase"
