@@ -63,6 +63,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 - FEATURES="${FEATURES} binpkg-request-signature" emerge -g dev-qt/qtwebengine
 - rm -rf /etc/portage/gnupg
+- emerge -1 dev-python/PyQtWebEngine
 steps:
 {{ template "portage_build" . }}
 requires:
