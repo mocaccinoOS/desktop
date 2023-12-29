@@ -61,11 +61,11 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
 {{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
 - FEATURES="${FEATURES} binpkg-request-signature" emerge -g dev-qt/qtwebengine
 - rm -rf /etc/portage/gnupg
 - emerge -1 dev-python/PyQtWebEngine
-steps:
-{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "X"
