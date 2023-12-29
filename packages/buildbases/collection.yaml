@@ -28,7 +28,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+185
+    version: 0+186
   - !!merge <<: *X
     real_category: "layers"
     name: "latex"
