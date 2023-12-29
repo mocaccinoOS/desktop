@@ -24,4 +24,4 @@ dev-qt/qtwayland egl
 dev-qt/qtxmlpatterns qml
 dev-qt/qtwayland vulkan
 dev-qt/qtwebchannel qml
-dev-qt/qtwebengine geolocation kerberos system-icu widgets -system-ffmpeg
+dev-qt/qtwebengine bindist system-icu widgets -system-ffmpeg
