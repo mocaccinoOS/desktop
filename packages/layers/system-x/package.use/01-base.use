@@ -49,11 +49,12 @@ sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre reso
 sys-apps/util-linux nls tty-helpers static-libs utils
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
+sys-devel/clang xml
 sys-devel/gdb python
 # No fuck git by default!
 sys-devel/gettext acl cxx ncurses nls openmp -git
 # clang wants USE=clang for llvm
-sys-devel/llvm clang
+sys-devel/llvm clang xml
 sys-fs/cryptsetup luks1_default
 sys-fs/e2fsprogs split-usr static-libs
 # required by sys-fs/dmraid

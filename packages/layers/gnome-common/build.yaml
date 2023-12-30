@@ -8,21 +8,9 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.unmask /etc/portage/
-# template start
-- |
-  FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
-  emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
-  /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
-- rm -rf /etc/portage/gnupg
-- rm -r /var/cache/binpkgs/*
-# template end
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-# template start
-- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- rm -rf /etc/portage/gnupg
-- rm -r /var/cache/binpkgs/*
-- etc-update -q --automode -5
-# template end
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
   name: "X"
