@@ -1,4 +1,4 @@
-app-arch/file-roller -nautilus -packagekit
+app-arch/file-roller nautilus -packagekit
 app-editors/gedit-plugins terminal
 app-text/evince djvu dvi keyring nautilus -nsplugin
 dev-libs/libgusb vala
@@ -7,7 +7,9 @@ gnome-base/gnome -extras -accessibility
 gnome-base/gnome-control-center networkmanager input_devices_wacom
 gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
 gnome-base/nautilus gnome sendto
+media-gfx/eog lcms
 media-gfx/eog-plugins flickr
 media-libs/gsound vala
 media-libs/libmediaart -qt5
 media-plugins/grilo-plugins upnp-av
+x11-wm/mutter gnome

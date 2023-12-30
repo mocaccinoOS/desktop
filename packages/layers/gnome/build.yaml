@@ -10,7 +10,12 @@ prelude:
 steps:
 - mkdir -p /var/lib/gdm/.config
 - touch /var/lib/gdm/.config/.keep
-{{ template "portage_build" . }}
+# template start
+- FEATURES="${FEATURES} binpkg-request-signature" EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --getbinpkg" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- rm -rf /etc/portage/gnupg
+- rm -r /var/cache/binpkgs/*
+- etc-update -q --automode -5
+# template end
 - chown -R 32:32 /var/lib/gdm
 requires:
 - category: "layers"
