@@ -11,7 +11,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- FEATURES="${FEATURES} binpkg-request-signature" emerge -g net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6 dev-lang/spidermonkey:102
+- FEATURES="${FEATURES} binpkg-request-signature" emerge -g net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6
 - rm -rf /etc/portage/gnupg
 - rm -r /var/cache/binpkgs/*
 - emerge -1 dev-libs/folks dev-libs/libgdata gnome-base/gvfs gnome-extra/zenity gnome-extra/evolution-data-server net-libs/gnome-online-accounts
