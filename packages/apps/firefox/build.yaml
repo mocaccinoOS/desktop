@@ -6,7 +6,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp firefox_optimized /etc/portage/env
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
 # Moccacino OS customization for bookmarks, start site and bookmarks toolbar.

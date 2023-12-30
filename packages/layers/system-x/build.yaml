@@ -27,6 +27,8 @@ steps:
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -g sys-devel/clang sys-devel/llvm
+- rm -rf /etc/portage/gnupg
+- rm -r /var/cache/binpkgs/*
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
 - emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
