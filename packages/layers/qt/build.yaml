@@ -60,13 +60,21 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
-{{ template "portage_prelude_build" . }}
-steps:
-{{ template "portage_build" . }}
-- FEATURES="${FEATURES} binpkg-request-signature" emerge -g dev-qt/qtwebengine
+# template start
+- |
+  FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
+  /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
 - rm -rf /etc/portage/gnupg
 - rm -r /var/cache/binpkgs/*
-- emerge -1 dev-python/PyQtWebEngine
+# template end
+steps:
+# template start
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- rm -rf /etc/portage/gnupg
+- rm -r /var/cache/binpkgs/*
+- etc-update -q --automode -5
+# template end
 requires:
 - category: "buildbase"
   name: "X"

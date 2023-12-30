@@ -1,10 +1,10 @@
 category: "layers"
 name: "qt"
-version: 5.15.11+7
+version: 5.15.11+8
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-crypt/gpgme app-crypt/qca app-text/poppler dev-libs/libdbusmenu-qt dev-libs/qtkeychain dev-python/PyQt5 dev-python/PyQt5-sip dev-python/sip dev-qt/linguist-tools dev-qt/qdbus dev-qt/qtbluetooth dev-qt/qtcharts dev-qt/qtchooser dev-qt/qtconcurrent dev-qt/qtcore dev-qt/qtdbus dev-qt/qtdeclarative dev-qt/qtgraphicaleffects dev-qt/qtgui dev-qt/qthelp dev-qt/qtimageformats dev-qt/qtlocation dev-qt/qtlockedfile dev-qt/qtmultimedia dev-qt/qtnetwork dev-qt/qtnetworkauth dev-qt/qtopengl dev-qt/qtpaths dev-qt/qtpositioning dev-qt/qtprintsupport dev-qt/qtquickcontrols dev-qt/qtquickcontrols2 dev-qt/qtscript dev-qt/qtscxml dev-qt/qtsensors dev-qt/qtserialport dev-qt/qtsingleapplication dev-qt/qtspeech dev-qt/qtsql dev-qt/qtsvg dev-qt/qttest dev-qt/qttranslations dev-qt/qtvirtualkeyboard dev-qt/qtwayland dev-qt/qtwaylandscanner dev-qt/qtwebchannel dev-qt/qtwebsockets dev-qt/qtwidgets dev-qt/qtx11extras dev-qt/qtxml dev-qt/qtxmlpatterns sys-auth/polkit-qt
+    app-crypt/gpgme app-crypt/qca app-text/poppler dev-libs/libdbusmenu-qt dev-libs/qtkeychain dev-python/PyQt5 dev-python/PyQt5-sip dev-python/PyQtWebEngine dev-python/sip dev-qt/linguist-tools dev-qt/qdbus dev-qt/qtbluetooth dev-qt/qtcharts dev-qt/qtchooser dev-qt/qtconcurrent dev-qt/qtcore dev-qt/qtdbus dev-qt/qtdeclarative dev-qt/qtgraphicaleffects dev-qt/qtgui dev-qt/qthelp dev-qt/qtimageformats dev-qt/qtlocation dev-qt/qtlockedfile dev-qt/qtmultimedia dev-qt/qtnetwork dev-qt/qtnetworkauth dev-qt/qtopengl dev-qt/qtpaths dev-qt/qtpositioning dev-qt/qtprintsupport dev-qt/qtquickcontrols dev-qt/qtquickcontrols2 dev-qt/qtscript dev-qt/qtscxml dev-qt/qtsensors dev-qt/qtserialport dev-qt/qtsingleapplication dev-qt/qtspeech dev-qt/qtsql dev-qt/qtsvg dev-qt/qttest dev-qt/qttranslations dev-qt/qtvirtualkeyboard dev-qt/qtwayland dev-qt/qtwaylandscanner dev-qt/qtwebchannel dev-qt/qtwebengine dev-qt/qtwebsockets dev-qt/qtwidgets dev-qt/qtx11extras dev-qt/qtxml dev-qt/qtxmlpatterns sys-auth/polkit-qt
 requires:
   - category: "layers"
     name: "X"
