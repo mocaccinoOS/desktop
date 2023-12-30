@@ -14,6 +14,7 @@ steps:
 - FEATURES="${FEATURES} binpkg-request-signature" emerge -g net-libs/webkit-gtk:4.1 net-libs/webkit-gtk:6
 - rm -rf /etc/portage/gnupg
 - rm -r /var/cache/binpkgs/*
+- emerge -1 net-libs/gnome-online-accounts gnome-extra/evolution-data-server
 requires:
 - category: "buildbase"
   name: "X"
