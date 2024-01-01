@@ -33,7 +33,3 @@ packages:
     real_category: "layers"
     name: "latex"
     version: 0.9+27
-  - !!merge <<: *X
-    real_category: "apps"
-    name: "spice-gtk"
-    version: 0+142
