@@ -37,11 +37,3 @@ packages:
     real_category: "apps"
     name: "spice-gtk"
     version: 0+142
-  - !!merge <<: *X
-    real_category: "apps"
-    name: "libvirt"
-    version: 0+139
-  - !!merge <<: *X
-    real_category: "apps"
-    name: "qemu"
-    version: 0+138

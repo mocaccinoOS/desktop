@@ -9,7 +9,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "qemu"
   version: ">=0"
-requires_final_images: true
