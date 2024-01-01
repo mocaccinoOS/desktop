@@ -10,6 +10,6 @@ requires:
 - category: "layers"
   name: "gnome-common"
   version: ">=0"
-- category: "layers"
+- category: "apps"
   name: "spice-gtk"
   version: ">=0"
