@@ -9,6 +9,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "layers"
+- category: "apps"
   name: "qemu"
   version: ">=0"
