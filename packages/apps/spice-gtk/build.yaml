@@ -8,6 +8,7 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "apps"
+- category: "buildbase"
   name: "libvirt"
   version: ">=0"
+requires_final_images: true

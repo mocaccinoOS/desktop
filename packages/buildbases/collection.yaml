@@ -16,7 +16,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+181
+    version: 0+182
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
@@ -33,3 +33,15 @@ packages:
     real_category: "layers"
     name: "latex"
     version: 0.9+27
+  - !!merge <<: *X
+    real_category: "apps"
+    name: "spice-gtk"
+    version: 0+142
+  - !!merge <<: *X
+    real_category: "apps"
+    name: "libvirt"
+    version: 0+139
+  - !!merge <<: *X
+    real_category: "apps"
+    name: "qemu"
+    version: 0+138

@@ -8,6 +8,7 @@ steps:
 - USE="-smartcard" emerge app-emulation/spice
 {{ template "portage_build" . }}
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "X"
   version: ">=0"
+requires_final_images: true
