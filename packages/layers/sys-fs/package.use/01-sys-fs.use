@@ -15,6 +15,7 @@ net-libs/libssh server
 net-libs/libtorrent-rasterbar -gnutls
 net-misc/ntp -zeroconf
 net-wireless/bluez obex
+sys-libs/binutils-libs nls
 sci-libs/hdf5 cxx szip -threads
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
