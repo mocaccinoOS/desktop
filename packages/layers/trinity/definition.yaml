@@ -1,6 +1,6 @@
 category: "layers"
 name: "trinity"
-version: 14.1.0+10
+version: 14.1.0+11
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
