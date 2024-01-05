@@ -1,0 +1,19 @@
+category: "apps"
+name: "entrance"
+version: 9999+73
+uri:
+  - https://launchpad.net/lightdm
+license: "GPL-3"
+description: "Entrance - An EFL based display manager"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    x11-misc/entrance
+requires:
+  - category: "layers"
+    name: "enlightenment"
+    version: ">=0"
+provides:
+  - name: entrance
+    category: x11-misc
+    version: '>=0'
