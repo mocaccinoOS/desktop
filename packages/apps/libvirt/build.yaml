@@ -1,5 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
+#TODO: Why is this service file here?
+- ^/usr/lib/systemd/system/pam_namespace.service
 env:
 {{ template "portage_env" . }}
 prelude:

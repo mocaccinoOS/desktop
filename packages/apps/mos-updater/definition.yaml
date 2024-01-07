@@ -1,6 +1,6 @@
 category: "apps"
 name: "mos-updater"
-version: 0.1+150
+version: 0.1+151
 requires:
   - category: "layers"
     name: "X"

@@ -1,6 +1,8 @@
 excludes:
 {{ template "portage_excludes" }}
 - ^/etc/portage/repos.conf/eselect-repo.conf
+#TODO: Why is this service file here?
+- ^/usr/lib/systemd/system/pam_namespace.service
 env:
 {{ template "portage_env" . }}
 prelude:
