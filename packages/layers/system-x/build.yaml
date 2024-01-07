@@ -23,7 +23,7 @@ prelude:
 steps:
 # Try to fix circular dependencies
 # - USE="-udev" emerge -1 -j $JOBS sys-apps/util-linux && USE="-cryptsetup" emerge -1 sys-apps/systemd -j $JOBS
-- mkdir /etc/portage/gnupg && chmod 755 /etc/portage/gnupg
+- mkdir /etc/portage/gnupg && chown -R $(whoami) /etc/portage/gnupg && chmod 600 /etc/portage/gnupg
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
