@@ -22,7 +22,7 @@ prelude:
 - cp -rf package.env /etc/portage/
 steps:
 - emerge -1uDN @system -j $JOBS
-- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build" . }}
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -g sys-devel/clang sys-devel/llvm
 - rm -rf /etc/portage/gnupg
@@ -30,8 +30,7 @@ steps:
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
 - emerge -C dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
-# depclean removes binutils, we do not want this to happen here
-# - emerge --depclean
+- emerge --depclean
 # For some reason unknown /usr/lib/systemd/system/pam_namespace.service was not shipped in this layer
 # It ended up in apps/flatpak or apps/libvirt or apps/entrance causing collisions.
 includes:

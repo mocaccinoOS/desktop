@@ -64,6 +64,7 @@ sys-fs/udev extras
 # We use dev-python/python-magic
 sys-apps/file -python
 sys-apps/kmod lzma static-libs
+sys-libs/binutils-libs nls
 sys-libs/gdbm berkdb nls readline
 sys-libs/libseccomp static-libs
 sys-fs/udev static-libs
