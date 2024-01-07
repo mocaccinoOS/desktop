@@ -7,6 +7,7 @@ app-crypt/gnupg nls readline smartcard ssl usb
 app-crypt/gpgme -qt5
 app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses -gtk -qt5
+app-misc/pax-utils -python
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
 dev-db/sqlite readline
@@ -38,7 +39,7 @@ net-libs/nghttp2 -cxx
 net-misc/curl adns http2 idn ssl sslv3 -nss -gnutls static-libs
 net-misc/openssh libedit -X -ldap
 # Add xattr support to rsync
-net-misc/rsync examples xattr
+net-misc/rsync xattr
 sci-libs/lapack eselect-ldso
 sys-apps/groff -X
 # Do we really want berkdb?
