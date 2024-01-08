@@ -44,4 +44,4 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
-    version: 0+140
+    version: 0+141
