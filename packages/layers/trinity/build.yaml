@@ -10,6 +10,7 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f trinity-official
