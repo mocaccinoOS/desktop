@@ -11,6 +11,7 @@ app-misc/pax-utils -python
 # qt5 is overkill for cmake as well
 dev-util/cmake -qt5 server
 dev-db/sqlite readline
+dev-debug/gdb python
 dev-lang/python sqlite berkdb
 dev-libs/boost context nls numpy python zlib zstd
 # We want packages with static-libs (add here)
@@ -51,7 +52,6 @@ sys-apps/util-linux nls tty-helpers static-libs utils
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
 sys-devel/clang xml
-sys-devel/gdb python
 # No fuck git by default!
 sys-devel/gettext acl cxx ncurses nls openmp -git
 # clang wants USE=clang for llvm
