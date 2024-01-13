@@ -1,4 +1,4 @@
 dev-util/clinfo ~amd64
-=media-libs/mesa-23.3.0 ~amd64
+=media-libs/mesa-23.3.3 ~amd64
 net-vpn/networkmanager-fortisslvpn ~amd64
 media-plugins/gst-plugins-aom ~amd64
