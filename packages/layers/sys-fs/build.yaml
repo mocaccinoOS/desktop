@@ -12,9 +12,9 @@ prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf patches /etc/portage/
 - USE="rustfmt inspector" emerge -1 dev-lang/rust-bin virtual/rust
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "layers"
   name: "system-x"
