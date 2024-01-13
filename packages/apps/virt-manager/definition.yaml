@@ -14,7 +14,7 @@ requires:
     name: "gnome-common"
     version: ">=0"
   - category: "apps"
-    name: "spice-gtk"
+    name: "qemu"
     version: ">=0"
 provides:
   - name: virt-manager

@@ -8,7 +8,7 @@ steps:
 {{ template "portage_build" . }}
 requires:
 - category: "buildbase"
-  name: "spice-gtk"
+  name: "qemu"
   version: ">=0"
 - category: "buildbase"
   name: "gnome-common"
