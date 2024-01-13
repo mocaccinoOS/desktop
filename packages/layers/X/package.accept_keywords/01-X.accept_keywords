@@ -1,4 +1,6 @@
 dev-util/clinfo ~amd64
-=media-libs/mesa-23.3.3 ~amd64
-net-vpn/networkmanager-fortisslvpn ~amd64
 media-plugins/gst-plugins-aom ~amd64
+# Temp. require this for LLVM 17
+=dev-util/intel_clc-23.3.3 ~amd64
+dev-util/spirv-llvm-translator:17
+=media-libs/mesa-23.3.3 ~amd64
