@@ -8,9 +8,18 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/libcacard app-emulation/qemu app-emulation/spice media-libs/virglrenderer net-libs/libslirp sys-apps/dtc sys-apps/usbredir sys-firmware/edk2-ovmf-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
+    app-crypt/swtpm app-emulation/libcacard app-emulation/libvirt app-emulation/libvirt-glib app-emulation/qemu app-emulation/spice app-misc/scrub dev-python/libvirt-python media-libs/virglrenderer net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libslirp net-misc/ethertypes net-misc/radvd sys-apps/dtc sys-apps/usbredir sys-firmware/edk2-ovmf-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
 provides:
+  - name: swtpm
+    category: app-crypt
+    version: '>=0'
   - name: libcacard
+    category: app-emulation
+    version: '>=0'
+  - name: libvirt
+    category: app-emulation
+    version: '>=0'
+  - name: libvirt-glib
     category: app-emulation
     version: '>=0'
   - name: qemu
@@ -22,11 +31,29 @@ provides:
   - name: spice-protocol
     category: app-emulation
     version: '>=0'
+  - name: scrub
+    category: app-misc
+    version: '>=0'
+  - name: libvirt-python
+    category: dev-python
+    version: '>=0'
   - name: virglrenderer
     category: media-libs
     version: '>=0'
+  - name: openbsd-netcat
+    category: net-analyzer
+    version: '>=0'
+  - name: ebtables
+    category: net-firewall
+    version: '>=0'
   - name: libslirp
     category: net-libs
+    version: '>=0'
+  - name: ethertypes
+    category: net-misc
+    version: '>=0'
+  - name: radvd
+    category: net-misc
     version: '>=0'
   - name: dtc
     category: sys-apps

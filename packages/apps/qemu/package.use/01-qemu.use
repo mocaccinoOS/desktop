@@ -1,2 +1,4 @@
+app-crypt/swtpm fuse
+app-emulation/libvirt fuse lvm
 app-emulation/qemu fuse opengl smartcard spice usb usbredir qemu_softmmu_targets_arm qemu_user_targets_arm virgl -doc
 app-emulation/spice smartcard

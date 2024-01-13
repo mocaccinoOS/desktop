@@ -7,7 +7,7 @@ labels:
     net-misc/spice-gtk
 requires:
   - category: "apps"
-    name: "libvirt"
+    name: "qemu"
     version: ">=0"
 provides:
   - name: spice-gtk
