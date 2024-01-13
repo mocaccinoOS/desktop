@@ -1,4 +1,1 @@
-# 05-06-2023 Joost Ruis: Cinnamon is poorly maintained.
-# We require very old spidermonkey for gnome-extra/cjs that in itself requires an older clang:14 version.
-# Sadly this clang version does not support python 3.11. So try to avoid pulling in that.
-dev-lang/spidermonkey:78 -clang
+# placeholder

@@ -3,8 +3,6 @@ app-crypt/gcr vala gtk
 # see https://bugs.gentoo.org/570512
 app-crypt/pinentry keyring
 app-crypt/libsecret crypt introspection vala
-# See if we can avoid pulling in llvm:15
-dev-lang/spidermonkey -clang
 dev-libs/folks eds
 dev-libs/libgdata gnome-online-accounts vala
 dev-libs/libgee introspection
