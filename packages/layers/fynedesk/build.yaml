@@ -18,9 +18,8 @@ prelude:
 steps:
 - cd fynedesk && make PREFIX="/usr" install
 requires:
-- category: "buildbase"
+- category: "layers"
   name: "X"
   version: ">=0"
-requires_final_images: true
 excludes:
 {{ template "portage_excludes" }}
