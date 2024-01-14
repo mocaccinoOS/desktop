@@ -77,6 +77,15 @@ provides:
     category: sys-firmware
     version: '>=0'
 requires:
+  - category: "entity"
+    name: "libvirt"
+    version: ">=0"
+  - category: "entity"
+    name: "qemu"
+    version: ">=0"
+  - category: "entity"
+    name: "radvd"
+    version: ">=0"
   - category: "layers"
     name: "X"
     version: ">=0"
