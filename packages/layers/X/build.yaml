@@ -15,7 +15,7 @@ prelude:
 - emerge -1 app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 dev-libs/boehm-gc && emerge -1 -j ${JOBS} dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse
+- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 {{ template "portage_build_gentoo_binary" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
