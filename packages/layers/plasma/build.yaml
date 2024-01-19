@@ -5,9 +5,9 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - emerge -1 media-libs/phonon
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 - sed -i 's/Gentoo Linux/MocaccinoOS/g' /etc/xdg/kcm-about-distrorc
 - sed -i 's/www.gentoo.org/www.mocaccino.org/g' /etc/xdg/kcm-about-distrorc
 - sed -i 's/kinfocenter\/glogo-small.png/icons\/mOS-icons\/mOS_outlined_hl.png/g' /etc/xdg/kcm-about-distrorc
