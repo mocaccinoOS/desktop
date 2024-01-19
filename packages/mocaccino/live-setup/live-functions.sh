@@ -4,7 +4,7 @@ GDM_FILE="/usr/share/gdm/defaults.conf"
 CUSTOM_GDM_FILE="/etc/gdm/custom.conf"
 LXDM_FILE="/etc/lxdm/lxdm.conf"
 LIGHTDM_FILE="/etc/lightdm/lightdm.conf"
-SDDM_FILE="/usr/share/sddm/sddm.conf.d/00default.conf"
+SDDM_FILE="/etc/sddm.conf.d/01gentoo.conf"
 
 LIVE_USER_GROUPS="audio bumblebee cdrom cdrw clamav console games \
 kvm lp lpadmin messagebus plugdev portage pulse pulse-access pulse-rt \
@@ -189,7 +189,7 @@ setup_desktop_session() {
 setup_display_manager() {
     # SDDM
     if [ -f "$SDDM_FILE" ]; then
-        sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1Breeze/" $SDDM_FILE
+        sed -i "/^\[Theme\]$/,/^\[.*\]$/s/^\(Current=\).*$/\1breeze/" $SDDM_FILE
     fi
 }
 
