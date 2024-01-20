@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 1.2+66
+version: 1.2+67
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -1473,9 +1473,6 @@ provides:
     version: '>=0'
   - name: xterm
     category: x11-terms
-    version: '>=0'
-  - name: adwaita-icon-theme
-    category: x11-themes
     version: '>=0'
   - name: hicolor-icon-theme
     category: x11-themes
