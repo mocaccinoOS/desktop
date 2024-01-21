@@ -1,0 +1,19 @@
+category: "apps"
+name: "woeusb"
+version: "5.2.4"
+uri:
+  - https://github.com/WoeUSB/WoeUSB
+license: "CC-BY-SA-4.0 GPL-3+"
+description: "Creates windows installer on usb media from an iso image"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-boot/woeusb
+provides:
+  - name: woeusb
+    category: boot
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "sys-fs"
+    version: ">=0"

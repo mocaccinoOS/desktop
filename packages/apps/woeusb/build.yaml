@@ -1,0 +1,10 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "sys-fs"
+  version: ">=0"
