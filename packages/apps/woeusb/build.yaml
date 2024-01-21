@@ -5,6 +5,6 @@ env:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "layers"
-  name: "sys-fs"
+- category: "apps"
+  name: "grub"
   version: ">=0"
