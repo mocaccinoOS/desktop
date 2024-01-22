@@ -18,7 +18,6 @@ steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
 {{ template "portage_build_gentoo_binary" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
-- emerge -C x11-themes/adwaita-icon-theme
 requires:
 - category: "layers"
   name: "system-x"
