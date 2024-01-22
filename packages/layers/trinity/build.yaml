@@ -10,8 +10,6 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
-- sed -i 's/sys-devel/dev-debug/g' /var/db/repos/trinity-official/trinity-base/drkonqi/drkonqi-14.1.0.ebuild
-- ebuild /var/db/repos/trinity-official/trinity-base/drkonqi/drkonqi-14.1.0.ebuild manifest
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
