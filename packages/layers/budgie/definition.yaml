@@ -1,6 +1,6 @@
 category: "layers"
 name: "budgie"
-version: 10.7+60
+version: 10.7+61
 uri:
   - https://getsol.us/categories/budgie
 license: "GPL-2 LGPL-2.1"
