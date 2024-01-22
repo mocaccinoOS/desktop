@@ -13,7 +13,8 @@ dev-libs/nss utils
 dev-python/pillow webp truetype
 dev-python/pygobject introspection
 dev-python/pyudev -qt5
-media-fonts/noto -cjk
+# disable extra to free up 300MB
+media-fonts/noto -cjk -extra
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
 media-gfx/sane-backends -v4l
