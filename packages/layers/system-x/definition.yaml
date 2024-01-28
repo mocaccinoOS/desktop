@@ -409,6 +409,9 @@ provides:
   - name: meson
     category: dev-build
     version: '>=0'
+  - name: meson-format-array
+    category: dev-build
+    version: '>=0'
   - name: ninja
     category: dev-build
     version: '>=0'
@@ -863,9 +866,6 @@ provides:
     category: dev-util
     version: '>=0'
   - name: glib-utils
-    category: dev-util
-    version: '>=0'
-  - name: meson-format-array
     category: dev-util
     version: '>=0'
   - name: pkgconf
