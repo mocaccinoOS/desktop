@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.11+15
+version: 5.15.11+16
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -21,9 +21,6 @@ provides:
     version: '>=0'
   - name: mime-types
     category: app-misc
-    version: '>=0'
-  - name: b2
-    category: dev-build
     version: '>=0'
   - name: rust-bin
     category: dev-lang
