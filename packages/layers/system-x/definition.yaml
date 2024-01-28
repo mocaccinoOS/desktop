@@ -394,6 +394,9 @@ provides:
   - name: automake-wrapper
     category: dev-build
     version: '>=0'
+  - name: cmake
+    category: dev-build
+    version: '>=0'
   - name: libtool
     category: dev-build
     version: '>=0'
@@ -848,9 +851,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: boost-build
-    category: dev-util
-    version: '>=0'
-  - name: cmake
     category: dev-util
     version: '>=0'
   - name: colm

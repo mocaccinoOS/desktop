@@ -8,7 +8,7 @@ app-crypt/gpgme -qt5
 app-crypt/p11-kit asn1 libffi trust
 app-crypt/pinentry ncurses -gtk -qt5
 app-misc/pax-utils -python
-dev-util/cmake server -qt5
+dev-build/cmake server -qt5
 dev-db/sqlite readline
 dev-debug/gdb python
 dev-lang/python sqlite berkdb
