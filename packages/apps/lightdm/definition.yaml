@@ -24,7 +24,7 @@ provides:
     category: acct-user
     version: '>=0'
   - name: xfce4-dev-tools
-    category: dev-util
+    category: dev-build
     version: '>=0'
   - name: lightdm
     category: x11-misc

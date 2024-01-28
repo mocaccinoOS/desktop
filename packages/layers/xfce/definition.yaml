@@ -20,7 +20,7 @@ provides:
     category: app-editors
     version: '>=0'
   - name: xfce4-dev-tools
-    category: dev-util
+    category: dev-build
     version: '>=0'
   - name: ristretto
     category: media-gfx
