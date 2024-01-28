@@ -1,5 +1,5 @@
 [org.mate.interface]
-gtk-theme='Qogir-dark'
+gtk-theme='Qogir-Dark'
 menus-have-icons = true
 
 [org.mate.background]
