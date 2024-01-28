@@ -22,6 +22,9 @@ provides:
   - name: mime-types
     category: app-misc
     version: '>=0'
+  - name: b2
+    category: dev-build
+    version: '>=0'
   - name: rust-bin
     category: dev-lang
     version: '>=0'
@@ -330,9 +333,6 @@ provides:
     version: '>=0'
   - name: qtxmlpatterns
     category: dev-qt
-    version: '>=0'
-  - name: b2
-    category: dev-util
     version: '>=0'
   - name: cargo-c
     category: dev-util

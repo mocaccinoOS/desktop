@@ -109,6 +109,9 @@ provides:
   - name: xhtml1
     category: app-text
     version: '>=0'
+  - name: b2
+    category: dev-build
+    version: '>=0'
   - name: ruby
     category: dev-lang
     version: '>=0'
@@ -363,9 +366,6 @@ provides:
     version: '>=0'
   - name: typeprof
     category: dev-ruby
-    version: '>=0'
-  - name: b2
-    category: dev-util
     version: '>=0'
   - name: cargo-c
     category: dev-util
