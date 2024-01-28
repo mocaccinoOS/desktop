@@ -397,6 +397,9 @@ provides:
   - name: cmake
     category: dev-build
     version: '>=0'
+  - name: gtk-doc-am
+    category: dev-build
+    version: '>=0'
   - name: libtool
     category: dev-build
     version: '>=0'
@@ -860,9 +863,6 @@ provides:
     category: dev-util
     version: '>=0'
   - name: glib-utils
-    category: dev-util
-    version: '>=0'
-  - name: gtk-doc-am
     category: dev-util
     version: '>=0'
   - name: meson-format-array
