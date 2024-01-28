@@ -379,6 +379,33 @@ provides:
   - name: po4a
     category: app-text
     version: '>=0'
+  - name: autoconf
+    category: dev-build
+    version: '>=0'
+  - name: autoconf-archive
+    category: dev-build
+    version: '>=0'
+  - name: autoconf-wrapper
+    category: dev-build
+    version: '>=0'
+  - name: automake
+    category: dev-build
+    version: '>=0'
+  - name: automake-wrapper
+    category: dev-build
+    version: '>=0'
+  - name: libtool
+    category: dev-build
+    version: '>=0'
+  - name: make
+    category: dev-build
+    version: '>=0'
+  - name: meson
+    category: dev-build
+    version: '>=0'
+  - name: ninja
+    category: dev-build
+    version: '>=0'
   - name: eigen
     category: dev-cpp
     version: '>=0'
@@ -838,13 +865,7 @@ provides:
   - name: gtk-doc-am
     category: dev-util
     version: '>=0'
-  - name: meson
-    category: dev-util
-    version: '>=0'
   - name: meson-format-array
-    category: dev-util
-    version: '>=0'
-  - name: ninja
     category: dev-util
     version: '>=0'
   - name: pkgconf
@@ -1048,21 +1069,6 @@ provides:
   - name: thin-provisioning-tools
     category: sys-block
     version: '>=0'
-  - name: autoconf
-    category: sys-devel
-    version: '>=0'
-  - name: autoconf-archive
-    category: sys-devel
-    version: '>=0'
-  - name: autoconf-wrapper
-    category: sys-devel
-    version: '>=0'
-  - name: automake
-    category: sys-devel
-    version: '>=0'
-  - name: automake-wrapper
-    category: sys-devel
-    version: '>=0'
   - name: binutils
     category: sys-devel
     version: '>=0'
@@ -1096,9 +1102,6 @@ provides:
   - name: gnuconfig
     category: sys-devel
     version: '>=0'
-  - name: libtool
-    category: sys-devel
-    version: '>=0'
   - name: llvm
     category: sys-devel
     version: '>=0'
@@ -1109,9 +1112,6 @@ provides:
     category: sys-devel
     version: '>=0'
   - name: m4
-    category: sys-devel
-    version: '>=0'
-  - name: make
     category: sys-devel
     version: '>=0'
   - name: patch
