@@ -1,4 +1,5 @@
 {{ define "portage_excludes" }}
+- ^/etc/portage/savedconfig
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
 - ^/var/db/repos
