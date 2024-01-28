@@ -26,11 +26,11 @@ provides:
   - name: virtualbox
     category: app-emulation
     version: '>=0'
+  - name: kbuild
+    category: dev-build
+    version: '>=0'
   - name: libIDL
     category: dev-libs
-    version: '>=0'
-  - name: kbuild
-    category: dev-util
     version: '>=0'
   - name: bin86
     category: sys-devel
