@@ -18,7 +18,7 @@ media-fonts/noto -cjk -extra
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
 media-gfx/sane-backends -v4l
-media-libs/chromaprint tools
+media-libs/chromaprint tools -abi_x86_32
 media-libs/freetype -auto-hinter adobe-cff brotli cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
 media-libs/gst-plugins-bad egl -wayland
@@ -33,6 +33,7 @@ media-libs/libv4l dvb
 media-libs/mesa gbm g3dvl gles2 nptl opencl openvg pic shared-dricore shared-glapi vaapi vdpau video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg zink
 media-libs/openal -qt5
 media-plugins/gst-plugins-meta ffmpeg mms http
+# media-plugins/gst-plugins-libav -abi_x86_32
 media-sound/pulseaudio -daemon -qt5 -gtk alsa-plugin asyncns bluetooth caps gdbm glib ipv6 jack native-headset ofono-headset orc ssl tcpd udev webrtc-aec zeroconf
 media-video/ffmpeg amr bluray cpudetection encode fdk gnutls gpl gsm iconv ieee1394 jack jpeg2k libaom libass mp3 network openal openh264 openssl opus postproc sdl speex test theora truetype v4l vaapi vdpau vidstab vorbis vpx vulkan webp x264 x265 xvid zlib
 media-video/pipewire bluetooth gstreamer pipewire-alsa sound-server
