@@ -8,10 +8,9 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "buildbase"
-  name: "qemu"
-  version: ">=0"
-- category: "buildbase"
+- category: "layers"
   name: "gnome-common"
   version: ">=0"
-requires_final_images: true
+- category: "apps"
+  name: "qemu"
+  version: ">=0"
