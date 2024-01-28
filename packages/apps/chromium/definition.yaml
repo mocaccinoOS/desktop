@@ -11,7 +11,7 @@ labels:
     www-client/chromium
 provides:
   - name: gn
-    category: dev-util
+    category: dev-build
     version: '>=0'
   - name: chromium
     category: www-client
