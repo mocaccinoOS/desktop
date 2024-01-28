@@ -21,7 +21,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 # required for binary packages
-- getuto
+- emerge -1 app-portage/getuto && getuto
 steps:
 - emerge -1uDN @system -j $JOBS
 - emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
