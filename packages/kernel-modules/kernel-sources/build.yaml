@@ -11,10 +11,10 @@ requires:
 requires_final_images: true
 prelude:
 - |
-    kernel=$(ls /usr/src | head -n1) && \ 
-    emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources && \
+    kernel=$(ls /usr/src | head -n1) && \
+    USE="dracut" emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources && \
     cd /usr/src && rm -rfv linux && ln -s $kernel linux
 # Certain modules might require a symlink to the kernel sources inside /lib/module/<module/build
 - |
-   modules=$(ls /lib/modules | grep mocaccino | head -n1) && \ 
+   modules=$(ls /lib/modules | grep mocaccino | head -n1) && \
    ln -s /usr/src/linux /lib/modules/$modules/build
