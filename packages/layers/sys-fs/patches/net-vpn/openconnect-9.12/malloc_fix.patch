@@ -1,5 +1,5 @@
---- openconnect-internal.h      2024-01-29 10:46:51.790424618 +0000
-+++ openconnect-internal.h      2024-01-29 10:46:51.774424617 +0000
+--- src/openconnect-internal.h      2024-01-29 10:46:51.790424618 +0000
++++ src/openconnect-internal.h      2024-01-29 10:46:51.774424617 +0000
 @@ -167,6 +167,7 @@
  #ifdef HAVE_VHOST
  #include <linux/virtio_net.h>
