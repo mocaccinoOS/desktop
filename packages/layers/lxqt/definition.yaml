@@ -8,7 +8,7 @@ description: "The Lightweight Qt Desktop Environment"
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    app-arch/lxqt-archiver app-editors/featherpad app-misc/qtxdg-tools dev-libs/libqtxdg lxde-base/lxmenu-data lxde-base/menu-cache lxqt-base/liblxqt lxqt-base/lxqt-about lxqt-base/lxqt-admin lxqt-base/lxqt-config lxqt-base/lxqt-globalkeys lxqt-base/lxqt-meta lxqt-base/lxqt-notificationd lxqt-base/lxqt-panel lxqt-base/lxqt-policykit lxqt-base/lxqt-powermanagement lxqt-base/lxqt-qtplugin lxqt-base/lxqt-runner lxqt-base/lxqt-session media-gfx/lximage-qt sys-libs/libstatgrab x11-libs/libfm-extra x11-libs/libfm-qt x11-libs/qtermwidget x11-misc/obconf-qt x11-misc/pcmanfm-qt x11-misc/qps x11-terms/qterminal x11-themes/lxqt-themes x11-wm/openbox
+    app-arch/lxqt-archiver app-editors/featherpad app-misc/qtxdg-tools dev-libs/libqtxdg lxde-base/lxmenu-data lxde-base/menu-cache lxqt-base/liblxqt lxqt-base/lxqt-about lxqt-base/lxqt-admin lxqt-base/lxqt-config lxqt-base/lxqt-globalkeys lxqt-base/lxqt-meta lxqt-base/lxqt-notificationd lxqt-base/lxqt-panel lxqt-base/lxqt-policykit lxqt-base/lxqt-powermanagement lxqt-base/lxqt-qtplugin lxqt-base/lxqt-runner lxqt-base/lxqt-session media-gfx/lximage-qt sys-libs/libstatgrab x11-libs/libfm-extra x11-libs/libfm-qt x11-libs/qtermwidget x11-misc/pcmanfm-qt x11-misc/qps x11-terms/qterminal x11-themes/lxqt-themes x11-wm/openbox
 requires:
   - category: "layers"
     name: "kde-common"
@@ -88,9 +88,6 @@ provides:
     version: '>=0'
   - name: qtermwidget
     category: x11-libs
-    version: '>=0'
-  - name: obconf-qt
-    category: x11-misc
     version: '>=0'
   - name: pcmanfm-qt
     category: x11-misc
