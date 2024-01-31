@@ -1,6 +1,8 @@
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.20.6 ~amd64
+
 # Temp. require this for LLVM 17
 =dev-util/intel_clc-23.3.3 ~amd64
 dev-util/spirv-llvm-translator:17
+=dev-util/spirv-headers ~amd64
 =media-libs/mesa-23.3.3 ~amd64
