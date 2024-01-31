@@ -1,1 +1,2 @@
-# Placeholder
+<sys-devel/llvm:17
+<sys-devel/clang:17
