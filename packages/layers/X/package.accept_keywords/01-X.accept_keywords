@@ -6,6 +6,7 @@ dev-util/clinfo ~amd64
 dev-util/spirv-llvm-translator:17 ~amd64
 =dev-util/spirv-headers-1.3.275 ~amd64
 =dev-util/spirv-tools-1.3.275 ~amd64
+=dev-util/volk-1.3.275 ~amd64
 =dev-util/vulkan-headers-1.3.275 ~amd64
 =dev-util/vulkan-tools-1.3.275 ~amd64
 =media-libs/vulkan-layers-1.3.275 ~amd64
