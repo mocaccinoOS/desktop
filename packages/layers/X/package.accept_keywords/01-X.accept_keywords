@@ -4,5 +4,7 @@ dev-util/clinfo ~amd64
 # Temp. require this for LLVM 17
 =dev-util/intel_clc-23.3.3 ~amd64
 dev-util/spirv-llvm-translator:17
-=dev-util/spirv-headers ~amd64
+=dev-util/spirv-headers-1.3.275 ~amd64
+=media-libs/vulkan-layers-1.3.275 ~amd64
+=media-libs/vulkan-loader-1.3.275 ~amd64
 =media-libs/mesa-23.3.3 ~amd64
