@@ -1,2 +1,2 @@
-<sys-devel/llvm:17
-<sys-devel/clang:17
+<sys-devel/llvm-17.0.6
+<sys-devel/clang-17.0.6
