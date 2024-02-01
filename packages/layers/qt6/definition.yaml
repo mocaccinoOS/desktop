@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt6"
-version: 6.5.3-r1+20
+version: 6.5.3-r1+21
 labels:
   emerge.jobs: "1"
   emerge.packages: >-

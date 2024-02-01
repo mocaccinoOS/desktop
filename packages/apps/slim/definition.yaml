@@ -1,6 +1,6 @@
 category: "apps"
 name: "slim"
-version: 1.4.0+2
+version: 1.4.0+3
 uri:
   - https://sourceforge.net/projects/slim.berlios
 license: "GPL-2"
