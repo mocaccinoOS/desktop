@@ -5,5 +5,5 @@ dev-qt/qtcharts:6 qml
 dev-qt/qtmultimedia:6 vulkan
 dev-qt/qtdeclarative:6 vulkan
 dev-qt/qtquick3d:6 vulkan
-dev-qt/qttools:6 -designer vulkan
+dev-qt/qttools:6 qml vulkan
 dev-qt/qtwayland:6 vulkan
