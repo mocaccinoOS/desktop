@@ -1,0 +1,12 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+steps:
+{{ template "portage_build" . }}
+# Might wanna do this in layers/X
+- USE="video_cards_nvidia" emerge x11-base/xwayland
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
