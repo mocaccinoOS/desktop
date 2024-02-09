@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 535.154.05+1
+    version: 535.154.05+2
     lts: true
     labels:
       emerge.jobs: "3"
@@ -88,6 +88,9 @@ packages:
       - name: mocaccino-lts-full
         category: kernel
         version: ">=0"
+      - name: egl-wayland
+        category: apps
+        version: ">=0"
       - name: nvpd
         category: entity
         version: ">=0"
@@ -96,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 535.154.05+1
+    version: 535.154.05+2
     lts: false
     labels:
       emerge.jobs: "3"
@@ -112,6 +115,9 @@ packages:
       - name: mocaccino-full
         category: kernel
         version: ">=0"
+      - name: egl-wayland
+        category: apps
+        version: ">=0"
       - name: nvpd
         category: entity
         version: ">=0"
@@ -120,7 +126,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.223.02+21
+    version: 470.223.02+22
     lts: true
     labels:
       emerge.jobs: "3"
