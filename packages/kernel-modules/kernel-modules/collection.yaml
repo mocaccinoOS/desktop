@@ -119,8 +119,8 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
-    name: "nvidia-drivers-470-lts"
-    version: 470.223.02+21
+    name: "nvidia-drivers-495-lts"
+    version: "495.46-r20"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -128,7 +128,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =x11-drivers/nvidia-drivers-470.223.02
+        - =x11-drivers/nvidia-drivers-495.46-r20
     provides:
       - name: nvidia-drivers
         category: x11-drivers
