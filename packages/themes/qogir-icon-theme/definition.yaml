@@ -1,0 +1,19 @@
+category: "themes"
+name: "qogir-icon-theme"
+version: "2020.11.22"
+uri:
+  - https://github.com/vinceliuice/Qogir-icon-theme
+license: "GPL-3"
+description: "A flat colorful design icon theme for linux desktops"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-themes/qogir-icon-theme
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: qogir-icon-theme
+    category: x11-themes
+    version: '>=0'

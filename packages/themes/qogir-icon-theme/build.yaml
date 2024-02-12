@@ -1,7 +1,12 @@
 excludes:
 {{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
 env:
 {{ template "portage_env" . }}
+prelude:
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable guru
+- emaint sync -r guru
 steps:
 {{ template "portage_build" . }}
 requires:
