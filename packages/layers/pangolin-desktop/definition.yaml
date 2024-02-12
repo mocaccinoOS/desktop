@@ -1,6 +1,6 @@
 category: "layers"
 name: "pangolin-desktop"
-version: 0.0.220222+129
+version: 0.0.220222+130
 commit: "95734691f0a10dd66da27914f4491c60aaa65aab"
 requires:
   - category: "layers"

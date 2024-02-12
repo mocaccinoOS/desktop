@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+179
+    version: 0+180
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
@@ -16,24 +16,24 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+190
+    version: 0+191
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+182
+    version: 0+183
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+225
+    version: 0+226
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+201
+    version: 0+202
   - !!merge <<: *X
     real_category: "layers"
     name: "latex"
-    version: 0.9+35
+    version: 0.9+36
   - !!merge <<: *X
     real_category: "apps"
     name: "qemu"
-    version: 0+149
+    version: 0+150
