@@ -1,11 +1,15 @@
 name: "gnome"
 category: "meta"
-version: "0.20211116"
+version: "0.20230212"
+description: "GNOME Desktop meta package"
 
 requires:
 - category: "layers"
   name: "gnome"
   version: ">=0"
-- category: mocaccino
-  name: gnome-skel
+- category: "apps"
+  name: "gnome-software"
+  version: ">=0"
+- category: "mocaccino"
+  name: "gnome-skel"
   version: ">=0"
