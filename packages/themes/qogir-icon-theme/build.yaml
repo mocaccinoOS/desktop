@@ -4,6 +4,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+- cp -rf package.accept_keywords /etc/portage/
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
 - emaint sync -r guru
