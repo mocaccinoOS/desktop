@@ -1,19 +1,11 @@
 excludes:
-- ^/var/cache/distfiles
-- ^/usr/portage/distfiles
-- ^/var/db/repos
-- ^/var/cache/edb
-- ^/usr/portage
-- ^/var/db/pkg
-- ^/var/lib/portage
-- ^/var/log
+{{ template "portage_excludes" }}
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "X"
