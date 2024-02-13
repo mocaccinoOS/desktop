@@ -1,3 +1,3 @@
 # system-png is disabled, requires media-libs/libpng -apng
 net-libs/nodejs inspector
-www-client/chromium widevine -qt5 -qt6 -system-png -system-toolchain libcxx 
+www-client/chromium widevine -qt5 -qt6 -system-png
