@@ -34,6 +34,6 @@ packages:
     name: "latex"
     version: 0.9+36
   - !!merge <<: *X
-    real_category: "apps"
+    real_category: "layers"
     name: "qemu"
-    version: 0+150
+    version: 0+151

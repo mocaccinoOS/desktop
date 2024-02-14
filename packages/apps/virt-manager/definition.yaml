@@ -1,6 +1,6 @@
 category: "apps"
 name: "virt-manager"
-version: 4.1.0+64
+version: "4.1.0-r1"
 uri:
   - https://virt-manager.org
 license: "GPL-2"
@@ -13,7 +13,7 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
-  - category: "apps"
+  - category: "layers"
     name: "qemu"
     version: ">=0"
 provides:

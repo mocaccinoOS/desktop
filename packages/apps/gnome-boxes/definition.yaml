@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-boxes"
-version: 44.2+38
+version: "45.0"
 uri:
   - https://wiki.gnome.org/Apps/Boxes
 license: "LGPL-2+ CC-BY-2.0"
@@ -13,7 +13,7 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
-  - category: "apps"
+  - category: "layers"
     name: "qemu"
     version: ">=0"
 provides:
