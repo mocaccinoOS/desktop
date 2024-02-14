@@ -6,6 +6,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
+- USE="-smartcard" emerge app-emulation/spice
 {{ template "portage_prelude_build" . }}
 steps:
 - USE="-smartcard" emerge app-emulation/spice
