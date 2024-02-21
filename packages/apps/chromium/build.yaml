@@ -5,7 +5,6 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.env /etc/portage/
-- USE="profiler" emerge -1 dev-lang/rust
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
