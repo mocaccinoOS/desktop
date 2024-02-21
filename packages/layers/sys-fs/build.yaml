@@ -14,6 +14,9 @@ prelude:
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust virtual/rust
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
+# 2024-02-21: new stable curl has a flag to control psl
+# Next cycle we better make sure we have net-libs/libpsl in layers/system-x
+- emerge -1 net-misc/curl 
 {{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "layers"
