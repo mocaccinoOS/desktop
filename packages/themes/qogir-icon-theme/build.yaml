@@ -10,6 +10,8 @@ prelude:
 - emaint sync -r guru
 steps:
 {{ template "portage_build" . }}
+# silly issue, fix it here for now
+- mv /usr/share/icons/Qogir-dark /usr/share/icons/Qogir-Dark
 requires:
 - category: "layers"
   name: "X"
