@@ -12,10 +12,10 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.license /etc/portage/
 - cp -rf package.env /etc/portage/
-- emerge -1 app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
+- emerge -1 app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 media-libs/mesa
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype
+- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 media-libs/mesa
 {{ template "portage_build_gentoo_binary" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
