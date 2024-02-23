@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20240221"
+version: "0.20240223"
 gcc_version: "13"
 python_version: "3.11"
 category: layers
@@ -905,6 +905,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: libnsl
+    category: net-libs
+    version: '>=0'
+  - name: libpsl
     category: net-libs
     version: '>=0'
   - name: libtirpc
