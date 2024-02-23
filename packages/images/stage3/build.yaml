@@ -11,7 +11,7 @@ prelude:
 - mkdir /gentoo
 
 steps:
-- curl -L http://distfiles.gentoo.org/releases/{{.Values.arch}}/autobuilds/current-stage3-{{.Values.arch}}-systemd/stage3-{{.Values.arch}}-systemd-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
+- curl -L http://distfiles.gentoo.org/releases/{{.Values.arch}}/autobuilds/current-stage3-{{.Values.arch}}-systemd/stage3-{{.Values.arch}}-systemd-mergedusr-${STAGE_VERSION}.tar.xz | tar Jxp --xattrs --numeric-owner -C /gentoo
 
 env:
 {{ if ne .Values.arch "amd64"}}
