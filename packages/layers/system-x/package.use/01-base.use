@@ -50,8 +50,9 @@ sys-apps/groff -X
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
+sys-apps/shadow su
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre resolvconf seccomp split-usr sysv-utils
-sys-apps/util-linux nls tty-helpers static-libs utils
+sys-apps/util-linux nls tty-helpers static-libs utils -su
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 sys-auth/polkit introspection nls pam -kde -gtk
 # required by net-analyzer/tcpreplay-4.0.2
