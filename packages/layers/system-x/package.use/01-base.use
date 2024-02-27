@@ -1,5 +1,7 @@
+# Be sure we have the sh symlink set
+app-alternatives/sh bash
 # New splashutils wants static-libs see Gentoo bug #356231
-app-arch/bzip2 split-usr static-libs
+app-arch/bzip2 static-libs
 # vzctl and other packages now require xattr support in tar
 app-arch/tar xattr
 app-arch/zstd lz4
@@ -20,10 +22,10 @@ dev-libs/libassuan static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/libksba static-libs
-dev-libs/libpcre cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
-dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit split-usr static-libs unicode zlib
+dev-libs/libpcre cxx jit pcre16 readline recursion-limit static-libs unicode zlib
+dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit static-libs unicode zlib
 dev-libs/libxml2 ipv6 python readline
-dev-libs/lzo split-usr static-libs
+dev-libs/lzo static-libs
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-python/numpy lapack
@@ -51,7 +53,7 @@ sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
 sys-apps/dbus user-session
 sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/shadow su
-sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre resolvconf seccomp split-usr sysv-utils
+sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre resolvconf seccomp sysv-utils
 sys-apps/util-linux nls tty-helpers static-libs utils -su
 sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
 sys-auth/polkit introspection nls pam -kde -gtk
@@ -66,7 +68,7 @@ sys-devel/gettext acl cxx ncurses nls openmp -git
 # clang wants USE=clang for llvm
 sys-devel/llvm clang xml
 sys-fs/cryptsetup luks1_default
-sys-fs/e2fsprogs split-usr static-libs
+sys-fs/e2fsprogs static-libs
 # required by sys-fs/dmraid
 sys-fs/lvm2 lvm
 sys-fs/udev extras static-libs
@@ -77,12 +79,12 @@ sys-libs/libseccomp static-libs
 dev-libs/glib mime static-libs xattr
 dev-libs/elfutils nls static-libs utils
 sys-libs/db -java
-sys-libs/zlib minizip split-usr static-libs
+sys-libs/zlib minizip static-libs
 # For safety (no particular reason, but grub requires ncurses)
 # we also provide libncurses.a
 sys-libs/ncurses static-libs tinfo
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
 sys-libs/glibc hardened suid nscd
 # required by reiser4progs
-sys-libs/readline split-usr static-libs unicode
+sys-libs/readline static-libs unicode
 virtual/lapack eselect-ldso

@@ -1,9 +1,6 @@
 install:
 - etc-update -p
 - hash -r
-# Upstream merge-usr happened and we must remain backwards compatible.
-# The init skel script from os-commons uses bin/sh shebang. Be sure we support that.
-- if [ ! -e /bin/sh ]; then ln -s /bin/bash /bin/sh; fi
 - touch /var/lib/portage/.keep
 # Since we do not ship /etc/portage we must make sure to set CHOST in env. gcc-config requires this and is called when we generated dracut images
 - if [ ! -f /etc/profile.d/mocaccino.sh ]; then { echo "unset CHOST"; echo "CHOST=\"x86_64-pc-linux-gnu\""; echo export CHOST; } >> /etc/profile.d/mocaccino.sh; fi
