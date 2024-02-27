@@ -1,12 +1,11 @@
 install:
 - etc-update -p
 - hash -r
-- source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
 - touch /var/lib/portage/.keep
 # Since we do not ship /etc/portage we must make sure to set CHOST in env. gcc-config requires this and is called when we generated dracut images
 - if [ ! -f /etc/profile.d/mocaccino.sh ]; then { echo "unset CHOST"; echo "CHOST=\"x86_64-pc-linux-gnu\""; echo export CHOST; } >> /etc/profile.d/mocaccino.sh; fi
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
-- chmod u+s /bin/su
+- chmod u+s /usr/bin/su
 - chmod +s /usr/lib/polkit-1/polkit-agent-helper-1
 - if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
 # We want to prevent users overwriting their /etc/locale.conf with a vanilla one and make them loose changes they made in that file
