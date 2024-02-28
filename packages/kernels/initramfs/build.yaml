@@ -53,7 +53,7 @@ steps:
 - |
    u-root \
    -files "/luetbuild/loader.sh:/loader" \
-   -files "/luetbuild/modules/lib/modules:/lib/modules" \
+   -files "/luetbuild/modules/usr/lib/modules:/usr/lib/modules" \
    -files "$(which blkid)" \
    -files "$(which mount)" \
    -files "$(which umount)" \
