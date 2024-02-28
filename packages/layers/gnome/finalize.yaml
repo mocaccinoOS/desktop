@@ -4,3 +4,5 @@ install:
 - rm -f /usr/share/icons/hicolor/icon-theme.cache
 - gtk-update-icon-cache -f /usr/share/icons/*
 - ldconfig
+# test for merge usr migration
+- systemctl daemon-reload
