@@ -1,6 +1,7 @@
 install:
 - depmod -a {{ index .Values.labels "package.version" }}-mocaccino || true
-- find /lib/modules -mindepth 1 ! -regex '^/lib/modules/{{ index .Values.labels "package.version" }}-mocaccino\(/.*\)?' -delete
+# todo: clean modules from /lib/modules if exist
+- find /usr/lib/modules -mindepth 1 ! -regex '^/usr/lib/modules/{{ index .Values.labels "package.version" }}-mocaccino\(/.*\)?' -delete
 - rm -rf /boot/bzImage || true
 - cd /boot && ln -s kernel-*-mocaccino bzImage
 - kernel-updater || true
