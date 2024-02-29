@@ -5,4 +5,4 @@ install:
 - gtk-update-icon-cache -f /usr/share/icons/*
 - ldconfig
 # test for merge usr migration
-- systemctl daemon-reload
+- systemctl daemon-reload > /dev/null 2>&1
