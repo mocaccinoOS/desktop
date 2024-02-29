@@ -6,7 +6,7 @@ prelude:
 - emerge -1 media-video/isight-firmware-tools
 - cp AppleUSBVideoSupport /tmp
 steps:
-- mkdir -p /lib/firmware/isight
+- mkdir -p /usr/lib/firmware/isight
 - ift-extract --apple-driver /tmp/AppleUSBVideoSupport
 - rm /tmp/AppleUSBVideoSupport
 {{ template "portage_build" . }}
@@ -15,9 +15,9 @@ requires:
   name: "system-x"
   version: ">=0"
 includes:
-- ^/lib/firmware/.*\..*
+- ^/usr/lib/firmware/.*\..*
 excludes:
-- ^/lib/firmware/.*/.*
+- ^/usr/lib/firmware/.*/.*
 {{ template "portage_excludes" }}
 {{ else }}
 requires:
@@ -28,7 +28,7 @@ steps:
 - echo "Splitting {{ trimPrefix "firmware-" .Values.name }}"
 unpack: true
 includes:
-- ^/lib/firmware/{{ trimPrefix "firmware-" .Values.name }}/.*
+- ^/usr/lib/firmware/{{ trimPrefix "firmware-" .Values.name }}/.*
 excludes:
 {{ template "portage_excludes" }}
 {{ end }}
