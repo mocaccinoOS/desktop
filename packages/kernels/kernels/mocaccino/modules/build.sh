@@ -15,7 +15,7 @@ if [ ! -e "arch/x86/boot/bzImage" ]; then
 fi
 
 make -j$(nproc --ignore=1) modules_install install \
-		INSTALL_MOD_PATH="$outdir" \
+		INSTALL_MOD_PATH="$outdir/usr" \
 		INSTALL_PATH="$outdir"/boot
 
 rm -f "$outdir"/lib/modules/**/build \
