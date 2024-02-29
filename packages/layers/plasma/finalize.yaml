@@ -2,5 +2,3 @@ install:
 - usermod --expiredate= sddm
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 - ldconfig
-# test for merge usr migration
-- if ! grep -q docker /proc/1/cgroup; then systemctl daemon-reload; fi
