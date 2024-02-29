@@ -15,6 +15,6 @@ prelude:
     USE="dracut" emerge sys-kernel/gentoo-kernel sys-kernel/gentoo-sources && \
     cd /usr/src && rm -rfv linux && ln -s $kernel linux
 # Certain modules might require a symlink to the kernel sources inside /lib/module/<module/build
-- |
-   modules=$(ls /usr/lib/modules | grep mocaccino | head -n1) && \
-   ln -s /usr/src/linux /usr/lib/modules/$modules/build
+# - |
+#    modules=$(ls /usr/lib/modules | grep mocaccino | head -n1) && \
+#    ln -s /usr/src/linux /usr/lib/modules/$modules/build
