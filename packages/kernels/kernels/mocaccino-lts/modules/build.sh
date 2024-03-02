@@ -18,8 +18,8 @@ make -j$(nproc --ignore=1) modules_install install \
 		INSTALL_MOD_PATH="$outdir/usr" \
 		INSTALL_PATH="$outdir"/boot
 
-rm -f "$outdir"/lib/modules/**/build \
-    "$outdir"/lib/modules/**/source
+rm -f "$outdir"/usr/lib/modules/**/build \
+    "$outdir"/usr/lib/modules/**/source
 
 popd
 
