@@ -32,43 +32,43 @@ packages:
       - name: mocaccino-lts-full
         category: kernel
         version: ">=0"
-  # - category: "kernel-modules"
-  #   name: "virtualbox-guest-additions-lts"
-  #   version: 7.0.12+6
-  #   lts: true
-  #   labels:
-  #     emerge.jobs: "3"
-  #     lts.kernel: "true"
-  #   emerge:
-  #     jobs: "3"
-  #     packages:
-  #       - app-emulation/virtualbox-guest-additions
-  #   provides:
-  #     - name: vboxguest
-  #       category: acct-group
-  #       version: '>=0'
-  #     - name: vboxguest
-  #       category: acct-user
-  #       version: '>=0'
-  #     - name: vboxsf
-  #       category: acct-group
-  #       version: '>=0'
-  #     - name: virtualbox-guest-additions
-  #       category: app-emulation
-  #       version: '>=0'
-  #   requires:
-  #     - name: mocaccino-lts-full
-  #       category: kernel
-  #       version: ">=0"
-  #     - category: "layers"
-  #       name: "X"
-  #       version: ">=0"
-  #     - category: "entity"
-  #       name: "vboxguest"
-  #       version: ">=0"
-  #     - category: "entity"
-  #       name: "vboxsf"
-  #       version: ">=0"
+  - category: "kernel-modules"
+    name: "virtualbox-guest-additions-lts"
+    version: 7.0.12+6
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-guest-additions
+    provides:
+      - name: vboxguest
+        category: acct-group
+        version: '>=0'
+      - name: vboxguest
+        category: acct-user
+        version: '>=0'
+      - name: vboxsf
+        category: acct-group
+        version: '>=0'
+      - name: virtualbox-guest-additions
+        category: app-emulation
+        version: '>=0'
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+      - category: "entity"
+        name: "vboxguest"
+        version: ">=0"
+      - category: "entity"
+        name: "vboxsf"
+        version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
     version: 535.154.05+7
