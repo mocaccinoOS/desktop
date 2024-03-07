@@ -264,7 +264,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl88x2bu-lts"
-    version: "0_p20240108"
+    version: "20240108"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -286,7 +286,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
-    version: "0_pre20240120"
+    version: "20240120"
     lts: true
     labels:
       emerge.jobs: "3"
