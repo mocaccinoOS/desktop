@@ -150,31 +150,6 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
-    name: "nvidia-drivers-legacy-lts"
-    version: 390.157+121
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - =x11-drivers/nvidia-drivers-390.157
-    provides:
-      - name: nvidia-drivers
-        category: x11-drivers
-        version: '>=0'
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - name: nvpd
-        category: entity
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  - category: "kernel-modules"
     name: "xpadneo-lts"
     version: 0.9.5-r1+26
     lts: true
