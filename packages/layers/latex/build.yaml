@@ -8,11 +8,9 @@ prelude:
 # - cp -rf package.accept_keywords /etc/portage/
 # - cp -rf package.mask /etc/portage/
 # - cp -rf package.unmask /etc/portage/
-# {{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build" . }}
 steps:
-# {{ template "portage_build" . }}
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- emerge --depclean
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "X"
