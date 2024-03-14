@@ -32,7 +32,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "latex"
-    version: 0.9+38
+    version: 0.9+39
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
