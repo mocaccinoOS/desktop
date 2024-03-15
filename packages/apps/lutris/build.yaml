@@ -5,7 +5,7 @@ env:
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
 {{ template "portage_prelude_build" . }}
-emerge -1 media-sound/fluid-soundfont
+- emerge -1 media-sound/fluid-soundfont
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
