@@ -1,7 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
 - ^/var/lib/module-rebuild
-- ^/lib/modules/.*-mocaccino/modules\..*
+- ^/usr/lib/modules/.*-mocaccino/modules\..*
 - ^/etc/portage/repos.conf/eselect-repo.conf
 env:
 {{ template "portage_env" . }}
