@@ -71,7 +71,6 @@ media-libs/lcms static-libs
 media-libs/libdvdread -css
 media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms
-media-libs/libsndfile minimal
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes
 media-libs/tiff cxx jpeg lzma zlib zstd
