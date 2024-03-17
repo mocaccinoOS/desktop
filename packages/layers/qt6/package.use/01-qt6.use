@@ -6,4 +6,4 @@ dev-qt/qtmultimedia:6 vulkan
 dev-qt/qtdeclarative:6 vulkan
 dev-qt/qtquick3d:6 vulkan
 dev-qt/qttools:6 designer qdbus qml vulkan
-dev-qt/qtwayland:6 vulkan
+dev-qt/qtwayland:6 accessibility vulkan
