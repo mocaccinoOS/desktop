@@ -3,7 +3,7 @@ dev-qt/qt5compat:6 qml
 dev-qt/qtbase:6 accessibility cups vulkan
 dev-qt/qtcharts:6 qml
 dev-qt/qtmultimedia:6 vulkan
-dev-qt/qtdeclarative:6 vulkan
+dev-qt/qtdeclarative:6 accessibility vulkan
 dev-qt/qtquick3d:6 vulkan
 dev-qt/qttools:6 designer qdbus qml vulkan
 dev-qt/qtwayland:6 accessibility vulkan
