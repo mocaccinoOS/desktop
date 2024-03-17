@@ -1,6 +1,6 @@
 category: "themes"
 name: "mate"
-version: 2+3
+version: 2+4
 labels:
 requires:
   - category: "layers"
@@ -8,6 +8,9 @@ requires:
     version: ">=0"
   - category: "themes"
     name: "qogir-themes"
+    version: ">=0"
+  - category: "themes"
+    name: "qogir-icon-theme"
     version: ">=0"
   - category: "system"
     name: "mocaccino-wallpaper"
