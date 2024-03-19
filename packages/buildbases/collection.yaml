@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+184
+    version: 0+185
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
@@ -12,7 +12,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+98
+    version: 0+99
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
@@ -28,7 +28,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+206
+    version: 0+207
   - !!merge <<: *X
     real_category: "layers"
     name: "latex"
