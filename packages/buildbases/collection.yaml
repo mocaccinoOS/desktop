@@ -37,3 +37,7 @@ packages:
     real_category: "layers"
     name: "qemu"
     version: 0+154
+  - !!merge <<: *X
+    real_category: "kernel-sources"
+    name: "mocaccino-lts-sources"
+    version: 0+1
