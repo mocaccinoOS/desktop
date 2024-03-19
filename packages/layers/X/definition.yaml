@@ -619,9 +619,6 @@ provides:
   - name: Class-Data-Inheritable
     category: dev-perl
     version: '>=0'
-  - name: Config-AutoConf
-    category: dev-perl
-    version: '>=0'
   - name: CPAN-Meta-Check
     category: dev-perl
     version: '>=0'
@@ -668,9 +665,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: File-MimeInfo
-    category: dev-perl
-    version: '>=0'
-  - name: File-Slurper
     category: dev-perl
     version: '>=0'
   - name: File-Which
@@ -728,9 +722,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Perl-Tidy
-    category: dev-perl
-    version: '>=0'
-  - name: PerlIO-utf8_strict
     category: dev-perl
     version: '>=0'
   - name: Ref-Util
