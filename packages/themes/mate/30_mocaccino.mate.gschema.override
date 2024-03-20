@@ -10,14 +10,14 @@ picture-options = "stretched"
 
 [org.mate.font-rendering]
 antialiasing = "rgba"
-dpi = "96.0"
+dpi = 96.0
 hinting = "full"
 
 [org.mate.Marco.general]
 compositing-manager = true
 button-layout = "menu:minimize,maximize,close"
 theme = "Qogir-Dark"
-num-workspaces = "2"
+num-workspaces = 2
 
 [org.mate.terminal.profiles.default]
 use-theme-colors = "false"

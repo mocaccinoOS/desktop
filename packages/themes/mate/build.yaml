@@ -2,4 +2,4 @@ image: "alpine"
 prelude:
 steps:
 - mkdir -p /usr/share/glib-2.0/schemas
-- cp org.mocaccino.mate.gschema.override /usr/share/glib-2.0/schemas
+- cp 30_mocaccino.mate.gschema.override /usr/share/glib-2.0/schemas
