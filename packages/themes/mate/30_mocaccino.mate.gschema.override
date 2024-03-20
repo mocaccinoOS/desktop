@@ -9,7 +9,7 @@ gtk-key-theme='Qogir-Dark'
 icon-theme='Qogir-Dark'
 menus-have-icons=true
 
-[org.mate.peripherals.mouse]
+[org.mate.peripherals-mouse]
 cursor-theme='Qogir-dark'
 
 [org.mate.font-rendering]
