@@ -6,6 +6,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.license /etc/portage/
+- emerge -C x11-misc/notification-daemon
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
