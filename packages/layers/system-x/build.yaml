@@ -5,6 +5,7 @@ requires:
 unpack: true
 env:
 {{ template "portage_env" . }}
+- MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf profile /etc/portage/

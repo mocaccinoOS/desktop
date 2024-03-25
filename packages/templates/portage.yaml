@@ -18,19 +18,18 @@
 
 {{ define "portage_env" }}
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-- MAKEOPTS={{ ( index .Values.labels "emerge.makeopts" ) | default "" }}
 {{end}}
 
 {{ define "portage_prelude_build" }}
 - |
-  MAKEOPTS="${MAKEOPTS}" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
   emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
   /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
 {{end}}
 
 {{ define "portage_prelude_build_gentoo_binary" }}
 - |
-  MAKEOPTS="${MAKEOPTS}" FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
   emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
   /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
 - rm -rf /etc/portage/gnupg
@@ -38,12 +37,12 @@
 {{end}}
 
 {{ define "portage_build" }}
-- MAKEOPTS="${MAKEOPTS}" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - etc-update -q --automode -5
 {{end}}
 
 {{ define "portage_build_gentoo_binary" }}
-- MAKEOPTS="${MAKEOPTS}" FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - rm -rf /etc/portage/gnupg
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 - etc-update -q --automode -5
