@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-software"
-version: 45.2+17
+version: 45.2+18
 uri:
   - https://wiki.gnome.org/Apps/Software
 license: "GPL-2+"
