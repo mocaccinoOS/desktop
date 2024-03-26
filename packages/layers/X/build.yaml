@@ -6,7 +6,6 @@ excludes:
 - ^/var/spool/cups/tmp/
 env:
 {{ template "portage_env" . }}
-- MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
@@ -14,10 +13,24 @@ prelude:
 - cp -rf package.license /etc/portage/
 - cp -rf package.env /etc/portage/
 - emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
-{{ template "portage_prelude_build_gentoo_binary" . }}
+# {{ template "portage_prelude_build_gentoo_binary" . }}
+# start template
+- |
+  MAKEOPTS="--jobs 24 --load-average 25" FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
+  /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
+- rm -rf /etc/portage/gnupg
+- if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
+# end
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
-{{ template "portage_build_gentoo_binary" . }}
+# {{ template "portage_build_gentoo_binary" . }}
+# start template
+- MAKEOPTS="--jobs 24 --load-average 25" FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- rm -rf /etc/portage/gnupg
+- if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
+- etc-update -q --automode -5
+# end
 - cp -rv xorg.conf.d/ /etc/X11/
 requires:
 - category: "layers"
