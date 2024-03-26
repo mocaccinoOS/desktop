@@ -6,6 +6,7 @@ excludes:
 - ^/var/spool/cups/tmp/
 env:
 {{ template "portage_env" . }}
+- MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
