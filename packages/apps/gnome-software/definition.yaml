@@ -13,3 +13,10 @@ provides:
   - name: gnome-software
     category: gnome-extra
     version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
