@@ -21,3 +21,6 @@ requires:
   - category: "kernel-modules"
     name: "vhba-lts"
     version: ">=0"
+  - category: "layers"
+    name: "X"
+    version: ">=0"

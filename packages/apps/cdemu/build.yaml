@@ -11,4 +11,7 @@ requires:
 - category: "buildbase"
   name: "mocaccino-lts-sources"
   version: ">=0"
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
 requires_final_images: true
