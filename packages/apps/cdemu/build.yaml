@@ -1,11 +1,14 @@
 excludes:
 {{ template "portage_excludes" }}
-- ^/usr/share/applications/mimeinfo.cache
+# - ^/usr/share/applications/mimeinfo.cache
 env:
 {{ template "portage_env" . }}
+prelude:
+- emerge -1 sys-fs/vhba
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "kernel-modules"
-  name: "vhba-lts"
+- category: "buildbase"
+  name: "mocaccino-lts-sources"
   version: ">=0"
+requires_final_images: true
