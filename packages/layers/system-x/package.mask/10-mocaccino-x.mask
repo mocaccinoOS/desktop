@@ -1,2 +1,1 @@
 dev-lang/python:3.12
-=app-arch/xz-utils-5.6.1
