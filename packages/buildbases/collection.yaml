@@ -32,7 +32,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "vhba-lts"
-    version: 0+3
+    version: 0+4
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
@@ -48,4 +48,4 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "cdemu"
-    version: 0+157
+    version: 0+1
