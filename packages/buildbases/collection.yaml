@@ -22,6 +22,10 @@ packages:
     name: "qt"
     version: 0+192
   - !!merge <<: *X
+    real_category: "kernel-sources"
+    name: "mocaccino-lts-sources"
+    version: 0+4
+  - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 0+232
@@ -42,6 +46,6 @@ packages:
     name: "qemu"
     version: 0+157
   - !!merge <<: *X
-    real_category: "kernel-sources"
-    name: "mocaccino-lts-sources"
-    version: 0+4
+    real_category: "apps"
+    name: "cdemu"
+    version: 0+157
