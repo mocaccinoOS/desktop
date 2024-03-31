@@ -1,0 +1,22 @@
+category: "apps"
+name: "kcdemu"
+version: "0.8.0"
+uri:
+  - https://www.linux-apps.com/p/998461
+license: "GPL-2"
+description: "Frontend to cdemu daemon based on KDE Frameworks"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-cdr/kcdemu
+provides:
+  - name: kcdemu
+    category: app-cdr
+    version: '>=0'
+requires:
+  - category: "apps"
+    name: "cdemu"
+    version: ">=0"
+  - category: "layers"
+    name: "kde-common"
+    version: ">=0"

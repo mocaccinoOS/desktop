@@ -1,0 +1,15 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.use /etc/portage/
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "apps"
+  name: "cdemu"
+  version: ">=0"
+- category: "layers"
+  name: "kde-common"
+  version: ">=0"
