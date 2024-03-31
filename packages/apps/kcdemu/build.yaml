@@ -13,3 +13,4 @@ requires:
 - category: "buildbase"
   name: "kde-common"
   version: ">=0"
+requires_final_images: true
