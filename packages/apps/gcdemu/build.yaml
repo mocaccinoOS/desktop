@@ -1,0 +1,16 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.use /etc/portage/
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "buildbase"
+  name: "cdemu"
+  version: ">=0"
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
+requires_final_images: true
