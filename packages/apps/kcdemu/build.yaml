@@ -10,6 +10,6 @@ requires:
 - category: "apps"
   name: "cdemu"
   version: ">=0"
-- category: "layers"
+- category: "buildbase"
   name: "kde-common"
   version: ">=0"
