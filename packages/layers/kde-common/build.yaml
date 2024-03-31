@@ -8,6 +8,7 @@ prelude:
 steps:
 {{ template "portage_build_gentoo_binary" . }}
 requires:
-- category: "layers"
+- category: "buildbase"
   name: "qt"
   version: ">=0"
+requires_final_images: true

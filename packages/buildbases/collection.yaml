@@ -16,7 +16,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+198
+    version: 0+199
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
@@ -25,6 +25,10 @@ packages:
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 0+232
+  - !!merge <<: *X
+    real_category: "kernel-modules"
+    name: "vhba-lts"
+    version: 0+1
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"

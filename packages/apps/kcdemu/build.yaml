@@ -7,7 +7,7 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "apps"
+- category: "buildbase"
   name: "cdemu"
   version: ">=0"
 - category: "buildbase"
