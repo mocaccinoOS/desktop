@@ -45,7 +45,3 @@ packages:
     real_category: "layers"
     name: "qemu"
     version: 0+157
-  - !!merge <<: *X
-    real_category: "apps"
-    name: "cdemu"
-    version: 0+1
