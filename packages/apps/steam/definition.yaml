@@ -1,6 +1,6 @@
 category: "apps"
 name: "steam"
-version: 1.0.0.76-r1+38
+version: 1.0.0.76-r1+39
 uri:
   - https://steampowered.com
 license: "ValveSteamLicense MIT BSD"
