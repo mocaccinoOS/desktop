@@ -19,6 +19,9 @@ requires:
   - category: "system"
     name: "mocaccino-wallpaper"
     version: ">=0"
+  - category: "themes"
+    name: "qogir-themes"
+    version: ">=0"
 provides:
   - name: lightdm
     category: acct-group

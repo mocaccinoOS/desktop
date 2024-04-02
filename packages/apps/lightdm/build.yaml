@@ -12,6 +12,7 @@ steps:
 - sed -i 's/#user-background=/user-background=false/g' /etc/lightdm/lightdm-gtk-greeter.conf
 - sed -i 's/#xft-hintstyle=/xft-hintstyle=hintfull/g' /etc/lightdm/lightdm-gtk-greeter.conf
 - sed -i 's/#xft-rgba=/xft-rgba=rgb/g' /etc/lightdm/lightdm-gtk-greeter.conf
+- sed -i 's/#theme-name=/theme-name=Qogir-Dark/g' /etc/lightdm/lightdm-gtk-greeter.conf
 requires:
 - category: "layers"
   name: "gnome-common"
