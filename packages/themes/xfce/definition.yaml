@@ -1,0 +1,17 @@
+category: "themes"
+name: "xfce"
+version: "1"
+labels:
+requires:
+  - category: "layers"
+    name: "xfce"
+    version: ">=0"
+  - category: "themes"
+    name: "qogir-themes"
+    version: ">=0"
+  - category: "themes"
+    name: "qogir-icon-theme"
+    version: ">=0"
+  - category: "system"
+    name: "mocaccino-wallpaper"
+    version: ">=0"
