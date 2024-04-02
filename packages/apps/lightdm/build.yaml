@@ -8,6 +8,7 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - sed -i '/syslog/d' /lib/systemd/system/lightdm.service
+- sed -i 's/#background=/background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg/g' /etc/lightdm/lightdm-gtk-greeter.conf
 requires:
 - category: "layers"
   name: "gnome-common"

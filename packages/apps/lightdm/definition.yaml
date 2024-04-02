@@ -1,6 +1,6 @@
 category: "apps"
 name: "lightdm"
-version: 1.32.0-r2+34
+version: 1.32.0-r2+35
 uri:
   - https://launchpad.net/lightdm
 license: "GPL-3 LGPL-3"
@@ -15,6 +15,9 @@ requires:
     version: ">=0"
   - category: "entity"
     name: "lightdm"
+    version: ">=0"
+  - category: "system"
+    name: "mocaccino-wallpaper"
     version: ">=0"
 provides:
   - name: lightdm
