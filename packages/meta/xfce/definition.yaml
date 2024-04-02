@@ -1,0 +1,15 @@
+name: "xfce"
+category: "meta"
+version: "0.20240320"
+description: "XFCE Desktop meta package"
+
+requires:
+- category: "layers"
+  name: "xfce"
+  version: ">=0"
+- category: "apps"
+  name: "gnome-software"
+  version: ">=0"
+- category: "themes"
+  name: "xfce"
+  version: ">=0"
