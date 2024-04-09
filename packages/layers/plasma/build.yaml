@@ -4,7 +4,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-- emerge -1 media-libs/phonon
+- emerge -1 media-libs/phonon media-video/vlc
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
@@ -15,7 +15,4 @@ steps:
 requires:
 - category: "layers"
   name: "kde-common"
-  version: ">=0"
-- category: "apps"
-  name: "vlc"
   version: ">=0"
