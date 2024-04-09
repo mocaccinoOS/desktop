@@ -2,4 +2,5 @@ image: "alpine"
 prelude:
 - git clone https://github.com/joostruis/luet_pm_gui.git
 steps:
+- apk add git
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
