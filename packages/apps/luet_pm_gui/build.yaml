@@ -1,5 +1,8 @@
-image: "alpine"
-steps:
-- apk add git
+prelude:
 - git clone https://github.com/joostruis/luet_pm_gui.git
+steps:
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
