@@ -1,0 +1,25 @@
+category: "layers"
+name: "qtile"
+version: "0.23.0-r1"
+uri:
+  - https://qtile.org
+license: "MIT"
+description: "A full-featured, hackable tiling window manager written in Python"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    dev-python/pywayland dev-python/pywlroots x11-wm/qtile
+requires:
+  - category: "layers"
+    name: "wlroots"
+    version: ">=0"
+provides:
+  - name: pywayland
+    category: dev-python
+    version: '>=0'
+  - name: pywlroots
+    category: dev-python
+    version: '>=0'
+  - name: qtile
+    category: x11-wm
+    version: '>=0'
