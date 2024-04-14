@@ -1,0 +1,22 @@
+category: "fonts"
+name: "fira"
+version: 4.202
+uri:
+  - https://mozilla.github.io/Fira
+license: "OFL-1.1"
+description: "Default monospaced typeface for FirefoxOS, designed for legibility"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    media-fonts/fira-mono media-fonts/fira-sans
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: fira-mono
+    category: media-fonts
+    version: '>=0'
+  - name: fira-sans
+    category: media-fonts
+    version: '>=0'
