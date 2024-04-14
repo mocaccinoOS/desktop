@@ -5,9 +5,9 @@ prelude:
     PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
     git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
-    just build
+    build
 steps:
-- cd cosmic-epoch && just install
+- cd cosmic-epoch && install
 requires:
 - category: "layers"
   name: "X"
