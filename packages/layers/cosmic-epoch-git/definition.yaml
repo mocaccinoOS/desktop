@@ -1,0 +1,8 @@
+category: "layers"
+name: "cosmic-epoch-git"
+version: 0.0.1+1
+arch: "amd64"
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
