@@ -3,7 +3,7 @@ excludes:
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -1 app-eselect/eselect-repository && eselect repository enable guru && emaint sync -r guru
-- emerge -1 dev-build/just && emerge -1 sys-devel/mold
+- emerge -1 dev-build/just && emerge -1 sys-devel/mold && emerge -1 sys-devel/llvm
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
