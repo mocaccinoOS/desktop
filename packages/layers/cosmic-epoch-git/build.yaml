@@ -12,5 +12,5 @@ steps:
 - cd cosmic-epoch && just install
 requires:
 - category: "layers"
-  name: "X"
+  name: "wlroots"
   version: ">=0"
