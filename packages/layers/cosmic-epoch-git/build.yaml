@@ -4,7 +4,6 @@ prelude:
 - emerge -1 app-eselect/eselect-repository && eselect repository enable guru && emaint sync -r guru
 - emerge -1 dev-build/just && emerge -1 sys-devel/mold
 - |
-    PACKAGE_VERSION=${PACKAGE_VERSION%\+*} && \
     git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
     nice just build
