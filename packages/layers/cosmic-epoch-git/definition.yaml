@@ -6,3 +6,6 @@ requires:
   - category: "layers"
     name: "wlroots"
     version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
