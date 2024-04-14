@@ -12,6 +12,6 @@ prelude:
 steps:
 - cd cosmic-epoch && just install
 requires:
-  category: "layers"
+- category: "layers"
   name: "X"
   version: ">=0"
