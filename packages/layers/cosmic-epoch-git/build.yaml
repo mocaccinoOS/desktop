@@ -13,13 +13,10 @@ prelude:
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
     # TODO: We tried to patch this just file to set prefix, but seems to have no effect.
-    patch -p1 justfile < ../justfile.diff && \
+    # patch -p1 justfile < ../justfile.diff && \
     nice just build
 steps:
-- cd cosmic-epoch && just install
-# TODO: Hilarious. Can't properly set prefix?!
-# let's move all data to the left.
-# - mv /usr/local/* /usr
+- cd cosmic-epoch && just prefix=/usr install
 requires:
 - category: "layers"
   name: "wlroots"
