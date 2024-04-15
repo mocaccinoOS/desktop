@@ -1,0 +1,8 @@
+--- justfile-a	2024-04-01 11:50:52.989530312 -0600
++++ justfile-b	2024-04-01 11:38:02.554420000 -0600
+@@ -1,6 +1,8 @@
+ set dotenv-load
+ just := just_executable()
+ make := `which make`
++rootdir := ''
++prefix := '/usr'

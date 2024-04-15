@@ -12,9 +12,10 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
+    patch -p1 justfile < ../justfile.diff
     nice just build
 steps:
-- cd cosmic-epoch && just prefix="/usr" install
+- cd cosmic-epoch && just install
 requires:
 - category: "layers"
   name: "wlroots"
