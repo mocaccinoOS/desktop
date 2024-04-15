@@ -14,7 +14,7 @@ prelude:
     cd cosmic-epoch && \
     nice just build
 steps:
-- cd cosmic-epoch && just install
+- cd cosmic-epoch && just prefix="/usr" install
 requires:
 - category: "layers"
   name: "wlroots"
