@@ -1,6 +1,6 @@
 category: "layers"
 name: "cosmic-epoch-git"
-version: 0.0.1+6
+version: 0.0.1+7
 arch: "amd64"
 requires:
   - category: "layers"
