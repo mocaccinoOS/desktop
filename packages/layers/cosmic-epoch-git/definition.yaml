@@ -9,3 +9,6 @@ requires:
   - category: "apps"
     name: "flatpak"
     version: ">=0"
+  - category: "fonts"
+    name: "fira"
+    version: ">=0"
