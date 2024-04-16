@@ -1,7 +1,6 @@
 env:
 - LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
 - LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
-- PREFIX="/usr"
 excludes:
 {{ template "portage_excludes" }}
 prelude:
@@ -13,11 +12,11 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch && \
     cd cosmic-epoch && \
-    # TODO: We tried to patch this just file to set prefix, but seems to have no effect.
-    # patch -p1 justfile < ../justfile.diff && \
+    # Borrow patch file from arch aur
+    patch -p1 justfile < ../justfile.diff && \
     nice just build
 steps:
-- cd cosmic-epoch && just install" 
+- cd cosmic-epoch && just install
 requires:
 - category: "layers"
   name: "wlroots"
