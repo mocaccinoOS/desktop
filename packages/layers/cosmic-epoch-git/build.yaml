@@ -16,7 +16,7 @@ prelude:
     # patch -p1 justfile < ../justfile.diff && \
     nice just build
 steps:
-- cd cosmic-epoch && just "" prefix=/usr install
+- cd cosmic-epoch && just install rootdir="" prefix="/usr" 
 requires:
 - category: "layers"
   name: "wlroots"
