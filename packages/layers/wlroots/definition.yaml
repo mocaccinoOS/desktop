@@ -1,6 +1,6 @@
 category: "layers"
 name: "wlroots"
-version: 0.16.2-r2+22
+version: 0.16.2-r2+23
 uri:
   - https://github.com/danvd/wlroots-eglstreams
 license: "GPL-3 MIT"
@@ -8,7 +8,7 @@ description: "wlroots (EGLStreams fork)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-libs/date::gentoo dev-libs/libayatana-appindicator gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/waybar::gentoo gui-apps/wlogout::guru gui-apps/wofi::gentoo gui-libs/greetd gui-libs/wlroots::gentoo gui-wm/cage::guru media-libs/libdisplay-info::gentoo sys-auth/seatd::gentoo
+    dev-libs/ayatana-ido dev-libs/date::gentoo dev-libs/libayatana-indicator dev-libs/libayatana-appindicator gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/waybar::gentoo gui-apps/wlogout::guru gui-apps/wofi::gentoo gui-libs/greetd gui-libs/wlroots::gentoo gui-wm/cage::guru media-libs/libdisplay-info::gentoo sys-auth/seatd::gentoo
 requires:
   - category: "layers"
     name: "X"
@@ -26,7 +26,13 @@ provides:
   - name: greetd
     category: acct-user
     version: '>=0'
+  - name: ayatana-ido
+    category: dev-libs
+    version: '>=0'
   - name: date
+    category: dev-libs
+    version: '>=0'
+  - name: libayatana-indicator
     category: dev-libs
     version: '>=0'
   - name: libayatana-appindicator
