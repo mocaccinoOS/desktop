@@ -2,46 +2,46 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+191
+    version: 0+192
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+163
+    version: 0+164
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+103
+    version: 0+104
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+201
+    version: 0+202
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+194
+    version: 0+195
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+6
+    version: 0+7
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+234
+    version: 0+235
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "vhba-lts"
-    version: 0+19
+    version: 0+20
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+214
+    version: 0+215
   - !!merge <<: *X
     real_category: "layers"
     name: "latex"
-    version: 0.9+45
+    version: 0.9+46
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
-    version: 0+159
+    version: 0+160
