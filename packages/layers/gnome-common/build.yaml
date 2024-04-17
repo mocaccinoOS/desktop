@@ -1,23 +1,22 @@
-excludes: |
-  {{ template "portage_excludes" . }}
-env: |
-  {{ template "portage_env" . }}
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
 prelude:
-  - cp -rf package.use /etc/portage/
-  - cp -rf package.env /etc/portage/
-  - cp -rf package.accept_keywords /etc/portage/
-  - cp -rf package.mask /etc/portage/
-  - cp -rf package.unmask /etc/portage/
-  - |
+- cp -rf package.use /etc/portage/
+- cp -rf package.env /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.mask /etc/portage/
+- cp -rf package.unmask /etc/portage/
+- |
     # Want a mirror with older binary packages available because we need to build webkit-gtk twice!
     arr=( '[binhost]' 'priority = 9999' 'sync-uri = https://ftp.belnet.be/pub/rsync.gentoo.org/gentoo/releases/amd64/binpackages/17.1/x86-64' ) && \
     printf '%s\n' "${arr[@]}" >> /etc/portage/binrepos.conf/gentoobinhost.conf
-  - |
-    {{ template "portage_prelude_build_gentoo_binary" . }}
-steps: |
-  {{ template "portage_build_gentoo_binary" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
+steps:
+{{ template "portage_build_gentoo_binary" . }}
 requires:
-  - category: "buildbase"
-    name: "X"
-    version: ">=0"
+- category: "buildbase"
+  name: "X"
+  version: ">=0"
 requires_final_images: true
