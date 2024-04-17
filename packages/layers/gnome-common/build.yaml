@@ -8,7 +8,6 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.unmask /etc/portage/
-- cp -rf binrepos.conf /etc/portage/
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
