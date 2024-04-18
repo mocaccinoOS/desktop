@@ -1,0 +1,11 @@
+image: "debian:stable"
+
+prelude:
+- apt-get update
+- apt-get install -y ninja-build git meson sassc
+- git clone https://github.com/pop-os/icon-theme pop-icon-theme
+- cd pop-icon-theme && meson build
+steps:
+- cd pop-icon-theme && ninja -C build install
+includes:
+- /usr/share/*
