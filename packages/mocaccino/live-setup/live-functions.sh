@@ -283,6 +283,11 @@ prepare() {
         systemctl enable "lightdm"
     fi
 
+    if [ -f "/usr/share/wayland-sessions/cosmic.desktop" ]; then
+       	setup_default_xsession "cosmic"
+       	systemctl enable "lightdm"
+    fi
+
     if [ -f "/usr/share/xsessions/xfce.desktop" ]; then
         setup_default_xsession "xfce"
         systemctl enable "lightdm"
