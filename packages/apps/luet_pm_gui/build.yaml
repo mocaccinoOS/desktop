@@ -1,8 +1,9 @@
+image: "alpine"
 prelude:
+- apk add git
 - git clone https://github.com/joostruis/luet_pm_gui.git
+- mkdir -p /usr/share/applications/
+- mkdir -p /usr/share/icons/hicolor/256x256/apps/
+- mkdir -p /usr/share/polkit-1/actions/
 steps:
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
-requires:
-- category: "layers"
-  name: "system-x"
-  version: ">=0"
