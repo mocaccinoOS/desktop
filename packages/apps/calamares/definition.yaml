@@ -1,6 +1,6 @@
 category: "apps"
 name: "calamares"
-version: 3.2.60-r2+67
+version: "3.3.5"
 uri:
   - https://calamares.io
 license: "GPL-3"
@@ -8,7 +8,7 @@ description: "Distribution-independent installer framework"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-admin/calamares
+    app-admin/calamares dev-qt/kdsingleapplication
 requires:
   - category: "entity"
     name: "vboxusers"
@@ -28,4 +28,7 @@ requires:
 provides:
   - name: calamares
     category: app-admin
+    version: '>=0'
+  - name: kdsingleapplication
+    category: dev-qt
     version: '>=0'

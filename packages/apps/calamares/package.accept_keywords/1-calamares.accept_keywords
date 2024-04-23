@@ -1,1 +1,3 @@
 app-admin/calamares ~amd64
+# to try newer calamares 3.3.5 we must accept this
+dev-qt/kdsingleapplication ~amd64
