@@ -3,6 +3,6 @@ name: "luet_pm_gui"
 version: 0.1.0+12
 requires:
   - category: "layers"
-    name: "X"
+    name: "gnome-common"
     version: ">=0"
 arch: "amd64"
