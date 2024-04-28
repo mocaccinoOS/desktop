@@ -1,6 +1,6 @@
 category: "apps"
 name: "egl-wayland"
-version: 1.1.13+12
+version: 1.1.13+13
 uri:
   - https://github.com/NVIDIA/egl-wayland
 license: "MIT"
