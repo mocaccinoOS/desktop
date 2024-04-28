@@ -10,7 +10,7 @@ dev-libs/appstream -qt5
 dev-libs/atk introspection
 dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
-dev-python/pillow webp truetype
+dev-python/pillow lcms truetype webp
 dev-python/pygobject introspection
 dev-python/pyudev -qt5
 # disable extra to free up 300MB
