@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.26.0-r1+23
+version: 1.26.0-r1+24
 uri:
   - https://mate-desktop.org
 license: "FDL-1.1 GPL-2+ LGPL-2+ MIT-with-advertising"

@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 20240410+1
+    version: 20240410+2
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -61,223 +61,223 @@ packages:
         version: '>=0'
   - category: "layers"
     name: "firmware-amdgpu"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-3com"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-advansys"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-amd-ucode"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-amd"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ar3k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ath10k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ath11k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ath6k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ath9k_htc"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-atmel"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-atusb"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-av7110"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-b43"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-bnx2"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-bnx2x"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-brcm"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cadence"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cavium"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cis"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cxgb3"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cxgb4"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-cypress"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-dabusb"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-dpaa2"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-dsp56k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-e100"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-emi26"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ene-ub6250"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-go7007"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-i915"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-imx"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-inside-secure"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-intel"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-isci"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-kaweth"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-keyspan"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-keyspan_pda"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-libertas"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-liquidio"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-matrox"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-mediatek"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-mellanox"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-meson"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-microchip"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-moxa"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-mrvl"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-mwl8k"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-mwlwifi"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-netronome"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-qca"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-qcom"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-qed"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-qlogic"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-r128"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-radeon"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rockchip"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rsi"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-RTL8192E"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rtl_bt"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rtl_nic"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rtlwifi"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-rtw88"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-silabs"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-slicoss"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-sxg"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-tehuti"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ti-connectivity"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ti-keystone"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ti"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-tigon"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-ueagle-atm"
-    version: 2+70
+    version: 2+71
   - category: "layers"
     name: "firmware-vxge"
-    version: 2+70
+    version: 2+71
