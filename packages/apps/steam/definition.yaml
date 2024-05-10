@@ -8,6 +8,7 @@ description: "Installer, launcher and supplementary files for Valve's Steam clie
 labels:
   emerge.jobs: "1"
   emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode"
+  description: "Installer, launcher and supplementary files for Valve's Steam client"
 provides:
   - name: gamemode
     category: acct-group
