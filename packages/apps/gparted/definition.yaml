@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     sys-block/gparted
+  description: "Partition editor for graphically managing your disk partitions"
 provides:
   - name: gparted
     category: sys-block
