@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     mail-client/thunderbird-bin
+  description: "Thunderbird Mail Client"
 provides:
   - name: thunderbird-bin
     category: mail-client

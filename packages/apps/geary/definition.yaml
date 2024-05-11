@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     mail-client/geary
+  description: "A lightweight, easy-to-use, feature-rich email client"
 provides:
   - name: geary
     category: mail-client
