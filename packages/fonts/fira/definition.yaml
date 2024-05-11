@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     media-fonts/fira-mono media-fonts/fira-sans
+  description: "Default monospaced typeface for FirefoxOS, designed for legibility"
 requires:
   - category: "layers"
     name: "X"

@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     media-sound/fluid-soundfont
+  description: "The Fluid R3 soundfont"
 requires:
   - category: "layers"
     name: "X"
