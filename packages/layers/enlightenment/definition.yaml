@@ -1,6 +1,6 @@
 category: "layers"
 name: "enlightenment"
-version: 0.26.0+3
+version: 0.26.0+4
 uri:
   - https://www.enlightenment.org
 license: "BSD-2"

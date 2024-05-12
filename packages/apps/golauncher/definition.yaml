@@ -1,6 +1,6 @@
 category: "apps"
 name: "golauncher"
-version: 0.2.2+160
+version: 0.2.2+161
 description: "Highly extensible, customizable application launcher and window switcher written in less than 300 lines of Golang and fyne "
 requires:
   - category: "layers"

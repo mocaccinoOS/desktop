@@ -1,6 +1,6 @@
 category: "system"
 name: "shim"
-version: 15.6+39
+version: 15.6+40
 uri:
   - https://github.com/rhboot/shim
 license: "BSD"
