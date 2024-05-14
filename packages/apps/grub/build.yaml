@@ -1,6 +1,5 @@
 excludes:
 {{ template "portage_excludes" }}
-- ^/etc/plymouth/plymouthd.conf
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -11,9 +10,6 @@ steps:
 - cp -r 10_linux /etc/grub.d/10_linux
 - mkdir -p /boot/grub
 - cp -r grub-background.png /boot/grub/grub-background.png
-# Fix plymouth service file
-- sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
-- sed -i -e 's/KillMode=none/KillMode=mixed/g' /lib/systemd/system/plymouth-start.service
 - sed -i -e '/GRUB_DISTRIBUTOR/ s/Gentoo/Mocaccino/' /etc/default/grub
 - sed -i -e '/GRUB_CMDLINE_LINUX_DEFAULT/ s/#GRUB_CMDLINE_LINUX_DEFAULT=""/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash rd.udev.log-priority=3"/' /etc/default/grub
 - sed -i -e '/GRUB_BACKGROUND/ s/#GRUB_BACKGROUND="\/boot\/grub\/mybackground.png"/GRUB_BACKGROUND="\/boot\/grub\/grub-background.png"/' /etc/default/grub

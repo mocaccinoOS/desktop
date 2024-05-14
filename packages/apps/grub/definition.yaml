@@ -8,7 +8,7 @@ description: "GNU GRUB boot loader"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-boot/efibootmgr sys-boot/grub sys-boot/os-prober sys-boot/plymouth sys-libs/efivar
+    sys-boot/efibootmgr sys-boot/grub sys-boot/os-prober sys-libs/efivar
 requires:
   - category: "layers"
     name: "sys-fs"
@@ -21,9 +21,6 @@ provides:
     category: sys-boot
     version: '>=0'
   - name: os-prober
-    category: sys-boot
-    version: '>=0'
-  - name: plymouth
     category: sys-boot
     version: '>=0'
   - name: efivar

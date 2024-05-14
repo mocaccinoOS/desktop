@@ -3,6 +3,7 @@ excludes:
 - ^/run
 - ^/etc/openldap/ssl/ldap.*
 - ^/etc/sasl2/sasldb2
+- ^/etc/plymouth/plymouthd.conf
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -15,6 +16,9 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
+# Fix plymouth service file
+- sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
+- sed -i -e 's/KillMode=none/KillMode=mixed/g' /lib/systemd/system/plymouth-start.service
 requires:
 - category: "layers"
   name: "system-x"
