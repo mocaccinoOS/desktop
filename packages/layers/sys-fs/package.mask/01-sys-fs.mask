@@ -1,1 +1,3 @@
-# Placeholder
+# Newer docutils version pulls in pillow, this must remain in layers/X
+# In a near future figure out how to solve that.
+>dev-python/docutils-0.20.1-r1
