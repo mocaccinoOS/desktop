@@ -826,9 +826,6 @@ provides:
   - name: pyyaml
     category: dev-python
     version: '>=0'
-  - name: rdflib
-    category: dev-python
-    version: '>=0'
   - name: requests
     category: dev-python
     version: '>=0'

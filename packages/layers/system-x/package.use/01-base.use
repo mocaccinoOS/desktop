@@ -28,7 +28,6 @@ dev-libs/lzo static-libs
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-python/numpy lapack
-dev-python/rdflib sqlite
 dev-scheme/guile regex discouraged networking
 media-libs/libpng apng static-libs
 # net-dns/libidn2[static-libs] is for net-misc/curl

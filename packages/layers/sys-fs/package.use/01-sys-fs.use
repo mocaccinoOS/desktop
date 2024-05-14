@@ -5,6 +5,7 @@ dev-libs/libevent ssl
 dev-libs/libnl utils
 dev-libs/libical vala
 dev-libs/libverto libev
+dev-python/rdflib sqlite
 mail-mta/postfix mbox sasl
 # 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
 net-fs/samba -abi_x86_32 acl aio client oav swat winbind -cluster -ceph -ldap
