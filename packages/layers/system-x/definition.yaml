@@ -805,9 +805,6 @@ provides:
   - name: pygments
     category: dev-python
     version: '>=0'
-  - name: pyparsing
-    category: dev-python
-    version: '>=0'
   - name: PySocks
     category: dev-python
     version: '>=0'
