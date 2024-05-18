@@ -1,4 +1,2 @@
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
-
-=media-libs/mesa-24.0.7 ~amd64
