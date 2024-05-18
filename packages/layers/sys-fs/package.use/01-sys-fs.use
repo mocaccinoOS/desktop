@@ -19,7 +19,6 @@ net-wireless/bluez obex
 sci-libs/hdf5 cxx szip -threads
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
-sys-boot/plymouth -gtk -pango -static-libs
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs
