@@ -18,6 +18,9 @@ steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_build_gentoo_binary" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
+# Fix plymouth service file
+- sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
+- sed -i -e 's/KillMode=none/KillMode=mixed/g' /lib/systemd/system/plymouth-start.service
 requires:
 - category: "layers"
   name: "system-x"
