@@ -3,7 +3,6 @@ excludes:
 - ^/run
 - ^/etc/openldap/ssl/ldap.*
 - ^/etc/sasl2/sasldb2
-- ^/etc/plymouth/plymouthd.conf
 env:
 {{ template "portage_env" . }}
 prelude:

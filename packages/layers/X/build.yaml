@@ -4,6 +4,7 @@ excludes:
 - ^/usr/share/applications/avahi-discover.desktop
 - ^/usr/share/applications/uxterm.desktop
 - ^/var/spool/cups/tmp/
+- ^/etc/plymouth/plymouthd.conf
 env:
 {{ template "portage_env" . }}
 prelude:
