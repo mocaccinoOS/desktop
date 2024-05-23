@@ -1,6 +1,6 @@
 category: "layers"
 name: "wlroots"
-version: 0.17.2+4
+version: 0.17.2+5
 uri:
   - https://github.com/danvd/wlroots-eglstreams
 license: "GPL-3 MIT"
