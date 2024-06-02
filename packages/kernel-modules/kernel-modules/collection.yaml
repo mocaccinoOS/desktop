@@ -99,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 550.78+5
+    version: 550.78+6
     lts: false
     labels:
       emerge.jobs: "3"
@@ -123,6 +123,13 @@ packages:
         version: ">=0"
       - category: "layers"
         name: "X"
+        version: ">=0"
+    conflicts:
+      - name: nvidia-drivers-lts
+        category: kernel-modules
+        version: ">=0"
+      - name: nvidia-drivers-470-lts
+        category: kernel-modules
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
