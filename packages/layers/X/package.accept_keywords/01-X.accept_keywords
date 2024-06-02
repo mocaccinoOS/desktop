@@ -3,3 +3,4 @@ dev-util/clinfo ~amd64
 
 # Test new mesa
 =media-libs/mesa-24.1.0-r1 ~amd64
+=dev-libs/wayland-protocols-1.36 ~amd64
