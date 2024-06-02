@@ -1,2 +1,5 @@
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
+
+# Test new mesa
+=media-libs/mesa-24.1.0-r1 ~amd64
