@@ -1,5 +1,6 @@
 dev-libs/hyprland-protocols ~amd64
 dev-libs/libliftoff ~amd64
+dev-util/hyprwayland-scanner ~amd64
 gui-apps/clipman ~amd64
 gui-apps/hyprpaper ~amd64
 gui-wm/hyprland ~amd64
