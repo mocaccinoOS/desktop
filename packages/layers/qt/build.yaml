@@ -23,6 +23,7 @@ excludes:
 - ^/usr/lib64/pkgconfig/poppler.pc
 - ^/usr/share/doc/poppler.*
 - ^/usr/share/gir-1.0/Poppler-0.18.gir
+- ^/usr/share/locale/ca/LC_MESSAGES/pdfsig.mo
 - ^/usr/share/man/man1/pdfattach.1.bz2
 - ^/usr/share/man/man1/pdfdetach.1.bz2
 - ^/usr/share/man/man1/pdffonts.1.bz2
