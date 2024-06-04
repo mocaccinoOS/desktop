@@ -5,3 +5,6 @@ dev-util/clinfo ~amd64
 =media-libs/mesa-24.1.0-r1 ~amd64
 =dev-libs/wayland-protocols-1.36 ~amd64
 =dev-util/intel_clc-24.1.0 ~amd64
+
+# See https://bugs.gentoo.org/930111
+=media-libs/tiff-4.6.0-r1 ~amd64
