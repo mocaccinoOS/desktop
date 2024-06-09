@@ -55,7 +55,7 @@ www-client/w3m fbcon imlib
 x11-apps/mesa-progs egl
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-base/xorg-x11 intel
-x11-drivers/xf86-video-intel dri3 sna uxa
+x11-drivers/xf86-video-intel dri sna uxa
 x11-libs/cairo glib
 x11-libs/gtk+:2 cups introspection
 x11-libs/gtk+:3 cups introspection
