@@ -16,7 +16,7 @@ dev-python/pyudev -qt5
 # disable extra to free up 300MB
 media-fonts/noto -cjk -extra
 media-gfx/graphite2 perl
-media-gfx/imagemagick fftw gs jpeg perl q32 wmf xml
+media-gfx/imagemagick fftw gs jpeg perl postscript q32 wmf xml
 media-gfx/sane-backends -v4l
 media-libs/chromaprint tools -abi_x86_32
 media-libs/freetype -auto-hinter adobe-cff brotli cleartype_hinting harfbuzz infinality png static-libs
