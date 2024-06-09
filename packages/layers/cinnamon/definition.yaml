@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 5.8.4+19
+version: 5.8.4+20
 uri:
   - https://github.com/linuxmint/cinnamon-desktop
 license: "GPL-2+ FDL-1.1+ LGPL-2+"
