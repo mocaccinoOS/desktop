@@ -16,7 +16,7 @@ prelude:
 - emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
+- USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} =media-libs/mesa-mesa-24.1.0-r1
 {{ template "portage_build_gentoo_binary" . }}
 - cp -rv xorg.conf.d/ /etc/X11/
 # Fix plymouth service file
