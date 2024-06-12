@@ -4,3 +4,4 @@ games-util/steam-client-meta ~amd64
 games-util/steam-launcher ~amd64
 games-util/game-device-udev-rules ~amd64
 games-util/gamemode ~amd64
+media-gfx/vkBasalt ~amd64

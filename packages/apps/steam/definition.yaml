@@ -1,13 +1,13 @@
 category: "apps"
 name: "steam"
-version: 1.0.0.76-r1+51
+version: "1.0.0.79"
 uri:
   - https://steampowered.com
 license: "ValveSteamLicense MIT BSD"
 description: "Installer, launcher and supplementary files for Valve's Steam client"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode"
+  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode media-gfx/vkBasalt"
   description: "Installer, launcher and supplementary files for Valve's Steam client"
 provides:
   - name: gamemode
@@ -24,6 +24,9 @@ provides:
     version: '>=0'
   - name: steam-launcher
     category: games-util
+    version: '>=0'
+  - name: vkBasalt
+    category: media-gfx
     version: '>=0'
 requires:
   - category: "layers"
