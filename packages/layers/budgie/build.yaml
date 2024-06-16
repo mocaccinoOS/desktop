@@ -6,11 +6,13 @@ env:
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf package.unmask /etc/portage/
+- cp -rf package.mask /etc/portage/
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable SarahMiaOverlay
 - emaint sync -r SarahMiaOverlay
+{{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 - eselect repository remove SarahMiaOverlay
 - emerge -C app-eselect/eselect-repository
 requires:
