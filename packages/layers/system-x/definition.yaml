@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20240615"
+version: "0.20240617"
 gcc_version: "13"
 python_version: "3.11"
 category: layers
@@ -809,9 +809,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: tomli
-    category: dev-python
-    version: '>=0'
-  - name: typing-extensions
     category: dev-python
     version: '>=0'
   - name: urllib3
