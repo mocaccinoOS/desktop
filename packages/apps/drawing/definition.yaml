@@ -1,6 +1,6 @@
 category: "apps"
 name: "drawing"
-version: 1.0.2+48
+version: 1.0.2+49
 uri:
   - https://github.com/maoschanz/drawing
 license: "GPL-3"

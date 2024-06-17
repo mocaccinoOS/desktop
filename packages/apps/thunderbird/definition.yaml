@@ -1,6 +1,6 @@
 category: "apps"
 name: "thunderbird"
-version: 115.11.0+4
+version: 115.11.0+5
 uri:
   - https://www.thunderbird.net
 license: "MPL-2.0 GPL-2 LGPL-2.1"
