@@ -1,6 +1,6 @@
 category: "apps"
 name: "kitty"
-version: 0.33.2+19
+version: "0.34.1"
 uri:
   - https://sourceforge.net/projects/slim.berlios
 license: "GPL-2"
@@ -8,11 +8,8 @@ description: "Simple Login Manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    net-libs/librsync x11-terms/kitty x11-terms/kitty-shell-integration x11-terms/kitty-terminfo
+    x11-terms/kitty x11-terms/kitty-shell-integration x11-terms/kitty-terminfo
 provides:
-  - name: librsync
-    category: net-libs
-    version: '>=0'
   - name: kitty
     category: x11-terms
     version: '>=0'
