@@ -2,8 +2,8 @@ dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
 
 # Test new mesa
-=media-libs/mesa-24.1.1 ~amd64
-=dev-util/intel_clc-24.1.1 ~amd64
+=media-libs/mesa-24.1.2 ~amd64
+=dev-util/intel_clc-24.1.2 ~amd64
 =dev-build/meson-1.4.1 ~amd64
 
 # See https://bugs.gentoo.org/930111
