@@ -1,6 +1,6 @@
 category: "apps"
 name: "woeusb"
-version: 5.2.4+13
+version: 5.2.4+14
 uri:
   - https://github.com/WoeUSB/WoeUSB
 license: "CC-BY-SA-4.0 GPL-3+"
