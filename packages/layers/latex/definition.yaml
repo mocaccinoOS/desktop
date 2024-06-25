@@ -12,7 +12,7 @@ description: |
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-text/dvipng app-text/dvisvgm app-text/lcdf-typetools app-text/ps2eps app-text/t1utils app-text/texi2html app-text/texlive dev-perl/File-ShareDir dev-perl/HTML-Tree dev-perl/libintl-perl dev-perl/List-MoreUtils dev-perl/Pod-LaTeX dev-perl/Spreadsheet-ParseExcel dev-perl/Unicode-EastAsianWidth dev-tex/culmus-latex dev-tex/tth dev-tex/html2latex dev-texlive/texlive-context dev-texlive/texlive-formatsextra
+    app-text/dvipng app-text/dvisvgm app-text/lcdf-typetools app-text/ps2eps app-text/t1utils app-text/texi2html =app-text/texlive-2021-r1 dev-perl/File-ShareDir dev-perl/HTML-Tree dev-perl/libintl-perl dev-perl/List-MoreUtils dev-perl/Pod-LaTeX dev-perl/Spreadsheet-ParseExcel dev-perl/Unicode-EastAsianWidth dev-tex/culmus-latex dev-tex/tth dev-tex/html2latex dev-texlive/texlive-context dev-texlive/texlive-formatsextra
 requires:
   - category: "layers"
     name: "X"
