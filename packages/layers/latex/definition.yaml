@@ -1,6 +1,6 @@
 category: "layers"
 name: "latex"
-version: "2021-r1"
+version: 2021-r1+1
 uri:
   - http://www.tug.org/texlive/
   - http://hutchinson.belmont.ma.us/tth/
@@ -12,7 +12,7 @@ description: |
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    =app-text/texlive-2021-r1 app-text/dvipng app-text/ps2eps app-text/texlive dev-tex/html2latex dev-tex/pgf dev-tex/tth dev-texlive/texlive-fontsrecommended dev-texlive/texlive-langgreek dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience dev-texlive/texlive-metapost dev-texlive/texlive-pictures dev-texlive/texlive-plaingeneric virtual/latex-base
+    =app-text/texlive-2021-r1 app-text/dvipng app-text/ps2eps app-text/texlive dev-tex/culmus-latex dev-tex/html2latex dev-tex/pgf dev-tex/tth dev-texlive/texlive-fontsrecommended dev-texlive/texlive-langgreek dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience dev-texlive/texlive-metapost dev-texlive/texlive-pictures dev-texlive/texlive-plaingeneric media-fonts/culmus virtual/latex-base
 requires:
   - category: "layers"
     name: "X"
@@ -42,6 +42,9 @@ provides:
   - category: "dev-perl"
     name: "Spreadsheet-ParseExcel"
     version: ">=0"
+  - category: "dev-tex"
+    name: "culmus-latex"
+    version: ">=0"    
   - category: "dev-tex"
     name: "html2latex"
     version: ">=0"
@@ -129,6 +132,9 @@ provides:
   - category: "dev-texlive"
     name: "texlive-pstricks"
     version: ">=0"
+  - category: "media-fonts"
+    name: "culmus"
+    version: ">=0"   
   - category: "media-gfx"
     name: "sam2p"
     version: ">=0"
