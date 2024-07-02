@@ -133,7 +133,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.239.06+28
+    version: "470.256.02"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -141,7 +141,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =x11-drivers/nvidia-drivers-470.239.06
+        - =x11-drivers/nvidia-drivers-470.256.02
     provides:
       - name: nvidia-drivers
         category: x11-drivers
