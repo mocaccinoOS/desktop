@@ -38,6 +38,11 @@ steps:
 {{- if .Values.xone }}
 - emerge -C app-eselect/eselect-repository
 {{- end}}
+{{- if contains "nvidia" .Values.name }}
+- |
+   mkdir -p /etc/dracut.conf.d/ && \
+   cp nvidia-dracut.conf /etc/dracut.conf.d/99-nvidia.conf
+{{- end}}
 requires:
 - category: "kernel-sources"
 {{- if .Values.lts }}
