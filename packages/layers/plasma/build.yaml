@@ -4,7 +4,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-- emerge -1 media-libs/phonon media-video/vlc
+# - emerge -1 media-libs/phonon media-video/vlc
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
