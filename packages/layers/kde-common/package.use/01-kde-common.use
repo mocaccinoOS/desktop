@@ -6,4 +6,4 @@ kde-frameworks/kitemmodels qml
 kde-frameworks/prison qml
 kde-frameworks/purpose -kaccounts
 kde-frameworks/sonnet qml
-media-libs/phonon -vlc
+media-libs/phonon -minimal
