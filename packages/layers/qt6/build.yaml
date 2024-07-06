@@ -4,6 +4,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
+- emerge -1 dev-python/PyQt-builder
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
