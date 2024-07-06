@@ -29,10 +29,13 @@ packages:
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 0+256
-  - !!merge <<: *X
-    real_category: "kernel-modules"
-    name: "vhba-lts"
-    version: 0+40
+#  2024-07-06: Joost Ruis
+#  We used to produce this for C-R needed for cdemu
+#  Looks like it is not required anymore.
+#  - !!merge <<: *X
+#    real_category: "kernel-modules"
+#    name: "vhba-lts"
+#    version: 0+40
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
