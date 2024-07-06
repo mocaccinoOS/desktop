@@ -31,7 +31,7 @@ media-libs/libheif gdk-pixbuf rav1e x265
 media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/libv4l dvb
-media-libs/mesa gbm g3dvl gles2 nptl opencl openvg pic shared-dricore shared-glapi vaapi vdpau video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg zink
+media-libs/mesa gbm g3dvl gles2 lm-sensors nptl opencl openvg pic shared-dricore shared-glapi vaapi vdpau video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa xorg zink
 media-libs/openal -qt5
 media-plugins/gst-plugins-meta ffmpeg mms http
 media-sound/sox flac wavpack
