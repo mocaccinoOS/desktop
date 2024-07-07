@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome-common"
-version: 1.2+66
+version: 1.2+67
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -197,15 +197,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: gentoo-common
-    category: dev-python
-    version: '>=0'
-  - name: hatch-fancy-pypi-readme
-    category: dev-python
-    version: '>=0'
-  - name: hatch-vcs
-    category: dev-python
-    version: '>=0'
-  - name: hatchling
     category: dev-python
     version: '>=0'
   - name: imagesize

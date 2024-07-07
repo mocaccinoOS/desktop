@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 5.15.14+7
+version: 5.15.14+8
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -80,15 +80,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: gentoo-common
-    category: dev-python
-    version: '>=0'
-  - name: hatch-fancy-pypi-readme
-    category: dev-python
-    version: '>=0'
-  - name: hatch-vcs
-    category: dev-python
-    version: '>=0'
-  - name: hatchling
     category: dev-python
     version: '>=0'
   - name: imagesize
