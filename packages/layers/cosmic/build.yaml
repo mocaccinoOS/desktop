@@ -24,10 +24,39 @@ prelude:
     cd cosmic-applibrary && \
     just vendor && \
     nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-bg && \
+    cd cosmic-bg && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-comp && \
+    cd cosmic-comp && \
+    just vendor && \
+    nice just build-vendored
+#- |
+#    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-greeter && \
+#    cd cosmic-greeter && \
+#    just vendor && \
+#    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-icons && \
+    cd cosmic-icons && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-launcher && \
+    cd cosmic-launcher && \
+    nice just build-release
 steps:
 - cd cosmic-session && just install
 - cd cosmic-applets && just install
 - cd cosmic-applibrary && just install
+- cd cosmic-bg && just install
+- cd cosmic-comp && just install
+#- cd cosmic-greeter && just install
+- cd cosmic-icons && just install
+- cd cosmic-launcher && just install
 requires:
 - category: "layers"
   name: "wlroots"
