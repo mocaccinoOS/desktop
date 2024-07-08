@@ -39,11 +39,11 @@ prelude:
 #    cd cosmic-greeter && \
 #    just vendor && \
 #    nice just build-vendored
-- |
-    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-icons && \
-    cd cosmic-icons && \
-    just vendor && \
-    nice just build-vendored
+#- |
+#    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-icons && \
+#    cd cosmic-icons && \
+#    just vendor && \
+#    nice just build-vendored
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-launcher && \
     cd cosmic-launcher && \
@@ -53,7 +53,36 @@ prelude:
     cd cosmic-notifications && \
     just vendor && \
     nice just build-vendored
-
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-panel && \
+    cd cosmic-panel && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-randr && \
+    cd cosmic-randr && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-screenshot && \
+    cd cosmic-screenshot && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-settings-daemon && \
+    cd cosmic-settings-daemon && \
+    make vendor && \
+    nice make prefix='/usr' VENDOR='1' all
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-settings && \
+    cd cosmic-settings && \
+    just vendor && \
+    nice just build-vendored
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-workspaces-epoch && \
+    cd cosmic-workspaces-epoch && \
+    make vendor && \
+    nice make prefix='/usr' VENDOR='1' all
 steps:
 - cd cosmic-session && just install
 - cd cosmic-applets && just install
@@ -61,9 +90,15 @@ steps:
 #- cd cosmic-bg && just install
 - cd cosmic-comp && make install
 #- cd cosmic-greeter && just install
-- cd cosmic-icons && just install
+#- cd cosmic-icons && just install
 - cd cosmic-launcher && just install
 - cd cosmic-notifications && just install
+- cd cosmic-panel && just install
+- cd cosmic-randr && just install
+- cd cosmic-screenshot && just install
+- cd cosmic-settings-daemon && make prefix='/usr' install
+- cd cosmic-settings && just install
+- cd cosmic-workspaces-epoch && make prefix='/usr' install
 requires:
 - category: "layers"
   name: "wlroots"
