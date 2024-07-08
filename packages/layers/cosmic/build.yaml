@@ -16,6 +16,7 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applets && \
     cd cosmic-applets && \
+    just vendor
     nice just build-vendored
 steps:
 - cd cosmic-session && just install
