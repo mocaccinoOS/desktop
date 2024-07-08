@@ -1,5 +1,5 @@
 category: "layers"
-name: "cosmic-session-git"
+name: "cosmic"
 version: "0.1"
 uri:
   - https://github.com/pop-os/cosmic-session
