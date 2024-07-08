@@ -1,8 +1,8 @@
 env:
 - LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
 - LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
-# - CARGO_BUILD_JOBS=10
-- RUSTFLAGS="-Z threads=8 -A warnings -C link-arg=-fuse-ld=mold"
+- CARGO_BUILD_JOBS=10
+- RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold"
 excludes:
 {{ template "portage_excludes" }}
 prelude:
