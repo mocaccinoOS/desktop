@@ -2,7 +2,6 @@ env:
 - LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
 - LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
 - CARGO_BUILD_JOBS=10
-- RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold"
 excludes:
 {{ template "portage_excludes" }}
 prelude:
@@ -12,16 +11,16 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak
 - |
-    git clone --recurse-submodules https://github.com/pop-os/cosmic-session && \
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-session && \
     cd cosmic-session && \
     nice just all
 - |
-    git clone --recurse-submodules https://github.com/pop-os/cosmic-applets && \
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applets && \
     cd cosmic-applets && \
     just vendor && \
     nice just build-vendored
 - |
-    git clone --recurse-submodules https://github.com/pop-os/cosmic-applibrary && \
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applibrary && \
     cd cosmic-applibrary && \
     just vendor && \
     nice just build-vendored
