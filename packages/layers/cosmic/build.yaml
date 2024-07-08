@@ -12,8 +12,8 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-session && \
     cd cosmic-session && \
-    nice just build && \
-    cd .. && \
+    nice just build
+- |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applets && \
     cd cosmic-applets && \
     nice just build
