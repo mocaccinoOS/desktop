@@ -32,8 +32,8 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-comp && \
     cd cosmic-comp && \
-    just vendor && \
-    nice just build-vendored
+    make vendor && \
+    nice make VENDOR='1' all
 #- |
 #    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-greeter && \
 #    cd cosmic-greeter && \
@@ -59,7 +59,7 @@ steps:
 - cd cosmic-applets && just install
 - cd cosmic-applibrary && just install
 #- cd cosmic-bg && just install
-- cd cosmic-comp && just install
+- cd cosmic-comp && make install
 #- cd cosmic-greeter && just install
 - cd cosmic-icons && just install
 - cd cosmic-launcher && just install
