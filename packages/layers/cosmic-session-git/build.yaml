@@ -1,0 +1,23 @@
+env:
+- LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
+- LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
+excludes:
+{{ template "portage_excludes" }}
+prelude:
+- cp -rf package.accept_keywords /etc/portage/
+- emerge -1 app-eselect/eselect-repository && eselect repository enable guru && emaint sync -r guru
+- emerge -1 dev-build/just && emerge -1 sys-devel/mold
+# TODO: Later combine this with flatpak layer
+- emerge -1 sys-apps/flatpak
+- |
+    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-session && \
+    cd cosmic-session && \
+    # Borrow patch file from arch aur
+    # patch -p1 justfile < ../justfile.diff && \
+    nice just build
+steps:
+- cd cosmic-session && just install
+requires:
+- category: "layers"
+  name: "wlroots"
+  version: ">=0"

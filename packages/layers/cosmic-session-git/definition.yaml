@@ -1,0 +1,21 @@
+category: "layers"
+name: "cosmic-session-git"
+version: "0.1"
+uri:
+  - https://github.com/pop-os/cosmic-session
+license: "GPL-3.0-or-later AND MPL-2.0 AND CC-BY-SA-4.0"
+description: "Next generation COSMIC™ desktop environment (Currently an incomplete pre-alpha)"
+arch: "amd64"
+requires:
+  - category: "layers"
+    name: "wlroots"
+    version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
+  - category: "themes"
+    name: "pop-icon-theme"
+    version: ">=0"
+  - category: "fonts"
+    name: "fira"
+    version: ">=0"
