@@ -20,6 +20,7 @@ prelude:
     nice just build-vendored
 steps:
 - cd cosmic-session && just install
+- cd cosmic-applets && just install
 requires:
 - category: "layers"
   name: "wlroots"
