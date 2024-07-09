@@ -11,7 +11,7 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak
 - |
-    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch xdg-desktop-portal-cosmic ) ; \
+    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-icons cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch xdg-desktop-portal-cosmic ) ; \
     for pkgname in "${pkglist[@]}" ; \
     do \
         echo "debug: loop $pkgname" ; \
@@ -23,7 +23,7 @@ prelude:
             make vendor && \
             nice make VENDOR='1' all ; \
         elif [[ $pkgname == "cosmic-icons" ]]; then \
-            nice just build-release ; \
+            echo "debug: icons" ; \
         else \
             just vendor && \
             nice just build-vendored ; \
