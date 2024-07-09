@@ -13,69 +13,68 @@ prelude:
 - |
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-session && \
     cd cosmic-session && \
-    nice just all
-- |
+    nice just all && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applets && \
     cd cosmic-applets && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-applibrary && \
     cd cosmic-applibrary && \
     just vendor && \
-    nice just build-vendored
+    nice just build-vendored && \
 #- |
 #    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-bg && \
 #    cd cosmic-bg && \
 #    just vendor && \
 #    nice just build-vendored
-- |
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-comp && \
     cd cosmic-comp && \
     make vendor && \
-    nice make VENDOR='1' all
+    nice make VENDOR='1' all && \
 #- |
 #    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-greeter && \
 #    cd cosmic-greeter && \
 #    just vendor && \
 #    nice just build-vendored
-- |
-    git clone --recurse-submodules https://github.com/pop-os/cosmic-icons
-- |
+    cd .. && \
+    git clone --recurse-submodules https://github.com/pop-os/cosmic-icons && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-launcher && \
     cd cosmic-launcher && \
-    nice just build-release
-- |
+    nice just build-release && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-notifications && \
     cd cosmic-notifications && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-panel && \
     cd cosmic-panel && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-randr && \
     cd cosmic-randr && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-screenshot && \
     cd cosmic-screenshot && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-settings-daemon && \
     cd cosmic-settings-daemon && \
     make vendor && \
-    nice make prefix='/usr' VENDOR='1' all
-- |
+    nice make prefix='/usr' VENDOR='1' all && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-settings && \
     cd cosmic-settings && \
     just vendor && \
-    nice just build-vendored
-- |
+    nice just build-vendored && \
+    cd .. && \
     RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-workspaces-epoch && \
     cd cosmic-workspaces-epoch && \
     make vendor && \
