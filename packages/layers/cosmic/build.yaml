@@ -11,25 +11,25 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak
 - |
-    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch ) \
-    for pkgname in "${pkglist[@]}" \
+    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch ) ; \
+    for pkgname in "${pkglist[@]}" ; \
     do \
-        echo "debug: loop $pkgname" \
-        RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/"$pkgname" && \
-        cd "$pkgname" && \
+        echo "debug: loop $pkgname" ; \
+        RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/"$pkgname" ; \
+        cd "$pkgname" ; \
         if [ $pkgname == "cosmic-session" ]; then \
-            nice just all && \
+            nice just all ; \
         elif [ $pkgname == "cosmic-comp"  || $pkgname == "cosmic-settings-daemon" || $pkgname == "cosmic-workspaces-epoch" ]; then \
-            make vendor && \
-            nice make VENDOR='1' all && \
+            make vendor ; \
+            nice make VENDOR='1' all ; \
         elif [ $pkgname == "cosmic-icons" ]; then \
-            nice just build-release && \
+            nice just build-release ; \
         else \
             just vendor && \
-            nice just build-vendored && \
-        fi \
-        cd .. \
-    done \
+            nice just build-vendored ; \
+        fi ; \
+        cd .. ; \
+    done
 #- |
 #    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-bg && \
 #    cd cosmic-bg && \
