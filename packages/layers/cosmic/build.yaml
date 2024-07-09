@@ -11,7 +11,7 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak
 - |
-    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch ) ; \
+    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch xdg-desktop-portal-cosmic ) ; \
     for pkgname in "${pkglist[@]}" ; \
     do \
         echo "debug: loop $pkgname" ; \
@@ -19,7 +19,7 @@ prelude:
         cd "$pkgname" ; \
         if [[ $pkgname == "cosmic-session" ]]; then \
             nice just all ; \
-        elif [[ $pkgname == "cosmic-comp" || $pkgname == "cosmic-settings-daemon" || $pkgname == "cosmic-workspaces-epoch" ]]; then \
+        elif [[ $pkgname == "cosmic-comp" || $pkgname == "cosmic-settings-daemon" || $pkgname == "cosmic-workspaces-epoch" || $pkgname == "xdg-desktop-portal-cosmic" ]]; then \
             make vendor && \
             nice make VENDOR='1' all ; \
         elif [[ $pkgname == "cosmic-icons" ]]; then \
@@ -56,6 +56,7 @@ steps:
 - cd cosmic-settings-daemon && make prefix='/usr' install
 - cd cosmic-settings && just install
 - cd cosmic-workspaces-epoch && make prefix='/usr' install
+- cd xdg-desktop-portal-cosmic && make prefix='/usr' install
 requires:
 - category: "layers"
   name: "wlroots"
