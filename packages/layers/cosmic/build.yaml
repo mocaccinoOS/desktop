@@ -2,7 +2,6 @@ env:
 - LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
 - LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
 - CARGO_BUILD_JOBS=10
-- pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch )
 excludes:
 {{ template "portage_excludes" }}
 prelude:
@@ -12,6 +11,7 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak
 - |
+    pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch )
     for pkgname in "${pkglist[@]}"
     do
         echo "debug: loop $pkgname"
