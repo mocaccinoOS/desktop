@@ -14,6 +14,7 @@ prelude:
 - |
     for pkgname in "${pkglist[@]}"
     do
+        echo "debug: loop $pkgname"
         RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/"$pkgname" && \
         cd "$pkgname" && \
         if [ $pkgname == "cosmic-session" ]; then
