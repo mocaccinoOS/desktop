@@ -6,6 +6,8 @@ excludes:
 {{ template "portage_excludes" }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
+# https://github.com/pop-os/xdg-desktop-portal-cosmic/issues/55
+- emerge -1 =dev-lang/rust-bin-1.79.0
 - emerge -1 app-eselect/eselect-repository && eselect repository enable guru && emaint sync -r guru
 - emerge -1 dev-build/just && emerge -1 sys-devel/mold
 # TODO: Later combine this with flatpak layer
