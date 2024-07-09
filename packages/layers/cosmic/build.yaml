@@ -21,14 +21,14 @@ prelude:
             nice just all && \
         elif [ $pkgname == "cosmic-comp"  || $pkgname == "cosmic-settings-daemon" || $pkgname == "cosmic-workspaces-epoch" ]; then \
             make vendor && \
-            nice make VENDOR='1' all && \       
+            nice make VENDOR='1' all && \
         elif [ $pkgname == "cosmic-icons" ]; then \
-            nice just build-release && \            
+            nice just build-release && \
         else \
             just vendor && \
             nice just build-vendored && \
         fi \
-        cd .. && \
+        cd .. \
     done \
 #- |
 #    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-bg && \
