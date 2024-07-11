@@ -1,6 +1,6 @@
 category: "apps"
 name: "kitty"
-version: 0.34.1+2
+version: 0.34.1+3
 uri:
   - https://sourceforge.net/projects/slim.berlios
 license: "GPL-2"
