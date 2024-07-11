@@ -1,6 +1,6 @@
 category: "apps"
 name: "chromium"
-version: 126.0.6478.126+1
+version: "126.0.6478.126"
 uri:
   - https://chromium.org
 license: "BSD"
@@ -12,10 +12,10 @@ labels:
 provides:
   - name: gn
     category: dev-build
-    version: '>=0'
+    version: ">=0"
   - name: chromium
     category: www-client
-    version: '>=0'
+    version: ">=0"
 requires:
   - category: "layers"
     name: "X"
