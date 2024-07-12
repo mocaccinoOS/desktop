@@ -8,7 +8,8 @@ description: "Next generation COSMIC™ desktop environment (Currently an incomp
 arch: "amd64"
 labels:
   emerge.jobs: "1"
-  emerge.packages: cosmic-de/cosmic-meta
+  emerge.packages: >-
+    cosmic-de/cosmic-meta
 requires:
   - category: "layers"
     name: "wlroots"
@@ -25,4 +26,10 @@ requires:
 provides:
   - category: "cosmic-de"
     name: "cosmic-meta"
+    version: ">=0"
+  - category: "sys-apps"
+    name: "fd"
+    version: ">=0"
+  - category: "sys-power"
+    name: "acpid"
     version: ">=0"
