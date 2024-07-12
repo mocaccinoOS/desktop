@@ -6,6 +6,9 @@ uri:
 license: "GPL-3.0-or-later AND MPL-2.0 AND CC-BY-SA-4.0"
 description: "Next generation COSMIC™ desktop environment (Currently an incomplete pre-alpha)"
 arch: "amd64"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: cosmic-de/cosmic-meta
 requires:
   - category: "layers"
     name: "wlroots"
@@ -18,4 +21,8 @@ requires:
     version: ">=0"
   - category: "fonts"
     name: "fira"
+    version: ">=0"
+provides:
+  - category: "cosmic-de"
+    name: "cosmic-meta"
     version: ">=0"

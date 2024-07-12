@@ -1,7 +1,4 @@
 env:
-# - LIBCLANG_PATH="/usr/lib/llvm/17/lib64"
-# - LLVM_CONFIG_PATH="/usr/lib/llvm/17/bin/llvm-config"
-# - CARGO_BUILD_JOBS=10
 excludes:
 {{ template "portage_excludes" }}
 prelude:
@@ -14,54 +11,11 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add cosmic-overlay git https://github.com/joostruis/cosmic-overlay
 - emaint sync -r cosmic-overlay
-
-# - |
-#     pkglist=( cosmic-session cosmic-applets cosmic-applibrary cosmic-comp cosmic-icons cosmic-launcher cosmic-notifications cosmic-panel cosmic-randr cosmic-screenshot cosmic-settings-daemon cosmic-settings cosmic-workspaces-epoch xdg-desktop-portal-cosmic ) ; \
-#     for pkgname in "${pkglist[@]}" ; \
-#     do \
-#         echo "debug: loop $pkgname" ; \
-#         RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/"$pkgname" ; \
-#         cd "$pkgname" ; \
-#         if [[ $pkgname == "cosmic-session" ]]; then \
-#             nice just all ; \
-#         elif [[ $pkgname == "cosmic-comp" || $pkgname == "cosmic-settings-daemon" || $pkgname == "cosmic-workspaces-epoch" || $pkgname == "xdg-desktop-portal-cosmic" ]]; then \
-#             make vendor && \
-#             nice make VENDOR='1' all ; \
-#         elif [[ $pkgname == "cosmic-icons" ]]; then \
-#             echo "debug: icons" ; \
-#         else \
-#             just vendor && \
-#             nice just build-vendored ; \
-#         fi ; \
-#         cd .. ; \
-#     done
-#- |
-#    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-bg && \
-#    cd cosmic-bg && \
-#    just vendor && \
-#    nice just build-vendored
-#- |
-#    RUSTFLAGS="-A warnings -C link-arg=-fuse-ld=mold" git clone --recurse-submodules https://github.com/pop-os/cosmic-greeter && \
-#    cd cosmic-greeter && \
-#    just vendor && \
-#    nice just build-vendored
+{{ template "portage_prelude_build" . }}
 steps:
-# - cd cosmic-session && just install
-# - cd cosmic-applets && just install
-# - cd cosmic-applibrary && just install
-# #- cd cosmic-bg && just install
-# - cd cosmic-comp && make install
-# #- cd cosmic-greeter && just install
-# - cd cosmic-icons && just install
-# - cd cosmic-launcher && just install
-# - cd cosmic-notifications && just install
-# - cd cosmic-panel && just install
-# - cd cosmic-randr && just install
-# - cd cosmic-screenshot && just install
-# - cd cosmic-settings-daemon && make prefix='/usr' install
-# - cd cosmic-settings && just install
-# - cd cosmic-workspaces-epoch && make prefix='/usr' install
-# - cd xdg-desktop-portal-cosmic && make prefix='/usr' install
+{{ template "portage_build" . }}
+- eselect repository remove cosmic-overlay
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "wlroots"
