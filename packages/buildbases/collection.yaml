@@ -28,11 +28,11 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+27
+    version: 0+28
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+257
+    version: 0+258
     #  2024-07-06: Joost Ruis
     #  We used to produce this for C-R needed for cdemu
     #  Looks like it is not required anymore.
