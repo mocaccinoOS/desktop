@@ -2,7 +2,7 @@ packages:
   #
   # In near future if we want virtualbox supported for the non-lts kernel
   # we need to figure out a way how to make apps/virtualbox depend on app-emulation/virtualbox-modules
-  # 
+  #
   #   - category: "kernel-modules"
   #     name: "virtualbox-modules"
   #     version: 7.0.8+20
@@ -46,16 +46,16 @@ packages:
     provides:
       - name: vboxguest
         category: acct-group
-        version: '>=0'
+        version: ">=0"
       - name: vboxguest
         category: acct-user
-        version: '>=0'
+        version: ">=0"
       - name: vboxsf
         category: acct-group
-        version: '>=0'
+        version: ">=0"
       - name: virtualbox-guest-additions
         category: app-emulation
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 550.78+17
+    version: "550.90.07"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -83,7 +83,7 @@ packages:
     provides:
       - name: nvidia-drivers
         category: x11-drivers
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -99,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 550.78+20
+    version: "550.90.07"
     lts: false
     labels:
       emerge.jobs: "3"
@@ -110,7 +110,7 @@ packages:
     provides:
       - name: nvidia-drivers
         category: x11-drivers
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-full
         category: kernel
@@ -145,7 +145,7 @@ packages:
     provides:
       - name: nvidia-drivers
         category: x11-drivers
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -170,7 +170,7 @@ packages:
     provides:
       - name: xpadneo
         category: games-util
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -192,7 +192,7 @@ packages:
     provides:
       - name: xone
         category: games-util
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -214,7 +214,7 @@ packages:
     provides:
       - name: rtl8812au
         category: net-wireless
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -236,7 +236,7 @@ packages:
     provides:
       - name: vhba
         category: sys-fs
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -258,7 +258,7 @@ packages:
     provides:
       - name: realtek-rtl88x2bu
         category: net-misc
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
@@ -280,7 +280,7 @@ packages:
     provides:
       - name: rtl8192eu
         category: net-wireless
-        version: '>=0'
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
