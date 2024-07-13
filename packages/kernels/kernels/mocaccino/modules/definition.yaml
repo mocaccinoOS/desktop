@@ -1,6 +1,6 @@
 name: mocaccino-modules
 category: kernel
-version: "6.9.8"
+version: "6.9.9"
 prefix: linux
 suffix: mocaccino
 arch: "x86_64"
@@ -13,4 +13,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
-  package.version: "6.9.8"
+  package.version: "6.9.9"
