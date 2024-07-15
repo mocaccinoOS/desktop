@@ -2,37 +2,37 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+211
+    version: 0+212
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+169
+    version: 0+170
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+118
+    version: 0+119
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+219
+    version: 0+220
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+213
+    version: 0+214
   - !!merge <<: *X
     real_category: "layers"
     name: "qt6"
-    version: 0+2
+    version: 0+3
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+28
+    version: 0+29
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+258
+    version: 0+259
     #  2024-07-06: Joost Ruis
     #  We used to produce this for C-R needed for cdemu
     #  Looks like it is not required anymore.
@@ -43,8 +43,8 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+232
+    version: 0+233
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
-    version: 0+176
+    version: 0+177
