@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: 45.2+35
+version: 45.2+36
 uri:
   - https://gnome.org
 license: "GPL-2+"
