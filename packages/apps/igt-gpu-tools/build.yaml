@@ -1,0 +1,12 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.accept_keywords /etc/portage/
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"

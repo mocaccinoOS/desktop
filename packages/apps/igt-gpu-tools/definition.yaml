@@ -1,0 +1,19 @@
+category: "apps"
+name: "igt-gpu-tools"
+version: "1.28-r1"
+uri:
+  - https://gitlab.freedesktop.org/drm/igt-gpu-tools
+license: "MIT"
+description: "Intel GPU userland tools"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-apps/igt-gpu-tools
+provides:
+  - name: igt-gpu-tools
+    category: x11-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
