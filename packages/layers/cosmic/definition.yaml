@@ -11,6 +11,9 @@ labels:
   emerge.packages: >-
     cosmic-de/cosmic-meta
 requires:
+  - name: "cosmic-greeter"
+    category: "entity"
+    version: ">=0"
   - category: "layers"
     name: "wlroots"
     version: ">=0"
