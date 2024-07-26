@@ -2,7 +2,7 @@
 dev-lang/python:3.12
 
 # Always keep newer LLVM slots masked
->sys-devel/llvm:17/17
+sys-devel/llvm:18/18.1
 
 # 2024-07-11: Joost Ruis
 # It looks like numpy2 breaks boost compilation
