@@ -7,4 +7,4 @@ requires:
     name: "cli"
     version: ">=0"
 labels:
-  llvm_slot: "17"
+  llvm_slot: "18"
