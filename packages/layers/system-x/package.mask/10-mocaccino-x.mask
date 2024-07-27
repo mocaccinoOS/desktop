@@ -1,12 +1,6 @@
 # Always keep newer python masked
 dev-lang/python:3.12
 
-# Always keep newer CLANG and LLVM slots masked
-sys-devel/clang:18/18.1
-sys-devel/llvm:18/18.1
-sys-libs/libomp:0/18.1
->=sys-devel/clang-common-18.1.8-r1
-
 # 2024-07-11: Joost Ruis
 # It looks like numpy2 breaks boost compilation
 dev-python/numpy:0/2
