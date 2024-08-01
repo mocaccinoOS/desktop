@@ -9,7 +9,7 @@ prelude:
 # TODO: Later combine this with flatpak layer
 - emerge -1 sys-apps/flatpak media-fonts/fira-mono media-fonts/fira-sans
 - emerge -1 app-eselect/eselect-repository
-- eselect repository add cosmic-overlay git https://github.com/joostruis/cosmic-overlay
+- eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
 steps:
