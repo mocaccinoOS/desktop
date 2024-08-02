@@ -13,6 +13,9 @@ provides:
   - name: cosmic-store
     category: cosmic-de
     version: '>=0'
+  - name: pop-appstream-data
+    category: cosmic-de
+    version: '>=0'
 requires:
   - category: "layers"
     name: "cosmic"
