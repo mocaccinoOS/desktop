@@ -1,0 +1,17 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- emerge -1 app-eselect/eselect-repository
+- eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
+- emaint sync -r cosmic-overlay
+{{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
+- eselect repository remove cosmic-overlay
+- emerge -C app-eselect/eselect-repository
+requires:
+- category: "layers"
+  name: "cosmic"
+  version: ">=0"

@@ -1,0 +1,22 @@
+category: "apps"
+name: "cosmic-store"
+version: "0.1.0"
+uri:
+  - https://github.com/pop-os/cosmic-store
+license: "GPL-3"
+description: "app store from COSMIC DE"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    cosmic-de/cosmic-store
+provides:
+  - name: cosmic-store
+    category: cosmic-de
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "cosmic"
+    version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
