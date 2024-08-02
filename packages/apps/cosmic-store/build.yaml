@@ -6,12 +6,14 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -1 sys-apps/flatpak
 - emerge -1 app-eselect/eselect-repository
+# We can drop the line below once we rebuild layers/cosmic that properly uses remove -f 
+- eselect repository remove -f cosmic-overlay
 - eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- eselect repository remove cosmic-overlay
+- eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"

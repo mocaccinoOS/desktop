@@ -10,7 +10,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- eselect repository remove cosmic-overlay
+- eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
