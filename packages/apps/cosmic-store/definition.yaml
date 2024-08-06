@@ -1,6 +1,6 @@
 category: "apps"
 name: "cosmic-store"
-version: "0.1.0"
+version: 0.1.0+1
 uri:
   - https://github.com/pop-os/cosmic-store
 license: "GPL-3"
