@@ -7,16 +7,16 @@ prelude:
 # We need rust 1.80 for libcosmic, currently not in Portage
 # https://github.com/pop-os/libcosmic/blob/master/Cargo.toml
 - emerge -1 app-eselect/eselect-repository
-- eselect repository enable pg_overlay
-- emaint sync -r pg_overlay
-- emerge -1 =dev-lang/rust-1.80.0::pg_overlay
+- eselect repository enable Miezhiko
+- emaint sync -r Miezhiko
+- emerge -1 =dev-lang/rust-1.80.0-r666::Miezhiko
 - emerge -1 media-fonts/fira-mono media-fonts/fira-sans
-- emerge -1 app-eselect/eselect-repository
 - eselect repository add cosmic-overlay git https://github.com/joostruis/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
+- eselect repository remove Miezhiko
 - eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
 requires:
