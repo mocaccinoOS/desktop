@@ -21,6 +21,7 @@ dev-build/just ~amd64
 =cosmic-de/pop-theme-meta-9999 ~amd64
 =cosmic-de/cosmic-screenshot-9999 ~amd64
 =cosmic-de/cosmic-workspaces-epoch-9999 ~amd64
+=cosmic-de/cosmic-wallpapers-9999 ~amd64
 =sci-libs/libqalculate-5.0.0b ~amd64
 =cosmic-de/cosmic-comp-9999 ~amd64
 =cosmic-de/pop-fonts-9999 ~amd64
