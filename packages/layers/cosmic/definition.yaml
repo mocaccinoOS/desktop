@@ -10,8 +10,8 @@ labels:
   emerge.jobs: "3"
   emerge.packages: >-
     cosmic-de/cosmic-meta
-    cosmic-de/applets
-    cosmic-de/applibrary
+    cosmic-de/cosmic-applets
+    cosmic-de/cosmic-applibrary
     cosmic-de/cosmic-bg
     cosmic-de/cosmic-comp
     cosmic-de/cosmic-edit
