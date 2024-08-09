@@ -1,5 +1,6 @@
 dev-build/just ~amd64
 =dev-lang/rust-1.80.1 ~amd64
+=virtual/rust-1.80.1 ~amd64
 
 # overlay packages
 =cosmic-de/cosmic-randr-9999 ~amd64
