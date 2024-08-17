@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-boxes"
-version: 45.0+29
+version: 45.0+30
 uri:
   - https://wiki.gnome.org/Apps/Boxes
 license: "LGPL-2+ CC-BY-2.0"
