@@ -8,7 +8,7 @@ dev-libs/libgdata gnome-online-accounts vala
 dev-libs/libgee introspection
 dev-libs/libgweather vala
 dev-libs/libportal gtk -qt5
-gnome-base/gvfs afp archive fuse gdu gnome gnome-online-accounts google ios keyring mtp nfs samba udisks
+gnome-base/gvfs afp archive fuse gnome-online-accounts google ios keyring mtp nfs samba udisks
 gnome-base/libgtop introspection
 gnome-extra/evolution-data-server oauth kerberos vala
 gnome-extra/polkit-gnome introspection
