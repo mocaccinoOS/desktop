@@ -60,8 +60,6 @@ x11-libs/cairo glib
 x11-libs/gtk+:2 cups introspection
 x11-libs/gtk+:3 cups introspection
 x11-libs/libnotify introspection
-# libva coolness
-x11-libs/libva vdpau video_cards_dummy video_cards_intel X
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
 x11-misc/colord introspection vala
 x11-misc/notification-daemon gstreamer
