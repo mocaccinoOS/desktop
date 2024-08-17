@@ -10,9 +10,8 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp -rf package.license /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
 - cp -rf patches /etc/portage/
-# dev-python/docutils:0 is required by sys-fs/btrfs-progs-6.8.1 but not pulled in?
-# ModuleNotFoundError: No module named 'docutils'
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin virtual/rust dev-python/docutils:0
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:

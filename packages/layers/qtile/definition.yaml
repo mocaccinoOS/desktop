@@ -8,15 +8,12 @@ description: "A full-featured, hackable tiling window manager written in Python"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-python/cairocffi dev-python/dbus-next dev-python/pulsectl dev-python/pulsectl-asyncio dev-python/pywayland dev-python/pywlroots dev-python/xcffib x11-wm/qtile
+    dev-python/dbus-next dev-python/pulsectl dev-python/pulsectl-asyncio dev-python/pywayland dev-python/pywlroots x11-wm/qtile
 requires:
   - category: "layers"
     name: "wlroots"
     version: ">=0"
 provides:
-  - name: cairocffi
-    category: dev-python
-    version: '>=0'
   - name: dbus-next
     category: dev-python
     version: '>=0'
@@ -30,9 +27,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pywlroots
-    category: dev-python
-    version: '>=0'
-  - name: xcffib
     category: dev-python
     version: '>=0'
   - name: qtile
