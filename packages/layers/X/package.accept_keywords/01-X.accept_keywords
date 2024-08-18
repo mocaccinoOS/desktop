@@ -1,2 +1,4 @@
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
+# Needed against unstable rust-bin-1.80.1
+=dev-util/cargo-c-0.9.32 ~amd64
