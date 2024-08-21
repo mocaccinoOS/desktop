@@ -1,6 +1,6 @@
 name: "gnome"
 category: "meta"
-version: "0.20230212"
+version: "0.20240821"
 description: "GNOME Desktop meta package"
 
 requires:
@@ -9,7 +9,4 @@ requires:
   version: ">=0"
 - category: "apps"
   name: "gnome-software"
-  version: ">=0"
-- category: "mocaccino"
-  name: "gnome-skel"
   version: ">=0"
