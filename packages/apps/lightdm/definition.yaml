@@ -1,6 +1,6 @@
 category: "apps"
 name: "lightdm"
-version: 1.32.0-r2+60
+version: 1.32.0-r2+61
 uri:
   - https://launchpad.net/lightdm
 license: "GPL-3 LGPL-3"
