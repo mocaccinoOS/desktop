@@ -7,7 +7,7 @@ license: "ValveSteamLicense MIT BSD"
 description: "Installer, launcher and supplementary files for Valve's Steam client"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode media-gfx/vkBasalt"
+  emerge.packages: "games-util/esteam games-util/game-device-udev-rules games-util/steam-launcher games-util/gamemode media-gfx/vkBasalt sys-libs/libudev-compat"
   description: "Installer, launcher and supplementary files for Valve's Steam client"
 provides:
   - name: gamemode
@@ -27,6 +27,9 @@ provides:
     version: '>=0'
   - name: vkBasalt
     category: media-gfx
+    version: '>=0'
+  - name: libudev-compat
+    category: sys-libs
     version: '>=0'
 requires:
   - category: "layers"
