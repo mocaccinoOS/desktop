@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 550.107.02+1
+    version: 550.107.02+2
     lts: true
     labels:
       emerge.jobs: "3"
@@ -79,7 +79,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - x11-drivers/nvidia-drivers
+        - x11-drivers/nvidia-drivers x11-misc/prime-run
     provides:
       - name: nvidia-drivers
         category: x11-drivers
