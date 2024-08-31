@@ -1,3 +1,3 @@
-lxqt-base/lxqt-meta admin archiver lximage minimal powermanagement processviewer -display-manager -sddm -trash
+lxqt-base/lxqt-meta about admin archiver lximage powermanagement processviewer -display-manager -minimal -sddm -trash
 lxqt-base/lxqt-panel networkmonitor
 x11-wm/openbox imlib
