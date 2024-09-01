@@ -1,6 +1,6 @@
 category: "layers"
 name: "wlroots"
-version: 0.17.4+3
+version: 0.17.4+4
 uri:
   - https://github.com/danvd/wlroots-eglstreams
 license: "GPL-3 MIT"
@@ -8,7 +8,7 @@ description: "wlroots (EGLStreams fork)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-libs/date::gentoo gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/waybar::gentoo gui-apps/wlogout::guru gui-apps/wofi::gentoo gui-libs/wlroots media-libs/libdisplay-info::gentoo
+    dev-libs/date::gentoo gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/waybar::gentoo gui-apps/wlogout::guru gui-apps/wofi::gentoo gui-libs/wlroots
 requires:
   - category: "layers"
     name: "X"
@@ -34,7 +34,4 @@ provides:
     version: '>=0'
   - name: wlroots
     category: gui-libs
-    version: '>=0'
-  - name: libdisplay-info
-    category: media-libs
     version: '>=0'
