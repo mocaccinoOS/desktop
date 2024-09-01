@@ -26,5 +26,5 @@ steps:
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
-  name: "wlroots"
+  name: "X"
   version: ">=0"
