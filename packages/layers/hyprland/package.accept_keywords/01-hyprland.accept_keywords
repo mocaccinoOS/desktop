@@ -1,3 +1,4 @@
 dev-libs/hyprland-protocols ~amd64
 gui-apps/clipman ~amd64
 gui-apps/hyprpaper ~amd64
+gui-libs/aquamarine ~amd64
