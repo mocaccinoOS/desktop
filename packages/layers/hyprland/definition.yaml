@@ -8,7 +8,7 @@ description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its 
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-cpp/tomlplusplus dev-libs/hyprlang dev-libs/libliftoff::gentoo gui-apps/hyprpaper::wayland-desktop gui-libs/aquamarine gui-libs/hyprcursor gui-libs/hyprutils gui-wm/hyprland::gentoo
+    dev-cpp/tomlplusplus dev-libs/hyprlang dev-libs/libliftoff::gentoo dev-util/hyprwayland-scanner gui-apps/hyprpaper::wayland-desktop gui-libs/aquamarine gui-libs/hyprcursor gui-libs/hyprutils gui-wm/hyprland::gentoo
 requires:
   - category: "layers"
     name: "wlroots"
@@ -25,6 +25,9 @@ provides:
     version: '>=0'
   - name: libliftoff
     category: dev-libs
+    version: '>=0'
+  - name: hyprwayland-scanner
+    category: dev-util
     version: '>=0'
   - name: clipman
     category: gui-apps
