@@ -1,2 +1,2 @@
 # Do not pull in Qt6
->=x11-misc/sddm-0.21.0_p20240723
+>=x11-misc/sddm-0.21.0_p20240723-r10
