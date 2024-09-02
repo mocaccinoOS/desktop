@@ -1,0 +1,2 @@
+# do not pull in Qt6
+sys-libs/kpmcore:6/10
