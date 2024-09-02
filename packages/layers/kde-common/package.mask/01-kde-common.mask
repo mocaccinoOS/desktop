@@ -1,5 +1,6 @@
 # do not pull in Qt6
 kde-plasma/kwayland:6
+kde-plasma/libplasma:6
 kde-plasma/polkit-kde-agent:6
 media-libs/ksanecore:6
 >=net-libs/kdsoap-ws-discovery-client-0.4.0
