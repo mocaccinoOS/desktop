@@ -1,27 +1,38 @@
-app-crypt/gpgme qt5
+app-crypt/gpgme qt5 qt6
 app-crypt/qca gpg ssl
-app-text/poppler qt5
+app-text/poppler qt5 qt6
 dev-python/PyQt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
->=dev-qt/qtprintsupport-5.15.1 cups
-dev-qt/linguist-tools qml
-dev-qt/qt-creator autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
-dev-qt/qt3d qml
+dev-python/PyQt6 qml quick webchannel
+dev-qt/qt5compat:6 qml
+dev-qt/qtprintsupport:5 cups
+dev-qt/linguist-tools:5 qml
+dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
+dev-qt/qt3d:5 qml
+dev-qt/qt3d:6 qml
+dev-qt/qtbase:6 accessibility cups libproxy vulkan
 dev-qt/qtbluetooth qml
-dev-qt/qtcharts qml
-dev-qt/qtcharts qml
-dev-qt/qtdeclarative jit localstorage widgets vulkan
+dev-qt/qtcharts:5 qml
+dev-qt/qtcharts:6 qml
+dev-qt/qtdeclarative:5 jit localstorage widgets vulkan
+dev-qt/qtdeclarative:6 accessibility vulkan
 dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
-dev-qt/qtnetwork ssl
+dev-qt/qtmultimedia:6 qml vulkan
+dev-qt/qtnetwork:5 ssl
+dev-qt/qtquick3d:6 vulkan
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
-dev-qt/qtscript private-headers
-dev-qt/qtscript:5 private-headers scripttools
-dev-qt/qtsensors qml
-dev-qt/qtsql mysql
-dev-qt/qtvirtualkeyboard spell
-dev-qt/qtwayland egl
+dev-qt/qtscript:5 private-headers
+dev-qt/qtsensors:5 qml
+dev-qt/qtsensors:6 qml
+dev-qt/qtsql:5 mysql
+dev-qt/qttools:6 designer qdbus qml vulkan
+dev-qt/qtvirtualkeyboard:5 spell
+dev-qt/qtwayland:5 egl
+dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtxmlpatterns qml
-dev-qt/qtwayland vulkan
-dev-qt/qtwebchannel qml
-dev-qt/qtwebengine bindist system-icu widgets -system-ffmpeg
+dev-qt/qtwayland:5 vulkan
+dev-qt/qtwayland:6 accessibility vulkan
+dev-qt/qtwebchannel:5 qml
+dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
+dev-qt/qtwebengine:6 accessibility
