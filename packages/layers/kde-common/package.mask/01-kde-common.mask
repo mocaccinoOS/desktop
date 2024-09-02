@@ -1,2 +1,3 @@
 # do not pull in Qt6
 sys-libs/kpmcore:6/10
+>=net-libs/kdsoap-ws-discovery-client-0.4.0
