@@ -1,5 +1,5 @@
 app-crypt/gpgme qt5 qt6
-app-crypt/qca gpg ssl
+app-crypt/qca qt5 qt6 gpg ssl
 app-text/poppler qt5 qt6
 dev-python/PyQt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
 dev-python/PyQt6 qml quick webchannel
