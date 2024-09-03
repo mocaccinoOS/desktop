@@ -4,35 +4,35 @@ app-text/poppler qt5 qt6
 dev-python/PyQt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
 dev-python/PyQt6 qml quick webchannel
 dev-qt/qt5compat:6 qml
-dev-qt/qtprintsupport:6 cups
-dev-qt/linguist-tools:6 qml
+dev-qt/qtprintsupport:5 cups
+dev-qt/linguist-tools:5 qml
 dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
-dev-qt/qt3d:6 qml
+dev-qt/qt3d:5 qml
 dev-qt/qt3d:6 qml
 dev-qt/qtbase:6 accessibility cups libproxy vulkan
 dev-qt/qtbluetooth qml
+dev-qt/qtcharts:5 qml
 dev-qt/qtcharts:6 qml
-dev-qt/qtcharts:6 qml
-dev-qt/qtdeclarative:6 jit localstorage widgets vulkan
+dev-qt/qtdeclarative:5 jit localstorage widgets vulkan
 dev-qt/qtdeclarative:6 accessibility vulkan
-dev-qt/qtgui:6 accessibility egl eglfs ibus jpeg libinput png udev vulkan
-dev-qt/qtmultimedia:6 gstreamer openal qml widgets
+dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
+dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtmultimedia:6 qml vulkan
-dev-qt/qtnetwork:6 ssl
+dev-qt/qtnetwork:5 ssl
 dev-qt/qtquick3d:6 vulkan
-dev-qt/qtquickcontrols:6 widgets
-dev-qt/qtquickcontrols2:6 widgets
-dev-qt/qtscript:6 private-headers
+dev-qt/qtquickcontrols:5 widgets
+dev-qt/qtquickcontrols2:5 widgets
+dev-qt/qtscript:5 private-headers
+dev-qt/qtsensors:5 qml
 dev-qt/qtsensors:6 qml
-dev-qt/qtsensors:6 qml
-dev-qt/qtsql:6 mysql
+dev-qt/qtsql:5 mysql
 dev-qt/qttools:6 designer qdbus qml vulkan
-dev-qt/qtvirtualkeyboard:6 spell
-dev-qt/qtwayland:6 egl
+dev-qt/qtvirtualkeyboard:5 spell
+dev-qt/qtwayland:5 egl
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtxmlpatterns qml
-dev-qt/qtwayland:6 vulkan
+dev-qt/qtwayland:5 vulkan
 dev-qt/qtwayland:6 accessibility vulkan
-dev-qt/qtwebchannel:6 qml
-dev-qt/qtwebengine:6 bindist system-icu widgets -system-ffmpeg
+dev-qt/qtwebchannel:5 qml
+dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
 dev-qt/qtwebengine:6 accessibility

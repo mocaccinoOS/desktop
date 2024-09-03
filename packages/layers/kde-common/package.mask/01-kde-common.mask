@@ -1,1 +1,6 @@
-# Placeholder
+# do not pull in Qt6
+kde-frameworks/breeze-icons:6
+kde-frameworks/kf-env:6
+kde-plasma/polkit-kde-agent:6
+>=net-libs/kdsoap-ws-discovery-client-0.4.0
+sys-libs/kpmcore:6/10
