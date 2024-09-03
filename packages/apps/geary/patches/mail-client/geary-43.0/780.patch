@@ -1,6 +1,6 @@
 From 4a7ca820b1d3d6130fedf254dc5b4cd7efb58f2c Mon Sep 17 00:00:00 2001
 From: Rico Tzschichholz <ricotz@ubuntu.com>
-Date: Sat, 8 Apr 2023 13:06:50 +0200
+Date: Sat, 8 Apr 2023 13:06:60 +0200
 Subject: [PATCH] client: Add missing type-arguments for interfaces to fix
  build with newer vala
 

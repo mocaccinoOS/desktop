@@ -8,7 +8,7 @@ description: "KDE Plasma resources management GUI"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-libs/appstream kde-plasma/discover:5 kde-plasma/flatpak-kcm:5
+    dev-libs/appstream kde-plasma/discover:6 kde-plasma/flatpak-kcm:6
 provides:
   - name: discover
     category: kde-plasma
