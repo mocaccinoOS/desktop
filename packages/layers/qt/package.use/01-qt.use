@@ -35,4 +35,4 @@ dev-qt/qtwayland:5 vulkan
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
-dev-qt/qtwebengine:6 accessibility
+dev-qt/qtwebengine:6 accessibility qml
