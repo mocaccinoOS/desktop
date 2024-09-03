@@ -1,11 +1,11 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: 23.08.5+29
+version: "24.05.2-r1"
 description: "A bundle of Plasma applications useful on the Plasma desktop"
 labels:
   emerge.jobs: "4"
   emerge.packages: >-
-    app-cdr/dolphin-plugins-mountiso:5 app-text/convertlit app-text/ebook-tools dev-libs/kpeoplevcard:5 kde-apps/ark:5 kde-apps/baloo-widgets:5 kde-apps/dolphin:5 kde-apps/kate-lib:5 kde-apps/kcalc:5 kde-apps/kdeadmin-meta kde-apps/kdf:5 kde-apps/kdialog:5 kde-apps/keditbookmarks:5 kde-apps/kfind:5 kde-apps/kolourpaint:5 kde-apps/konsole:5 kde-apps/kwalletmanager:5 kde-apps/kwrite:5 kde-apps/libkdcraw:5 kde-apps/krdc:5 kde-apps/thumbnailers:5 kde-apps/yakuake:5 kde-misc/skanlite:5 kde-plasma/print-manager:5 =media-libs/kcolorpicker-0.2.0 =media-libs/kimageannotator-0.6.1 sys-block/partitionmanager:5
+    app-cdr/dolphin-plugins-mountiso:6 app-text/convertlit app-text/ebook-tools kde-apps/ark:6 kde-apps/baloo-widgets:6 kde-apps/dolphin:6 kde-apps/gwenview:6 kde-apps/kate-lib:6 kde-apps/kcalc:6 kde-apps/kcron:6 kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing:6 kde-apps/kdf:6 kde-apps/kdialog:6 kde-apps/keditbookmarks:6 kde-apps/kfind:6 kde-apps/kmag:6 kde-apps/kmousetool:6 kde-apps/kolourpaint:6 kde-apps/konsole:6 kde-apps/kwalletmanager:6 kde-apps/kwrite:6 kde-apps/libkdcraw:6 kde-apps/krdc:6 kde-apps/ksystemlog:6 kde-apps/okular:6 kde-apps/spectacle:6 kde-apps/svgpart:6 kde-apps/thumbnailers:6 kde-apps/yakuake:6 kde-misc/kdeconnect:6 kde-misc/skanlite:6 kde-plasma/print-manager:6 media-libs/kcolorpicker media-libs/kimageannotator net-irc/konversation:6 sys-block/partitionmanager:6
 requires:
   - category: "layers"
     name: "plasma"
@@ -20,9 +20,6 @@ provides:
   - name: ebook-tools
     category: app-text
     version: '>=0'
-  - name: kpeoplevcard
-    category: dev-libs
-    version: '>=0'
   - name: ark
     category: kde-apps
     version: '>=0'
@@ -32,13 +29,22 @@ provides:
   - name: dolphin
     category: kde-apps
     version: '>=0'
+  - name: gwenview
+    category: kde-apps
+    version: '>=0'
   - name: kate-lib
     category: kde-apps
     version: '>=0'
   - name: kcalc
     category: kde-apps
     version: '>=0'
+  - name: kcron
+    category: kde-apps
+    version: '>=0'
   - name: kdeadmin-meta
+    category: kde-apps
+    version: '>=0'
+  - name: kdenetwork-filesharing
     category: kde-apps
     version: '>=0'
   - name: kdf
@@ -53,6 +59,12 @@ provides:
   - name: kfind
     category: kde-apps
     version: '>=0'
+  - name: kmag
+    category: kde-apps
+    version: '>=0'
+  - name: kmousetool
+    category: kde-apps
+    version: '>=0'
   - name: kolourpaint
     category: kde-apps
     version: '>=0'
@@ -60,6 +72,9 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: krdc
+    category: kde-apps
+    version: '>=0'
+  - name: ksystemlog
     category: kde-apps
     version: '>=0'
   - name: kwalletmanager
@@ -71,11 +86,23 @@ provides:
   - name: libkdcraw
     category: kde-apps
     version: '>=0'
+  - name: okular
+    category: kde-apps
+    version: '>=0'
+  - name: spectacle
+    category: kde-apps
+    version: '>=0'
+  - name: svgpart
+    category: kde-apps
+    version: '>=0'
   - name: thumbnailers
     category: kde-apps
     version: '>=0'
   - name: yakuake
     category: kde-apps
+    version: '>=0'
+  - name: kdeconnect
+    category: kde-misc
     version: '>=0'
   - name: skanlite
     category: kde-misc
@@ -88,6 +115,9 @@ provides:
     version: '>=0'
   - name: kimageannotator
     category: media-libs
+    version: '>=0'
+  - name: konversation
+    category: net-irc
     version: '>=0'
   - name: partitionmanager
     category: sys-block
