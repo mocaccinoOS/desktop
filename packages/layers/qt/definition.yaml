@@ -4,7 +4,7 @@ version: 5.15.14+21
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-crypt/gpgme app-crypt/qca app-text/poppler dev-libs/libdbusmenu-qt dev-libs/qtkeychain dev-python/PyQt5 dev-python/PyQt6 dev-python/PyQt5-sip dev-python/PyQt6-sip dev-python/PyQtWebEngine dev-python/PyQt6-WebEngine dev-python/sip dev-qt/linguist-tools dev-qt/qdbus:0 dev-qt/qt5compat:6 dev-qt/qtbase:6 dev-qt/qtbluetooth:5 dev-qt/qtcharts:5 dev-qt/qtcharts:6 dev-qt/qtchooser:0 dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtdeclarative:6 dev-qt/qtgraphicaleffects:5 dev-qt/qtgui:5 dev-qt/qthelp:5 dev-qt/qtimageformats:5 dev-qt/qtimageformats:6 dev-qt/qtlocation:5 dev-qt/qtlocation:6 dev-qt/qtlockedfile:0 dev-qt/qtmultimedia:5 dev-qt/qtmultimedia:6 dev-qt/qtnetwork:5 dev-qt/qtnetworkauth:5 dev-qt/qtnetworkauth:6 dev-qt/qtopengl:5 dev-qt/qtpaths:5 dev-qt/qtpositioning:5 dev-qt/qtpositioning:6 dev-qt/qtprintsupport:5 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qtquicktimeline:6 dev-qt/qtscript:5 dev-qt/qtscxml:5 dev-qt/qtscxml:6 dev-qt/qtsensors:5 dev-qt/qtsensors:6 dev-qt/qtserialport:5 dev-qt/qtserialport:6 dev-qt/qtsingleapplication:0 dev-qt/qtsensors:6 dev-qt/qtshadertools:6 dev-qt/qtspeech:5 dev-qt/qtspeech:6 dev-qt/qtsql:5 dev-qt/qtsvg:5 dev-qt/qtsvg:6 dev-qt/qttest:5 dev-qt/qttranslations:5 dev-qt/qttranslations:6 dev-qt/qtvirtualkeyboard:5 dev-qt/qtvirtualkeyboard:6 dev-qt/qtwayland:5 dev-qt/qtwayland:6 dev-qt/qtwaylandscanner:5 dev-qt/qtwebchannel:5 dev-qt/qtwebchannel:6 dev-qt/qtwebengine:5 dev-qt/qtwebengine:6 dev-qt/qtwebsockets:5 dev-qt/qtwebsockets:6 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-qt/qtxmlpatterns:5 sys-auth/polkit-qt:0 media-libs/assimp
+    app-crypt/gpgme app-crypt/qca app-text/poppler dev-libs/libdbusmenu-qt dev-libs/qtkeychain dev-python/PyQt5 dev-python/PyQt6 dev-python/PyQt5-sip dev-python/PyQt6-sip dev-python/PyQtWebEngine dev-python/PyQt6-WebEngine dev-python/sip dev-qt/linguist-tools dev-qt/qdbus:0 dev-qt/qt5compat:6 dev-qt/qtbase:6 dev-qt/qtbluetooth:5 dev-qt/qtcharts:5 dev-qt/qtcharts:6 dev-qt/qtchooser:0 dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtdeclarative:5 dev-qt/qtdeclarative:6 dev-qt/qtgraphicaleffects:5 dev-qt/qtgui:5 dev-qt/qthelp:5 dev-qt/qtimageformats:5 dev-qt/qtimageformats:6 dev-qt/qtlocation:5 dev-qt/qtlocation:6 dev-qt/qtlockedfile:0 dev-qt/qtmultimedia:5 dev-qt/qtmultimedia:6 dev-qt/qtnetwork:5 dev-qt/qtnetworkauth:5 dev-qt/qtnetworkauth:6 dev-qt/qtopengl:5 dev-qt/qtpaths:5 dev-qt/qtpositioning:5 dev-qt/qtpositioning:6 dev-qt/qtprintsupport:5 dev-qt/qtquick3d:6 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qtquicktimeline:6 dev-qt/qtscript:5 dev-qt/qtscxml:5 dev-qt/qtscxml:6 dev-qt/qtsensors:5 dev-qt/qtsensors:6 dev-qt/qtserialport:5 dev-qt/qtserialport:6 dev-qt/qtsingleapplication:0 dev-qt/qtsensors:6 dev-qt/qtshadertools:6 dev-qt/qtspeech:5 dev-qt/qtspeech:6 dev-qt/qtsql:5 dev-qt/qtsvg:5 dev-qt/qtsvg:6 dev-qt/qttest:5 dev-qt/qttranslations:5 dev-qt/qttranslations:6 dev-qt/qtvirtualkeyboard:5 dev-qt/qtvirtualkeyboard:6 dev-qt/qtwayland:5 dev-qt/qtwayland:6 dev-qt/qtwaylandscanner:5 dev-qt/qtwebchannel:5 dev-qt/qtwebchannel:6 dev-qt/qtwebengine:5 dev-qt/qtwebengine:6 dev-qt/qtwebsockets:5 dev-qt/qtwebsockets:6 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-qt/qtxmlpatterns:5 sys-auth/polkit-qt:0 media-libs/assimp
 requires:
   - category: "layers"
     name: "X"
@@ -254,6 +254,9 @@ provides:
     category: dev-qt
     version: '>=0'
   - name: qtprintsupport
+    category: dev-qt
+    version: '>=0'
+  - name: qtquick3d
     category: dev-qt
     version: '>=0'
   - name: qtquickcontrols
