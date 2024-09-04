@@ -1,6 +1,6 @@
 kde-frameworks/baloo minimal
 kde-plasma/breeze -qt5
-kde-plasma/plasma-meta bluetooth gtk networkmanager -firewall
+kde-plasma/plasma-meta -qt5 bluetooth gtk networkmanager -firewall
 kde-plasma/plasma-desktop input_devices_synaptics touchpad
 kde-plasma/kde-cli-tools kdesu
 kde-plasma/kdeplasma-addons desktopglobe json oauth semantic-desktop
