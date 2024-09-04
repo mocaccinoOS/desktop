@@ -1,6 +1,6 @@
 category: "layers"
 name: "lxqt"
-version: 1.4.0+55
+version: "2.0.0"
 uri:
   - https://lxqt-project.org
 license: "LGPL-2.1+"
