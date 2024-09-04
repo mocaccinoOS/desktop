@@ -5,7 +5,7 @@ description: "A bundle of Plasma applications useful on the Plasma desktop"
 labels:
   emerge.jobs: "4"
   emerge.packages: >-
-    app-cdr/dolphin-plugins-mountiso:6 app-text/convertlit app-text/ebook-tools kde-apps/ark:6 kde-apps/baloo-widgets:6 kde-apps/dolphin:6 kde-apps/gwenview:6 kde-apps/kate-lib:6 kde-apps/kcalc:6 kde-apps/kcron:6 kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing:6 kde-apps/kdf:6 kde-apps/kdialog:6 kde-apps/keditbookmarks:6 kde-apps/kfind:6 kde-apps/kmag:6 kde-apps/kmousetool:6 kde-apps/kolourpaint:6 kde-apps/konsole:6 kde-apps/kwalletmanager:6 kde-apps/kwrite:6 kde-apps/libkdcraw:6 kde-apps/ksystemlog:6 kde-apps/okular:6 kde-apps/spectacle:6 kde-apps/svgpart:6 kde-apps/thumbnailers:6 kde-apps/yakuake:6 kde-misc/kdeconnect:6 kde-plasma/print-manager:6 media-libs/kcolorpicker media-libs/kimageannotator net-irc/konversation:6 sys-block/partitionmanager:6
+    app-cdr/dolphin-plugins-mountiso:6 app-text/convertlit app-text/ebook-tools kde-apps/ark:6 kde-apps/baloo-widgets:6 kde-apps/dolphin:6 kde-apps/gwenview:6 kde-apps/kate-lib:6 kde-apps/kcalc:6 kde-apps/kcron:6 kde-apps/kdeadmin-meta kde-apps/kdenetwork-filesharing:6 kde-apps/kdf:6 kde-apps/kdialog:6 kde-apps/keditbookmarks:6 kde-apps/kfind:6 kde-apps/kmag:6 kde-apps/kmousetool:6 kde-apps/kolourpaint:6 kde-apps/konsole:6 kde-apps/kwalletmanager:6 kde-apps/kwrite:6 kde-apps/libkdcraw:6 kde-apps/ksystemlog:6 kde-apps/okular:6 kde-apps/svgpart:6 kde-apps/thumbnailers:6 kde-apps/yakuake:6 kde-misc/kdeconnect:6 kde-plasma/print-manager:6 media-libs/kcolorpicker media-libs/kimageannotator net-irc/konversation:6 sys-block/partitionmanager:6
 requires:
   - category: "layers"
     name: "plasma"
@@ -84,9 +84,6 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: okular
-    category: kde-apps
-    version: '>=0'
-  - name: spectacle
     category: kde-apps
     version: '>=0'
   - name: svgpart
