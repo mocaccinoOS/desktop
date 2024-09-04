@@ -10,7 +10,7 @@ dev-qt/linguist-tools:5 qml
 dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
 dev-qt/qt3d:5 qml
 dev-qt/qt3d:6 qml
-dev-qt/qtbase:6 accessibility cups libproxy vulkan
+dev-qt/qtbase:6 accessibility cups libproxy mysql vulkan
 dev-qt/qtbluetooth qml
 dev-qt/qtcharts:5 qml
 dev-qt/qtcharts:6 qml
