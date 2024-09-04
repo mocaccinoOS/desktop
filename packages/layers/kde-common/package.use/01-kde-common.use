@@ -8,4 +8,4 @@ kde-frameworks/purpose -kaccounts
 kde-frameworks/sonnet qml
 media-libs/phonon minimal
 net-libs/kdsoap qt6
-net-libs/signon qt6
+net-libs/signond qt6
