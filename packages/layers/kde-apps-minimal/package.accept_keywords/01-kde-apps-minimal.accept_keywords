@@ -1,3 +1,4 @@
 =kde-apps/libksane-24.08.0 ~amd64
 kde-apps/krdc:6 ~amd64
 kde-misc/skanlite:6 ~amd64
+=media-libs/ksanecore-24.08.0 ~amd64
