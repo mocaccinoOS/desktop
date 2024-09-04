@@ -3,6 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+- emerge --sync
 - cp -rf package.use /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
 - emerge -1 media-sound/pavucontrol-qt
