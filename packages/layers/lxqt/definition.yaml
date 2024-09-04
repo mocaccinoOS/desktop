@@ -1,6 +1,6 @@
 category: "layers"
 name: "lxqt"
-version: 1.4.0+54
+version: 1.4.0+55
 uri:
   - https://lxqt-project.org
 license: "LGPL-2.1+"
@@ -73,7 +73,7 @@ provides:
     version: '>=0'
   - name: libkscreen
     category: kde-plasma
-    version: '>=0'    
+    version: '>=0'
   - name: lximage-qt
     category: media-gfx
     version: '>=0'
