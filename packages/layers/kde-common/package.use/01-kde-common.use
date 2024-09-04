@@ -9,3 +9,4 @@ kde-frameworks/sonnet qml
 media-libs/phonon minimal
 net-libs/kdsoap qt6
 net-libs/signond qt6
+net-libs/signon-oauth2 qt6
