@@ -1,3 +1,4 @@
+kde-apps/kaccounts-integration -qt5
 kde-frameworks/baloo minimal
 kde-plasma/breeze -qt5
 kde-plasma/plasma-meta -qt5 bluetooth gtk networkmanager -firewall
