@@ -13,4 +13,5 @@ kde-plasma/plasma-nm modemmanager openconnect
 media-libs/phonon qt6 -qt5
 media-libs/phonon-vlc qt6 -qt5
 net-libs/signon-ui qt6
+net-libs/signond qt6
 net-vpn/networkmanager-openconnect -gtk
