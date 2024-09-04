@@ -7,6 +7,7 @@ kde-plasma/kdeplasma-addons desktopglobe json oauth semantic-desktop
 kde-plasma/kscreenlocker -seccomp
 kde-plasma/kwin accessibility captury lock xcomposite
 kde-plasma/oxygen -qt5
+kde-plasma/plasma-integration -qt5
 kde-plasma/plasma-nm modemmanager openconnect
 media-libs/phonon qt6 -qt5
 media-libs/phonon-vlc qt6 -qt5
