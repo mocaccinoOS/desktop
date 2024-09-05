@@ -1,6 +1,6 @@
 category: "apps"
 name: "edgevpn-gui"
-version: 0.2.1+162
+version: 0.2.1+163
 description: "A graphical frontend for edgeVPN"
 requires:
   - category: "layers"
