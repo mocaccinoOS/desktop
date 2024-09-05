@@ -7,7 +7,7 @@ license: "GPL-2+ FDL-1.1+ LGPL-2+"
 description: "A fork of GNOME Shell with layout similar to GNOME 2"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/caribou dev-lang/spidermonkey:115 dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/pyinotify dev-python/python-pam dev-python/tinycss2 gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo x11-wm/muffin"
+  emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/pyinotify dev-python/python-pam dev-python/tinycss2 gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo x11-wm/muffin"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -15,9 +15,6 @@ requires:
 provides:
   - name: caribou
     category: app-accessibility
-    version: '>=0'
-  - name: spidermonkey
-    category: dev-lang
     version: '>=0'
   - name: libtimezonemap
     category: dev-libs
