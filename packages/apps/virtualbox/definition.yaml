@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 7.0.18-r1+21
+version: "7.0.20"
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"
@@ -10,9 +10,6 @@ labels:
   emerge.packages: >-
     app-emulation/virtualbox
 requires:
-  - category: "layers"
-    name: "qt"
-    version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: ">=0"
