@@ -7,6 +7,10 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "kernel-modules"
+- category: "buildbase"
+  name: "qt"
+  version: ">=0"
+- category: "buildbase"
   name: "virtualbox-modules-lts"
   version: ">=0"
+requires_final_images: true
