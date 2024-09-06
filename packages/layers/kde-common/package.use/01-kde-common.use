@@ -7,6 +7,7 @@ kde-frameworks/prison qml
 kde-frameworks/purpose -kaccounts
 kde-frameworks/sonnet qml
 media-libs/phonon minimal qt6 -qt5
+net-libs/accounts-qt qt6 -qt5
 net-libs/kdsoap qt6
 net-libs/signond qt6
 net-libs/signon-oauth2 qt6
