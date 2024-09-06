@@ -7,6 +7,7 @@ prelude:
 - USE="introspection curl" emerge -1 sys-apps/flatpak sys-apps/fwupd
 steps:
 {{ template "portage_build" . }}
+- emerge -C dev-util/itstool
 - etc-update -q --automode -5
 requires:
 - category: "layers"
