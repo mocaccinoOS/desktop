@@ -293,7 +293,7 @@ prepare() {
         systemctl enable "lightdm"
     fi
 
-    if [ -f "/usr/share/xsessions/plasma.desktop" ]; then
+    if [ -f "/usr/share/wayland-sessions/plasma.desktop" ]; then
         setup_default_xsession "plasma"
         systemctl enable "sddm"
     fi
