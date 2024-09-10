@@ -19,6 +19,10 @@ packages:
     version: 0+236
   - !!merge <<: *X
     real_category: "layers"
+    name: "kde-kf5"
+    version: 0+1
+  - !!merge <<: *X
+    real_category: "layers"
     name: "qt"
     version: 0+229
   - !!merge <<: *X
