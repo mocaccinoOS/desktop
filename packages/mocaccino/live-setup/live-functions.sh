@@ -45,7 +45,7 @@ setup_autologin() {
     # SDDM
     if [ -f "$SDDM_FILE" ]; then
         sed -i "s/^User=.*/User=${LIVE_USER}/" $SDDM_FILE
-        sed -i "s/^Session=.*/Session=default/" $SDDM_FILE
+        sed -i "s/^Session=.*/Session=plasma/" $SDDM_FILE
         sed -i "s/^Conflicts=getty@t.*//g" /lib/systemd/system/sddm.service
 
         # This fix shutdown issue with sddm
@@ -145,9 +145,9 @@ setup_vt_autologin() {
         /lib/systemd/system/getty@.service
     sed -i "/^ExecStart=/ s:-o.*--noclear::g" \
         /lib/systemd/system/getty@.service
-        
+
     systemctl daemon-reload
-    
+
     # not for SDDM
     if [ ! -f "$SDDM_FILE" ]; then
         systemctl restart getty@tty1
