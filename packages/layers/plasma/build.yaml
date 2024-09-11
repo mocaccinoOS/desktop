@@ -13,6 +13,7 @@ steps:
 - sed -i 's/www.gentoo.org/www.mocaccino.org/g' /etc/xdg/kcm-about-distrorc
 - sed -i 's/kinfocenter\/glogo-small.png/icons\/mOS-icons\/mOS_outlined_hl.png/g' /etc/xdg/kcm-about-distrorc
 - cp -r 01gentoo.conf /etc/sddm.conf.d/01gentoo.conf
+- cp -r 10-wayland.conf /etc/sddm.conf.d/10-wayland.conf
 requires:
 - category: "layers"
   name: "kde-common"
