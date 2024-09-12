@@ -1,10 +1,10 @@
 category: "layers"
 name: "kde-kf5"
-version: 5.116.0+3
+version: 5.116.0+4
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    kde-frameworks/attica:5 kde-frameworks/karchive:5 kde-frameworks/kauth:5 kde-frameworks/kbookmarks:5 kde-frameworks/kcodecs:5 kde-frameworks/kcompletion:5 kde-frameworks/kconfig:5 kde-frameworks/kconfigwidgets:5 kde-frameworks/kcoreaddons:5 kde-frameworks/kcrash:5 kde-frameworks/kded:5 kde-frameworks/kdbusaddons:5 kde-frameworks/kdnssd:5 kde-frameworks/kdoctools:5 kde-frameworks/kglobalaccel:5 kde-frameworks/kguiaddons:5 kde-frameworks/ki18n:5 kde-frameworks/kiconthemes:5 kde-frameworks/kio:5 kde-frameworks/kirigami:5 kde-frameworks/kitemviews:5 kde-frameworks/kjobwidgets:5 kde-frameworks/knewstuff:5 kde-frameworks/knotifications:5 kde-frameworks/kpackage:5 kde-frameworks/kparts:5 kde-frameworks/kplotting:5 kde-frameworks/kservice:5 kde-frameworks/ktexteditor:5 kde-frameworks/ktextwidgets:5 kde-frameworks/kwallet:5 kde-frameworks/kwidgetsaddons:5 kde-frameworks/kxmlgui:5 kde-frameworks/solid:5 kde-frameworks/sonnet:5 kde-frameworks/syntax-highlighting:5
+    kde-frameworks/attica:5 kde-frameworks/karchive:5 kde-frameworks/kauth:5 kde-frameworks/kbookmarks:5 kde-frameworks/kcodecs:5 kde-frameworks/kcompletion:5 kde-frameworks/kconfig:5 kde-frameworks/kconfigwidgets:5 kde-frameworks/kcoreaddons:5 kde-frameworks/kcrash:5 kde-frameworks/kded:5 kde-frameworks/kdbusaddons:5 kde-frameworks/kdnssd:5 kde-frameworks/kdoctools:5 kde-frameworks/kglobalaccel:5 kde-frameworks/kguiaddons:5 kde-frameworks/ki18n:5 kde-frameworks/kiconthemes:5 kde-frameworks/kio:5 kde-frameworks/kirigami:5 kde-frameworks/kitemviews:5 kde-frameworks/kjobwidgets:5 kde-frameworks/knewstuff:5 kde-frameworks/knotifications:5 kde-frameworks/knotifyconfig:5 kde-frameworks/kpackage:5 kde-frameworks/kparts:5 kde-frameworks/kplotting:5 kde-frameworks/kservice:5 kde-frameworks/ktexteditor:5 kde-frameworks/ktextwidgets:5 kde-frameworks/kwallet:5 kde-frameworks/kwidgetsaddons:5 kde-frameworks/kxmlgui:5 kde-frameworks/solid:5 kde-frameworks/sonnet:5 kde-frameworks/syntax-highlighting:5
 requires:
   - category: "layers"
     name: "kde-common"
@@ -82,6 +82,9 @@ provides:
   - name: knotifications
     category: kde-frameworks
     version: '>=0'
+  - name: knotifyconfig
+    category: kde-frameworks
+    version: '>=0'   
   - name: kpackage
     category: kde-frameworks
     version: '>=0'
