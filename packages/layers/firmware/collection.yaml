@@ -1,11 +1,11 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 20240811+1
+    version: "20240811"
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
-        sys-firmware/b43-firmware sys-firmware/sof-firmware sys-kernel/linux-firmware
+        sys-firmware/b43-firmware sys-kernel/linux-firmware
     requires:
       - category: "layers"
         name: "firmware-amd"
@@ -54,9 +54,6 @@ packages:
         version: ">=0"
     provides:
       - name: b43-firmware
-        category: sys-firmware
-        version: '>=0'
-      - name: sof-firmware
         category: sys-firmware
         version: '>=0'
       - name: linux-firmware
@@ -163,7 +160,7 @@ packages:
     version: 2+75
   - category: "layers"
     name: "firmware-intel"
-    version: 2+76
+    version: 2+75
   - category: "layers"
     name: "firmware-isci"
     version: 2+75
