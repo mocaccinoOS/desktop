@@ -29,7 +29,6 @@ dev-qt/qttools:6 designer qdbus qml vulkan
 dev-qt/qtvirtualkeyboard:5 spell
 dev-qt/qtwayland:5 egl
 dev-qt/qtwayland:6 accessibility vulkan
-dev-qt/qtxmlpatterns qml
 dev-qt/qtwayland:5 vulkan
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwebchannel:5 qml

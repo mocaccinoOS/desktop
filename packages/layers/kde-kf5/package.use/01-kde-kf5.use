@@ -1,5 +1,6 @@
 dev-python/PyQt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
+dev-qt/qtxmlpatterns:5 qml
 kde-frameworks/kguiaddons:5 kf6compat
 kde-frameworks/kglobalaccel:5 kf6compat
 kde-frameworks/kwallet:5 kf6compat
