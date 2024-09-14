@@ -17,7 +17,6 @@ dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtmultimedia:6 gstreamer opengl qml vulkan
 dev-qt/qtnetwork:5 ssl
 dev-qt/qtquick3d:6 vulkan
-dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
 dev-qt/qtsensors:5 qml
 dev-qt/qtsensors:6 qml
