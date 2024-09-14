@@ -5,7 +5,7 @@ dev-qt/qtcharts:5 qml
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtvirtualkeyboard:5 spell
-dev-qt/qtwayland:5 egl vulkan
+dev-qt/qtwayland:5 vulkan
 dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
 dev-qt/qtxmlpatterns:5 qml
