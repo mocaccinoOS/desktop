@@ -23,7 +23,6 @@ dev-qt/qtnetwork:5 ssl
 dev-qt/qtquick3d:6 vulkan
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
-dev-qt/qtscript:5 private-headers
 dev-qt/qtsensors:5 qml
 dev-qt/qtsensors:6 qml
 dev-qt/qtsql:5 mysql
