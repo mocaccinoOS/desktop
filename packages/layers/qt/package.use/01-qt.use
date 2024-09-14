@@ -5,13 +5,10 @@ dev-libs/qtkeychain qt6
 dev-python/PyQt6 qml quick webchannel
 dev-qt/qt5compat:6 qml
 dev-qt/qtprintsupport:5 cups
-dev-qt/linguist-tools:5 qml
 dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
 dev-qt/qt3d:5 qml
 dev-qt/qt3d:6 qml
 dev-qt/qtbase:6 accessibility cups libproxy mysql vulkan
-dev-qt/qtbluetooth qml
-dev-qt/qtcharts:5 qml
 dev-qt/qtcharts:6 qml
 dev-qt/qtdeclarative:5 jit localstorage widgets vulkan
 dev-qt/qtdeclarative:6 accessibility vulkan
@@ -26,7 +23,6 @@ dev-qt/qtsensors:5 qml
 dev-qt/qtsensors:6 qml
 dev-qt/qtsql:5 mysql
 dev-qt/qttools:6 designer qdbus qml vulkan
-dev-qt/qtvirtualkeyboard:5 spell
 dev-qt/qtwayland:5 egl
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwayland:5 vulkan

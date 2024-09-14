@@ -1,5 +1,8 @@
 dev-python/PyQt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
+dev-qt/linguist-tools:5 qml
 dev-qt/positioning:5 qml
+dev-qt/qtcharts:5 qml
+dev-qt/qtvirtualkeyboard:5 spell
 dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
 dev-qt/qtxmlpatterns:5 qml
