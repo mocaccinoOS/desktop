@@ -31,6 +31,5 @@ dev-qt/qtwayland:5 egl
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwayland:5 vulkan
 dev-qt/qtwayland:6 accessibility vulkan
-dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:6 accessibility pdfium qml
 sys-auth/polkit-qt qt5 qt6
