@@ -16,15 +16,15 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+236
+    version: 0+237
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-kf5"
-    version: 0+4
+    version: 0+5
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+229
+    version: 0+230
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
