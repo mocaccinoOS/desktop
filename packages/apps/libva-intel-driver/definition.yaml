@@ -1,6 +1,6 @@
 category: "apps"
 name: "libva-intel-driver"
-version: 2.4.1-r4+95
+version: 2.4.1-r4+96
 uri:
   - https://github.com/intel/intel-vaapi-driver
 license: "MIT"
