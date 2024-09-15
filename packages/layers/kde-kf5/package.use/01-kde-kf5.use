@@ -6,6 +6,7 @@ dev-qt/qtdeclarative:5 jit localstorage widgets vulkan
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
+dev-qt/qtsensors:5 qml
 dev-qt/qtvirtualkeyboard:5 spell
 dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg

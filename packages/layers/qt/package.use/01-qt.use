@@ -15,7 +15,6 @@ dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
 dev-qt/qtmultimedia:6 gstreamer opengl qml vulkan
 dev-qt/qtnetwork:5 ssl
 dev-qt/qtquick3d:6 vulkan
-dev-qt/qtsensors:5 qml
 dev-qt/qtsensors:6 qml
 dev-qt/qtsql:5 mysql
 dev-qt/qttools:6 designer qdbus qml vulkan
