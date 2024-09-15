@@ -1,6 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
 prelude:
+- emerge -1 dev-util/itstool
 - git clone https://github.com/maoschanz/drawing.git
 - cd drawing && git checkout 06524e4503139f3013cdffc166f89ab3c1c21b9b && meson build/ && ninja -C build/
 steps:
