@@ -4,7 +4,6 @@ kde-frameworks/kfilemetadata taglib
 kde-frameworks/kimageformats heif
 kde-frameworks/kitemmodels qml
 kde-frameworks/prison qml
-kde-frameworks/purpose -kaccounts
 kde-frameworks/sonnet qml
 media-libs/phonon minimal qt6 -qt5
 net-libs/accounts-qml qt6 -qt5
