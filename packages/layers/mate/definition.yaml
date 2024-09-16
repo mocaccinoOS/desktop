@@ -8,7 +8,7 @@ description: "The MATE Desktop Environment is the continuation of GNOME 2."
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-arch/engrampa app-editors/pluma app-text/atril dev-libs/libmateweather gnome-extra/gucharmap:2.90 mate-base/caja mate-base/libmatekbd mate-base/mate mate-base/mate-common mate-base/mate-applets mate-base/mate-applets-meta mate-base/mate-control-center mate-base/mate-desktop mate-base/mate-menus mate-base/mate-panel mate-base/mate-session-manager mate-base/mate-settings-daemon mate-extra/caja-extensions mate-extra/mate-calc mate-extra/mate-media mate-extra/mate-netbook mate-extra/mate-polkit mate-extra/mate-power-manager mate-extra/mate-screensaver mate-extra/mate-system-monitor mate-extra/mate-utils media-gfx/eom media-libs/libmatemixer x11-misc/mozo x11-terms/mate-terminal x11-themes/mate-backgrounds x11-themes/mate-icon-theme x11-wm/marco
+    app-arch/engrampa app-editors/pluma app-text/atril dev-libs/libmateweather gnome-extra/gucharmap:2.90 mate-base/caja mate-base/libmatekbd mate-base/mate mate-base/mate-common mate-base/mate-applets mate-base/mate-applets-meta mate-base/mate-control-center mate-base/mate-desktop mate-base/mate-menus mate-base/mate-panel mate-base/mate-session-manager mate-base/mate-settings-daemon mate-extra/caja-extensions mate-extra/mate-calc mate-extra/mate-media mate-extra/mate-polkit mate-extra/mate-power-manager mate-extra/mate-screensaver mate-extra/mate-system-monitor mate-extra/mate-utils media-gfx/eom media-libs/libmatemixer x11-misc/mozo x11-terms/mate-terminal x11-themes/mate-backgrounds x11-themes/mate-icon-theme x11-wm/marco
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -81,9 +81,6 @@ provides:
     category: mate-extra
     version: '>=0'
   - name: mate-media
-    category: mate-extra
-    version: '>=0'
-  - name: mate-netbook
     category: mate-extra
     version: '>=0'
   - name: mate-polkit
