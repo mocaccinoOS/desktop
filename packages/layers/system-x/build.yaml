@@ -23,8 +23,6 @@ prelude:
 - cp -rf package.env /etc/portage/
 # required for binary packages
 - emerge -1 app-portage/getuto && getuto
-# workaround for binary server missing a package again
-- emerge -1 dev-lang/python-exec-conf
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
