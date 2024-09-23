@@ -19,7 +19,7 @@ packages:
   #         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.0.20+4
+    version: 7.0.20+5
     lts: true
     emerge:
       jobs: "3"
@@ -34,7 +34,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.0.20+4
+    version: 7.0.20+5
     lts: true
     labels:
       emerge.jobs: "3"
@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 550.107.02+8
+    version: 550.107.02+9
     lts: true
     labels:
       emerge.jobs: "3"
@@ -99,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 550.107.02+8
+    version: 550.107.02+9
     lts: false
     labels:
       emerge.jobs: "3"
@@ -133,7 +133,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-470-lts"
-    version: 470.256.02-r1+1
+    version: 470.256.02-r1+2
     lts: true
     labels:
       emerge.jobs: "3"
@@ -158,7 +158,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.6+46
+    version: 0.9.6+47
     lts: true
     labels:
       emerge.jobs: "3"
@@ -180,7 +180,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.3_p20240226+32
+    version: 0.3_p20240226+33
     lts: true
     labels:
       emerge.jobs: "3"
@@ -202,7 +202,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8812au-lts"
-    version: 20240316+46
+    version: 20240316+47
     lts: true
     labels:
       emerge.jobs: "3"
@@ -224,7 +224,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20240202+53
+    version: 20240202+54
     lts: true
     labels:
       emerge.jobs: "3"
@@ -246,7 +246,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl88x2bu-lts"
-    version: 20240108+49
+    version: 20240108+50
     lts: true
     labels:
       emerge.jobs: "3"
@@ -268,7 +268,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
-    version: 20240120+49
+    version: 20240120+50
     lts: true
     labels:
       emerge.jobs: "3"
