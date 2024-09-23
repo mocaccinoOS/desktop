@@ -8,11 +8,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
-- cp -rf package.mask /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
-- cp -rf package.license /etc/portage/
-- cp -rf package.env /etc/portage/
+- cp -rf package.* /etc/portage/
 - emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
