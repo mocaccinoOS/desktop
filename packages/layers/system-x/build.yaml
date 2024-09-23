@@ -21,7 +21,6 @@ prelude:
 - cp -rf bashrc /etc/portage/
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
-- cp -rf binrepos.conf /etc/portage/
 # required for binary packages
 - emerge -1 app-portage/getuto && getuto
 # workaround for binary server missing a package again
