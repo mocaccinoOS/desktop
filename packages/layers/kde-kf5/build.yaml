@@ -438,7 +438,7 @@ prelude:
 - cp -rf package.mask /etc/portage/
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- USE="qt5" emerge -1 media-libs/phonon kde-plasma/breeze
+- USE="qt5" emerge -1 media-libs/phonon kde-plasma/breeze kde-plasma/oxygen
 {{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
