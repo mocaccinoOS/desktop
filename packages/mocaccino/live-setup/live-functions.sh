@@ -54,7 +54,7 @@ setup_autologin() {
     fi
 
     # COSMIC Greeter
-    if
+    if  [ -f "$COSMIC_GREETER_FILE" ]; then
 	echo -e "\n[initial_session]" >> $COSMIC_GREETER_FILE
 	echo "command = \"cosmic-session\"" >> $COSMIC_GREETER_FILE
 	echo "user = \"mocaccino\"" >> $COSMIC_GREETER_FILE
@@ -88,7 +88,7 @@ disable_autologin() {
     fi
 
     # COSMIC Greeter
-    if
+    if  [ -f "$COSMIC_GREETER_FILE" ]; then
 	sed -i -e '/initial_session/{N;N;d;}' $COSMIC_GREETER_FILE
     fi
 
