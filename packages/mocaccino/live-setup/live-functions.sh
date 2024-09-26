@@ -5,6 +5,7 @@ CUSTOM_GDM_FILE="/etc/gdm/custom.conf"
 LXDM_FILE="/etc/lxdm/lxdm.conf"
 LIGHTDM_FILE="/etc/lightdm/lightdm.conf"
 SDDM_FILE="/etc/sddm.conf.d/01gentoo.conf"
+COSMIC_GREETER_FILE="/etc/greetd/cosmic-greeter.toml"
 
 LIVE_USER_GROUPS="audio bumblebee cdrom cdrw clamav console games \
 kvm lp lpadmin messagebus plugdev portage pulse pulse-access pulse-rt \
@@ -52,6 +53,13 @@ setup_autologin() {
         # systemctl stop getty@tty1
     fi
 
+    # COSMIC Greeter
+    if
+	echo -e "\n[initial_session]" >> $COSMIC_GREETER_FILE
+	echo "command = \"cosmic-session\"" >> $COSMIC_GREETER_FILE
+	echo "user = \"mocaccino\"" >> $COSMIC_GREETER_FILE
+    fi
+
     # LightDM
     if [ -f "$LIGHTDM_FILE" ]; then
         sed -i "s/autologin-user=.*/autologin-user=${LIVE_USER}/" $LIGHTDM_FILE
@@ -78,6 +86,11 @@ disable_autologin() {
     if [ -f "$LXDM_FILE" ]; then
         sed -i "s/^autologin=.*/autologin=/" $LXDM_FILE
     fi
+
+    # COSMIC Greeter
+    if
+	sed -i -e '/initial_session/{N;N;d;}' $COSMIC_GREETER_FILE
+    if
 
     # LightDM
     if [ -f "$LIGHTDM_FILE" ]; then
@@ -258,6 +271,12 @@ setup_default_xsession() {
     ln -sf "${sess}.desktop" /usr/share/xsessions/default.desktop
 }
 
+setup_greet() {
+   echo -e "\n[initial_session]" >> /etc/greetd/cosmic-greeter.toml
+   echo "command = \"cosmic-session\"" >> /etc/greetd/cosmic-greeter.toml
+   echo "user = \"mocaccino\"" >> /etc/greetd/cosmic-greeter.toml
+}
+
 setup_networkmanager() {
     systemctl enable NetworkManager
     systemctl enable ModemManager
@@ -284,8 +303,7 @@ prepare() {
     fi
 
     if [ -f "/usr/share/wayland-sessions/cosmic.desktop" ]; then
-       	setup_default_xsession "cosmic"
-       	systemctl enable "lightdm"
+       	systemctl enable "cosmic-greeter"
     fi
 
     if [ -f "/usr/share/xsessions/xfce.desktop" ]; then
