@@ -90,7 +90,7 @@ disable_autologin() {
     # COSMIC Greeter
     if
 	sed -i -e '/initial_session/{N;N;d;}' $COSMIC_GREETER_FILE
-    if
+    fi
 
     # LightDM
     if [ -f "$LIGHTDM_FILE" ]; then
