@@ -8,7 +8,7 @@ prelude:
 - emerge -1 media-fonts/fira-mono media-fonts/fira-sans
 - emerge -1 app-eselect/eselect-repository
 - emerge -1 app-misc/geoclue
-- eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
+- eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay feature/alpha2
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
 steps:
