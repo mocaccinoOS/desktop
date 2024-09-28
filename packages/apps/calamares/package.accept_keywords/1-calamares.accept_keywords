@@ -1,7 +1,1 @@
-# We need to debug and test version 3.3.x
-# currently broken. Does not install calamares-pkexec
-# needs to be changed to pkexec calamares in https://github.com/mocaccinoOS/os-commons/blob/master/packages/mocaccino/mocaccino-calamares/Installer.sh
-# The grub install command is broken in version 3.3.x
-# Theme is broken in version 3.3.x
-=app-admin/calamares-3.3.6-r1 ~amd64
-=app-admin/calamares-3.2.60-r5 ~amd64
+app-admin/calamares ~amd64
