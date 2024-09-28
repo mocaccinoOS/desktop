@@ -8,7 +8,7 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+171
+    version: 0+172
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
