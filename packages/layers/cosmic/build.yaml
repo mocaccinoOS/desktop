@@ -7,7 +7,6 @@ prelude:
 - cp -rf package.license /etc/portage/
 - emerge -1 media-fonts/fira-mono media-fonts/fira-sans
 - emerge -1 app-eselect/eselect-repository
-- emerge -1 app-misc/geoclue
 - eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
@@ -17,5 +16,5 @@ steps:
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
-  name: "X"
+  name: "gnome-common"
   version: ">=0"
