@@ -8,8 +8,7 @@ dev-build/just ~amd64
 =cosmic-de/pop-gtk-theme-9999 ~amd64
 =cosmic-de/cosmic-term-1.0.0_alpha2 ~amd64
 =cosmic-de/pop-launcher-9999 ~amd64
-# should be fixed in overlay, keyword is missing
-=cosmic-de/system76-power-9999 **
+=cosmic-de/system76-power-9999 ~amd64
 =cosmic-de/cosmic-applets-1.0.0_alpha2 ~amd64
 =cosmic-de/pop-appstream-data-9999 ~amd64
 =cosmic-de/cosmic-session-1.0.0_alpha2 ~amd64
