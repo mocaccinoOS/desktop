@@ -1150,7 +1150,7 @@ env:
 prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
-- USE="qt5" emerge -1 kde-plasma/plasma-integration
+- USE="accessibility qt5" emerge -1 kde-plasma/plasma-integration
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 - USE="qt5" emerge -1 media-libs/phonon kde-plasma/breeze kde-plasma/oxygen kde-plasma/plasma-integration
