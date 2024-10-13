@@ -16,7 +16,7 @@ net-libs/libssh server
 net-libs/libtorrent-rasterbar -gnutls
 net-misc/ntp -zeroconf
 net-wireless/bluez obex
-sci-libs/hdf5 cxx szip -threads
+sci-libs/hdf5 cxx fortran szip -threads
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
 # 2024-07-17: Joost Ruis: Keeps failing with docutils.
