@@ -22,6 +22,7 @@ prelude:
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
 # required for binary packages
+- cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1uDN @system -j $JOBS
