@@ -8,7 +8,7 @@ description: "QEMU + Kernel-based Virtual Machine userland tools"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-crypt/swtpm app-emulation/libcacard app-emulation/libvirt app-emulation/libvirt-glib app-emulation/qemu app-emulation/spice app-misc/scrub dev-python/libvirt-python media-libs/virglrenderer net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libslirp net-misc/ethertypes net-misc/radvd net-misc/spice-gtk sys-apps/dtc sys-apps/usbredir sys-firmware/edk2-ovmf-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
+    app-crypt/swtpm app-emulation/libcacard app-emulation/libvirt app-emulation/libvirt-glib app-emulation/qemu app-emulation/spice app-misc/scrub dev-python/libvirt-python media-libs/virglrenderer net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libslirp net-misc/ethertypes net-misc/radvd net-misc/spice-gtk sys-apps/dtc sys-apps/usbredir sys-firmware/edk2-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
 provides:
   - name: swtpm
     category: app-crypt
@@ -64,7 +64,7 @@ provides:
   - name: usbredir
     category: sys-apps
     version: '>=0'
-  - name: edk2-ovmf-bin
+  - name: edk2-bin
     category: sys-firmware
     version: '>=0'
   - name: ipxe
