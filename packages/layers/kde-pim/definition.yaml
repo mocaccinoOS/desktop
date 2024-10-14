@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: "24.08.1"
+version: 24.08.1+1
 uri:
   - https://community.kde.org/KDE_PIM
 license: "GPL-2+ LGPL-2.1+"
@@ -10,6 +10,9 @@ labels:
   emerge.packages: >-
     kde-apps/kdepim-meta
 requires:
+  - category: "apps"
+    name: "vlc"
+    version: ">=0"
   - category: "layers"
     name: "plasma"
     version: ">=0"
