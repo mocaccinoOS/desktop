@@ -1,0 +1,14 @@
+category: "layers"
+name: "ham"
+version: "0.1"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: "net-wireless/gqrx"
+provides:
+  - name: gqrx
+    category: net-wireless
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "qt"
+    version: ">=0"
