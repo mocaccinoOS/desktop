@@ -3,8 +3,14 @@ name: "ham"
 version: "0.1"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "net-wireless/gqrx"
+  emerge.packages: "media-libs/hamlib media-radio/grig net-wireless/gqrx"
 provides:
+  - name: hamlib
+    category: media-libs
+    version: '>=0'
+  - name: grig
+    category: media-radio
+    version: '>=0'
   - name: gqrx
     category: net-wireless
     version: '>=0'
