@@ -5,12 +5,15 @@ license: "GPL-2+ GPL-3"
 description: "Ham radio layer"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "media-libs/hamlib media-radio/grig net-wireless/gr-osmosdr net-wireless/gqrx"
+  emerge.packages: "media-libs/hamlib media-radio/grig media-radio/xlog net-wireless/gr-osmosdr net-wireless/gqrx"
 provides:
   - name: hamlib
     category: media-libs
     version: '>=0'
   - name: grig
+    category: media-radio
+    version: '>=0'
+  - name: xlog
     category: media-radio
     version: '>=0'
   - name: gr-osmosdr
