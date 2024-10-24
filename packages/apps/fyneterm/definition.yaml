@@ -1,7 +1,7 @@
 category: "apps"
 name: "fyneterm"
 sha: "ef292b54d29ab457a4eff35f085b8204a18003a4"
-version: 0.99999+194
+version: 0.99999+195
 description: "A graphical terminal emulator for Linux using Fyne"
 urls:
   - https://github.com/fyne-io/terminal
