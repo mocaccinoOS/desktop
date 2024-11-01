@@ -9,7 +9,7 @@ arch: "amd64"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    cosmic-de/cosmic-meta cosmic-de/cosmic-applets cosmic-de/cosmic-applibrary cosmic-de/cosmic-bg cosmic-de/cosmic-comp cosmic-de/cosmic-edit cosmic-de/cosmic-files cosmic-de/cosmic-greeter cosmic-de/cosmic-icons cosmic-de/cosmic-launcher cosmic-de/cosmic-notifications cosmic-de/cosmic-osd cosmic-de/cosmic-panel cosmic-de/cosmic-randr cosmic-de/cosmic-screenshot cosmic-de/cosmic-session cosmic-de/cosmic-settings-daemon cosmic-de/cosmic-settings cosmic-de/cosmic-term cosmic-de/cosmic-wallpapers cosmic-de/cosmic-workspaces-epoch cosmic-de/xdg-desktop-portal-cosmic
+    cosmic-de/cosmic-meta cosmic-de/cosmic-applets cosmic-de/cosmic-applibrary cosmic-de/cosmic-bg cosmic-de/cosmic-comp cosmic-de/cosmic-edit cosmic-de/cosmic-files cosmic-de/cosmic-greeter cosmic-de/cosmic-icons cosmic-de/cosmic-idle cosmic-de/cosmic-launcher cosmic-de/cosmic-notifications cosmic-de/cosmic-osd cosmic-de/cosmic-panel cosmic-de/cosmic-randr cosmic-de/cosmic-screenshot cosmic-de/cosmic-session cosmic-de/cosmic-settings-daemon cosmic-de/cosmic-settings cosmic-de/cosmic-term cosmic-de/cosmic-wallpapers cosmic-de/cosmic-workspaces-epoch cosmic-de/xdg-desktop-portal-cosmic
 requires:
   - name: "cosmic-greeter"
     category: "entity"
@@ -47,6 +47,12 @@ provides:
     version: ">=0"
   - category: "cosmic-de"
     name: "cosmic-greeter"
+    version: ">=0"
+  - category: "cosmic-de"
+    name: "cosmic-icons"
+    version: ">=0"
+  - category: "cosmic-de"
+    name: "cosmic-idle"
     version: ">=0"
   - category: "cosmic-de"
     name: "cosmic-launcher"

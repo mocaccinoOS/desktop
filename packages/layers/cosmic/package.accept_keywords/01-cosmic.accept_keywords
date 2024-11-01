@@ -14,6 +14,7 @@ dev-build/just ~amd64
 =cosmic-de/cosmic-session-1.0.0_alpha3 ~amd64
 =cosmic-de/cosmic-bg-1.0.0_alpha3 ~amd64
 =cosmic-de/cosmic-panel-1.0.0_alpha3 ~amd64
+=cosmic-de/cosmic-idle-1.0.0_alpha3 ~amd64
 =cosmic-de/xdg-desktop-portal-cosmic-1.0.0_alpha3 ~amd64
 =cosmic-de/cosmic-icons-1.0.0_alpha3 ~amd64
 =cosmic-de/cosmic-files-1.0.0_alpha3 ~amd64
