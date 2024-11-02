@@ -293,6 +293,7 @@ prepare() {
         "cups"
         "cups-browsed"
     )
+    
     for srv in "${SYSTEMD_SERVICES[@]}"; do
         systemctl enable "${srv}"
     done
@@ -303,6 +304,7 @@ prepare() {
     fi
 
     if [ -f "/usr/share/wayland-sessions/cosmic.desktop" ]; then
+        setup_greet
        	systemctl enable "cosmic-greeter"
     fi
 
