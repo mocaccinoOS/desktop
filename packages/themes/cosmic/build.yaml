@@ -5,4 +5,4 @@ steps:
 # Set opacity for the cosmic Term to 75
 - mkdir -p /etc/skel/.config/cosmic/com.system76.CosmicTerm/v1/ && echo "75" >> /etc/skel/.config/cosmic/com.system76.CosmicTerm/v1/opacity
 # Set Mocaccino wallpaper
-- mkdir -p /etc/skel/.config/cosmic/com.system76.CosmicBackground/v1/ && cp -r filers/all /etc/skel/.config/cosmic/com.system76.CosmicBackground/v1/
+- mkdir -p /etc/skel/.config/cosmic/com.system76.CosmicBackground/v1/ && cp -r files/all /etc/skel/.config/cosmic/com.system76.CosmicBackground/v1/
