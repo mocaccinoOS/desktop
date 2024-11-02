@@ -1,0 +1,6 @@
+image: "alpine"
+prelude:
+steps:
+- mkdir -p /etc/skel/.config/cosmic
+# Set opacity for the cosmic Term to 75
+- mkdir -p /etc/skel/.config/cosmic/com.system76.CosmicTerm/v1/ && echo "75" >> /etc/skel/.config/cosmic/com.system76.CosmicTerm/v1/opacity
