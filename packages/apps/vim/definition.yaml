@@ -1,6 +1,6 @@
 category: "apps"
 name: "vim"
-version: 9.1.0366+2
+version: 9.1.0366+3
 uri:
   - https://github.com/vim/vim
 license: "vim"

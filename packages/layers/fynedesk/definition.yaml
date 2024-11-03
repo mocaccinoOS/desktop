@@ -1,6 +1,6 @@
 category: "layers"
 name: "fynedesk"
-version: 0.3.0+195
+version: 0.3.0+196
 golang_version: "1.15.6"
 arch: "amd64"
 requires:
