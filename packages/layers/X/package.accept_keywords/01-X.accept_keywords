@@ -1,6 +1,6 @@
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
 
-# Mesa 24.2.4
-=media-libs/mesa-24.2.4 ~amd64
-=dev-util/intel_clc-24.2.4 ~amd64
+# Mesa 24.2.6
+=media-libs/mesa-24.2.6 ~amd64
+=dev-util/intel_clc-24.2.6 ~amd64
