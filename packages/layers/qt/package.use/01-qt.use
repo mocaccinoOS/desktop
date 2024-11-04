@@ -21,6 +21,6 @@ dev-qt/qtsql:5 mysql
 dev-qt/qttools:6 designer qdbus qml vulkan
 dev-qt/qtwayland:5 vulkan
 dev-qt/qtwayland:6 accessibility vulkan
-dev-qt/qtwebchannel qml
+dev-qt/qtwebchannel:6 qml
 dev-qt/qtwebengine:6 accessibility pdfium qml
 sys-auth/polkit-qt qt5 qt6
