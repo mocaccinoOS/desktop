@@ -1,2 +1,1 @@
-# Recquires GCC 14
->=gui-wm/hyprland-0.43.0
+# Placeholder
