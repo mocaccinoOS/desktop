@@ -1,0 +1,12 @@
+name: "hyprland"
+category: "meta"
+version: "0.20241108"
+description: "Hyprland Desktop meta package"
+
+requires:
+- category: "layers"
+  name: "hyprland"
+  version: ">=0"
+- category: "layers"
+  name: "wlroots"
+  version: ">=0"
