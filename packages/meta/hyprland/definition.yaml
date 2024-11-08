@@ -4,6 +4,9 @@ version: "0.20241108"
 description: "Hyprland Desktop meta package"
 
 requires:
+- category: "apps"
+  name: "kitty"
+  version: ">=0"
 - category: "layers"
   name: "hyprland"
   version: ">=0"
