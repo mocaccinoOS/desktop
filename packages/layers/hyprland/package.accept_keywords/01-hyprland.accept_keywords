@@ -4,4 +4,4 @@ gui-apps/clipman ~amd64
 gui-apps/hyprpaper ~amd64
 gui-libs/aquamarine ~amd64
 gui-libs/hyprutils ~amd64
-gui-wm/hyprland ~amd64
+=gui-wm/hyprland-0.43.0 ~amd64
