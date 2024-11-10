@@ -141,7 +141,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =x11-drivers/nvidia-drivers-470.256.02-r1
+        - =x11-drivers/nvidia-drivers-470.256.02-r2
     provides:
       - name: nvidia-drivers
         category: x11-drivers
