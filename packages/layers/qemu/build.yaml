@@ -6,11 +6,17 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable nest
+- emaint sync -r nest
 - USE="-smartcard" emerge app-emulation/spice
 {{ template "portage_prelude_build" . }}
 steps:
 - USE="-smartcard" emerge app-emulation/spice
 {{ template "portage_build" . }}
+- eselect repository remove nest
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "buildbase"
   name: "X"
