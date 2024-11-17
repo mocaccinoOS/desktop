@@ -820,9 +820,6 @@ provides:
   - name: python-cffi
     category: virtual
     version: '>=0'
-  - name: rust
-    category: virtual
-    version: '>=0'
   - name: szip
     category: virtual
     version: '>=0'
