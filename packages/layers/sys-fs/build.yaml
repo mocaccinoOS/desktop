@@ -13,7 +13,8 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf patches /etc/portage/
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin dev-python/docutils:0
-{{ template "portage_prelude_build_gentoo_binary" . }}
+# {{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
 requires:
