@@ -1,6 +1,6 @@
 name: system-x
 version: "0.20241126"
-gcc_version: "14"
+gcc_version: "13"
 python_version: "3.12"
 category: layers
 labels:
