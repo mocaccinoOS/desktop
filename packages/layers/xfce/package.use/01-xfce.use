@@ -2,4 +2,4 @@ app-cdr/xfburn gstreamer
 xfce-base/thunar thumbnail udisks
 xfce-base/xfdesktop thunar-vfs
 xfce-base/xfwm4 xcomposite
-xfce-extra/tumbler gstreamer raw
+xfce-extra/tumbler gstreamer
