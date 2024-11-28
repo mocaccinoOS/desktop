@@ -6,8 +6,7 @@ prelude:
 - cp -rf package.use /etc/portage/
 - emerge -1 media-video/vlc
 steps:
-- emerge kde-apps/konsolekalendar
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "layers"
   name: "plasma"
