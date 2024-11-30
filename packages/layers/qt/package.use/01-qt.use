@@ -3,7 +3,7 @@ app-crypt/qca qt5 qt6 gpg ssl
 app-text/poppler qt5 qt6
 dev-libs/qtkeychain qt6
 dev-python/pyqt6 multimedia qml quick webchannel websockets
-dev-python/pyqt6-WebEngine quick
+dev-python/pyqt6-webengine quick
 dev-qt/qt5compat:6 qml
 dev-qt/qtprintsupport:5 cups
 dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
