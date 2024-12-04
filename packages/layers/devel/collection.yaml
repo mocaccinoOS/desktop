@@ -1,8 +1,8 @@
 packages:
   - &base
-    name: system-x-devel
+    name: "system-x-devel"
     version: 0.20241202+1
-    category: layers
+    category: "layers"
     package: "system-x"
 #  - <<: *base
 #    name: sys-fs-devel
