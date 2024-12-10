@@ -4,6 +4,7 @@ dev-lang/python:3.13
 # 2024-26-11: Joost Ruis
 # Keep gcc 14 masked. Too many issues. https://bugs.gentoo.org/941869
 sys-devel/gcc:14
+>dev-build/cmake-3.30.5
 
 # 2024-07-11: Joost Ruis
 # It looks like numpy2 breaks boost compilation
