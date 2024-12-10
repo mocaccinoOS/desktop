@@ -1,0 +1,12 @@
+diff '--color=auto' -urNp openldap-OPENLDAP_REL_ENG_2_6_9-orig/servers/slapd/back-sql/sql-wrap.c openldap-OPENLDAP_REL_ENG_2_6_9-dwok/servers/slapd/back-sql/sql-wrap.c
+--- openldap-OPENLDAP_REL_ENG_2_6_9-orig/servers/slapd/back-sql/sql-wrap.c	2024-12-05 14:07:57.218416673 +0100
++++ openldap-OPENLDAP_REL_ENG_2_6_9-dwok/servers/slapd/back-sql/sql-wrap.c	2024-12-05 14:08:31.350308735 +0100
+@@ -37,7 +37,7 @@ backsql_PrintErrors( SQLHENV henv, SQLHD
+ {
+ 	SQLCHAR	msg[SQL_MAX_MESSAGE_LENGTH];		/* msg. buffer    */
+ 	SQLCHAR	state[SQL_SQLSTATE_SIZE];		/* statement buf. */
+-	SDWORD	iSqlCode;				/* return code    */
++	SQLINTEGER	iSqlCode;			/* return code    */
+ 	SWORD	len = SQL_MAX_MESSAGE_LENGTH - 1;	/* return length  */ 
+ 
+ 	Debug( LDAP_DEBUG_TRACE, "Return code: %d\n", rc );
