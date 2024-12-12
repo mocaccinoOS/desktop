@@ -45,7 +45,6 @@ excludes:
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/down-arrow/down-arrow.svg
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/alias/metadata.json
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/question_arrow
-- ^/usr/lib64/perl5/vendor_perl/5.40/x86_64-linux/auto/Exporter/Tiny/.packlist in layers/sys-fs layers/system-x
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-10.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/size-hor
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/vertical-text/vertical-text.svg
@@ -178,7 +177,6 @@ excludes:
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/top_left_arrow
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/bottom_left_corner/metadata.json
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/w-resize
-- ^/usr/lib64/perl5/vendor_perl/5.40/Exporter/Tiny/Manual/Importing.pod in layers/sys-fs layers/system-x
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/left_ptr
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-08.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/pointer/metadata.json
@@ -198,7 +196,6 @@ excludes:
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/text/metadata.json
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-22.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-22.svg
-- ^/usr/lib64/perl5/vendor_perl/5.40/Exporter/Tiny/Manual/Etc.pod in layers/sys-fs layers/system-x
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/no-drop/no-drop.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/size_fdiag/metadata.json
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/size_fdiag/size_fdiag.svg
@@ -218,9 +215,7 @@ excludes:
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/left_ptr
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/whats_this
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-06.svg
-- ^/usr/lib64/perl5/vendor_perl/5.40/Exporter/Tiny/Manual/Exporting.pod in layers/sys-fs layers/system-x
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-18.svg
-- ^/usr/lib64/perl5/vendor_perl/5.40/Class/Inspector/Functions.pm in layers/sys-fs layers/system-x
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/not-allowed/not-allowed.svg
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/4498f0e0c1937ffe01fd06f973665830
 - ^/usr/share/plasma/desktoptheme/oxygen/widgets/bar_meter_horizontal.svgz
@@ -279,11 +274,9 @@ excludes:
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/down-arrow/down-arrow.svg
 - ^/usr/share/plasma/desktoptheme/oxygen/widgets/extender-background.svgz
 - ^/usr/share/plasma/desktoptheme/oxygen/metadata.json
-- ^/usr/lib64/perl5/vendor_perl/5.40/x86_64-linux/auto/Class/Inspector/.packlist in layers/sys-fs layers/system-x
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/ew-resize
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/copy/metadata.json
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-21.svg
-- ^/usr/lib64/perl5/vendor_perl/5.40/Exporter/Tiny.pm in layers/sys-fs layers/system-x
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/9d800788f1b08800ae810202380a0822
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/nesw-resize
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/sb_h_double_arrow
@@ -368,7 +361,6 @@ excludes:
 - ^/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-04.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/wayland-cursor/metadata.json
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/e-resize
-- ^/usr/lib64/perl5/vendor_perl/5.40/Exporter/Tiny/Manual/QuickStart.pod in layers/sys-fs layers/system-x
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-21.svg
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/se-resize
 - ^/usr/share/icons/Breeze_Light/cursors_scalable/dnd-no-drop/dnd-no-drop.svg
