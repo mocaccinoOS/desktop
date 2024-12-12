@@ -1,10 +1,10 @@
 category: "layers"
 name: "trinity"
-version: 14.1.2+30
+version: 14.1.2+31
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =trinity-base/tdebase-meta-14.1.2 =trinity-base/tdeadmin-meta-14.1.2
+    =trinity-base/tdebase-meta-14.1.2 =trinity-base/tdeadmin-meta-14.1.2 =trinity-base/tdebase-tdeioslaves-14.1.2
 requires:
   - category: "layers"
     name: "X"
@@ -186,7 +186,4 @@ provides:
     version: '>=0'
   - name: twin
     category: trinity-base
-    version: '>=0'
-  - name: htdig
-    category: www-misc
     version: '>=0'
