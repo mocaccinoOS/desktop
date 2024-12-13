@@ -7,7 +7,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "20"
   emerge.packages: >-
-    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-debug/gdb dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-perl/Exporter-Tiny dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XML-Simple dev-python/numpy dev-python/python-magic dev-python/pygments dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-devel/clang sys-devel/llvm sys-kernel/dracut sys-libs/binutils-libs
+    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-debug/gdb dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/numpy dev-python/python-magic dev-python/pygments dev-python/webencodings dev-vcs/git media-libs/libpng sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-devel/clang sys-devel/llvm sys-kernel/dracut sys-libs/binutils-libs
 requires:
   - category: "system"
     name: "gcc-base"
@@ -598,6 +598,9 @@ provides:
   - name: File-Listing
     category: dev-perl
     version: '>=0'
+  - name: File-ShareDir
+    category: dev-perl
+    version: '>=0'
   - name: HTML-Parser
     category: dev-perl
     version: '>=0'
@@ -626,6 +629,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: libwww-perl
+    category: dev-perl
+    version: '>=0'
+  - name: List-MoreUtils
     category: dev-perl
     version: '>=0'
   - name: Locale-gettext
@@ -674,6 +680,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Sub-Quote
+    category: dev-perl
+    version: '>=0'
+  - name: Syntax-Keyword-Try
     category: dev-perl
     version: '>=0'
   - name: TermReadKey
@@ -728,6 +737,9 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: XML-XPath
+    category: dev-perl
+    version: '>=0'
+  - name: XS-Parse-Keyword
     category: dev-perl
     version: '>=0'
   - name: YAML-Tiny
