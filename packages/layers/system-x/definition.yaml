@@ -868,6 +868,12 @@ provides:
   - name: clang-common
     category: llvm-core
     version: '>=0'
+  - name: clang-runtime
+    category: llvm-core
+    version: '>=0'
+  - name: clang-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
   - name: llvm
     category: llvm-core
     version: '>=0'
