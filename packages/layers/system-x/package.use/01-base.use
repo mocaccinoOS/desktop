@@ -29,6 +29,9 @@ dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
 dev-python/numpy lapack
 dev-scheme/guile regex discouraged networking
+llvm-core/clang xml
+# clang wants USE=clang for llvm
+llvm-core/llvm clang xml
 media-libs/libpng apng static-libs
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
@@ -57,10 +60,7 @@ sys-devel/autogen libopts
 sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
 # Enable hardened USE flags
 sys-devel/gcc hardened
-sys-devel/clang xml
 sys-devel/gettext acl cxx ncurses nls openmp -git
-# clang wants USE=clang for llvm
-sys-devel/llvm clang xml
 sys-fs/cryptsetup luks1_default
 sys-fs/e2fsprogs static-libs
 # required by sys-fs/dmraid

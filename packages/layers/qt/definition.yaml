@@ -325,9 +325,6 @@ provides:
   - name: polkit-qt
     category: sys-auth
     version: '>=0'
-  - name: llvm-toolchain-symlinks
-    category: sys-devel
-    version: '>=0'
   - name: perl-Time-HiRes
     category: virtual
     version: '>=0'
