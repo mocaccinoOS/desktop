@@ -13,3 +13,5 @@ dev-python/numpy:0/2
 # Mask newer llvm and clang
 llvm-core/clang:19
 llvm-core/llvm:19
+llvm-core/clang-common:19
+llvm-runtimes/openmp:19
