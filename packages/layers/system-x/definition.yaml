@@ -883,6 +883,18 @@ provides:
   - name: llvmgold
     category: llvm-core
     version: '>=0'
+  - name: llvm-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: compiler-rt
+    category: lvm-runtimes
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: lvm-runtimes
+    version: '>=0'
+  - name: openmp
+    category: lvm-runtimes
+    version: '>=0'
   - name: libpng
     category: media-libs
     version: '>=0'
@@ -1127,12 +1139,6 @@ provides:
     category: sys-kernel
     version: '>=0'
   - name: binutils-libs
-    category: sys-libs
-    version: '>=0'
-  - name: compiler-rt
-    category: sys-libs
-    version: '>=0'
-  - name: compiler-rt-sanitizers
     category: sys-libs
     version: '>=0'
   - name: db
