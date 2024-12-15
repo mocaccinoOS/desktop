@@ -8,3 +8,8 @@ dev-python/numpy:0/2
 # Newer docutils version pulls in pillow, this must remain in layers/X
 # In a near future figure out how to solve that.
 >dev-python/docutils-0.20.1-r1
+
+# 2024-12-15: Joost Ruis
+# Mask newer llvm and clang
+llvm-core/clang:19
+llvm-core/llvm:19
