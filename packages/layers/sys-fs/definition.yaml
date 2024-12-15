@@ -505,6 +505,9 @@ provides:
   - name: clang-runtime
     category: llvm-core
     version: '>=0'
+  - name: clang-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
   - name: postfix
     category: mail-mta
     version: '>=0'

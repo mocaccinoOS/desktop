@@ -529,9 +529,6 @@ provides:
   - name: autoconf
     category: sys-devel
     version: '>=0'
-  - name: clang-toolchain-symlinks
-    category: sys-devel
-    version: '>=0'
   - name: llvm-toolchain-symlinks
     category: sys-devel
     version: '>=0'
