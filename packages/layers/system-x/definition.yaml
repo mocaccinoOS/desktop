@@ -1069,9 +1069,6 @@ provides:
   - name: clang-common
     category: sys-devel
     version: '>=0'
-  - name: clang-runtime
-    category: sys-devel
-    version: '>=0'
   - name: flex
     category: sys-devel
     version: '>=0'
