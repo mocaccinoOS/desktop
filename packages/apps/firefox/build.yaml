@@ -7,6 +7,7 @@ prelude:
 - cp -rf package.env /etc/portage/
 - cp -rf package.unmask /etc/portage/
 - cp firefox_optimized /etc/portage/env
+- USE="abi_x86_64 amd64 cpu_flags_x86_sse2 elibc_glibc icu kernel_linux npm snapshot ssl system-icu system-ssl" emerge -1 net-libs/nodejs
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
