@@ -1,1 +1,2 @@
-# placeholder
+# Try align nodejs useflags with upstream binary
+net-libs/nodejs abi_x86_64 cpu_flags_x86_sse2 elibc_glibc icu kernel_linux npm snapshot ssl system-icu system-ssl
