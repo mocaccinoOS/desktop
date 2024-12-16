@@ -4,8 +4,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-# - cp -rf package.env /etc/portage/
-# - cp firefox_optimized /etc/portage/env
+- cp -rf package.env /etc/portage/
+- cp -rf package.unmask /etc/portage/
+- cp firefox_optimized /etc/portage/env
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
