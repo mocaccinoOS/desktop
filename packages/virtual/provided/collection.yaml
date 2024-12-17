@@ -14,6 +14,16 @@ packages:
   description: "Virtual package"
   requires:
   - <<: *dep
+# Early MOS had a layer called codecs but this is merged into layers/fs. This virtual is here because we need a layers/codecs that 
+# doesn't own any files.
+- category: "layers"
+  name: "codecs"
+  version: "1"
+  description: "Virtual package"
+  requires:
+  - category: "layers"
+    name: "sys-fs"
+    version: ">=0"
 # The following might not be shipped by system-x yet. But required by unattended-installer (which right now it's not supposed to work)
 - category: "networking"
   name: "iptables"
