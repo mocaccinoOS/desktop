@@ -12,6 +12,7 @@ prelude:
 - emaint sync -r trinity-official
 {{ template "portage_prelude_build" . }}
 steps:
+- emerge -1 www-misc/hldig::trinity-official
 {{ template "portage_build" . }}
 - eselect repository remove -f trinity-official
 - emerge -C app-eselect/eselect-repository

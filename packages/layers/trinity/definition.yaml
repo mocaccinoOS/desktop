@@ -1,6 +1,6 @@
 category: "layers"
 name: "trinity"
-version: 14.1.2+30
+version: 14.1.2+31
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
@@ -187,6 +187,6 @@ provides:
   - name: twin
     category: trinity-base
     version: '>=0'
-  - name: htdig
+  - name: hldig
     category: www-misc
     version: '>=0'
