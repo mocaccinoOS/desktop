@@ -1,5 +1,5 @@
 install:
-- etc-update -p
+- mos config-update update --interactive=false -p /etc/ld.so.conf.d
 - hash -r
 - touch /var/lib/portage/.keep
 # Since we do not ship /etc/portage we must make sure to set CHOST in env. gcc-config requires this and is called when we generated dracut images
