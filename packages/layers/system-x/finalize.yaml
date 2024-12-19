@@ -13,5 +13,5 @@ install:
 - if [ -f /etc/._cfg0001_locale.gen ]; then rm /etc/._cfg0001_locale.gen; fi
 - ldconfig
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
-# Update os-release
-# - grep -q 'BUILD_ID' '/etc/os-release' && sed -i -r 's/BUILD_ID=.*/BUILD_ID={{.Values.version}}/' '/etc/os-release' || echo "BUILD_ID={{.Values.version}}" >> '/etc/os-release'
+# This must be run incase of trival changes in config files
+- etc-update -p
