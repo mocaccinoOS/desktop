@@ -7,6 +7,7 @@ CXX="clang++"
 AR="llvm-ar"
 NM="llvm-nm"
 RANLIB="llvm-ranlib"
+STRIP="llvm-strip"
 
 LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed"
 
