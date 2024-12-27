@@ -62,7 +62,7 @@ prelude:
 - cp -rf package.mask /etc/portage/
 - cp -rf package.env /etc/portage/
 - cp qt_optimized /etc/portage/env
-{{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 requires:
