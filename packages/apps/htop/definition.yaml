@@ -1,6 +1,6 @@
 category: "apps"
 name: "htop"
-version: 3.3.0+11
+version: 3.3.0+12
 uri:
   - https://htop.dev
 license: "BSD GPL-2+"
