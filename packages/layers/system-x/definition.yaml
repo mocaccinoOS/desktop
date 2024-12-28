@@ -1,5 +1,5 @@
 name: system-x
-version: 0.20241215+1
+version: 0.20241215+2
 gcc_version: "14"
 python_version: "3.12"
 category: layers
@@ -376,12 +376,6 @@ provides:
   - name: manpager
     category: app-text
     version: '>=0'
-  - name: opensp
-    category: app-text
-    version: '>=0'
-  - name: po4a
-    category: app-text
-    version: '>=0'
   - name: autoconf
     category: dev-build
     version: '>=0'
@@ -583,12 +577,6 @@ provides:
   - name: Digest-HMAC
     category: dev-perl
     version: '>=0'
-  - name: Encode-EUCJPASCII
-    category: dev-perl
-    version: '>=0'
-  - name: Encode-HanExtra
-    category: dev-perl
-    version: '>=0'
   - name: Encode-Locale
     category: dev-perl
     version: '>=0'
@@ -637,9 +625,6 @@ provides:
   - name: List-MoreUtils
     category: dev-perl
     version: '>=0'
-  - name: Locale-gettext
-    category: dev-perl
-    version: '>=0'
   - name: LWP-MediaTypes
     category: dev-perl
     version: '>=0'
@@ -647,9 +632,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: MailTools
-    category: dev-perl
-    version: '>=0'
-  - name: MIME-Charset
     category: dev-perl
     version: '>=0'
   - name: Module-Build
@@ -667,13 +649,7 @@ provides:
   - name: OLE-StorageLite
     category: dev-perl
     version: '>=0'
-  - name: Pod-Parser
-    category: dev-perl
-    version: '>=0'
   - name: Role-Tiny
-    category: dev-perl
-    version: '>=0'
-  - name: SGMLSpm
     category: dev-perl
     version: '>=0'
   - name: Socket6
@@ -688,16 +664,7 @@ provides:
   - name: Syntax-Keyword-Try
     category: dev-perl
     version: '>=0'
-  - name: TermReadKey
-    category: dev-perl
-    version: '>=0'
-  - name: Text-CharWidth
-    category: dev-perl
-    version: '>=0'
   - name: Text-Unidecode
-    category: dev-perl
-    version: '>=0'
-  - name: Text-WrapI18N
     category: dev-perl
     version: '>=0'
   - name: TimeDate
@@ -707,9 +674,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: Types-Serialiser
-    category: dev-perl
-    version: '>=0'
-  - name: Unicode-LineBreak
     category: dev-perl
     version: '>=0'
   - name: Unicode-Map
@@ -743,9 +707,6 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: XS-Parse-Keyword
-    category: dev-perl
-    version: '>=0'
-  - name: YAML-Tiny
     category: dev-perl
     version: '>=0'
   - name: appdirs
