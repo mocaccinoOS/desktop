@@ -6,9 +6,11 @@ prelude:
 - cp -rf package.use /etc/portage/
 - cp -rf package.mask /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-{{ template "portage_prelude_build_gentoo_binary" . }}
+- cp -rf package.env /etc/portage/
+- cp kde-common_optimized /etc/portage/env
+{{ template "portage_prelude_build" . }}
 steps:
-{{ template "portage_build_gentoo_binary" . }}
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "qt"
