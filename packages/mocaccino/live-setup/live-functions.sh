@@ -292,7 +292,6 @@ prepare() {
         "avahi-daemon"
         "cups"
         "cups-browsed"
-	"cpupower-frequency-set"
     )
 
     for srv in "${SYSTEMD_SERVICES[@]}"; do
