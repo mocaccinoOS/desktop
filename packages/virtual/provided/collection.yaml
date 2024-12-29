@@ -24,6 +24,15 @@ packages:
   - category: "layers"
     name: "sys-fs"
     version: ">=0"
+# Package got renamed upstream, pull in the renamed package
+- category: "apps"
+  name: "woeusb"
+  version: "1"
+  description: "Virtual package"
+  requires:
+  - category: "apps"
+    name: "woeusb-ng"
+    version: ">=0"
 # The following might not be shipped by system-x yet. But required by unattended-installer (which right now it's not supposed to work)
 - category: "networking"
   name: "iptables"

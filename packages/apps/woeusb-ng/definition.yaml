@@ -1,0 +1,19 @@
+category: "apps"
+name: "woeusb"
+version: "0.2.12"
+uri:
+  - https://github.com/WoeUSB/WoeUSB-ng
+license: "GPL-3+"
+description: "Create a Windows USB stick installer from an iso image (rewrite of WoeUSB)"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-boot/woeusb-ng
+provides:
+  - name: woeusb-ng
+    category: boot
+    version: '>=0'
+requires:
+  - category: "apps"
+    name: "grub"
+    version: ">=0"
