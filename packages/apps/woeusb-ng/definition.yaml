@@ -13,6 +13,9 @@ provides:
   - name: woeusb-ng
     category: boot
     version: '>=0'
+  - name: termcolor
+    category: dev-python
+    version: '>=0'
 requires:
   - category: "apps"
     name: "grub"
