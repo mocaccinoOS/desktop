@@ -1,5 +1,5 @@
 category: "apps"
-name: "woeusb"
+name: "woeusb-ng"
 version: "0.2.12"
 uri:
   - https://github.com/WoeUSB/WoeUSB-ng
