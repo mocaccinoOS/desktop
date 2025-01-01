@@ -11,7 +11,7 @@ prelude:
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
 # tdm fails to build, remove from meta
-- sed -rie 's/tdm.+$//g' /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.2.ebuild
+- sed '/tdm/d' -i /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.2.ebuild
 - ebuild /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.2.ebuild manifest
 {{ template "portage_prelude_build" . }}
 steps:
