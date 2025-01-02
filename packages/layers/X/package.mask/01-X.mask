@@ -1,1 +1,2 @@
-# Placeholder
+llvm-core/llvm:18
+llvm-core/clang:18
