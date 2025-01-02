@@ -1,3 +1,1 @@
-# 29-12-2024 Joost Ruis: This requires a change in layers/system-x
-# needs dev-libs/libgudev +introspection
->=gnome-extra/gnome-tweaks-46.1-r1
+# placeholder

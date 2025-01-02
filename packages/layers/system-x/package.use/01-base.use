@@ -20,6 +20,7 @@ dev-libs/gmp asm cxx static-libs
 dev-libs/libassuan static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
+dev-libs/libgudev introspection
 dev-libs/libksba static-libs
 dev-libs/libpcre cxx jit pcre16 readline recursion-limit static-libs unicode zlib
 dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit static-libs unicode zlib
