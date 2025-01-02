@@ -1,6 +1,7 @@
 # Need newer mesa for clang/llvm 19
 =media-libs/mesa-24.3.2 ~amd64
 =dev-util/intel_clc-24.3.2 ~amd64 
+=llvm-core/libclc-19.1.6 ~amd64
 
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
