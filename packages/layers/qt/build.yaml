@@ -68,10 +68,10 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
-- emerge -C dev-qt/linguist-tools && emerge --depclean
 # cleanup ccache
 - CCACHE_DIR=/var/cache/ccache/ ccache -C
 - emerge -C dev-libs/blake3 dev-util/shadowman dev-util/ccache
+- emerge -C dev-qt/linguist-tools && emerge --depclean
 requires:
 - category: "buildbase"
   name: "X"
