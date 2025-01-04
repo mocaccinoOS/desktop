@@ -1,6 +1,6 @@
 category: "apps"
 name: "virt-manager"
-version: 4.1.0-r1+47
+version: 4.1.0-r1+48
 uri:
   - https://virt-manager.org
 license: "GPL-2"
@@ -8,7 +8,7 @@ description: "A graphical tool for administering virtual machines"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-emulation/virt-manager dev-python/argcomplete net-misc/x11-ssh-askpass
+    app-emulation/virt-manager dev-libs/libisoburn dev-python/argcomplete net-misc/x11-ssh-askpass
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -19,6 +19,9 @@ requires:
 provides:
   - name: virt-manager
     category: app-emulation
+    version: '>=0'
+  - name: libisoburn
+    category: dev-libs
     version: '>=0'
   - name: argcomplete
     category: dev-python
