@@ -14,9 +14,13 @@ prepare_workarea() {
   mount -t cgroup2 none /sys/fs/cgroup
 
   # Ensure legacy cgroups (v1) are unmounted if present
-  for subsystem in $(ls /sys/fs/cgroup 2>/dev/null); do
-      umount /sys/fs/cgroup/$subsystem || true
-  done
+  if [ -d /sys/fs/cgroup ]; then
+      for subsystem in /sys/fs/cgroup/*; do
+          if mountpoint -q "$subsystem" >/dev/null 2>&1; then
+              umount "$subsystem" >/dev/null 2>&1 || true
+          fi
+      done
+  fi
 
   mkdir -p /dev/pts
   mount -t devpts none /dev/pts
