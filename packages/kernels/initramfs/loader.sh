@@ -6,6 +6,18 @@ prepare_workarea() {
   mount -t tmpfs none /tmp -o mode=1777
   mount -t sysfs none /sys
 
+  # Enable cgroups v2
+  if [ ! -d /sys/fs/cgroup ]; then
+      mkdir -p /sys/fs/cgroup
+  fi
+  echo "Mounting cgroups v2..."
+  mount -t cgroup2 none /sys/fs/cgroup
+
+  # Ensure legacy cgroups (v1) are unmounted if present
+  for subsystem in $(ls /sys/fs/cgroup 2>/dev/null); do
+      umount /sys/fs/cgroup/$subsystem || true
+  done
+
   mkdir -p /dev/pts
   mount -t devpts none /dev/pts
 
