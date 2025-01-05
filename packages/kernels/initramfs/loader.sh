@@ -10,8 +10,14 @@ prepare_workarea() {
   if [ ! -d /sys/fs/cgroup ]; then
       mkdir -p /sys/fs/cgroup
   fi
-  echo "Mounting cgroups v2..."
-  mount -t cgroup2 none /sys/fs/cgroup
+
+  # Check if already mounted, otherwise mount
+  if ! mountpoint -q /sys/fs/cgroup; then
+      echo "Mounting cgroups v2..."
+      mount -t cgroup2 none /sys/fs/cgroup
+  else
+      echo "cgroups v2 is already mounted."
+  fi
 
   # Ensure legacy cgroups (v1) are unmounted if present
   if [ -d /sys/fs/cgroup ]; then
