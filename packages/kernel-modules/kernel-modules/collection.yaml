@@ -199,7 +199,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20240202+73
+    version: "20240917"
     lts: true
     labels:
       emerge.jobs: "3"
