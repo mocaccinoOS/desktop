@@ -11,22 +11,12 @@ prepare_workarea() {
       mkdir -p /sys/fs/cgroup
   fi
 
-  # Check if already mounted, otherwise mount
-  if ! mountpoint -q /sys/fs/cgroup; then
-      echo "Mounting cgroups v2..."
-      mount -t cgroup2 none /sys/fs/cgroup
-  else
-      echo "cgroups v2 is already mounted."
-  fi
+  mount -t cgroup2 none /sys/fs/cgroup > /dev/null 2>&1
 
   # Ensure legacy cgroups (v1) are unmounted if present
-  if [ -d /sys/fs/cgroup ]; then
-      for subsystem in /sys/fs/cgroup/*; do
-          if mountpoint -q "$subsystem" >/dev/null 2>&1; then
-              umount "$subsystem" >/dev/null 2>&1 || true
-          fi
-      done
-  fi
+  for subsystem in $(ls /sys/fs/cgroup 2>/dev/null); do
+      umount /sys/fs/cgroup/$subsystem > /dev/null 2>&1 || true
+  done
 
   mkdir -p /dev/pts
   mount -t devpts none /dev/pts
