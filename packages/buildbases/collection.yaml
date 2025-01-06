@@ -36,7 +36,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+263
+    version: 0+264
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
