@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-apps-minimal"
-version: "24.08.3"
+version: 24.08.3+1
 description: "A bundle of Plasma applications useful on the Plasma desktop"
 labels:
   emerge.jobs: "4"

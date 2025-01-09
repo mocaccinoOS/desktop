@@ -1,6 +1,6 @@
 category: "layers"
 name: "qtile"
-version: 0.23.0-r1+39
+version: 0.23.0-r1+40
 uri:
   - https://qtile.org
 license: "MIT"
