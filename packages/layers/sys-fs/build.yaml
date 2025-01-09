@@ -13,6 +13,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - cp -rf patches /etc/portage/
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
+- emerge -1 dev-util/ccache
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
