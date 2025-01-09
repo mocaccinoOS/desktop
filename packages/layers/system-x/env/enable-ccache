@@ -1,0 +1,2 @@
+FEATURES="ccache"
+CCACHE_DIR="/var/cache/ccache"

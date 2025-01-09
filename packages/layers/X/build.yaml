@@ -14,6 +14,8 @@ prelude:
 steps:
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_build_gentoo_binary" . }}
+# cleanup ccache
+- CCACHE_DIR=/var/cache/ccache/ ccache -C
 - cp -rv xorg.conf.d/ /etc/X11/
 # Fix plymouth service file
 - sed -i '/^ConditionVirtualization.*/a IgnoreOnIsolate=true' /lib/systemd/system/plymouth-start.service
