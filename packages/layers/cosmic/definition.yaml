@@ -1,6 +1,6 @@
 category: "layers"
 name: "cosmic"
-version: 1.0.0-alpha.4+5
+version: 1.0.0-alpha.5
 uri:
   - https://github.com/pop-os/cosmic-session
 license: "GPL-3.0-or-later AND MPL-2.0 AND CC-BY-SA-4.0"
@@ -69,6 +69,9 @@ provides:
   - category: "cosmic-de"
     name: "cosmic-panel"
     version: ">=0"
+  - category: "cosmic-de"
+    name: "cosmic-player"
+    version: ">=0"    
   - category: "cosmic-de"
     name: "cosmic-randr"
     version: ">=0"
