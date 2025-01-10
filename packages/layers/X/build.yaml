@@ -12,6 +12,7 @@ prelude:
 - emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
+- emerge -1 dev-libs/xxhash
 - USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_build_gentoo_binary" . }}
 # cleanup ccache
