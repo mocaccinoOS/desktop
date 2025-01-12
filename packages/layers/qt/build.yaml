@@ -38,23 +38,23 @@ excludes:
 - ^/usr/share/man/man1/pdftotext.1.bz2
 - ^/usr/share/man/man1/pdfunite.1.bz2
 # Gpgme split. Only ship Qt module
-- ^/usr/share/doc/gpgme-.*/.*
-- ^/usr/lib64/pkgconfig/gpgme.pc
-- ^/usr/lib/python.*/site-packages/gpg
-- ^/usr/share/info/gpgme.info.*
-- ^/usr/share/aclocal/gpgme.m4
-- ^/usr/lib64/pkgconfig/gpgme-glib.pc
+- ^/usr/bin/gpgme-config
 - ^/usr/bin/gpgme-json
-- ^/usr/lib64/libgpgmepp.so.*
 - ^/usr/bin/gpgme-tool
+- ^/usr/lib/python.*/site-packages/gpg
+- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfig.cmake
+- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfigVersion.cmake
 - ^/usr/lib64/libgpgme.so
 - ^/usr/lib64/libgpgme.so.*
-- ^/usr/bin/gpgme-config
 - ^/usr/lib64/libgpgmepp.so
-- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfig.cmake
-- ^/usr/lib64/libgpgme.so.*
 - ^/usr/lib64/libgpgmepp.so.*
-- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfigVersion.cmake
+- ^/usr/lib64/pkgconfig/gpgme-glib.pc
+- ^/usr/lib64/pkgconfig/gpgme.pc
+- ^/usr/lib64/pkgconfig/gpgmepp.pc
+- ^/usr/share/aclocal/gpgme.m4
+- ^/usr/share/doc/gpgme-.*/.*
+- ^/usr/share/info/gpgme.info.*
+- ^/usr/share/man/man1/gpgme-json.1.bz2
 env:
 {{ template "portage_env" . }}
 prelude:
