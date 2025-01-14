@@ -30,7 +30,7 @@ steps:
 # grab deps library for udev probe init functionalities
 - go get github.com/pilebones/go-udev
 # Undo latest commits
-- github.com/joostruis/go-modprobe
+- go get github.com/joostruis/go-modprobe
 
 - mkdir modules_copy
 - find /luetbuild/modules/usr/lib/modules/**/kernel/fs  -exec cp {} -r --parents ./modules_copy \;
