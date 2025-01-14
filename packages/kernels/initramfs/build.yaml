@@ -29,7 +29,7 @@ steps:
 
 # grab deps library for udev probe init functionalities
 - go get github.com/pilebones/go-udev
-- go get github.com/paultag/go-modprobe@v0.1.2
+- go get github.com/paultag/go-modprobe@7561a4a19e69ad60dbf54ced1d3690d02a408fd0
 # - go get pault.ag/go/modprobe
 
 - mkdir modules_copy
