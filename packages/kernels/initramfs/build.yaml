@@ -29,8 +29,7 @@ steps:
 
 # grab deps library for udev probe init functionalities
 - go get github.com/pilebones/go-udev
-- go get github.com/paultag/go-modprobe
-# - go get pault.ag/go/modprobe
+- go get pault.ag/go/modprobe
 
 - mkdir modules_copy
 - find /luetbuild/modules/usr/lib/modules/**/kernel/fs  -exec cp {} -r --parents ./modules_copy \;
