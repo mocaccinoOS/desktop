@@ -4,7 +4,7 @@ packages:
     modules_name: "mocaccino-modules"
     version: "6.12.9"
     git_sha: e80e77438c627981b266734c03e23dcf8a60014e
-    golang_version: "1.21"
+    golang_version: "1.21.0"
     arch: "amd64"
     labels:
       autobump.revdeps: "false"
