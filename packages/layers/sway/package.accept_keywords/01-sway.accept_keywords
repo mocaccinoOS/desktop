@@ -1,0 +1,2 @@
+# want newer wlroots
+=gui-wm/sway-1.10 ~amd64
