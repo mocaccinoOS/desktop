@@ -5,8 +5,8 @@ env:
 prelude:
 - cp -rf package.* /etc/portage/
 - emerge -1 app-eselect/eselect-repository
-- eselect repository enable mate-overlay guru
-- emaint sync -r mate-overlay guru
+- eselect repository enable mate-overlay && eselect repository enable guru
+- emaint sync -r mate-overlay && emaint sync -r guru
 - USE="x11-backend" emerge -1 gui-libs/wlroots && emerge -1 gui-apps/wlogout::guru gui-wm/wayfire gui-apps/wcm
 steps:
 {{ template "portage_build" . }}
