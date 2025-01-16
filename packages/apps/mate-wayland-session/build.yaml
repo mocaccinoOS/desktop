@@ -7,10 +7,12 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable mate-overlay
 - emaint sync -r mate-overlay
-- emerge -1 gui-wm/wayfire gui-apps/wcm
 steps:
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "mate"
+  version: ">=0"
+- category: "layers"
+  name: "wayfire"
   version: ">=0"
