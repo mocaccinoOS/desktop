@@ -1,6 +1,6 @@
 category: "layers"
 name: "wayfire"
-version: 0.9.0+10
+version: 0.9.0+11
 uri:
   - https://github.com/WayfireWM/wayfire
 license: "MIT"
@@ -8,7 +8,7 @@ description: "Compiz like 3D wayland compositor"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    gui-apps/grim gui-apps/gtkgreet gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/wf-config gui-wm/wayfire
+    gui-apps/grim gui-apps/gtkgreet gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/wf-config gui-libs/wlroots:0/17 gui-wm/wayfire
 requires:
   - category: "layers"
     name: "wlroots"
@@ -30,6 +30,9 @@ provides:
     category: gui-apps
     version: '>=0'
   - name: wf-config
+    category: gui-libs
+    version: '>=0'
+  - name: wlroots
     category: gui-libs
     version: '>=0'
   - name: wayfire
