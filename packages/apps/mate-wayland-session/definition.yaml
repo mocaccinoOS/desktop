@@ -1,0 +1,22 @@
+category: "apps"
+name: "mate-wayland-session"
+version: "1.28.3"
+uri:
+  - https://github.com/mate-desktop/mate-wayland-session
+license: "GPL-2"
+description: "Mate wayland session"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    mate-base/mate-wayland-session
+provides:
+  - name: mate-wayland-session
+    category: mate-base
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "mate"
+    version: ">=0"
+  - category: "layers"
+    name: "wayfire"
+    version: ">=0"
