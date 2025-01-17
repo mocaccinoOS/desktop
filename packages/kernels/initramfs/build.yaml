@@ -16,7 +16,7 @@ prelude:
 - tar -C /usr/local -xzf golang.tar.gz
 - |
   mkdir -p /luetbuild/go/src/github.com/u-root && cd /luetbuild/go/src/github.com/u-root && \
-  git clone https://github.com/u-root/u-root && cd u-root && git checkout "{{.Values.git_sha}}" -b build
+  git clone https://github.com/u-root/u-root && cd u-root && git checkout "{{.Values.uroot_git_sha}}" -b build
 
 - |
    cd /luetbuild/go/src/github.com/u-root/u-root && go build -ldflags '-s -w' && upx --brute -1 u-root && mv u-root /usr/bin/u-root

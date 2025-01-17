@@ -3,7 +3,7 @@ packages:
     name: "mocaccino-initramfs"
     modules_name: "mocaccino-modules"
     version: "6.12.9"
-    git_sha: e80e77438c627981b266734c03e23dcf8a60014e
+    uroot_git_sha: 47bc9bbe71ca5b105bdbc265fb6bfb9640188629
     golang_version: "1.21.1"
     arch: "amd64"
     labels:
