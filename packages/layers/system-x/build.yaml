@@ -21,6 +21,8 @@ prelude:
 - cp -rf bashrc /etc/portage/
 - cp -rf env /etc/portage/
 - cp -rf package.env /etc/portage/
+# Drop python 3.13
+- emerge -C dev-lang/python:3.13
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
