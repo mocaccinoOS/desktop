@@ -2,7 +2,7 @@ install:
 {{ if index .Values.labels "lts.kernel" }}
 - depmod -a 6.6.69-mocaccino
 {{ else }}
-- depmod -a 6.12.9-mocaccino
+- depmod -a 6.12.8-mocaccino
 {{ end }}
 {{ if contains "nvidia" .Values.name }}
 - mocaccino-dracut --rebuild-all
