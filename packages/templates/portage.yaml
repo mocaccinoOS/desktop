@@ -33,7 +33,6 @@
   FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
   emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
   /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
-- rm -rf /etc/portage/gnupg
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 {{end}}
 
