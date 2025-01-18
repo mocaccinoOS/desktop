@@ -12,7 +12,7 @@ prelude:
 {{ if contains "xone" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable src_prepare-overlay
-- emaint sync -r src_prepare-overlay
+- emaint sync -r guru
 {{- end}}
 {{ if contains "rtl8812au" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
