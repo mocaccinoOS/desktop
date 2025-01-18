@@ -11,7 +11,7 @@ import (
 
 	"github.com/u-root/u-root/pkg/libinit"
 	"github.com/u-root/u-root/pkg/ulog"
-	gomodprobe "pault.ag/go/modprobe"
+	// gomodprobe "pault.ag/go/modprobe"
 )
 
 type initCmds struct {
@@ -42,12 +42,14 @@ func modprobe(s string) (string, error) {
 	return string(stdoutStderr), nil
 }
 
+/*
 func modprobeNative(s string) (string, error) {
 	if err := gomodprobe.Load(s, ""); err != nil {
 		return "", err
 	}
 	return "", nil
 }
+*/
 
 func depmod() (string, error) {
 	cmd := exec.Command("depmod", "-a")
