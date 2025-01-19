@@ -27,8 +27,8 @@ prelude:
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
 steps:
-- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1uDN @system -j $JOBS
-- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build_gentoo_binary" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
