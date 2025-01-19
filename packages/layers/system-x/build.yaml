@@ -37,6 +37,8 @@ steps:
 # Clean up build deps
 - emerge -C app-text/po4a dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
 - emerge --depclean
+# Clean up binary cache (we are not using the template for binaries
+- if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
