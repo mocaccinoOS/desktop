@@ -26,6 +26,9 @@ prelude:
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
+# We grab binary glib-utils to prevent pulling in dev-python/pillow through dev-python/docutils
+# dev-python/pillow is merged downstream in layers/X
+- EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1 dev-util/glib-utils
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
