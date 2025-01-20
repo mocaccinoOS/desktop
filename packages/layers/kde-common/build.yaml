@@ -3,10 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
-- cp -rf package.mask /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
-- cp -rf package.env /etc/portage/
+- cp -rf package.* /etc/portage/
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
