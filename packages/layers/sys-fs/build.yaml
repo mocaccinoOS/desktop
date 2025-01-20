@@ -6,11 +6,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
-- cp -rf package.mask /etc/portage/
-- cp -rf package.env /etc/portage/
-- cp -rf package.license /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.* /etc/portage/
 - cp -rf patches /etc/portage/
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge -1 dev-util/ccache
