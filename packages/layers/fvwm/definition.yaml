@@ -1,6 +1,6 @@
 category: "layers"
 name: "fvwm"
-version: 2.7.0-r5+10
+version: 2.7.0-r5+11
 uri:
   - https://www.fvwm.org
 license: "GPL-2+ FVWM"
