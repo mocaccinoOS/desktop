@@ -1,1 +1,2 @@
-# Placeholder
+# llvm / clang slot 18 needed for spidermonkey
+llvm-core/llvm:18
