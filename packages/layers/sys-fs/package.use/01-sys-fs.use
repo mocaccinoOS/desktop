@@ -5,6 +5,7 @@ dev-libs/libevent ssl
 dev-libs/libnl utils
 dev-libs/libical vala
 dev-libs/libverto libev
+dev-python/pyudev -qt5
 dev-python/rdflib sqlite
 mail-mta/postfix mbox sasl
 # 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
@@ -24,7 +25,7 @@ sys-fs/btrfs-progs -man
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs
-sys-fs/reiser4progs static static-libs
+sys-fs/reiser4progs static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/xfsprogs libedit
 sys-fs/zfs kernel-builtin
