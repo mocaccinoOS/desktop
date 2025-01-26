@@ -1,9 +1,0 @@
-prelude:
-- git clone https://github.com/aristocratos/bashtop.git
-- cd bashtop && make
-steps:
-- cd bashtop && make install
-requires:
-- category: "layers"
-  name: "system-x"
-  version: ">=0"
