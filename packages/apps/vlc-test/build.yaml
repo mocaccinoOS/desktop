@@ -3,8 +3,9 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.* /etc/portage/
+- sed -i '/^EAPI=/a EGIT_COMMIT="94f273566e2d12987f37bd9e0a601b49be86ad17"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
+- ebuild /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild manifest
 steps:
 {{ template "portage_build" . }}
 requires:

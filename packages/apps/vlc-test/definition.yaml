@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc-test"
-version: "0.1"
+version: "0.2"
 uri:
   - https://www.videolan.org/vlc
 license: "LGPL-2.1 GPL-2"
@@ -18,5 +18,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "qt"
+    name: "kde-common"
     version: ">=0"
