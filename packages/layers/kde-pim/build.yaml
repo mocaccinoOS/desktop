@@ -4,7 +4,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.use /etc/portage/
-- emerge -1 media-video/vlc
+# Remove kalarm from ebuilds, it pulls in vlc, not that
+- sed -i '/kalarm/d' /var/db/repos/gentoo/kde-apps/kdepim-meta/*.ebuild
+- ebuild "$(ls -v /var/db/repos/gentoo/kde-apps/kdepim-meta/*.ebuild | tail -n 1)" manifest
 steps:
 {{ template "portage_build_gentoo_binary" . }}
 requires:

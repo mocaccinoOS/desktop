@@ -10,9 +10,6 @@ labels:
   emerge.packages: >-
     kde-apps/kdepim-meta
 requires:
-  - category: "apps"
-    name: "vlc"
-    version: ">=0"
   - category: "layers"
     name: "plasma"
     version: ">=0"
@@ -75,9 +72,6 @@ provides:
     category: kde-apps
     version: '>=0'
   - name: kaddressbook
-    category: kde-apps
-    version: '>=0'
-  - name: kalarm
     category: kde-apps
     version: '>=0'
   - name: kcalutils
