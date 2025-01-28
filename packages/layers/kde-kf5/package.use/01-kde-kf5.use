@@ -1,14 +1,20 @@
 dev-python/pyqt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
+dev-qt/qt3d:5 qml
 dev-qt/linguist-tools:5 qml
 dev-qt/positioning:5 qml
 dev-qt/qtcharts:5 qml
 dev-qt/qtdeclarative:5 jit localstorage widgets vulkan
+dev-qt/qtgui:5 accessibility egl eglfs ibus jpeg libinput png udev vulkan
 dev-qt/qtmultimedia:5 gstreamer openal qml widgets
+dev-qt/qtnetwork:5 ssl
 dev-qt/qtquickcontrols:5 widgets
 dev-qt/qtquickcontrols2:5 widgets
+dev-qt/qtprintsupport:5 cups
 dev-qt/qtscript:5 scripttools
 dev-qt/qtsensors:5 qml
+dev-qt/qtsql:5 mysql
 dev-qt/qtvirtualkeyboard:5 spell
+dev-qt/qtwayland:5 vulkan
 dev-qt/qtwebchannel:5 qml
 dev-qt/qtwebengine:5 bindist system-icu widgets -system-ffmpeg
 dev-qt/qtxmlpatterns:5 qml
