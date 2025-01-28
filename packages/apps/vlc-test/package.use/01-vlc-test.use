@@ -1,3 +1,0 @@
-# since newer ffmpeg 6 disabled vaapi use
-# see https://bugs.gentoo.org/864721
-media-video/vlc a52 aalib aom archive cddb chromecast dav1d egl fontconfig httpd libass live lua matroska microdns mpeg musepack ogg opus rtsp samba skins soxr taglib truetype upnp vlm vorbis x265 xml -vaapi vdpau -svg

@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 3.0.21+18
+version: "4_pre20250128"
 uri:
   - https://www.videolan.org/vlc
 license: "LGPL-2.1 GPL-2"
@@ -8,7 +8,7 @@ description: "Media player and framework with support for most multimedia files 
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    media-video/vlc
+    =media-video/vlc-9999
 provides:
   - name: vlc
     category: media-video
@@ -18,5 +18,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "qt"
+    name: "kde-common"
     version: ">=0"
