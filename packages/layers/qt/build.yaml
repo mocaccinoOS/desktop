@@ -64,7 +64,6 @@ steps:
 {{ template "portage_build" . }}
 # cleanup ccache
 - CCACHE_DIR=/var/cache/ccache/ ccache -C
-- emerge -C dev-qt/linguist-tools && emerge --depclean
 requires:
 - category: "buildbase"
   name: "X"
