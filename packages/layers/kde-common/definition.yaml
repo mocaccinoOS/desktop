@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-common"
-version: 6+48
+version: 6+49
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
