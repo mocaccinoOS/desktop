@@ -277,6 +277,12 @@ setup_greet() {
    echo "user = \"mocaccino\"" >> /etc/greetd/cosmic-greeter.toml
 }
 
+setup_flatpak() {
+    if command -v flatpak &> /dev/null; then
+        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    fi
+}
+
 setup_networkmanager() {
     systemctl enable NetworkManager
     systemctl enable ModemManager
@@ -334,4 +340,5 @@ prepare() {
     fi
 
     setup_networkmanager
+    setup_flatpak
 }
