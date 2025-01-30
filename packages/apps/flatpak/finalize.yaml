@@ -1,3 +1,2 @@
 install:
-- flatpak remote-list | grep -q '^flathub' || (wget -q -O /var/lib/flatpak/repo/flathub.flatpakrepo https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak remote-add --system --if-not-exists flathub /var/lib/flatpak/repo/flathub.flatpakrepo > /dev/null 2>&1)
 - ldconfig
