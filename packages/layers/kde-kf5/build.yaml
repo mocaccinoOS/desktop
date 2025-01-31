@@ -1654,6 +1654,7 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 - USE="qt5" emerge -1 media-libs/phonon kde-plasma/breeze kde-plasma/oxygen
+- USE="qt5 -qt6" emerge -1 app-text/poppler
 {{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
