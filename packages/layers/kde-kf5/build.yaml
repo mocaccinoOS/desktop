@@ -1,5 +1,42 @@
 excludes:
 {{ template "portage_excludes" }}
+# Poppler split. Only ship Qt module
+- ^/usr/bin/pdfattach
+- ^/usr/bin/pdfdetach
+- ^/usr/bin/pdffonts
+- ^/usr/bin/pdfimages
+- ^/usr/bin/pdfinfo
+- ^/usr/bin/pdfseparate
+- ^/usr/bin/pdfsig
+- ^/usr/bin/pdftocairo
+- ^/usr/bin/pdftohtml
+- ^/usr/bin/pdftoppm
+- ^/usr/bin/pdftops
+- ^/usr/bin/pdftotext
+- ^/usr/bin/pdfunite
+- ^/usr/lib64/girepository-1.0/Poppler-0.18.typelib
+- ^/usr/lib64/libpoppler-cpp.*
+- ^/usr/lib64/libpoppler-glib.*
+- ^/usr/lib64/libpoppler.so.*
+- ^/usr/lib64/pkgconfig/poppler-cpp.pc
+- ^/usr/lib64/pkgconfig/poppler-glib.pc
+- ^/usr/lib64/pkgconfig/poppler.pc
+- ^/usr/share/doc/poppler.*
+- ^/usr/share/gir-1.0/Poppler-0.18.gir
+- ^/usr/share/locale/ca/LC_MESSAGES/pdfsig.mo
+- ^/usr/share/man/man1/pdfattach.1.bz2
+- ^/usr/share/man/man1/pdfdetach.1.bz2
+- ^/usr/share/man/man1/pdffonts.1.bz2
+- ^/usr/share/man/man1/pdfimages.1.bz2
+- ^/usr/share/man/man1/pdfinfo.1.bz2
+- ^/usr/share/man/man1/pdfseparate.1.bz2
+- ^/usr/share/man/man1/pdfsig.1.bz2
+- ^/usr/share/man/man1/pdftocairo.1.bz2
+- ^/usr/share/man/man1/pdftohtml.1.bz2
+- ^/usr/share/man/man1/pdftoppm.1.bz2
+- ^/usr/share/man/man1/pdftops.1.bz2
+- ^/usr/share/man/man1/pdftotext.1.bz2
+- ^/usr/share/man/man1/pdfunite.1.bz2
 # Breeze stuff
 - ^/usr/bin/breeze-settings6
 - ^/usr/lib64/cmake/Breeze/BreezeConfig.cmake
