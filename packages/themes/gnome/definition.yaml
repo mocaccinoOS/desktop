@@ -1,7 +1,7 @@
 category: "themes"
 name: "gnome"
 version: "0.1"
-dashtoclock: "v45"
+dashtoclock: "v62"
 requires:
 - category: "layers"
   name: "gnome"
