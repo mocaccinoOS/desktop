@@ -8,15 +8,12 @@ env:
 - MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
 - cp -rf package.* /etc/portage/
-- cp -rf profile /etc/portage/
+- cp -rf profile patches bashrc env /etc/portage/
 {{ if ne .Values.arch "amd64" }}
 - cp -rf make.conf.{{.Values.arch}} /etc/portage/make.conf
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
-- cp -rf patches /etc/portage/
-- cp -rf bashrc /etc/portage/
-- cp -rf env /etc/portage/
 # Drop python 3.13
 - emerge -C dev-lang/python:3.13
 # required for binary packages
