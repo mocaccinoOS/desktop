@@ -1,0 +1,8 @@
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/wallpapers/mocaccino-wallpaper/background.jpg'
+
+[org/gnome/desktop/interface]
+gtk-theme='Plano'
+icon-theme='Tela'
+#cursor-theme=''
