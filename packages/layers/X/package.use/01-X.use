@@ -27,6 +27,7 @@ media-libs/imlib2 jpeg mp3 png shm webp zlib
 media-libs/libcanberra -gtk
 media-libs/libgphoto2 exif
 media-libs/libheif gdk-pixbuf rav1e x265
+media-libs/libjxl jpeg
 media-libs/libsdl aalib
 media-libs/libsdl2 gles2 haptic
 media-libs/libv4l dvb -qt5 -qt6
