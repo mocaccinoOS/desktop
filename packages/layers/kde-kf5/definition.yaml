@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-kf5"
-version: 5.116.0+55
+version: 5.116.0+56
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -225,7 +225,7 @@ provides:
     version: '>=0'
   - name: kitemmodels
     category: kde-frameworks
-    version: '>=0'   
+    version: '>=0'
   - name: kitemviews
     category: kde-frameworks
     version: '>=0'
