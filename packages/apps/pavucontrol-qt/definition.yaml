@@ -1,6 +1,6 @@
 category: "apps"
 name: "pavucontrol-qt"
-version: 2.0.0+27
+version: 2.0.0+28
 uri:
   - https://lxqt-project.org
 license: "GPL-2 GPL-2+"
@@ -8,11 +8,8 @@ description: "Qt GUI Pulseaudio Mixer"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    media-sound/pavucontrol-qt dev-cpp/glibmm:2.68
+    media-sound/pavucontrol-qt
 provides:
-  - name: glibmm
-    category: dev-cpp
-    version: '>=0'
   - name: pavucontrol-qt
     category: media-sound
     version: '>=0'
