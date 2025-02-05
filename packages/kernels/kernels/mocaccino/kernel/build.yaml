@@ -1,4 +1,4 @@
-image: "ubuntu:22.10"
+image: "ubuntu:22.04"
 env:
 #- LUET_YES=true
 - GCC_VERSION=11
