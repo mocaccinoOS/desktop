@@ -6,7 +6,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.accept_keywords /etc/portage/
+{{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable enlightenment-live
 - emaint sync -r enlightenment-live

@@ -1,5 +1,6 @@
 {{ define "portage_excludes" }}
 - ^/etc/ld.so.cache
+- ^/etc/ld.so.conf
 - ^/etc/portage/savedconfig
 - ^/var/cache/distfiles
 - ^/usr/portage/distfiles
@@ -19,6 +20,10 @@
 
 {{ define "portage_env" }}
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+{{end}}
+
+{{ define "portage_copy_package_files" }}
+- cp -rf package.* /etc/portage/
 {{end}}
 
 {{ define "portage_prelude_build" }}

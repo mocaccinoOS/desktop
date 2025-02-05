@@ -2,8 +2,7 @@
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.license /etc/portage/
-- cp -rf package.use /etc/portage/
+{{ template "portage_copy_package_files" . }}
 - emerge -1 media-video/isight-firmware-tools
 - cp AppleUSBVideoSupport /tmp
 steps:

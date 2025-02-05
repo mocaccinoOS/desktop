@@ -3,7 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
+{{ template "portage_copy_package_files" . }}
 steps:
 {{ template "portage_build" . }}
 - emerge -C dev-util/itstool

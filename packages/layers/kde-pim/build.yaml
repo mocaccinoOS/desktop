@@ -3,7 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
+{{ template "portage_copy_package_files" . }}
 # Remove kalarm from ebuilds, it pulls in vlc, not that
 - sed -i '/kalarm/d' /var/db/repos/gentoo/kde-apps/kdepim-meta/*.ebuild
 - ebuild "$(ls -v /var/db/repos/gentoo/kde-apps/kdepim-meta/*.ebuild | tail -n 1)" manifest

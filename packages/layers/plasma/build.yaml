@@ -3,7 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.* /etc/portage/
+{{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}

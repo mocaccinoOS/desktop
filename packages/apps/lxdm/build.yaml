@@ -3,16 +3,10 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.* /etc/portage/
+{{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-#- sed -i '/syslog/d' /lib/systemd/system/lightdm.service
-#- sed -i 's/#background=/background=\/usr\/share\/wallpapers\/mocaccino-wallpaper\/background.jpg/g' /etc/lightdm/lightdm-gtk-greeter.conf
-#- sed -i 's/#user-background=/user-background=false/g' /etc/lightdm/lightdm-gtk-greeter.conf
-#- sed -i 's/#xft-hintstyle=/xft-hintstyle=hintfull/g' /etc/lightdm/lightdm-gtk-greeter.conf
-#- sed -i 's/#xft-rgba=/xft-rgba=rgb/g' /etc/lightdm/lightdm-gtk-greeter.conf
-#- sed -i 's/#theme-name=/theme-name=Qogir-Dark/g' /etc/lightdm/lightdm-gtk-greeter.conf
 requires:
 - category: "layers"
   name: "X"

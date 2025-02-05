@@ -7,7 +7,7 @@ env:
 {{ template "portage_env" . }}
 - MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
-- cp -rf package.* /etc/portage/
+{{ template "portage_copy_package_files" . }}
 - cp -rf profile patches bashrc env /etc/portage/
 {{ if ne .Values.arch "amd64" }}
 - cp -rf make.conf.{{.Values.arch}} /etc/portage/make.conf

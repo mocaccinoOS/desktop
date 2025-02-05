@@ -4,9 +4,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp -rf package.use /etc/portage/
-- cp -rf package.accept_keywords /etc/portage/
-- cp -rf package.mask /etc/portage/
+{{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable thegreatmcpain
 - emaint sync -r thegreatmcpain

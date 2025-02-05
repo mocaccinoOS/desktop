@@ -5,7 +5,7 @@ env:
 prelude:
 # Because of a PDEPEND we need to have this installed in the build chroot
 - USE="gtk" emerge -1 sys-auth/polkit
-- cp -rf package.use /etc/portage/
+{{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
