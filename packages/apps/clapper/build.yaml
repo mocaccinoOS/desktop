@@ -1,0 +1,15 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf package.* /etc/portage/
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable guru
+- emaint sync -r guru
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"

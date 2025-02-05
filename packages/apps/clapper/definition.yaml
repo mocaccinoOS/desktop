@@ -1,0 +1,19 @@
+category: "apps"
+name: "clapper"
+version: "0.8.0"
+uri:
+  - https://github.com/Rafostar/clapper
+license: "GPL-3"
+description: "Modern and user-friendly media player"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    media-video/clapper
+provides:
+  - name: clapper
+    category: media-video
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
