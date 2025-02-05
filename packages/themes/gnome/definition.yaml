@@ -1,6 +1,6 @@
 category: "themes"
 name: "gnome"
-version: "0.1"
+version: "0.2"
 dashtoclock: "v62"
 requires:
 - category: "layers"

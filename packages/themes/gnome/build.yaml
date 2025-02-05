@@ -17,5 +17,6 @@ steps:
 - mv dash-to-panel@jderose9.github.com /package/usr/share/gnome-shell/extensions
 
 - cp -rf user /package/etc/dconf/profile/
+- cp -rf cursor /package/etc/dconf/db/local.d/00-cursor
 - cp -rf extensions /package/etc/dconf/db/local.d/00-extensions
 - cp -rf mocaccino /package/etc/dconf/db/local.d/01-mocaccino
