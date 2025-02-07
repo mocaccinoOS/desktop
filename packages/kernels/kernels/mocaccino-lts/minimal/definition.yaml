@@ -1,6 +1,6 @@
 name: mocaccino-lts-minimal
 category: kernel
-version: "6.6.74"
+version: "6.6.75"
 kernelprefix: kernel-vanilla
 arch: "x86_64"
 suffix: mocaccino
@@ -18,4 +18,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
-  package.version: "6.6.74"
+  package.version: "6.6.75"
