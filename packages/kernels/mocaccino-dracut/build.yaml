@@ -7,5 +7,4 @@ steps:
    cp -rfv mocaccino-dracut  /{{ .Values.name }}/usr/bin/ && \
    chmod +x /{{ .Values.name }}/usr/bin/mocaccino-dracut && \
    mkdir -p /{{ .Values.name }}/etc/dracut.conf.d/ && \
-   cp mocaccino.conf /{{ .Values.name }}/etc/dracut.conf.d/99-mocaccino.conf && \
-   cp compression.conf /{{ .Values.name }}/etc/dracut.conf.d/compression.conf
+   cp mocaccino.conf /{{ .Values.name }}/etc/dracut.conf.d/99-mocaccino.conf
