@@ -7,6 +7,8 @@ env:
 {{ template "portage_env" . }}
 - MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
+# Install our kernel-tuning-file
+- cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
 {{ template "portage_copy_package_files" . }}
 - cp -rf profile patches bashrc env /etc/portage/
 {{ if ne .Values.arch "amd64" }}
