@@ -24,7 +24,6 @@ media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite introspection truetype
 media-libs/imlib2 jpeg mp3 png shm webp zlib
-media-libs/libcanberra -gtk
 media-libs/libgphoto2 exif
 media-libs/libheif gdk-pixbuf rav1e x265
 media-libs/libjxl jpeg
@@ -59,7 +58,6 @@ x11-apps/mesa-progs egl
 x11-base/xorg-server -ipv6 nptl kdrive xephyr xvfb
 x11-drivers/xf86-video-intel dri sna uxa
 x11-libs/cairo glib
-x11-libs/gtk+:2 cups introspection
 x11-libs/gtk+:3 cups introspection
 x11-libs/libnotify introspection
 x11-libs/libdrm video_cards_amdgpu video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms
