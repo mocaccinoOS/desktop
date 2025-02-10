@@ -13,9 +13,9 @@ prelude:
 # We grab some binary packages to prevent pulling in dev-python/pillow through dev-python/docutils
 # dev-python/pillow is merged downstream in layers/X
 - EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1 dev-util/gdbus-codegen
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 requires:
