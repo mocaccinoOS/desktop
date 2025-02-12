@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-terminal" version="1.0">
+  <property name="font-name" type="string" value="Monospace 10"/>
+  <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
+  <property name="background-darkness" type="double" value="0.90000000000000002"/>
+</channel>
