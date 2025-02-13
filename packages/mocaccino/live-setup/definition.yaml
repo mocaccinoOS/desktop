@@ -1,6 +1,6 @@
 name: live-setup
 category: mocaccino
-version: "1.2+13"
+version: "1.2+14"
 
 requires:
 - name: "yip"
@@ -8,4 +8,7 @@ requires:
   version: ">=0"
 - name: "yip-systemd"
   category: "utils"
+  version: ">=0"
+- name: "intel_arc_compat"
+  category: "mocaccino"
   version: ">=0"

@@ -292,6 +292,7 @@ prepare() {
         "avahi-daemon"
         "cups"
         "cups-browsed"
+        "fix-intel-xorg"
     )
 
     for srv in "${SYSTEMD_SERVICES[@]}"; do
