@@ -3,7 +3,7 @@
     <property name="backdrop" type="empty">
         <property name="screen0" type="empty">
             <property name="monitor0" type="empty">
-                <property name="last-image" type="string" value="/usr/share/backgrounds/my-wallpaper.jpg"/>
+                <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-cp-dark.svg"/>
                 <property name="image-style" type="int" value="5"/> <!-- 0=Auto, 1=Centered, 2=Tiled, 3=Stretched, 4=Scaled, 5=Zoomed -->
                 <property name="image-show" type="bool" value="true"/>
             </property>
