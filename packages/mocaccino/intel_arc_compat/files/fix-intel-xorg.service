@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix Intel Xorg Configuration for ARC GPUs
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/fix-intel-xorg.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
