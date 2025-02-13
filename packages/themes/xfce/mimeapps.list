@@ -1,0 +1,20 @@
+[Default Applications]
+application/x-xz-compressed-tar=xarchiver.desktop
+application/zip=xarchiver.desktop
+text/x-log=org.xfce.mousepad.desktop
+image/jpeg=org.xfce.ristretto.desktop
+image/heif=org.xfce.ristretto.desktop
+image/png=org.xfce.ristretto.desktop
+video/quicktime=org.xfce.Parole.desktop
+
+[Added Associations]
+application/x-xz-compressed-tar=xarchiver.desktop;
+application/zip=xarchiver.desktop;
+text/x-log=org.xfce.mousepad.desktop;
+image/jpeg=org.xfce.ristretto.desktop;
+image/heif=org.xfce.ristretto.desktop;
+image/png=org.xfce.ristretto.desktop;
+video/quicktime=org.xfce.Parole.desktop;
+video/vnd.avi=org.xfce.Parole.desktop;
+video/x-matroska=org.xfce.Parole.desktop;
+video/mp4=org.xfce.Parole.desktop;

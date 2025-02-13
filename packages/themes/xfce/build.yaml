@@ -2,3 +2,4 @@ image: "alpine"
 prelude:
 steps:
 - mkdir -p /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/ && cp -r files/* /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/
+- cp mimeapps.list /etc/skel/.config/
