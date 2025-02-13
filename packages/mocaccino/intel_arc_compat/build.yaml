@@ -2,4 +2,4 @@ image: "alpine"
 prelude:
 steps:
 - cp -r files/fix-intel-xorg.sh /usr/local/bin/fix-intel-xorg.sh && chmod +x /usr/local/bin/fix-intel-xorg.sh
-- cp -r files/fix-intel-xorg.service /etc/systemd/system/fix-intel-xorg.service
+- mkdir -p /etc/systemd/system/ && cp -r files/fix-intel-xorg.service /etc/systemd/system/fix-intel-xorg.service
