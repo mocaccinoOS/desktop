@@ -4,9 +4,11 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- sed -i '/^EAPI=/a EGIT_COMMIT="65bd6fd9cc933adbc7581ae3bf629f84bf8be30c"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
+- sed -i '/^EAPI=/a EGIT_COMMIT="82e5f6cc167b689daf0204961d584e25302be0e0"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - sed -i '/^inherit / s/$/ git-r3/' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - ebuild /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild manifest
+# Be verbose, want full log
+- sed -i '/^EMERGE_DEFAULT_OPTS=/ s/--quiet//g' /etc/portage/make.conf
 steps:
 {{ template "portage_build" . }}
 requires:
