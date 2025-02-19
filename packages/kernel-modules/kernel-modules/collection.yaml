@@ -219,28 +219,28 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-  - category: "kernel-modules"
-    name: "rtl88x2bu-lts"
-    version: 20240108+81
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-misc/realtek-rtl88x2bu
-    provides:
-      - name: realtek-rtl88x2bu
-        category: net-misc
-        version: ">=0"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
+  # - category: "kernel-modules"
+  #   name: "rtl88x2bu-lts"
+  #   version: 20240108+81
+  #   lts: true
+  #   labels:
+  #     emerge.jobs: "3"
+  #     lts.kernel: "true"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-misc/realtek-rtl88x2bu
+  #   provides:
+  #     - name: realtek-rtl88x2bu
+  #       category: net-misc
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-lts-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
     version: 20240120+81
