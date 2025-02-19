@@ -31,7 +31,6 @@ prelude:
 {{- end}}
 - cp -rf package.license /etc/portage/
 - cp -rf package.accept_keywords /etc/portage/
-- cp -rf package.unmask /etc/portage/
 - emerge -t -o -j ${JOBS} {{ join " " .Values.emerge.packages }}
 steps:
 - emerge -t -j ${JOBS} {{ join " " .Values.emerge.packages }}
