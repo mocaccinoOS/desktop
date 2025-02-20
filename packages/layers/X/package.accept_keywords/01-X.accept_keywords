@@ -1,5 +1,7 @@
 # mesa keyword madness
 llvm-core/libclc ~amd64
+=media-libs/mesa-25.0.0 ~amd64
+=dev-util/mesa_clc-25.0.0 ~amd64
 
 dev-util/clinfo ~amd64
 =media-plugins/gst-plugins-aom-1.22.11 ~amd64
