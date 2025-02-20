@@ -73,7 +73,7 @@ media-libs/libjpeg-turbo static-libs
 media-libs/libmng lcms
 media-libs/libvpx postproc svc
 media-libs/opus custom-modes
-media-libs/tiff cxx jpeg lzma zlib zstd
+media-libs/tiff cxx jpeg lzma webp zlib zstd
 media-video/mjpegtools -gtk
 virtual/jpeg static-libs
 x11-base/xwayland libei video_cards_nvidia
