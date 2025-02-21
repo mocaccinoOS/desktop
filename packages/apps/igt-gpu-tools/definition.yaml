@@ -1,6 +1,6 @@
 category: "apps"
 name: "igt-gpu-tools"
-version: 1.29+19
+version: 1.29+20
 uri:
   - https://gitlab.freedesktop.org/drm/igt-gpu-tools
 license: "MIT"
