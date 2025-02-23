@@ -8,8 +8,6 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
-- sed -i 's|~cosmic-de/cosmic-wallpapers-9999|~cosmic-de/cosmic-wallpapers-${PV}|g' /var/db/repos/cosmic-overlay/cosmic-de/cosmic-session/cosmic-session-1.0.0_alpha6.ebuild
-- ebuild /var/db/repos/cosmic-overlay/cosmic-de/cosmic-session/cosmic-session-1.0.0_alpha6.ebuild manifest
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
