@@ -16,7 +16,7 @@ packages:
   - category: "kernel-sources"
     name: "mocaccino-sources"
     hidden: true
-    version: 6.13.3+1
+    version: "6.13.4"
     labels:
       autobump.revdeps: "true"
       autobump.string_replace: '{ "prefix": "" }'
@@ -26,4 +26,4 @@ packages:
         curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
       autobump.version_hook: |
         curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
-      package.version: "6.13.3"
+      package.version: "6.13.4"
