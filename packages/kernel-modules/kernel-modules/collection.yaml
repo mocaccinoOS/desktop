@@ -34,7 +34,7 @@ packages:
   #       version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.1.4+12
+    version: 7.1.4+13
     lts: true
     labels:
       emerge.jobs: "3"
@@ -71,7 +71,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 550.144.03+10
+    version: 550.144.03+11
     lts: true
     labels:
       emerge.jobs: "3"
@@ -99,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 550.144.03+10
+    version: 550.144.03+11
     lts: false
     labels:
       emerge.jobs: "3"
@@ -133,7 +133,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.7+14
+    version: 0.9.7+15
     lts: true
     labels:
       emerge.jobs: "3"
@@ -155,7 +155,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.3_p20240425+27
+    version: 0.3_p20240425+28
     lts: true
     labels:
       emerge.jobs: "3"
@@ -177,7 +177,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "rtl8812au-lts"
-    version: 20240510+1
+    version: 20240510+2
     lts: true
     labels:
       emerge.jobs: "3"
@@ -199,7 +199,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20240917+14
+    version: 20240917+15
     lts: true
     labels:
       emerge.jobs: "3"
@@ -243,7 +243,7 @@ packages:
   #       version: ">=0"
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
-    version: 20240120+83
+    version: 20240120+84
     lts: true
     labels:
       emerge.jobs: "3"

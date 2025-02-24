@@ -1,6 +1,6 @@
 category: "apps"
 name: "kitty"
-version: 0.39.1+1
+version: 0.39.1+2
 uri:
   - https://sw.kovidgoyal.net/kitty
 license: "GPL-3 ZLIB Apache-2.0 BSD BSD-2 MIT MPL-2.0"

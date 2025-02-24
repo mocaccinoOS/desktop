@@ -1,11 +1,10 @@
-app-crypt/gpgme qt6 -qt5
-app-crypt/qca qt6 gpg ssl -qt5
-app-text/poppler qt6 -qt5
-dev-libs/qtkeychain qt6 -qt5
+app-crypt/gpgme qt6
+app-crypt/qca qt6 gpg ssl
+app-text/poppler qt6
+dev-libs/qtkeychain qt6
 dev-python/pyqt6 multimedia qml quick webchannel websockets
 dev-python/pyqt6-webengine quick
 dev-qt/qt5compat:6 qml
-dev-qt/qt-creator:0 autotools cmake designer git lsp modeling qmldesigner qmlprofiler subversion valgrind examples
 dev-qt/qt3d:6 qml
 dev-qt/qtbase:6 accessibility cups libproxy mysql vulkan
 dev-qt/qtcharts:6 qml
@@ -13,8 +12,8 @@ dev-qt/qtdeclarative:6 accessibility vulkan
 dev-qt/qtmultimedia:6 gstreamer opengl qml vulkan
 dev-qt/qtquick3d:6 vulkan
 dev-qt/qtsensors:6 qml
-dev-qt/qttools:6 designer qdbus qml vulkan
+dev-qt/qttools:6 qdbus qml vulkan
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwebchannel:6 qml
 dev-qt/qtwebengine:6 accessibility pdfium qml
-sys-auth/polkit-qt qt6 -qt5
+sys-auth/polkit-qt qt6
