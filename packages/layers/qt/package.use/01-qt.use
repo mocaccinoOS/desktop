@@ -16,4 +16,4 @@ dev-qt/qttools:6 qdbus qml vulkan
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwebchannel:6 qml
 dev-qt/qtwebengine:6 accessibility pdfium qml
-sys-auth/polkit-qt qt6
+sys-auth/polkit-qt -qt5 qt6
