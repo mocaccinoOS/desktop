@@ -1,4 +1,7 @@
-gui-apps/gnome-console ~amd64
 app-editors/gnome-text-editor ~amd64
 app-text/libspelling ~amd64
 gnome-base/nautilus ~amd64
+gnome-extra/gnome-calculator ~amd64
+gnome-extra/gnome-system-monitor ~amd64
+gnome-extra/gnome-weather ~amd64
+gui-apps/gnome-console ~amd64
