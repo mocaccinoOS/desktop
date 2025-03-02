@@ -7,3 +7,5 @@ gnome-extra/gnome-calculator ~amd64
 gnome-extra/gnome-system-monitor ~amd64
 gnome-extra/gnome-weather ~amd64
 gui-apps/gnome-console ~amd64
+media-gfx/eog ~amd64
+x11-themes/gnome-backgrounds ~amd64
