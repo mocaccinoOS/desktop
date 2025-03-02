@@ -2,7 +2,7 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+251
+    version: 0+252
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
@@ -36,7 +36,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+277
+    version: 0+278
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"

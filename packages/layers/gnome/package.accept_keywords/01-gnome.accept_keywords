@@ -1,1 +1,4 @@
 gui-apps/gnome-console ~amd64
+app-editors/gnome-text-editor ~amd64
+app-text/libspelling ~amd64
+gnome-base/nautilus ~amd64

@@ -1,13 +1,13 @@
 category: "layers"
 name: "gnome"
-version: 46.2+11
+version: 46.2+12
 uri:
   - https://gnome.org
 license: "GPL-2+"
 description: "The GNOME desktop environment"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/brltty app-accessibility/flite app-accessibility/orca app-arch/file-roller app-arch/gnome-autoar app-crypt/seahorse app-editors/gnome-text-editor app-text/evince dev-libs/gom dev-libs/liblouis gnome-base/gdm gnome-base/gnome-control-center gnome-base/gnome-core-libs gnome-base/gnome-session gnome-base/gnome-settings-daemon gnome-base/gnome-shell gnome-base/nautilus gnome-extra/gnome-browser-connector gnome-extra/gnome-calculator gnome-extra/gnome-contacts gnome-extra/gnome-power-manager gnome-extra/gnome-shell-extensions gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-user-docs gnome-extra/gnome-weather gnome-extra/mousetweaks gnome-extra/nautilus-sendto gnome-extra/sushi gnome-extra/yelp gui-apps/gnome-console media-gfx/eog media-gfx/gnome-screenshot media-gfx/shotwell media-libs/clutter-gst media-libs/grilo media-libs/gupnp-dlna media-libs/libmediaart media-plugins/grilo-plugins media-plugins/gst-plugins-gtk media-video/totem net-libs/dleyna net-libs/libcloudproviders net-libs/gupnp-av net-libs/liboauth net-wireless/gnome-bluetooth sys-apps/baobab sys-apps/xdg-desktop-portal-gnome sys-auth/fprintd sys-auth/libfprint x11-themes/gnome-backgrounds x11-wm/mutter"
+  emerge.packages: "app-accessibility/brltty app-accessibility/flite app-accessibility/orca app-arch/file-roller app-arch/gnome-autoar app-crypt/seahorse app-editors/gnome-text-editor app-text/evince app-text/libspelling dev-libs/gom dev-libs/liblouis gnome-base/gdm gnome-base/gnome-control-center gnome-base/gnome-core-libs gnome-base/gnome-session gnome-base/gnome-settings-daemon gnome-base/gnome-shell gnome-base/nautilus gnome-extra/gnome-browser-connector gnome-extra/gnome-calculator gnome-extra/gnome-contacts gnome-extra/gnome-power-manager gnome-extra/gnome-shell-extensions gnome-extra/gnome-system-monitor gnome-extra/gnome-tweaks gnome-extra/gnome-user-docs gnome-extra/gnome-weather gnome-extra/mousetweaks gnome-extra/nautilus-sendto gnome-extra/sushi gnome-extra/yelp gui-apps/gnome-console media-gfx/eog media-gfx/gnome-screenshot media-gfx/shotwell media-libs/clutter-gst media-libs/grilo media-libs/gupnp-dlna media-libs/libmediaart media-plugins/grilo-plugins media-plugins/gst-plugins-gtk media-video/totem net-libs/dleyna net-libs/libcloudproviders net-libs/gupnp-av net-libs/liboauth net-wireless/gnome-bluetooth sys-apps/baobab sys-apps/xdg-desktop-portal-gnome sys-auth/fprintd sys-auth/libfprint x11-themes/gnome-backgrounds x11-wm/mutter"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -68,6 +68,9 @@ provides:
     category: app-eselect
     version: '>=0'
   - name: evince
+    category: app-text
+    version: '>=0'
+  - name: libspelling
     category: app-text
     version: '>=0'
   - name: yelp-tools
