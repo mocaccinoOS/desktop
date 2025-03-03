@@ -1,3 +1,4 @@
 =dev-lang/spidermonkey-115.13.0 ~amd64
 =gui-libs/libadwaita-1.6.2 ~amd64
 =gui-libs/vte-0.78.3 ~amd64
+=net-libs/gnome-online-accounts-3.52.3.1 ~amd64
