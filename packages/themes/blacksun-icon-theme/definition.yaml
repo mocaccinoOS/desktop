@@ -1,0 +1,9 @@
+category: "themes"
+name: "blacksun-icon-theme"
+version: "0.1"
+uri:
+  - https://github.com/SethStormR/Black-Sun
+license: "GPL-3"
+description: "Black Sun is an icon theme for Cosmic DE, XFCE, Gnome, Cinnamon and Budgie DE."
+labels:
+requires:

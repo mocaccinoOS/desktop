@@ -1,0 +1,6 @@
+image: "alpine"
+package_dir: "/package"
+steps:
+- wget https://github.com/SethStormR/Black-Sun/blob/main/Black%20Sun.tar.gz
+- mkdir -p /package/usr/share/icons/BlackSun
+- tar -xvzf Black\ Sun.tar.gz -C /package/usr/share/icons/BlackSun --strip-components=1
