@@ -2,5 +2,5 @@ image: "alpine"
 prelude:
 - wget -O BlackSun.tar.gz https://github.com/SethStormR/Black-Sun/raw/refs/heads/main/Black%20Sun.tar.gz
 steps:
-- mkdir -p /usr/share/icons
-- tar -xvzf BlackSun.tar.gz -C /usr/share/icons --strip-components=1
+- mkdir -p "/usr/share/icons/Black Sun"
+- tar -xvzf BlackSun.tar.gz -C "/usr/share/icons/Black Sun" --strip-components=1
