@@ -5,7 +5,7 @@ requires:
 env:
 - PATH=$PATH:/usr/local/go/bin
 - GOPATH=/luetbuild/go
-- GO111MODULE=off
+- GO111MODULE=on
 - CGO_ENABLED=0
 
 prelude:
