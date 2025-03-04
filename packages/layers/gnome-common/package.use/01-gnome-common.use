@@ -10,7 +10,7 @@ dev-libs/libgweather vala
 dev-libs/libportal gtk -qt5
 gnome-base/gvfs afp archive fuse gnome-online-accounts google ios keyring mtp nfs samba udisks
 gnome-base/libgtop introspection
-gnome-extra/evolution-data-server oauth kerberos vala
+gnome-extra/evolution-data-server oauth oauth-gtk4 kerberos vala
 gnome-extra/polkit-gnome introspection
 media-libs/cogl gles2
 media-libs/gexiv2 introspection
