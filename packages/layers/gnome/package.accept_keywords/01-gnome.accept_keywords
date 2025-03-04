@@ -3,10 +3,12 @@ app-text/libspelling ~amd64
 gnome-base/gdm ~amd64
 gnome-base/gnome-control-center ~amd64
 gnome-base/gnome-session ~amd64
+gnome-base/gnome-settings-daemon ~amd64
 gnome-base/nautilus ~amd64
 gnome-extra/gnome-calculator ~amd64
 gnome-extra/gnome-contacts ~amd64
 gnome-extra/gnome-system-monitor ~amd64
+gnome-extra/gnome-user-docs ~amd64
 gnome-extra/gnome-weather ~amd64
 gui-apps/gnome-console ~amd64
 media-gfx/eog ~amd64
