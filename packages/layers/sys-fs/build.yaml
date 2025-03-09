@@ -10,14 +10,13 @@ prelude:
 - cp -rf patches /etc/portage/
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge -1 dev-util/ccache
-# We grab some binary packages to prevent pulling in dev-python/pillow through dev-python/docutils
-# dev-python/pillow is merged downstream in layers/X
-- EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1 dev-util/gdbus-codegen
+- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
+- rm /etc/portage/package.use/temp.use
 requires:
 - category: "layers"
   name: "system-x"
