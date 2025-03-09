@@ -1,2 +1,2 @@
 =dev-libs/glib-2.82.5 ~amd64
-=dev-libs/gobject-introspection-common ~amd64
+=dev-libs/gobject-introspection-common-1.82.0 ~amd64
