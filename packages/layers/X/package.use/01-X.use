@@ -12,6 +12,7 @@ dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
 dev-python/pillow lcms truetype webp
 dev-python/pygobject introspection
+gui-libs/gtk vulkan
 # disable extra to free up 300MB
 media-fonts/noto -cjk -extra
 media-gfx/graphite2 perl
