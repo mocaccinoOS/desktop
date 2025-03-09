@@ -21,16 +21,13 @@ prelude:
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
-# We grab some binary packages to prevent pulling in dev-python/pillow through dev-python/docutils
-# dev-python/pillow is merged downstream in layers/X
-- EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" emerge -1 dev-libs/glib dev-util/glib-utils dev-util/gdbus-codegen
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build_gentoo_binary" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Clean up build deps
-- emerge -C app-text/po4a dev-lang/yasm dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
+- emerge -C app-text/po4a dev-lang/yasm dev-python/docutils dev-python/pillow dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
 - emerge --depclean
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
