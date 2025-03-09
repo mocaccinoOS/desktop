@@ -21,7 +21,7 @@ prelude:
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
-- USE="-jpeg -tiff" emerge -1 dev-python/pillow dev-python/docutils
+- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
@@ -32,6 +32,7 @@ steps:
 - emerge --depclean
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
+- rm /etc/portage/package.use/temp.use
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
