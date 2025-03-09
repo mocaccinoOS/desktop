@@ -1,2 +1,1 @@
-# prevent pulling in llvm 18
-=sys-fs/bcachefs-tools-1.13.0-r2 ~amd64
+# placeholder
