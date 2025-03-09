@@ -2,7 +2,6 @@
 llvm-core/libclc ~amd64
 =media-libs/mesa-25.0.0 ~amd64
 =dev-util/mesa_clc-25.0.0 ~amd64
-==dev-build/meson-1.7.0 ~amd64
 
 dev-util/clinfo ~amd64
 
