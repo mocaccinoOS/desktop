@@ -20,8 +20,6 @@ net-wireless/bluez obex
 sci-libs/hdf5 cxx fortran szip -threads
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
-# 2024-07-17: Joost Ruis: Keeps failing with docutils.
-sys-fs/btrfs-progs -man
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs

@@ -21,7 +21,7 @@ prelude:
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
-- USE="-jpeg -tiff" emerge -1 dev-python/pillow
+- USE="-jpeg -tiff" emerge -1 dev-python/pillow dev-python/docutils
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
