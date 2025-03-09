@@ -25,7 +25,6 @@ sys-fs/btrfs-progs -man
 # Require mkfs.dosfs
 sys-fs/dosfstools compat
 sys-fs/ntfs3g suid ntfsprogs
-sys-fs/reiser4progs static-libs
 sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/xfsprogs libedit
 sys-fs/zfs kernel-builtin
