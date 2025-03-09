@@ -1216,9 +1216,6 @@ provides:
   - name: perl-CPAN-Meta-Requirements
     category: virtual
     version: '>=0'
-  - name: perl-CPAN-Meta-YAML
-    category: virtual
-    version: '>=0'
   - name: perl-Data-Dumper
     category: virtual
     version: '>=0'
@@ -1237,13 +1234,7 @@ provides:
   - name: perl-ExtUtils-CBuilder
     category: virtual
     version: '>=0'
-  - name: perl-ExtUtils-Install
-    category: virtual
-    version: '>=0'
   - name: perl-ExtUtils-MakeMaker
-    category: virtual
-    version: '>=0'
-  - name: perl-ExtUtils-Manifest
     category: virtual
     version: '>=0'
   - name: perl-ExtUtils-ParseXS
@@ -1283,9 +1274,6 @@ provides:
     category: virtual
     version: '>=0'
   - name: perl-Parse-CPAN-Meta
-    category: virtual
-    version: '>=0'
-  - name: perl-Perl-OSType
     category: virtual
     version: '>=0'
   - name: perl-podlators
