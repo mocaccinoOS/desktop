@@ -9,7 +9,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- wget https://raw.githubusercontent.com/gentoo/gentoo/refs/heads/master/dev-util/spirv-headers/spirv-headers-1.4.304.0.ebuild /var/db/repos/gentoo/dev-util/spirv-headers/spirv-headers-1.4.304.0.ebuild
+- wget https://raw.githubusercontent.com/gentoo/gentoo/refs/heads/master/dev-util/spirv-headers/spirv-headers-1.4.304.0.ebuild -O /var/db/repos/gentoo/dev-util/spirv-headers/spirv-headers-1.4.304.0.ebuild
 - ebuild /var/db/repos/gentoo/dev-util/spirv-headers/spirv-headers-1.4.304.0.ebuild manifest
 - emerge -1 =dev-util/spirv-headers-1.4.304.0
 - USE="-webp" emerge -1 media-libs/tiff && emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
