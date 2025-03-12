@@ -18,6 +18,8 @@ prelude:
 {{ end }}
 # Drop python 3.13
 - emerge -C dev-lang/python:3.13
+# avoid circular deps
+- USE="-http2" emerge -1 net-misc/curl
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
