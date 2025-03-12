@@ -1,1 +1,3 @@
-# placeholder
+# Do not pull in hyprland-qtutils
+>=gui-wm/hyprland-0.46.2-r1
+
