@@ -23,4 +23,3 @@ kde-frameworks/kguiaddons:5 kf6compat
 kde-frameworks/kglobalaccel:5 kf6compat
 kde-frameworks/kwallet:5 kf6compat
 kde-plasma/libplasma:5 kf6compat
-media-libs/libprojectm:0 gles2 sdl qt5
