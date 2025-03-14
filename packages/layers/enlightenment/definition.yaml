@@ -1,6 +1,6 @@
 category: "layers"
 name: "enlightenment"
-version: "0.27.0"
+version: 0.27.0+1
 uri:
   - https://www.enlightenment.org
 license: "BSD-2"
@@ -8,7 +8,7 @@ description: "Enlightenment DR19 window manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-editors/ecrire dev-libs/check dev-libs/efl media-gfx/ephoto media-video/rage sys-process/evisum x11-wm/enlightenment x11-terms/terminology
+    app-editors/ecrire dev-libs/check dev-libs/efl dev-libs/libunibreak media-gfx/ephoto media-video/rage sys-process/evisum x11-wm/enlightenment x11-terms/terminology
 requires:
   - category: "layers"
     name: "X"
@@ -21,6 +21,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: efl
+    category: dev-libs
+    version: '>=0'
+  - name: libunibreak
     category: dev-libs
     version: '>=0'
   - name: ephoto
