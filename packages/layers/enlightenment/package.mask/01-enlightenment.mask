@@ -1,0 +1,3 @@
+# pulls in dev-libs/libunibreak
+>=dev-libs/efl-1.28.0
+
