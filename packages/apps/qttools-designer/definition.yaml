@@ -1,6 +1,6 @@
 category: "apps"
 name: "qttools-designer"
-version: "0.1"
+version: "6.8.2"
 uri:
   - https://www.qt.io
 license: "LGPL-2.1 GPL-2"
