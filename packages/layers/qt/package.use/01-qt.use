@@ -12,7 +12,7 @@ dev-qt/qtdeclarative:6 accessibility vulkan
 dev-qt/qtmultimedia:6 gstreamer opengl qml vulkan
 dev-qt/qtquick3d:6 vulkan
 dev-qt/qtsensors:6 qml
-dev-qt/qttools:6 qdbus qml vulkan
+dev-qt/qttools:6 designer qdbus qml vulkan
 dev-qt/qtwayland:6 accessibility vulkan
 dev-qt/qtwebchannel:6 qml
 dev-qt/qtwebengine:6 accessibility pdfium qml
