@@ -2,14 +2,15 @@
 - ^/etc/ld.so.cache
 - ^/etc/ld.so.conf
 - ^/etc/portage/savedconfig
-- ^/var/cache/distfiles
-- ^/usr/portage/distfiles
-- ^/var/db/repos
-- ^/var/cache/edb
-- ^/usr/portage
-- ^/usr/tmp/portage
 - ^/usr/lib/cmake
+- ^/usr/lib64/cmake
+- ^/usr/portage
+- ^/usr/portage/distfiles
+- ^/usr/tmp/portage
+- ^/var/cache/distfiles
+- ^/var/cache/edb
 - ^/var/db/pkg
+- ^/var/db/repos
 - ^/var/lib/portage
 - ^/var/log
 # devel split
