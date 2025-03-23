@@ -1,28 +1,18 @@
 #!/bin/bash
 
-
 if ! command -v flatpak &> /dev/null; then
     echo "Flatpak is not installed. Please install Flatpak first."
-    return 1  # Exit if Flatpak is not installed
+    exit 1  # Exit if Flatpak is not installed
 fi
 
-# Path to the flatpak repo config file
-FLATPAK_CONFIG_FILE="/var/lib/flatpak/repo/config"
+# Path to the system-wide flatpak repo config file
+FLATPAK_CONFIG_DIR="/etc/flatpak/repositories.d"
+FLATPAK_CONFIG_FILE="${FLATPAK_CONFIG_DIR}/flathub.conf"
 
-# Retry mechanism to wait for the file to exist
-RETRIES=10
-WAIT_TIME=2
-for ((i=1; i<=RETRIES; i++)); do
-    if [ -f "$FLATPAK_CONFIG_FILE" ]; then
-        break
-    fi
-    echo "Waiting for $FLATPAK_CONFIG_FILE to be created... ($i/$RETRIES)"
-    sleep $WAIT_TIME
-done
-
-if [ ! -f "$FLATPAK_CONFIG_FILE" ]; then
-    echo "Error: $FLATPAK_CONFIG_FILE does not exist after $RETRIES attempts."
-    exit 1
+# Ensure the repositories directory exists
+if [ ! -d "$FLATPAK_CONFIG_DIR" ]; then
+    echo "Creating directory $FLATPAK_CONFIG_DIR for Flatpak repository configurations..."
+    sudo mkdir -p "$FLATPAK_CONFIG_DIR"
 fi
 
 # Check if flathub is already present in the config
@@ -30,8 +20,7 @@ if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE"; then
     echo "Flathub repository not found, adding it..."
 
     # Append Flathub configuration to the file
-    cat >> "$FLATPAK_CONFIG_FILE" <<EOF
-
+    sudo tee -a "$FLATPAK_CONFIG_FILE" <<EOF
 [remote "flathub"]
 url=https://dl.flathub.org/repo/
 xa.title=Flathub

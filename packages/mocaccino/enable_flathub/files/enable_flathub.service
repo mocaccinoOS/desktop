@@ -1,9 +1,8 @@
 [Unit]
 Description=Enable flathub
-After=network.target flatpak.target
+After=network.target
 
 [Service]
-ExecStartPre=/bin/bash -c 'until [ -f /var/lib/flatpak/repo/config ]; do sleep 1; done'
 ExecStart=/usr/local/bin/enable_flathub.sh
 Restart=always
 User=root
