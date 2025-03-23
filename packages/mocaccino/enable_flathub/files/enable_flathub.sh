@@ -12,20 +12,20 @@ FLATPAK_CONFIG_FILE="${FLATPAK_CONFIG_DIR}/flathub.conf"
 # Ensure the repositories directory exists
 if [ ! -d "$FLATPAK_CONFIG_DIR" ]; then
     echo "Creating directory $FLATPAK_CONFIG_DIR for Flatpak repository configurations..."
-    sudo mkdir -p "$FLATPAK_CONFIG_DIR"
+    mkdir -p "$FLATPAK_CONFIG_DIR"
 fi
 
 # Check if flathub is already present in the config
 if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE"; then
     echo "Flathub repository not found, adding it..."
 
-    # Append Flathub configuration to the file
-    sudo tee -a "$FLATPAK_CONFIG_FILE" <<EOF
+    # Append the entire Flathub configuration in one echo statement
+    cat <<EOF >> "$FLATPAK_CONFIG_FILE"
 [remote "flathub"]
 url=https://dl.flathub.org/repo/
-xa.title=Flathub
 gpg-verify=true
 gpg-verify-summary=true
+xa.title=Flathub
 xa.comment=Central repository of Flatpak applications
 xa.description=Central repository of Flatpak applications
 xa.icon=https://dl.flathub.org/repo/logo.svg
