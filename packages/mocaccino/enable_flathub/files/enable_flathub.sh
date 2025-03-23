@@ -5,6 +5,12 @@ if ! command -v flatpak &> /dev/null; then
     exit 1  # Exit if Flatpak is not installed
 fi
 
+# Wait until flatpak is fully initialized
+echo "Waiting for Flatpak to initialize..."
+until flatpak --version &>/dev/null; do
+    sleep 1
+done
+
 # Path to the system-wide flatpak repo config file
 FLATPAK_CONFIG_DIR="/etc/flatpak/repositories.d"
 FLATPAK_CONFIG_FILE="${FLATPAK_CONFIG_DIR}/flathub.conf"
