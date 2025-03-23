@@ -1,6 +1,7 @@
 [Unit]
 Description=Enable flathub
 After=network.target network-online.target
+Wants=network-online.target
 
 [Service]
 ExecStart=/usr/local/bin/enable_flathub.sh
