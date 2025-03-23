@@ -32,6 +32,8 @@ xa.icon=https://dl.flathub.org/repo/logo.svg
 xa.homepage=https://flathub.org/
 EOF
 
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
     # Inform the user that the remote was added
     echo "Flathub repository added successfully."
 else
