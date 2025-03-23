@@ -1,0 +1,5 @@
+image: "alpine"
+prelude:
+steps:
+- cp -r files/enable_flathub.sh /usr/local/bin/enable_flathub.sh && chmod +x /usr/local/bin/enable_flathub.sh
+- mkdir -p /etc/systemd/system/ && cp -r files/enable_flathub.service /etc/systemd/system/enable_flathub.service

@@ -1,6 +1,6 @@
 name: live-setup
 category: mocaccino
-version: "1.2+14"
+version: "1.8+2"
 
 requires:
 - name: "yip"
@@ -10,5 +10,8 @@ requires:
   category: "utils"
   version: ">=0"
 - name: "intel_arc_compat"
+  category: "mocaccino"
+  version: ">=0"
+- name: "enable_flathub"
   category: "mocaccino"
   version: ">=0"

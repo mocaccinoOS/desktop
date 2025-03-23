@@ -293,6 +293,7 @@ prepare() {
         "cups"
         "cups-browsed"
         "fix-intel-xorg"
+        "enable_flathub"
     )
 
     for srv in "${SYSTEMD_SERVICES[@]}"; do

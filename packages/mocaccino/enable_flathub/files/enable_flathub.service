@@ -1,0 +1,13 @@
+[Unit]
+Description=Enable flathub
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/enable_flathub.sh
+Restart=always
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+category: "mocaccino"
+name: "enable_flathub"
+version: "0.1"
+labels:
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
