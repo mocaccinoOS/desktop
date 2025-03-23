@@ -9,6 +9,17 @@ fi
 # Path to the flatpak repo config file
 FLATPAK_CONFIG_FILE="/var/lib/flatpak/repo/config"
 
+# Retry mechanism to wait for the file to exist
+RETRIES=10
+WAIT_TIME=2
+for ((i=1; i<=RETRIES; i++)); do
+    if [ -f "$FLATPAK_CONFIG_FILE" ]; then
+        break
+    fi
+    echo "Waiting for $FLATPAK_CONFIG_FILE to be created... ($i/$RETRIES)"
+    sleep $WAIT_TIME
+done
+
 # Check if flathub is already present in the config
 if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE"; then
     echo "Flathub repository not found, adding it..."
