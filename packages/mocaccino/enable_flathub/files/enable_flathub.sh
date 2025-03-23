@@ -20,6 +20,11 @@ for ((i=1; i<=RETRIES; i++)); do
     sleep $WAIT_TIME
 done
 
+if [ ! -f "$FLATPAK_CONFIG_FILE" ]; then
+    echo "Error: $FLATPAK_CONFIG_FILE does not exist after $RETRIES attempts."
+    exit 1
+fi
+
 # Check if flathub is already present in the config
 if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE"; then
     echo "Flathub repository not found, adding it..."
