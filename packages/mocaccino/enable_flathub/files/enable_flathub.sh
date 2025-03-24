@@ -22,7 +22,7 @@ if [ ! -d "$FLATPAK_CONFIG_DIR" ]; then
 fi
 
 # Check if flathub is already present in the config
-if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE"; then
+if ! grep -q '\[remote "flathub"\]' "$FLATPAK_CONFIG_FILE" 2>/dev/null; then
     echo "Flathub repository not found, adding it..."
 
     # Append the entire Flathub configuration in one echo statement

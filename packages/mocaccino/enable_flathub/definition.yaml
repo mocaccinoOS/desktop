@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "enable_flathub"
-version: "0.8"
+version: "1.0"
 labels:
 requires:
   - category: "layers"
