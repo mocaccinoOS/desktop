@@ -281,3 +281,6 @@ packages:
   - category: "layers"
     name: "firmware-vxge"
     version: 2+82
+  - category: "layers"
+    name: "firmware-xe"
+    version: 2+82
