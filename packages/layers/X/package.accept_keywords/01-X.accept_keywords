@@ -1,10 +1,9 @@
 # mesa keyword madness
 llvm-core/libclc ~amd64
-=media-libs/mesa-25.0.1 ~amd64
-=dev-util/mesa_clc-25.0.1 ~amd64
+=media-libs/mesa-25.0.2 ~amd64
+=dev-util/mesa_clc-25.0.2 ~amd64
 
 dev-util/clinfo ~amd64
 
-# gtk4 / gnome 47
-=gui-libs/gtk-4.16.12-r1 ~amd64
+# gnome 47
 =gnome-base/gsettings-desktop-schemas-47.1 ~amd64
