@@ -24,7 +24,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+274
+    version: 0+275
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
