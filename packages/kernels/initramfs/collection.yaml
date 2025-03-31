@@ -2,7 +2,7 @@ packages:
   - category: "kernel"
     name: "mocaccino-initramfs"
     modules_name: "mocaccino-modules"
-    version: 6.13.4+3
+    version: "6.13.4"
     git_sha: e80e77438c627981b266734c03e23dcf8a60014e
     golang_version: "1.19.1"
     arch: "amd64"
