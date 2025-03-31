@@ -26,6 +26,10 @@ prelude:
 - cp -rf init $GOPATH/src/github.com/u-root/u-root/cmds/core/init
 
 steps:
+# Manually replace go-internal before fetching dependencies
+- rm -rf $GOPATH/src/github.com/rogpeppe/go-internal
+- |
+  git clone --branch v1.9.0 https://github.com/rogpeppe/go-internal.git $GOPATH/src/github.com/rogpeppe/go-internal
 
 - go get github.com/rogpeppe/go-internal@v1.9.0
 # grab deps library for udev probe init functionalities
