@@ -27,6 +27,7 @@ prelude:
 
 steps:
 
+- go get github.com/rogpeppe/go-internal@v1.9.0
 # grab deps library for udev probe init functionalities
 - go get github.com/pilebones/go-udev
 
