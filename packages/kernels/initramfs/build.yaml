@@ -29,7 +29,6 @@ steps:
 
 # grab deps library for udev probe init functionalities
 - go get github.com/pilebones/go-udev
-- go get github.com/rogpeppe/go-internal@v1.9.0
 
 - mkdir modules_copy
 - find /luetbuild/modules/usr/lib/modules/**/kernel/fs  -exec cp {} -r --parents ./modules_copy \;
