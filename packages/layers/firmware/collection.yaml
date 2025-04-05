@@ -52,6 +52,9 @@ packages:
       - category: "layers"
         name: "firmware-rtlwifi"
         version: ">=0"
+      - category: "layers"
+        name: "firmware-xe"
+        version: ">=0"
     provides:
       - name: b43-firmware
         category: sys-firmware
