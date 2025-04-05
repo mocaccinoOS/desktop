@@ -1,2 +1,1 @@
-# currently fails
->=xfce-base/xfce4-panel-4.20.3
+# placeholder
