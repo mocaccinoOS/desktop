@@ -1,6 +1,6 @@
 category: "layers"
 name: "qemu"
-version: 9.1.2+6
+version: 9.1.2+7
 uri:
   - https://www.qemu.org
 license: "GPL-2 LGPL-2 BSD-2"
