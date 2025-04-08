@@ -5,7 +5,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- emerge -1 sys-devel/gcc:13 && gcc-config x86_64-pc-linux-gnu-13.3.0
+- emerge -1 sys-devel/gcc:13 && gcc-config x86_64-pc-linux-gnu-13 && . /etc/profile
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
