@@ -1,4 +1,6 @@
 dev-build/just ~amd64
+# currently required by cosmic-de/cosmic-applets-1.0.0_alpha7
+=dev-lang/rust-bin-9999 **
 
 # overlay packages
 =cosmic-de/cosmic-applets-1.0.0_alpha7 ~amd64
