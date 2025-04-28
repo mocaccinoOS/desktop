@@ -18,7 +18,7 @@ dev-build/just ~amd64
 =cosmic-de/cosmic-player-1.0.0_alpha7 ~amd64
 =cosmic-de/cosmic-randr-1.0.0_alpha7 ~amd64
 =cosmic-de/cosmic-screenshot-1.0.0_alpha7 ~amd64
-=cosmic-de/cosmic-session-1.0.0_alpha7-r1 ~amd64
+=cosmic-de/cosmic-session-1.0.0_alpha7 ~amd64
 =cosmic-de/cosmic-settings-1.0.0_alpha7 ~amd64
 =cosmic-de/cosmic-settings-daemon-1.0.0_alpha7 ~amd64
 =cosmic-de/cosmic-term-1.0.0_alpha7 ~amd64
