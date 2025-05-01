@@ -1,4 +1,5 @@
 app-text/poppler qt5 -qt6
+app-crypt/qca qt5 -qt6
 dev-python/pyqt5 declarative gui help multimedia network webchannel webkit webengine websockets widgets printsupport sql xmlpatterns
 dev-qt/qt3d:5 qml
 dev-qt/linguist-tools:5 qml
