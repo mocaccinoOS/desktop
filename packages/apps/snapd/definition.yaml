@@ -1,6 +1,6 @@
 category: "apps"
 name: "snapd"
-version: 2.63+2
+version: 2.63+3
 uri:
   - http://snapcraft.io
 license: "GPL-3 Apache-2.0 BSD BSD-2 LGPL-3-with-linking-exception MIT"
@@ -8,7 +8,7 @@ description: "Service and tools for management of snap packages"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-containers/snapd sec-policy/apparmor-profiles sys-apps/apparmor sys-libs/libapparmor
+    app-containers/snapd sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
 provides:
   - name: snapd
     category: app-containers
@@ -17,6 +17,9 @@ provides:
     category: sec-policy
     version: '>=0'
   - name: apparmor
+    category: sys-apps
+    version: '>=0'
+  - name: apparmor-utils
     category: sys-apps
     version: '>=0'
   - name: libapparmor
