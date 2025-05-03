@@ -8,10 +8,16 @@ description: "Service and tools for management of snap packages"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-containers/snapd
+    app-containers/snapd sec-policy/apparmor-profiles sys-apps/apparmor
 provides:
   - name: snapd
     category: app-containers
+    version: '>=0'
+  - name: apparmor-profiles
+    category: sec-policy
+    version: '>=0'
+  - name: apparmor
+    category: sys-apps
     version: '>=0'
 requires:
   - category: "layers"
