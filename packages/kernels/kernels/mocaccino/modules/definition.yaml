@@ -1,6 +1,6 @@
 name: mocaccino-modules
 category: kernel
-version: 6.13.4+1
+version: 6.13.4+2
 prefix: linux
 suffix: mocaccino
 arch: "x86_64"
