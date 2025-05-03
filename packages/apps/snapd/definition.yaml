@@ -1,0 +1,19 @@
+category: "apps"
+name: "snapd"
+version: "2.63"
+uri:
+  - http://snapcraft.io
+license: "GPL-3 Apache-2.0 BSD BSD-2 LGPL-3-with-linking-exception MIT"
+description: "Service and tools for management of snap packages"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    app-containers/snapd
+provides:
+  - name: snapd
+    category: app-containers
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
