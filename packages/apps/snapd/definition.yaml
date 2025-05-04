@@ -8,7 +8,7 @@ description: "Service and tools for management of snap packages"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    app-containers/snapd::Miezhiko dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
+    app-containers/snapd dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
 provides:
   - name: snapd
     category: app-containers
