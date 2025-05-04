@@ -1,6 +1,6 @@
 name: mocaccino-lts-modules
 category: kernel
-version: 6.12.15+1
+version: 6.12.15+2
 prefix: linux
 arch: "x86_64"
 suffix: mocaccino

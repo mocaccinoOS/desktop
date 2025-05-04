@@ -1,6 +1,6 @@
 name: mocaccino-lts-full
 category: kernel
-version: 6.12.15+1
+version: 6.12.15+2
 requires:
   - name: "mocaccino-lts-modules"
     category: "kernel"
