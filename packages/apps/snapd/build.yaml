@@ -3,6 +3,9 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable Miezhiko
+- emaint sync -r Miezhiko
 # Because of a PDEPEND we need to have this installed in the build chroot
 - USE="gtk" emerge -1 sys-auth/polkit
 {{ template "portage_copy_package_files" . }}
