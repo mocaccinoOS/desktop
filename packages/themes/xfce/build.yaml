@@ -1,5 +1,5 @@
 image: "alpine"
 prelude:
 steps:
-- mkdir -p /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml && for file in files/*.xml; do name=$(basename "$file"); if [[ "$name" != "default.xml" ]]; then cp "$file" /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/"$name"; fi; done
-- mkdir -p /etc/skel/.config/xfce4/panel && cp files/default.xml /etc/skel/.config/xfce4/panel/default.xml
+- mkdir -p /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/ && cp -r files/* /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/
+- cp mimeapps.list /etc/skel/.config/
