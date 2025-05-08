@@ -1,5 +1,5 @@
 image: "alpine"
 prelude:
 steps:
-  - mkdir -p /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/ && for file in files/*.xml; do name=$(basename "$file"); if [[ "$name" != "default.xml" ]]; then cp "$file" /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/"$name"; fi; done
-  - mkdir -p /etc/xdg/xfce4/panel/ && cp files/default.xml /etc/xdg/xfce4/panel/default.xml
+- mkdir -p /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/ && for file in files/*.xml; do name=$(basename "$file"); if [[ "$name" != "default.xml" ]]; then cp "$file" /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/"$name"; fi; done
+- mkdir -p /etc/xdg/xfce4/panel/ && cp files/default.xml /etc/xdg/xfce4/panel/default.xml
