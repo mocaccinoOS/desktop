@@ -1,6 +1,6 @@
 image: "alpine"
 prelude:
-steps: |
+  steps: |
     mkdir -p /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/
     for file in files/*.xml; do
         name=$(basename "$file")
