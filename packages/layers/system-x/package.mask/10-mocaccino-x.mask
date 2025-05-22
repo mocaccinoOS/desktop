@@ -4,3 +4,7 @@ dev-lang/python:3.13
 # 2024-07-11: Joost Ruis
 # It looks like numpy2 breaks boost compilation
 dev-python/numpy:0/2
+
+# 2025-05-23: Joost Ruis
+# New Curl breaks cmake
+>net-misc/curl-8.12.1
