@@ -1,0 +1,3 @@
+# 2025-05-24 Joost Ruis: requires >=dev-libs/libxmlb-0.3.21 introspection
+# Must change this in layers/X next cycle
+>=gnome-extra/nemo-6.4.5
