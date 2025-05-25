@@ -5,9 +5,6 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- emerge -1 app-eselect/eselect-repository
-- eselect repository enable thegreatmcpain
-- emaint sync -r thegreatmcpain
 # needed for hyprpaper
 - eselect repository enable wayland-desktop
 - emaint sync -r wayland-desktop
@@ -17,7 +14,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- eselect repository remove thegreatmcpain wayland-desktop guru
+- eselect repository remove wayland-desktop guru
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
