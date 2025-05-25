@@ -5,6 +5,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
 # needed for hyprpaper
 - eselect repository enable wayland-desktop
 - emaint sync -r wayland-desktop
