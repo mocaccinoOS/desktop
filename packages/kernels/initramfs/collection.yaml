@@ -2,9 +2,9 @@ packages:
   - category: "kernel"
     name: "mocaccino-initramfs"
     modules_name: "mocaccino-modules"
-    version: "6.13.4"
-    git_sha: e80e77438c627981b266734c03e23dcf8a60014e
-    golang_version: "1.19.1"
+    version: 6.13.4+3
+    git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
+    golang_version: "1.20.14"
     arch: "amd64"
     labels:
       autobump.revdeps: "false"
@@ -20,8 +20,8 @@ packages:
     name: "mocaccino-lts-initramfs"
     modules_name: "mocaccino-lts-modules"
     version: "6.12.15"
-    git_sha: e80e77438c627981b266734c03e23dcf8a60014e
-    golang_version: "1.19.1"
+    git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
+    golang_version: "1.20.14"
     arch: "amd64"
     labels:
       autobump.revdeps: "false"

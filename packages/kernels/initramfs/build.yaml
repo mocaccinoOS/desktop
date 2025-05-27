@@ -26,7 +26,10 @@ prelude:
 
 steps:
 # grab deps library for udev probe init functionalities
-- go get github.com/pilebones/go-udev
+# - go get github.com/pilebones/go-udev
+- GO111MODULE=on go mod init tempmod
+- GO111MODULE=on go get github.com/pilebones/go-udev@v0.9.0
+- mkdir -p /luetbuild/go/src/github.com/pilebones && cp -r /luetbuild/go/pkg/mod/github.com/pilebones/go-udev@v0.9.0 /luetbuild/go/src/github.com/pilebones/go-udev
 
 - mkdir modules_copy
 - find /luetbuild/modules/usr/lib/modules/**/kernel/fs  -exec cp {} -r --parents ./modules_copy \;
