@@ -1,0 +1,83 @@
+requires:
+- name: {{.Values.modules_name}}
+  category: kernel
+  version: ">={{ ( index .Values.labels "package.version" ) }}"
+env:
+- PATH=$PATH:/usr/local/go/bin
+- GOPATH=/luetbuild/go
+- GO111MODULE=off
+- CGO_ENABLED=0
+
+prelude:
+- apt-get install -y upx kmod
+- wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
+- tar -C /usr/local -xzf golang.tar.gz
+
+- |
+  mkdir -p /luetbuild/go/src/github.com/u-root && cd /luetbuild/go/src/github.com/u-root && \
+  git clone https://github.com/u-root/u-root && cd u-root && git checkout "{{.Values.git_sha}}" -b build
+
+- |
+   cd /luetbuild/go/src/github.com/u-root/u-root && go build -ldflags '-s -w' && upx --brute -1 u-root && mv u-root /usr/bin/u-root
+
+- mkdir /boot || true
+- rm -rf $GOPATH/src/github.com/u-root/u-root/cmds/core/init
+- cp -rf init $GOPATH/src/github.com/u-root/u-root/cmds/core/init
+
+steps:
+# grab deps library for udev probe init functionalities
+- go get github.com/pilebones/go-udev
+
+- mkdir modules_copy
+- find /luetbuild/modules/usr/lib/modules/**/kernel/fs  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/lib  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/crypto  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/crypto  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/usb  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/hid  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/input  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/block  -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/ata -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/md -exec cp {} -r --parents ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/virtio  -exec cp -r --parents {} ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/scsi  -exec cp -r --parents {} ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/md  -exec cp {} -r --parents ./modules_copy \;
+
+# Ethernet + address family: af_packet
+- find /luetbuild/modules/usr/lib/modules/**/kernel/drivers/net/ethernet  -exec cp -r --parents {} ./modules_copy \;
+- find /luetbuild/modules/usr/lib/modules/**/kernel/net/packet  -exec cp --parents -r {} ./modules_copy \;
+
+- |
+   u-root \
+   -files "/luetbuild/loader.sh:/loader" \
+   -files "/luetbuild/modules/usr/lib/modules:/lib/modules" \
+   -files "$(which blkid)" \
+   -files "$(which mount)" \
+   -files "$(which umount)" \
+   -files "$(which depmod)" \
+   -files "$(which losetup)" \
+   -files "$(which setsid)" \
+   -files "$(which switch_root)" \
+   -files "$(which mkdir)" \
+   -files "$(which modprobe)" \
+   -files "$(which sh)" \
+   -files "$(which bash)" \
+   -format=cpio -build=bb -defaultsh="" -o initramfs.cpio \
+   github.com/u-root/u-root/cmds/core/ip \
+   github.com/u-root/u-root/cmds/core/ls \
+   github.com/u-root/u-root/cmds/core/dhclient \
+   github.com/u-root/u-root/cmds/core/init \
+   github.com/u-root/u-root/cmds/core/cat \
+   github.com/u-root/u-root/cmds/core/echo \
+   github.com/u-root/u-root/cmds/core/chroot \
+   github.com/u-root/u-root/cmds/core/sleep
+
+- |
+   xz --check=crc32 -9 --lzma2=dict=1MiB \
+      --stdout initramfs.cpio \
+      | dd conv=sync bs=512 \
+      of=/boot/initramfs-vanilla-x86_64-{{.Values.version}}-mocaccino
+- cd /boot/ && ln -s initramfs-vanilla-x86_64-{{.Values.version}}-mocaccino Initrd
+excludes:
+- ^/luetbuild
+- ^/root
