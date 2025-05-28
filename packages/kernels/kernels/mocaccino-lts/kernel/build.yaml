@@ -13,6 +13,7 @@ env:
 - KERNEL_TYPE={{ .Values.prefix }}
 prelude:
 - |
+  apt update                   && \
   apt-get update               && \
   apt-get -y -q upgrade        && \
   apt-get install -y -q apt-utils dialog\
