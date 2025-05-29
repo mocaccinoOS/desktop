@@ -10,6 +10,7 @@ dev-libs/appstream -qt5 -qt6
 dev-libs/atk introspection
 dev-libs/libdbusmenu gtk3 -gtk
 dev-libs/nss utils
+dev-libs/libxmlb introspection
 dev-python/pillow lcms truetype webp
 dev-python/pygobject introspection
 gui-libs/gtk vulkan
