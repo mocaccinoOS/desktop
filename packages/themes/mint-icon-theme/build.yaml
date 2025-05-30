@@ -1,0 +1,16 @@
+excludes:
+{{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable violet-funk
+- emaint sync -r violet-funk
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
