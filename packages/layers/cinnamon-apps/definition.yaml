@@ -1,0 +1,25 @@
+category: "layers"
+name: "cinnamon-apps"
+version: "1.0"
+uri:
+  - https://github.com/linuxmint
+license: "GPL-2+ CC-BY-SA-3.0"
+description: "Several tools for the Cinamon desktop"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "app-editors/xed::haarp media-gfx/xviewer::binaryden"
+  description: "Several tools for the Cinamon desktop"
+provides:
+  - name: xed
+    category: app-editors
+    version: '>=0'
+  - name: yelp-tools
+    category: app-text
+    version: '>=0'
+  - name: xviewer
+    category: media-gfx
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "cinnamon"
+    version: ">=0"
