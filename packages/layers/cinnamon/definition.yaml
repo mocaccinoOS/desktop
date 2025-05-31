@@ -1,13 +1,13 @@
 category: "layers"
 name: "cinnamon"
-version: 6.4.8+2
+version: 6.4.8+3
 uri:
   - https://github.com/linuxmint/cinnamon-desktop
 license: "GPL-2+ FDL-1.1+ LGPL-2+"
 description: "A fork of GNOME Shell with layout similar to GNOME 2"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo gnome-extra/nemo-fileroller sys-apps/xdg-desktop-portal-xapp x11-wm/muffin"
+  emerge.packages: "app-accessibility/caribou dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo sys-apps/xdg-desktop-portal-xapp x11-wm/muffin"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -59,9 +59,6 @@ provides:
     category: gnome-extra
     version: '>=0'
   - name: nemo
-    category: gnome-extra
-    version: '>=0'
-  - name: nemo-fileroller
     category: gnome-extra
     version: '>=0'
   - name: xdg-desktop-portal-xapp
