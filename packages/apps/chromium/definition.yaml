@@ -1,6 +1,6 @@
 category: "apps"
 name: "chromium"
-version: "136.0.7103.113"
+version: "137.0.7151.68"
 uri:
   - https://chromium.org
 license: "BSD"
