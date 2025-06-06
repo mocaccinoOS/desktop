@@ -8,13 +8,13 @@ description: "app store from COSMIC DE"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    cosmic-de/cosmic-store
+    cosmic-base/cosmic-store
 provides:
   - name: cosmic-store
-    category: cosmic-de
+    category: cosmic-base
     version: '>=0'
   - name: pop-appstream-data
-    category: cosmic-de
+    category: cosmic-base
     version: '>=0'
 requires:
   - category: "layers"
