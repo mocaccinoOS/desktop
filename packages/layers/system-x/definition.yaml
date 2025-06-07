@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20250606"
+version: "0.20250607"
 gcc_version: "14"
 python_version: "3.12"
 category: layers
@@ -7,112 +7,115 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "10"
   emerge.packages: >-
-    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-debug/gdb dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-perl/Class-Inspector dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/numpy dev-python/python-magic dev-python/pygments dev-python/webencodings dev-vcs/git llvm-core/clang llvm-core/llvm media-libs/libpng sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-kernel/dracut sys-libs/binutils-libs
+    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-debug/gdb dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-perl/Class-Inspector dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/numpy dev-python/python-magic dev-python/pygments dev-python/webencodings dev-vcs/git llvm-core/clang llvm-core/llvm media-libs/libpng net-mail/mailbase sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-kernel/dracut sys-libs/binutils-libs
 requires:
   - category: "system"
     name: "gcc-base"
     version: ">=0"
-  - name: systemd-groups
+  - name: "systemd-groups"
     version: ">=0"
-    category: meta
-  - name: adm
-    category: entity
+    category: "meta"
+  - name: "adm"
+    category: "entity"
     version: ">=0"
-  - name: audio
-    category: entity
+  - name: "audio"
+    category: "entity"
     version: ">=0"
-  - name: cdrom
-    category: entity
+  - name: "cdrom"
+    category: "entity"
     version: ">=0"
-  - name: disk
-    category: entity
+  - name: "disk"
+    category: "entity"
     version: ">=0"
-  - name: floppy
-    category: entity
+  - name: "floppy"
+    category: "entity"
     version: ">=0"
-  - name: input
-    category: entity
+  - name: "input"
+    category: "entity"
     version: ">=0"
-  - name: kmem
-    category: entity
+  - name: "kmem"
+    category: "entity"
     version: ">=0"
-  - name: kvm
-    category: entity
+  - name: "kvm"
+    category: "entity"
     version: ">=0"
-  - name: lp
-    category: entity
+  - name: "lp"
+    category: "entity"
     version: ">=0"
-  - name: man
-    category: entity
+  - name: "mail"
+    category: "entity"
     version: ">=0"
-  - name: messagebus
-    category: entity
+  - name: "man"
+    category: "entity"
     version: ">=0"
-  - name: nobody
-    category: entity
+  - name: "messagebus"
+    category: "entity"
     version: ">=0"
-  - name: plugdev
-    category: entity
+  - name: "nobody"
+    category: "entity"
     version: ">=0"
-  - name: polkitd
-    category: entity
+  - name: "plugdev"
+    category: "entity"
     version: ">=0"
-  - name: portage
-    category: entity
+  - name: "polkitd"
+    category: "entity"
     version: ">=0"
-  - name: render
-    category: entity
+  - name: "portage"
+    category: "entity"
     version: ">=0"
-  - name: root
-    category: entity
+  - name: "render"
+    category: "entity"
     version: ">=0"
-  - name: systemd-coredump
-    category: entity
+  - name: "root"
+    category: "entity"
     version: ">=0"
-  - name: systemd-journal-remote
-    category: entity
+  - name: "systemd-coredump"
+    category: "entity"
     version: ">=0"
-  - name: systemd-network
-    category: entity
+  - name: "systemd-journal-remote"
+    category: "entity"
     version: ">=0"
-  - name: systemd-oom
-    category: entity
+  - name: "systemd-network"
+    category: "entity"
     version: ">=0"
-  - name: systemd-resolve
-    category: entity
+  - name: "systemd-oom"
+    category: "entity"
     version: ">=0"
-  - name: systemd-timesync
-    category: entity
+  - name: "systemd-resolve"
+    category: "entity"
     version: ">=0"
-  - name: sgx
-    category: entity
+  - name: "systemd-timesync"
+    category: "entity"
     version: ">=0"
-  - name: sshd
-    category: entity
+  - name: "sgx"
+    category: "entity"
     version: ">=0"
-  - name: tape
-    category: entity
+  - name: "sshd"
+    category: "entity"
     version: ">=0"
-  - name: tty
-    category: entity
+  - name: "tape"
+    category: "entity"
     version: ">=0"
-  - name: unbound
-    category: entity
+  - name: "tty"
+    category: "entity"
     version: ">=0"
-  - name: users
-    category: entity
+  - name: "unbound"
+    category: "entity"
     version: ">=0"
-  - name: uucp
-    category: entity
+  - name: "users"
+    category: "entity"
     version: ">=0"
-  - name: utmp
-    category: entity
+  - name: "uucp"
+    category: "entity"
     version: ">=0"
-  - name: video
-    category: entity
+  - name: "utmp"
+    category: "entity"
     version: ">=0"
-  - name: wheel
-    category: entity
+  - name: "video"
+    category: "entity"
+    version: ">=0"
+  - name: "wheel"
+    category: "entity"
     version: ">=0"
 provides:
   - name: adm
@@ -143,6 +146,9 @@ provides:
     category: acct-group
     version: '>=0'
   - name: man
+    category: acct-group
+    version: '>=0'
+  - name: mail
     category: acct-group
     version: '>=0'
   - name: messagebus
@@ -215,6 +221,9 @@ provides:
     category: acct-group
     version: '>=0'
   - name: man
+    category: acct-user
+    version: '>=0'
+  - name: mail
     category: acct-user
     version: '>=0'
   - name: messagebus
