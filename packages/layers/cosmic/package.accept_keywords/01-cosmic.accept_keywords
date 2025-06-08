@@ -11,7 +11,7 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-icons-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-idle-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-launcher-1.0.0_alpha7-r10 ~amd64
-=cosmic-base/cosmic-meta-1.0.0_alpha7-r10 ~amd64
+=cosmic-base/cosmic-meta-1.0.0_alpha7 ~amd64
 =cosmic-base/cosmic-notifications-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-osd-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-panel-1.0.0_alpha7-r10 ~amd64
