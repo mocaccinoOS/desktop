@@ -1,10 +1,10 @@
 name: "gcc-base"
 category: "system"
-version: "14.3.0"
+version: 14.3.0+1
 gcc_version: "14"
 requires:
   - category: "mocaccino"
     name: "cli"
     version: ">=0"
 labels:
-  llvm_slot: "19"
+  llvm_slot: "20"
