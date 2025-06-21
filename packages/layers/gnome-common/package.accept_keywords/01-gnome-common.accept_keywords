@@ -1,6 +1,5 @@
-=gnome-extra/evolution-data-server-3.54.3 ~amd64
-=gui-libs/libadwaita-1.6.2 ~amd64
+=gnome-extra/evolution-data-server-3.54.3-r1 ~amd64
 =gui-libs/vte-0.78.3 ~amd64
 =gui-libs/vte-common-0.78.3 ~amd64
-=net-libs/gnome-online-accounts-3.52.3.1 ~amd64
+=net-libs/gnome-online-accounts-3.52.3.1-r1 ~amd64
 =x11-libs/vte-0.78.3 ~amd64
