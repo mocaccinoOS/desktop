@@ -1,3 +1,4 @@
+=gnome-base/gnome-settings-daemon-47.2 ~amd64
 =gnome-extra/evolution-data-server-3.54.3-r1 ~amd64
 =gui-libs/vte-0.78.3 ~amd64
 =gui-libs/vte-common-0.78.3 ~amd64

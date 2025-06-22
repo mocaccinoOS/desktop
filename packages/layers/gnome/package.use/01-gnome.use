@@ -5,7 +5,6 @@ dev-libs/libgusb vala
 gnome-base/gdm accessibility fprint -plymouth
 gnome-base/gnome -extras -accessibility
 gnome-base/gnome-control-center networkmanager input_devices_wacom
-gnome-base/gnome-settings-daemon networkmanager input_devices_wacom
 gnome-base/nautilus gnome sendto
 media-gfx/eog lcms
 media-gfx/eog-plugins flickr

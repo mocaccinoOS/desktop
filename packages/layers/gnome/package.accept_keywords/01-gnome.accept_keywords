@@ -4,7 +4,6 @@ app-text/libspelling ~amd64
 gnome-base/gdm ~amd64
 gnome-base/gnome-control-center ~amd64
 gnome-base/gnome-session ~amd64
-gnome-base/gnome-settings-daemon ~amd64
 gnome-base/gnome-shell ~amd64
 gnome-base/nautilus ~amd64
 gnome-extra/gnome-calculator ~amd64
