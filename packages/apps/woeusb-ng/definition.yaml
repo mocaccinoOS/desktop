@@ -1,6 +1,6 @@
 category: "apps"
 name: "woeusb-ng"
-version: "0.2.12-r1"
+version: 0.2.12-r1+1
 uri:
   - https://github.com/WoeUSB/WoeUSB-ng
 license: "GPL-3+"
