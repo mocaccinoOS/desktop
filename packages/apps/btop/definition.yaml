@@ -5,11 +5,18 @@ uri:
   - https://github.com/aristocratos/btop
 license: "Apache-2.0"
 description: "A monitor of resources"
-requires:
-  - category: "layers"
-    name: "system-x"
-    version: ">=0"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
     sys-process/btop
+provides:
+  - name: "lowdown"
+    category: "app-text"
+    version: '>=0'
+  - name: "btop"
+    category: "sys-process"
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
