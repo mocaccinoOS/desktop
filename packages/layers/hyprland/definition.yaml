@@ -1,6 +1,6 @@
 category: "layers"
 name: "hyprland"
-version: 0.46.2-r1+7
+version: "0.49.0"
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"
@@ -8,7 +8,7 @@ description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its 
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-cpp/tomlplusplus::gentoo dev-libs/hyprgraphics::gentoo dev-libs/hyprlang::gentoo dev-libs/libliftoff::gentoo dev-util/hyprwayland-scanner::gentoo gui-apps/hyprpaper::wayland-desktop gui-libs/aquamarine::gentoo gui-libs/hyprcursor::gentoo gui-libs/hyprutils::gentoo gui-wm/hyprland::gentoo
+    dev-cpp/tomlplusplus::gentoo dev-libs/hyprgraphics::gentoo dev-libs/hyprlang::gentoo dev-libs/libliftoff::gentoo dev-util/hyprwayland-scanner::gentoo gui-apps/hyprpaper::wayland-desktop gui-libs/aquamarine::gentoo gui-libs/hyprcursor::gentoo gui-libs/hyprutils::gentoo gui-wm/hyprland::gentoo media-libs/libspng
 requires:
   - category: "layers"
     name: "X"
@@ -49,4 +49,7 @@ provides:
     version: '>=0'
   - name: hyprland
     category: gui-wm
+    version: '>=0'
+  - name: libspng
+    category: media-libs
     version: '>=0'
