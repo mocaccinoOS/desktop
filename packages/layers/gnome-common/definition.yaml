@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome-common"
-version: 1.4+1
+version: 1.4+2
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
