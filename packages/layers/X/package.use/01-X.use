@@ -34,7 +34,7 @@ media-libs/libsdl2 gles2 haptic
 media-libs/libv4l dvb -qt5 -qt6
 media-libs/mesa lm-sensors opencl vaapi vdpau video_cards_i915 video_cards_i965 video_cards_intel video_cards_nouveau video_cards_r100 video_cards_r200 video_cards_r300 video_cards_r600 video_cards_radeon video_cards_via video_cards_vmware video_cards_radeonsi vulkan xa zink
 media-libs/openal -qt5
-media-libs/opencv contrib contribdnn openexr v4l vaapi webp -gtk3 -qt5 -qt6 -opengl -vtk
+media-libs/opencv contrib contribdnn features2d openexr v4l vaapi webp -gtk3 -qt5 -qt6 -opengl -vtk
 media-plugins/gst-plugins-meta ffmpeg mms http
 media-plugins/mpg123-output-plugins sdl
 media-sound/mpg123-base sdl
