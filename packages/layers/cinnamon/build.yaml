@@ -5,9 +5,9 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 - emerge -1 x11-themes/gnome-themes-standard x11-themes/adwaita-icon-theme
-{{ template "portage_prelude_build_binary" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build_binary" . }}
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "layers"
   name: "gnome-common"
