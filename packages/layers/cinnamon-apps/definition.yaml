@@ -1,13 +1,13 @@
 category: "layers"
 name: "cinnamon-apps"
-version: 1.0+10
+version: 1.0+11
 uri:
   - https://github.com/linuxmint
 license: "GPL-2+ CC-BY-SA-3.0"
 description: "Several tools for the Cinamon desktop"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "app-editors/xed::haarp media-gfx/xviewer::binaryden x11-misc/pix x11-misc/xreader x11-terms/gnome-terminal::gentoo"
+  emerge.packages: "app-editors/xed::haarp media-gfx/xviewer::binaryden x11-misc/pix x11-terms/gnome-terminal::gentoo"
   description: "Several tools for the Cinamon desktop"
 provides:
   - name: xed
@@ -20,9 +20,6 @@ provides:
     category: media-gfx
     version: '>=0'
   - name: pix
-    category: x11-misc
-    version: '>=0'
-  - name: xreader
     category: x11-misc
     version: '>=0'
   - name: gnome-terminal
