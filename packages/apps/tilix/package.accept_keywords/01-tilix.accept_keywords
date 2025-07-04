@@ -1,2 +1,3 @@
 =dev-lang/ldc2-1.38.0 ~amd64
+=dev-libs/gtkd-3.10.0-r2 ~amd64
 x11-terms/tilix ~amd64
