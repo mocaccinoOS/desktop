@@ -1,5 +1,12 @@
 excludes:
 {{ template "portage_excludes" }}
+# To reduce footprint drop some wallpapers
+- ^/usr/share/wallpapers/Autumn
+- ^/usr/share/wallpapers/Canopee
+- ^/usr/share/wallpapers/Kite
+- ^/usr/share/wallpapers/OneStandsOut
+- ^/usr/share/wallpapers/Path
+- ^/usr/share/wallpapers/ScarletTree
 env:
 {{ template "portage_env" . }}
 prelude:
