@@ -17,6 +17,7 @@ prelude:
 # Remove broken src_prepare
 - sed -i '/^src_prepare()/,/^}/d' /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.8.ebuild
 - ebuild /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.8.ebuild manifest
+{{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove steam-overlay
