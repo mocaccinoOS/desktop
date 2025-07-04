@@ -1,0 +1,20 @@
+category: "apps"
+name: "tilix"
+version: "1.9.6"
+uri:
+  - https://gnunn1.github.io/tilix-web
+license: "MPL-2.0"
+description: "A tiling terminal emulator for Linux using GTK+ 3"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-terms/tilix
+  description: "A tiling terminal emulator for Linux using GTK+ 3"
+provides:
+  - name: "tilix"
+    category: "x11-terms"
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"

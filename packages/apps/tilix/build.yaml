@@ -1,0 +1,16 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable dlang
+- emaint sync -r dlang
+{{ template "portage_prelude_build" . }}
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "gnome-common"
+  version: ">=0"
