@@ -5,9 +5,9 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-applibrary-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-bg-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-comp-1.0.0_alpha7-r10 ~amd64
-=cosmic-base/cosmic-edit-1.0.0_alpha7-r10 ~amd64
+=cosmic-base/cosmic-edit-1.0.0_alpha7-r11 ~amd64
 =cosmic-base/cosmic-files-1.0.0_alpha7-r10 ~amd64
-=cosmic-base/cosmic-greeter-1.0.0_alpha7-r10 ~amd64
+=cosmic-base/cosmic-greeter-1.0.0_alpha7-r11 ~amd64
 =cosmic-base/cosmic-icons-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-idle-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-launcher-1.0.0_alpha7-r10 ~amd64
@@ -22,7 +22,7 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-settings-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-settings-daemon-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/cosmic-term-1.0.0_alpha7-r10 ~amd64
-=cosmic-base/cosmic-wallpapers-1.0.0_alpha7-r10 ~amd64
+=cosmic-base/cosmic-wallpapers-1.0.0_alpha7-r11 ~amd64
 =cosmic-base/cosmic-workspaces-epoch-1.0.0_alpha7-r10 ~amd64
 =cosmic-base/pop-appstream-data-9999 ~amd64
 =cosmic-base/pop-fonts-9999 ~amd64
