@@ -17,7 +17,7 @@ prelude:
 - cp -rf make.conf /etc/portage/
 {{ end }}
 # Drop python 3.13
-# - emerge -C dev-lang/python:3.13
+- emerge -C dev-lang/python:3.13
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
