@@ -1,6 +1,5 @@
 excludes:
 {{ template "portage_excludes" }}
-- ^/usr/local/share/applications/mimeinfo.cache
 - ^/usr/share/applications/mimeinfo.cache
 env:
 {{ template "portage_env" . }}
