@@ -3,14 +3,12 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-# Because of a PDEPEND we need to have this installed in the build chroot
-- USE="gtk" emerge -1 sys-auth/polkit
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "apps"
-  name: "apparmor"
+- category: "buildbase"
+  name: "X"
   version: ">=0"
 requires_final_images: true

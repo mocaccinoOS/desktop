@@ -1,0 +1,28 @@
+category: "apps"
+name: "apparmor"
+version: "4.0.3"
+uri:
+  - https://gitlab.com/apparmor/apparmor/wikis/home
+license: "GPL-2"
+description: "Userspace utils and init scripts for the AppArmor application security system"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
+provides:
+  - name: apparmor-profiles
+    category: sec-policy
+    version: '>=0'
+  - name: apparmor
+    category: sys-apps
+    version: '>=0'
+  - name: apparmor-utils
+    category: sys-apps
+    version: '>=0'
+  - name: libapparmor
+    category: sys-libs
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
