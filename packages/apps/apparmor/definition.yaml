@@ -8,8 +8,14 @@ description: "Userspace utils and init scripts for the AppArmor application secu
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
+    dev-python/notify2 dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
 provides:
+  - name: notify2
+    category: dev-python
+    version: '>=0'
+  - name: xdelta
+    category: dev-util
+    version: '>=0'
   - name: apparmor-profiles
     category: sec-policy
     version: '>=0'
