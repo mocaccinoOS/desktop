@@ -1,0 +1,20 @@
+category: "apps"
+name: "zed"
+version: "0.192.7"
+uri:
+  - https://zed.dev
+license: "GPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD CC0-1.0 ISC LGPL-3 MIT MIT-0 MPL-2.0 UoI-NCSA openssl"
+description: "The fast, collaborative code editor"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-editors/zed
+  description: "The fast, collaborative code editor"
+provides:
+  - name: zed
+    category: app-editors
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
