@@ -1,6 +1,6 @@
 name: mocaccino-lts-full
 category: kernel
-version: "6.12.36"
+version: "6.12.37"
 requires:
   - name: "mocaccino-lts-modules"
     category: "kernel"
@@ -26,4 +26,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "longterm") ][0].version'
-  package.version: "6.12.36"
+  package.version: "6.12.37"
