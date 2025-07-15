@@ -1,6 +1,6 @@
 category: "apps"
 name: "apparmor"
-version: "4.0.3"
+version: 4.0.3+1
 uri:
   - https://gitlab.com/apparmor/apparmor/wikis/home
 license: "GPL-2"
@@ -8,7 +8,7 @@ description: "Userspace utils and init scripts for the AppArmor application secu
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-python/notify2 dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
+    dev-python/notify2 dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils
 provides:
   - name: notify2
     category: dev-python
@@ -25,10 +25,7 @@ provides:
   - name: apparmor-utils
     category: sys-apps
     version: '>=0'
-  - name: libapparmor
-    category: sys-libs
-    version: '>=0'
 requires:
   - category: "layers"
-    name: "X"
+    name: "sys-fs"
     version: ">=0"

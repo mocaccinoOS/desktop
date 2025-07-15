@@ -8,7 +8,6 @@ prelude:
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "layers"
+  name: "sys-fs"
   version: ">=0"
-requires_final_images: true
