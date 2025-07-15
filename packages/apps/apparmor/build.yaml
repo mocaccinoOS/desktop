@@ -6,9 +6,8 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
-- category: "buildbase"
-  name: "X"
+- category: "layers"
+  name: "system-x"
   version: ">=0"
-requires_final_images: true

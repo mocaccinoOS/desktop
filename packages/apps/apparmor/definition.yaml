@@ -1,6 +1,6 @@
 category: "apps"
 name: "apparmor"
-version: "4.0.3"
+version: 4.0.3+1
 uri:
   - https://gitlab.com/apparmor/apparmor/wikis/home
 license: "GPL-2"
@@ -30,5 +30,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "X"
+    name: "system-x"
     version: ">=0"
