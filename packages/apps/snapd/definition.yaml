@@ -14,6 +14,9 @@ provides:
     category: app-containers
     version: '>=0'
 requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
   - category: "apps"
     name: "apparmor"
     version: ">=0"
