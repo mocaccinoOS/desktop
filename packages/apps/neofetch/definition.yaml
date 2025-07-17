@@ -1,6 +1,6 @@
 category: "apps"
 name: "neofetch"
-version: 7.1.0-r1+106
+version: 7.1.0-r1+107
 uri:
   - https://github.com/dylanaraps/neofetch
 license: "MIT-with-advertising"

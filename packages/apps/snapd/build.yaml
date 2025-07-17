@@ -6,9 +6,9 @@ prelude:
 # Because of a PDEPEND we need to have this installed in the build chroot
 - USE="gtk" emerge -1 sys-auth/polkit
 {{ template "portage_copy_package_files" . }}
-- emerge -1 app-eselect/eselect-repository
-- eselect repository enable Miezhiko
-- emaint sync -r Miezhiko
+# - emerge -1 app-eselect/eselect-repository
+# - eselect repository enable Miezhiko
+# - emaint sync -r Miezhiko
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
