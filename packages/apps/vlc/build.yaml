@@ -4,7 +4,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- sed -i '/^EAPI=/a EGIT_COMMIT="8f472e6f4da1b3adbef29ed92413b23f05429eba"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
+- sed -i '/^EAPI=/a EGIT_COMMIT="fb1182e1421e7e4524c09193bb2367873a5e82a4"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - sed -i '/^inherit / s/$/ git-r3/' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - ebuild /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild manifest
 steps:
