@@ -1,5 +1,9 @@
 install:
-install:
 - mos config-update update --interactive=false -p /etc/udev/rules.d/*
-- udevadm control --reload
-- udevadm trigger --type=devices --action=change
+- |
+  if pgrep systemd-udevd > /dev/null 2>&1; then
+    udevadm control --reload
+    udevadm trigger --type=devices --action=change
+  else
+    echo "udevd not running, skipping udevadm reload/trigger"
+  fi
