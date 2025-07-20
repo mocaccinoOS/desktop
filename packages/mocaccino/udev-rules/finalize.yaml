@@ -1,0 +1,5 @@
+install:
+install:
+- mos config-update update --interactive=false -p /etc/udev/rules.d/*
+- udevadm control --reload
+- udevadm trigger --type=devices --action=change

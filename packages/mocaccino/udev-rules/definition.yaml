@@ -1,0 +1,12 @@
+category: "mocaccino"
+name: "udev-rules"
+version: "1.0"
+labels:
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+  - category: "mocaccino"
+    name: "cli"
+    version: ">=0"
+provides:

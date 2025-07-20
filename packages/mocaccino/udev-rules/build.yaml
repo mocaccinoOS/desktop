@@ -1,0 +1,7 @@
+image: "alpine"
+prelude:
+steps:
+- mkdir -p /etc/udev/rules.d/
+- cp *.rules /etc/udev/rules.d/
+- chown 0:0 /etc/udev/rules.d/*.rules
+- chmod 644 /etc/udev/rules.d/*.rules

@@ -1,0 +1,2 @@
+# Set BFQ scheduler on all rotational devices (HDDs)
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", ATTR{queue/scheduler}="bfq"
