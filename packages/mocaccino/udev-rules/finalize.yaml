@@ -1,4 +1,3 @@
 install:
 - mos config-update update --interactive=false -p /etc/udev/rules.d/*
-- pgrep systemd-udevd >/dev/null 2>&1 && udevadm control --reload && udevadm trigger --type=devices --action=change
-- sh -c "pgrep systemd-udevd >/dev/null 2>&1 && udevadm control --reload && udevadm trigger --type=devices --action=change || true"
+- pgrep systemd-udevd >/dev/null 2>&1 && udevadm control --reload && udevadm trigger --type=devices --action=change || true
