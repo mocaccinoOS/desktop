@@ -1,6 +1,6 @@
 category: "apps"
 name: "apparmor"
-version: 4.0.3+1
+version: 4.0.3+2
 uri:
   - https://gitlab.com/apparmor/apparmor/wikis/home
 license: "GPL-2"

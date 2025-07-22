@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-kf5"
-version: 5.116.0+85
+version: 5.116.0+86
 labels:
   emerge.jobs: "3"
   emerge.packages: >-

@@ -5,7 +5,7 @@ includes:
 - /usr$
 - /usr/include$
 - /usr/include/.*
-- /usr/lib/python3.12/test
+- /usr/lib/python3.13/test
 unpack: true
 requires:
 - name: {{.Values.package}}
