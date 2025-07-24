@@ -1,9 +1,8 @@
 install:
-- glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
-- chmod u+s /usr/bin/bwrap
-- chmod u+s /usr/bin/sudo
-- ldconfig
-# During migration to pipewire a broken symlink in
-# /etc/alsa/conf.d (10-samplerate.conf) prevents 
-# pipewire from working properly
-- find /etc/alsa/conf.d -xtype l -delete
+  - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
+  - chmod u+s /usr/bin/sudo
+  - ldconfig
+  # During migration to pipewire a broken symlink in
+  # /etc/alsa/conf.d (10-samplerate.conf) prevents
+  # pipewire from working properly
+  - find /etc/alsa/conf.d -xtype l -delete
