@@ -1,5 +1,0 @@
-CFLAGS="${CFLAGS//-flto/}"
-CXXFLAGS="${CXXFLAGS//-flto/}"
-FCFLAGS="${FCFLAGS//-flto/}"
-FFLAGS="${FFLAGS//-flto/}"
-LDFLAGS="${LDFLAGS//-flto/}"
