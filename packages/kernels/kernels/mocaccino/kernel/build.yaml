@@ -1,7 +1,7 @@
-image: "ubuntu:22.04"
+image: "ubuntu:24.04"
 env:
 #- LUET_YES=true
-- GCC_VERSION=11
+- GCC_VERSION=14
 # $ARCH can't be amd64 here, x86_64 is used here
 {{$arch := ""}}
 {{if eq .Values.arch "amd64" }}
