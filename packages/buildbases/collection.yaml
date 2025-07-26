@@ -8,11 +8,11 @@ packages:
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+200
+    version: 0+201
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+183
+    version: 0+184
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
