@@ -1,0 +1,2 @@
+COMMON_FLAGS="-march=x86-64 -O2 -pipe -fomit-frame-pointer"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed"
