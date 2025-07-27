@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 4_pre20250722+1
+version: "4_pre20250726"
 uri:
   - https://www.videolan.org/vlc
 license: "LGPL-2.1 GPL-2"
@@ -12,10 +12,10 @@ labels:
 provides:
   - name: vlc
     category: media-video
-    version: '>=0'
+    version: ">=0"
   - name: libmicrodns
     category: net-libs
-    version: '>=0'
+    version: ">=0"
 requires:
   - category: "layers"
     name: "kde-common"
