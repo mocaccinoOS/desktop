@@ -1,6 +1,6 @@
 name: mocaccino-full
 category: kernel
-version: "6.15.8"
+version: 6.15.8+1
 requires:
   - name: "mocaccino-modules"
     category: "kernel"
