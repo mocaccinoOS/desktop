@@ -10,9 +10,9 @@ steps:
 - ift-extract --apple-driver /tmp/AppleUSBVideoSupport
 - rm /tmp/AppleUSBVideoSupport
 {{ template "portage_build" . }}
-# split nvidia-gsp stuff 
-- mkdir -p /usr/lib/firmware/nvidia-gsp && for gpu in ad102 ga100 ga102 gb100 gb202 gh100 tu102 tu116; do mkdir -p /usr/lib/firmware/nvidia-gsp/$gpu && mv /usr/lib/firmware/nvidia/$gpu/gsp /usr/lib/firmware/nvidia-gsp/$gpu/ || true; done
-- for gpu in ad102 ga100 ga102 gb100 gb202 gh100 tu102 tu116; do mkdir -p /usr/lib/firmware/nvidia/$gpu && ln -s ../../../nvidia-gsp/$gpu/gsp /usr/lib/firmware/nvidia/$gpu/gsp || true; done
+# split nvidia-gsp-570 stuff (introduced in linux-firmware commit 050f0a1)
+- mkdir -p /usr/lib/firmware/nvidia-gsp-570 && find /usr/lib/firmware/nvidia -type f -path '*/gsp/*-570.144.bin' -exec sh -c 'for f; do gpu=$(echo "$f" | cut -d/ -f6); mkdir -p "/usr/lib/firmware/nvidia-gsp-570/$gpu/gsp"; mv "$f" "/usr/lib/firmware/nvidia-gsp-570/$gpu/gsp/"; done' sh {} +
+- find /usr/lib/firmware/nvidia-gsp-570 -type f -path '*/gsp/*-570.144.bin' -exec sh -c 'for f; do gpu=$(echo "$f" | cut -d/ -f6); mkdir -p "/usr/lib/firmware/nvidia/$gpu/gsp"; ln -sf "../../../nvidia-gsp-570/$gpu/gsp/$(basename "$f")" "/usr/lib/firmware/nvidia/$gpu/gsp/"; done' sh {} +
 requires:
 - category: "layers"
   name: "system-x"

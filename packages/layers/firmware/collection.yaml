@@ -1,7 +1,7 @@
 packages:
   - category: "layers"
     name: "firmware"
-    version: 20250708+1
+    version: 20250708+2
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -214,10 +214,10 @@ packages:
     version: 2+86
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+87
+    version: 2+88
   - category: "layers"
-    name: "firmware-nvidia-gsp"
-    version: 2+86
+    name: "firmware-nvidia-gsp-570"
+    version: 2+88
   - category: "layers"
     name: "firmware-qca"
     version: 2+86
