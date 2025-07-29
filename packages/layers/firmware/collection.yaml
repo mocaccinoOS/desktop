@@ -214,7 +214,7 @@ packages:
     version: 2+85
   - category: "layers"
     name: "firmware-nvidia"
-    version: 2+85
+    version: 2+86
   - category: "layers"
     name: "firmware-nvidia-gsp"
     version: 2+85
