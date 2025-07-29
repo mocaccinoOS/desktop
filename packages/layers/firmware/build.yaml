@@ -10,6 +10,18 @@ steps:
 - ift-extract --apple-driver /tmp/AppleUSBVideoSupport
 - rm /tmp/AppleUSBVideoSupport
 {{ template "portage_build" . }}
+# split nvidia-gsp stuff 
+- mkdir -p /usr/lib/firmware/nvidia-gsp
+- |
+  for gpu in ad102 ga100 ga102 gb100 gb202 gh100 tu102 tu116; do
+    mkdir -p /usr/lib/firmware/nvidia-gsp/$gpu
+    mv /usr/lib/firmware/nvidia/$gpu/gsp /usr/lib/firmware/nvidia-gsp/$gpu/
+  done
+- |
+  for gpu in ad102 ga100 ga102 gb100 gb202 gh100 tu102 tu116; do
+    mkdir -p /usr/lib/firmware/nvidia/$gpu
+    ln -s ../../../nvidia-gsp/$gpu/gsp /usr/lib/firmware/nvidia/$gpu/gsp
+  done
 requires:
 - category: "layers"
   name: "system-x"
