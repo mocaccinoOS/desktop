@@ -1,2 +1,1 @@
 sys-firmware/sof-firmware -tools
-sys-kernel/linux-firmware compress-zstd
