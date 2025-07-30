@@ -1,5 +1,5 @@
---- modules\demux\mpeg\ts.c	2025-07-30 11:17:03.418819792 +0000
-+++ modules\demux\mpeg\ts.c	2025-07-30 11:20:15.342818121 +0000
+--- a/modules/demux/mpeg/ts.c	2025-07-30 11:17:03.418819792 +0000
++++ b/modules/demux/mpeg/ts.c	2025-07-30 11:20:15.342818121 +0000
 @@ -425,6 +425,7 @@
          return VLC_EGENERIC;
      }
