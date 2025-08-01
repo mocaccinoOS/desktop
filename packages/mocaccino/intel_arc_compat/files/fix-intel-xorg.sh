@@ -7,7 +7,7 @@ INTEL_DRIVER_PATH="/usr/lib64/xorg/modules/drivers/intel_drv.so"
 # Ensure the directory exists
 mkdir -p "$XORG_CONF_DIR"
 
-# Detect Intel ARC or Battlemage GPU using PCI ID
+# Detect Intel ARC Alchemist or Battlemage GPU using PCI ID
 if lspci -nn | grep -i "VGA" | grep -E "Intel Corporation.*\[(8086:(56|e2)[0-9a-f]{2})\]"; then
     echo "Intel ARC Alchemist or Battlemage GPU detected."
 
@@ -32,5 +32,5 @@ EOF
         echo "No legacy Intel driver found. No changes needed."
     fi
 else
-    echo "No Intel ARC or Battlemage GPU detected. No changes needed."
+    echo "No Intel ARC Alchemist or Battlemage GPU detected. No changes needed."
 fi

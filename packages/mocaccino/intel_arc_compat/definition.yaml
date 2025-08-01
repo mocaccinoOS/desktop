@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "intel_arc_compat"
-version: "0.2"
+version: "0.3"
 labels:
 requires:
   - category: "layers"
