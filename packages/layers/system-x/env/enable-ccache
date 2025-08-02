@@ -1,2 +1,5 @@
+# Enables the use of ccache to speed up repeated builds by caching compilation results.
+# This is especially useful during iterative development or when rebuilding frequently.
+# The cache is stored in /var/cache/ccache.
 FEATURES="ccache"
 CCACHE_DIR="/var/cache/ccache"
