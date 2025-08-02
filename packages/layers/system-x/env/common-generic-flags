@@ -1,2 +1,12 @@
+# Generic compiler and linker flags for MocaccinoOS.
+# These flags are meant to fully override any previously set values
+# in inherited make.conf or env layers.
+
+# -march=x86-64: Target baseline x86-64 CPU for wide compatibility.
+# -O2: Enable safe optimizations that improve performance without increasing binary size too much.
+# -pipe: Use pipes between build steps for faster builds.
+# -fomit-frame-pointer: Omit frame pointer to reduce overhead (safe on x86-64).
 COMMON_FLAGS="-march=x86-64 -O2 -pipe -fomit-frame-pointer"
+# -Wl,-O2: Linker optimization level 2 (safe and effective).
+# -Wl,--as-needed: Avoid linking unused shared libraries.
 LDFLAGS="-Wl,-O2 -Wl,--as-needed"
