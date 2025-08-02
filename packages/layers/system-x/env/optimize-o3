@@ -1,2 +1,1 @@
-COMMON_FLAGS="-march=x86-64 -O3 -pipe -fomit-frame-pointer -g0 -ffunction-sections -fdata-sections"
-LDFLAGS="-Wl,-O3 -Wl,--gc-sections -Wl,--as-needed"
+COMMON_FLAGS="${COMMON_FLAGS} -O3"
