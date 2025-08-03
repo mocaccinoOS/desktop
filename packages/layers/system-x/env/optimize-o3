@@ -2,3 +2,7 @@
 # This increases performance for some CPU-bound workloads at the cost of
 # longer compile times and potentially larger binaries.
 COMMON_FLAGS="${COMMON_FLAGS} -O3"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
