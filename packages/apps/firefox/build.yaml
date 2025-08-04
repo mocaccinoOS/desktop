@@ -9,6 +9,7 @@ steps:
 {{ template "portage_build" . }}
 # Moccacino OS customization for bookmarks, start site and bookmarks toolbar.
 - cp -rf distribution/distribution.ini /usr/lib64/firefox/distribution/
+- cp -rf distribution/mojeek.xml /usr/lib64/firefox/browser/searchplugins/mojeek.xml
 requires:
 - category: "layers"
   name: "X"
