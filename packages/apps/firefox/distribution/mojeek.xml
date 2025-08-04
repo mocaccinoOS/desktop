@@ -1,9 +1,0 @@
-<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Mojeek</ShortName>
-  <Description>Independent, privacy-respecting search engine</Description>
-  <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16">https://www.mojeek.com/favicon.ico</Image>
-  <Url type="text/html" method="GET" template="https://www.mojeek.com/search">
-    <Param name="q" value="{searchTerms}"/>
-  </Url>
-</SearchPlugin>
