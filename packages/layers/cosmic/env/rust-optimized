@@ -1,2 +1,2 @@
-RUSTFLAGS="-C opt-level=3 -C codegen-units=1"
+RUSTFLAGS="-C opt-level=3 -C codegen-units=1 -C strip=debuginfo"
 CARGO_BUILD_JOBS="6"
