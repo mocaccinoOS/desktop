@@ -1,11 +1,9 @@
-env:
-- RUSTFLAGS: "-C opt-level=3 -C codegen-units=1 -C lto=thin"
-- CARGO_BUILD_JOBS: "6"
-
 excludes:
 {{ template "portage_excludes" }}
 - ^/etc/portage/repos.conf/eselect-repo.conf
-
+env:
+- RUSTFLAGS: "-C opt-level=3 -C codegen-units=1 -C lto=thin"
+- CARGO_BUILD_JOBS: "6"
 prelude:
 {{ template "portage_copy_package_files" . }}
 - emerge -1 media-fonts/fira-mono media-fonts/fira-sans
@@ -13,12 +11,10 @@ prelude:
 - eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
-
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
-
 requires:
 - category: "layers"
   name: "gnome-common"
