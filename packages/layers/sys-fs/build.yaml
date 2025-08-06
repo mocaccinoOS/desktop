@@ -10,6 +10,7 @@ prelude:
 - cp -rf patches /etc/portage/
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge -1 dev-util/ccache
+- emerge -1 app-portage/gentoolkit
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
