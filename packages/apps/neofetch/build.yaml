@@ -5,7 +5,7 @@ env:
 steps:
 {{ template "portage_build" . }}
 - mkdir -p /usr/share/neofetch && cp -r mocaccino.txt /usr/share/neofetch/mocaccino.txt
-- mkdir -p /etc/neofetch && cp -r config.txt /etc/neofetch/config.txt
+- mkdir -p /etc/neofetch && cp -r config.conf /etc/neofetch/config.conf
 requires:
 - category: "layers"
   name: "X"

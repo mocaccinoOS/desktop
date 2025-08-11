@@ -1,1 +1,0 @@
-image_source="/usr/share/neofetch/mocaccino.txt"
