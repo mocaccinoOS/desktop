@@ -4,7 +4,7 @@ env:
 {{ template "portage_env" . }}
 steps:
 {{ template "portage_build" . }}
-- cp -r mocaccino.txt /usr/share/neofetch/mocaccino.txt
+- mkdir -p /usr/share/neofetch && cp -r mocaccino.txt /usr/share/neofetch/mocaccino.txt
 - mkdir -p /etc/neofetch && cp -r config.txt /etc/neofetch/config.txt
 requires:
 - category: "layers"
