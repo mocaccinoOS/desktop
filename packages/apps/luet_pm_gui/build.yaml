@@ -2,6 +2,7 @@ prelude:
 - git clone https://github.com/joostruis/luet_pm_gui.git
 steps:
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
+- for size in 16 24 32 48 64 128 256; do sudo mkdir -p /usr/share/icons/hicolor/"${size}x${size}"/apps && sudo convert luet_pm_gui.png -resize "${size}x${size}" /usr/share/icons/hicolor/"${size}x${size}"/apps/luet_pm_gui.png; done
 requires:
 - category: "layers"
   name: "system-x"
