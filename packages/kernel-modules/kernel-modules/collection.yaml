@@ -99,7 +99,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 570.172.08+3
+    version: 570.172.08+4
     lts: false
     labels:
       emerge.jobs: "3"

@@ -19,7 +19,7 @@ packages:
   - category: "kernel"
     name: "mocaccino-initramfs"
     modules_name: "mocaccino-modules"
-    version: "6.15.10"
+    version: "6.16.1"
     git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
     golang_version: "1.20.14"
     arch: "amd64"
@@ -32,4 +32,4 @@ packages:
         curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
       autobump.version_hook: |
         curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
-      package.version: "6.15.10"
+      package.version: "6.16.1"
