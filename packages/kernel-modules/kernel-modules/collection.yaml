@@ -19,7 +19,7 @@ packages:
   #         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.1.8+24
+    version: "7.1.10"
     lts: true
     emerge:
       jobs: "3"
@@ -34,7 +34,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.1.8+24
+    version: "7.1.10"
     lts: true
     labels:
       emerge.jobs: "3"

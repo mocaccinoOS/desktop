@@ -32,7 +32,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+298
+    version: 0+299
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
