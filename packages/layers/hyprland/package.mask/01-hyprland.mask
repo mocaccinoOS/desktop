@@ -1,2 +1,3 @@
-# placeholder
+# requires >=sys-devel/gcc-15 to build
+>=gui-wm/hyprland-0.50.1
 
