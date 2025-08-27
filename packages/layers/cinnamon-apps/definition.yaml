@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon-apps"
-version: 1.0+20
+version: 1.0+21
 uri:
   - https://github.com/linuxmint
 license: "GPL-2+ CC-BY-SA-3.0"
