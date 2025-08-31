@@ -1,2 +1,2 @@
 install:
-- "! grep -Eq '(docker|containerd|kubepods)' /proc/1/cgroup 2>/dev/null && mocaccino-dracut --rebuild-all"
+- "[ -d /lib/modules/$(uname -r) ] && mocaccino-dracut --rebuild-all"
