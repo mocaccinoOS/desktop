@@ -1,2 +1,2 @@
 install:
-- "if [ -d /lib/modules/$(uname -r) ]; then mocaccino-dracut --rebuild-all; fi"
+- "[[ -z \"$CI\" ]] && mocaccino-dracut --rebuild-all"
