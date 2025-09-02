@@ -3,8 +3,6 @@ kde-frameworks/kconfig qml
 kde-frameworks/kfilemetadata taglib
 kde-frameworks/kimageformats heif
 kde-frameworks/kitemmodels qml
-# We can't set legacy-kwallet. This pulls in GNOME stuff.
-kde-frameworks/kwallet-runtime -legacy-kwallet
 kde-frameworks/prison qml
 kde-frameworks/sonnet qml
 media-libs/phonon minimal qt6 -qt5
