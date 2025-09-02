@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-software"
-version: 48.3+1
+version: "48.4"
 uri:
   - https://wiki.gnome.org/Apps/Software
 license: "GPL-2+"
@@ -12,7 +12,7 @@ labels:
 provides:
   - name: gnome-software
     category: gnome-extra
-    version: '>=0'
+    version: ">=0"
 requires:
   - category: "layers"
     name: "gnome-common"
