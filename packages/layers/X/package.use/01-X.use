@@ -40,7 +40,6 @@ media-plugins/gst-plugins-meta ffmpeg mms http
 media-plugins/mpg123-output-plugins sdl
 media-sound/mpg123-base sdl
 media-sound/sox flac wavpack
-media-sound/pulseaudio -daemon bluetooth glib jack ofono-headset
 media-video/ffmpeg amr bluray cpudetection encode fdk gnutls gpl gsm iconv ieee1394 jack jpeg2k lame libaom libass network openal openh264 openssl opus postproc sdl speex test theora truetype v4l vaapi vdpau vidstab vorbis vpx vulkan webp x264 x265 xvid zlib
 media-video/pipewire bluetooth gstreamer pipewire-alsa sound-server
 media-video/wireplumber system-service
