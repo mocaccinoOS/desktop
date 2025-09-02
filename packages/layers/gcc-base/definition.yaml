@@ -1,6 +1,6 @@
 name: "gcc-base"
 category: "system"
-version: 14.3.0+14
+version: 14.3.0+15
 gcc_version: "14"
 requires:
   - category: "mocaccino"
