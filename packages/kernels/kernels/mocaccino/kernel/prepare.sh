@@ -8,13 +8,13 @@ cp -rfv mocaccino-$ARCH.config ${KERNEL_TYPE}/.config
 cd ${KERNEL_TYPE}
 
 # --- Apply Bug 220484 patch ---
-PATCH_FILE="../patches/0001-net-ipv4-route-reset-fi-broadcast.patch"
-if [ -f "$PATCH_FILE" ]; then
-    echo "Applying network regression fix (Bug 220484)..."
-    patch -p1 < "$PATCH_FILE"
-else
-    echo "Warning: Patch file not found: $PATCH_FILE"
-fi
+# PATCH_FILE="../patches/0001-net-ipv4-route-reset-fi-broadcast.patch"
+# if [ -f "$PATCH_FILE" ]; then
+#     echo "Applying network regression fix (Bug 220484)..."
+#     patch -p1 < "$PATCH_FILE"
+# else
+#     echo "Warning: Patch file not found: $PATCH_FILE"
+# fi
 
 make olddefconfig
 touch /etc/passwd
