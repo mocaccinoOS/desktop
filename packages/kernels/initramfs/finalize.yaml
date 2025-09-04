@@ -1,2 +1,3 @@
 install:
+- "[[ -z \"$CI\" ]] && depmod -a || true"
 - "[[ -z \"$CI\" ]] && mocaccino-dracut --rebuild-all"
