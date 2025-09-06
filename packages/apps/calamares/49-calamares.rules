@@ -1,8 +1,6 @@
 polkit.addRule(function(action, subject) {
-    if (subject.isInGroup("users")) {
-        if (action.id == "org.freedesktop.policykit.exec" &&
-            action.lookup("program") == "/usr/lib/calamares/calamares-polkit") {
-            return polkit.Result.YES;
-        }
+    if ((action.id == "com.github.calamares.calamares.pkexec.run"))
+    {
+        return polkit.Result.YES;
     }
 });
