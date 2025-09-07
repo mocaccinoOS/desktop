@@ -50,7 +50,7 @@ prelude:
 steps:
 - EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" USE="qt5" emerge -1 media-libs/phonon
 - USE="qt5 -qt6" emerge -1 app-text/poppler
-- USE="qt5 -qt6" emerge -1 sys-auth/polkit-qt
+- USE="qt5 -qt6" emerge -1 --nodeps sys-auth/polkit-qt 
 {{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
