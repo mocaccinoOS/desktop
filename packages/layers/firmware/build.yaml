@@ -2,6 +2,8 @@
 env:
 {{ template "portage_env" . }}
 prelude:
+- wget https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-kernel/linux-firmware/linux-firmware-20250808.ebuild /var/db/repos/gentoo/sys-kernel/linux-firmware/linux-firmware-20250808.ebuild
+- ebuild /var/db/repos/gentoo/sys-kernel/linux-firmware/linux-firmware-20250808.ebuild manifest
 {{ template "portage_copy_package_files" . }}
 - emerge -1 media-video/isight-firmware-tools
 - cp AppleUSBVideoSupport /tmp
