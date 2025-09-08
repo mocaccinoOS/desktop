@@ -1,3 +1,3 @@
 install:
-- "[[ -z \"$CI\" ]] && depmod -a || true"
-- "[[ -z \"$CI\" ]] && mocaccino-dracut --rebuild-all"
+- "! grep -Eq '(docker|containerd|kubepods|actions|nspawn)' /proc/1/cgroup 2>/dev/null && depmod -a || true"
+- "! grep -Eq '(docker|containerd|kubepods|actions|nspawn)' /proc/1/cgroup 2>/dev/null && mocaccino-dracut --rebuild-all || true"
