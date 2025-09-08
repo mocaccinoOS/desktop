@@ -1,3 +1,2 @@
 install:
-- "! grep -Eq '(docker|containerd|kubepods|actions|nspawn)' /proc/1/cgroup 2>/dev/null && depmod -a || true"
-- "! grep -Eq '(docker|containerd|kubepods|actions|nspawn)' /proc/1/cgroup 2>/dev/null && mocaccino-dracut --rebuild-all || true"
+- "! grep -Eq '(docker|containerd|kubepods|actions|nspawn)' /proc/1/cgroup 2>/dev/null && for kver in /lib/modules/*; do depmod -a \"$(basename \"$kver\")\"; done && mocaccino-dracut --rebuild-all || true"
