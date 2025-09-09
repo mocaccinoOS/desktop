@@ -39,6 +39,10 @@ packages:
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 7.1.12+2
+    uri:
+      - https://www.virtualbox.org
+    license: "GPL-3 LGPL-2.1+ MIT"
+    description: "VirtualBox kernel modules and user-space tools for Gentoo guests"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -76,6 +80,10 @@ packages:
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
     version: 570.181+3
+    uri:
+      - https://www.nvidia.com
+    license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
+    description: "NVIDIA Accelerated Graphics Driver"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -104,6 +112,10 @@ packages:
   - category: "kernel-modules"
     name: "nvidia-drivers"
     version: 570.181+3
+    uri:
+      - https://www.nvidia.com
+    license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
+    description: "NVIDIA Accelerated Graphics Driver"
     lts: false
     labels:
       emerge.jobs: "3"
@@ -138,6 +150,10 @@ packages:
   - category: "kernel-modules"
     name: "xpadneo-lts"
     version: 0.9.7+54
+    uri:
+      - https://atar-axis.github.io/xpadneo
+    license: "GPL-3"
+    description: "Advanced Linux Driver for Xbox One Wireless Controller"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -160,6 +176,10 @@ packages:
   - category: "kernel-modules"
     name: "xone-lts"
     version: 0.4.3+4
+    uri:
+      - https://github.com/dlundqvist/xone
+    license: "GPL-2+ MS-TOU"
+    description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -204,6 +224,10 @@ packages:
   - category: "kernel-modules"
     name: "vhba-lts"
     version: 20250329+29
+    uri:
+      - https://cdemu.sourceforge.io
+    license: "GPL-2+"
+    description: "Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite"
     lts: true
     labels:
       emerge.jobs: "3"
