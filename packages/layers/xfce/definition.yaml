@@ -1,6 +1,10 @@
 category: "layers"
 name: "xfce"
 version: 4.20.2+10
+uri:
+  - https://xfce.org
+license: "GPL-2+"
+description: "XFCE Desktop"
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
