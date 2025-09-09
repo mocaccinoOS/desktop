@@ -1,6 +1,10 @@
 category: "layers"
 name: "trinity"
 version: 14.1.2+60
+uri:
+  - https://www.trinitydesktop.org
+license: "GPL-3"
+description: "The Trinity Desktop Environment"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
