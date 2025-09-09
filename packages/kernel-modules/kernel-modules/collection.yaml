@@ -20,6 +20,10 @@ packages:
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
     version: 7.1.12+2
+    uri:
+      - https://www.virtualbox.org
+    license: "GPL-3"
+    description: "Kernel Modules for Virtualbox"
     lts: true
     emerge:
       jobs: "3"
