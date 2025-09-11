@@ -8,10 +8,6 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable haarp
 - emaint sync -r haarp
-- cp /var/db/repos/haarp/app-editors/xed/xed-3.4.5.ebuild /var/db/repos/haarp/app-editors/xed/xed-3.8.1.ebuild
-# Support python3_13
-- sed -i 's/python3_{11..12}/python3_{11..13}/' /var/db/repos/haarp/app-editors/xed/xed-3.8.1.ebuild
-- ebuild /var/db/repos/haarp/app-editors/xed/xed-3.4.5.ebuild manifest
 - eselect repository enable binaryden
 - emaint sync -r binaryden
 # Remove broken src_prepare
