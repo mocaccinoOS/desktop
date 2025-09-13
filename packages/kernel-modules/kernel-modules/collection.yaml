@@ -289,67 +289,71 @@ packages:
         category: kernel-modules
         version: ">=0"
 
-  - category: "kernel-modules"
-    name: "rtl8192eu"
-    version: 20240518+30
-    uri:
-      - https://github.com/Mange/rtl8192eu-linux-driver
-    license: "GPL-2"
-    description: "Realtek 8192EU driver module for Linux kernel"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "false"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-wireless/rtl8192eu
-    provides:
-      - name: rtl8192eu
-        category: net-wireless
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-    conflicts:
-      - name: rtl8192eu-lts
-        category: kernel-modules
-        version: ">=0"
+  # Currently fails against 6.16.7 kernel
+  #
+  # - category: "kernel-modules"
+  #   name: "rtl8192eu"
+  #   version: 20240518+30
+  #   uri:
+  #     - https://github.com/Mange/rtl8192eu-linux-driver
+  #   license: "GPL-2"
+  #   description: "Realtek 8192EU driver module for Linux kernel"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #     lts.kernel: "false"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-wireless/rtl8192eu
+  #   provides:
+  #     - name: rtl8192eu
+  #       category: net-wireless
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: rtl8192eu-lts
+  #       category: kernel-modules
+  #       version: ">=0"
 
-  - category: "kernel-modules"
-    name: "rtl8812au"
-    version: 20250330+30
-    uri:
-      - https://github.com/aircrack-ng/rtl8812au
-    license: "GPL-2"
-    description: "Realtek 8812AU USB WiFi module for Linux kernel"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "false"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-wireless/rtl8812au
-    provides:
-      - name: rtl8812au
-        category: net-wireless
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-    conflicts:
-      - name: rtl8812au-lts
-        category: kernel-modules
-        version: ">=0"
+  # Currently fails against 6.16.7 kernel
+  #
+  # - category: "kernel-modules"
+  #   name: "rtl8812au"
+  #   version: 20250330+30
+  #   uri:
+  #     - https://github.com/aircrack-ng/rtl8812au
+  #   license: "GPL-2"
+  #   description: "Realtek 8812AU USB WiFi module for Linux kernel"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #     lts.kernel: "false"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-wireless/rtl8812au
+  #   provides:
+  #     - name: rtl8812au
+  #       category: net-wireless
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: rtl8812au-lts
+  #       category: kernel-modules
+  #       version: ">=0"
 
   #
   # In near future if we want virtualbox supported for the non-lts kernel
