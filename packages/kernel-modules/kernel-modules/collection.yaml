@@ -177,7 +177,7 @@ packages:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
     description: "Advanced Linux Driver for Xbox One Wireless Controller"
-    lts: true
+    lts: false
     labels:
       emerge.jobs: "3"
       lts.kernel: "false"
@@ -233,7 +233,7 @@ packages:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
     description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
-    lts: true
+    lts: false
     labels:
       emerge.jobs: "3"
       lts.kernel: "false"
