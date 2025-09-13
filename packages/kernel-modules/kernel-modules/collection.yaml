@@ -17,25 +17,95 @@ packages:
   #       - name: mocaccino-full
   #         category: kernel
   #         version: ">=0"
+
+  # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
-    name: "virtualbox-modules-lts"
-    version: 7.1.12+3
+    name: "nvidia-drivers-lts"
+    version: 570.181+4
     uri:
-      - https://www.virtualbox.org
-    license: "GPL-3"
-    description: "Kernel Modules for Virtualbox"
+      - https://www.nvidia.com
+    license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
+    description: "NVIDIA Accelerated Graphics Driver"
     lts: true
-    emerge:
-      jobs: "3"
-      packages:
-        - app-emulation/virtualbox-modules
     labels:
       emerge.jobs: "3"
       lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - x11-drivers/nvidia-drivers x11-misc/prime-run
+    provides:
+      - name: nvidia-drivers
+        category: x11-drivers
+        version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
         version: ">=0"
+      - name: egl-wayland
+        category: apps
+        version: ">=0"
+      - name: nvpd
+        category: entity
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+
+  - category: "kernel-modules"
+    name: "rtl8192eu-lts"
+    version: 20240518+30
+    uri:
+      - https://github.com/Mange/rtl8192eu-linux-driver
+    license: "GPL-2"
+    description: "Realtek 8192EU driver module for Linux kernel"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - net-wireless/rtl8192eu
+    provides:
+      - name: rtl8192eu
+        category: net-wireless
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+
+  - category: "kernel-modules"
+    name: "rtl8812au-lts"
+    version: 20250330+30
+    uri:
+      - https://github.com/aircrack-ng/rtl8812au
+    license: "GPL-2"
+    description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - net-wireless/rtl8812au
+    provides:
+      - name: rtl8812au
+        category: net-wireless
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 7.1.12+3
@@ -77,13 +147,34 @@ packages:
       - category: "entity"
         name: "vboxsf"
         version: ">=0"
+
   - category: "kernel-modules"
-    name: "nvidia-drivers-lts"
-    version: 570.181+4
+    name: "virtualbox-modules-lts"
+    version: 7.1.12+3
     uri:
-      - https://www.nvidia.com
-    license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
-    description: "NVIDIA Accelerated Graphics Driver"
+      - https://www.virtualbox.org
+    license: "GPL-3"
+    description: "Kernel Modules for Virtualbox"
+    lts: true
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-modules
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+
+  - category: "kernel-modules"
+    name: "vhba-lts"
+    version: 20250329+30
+    uri:
+      - https://cdemu.sourceforge.io
+    license: "GPL-2+"
+    description: "Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -91,24 +182,97 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - x11-drivers/nvidia-drivers x11-misc/prime-run
+        - sys-fs/vhba
     provides:
-      - name: nvidia-drivers
-        category: x11-drivers
+      - name: vhba
+        category: sys-fs
         version: ">=0"
     requires:
       - name: mocaccino-lts-full
         category: kernel
         version: ">=0"
-      - name: egl-wayland
-        category: apps
+      - category: "layers"
+        name: "X"
         version: ">=0"
-      - name: nvpd
-        category: entity
+
+  - category: "kernel-modules"
+    name: "xone-lts"
+    version: 0.4.3+5
+    uri:
+      - https://github.com/dlundqvist/xone
+    license: "GPL-2+ MS-TOU"
+    description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - games-util/xone
+    provides:
+      - name: xone
+        category: games-util
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
         version: ">=0"
       - category: "layers"
         name: "X"
         version: ">=0"
+
+  - category: "kernel-modules"
+    name: "xpadneo-lts"
+    version: 0.9.7+55
+    uri:
+      - https://atar-axis.github.io/xpadneo
+    license: "GPL-3"
+    description: "Advanced Linux Driver for Xbox One Wireless Controller"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - games-util/xpadneo
+    provides:
+      - name: xpadneo
+        category: games-util
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+
+  # - category: "kernel-modules"
+  #   name: "rtl88x2bu-lts"
+  #   version: 20240108+81
+  #   lts: true
+  #   labels:
+  #     emerge.jobs: "3"
+  #     lts.kernel: "true"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-misc/realtek-rtl88x2bu
+  #   provides:
+  #     - name: realtek-rtl88x2bu
+  #       category: net-misc
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-lts-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+
+  # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers"
     version: 570.181+6
@@ -144,32 +308,49 @@ packages:
       - name: nvidia-drivers-lts
         category: kernel-modules
         version: ">=0"
+
   - category: "kernel-modules"
-    name: "xpadneo-lts"
-    version: 0.9.7+55
-    uri:
-      - https://atar-axis.github.io/xpadneo
-    license: "GPL-3"
-    description: "Advanced Linux Driver for Xbox One Wireless Controller"
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
+    name: "virtualbox-modules"
+    version: 7.0.8+20
+    lts: false
     emerge:
       jobs: "3"
       packages:
-        - games-util/xpadneo
+        - app-emulation/virtualbox-modules
+    labels:
+      emerge.jobs: "3"
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
+
+  - category: "kernel-modules"
+    name: "xone"
+    version: 0.4.3+5
+    uri:
+      - https://github.com/dlundqvist/xone
+    license: "GPL-2+ MS-TOU"
+    description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
+    lts: false
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "false"
+    emerge:
+      jobs: "3"
+      packages:
+        - games-util/xone
     provides:
-      - name: xpadneo
+      - name: xone
         category: games-util
         version: ">=0"
     requires:
-      - name: mocaccino-lts-full
+      - name: mocaccino-full
         category: kernel
         version: ">=0"
       - category: "layers"
         name: "X"
         version: ">=0"
+
   - category: "kernel-modules"
     name: "xpadneo"
     version: 0.9.7+56
@@ -199,156 +380,4 @@ packages:
     conflicts:
       - name: xpadneo-lts
         category: kernel-modules
-        version: ">=0"
-  - category: "kernel-modules"
-    name: "xone-lts"
-    version: 0.4.3+5
-    uri:
-      - https://github.com/dlundqvist/xone
-    license: "GPL-2+ MS-TOU"
-    description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - games-util/xone
-    provides:
-      - name: xone
-        category: games-util
-        version: ">=0"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  - category: "kernel-modules"
-    name: "xone"
-    version: 0.4.3+5
-    uri:
-      - https://github.com/dlundqvist/xone
-    license: "GPL-2+ MS-TOU"
-    description: "Linux kernel driver for Xbox One and Xbox Series X|S accessories"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "false"
-    emerge:
-      jobs: "3"
-      packages:
-        - games-util/xone
-    provides:
-      - name: xone
-        category: games-util
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  - category: "kernel-modules"
-    name: "rtl8812au-lts"
-    version: 20250330+30
-    uri:
-      - https://github.com/aircrack-ng/rtl8812au
-    license: "GPL-2"
-    description: "Realtek 8812AU USB WiFi module for Linux kernel"
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-wireless/rtl8812au
-    provides:
-      - name: rtl8812au
-        category: net-wireless
-        version: ">=0"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  - category: "kernel-modules"
-    name: "vhba-lts"
-    version: 20250329+30
-    uri:
-      - https://cdemu.sourceforge.io
-    license: "GPL-2+"
-    description: "Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite"
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - sys-fs/vhba
-    provides:
-      - name: vhba
-        category: sys-fs
-        version: ">=0"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-  # - category: "kernel-modules"
-  #   name: "rtl88x2bu-lts"
-  #   version: 20240108+81
-  #   lts: true
-  #   labels:
-  #     emerge.jobs: "3"
-  #     lts.kernel: "true"
-  #   emerge:
-  #     jobs: "3"
-  #     packages:
-  #       - net-misc/realtek-rtl88x2bu
-  #   provides:
-  #     - name: realtek-rtl88x2bu
-  #       category: net-misc
-  #       version: ">=0"
-  #   requires:
-  #     - name: mocaccino-lts-full
-  #       category: kernel
-  #       version: ">=0"
-  #     - category: "layers"
-  #       name: "X"
-  #       version: ">=0"
-  - category: "kernel-modules"
-    name: "rtl8192eu-lts"
-    version: 20240518+30
-    uri:
-      - https://github.com/Mange/rtl8192eu-linux-driver
-    license: "GPL-2"
-    description: "Realtek 8192EU driver module for Linux kernel"
-    lts: true
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    emerge:
-      jobs: "3"
-      packages:
-        - net-wireless/rtl8192eu
-    provides:
-      - name: rtl8192eu
-        category: net-wireless
-        version: ">=0"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
         version: ">=0"
