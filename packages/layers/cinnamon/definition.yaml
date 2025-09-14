@@ -1,13 +1,13 @@
 category: "layers"
 name: "cinnamon"
-version: 6.4.8-r2+3
+version: 6.4.8-r2+4
 uri:
   - https://github.com/linuxmint/cinnamon-desktop
 license: "GPL-2+ FDL-1.1+ LGPL-2+"
 description: "A fork of GNOME Shell with layout similar to GNOME 2"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/caribou dev-lang/spidermonkey:115 dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo sys-apps/xdg-desktop-portal-xapp x11-wm/muffin"
+  emerge.packages: "app-accessibility/caribou app-editors/xed::haarp dev-lang/spidermonkey:115 dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo media-gfx/xviewer::binaryden sys-apps/xdg-desktop-portal-xapp x11-misc/pix x11-terms/gnome-terminal::gentoo x11-wm/muffin"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -19,6 +19,12 @@ provides:
   - name: caribou
     category: app-accessibility
     version: '>=0'
+  - name: xed
+    category: app-editors
+    version: '>=0'  
+  - name: yelp-tools
+    category: app-text
+    version: '>=0'  
   - name: spidermonkey
     category: dev-libs
     version: '>=0'
@@ -64,8 +70,17 @@ provides:
   - name: nemo
     category: gnome-extra
     version: '>=0'
+  - name: xviewer
+    category: media-gfx
+    version: '>=0'
   - name: xdg-desktop-portal-xapp
     category: sys-apps
+    version: '>=0'
+  - name: pix
+    category: x11-misc
+    version: '>=0'
+  - name: gnome-terminal
+    category: x11-terms
     version: '>=0'
   - name: muffin
     category: x11-wm

@@ -4,10 +4,24 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable haarp
+- emaint sync -r haarp
+- eselect repository enable binaryden
+- emaint sync -r binaryden
+# Remove broken src_prepare
+- sed -i '/^src_prepare()/,/^}/d' /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.12.ebuild
+- ebuild /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.12.ebuild manifest
+# Add custom ebuild for Pix
+- mkdir -p /var/db/repos/gentoo/x11-misc/pix && cp ebuilds/pix-3.4.5.ebuild /var/db/repos/gentoo/x11-misc/pix
+- ebuild /var/db/repos/gentoo/x11-misc/pix/pix-3.4.5.ebuild manifest
 - emerge -1 x11-themes/gnome-themes-standard x11-themes/adwaita-icon-theme
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
+- eselect repository remove binaryden
+- eselect repository remove haarp
+- emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
   name: "gnome-common"
