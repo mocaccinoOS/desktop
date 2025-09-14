@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 6.3.6+7
+version: 6.3.6+8
 uri:
   - https://kde.org/plasma-desktop
 license: "GPL-2"
@@ -8,7 +8,7 @@ description: "KDE Plasma Desktop"
 labels:
   emerge.jobs: "6"
   emerge.packages: >-
-    dev-libs/qcoro dev-libs/xapian kde-apps/kaccounts-integration:6 kde-apps/khelpcenter:6 kde-apps/libkgapi:6 kde-apps/signon-kwallet-extension:6 kde-frameworks/baloo:6 kde-frameworks/bluez-qt:6 kde-frameworks/ktexttemplate:6 kde-frameworks/modemmanager-qt:6 kde-frameworks/networkmanager-qt:6 kde-misc/kio-fuse kde-misc/kio-gdrive kde-misc/kio-gdrive-common kde-plasma/bluedevil:6 kde-plasma/breeze:6 kde-plasma/breeze-gtk:6 kde-plasma/kde-cli-tools:6 kde-plasma/kde-gtk-config:6 kde-plasma/kdecoration:6 kde-plasma/kdeplasma-addons:6 kde-plasma/kdesu-gui kde-plasma/kgamma:6 kde-plasma/kinfocenter:6 kde-plasma/kmenuedit:6 kde-plasma/kpipewire:6 kde-plasma/kscreen:6 kde-plasma/kscreenlocker:6 kde-plasma/ksshaskpass:6 kde-plasma/ksystemstats:6 kde-plasma/kwallet-pam:6 kde-plasma/kwin:6 kde-plasma/kwrited:6 kde-plasma/layer-shell-qt:6 kde-plasma/libksysguard:6 kde-plasma/milou:6 kde-plasma/oxygen:6 kde-plasma/plasma5support:6 kde-plasma/plasma-browser-integration:6 kde-plasma/plasma-desktop:6 kde-plasma/plasma-disks:6 kde-plasma/plasma-integration:6 kde-plasma/plasma-login-sessions:6 kde-plasma/plasma-meta:6 kde-plasma/plasma-nm:6 kde-plasma/plasma-pa:6 kde-plasma/plasma-systemmonitor:6 kde-plasma/plasma-vault:6 kde-plasma/plasma-workspace:6 kde-plasma/plasma-workspace-wallpapers:6 kde-plasma/powerdevil:6 kde-plasma/sddm-kcm:6 kde-plasma/spectacle:6 kde-plasma/systemsettings:6 kde-plasma/xdg-desktop-portal-kde:6 media-fonts/hack media-libs/libqaccessibilityclient media-libs/pulseaudio-qt net-libs/signon-ui net-misc/socat net-vpn/networkmanager-openconnect sys-fs/cryfs sys-power/power-profiles-daemon x11-misc/appmenu-gtk-module x11-misc/sddm x11-misc/xsettingsd
+    dev-libs/qcoro dev-libs/xapian kde-apps/kaccounts-integration:6 kde-apps/kfind:6 kde-apps/khelpcenter:6 kde-apps/libkgapi:6 kde-apps/signon-kwallet-extension:6 kde-frameworks/baloo:6 kde-frameworks/bluez-qt:6 kde-frameworks/ktexttemplate:6 kde-frameworks/modemmanager-qt:6 kde-frameworks/networkmanager-qt:6 kde-misc/kio-fuse kde-misc/kio-gdrive kde-misc/kio-gdrive-common kde-plasma/bluedevil:6 kde-plasma/breeze:6 kde-plasma/breeze-gtk:6 kde-plasma/kde-cli-tools:6 kde-plasma/kde-gtk-config:6 kde-plasma/kdecoration:6 kde-plasma/kdeplasma-addons:6 kde-plasma/kdesu-gui kde-plasma/kgamma:6 kde-plasma/kinfocenter:6 kde-plasma/kmenuedit:6 kde-plasma/kpipewire:6 kde-plasma/kscreen:6 kde-plasma/kscreenlocker:6 kde-plasma/ksshaskpass:6 kde-plasma/ksystemstats:6 kde-plasma/kwallet-pam:6 kde-plasma/kwin:6 kde-plasma/kwrited:6 kde-plasma/layer-shell-qt:6 kde-plasma/libksysguard:6 kde-plasma/milou:6 kde-plasma/oxygen:6 kde-plasma/plasma5support:6 kde-plasma/plasma-browser-integration:6 kde-plasma/plasma-desktop:6 kde-plasma/plasma-disks:6 kde-plasma/plasma-integration:6 kde-plasma/plasma-login-sessions:6 kde-plasma/plasma-meta:6 kde-plasma/plasma-nm:6 kde-plasma/plasma-pa:6 kde-plasma/plasma-systemmonitor:6 kde-plasma/plasma-vault:6 kde-plasma/plasma-workspace:6 kde-plasma/plasma-workspace-wallpapers:6 kde-plasma/powerdevil:6 kde-plasma/sddm-kcm:6 kde-plasma/spectacle:6 kde-plasma/systemsettings:6 kde-plasma/xdg-desktop-portal-kde:6 media-fonts/hack media-libs/libqaccessibilityclient media-libs/pulseaudio-qt net-libs/signon-ui net-misc/socat net-vpn/networkmanager-openconnect sys-fs/cryfs sys-power/power-profiles-daemon x11-misc/appmenu-gtk-module x11-misc/sddm x11-misc/xsettingsd
 requires:
   - category: "layers"
     name: "kde-common"
@@ -42,6 +42,9 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: kaccounts-integration
+    category: kde-apps
+    version: '>=0'
+  - name: kfind
     category: kde-apps
     version: '>=0'
   - name: khelpcenter
