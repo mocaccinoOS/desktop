@@ -2,7 +2,7 @@ packages:
   # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 570.181+4
+    version: 570.181+5
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -32,10 +32,9 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "rtl8192eu-lts"
-    version: 20240518+30
+    version: 20240518+31
     uri:
       - https://github.com/Mange/rtl8192eu-linux-driver
     license: "GPL-2"
@@ -59,10 +58,9 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "rtl8812au-lts"
-    version: 20250330+30
+    version: 20250330+31
     uri:
       - https://github.com/aircrack-ng/rtl8812au
     license: "GPL-2"
@@ -86,10 +84,9 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.1.12+3
+    version: 7.1.12+4
     uri:
       - https://www.virtualbox.org
     license: "GPL-3 LGPL-2.1+ MIT"
@@ -128,10 +125,9 @@ packages:
       - category: "entity"
         name: "vboxsf"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.1.12+3
+    version: 7.1.12+4
     uri:
       - https://www.virtualbox.org
     license: "GPL-3"
@@ -148,10 +144,9 @@ packages:
       - name: mocaccino-lts-full
         category: kernel
         version: ">=0"
-
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20250329+30
+    version: 20250329+31
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -175,10 +170,9 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.4.3+5
+    version: 0.4.3+6
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -202,10 +196,9 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.7+55
+    version: 0.9.7+56
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
@@ -229,7 +222,6 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-
   # - category: "kernel-modules"
   #   name: "rtl88x2bu-lts"
   #   version: 20240108+81
@@ -255,7 +247,7 @@ packages:
   # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 570.181+6
+    version: 570.181+7
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -288,73 +280,6 @@ packages:
       - name: nvidia-drivers-lts
         category: kernel-modules
         version: ">=0"
-
-  # Currently fails against 6.16.7 kernel
-  #
-  # - category: "kernel-modules"
-  #   name: "rtl8192eu"
-  #   version: 20240518+30
-  #   uri:
-  #     - https://github.com/Mange/rtl8192eu-linux-driver
-  #   license: "GPL-2"
-  #   description: "Realtek 8192EU driver module for Linux kernel"
-  #   lts: false
-  #   labels:
-  #     emerge.jobs: "3"
-  #     lts.kernel: "false"
-  #   emerge:
-  #     jobs: "3"
-  #     packages:
-  #       - net-wireless/rtl8192eu
-  #   provides:
-  #     - name: rtl8192eu
-  #       category: net-wireless
-  #       version: ">=0"
-  #   requires:
-  #     - name: mocaccino-full
-  #       category: kernel
-  #       version: ">=0"
-  #     - category: "layers"
-  #       name: "X"
-  #       version: ">=0"
-  #   conflicts:
-  #     - name: rtl8192eu-lts
-  #       category: kernel-modules
-  #       version: ">=0"
-
-  # Currently fails against 6.16.7 kernel
-  #
-  # - category: "kernel-modules"
-  #   name: "rtl8812au"
-  #   version: 20250330+30
-  #   uri:
-  #     - https://github.com/aircrack-ng/rtl8812au
-  #   license: "GPL-2"
-  #   description: "Realtek 8812AU USB WiFi module for Linux kernel"
-  #   lts: false
-  #   labels:
-  #     emerge.jobs: "3"
-  #     lts.kernel: "false"
-  #   emerge:
-  #     jobs: "3"
-  #     packages:
-  #       - net-wireless/rtl8812au
-  #   provides:
-  #     - name: rtl8812au
-  #       category: net-wireless
-  #       version: ">=0"
-  #   requires:
-  #     - name: mocaccino-full
-  #       category: kernel
-  #       version: ">=0"
-  #     - category: "layers"
-  #       name: "X"
-  #       version: ">=0"
-  #   conflicts:
-  #     - name: rtl8812au-lts
-  #       category: kernel-modules
-  #       version: ">=0"
-
   #
   # In near future if we want virtualbox supported for the non-lts kernel
   # we need to figure out a way how to make apps/virtualbox depend on app-emulation/virtualbox-modules
@@ -379,8 +304,73 @@ packages:
   #       category: kernel-modules
   #       version: ">=0"
   - category: "kernel-modules"
+    # Currently fails against 6.16.7 kernel
+    #
+    # - category: "kernel-modules"
+    #   name: "rtl8192eu"
+    #   version: 20240518+30
+    #   uri:
+    #     - https://github.com/Mange/rtl8192eu-linux-driver
+    #   license: "GPL-2"
+    #   description: "Realtek 8192EU driver module for Linux kernel"
+    #   lts: false
+    #   labels:
+    #     emerge.jobs: "3"
+    #     lts.kernel: "false"
+    #   emerge:
+    #     jobs: "3"
+    #     packages:
+    #       - net-wireless/rtl8192eu
+    #   provides:
+    #     - name: rtl8192eu
+    #       category: net-wireless
+    #       version: ">=0"
+    #   requires:
+    #     - name: mocaccino-full
+    #       category: kernel
+    #       version: ">=0"
+    #     - category: "layers"
+    #       name: "X"
+    #       version: ">=0"
+    #   conflicts:
+    #     - name: rtl8192eu-lts
+    #       category: kernel-modules
+    #       version: ">=0"
+
+    # Currently fails against 6.16.7 kernel
+    #
+    # - category: "kernel-modules"
+    #   name: "rtl8812au"
+    #   version: 20250330+30
+    #   uri:
+    #     - https://github.com/aircrack-ng/rtl8812au
+    #   license: "GPL-2"
+    #   description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    #   lts: false
+    #   labels:
+    #     emerge.jobs: "3"
+    #     lts.kernel: "false"
+    #   emerge:
+    #     jobs: "3"
+    #     packages:
+    #       - net-wireless/rtl8812au
+    #   provides:
+    #     - name: rtl8812au
+    #       category: net-wireless
+    #       version: ">=0"
+    #   requires:
+    #     - name: mocaccino-full
+    #       category: kernel
+    #       version: ">=0"
+    #     - category: "layers"
+    #       name: "X"
+    #       version: ">=0"
+    #   conflicts:
+    #     - name: rtl8812au-lts
+    #       category: kernel-modules
+    #       version: ">=0"
     name: "vhba"
-    version: 20250329+30
+    version: 20250329+31
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -408,10 +398,9 @@ packages:
       - name: vhba-lts
         category: kernel-modules
         version: ">=0"
-
   - category: "kernel-modules"
     name: "xone"
-    version: 0.4.3+5
+    version: 0.4.3+6
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -439,10 +428,9 @@ packages:
       - name: xone-lts
         category: kernel-modules
         version: ">=0"
-
   - category: "kernel-modules"
     name: "xpadneo"
-    version: 0.9.7+56
+    version: 0.9.7+57
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
