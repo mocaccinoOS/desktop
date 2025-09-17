@@ -1,6 +1,6 @@
 category: "apps"
 name: "luet_pm_gui"
-version: 0.6.8+2
+version: 0.6.8+3
 requires:
   - category: "layers"
     name: "gnome-common"
