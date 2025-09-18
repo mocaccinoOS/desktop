@@ -90,7 +90,7 @@ packages:
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
-    description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    description: "v4l2 loopback device whose output is its own input"
     lts: true
     labels:
       emerge.jobs: "3"
@@ -400,7 +400,7 @@ packages:
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
-    description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    description: "v4l2 loopback device whose output is its own input"
     lts: false
     labels:
       emerge.jobs: "3"
@@ -408,7 +408,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - media-video/v4l2loopback
+        - =media-video/v4l2loopback-0.15.1
     provides:
       - name: v4l2loopback
         category: media-video
