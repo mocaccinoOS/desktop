@@ -5,7 +5,7 @@ excludes:
 - ^/etc/portage/repos.conf/eselect-repo.conf
 env:
 {{ template "portage_env" . }}
-{{ if contains "xv4l2loopback" .Values.name }}
+{{ if contains "v4l2loopback" .Values.name }}
 - KBUILD_OUTPUT=/usr/src/linux
 {{- end}}
   #prelude:
@@ -17,7 +17,7 @@ prelude:
 - eselect repository enable guru
 - emaint sync -r guru
 {{- end}}
-{{ if contains "xv4l2loopback" .Values.name }}
+{{ if contains "v4l2loopback" .Values.name }}
 # - ln -s /usr/src/linux /lib/modules/6.12.47-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
