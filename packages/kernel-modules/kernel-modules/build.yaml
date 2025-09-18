@@ -5,6 +5,9 @@ excludes:
 - ^/etc/portage/repos.conf/eselect-repo.conf
 env:
 {{ template "portage_env" . }}
+{{ if contains "xv4l2loopbackone" .Values.name }}
+- KBUILD_OUTPUT=/usr/src/linux
+{{- end}}
   #prelude:
 # Add custom package.use for each package in the collection
 #- cp -rf {{.Values.name}}/package.use /etc/portage/
