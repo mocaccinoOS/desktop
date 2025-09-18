@@ -1,0 +1,19 @@
+category: "layers"
+name: "dwm"
+version: "6.6"
+uri:
+  - https://dwm.suckless.org
+license: "MIT"
+description: "a dynamic window manager for X11"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    x11-wm/dwm
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+provides:
+  - name: dwm
+    category: x11-wm
+    version: '>=0'
