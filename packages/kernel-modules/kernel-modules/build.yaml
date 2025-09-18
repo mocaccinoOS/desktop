@@ -12,8 +12,12 @@ prelude:
 - emaint sync -r guru
 {{- end}}
 # TODO Be smarter then this.
-{{ if contains "v4l2loopback" .Values.name }}
+{{ if eq "v4l2loopback-lts" .Values.name }}
 - ln -s /usr/src/linux /lib/modules/6.12.47-mocaccino/build
+- emerge -1 dev-util/pahole
+{{- end}}
+{{ if eq "v4l2loopback" .Values.name }}
+- ln -s /usr/src/linux /lib/modules/6.16.7-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if contains "rtl8812au" .Values.name }}
