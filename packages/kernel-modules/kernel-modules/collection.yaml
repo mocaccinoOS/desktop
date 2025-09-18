@@ -329,7 +329,6 @@ packages:
   #     - name: virtualbox-modules-lts
   #       category: kernel-modules
   #       version: ">=0"
-  - category: "kernel-modules"
     # Currently fails against 6.16.7 kernel
     #
     # - category: "kernel-modules"
@@ -395,6 +394,33 @@ packages:
     #     - name: rtl8812au-lts
     #       category: kernel-modules
     #       version: ">=0"
+  - category: "kernel-modules"
+    name: "v4l2loopback"
+    version: 0.13.1+2
+    uri:
+      - https://github.com/umlaeute/v4l2loopback
+    license: "GPL-2"
+    description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    lts: false
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "false"
+    emerge:
+      jobs: "3"
+      packages:
+        - media-video/v4l2loopback
+    provides:
+      - name: v4l2loopback
+        category: media-video
+        version: ">=0"
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"   
+  - category: "kernel-modules"
     name: "vhba"
     version: 20250329+31
     uri:
