@@ -85,6 +85,32 @@ packages:
         name: "X"
         version: ">=0"
   - category: "kernel-modules"
+    name: "v4l2loopback-lts"
+    version: "0.13.1"
+    uri:
+      - https://github.com/umlaeute/v4l2loopback
+    license: "GPL-2"
+    description: "Realtek 8812AU USB WiFi module for Linux kernel"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - media-video/v4l2loopback
+    provides:
+      - name: v4l2loopback
+        category: media-video
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+  - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
     version: 7.1.12+4
     uri:

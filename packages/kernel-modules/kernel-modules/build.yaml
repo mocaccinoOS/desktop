@@ -14,6 +14,9 @@ prelude:
 - eselect repository enable guru
 - emaint sync -r guru
 {{- end}}
+{{ if contains "xv4l2loopbackone" .Values.name }}
+- emerge -1 dev-util/pahole
+{{- end}}
 {{ if contains "rtl8812au" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable rasdark
