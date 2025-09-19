@@ -281,7 +281,6 @@ packages:
     lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: false
     emerge:
       jobs: "3"
       packages:
@@ -321,7 +320,6 @@ packages:
   #       - app-emulation/virtualbox-modules
   #   labels:
   #     emerge.jobs: "3"
-  #     lts.kernel: false
   #   requires:
   #     - name: mocaccino-full
   #       category: kernel
@@ -342,7 +340,6 @@ packages:
     #   lts: false
     #   labels:
     #     emerge.jobs: "3"
-    #     lts.kernel: false
     #   emerge:
     #     jobs: "3"
     #     packages:
@@ -375,7 +372,6 @@ packages:
     #   lts: false
     #   labels:
     #     emerge.jobs: "3"
-    #     lts.kernel: false
     #   emerge:
     #     jobs: "3"
     #     packages:
@@ -405,7 +401,6 @@ packages:
     lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: false
     emerge:
       jobs: "3"
       packages:
@@ -431,7 +426,6 @@ packages:
     lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: false
     emerge:
       jobs: "3"
       packages:
@@ -461,7 +455,6 @@ packages:
     lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: false
     emerge:
       jobs: "3"
       packages:
@@ -491,7 +484,6 @@ packages:
     lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: false
     emerge:
       jobs: "3"
       packages:
