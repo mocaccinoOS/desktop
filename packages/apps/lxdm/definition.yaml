@@ -1,6 +1,6 @@
 category: "apps"
 name: "lxdm"
-version: 0.5.3-r4+33
+version: 0.5.3-r4+34
 uri:
   - https://wiki.lxde.org/en/LXDM
 license: "GPL-3"

@@ -1,6 +1,6 @@
 category: "layers"
 name: "cinnamon"
-version: 6.4.8-r2+5
+version: 6.4.8-r2+6
 uri:
   - https://github.com/linuxmint/cinnamon-desktop
 license: "GPL-2+ FDL-1.1+ LGPL-2+"
@@ -21,10 +21,10 @@ provides:
     version: '>=0'
   - name: xed
     category: app-editors
-    version: '>=0'  
+    version: '>=0'
   - name: yelp-tools
     category: app-text
-    version: '>=0'  
+    version: '>=0'
   - name: spidermonkey
     category: dev-libs
     version: '>=0'

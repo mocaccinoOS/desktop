@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-pim"
-version: 25.04.3+5
+version: 25.04.3+6
 uri:
   - https://community.kde.org/KDE_PIM
 license: "GPL-2+ LGPL-2.1+"
