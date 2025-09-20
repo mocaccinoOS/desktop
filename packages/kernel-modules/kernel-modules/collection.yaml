@@ -306,28 +306,7 @@ packages:
       - name: nvidia-drivers-lts
         category: kernel-modules
         version: ">=0"
-  #
-  # In near future if we want virtualbox supported for the non-lts kernel
-  # we need to figure out a way how to make apps/virtualbox depend on app-emulation/virtualbox-modules
-  #
-  # - category: "kernel-modules"
-  #   name: "virtualbox-modules"
-  #   version: 7.1.12+3
-  #   lts: false
-  #   emerge:
-  #     jobs: "3"
-  #     packages:
-  #       - app-emulation/virtualbox-modules
-  #   labels:
-  #     emerge.jobs: "3"
-  #   requires:
-  #     - name: mocaccino-full
-  #       category: kernel
-  #       version: ">=0"
-  #   conflicts:
-  #     - name: virtualbox-modules-lts
-  #       category: kernel-modules
-  #       version: ">=0"
+
     # Currently fails against 6.16.7 kernel
     #
     # - category: "kernel-modules"
@@ -443,6 +422,24 @@ packages:
         version: ">=0"
     conflicts:
       - name: vhba-lts
+        category: kernel-modules
+        version: ">=0"
+  - category: "kernel-modules"
+    name: "virtualbox-modules"
+    version: 7.1.12+3
+    lts: false
+    emerge:
+      jobs: "3"
+      packages:
+        - app-emulation/virtualbox-modules
+    labels:
+      emerge.jobs: "3"
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
+    conflicts:
+      - name: virtualbox-modules-lts
         category: kernel-modules
         version: ">=0"
   - category: "kernel-modules"
