@@ -1,6 +1,2 @@
 # Always keep newer python masked
 dev-lang/python:3.14
-
-# 2025-05-23: Joost Ruis
-# New Curl breaks cmake
->net-misc/curl-8.12.1
