@@ -3,3 +3,4 @@ install:
 - for each in /usr/lib64/virtualbox/VBox{SDL,Headless,Net{AdpCtl,DHCP,NAT}} ; do chmod 4750 ${each}; done
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 - ldconfig
+- if [[ ! $(luet search --installed kernel-modules/virtualbox-modules) ]]; then if [[ $(luet search --installed ^kernel/.*\-lts\-) ]]; then luet install -y kernel-modules/virtualbox-modules-lts || true; else luet install -y kernel-modules/virtualbox-modules || true; fi; fi
