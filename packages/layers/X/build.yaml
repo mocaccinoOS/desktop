@@ -9,7 +9,6 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- cp -rf patches /etc/portage/
 - USE="-webp" emerge -1 media-libs/tiff && emerge -1 -j ${JOBS} app-arch/rpm2targz app-text/docbook-xsl-ns-stylesheets && USE="-cairo -harfbuzz" emerge -1 -j ${JOBS} media-libs/harfbuzz media-libs/freetype && emerge -1 -j ${JOBS} media-libs/mesa
 {{ template "portage_prelude_build" . }}
 steps:
