@@ -6,7 +6,8 @@ kde-plasma/plasma-desktop input_devices_synaptics touchpad
 kde-plasma/kde-cli-tools kdesu
 kde-plasma/kdeplasma-addons desktopglobe json oauth semantic-desktop
 kde-plasma/kscreenlocker -seccomp
-kde-plasma/kwin accessibility captury lock xcomposite
+kde-plasma/kwin accessibility lock
+kde-plasma/kwin-x11 accessibility lock
 kde-plasma/oxygen -qt5
 kde-plasma/plasma-integration -qt5
 kde-plasma/plasma-nm modemmanager openconnect
