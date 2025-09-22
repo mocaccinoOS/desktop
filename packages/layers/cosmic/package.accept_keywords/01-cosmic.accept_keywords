@@ -10,6 +10,7 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-greeter-1.0.0_beta1 ~amd64
 =cosmic-base/cosmic-icons-1.0.0_beta1 ~amd64
 =cosmic-base/cosmic-idle-1.0.0_beta1 ~amd64
+=cosmic-base/cosmic-initial-setup-1.0.0_beta1 ~amd64
 =cosmic-base/cosmic-launcher-1.0.0_beta1 ~amd64
 =cosmic-base/cosmic-meta-1.0.0_beta1 ~amd64
 =cosmic-base/cosmic-notifications-1.0.0_beta1 ~amd64
