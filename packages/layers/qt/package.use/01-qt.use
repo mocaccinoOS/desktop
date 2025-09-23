@@ -1,4 +1,3 @@
-app-crypt/gpgme qt6
 app-crypt/qca qt6 gpg ssl
 app-text/poppler qt6
 dev-libs/qtkeychain qt6
