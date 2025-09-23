@@ -1,0 +1,9 @@
+# TREZOR v1
+SUBSYSTEM=="usb", ATTR{idVendor}=="534c", ATTR{idProduct}=="0001", MODE="0660", GROUP="plugdev"
+
+# TREZOR v2 (Model T)
+SUBSYSTEM=="usb", ATTR{idVendor}=="1209", ATTR{idProduct}=="53c0", MODE="0660", GROUP="plugdev"
+SUBSYSTEM=="usb", ATTR{idVendor}=="1209", ATTR{idProduct}=="53c1", MODE="0660", GROUP="plugdev"
+
+# Safe-T (Archos)
+SUBSYSTEM=="usb", ATTR{idVendor}=="24fc", ATTR{idProduct}=="0102", MODE="0660", GROUP="plugdev"

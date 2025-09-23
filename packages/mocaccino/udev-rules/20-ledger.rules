@@ -1,0 +1,2 @@
+# Ledger Nano S / Nano X / Blue
+SUBSYSTEM=="usb", ATTR{idVendor}=="2c97", MODE="0660", GROUP="plugdev"
