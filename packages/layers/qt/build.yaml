@@ -37,24 +37,6 @@ excludes:
 - ^/usr/share/man/man1/pdftops.1.bz2
 - ^/usr/share/man/man1/pdftotext.1.bz2
 - ^/usr/share/man/man1/pdfunite.1.bz2
-# Gpgme split. Only ship Qt module
-- ^/usr/bin/gpgme-config
-- ^/usr/bin/gpgme-json
-- ^/usr/bin/gpgme-tool
-- ^/usr/lib/python.*/site-packages/gpg
-- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfig.cmake
-- ^/usr/lib64/cmake/Gpgmepp/GpgmeppConfigVersion.cmake
-- ^/usr/lib64/libgpgme.so
-- ^/usr/lib64/libgpgme.so.*
-- ^/usr/lib64/libgpgmepp.so
-- ^/usr/lib64/libgpgmepp.so.*
-- ^/usr/lib64/pkgconfig/gpgme-glib.pc
-- ^/usr/lib64/pkgconfig/gpgme.pc
-- ^/usr/lib64/pkgconfig/gpgmepp.pc
-- ^/usr/share/aclocal/gpgme.m4
-- ^/usr/share/doc/gpgme-.*/.*
-- ^/usr/share/info/gpgme.info.*
-- ^/usr/share/man/man1/gpgme-json.1.bz2
 env:
 {{ template "portage_env" . }}
 prelude:
