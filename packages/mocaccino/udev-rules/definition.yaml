@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "udev-rules"
-version: "1.4"
+version: "1.4.1"
 labels:
 requires:
   - category: "layers"
