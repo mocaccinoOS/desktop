@@ -8,9 +8,11 @@ excludes:
 - ^/usr/share/wallpapers/DarkestHour
 - ^/usr/share/wallpapers/FlyingKonqui
 - ^/usr/share/wallpapers/Grey
+- ^/usr/share/wallpapers/IceCold
 - ^/usr/share/wallpapers/Kite
 - ^/usr/share/wallpapers/Mountain
 - ^/usr/share/wallpapers/OneStandsOut
+- ^/usr/share/wallpapers/Patak
 - ^/usr/share/wallpapers/Path
 - ^/usr/share/wallpapers/SafeLanding
 - ^/usr/share/wallpapers/ScarletTree

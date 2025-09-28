@@ -15,12 +15,16 @@ includes:
 - ^/usr/share/wallpapers/FlyingKonqui/.*
 - ^/usr/share/wallpapers/Grey$
 - ^/usr/share/wallpapers/Grey/.*
+- ^/usr/share/wallpapers/IceCold$
+- ^/usr/share/wallpapers/IceCold/.*
 - ^/usr/share/wallpapers/Kite$
 - ^/usr/share/wallpapers/Kite/.*
 - ^/usr/share/wallpapers/Mountain$
 - ^/usr/share/wallpapers/Mountain/.*
 - ^/usr/share/wallpapers/OneStandsOut$
 - ^/usr/share/wallpapers/OneStandsOut/.*
+- ^/usr/share/wallpapers/Patak$
+- ^/usr/share/wallpapers/Patak/.*
 - ^/usr/share/wallpapers/Path$
 - ^/usr/share/wallpapers/Path/.*
 - ^/usr/share/wallpapers/SafeLanding$
