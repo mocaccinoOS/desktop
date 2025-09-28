@@ -4,6 +4,8 @@ excludes:
 - ^/usr/share/wallpapers/Autumn
 - ^/usr/share/wallpapers/Canopee
 - ^/usr/share/wallpapers/ColdRipple
+- ^/usr/share/wallpapers/ColorfulCups
+- ^/usr/share/wallpapers/DarkestHour
 - ^/usr/share/wallpapers/FlyingKonqui
 - ^/usr/share/wallpapers/Grey
 - ^/usr/share/wallpapers/Kite
@@ -12,6 +14,7 @@ excludes:
 - ^/usr/share/wallpapers/Path
 - ^/usr/share/wallpapers/SafeLanding
 - ^/usr/share/wallpapers/ScarletTree
+- ^/usr/share/wallpapers/summer_1am
 env:
 {{ template "portage_env" . }}
 prelude:

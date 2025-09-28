@@ -7,6 +7,10 @@ includes:
 - ^/usr/share/wallpapers/Canopee/.*
 - ^/usr/share/wallpapers/ColdRipple$
 - ^/usr/share/wallpapers/ColdRipple/.*
+- ^/usr/share/wallpapers/ColorfulCups$
+- ^/usr/share/wallpapers/ColorfulCups/.*
+- ^/usr/share/wallpapers/DarkestHour$
+- ^/usr/share/wallpapers/DarkestHour/.*
 - ^/usr/share/wallpapers/FlyingKonqui$
 - ^/usr/share/wallpapers/FlyingKonqui/.*
 - ^/usr/share/wallpapers/Grey$
@@ -23,6 +27,8 @@ includes:
 - ^/usr/share/wallpapers/SafeLanding/.*
 - ^/usr/share/wallpapers/ScarletTree$
 - ^/usr/share/wallpapers/ScarletTree/.*
+- ^/usr/share/wallpapers/summer_1am$
+- ^/usr/share/wallpapers/summer_1am/.*
 unpack: true
 requires:
 - name: plasma
