@@ -1,0 +1,20 @@
+includes:
+- /usr$
+- /usr/share/wallpapers$
+- ^/usr/share/wallpapers/Autumn$
+- ^/usr/share/wallpapers/Autumn/.*
+- ^/usr/share/wallpapers/Canopee$
+- ^/usr/share/wallpapers/Canopee/.*
+- ^/usr/share/wallpapers/Kite$
+- ^/usr/share/wallpapers/Kite/.*
+- ^/usr/share/wallpapers/OneStandsOut$
+- ^/usr/share/wallpapers/OneStandsOut/.*
+- ^/usr/share/wallpapers/Path$
+- ^/usr/share/wallpapers/Path/.*
+- ^/usr/share/wallpapers/ScarletTree$
+- ^/usr/share/wallpapers/ScarletTree/.*
+unpack: true
+requires:
+- name: plasma
+  version: ">=0"
+  category: layers
