@@ -1,11 +1,16 @@
 excludes:
 {{ template "portage_excludes" }}
-# To reduce footprint drop some wallpapers
+# To reduce footprint drop some wallpapers, they can be installed through themes/plasma-wallpapers-extra
 - ^/usr/share/wallpapers/Autumn
 - ^/usr/share/wallpapers/Canopee
+- ^/usr/share/wallpapers/ColdRipple
+- ^/usr/share/wallpapers/FlyingKonqui
+- ^/usr/share/wallpapers/Grey
 - ^/usr/share/wallpapers/Kite
+- ^/usr/share/wallpapers/Mountain
 - ^/usr/share/wallpapers/OneStandsOut
 - ^/usr/share/wallpapers/Path
+- ^/usr/share/wallpapers/SafeLanding
 - ^/usr/share/wallpapers/ScarletTree
 env:
 {{ template "portage_env" . }}
