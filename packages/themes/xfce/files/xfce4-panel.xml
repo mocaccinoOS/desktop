@@ -59,9 +59,6 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="ethernet network connection “wired connection 1” active"/>
-      </property>
     </property>
     <property name="plugin-7" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -75,22 +72,22 @@
     <property name="plugin-12" type="string" value="separator"/>
     <property name="plugin-13" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17591424151.desktop"/>
+        <value type="string" value="thunar.desktop"/>
       </property>
     </property>
     <property name="plugin-14" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17591424152.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
       </property>
     </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17591424153.desktop"/>
+        <value type="string" value="firefox-esr.desktop"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17591424154.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
       </property>
     </property>
     <property name="plugin-17" type="string" value="separator"/>
