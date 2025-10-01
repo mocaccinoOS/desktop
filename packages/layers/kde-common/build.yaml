@@ -1,5 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
+# Add back once VLC4 is stable in Portage tree
+- ^/usr/share/applications/phononsettings-phonon.desktop
 env:
 {{ template "portage_env" . }}
 prelude:
