@@ -14,8 +14,6 @@ prelude:
 - ebuild /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild manifest
 steps:
 {{ template "portage_build" . }}
-# silly issue, fix it here for now
-- mv /usr/share/icons/Qogir-dark /usr/share/icons/Qogir-Dark
 requires:
 - category: "layers"
   name: "X"
