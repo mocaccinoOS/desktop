@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "polkit-rules"
-version: "1.1"
+version: "1.2"
 labels:
 requires:
   - category: "layers"
