@@ -1,8 +1,0 @@
-polkit.addRule(function(action, subject) {
-    if ((action.id == "org.freedesktop.NetworkManager.settings.modify.system" ||
-         action.id == "org.freedesktop.NetworkManager.wifi.share.open" ||
-         action.id == "org.freedesktop.NetworkManager.wifi.share.protected") &&
-        subject.isInGroup("users")) {
-        return polkit.Result.YES;
-    }
-});
