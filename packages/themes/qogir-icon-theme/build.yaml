@@ -7,7 +7,7 @@ prelude:
 - cp -rf package.accept_keywords /etc/portage/
 - mkdir -p /etc/portage/repos.conf/ && cp -rf joost-guru.conf /etc/portage/repos.conf/
 - emerge -1 app-eselect/eselect-repository
-- eselect repository enable joost-guru
+# - eselect repository enable joost-guru
 - emaint sync -r joost-guru
 # bump to latest version
 # - cp /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2020.11.22.ebuild /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild
