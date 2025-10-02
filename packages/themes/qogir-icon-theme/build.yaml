@@ -5,7 +5,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-- cp -rf joost-guru.conf /etc/portage/repos.conf/
+- mkdir -p /etc/portage/repos.conf/ && cp -rf joost-guru.conf /etc/portage/repos.conf/
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable joost-guru
 - emaint sync -r joost-guru
