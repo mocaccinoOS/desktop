@@ -146,6 +146,32 @@ setup_live_user() {
             -m -N -p "" -s /bin/bash ${live_uid} "${live_user}"
         # setting sudoers file
         [ -e /etc/sudoers ] && grep -q -F ${live_user} /etc/sudoers || echo "${live_user} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+        # ==============================================================================
+        # HACK: KWallet Disablement for Plasma Live ISO Stability
+        # This section prevents the NetworkManager D-Bus timeout by disabling the 
+        # KWallet subsystem for the live user, forcing the immediate password prompt.
+        # ==============================================================================
+        log_info "Applying KWallet workaround for first-time Wi-Fi stability on Plasma."
+
+        LUSER_HOME="/home/${live_user}"
+        LUSER_CONFIG_DIR="${LUSER_HOME}/.config"
+
+        # 1. Ensure the user's .config directory exists
+        if [ ! -d "${LUSER_CONFIG_DIR}" ]; then
+            mkdir -p "${LUSER_CONFIG_DIR}"
+        fi
+
+        # 2. Write the KWallet configuration file with 'Enabled=false'
+        # This ensures KWallet service never starts or gets involved in secret retrieval.
+        echo -e "[Wallet]\nEnabled=false" > "${LUSER_CONFIG_DIR}/kwalletrc"
+
+        # 3. Set ownership of the config file back to the live user
+        chown "${live_user}:${live_user}" "${LUSER_CONFIG_DIR}/kwalletrc"
+
+        log_info "KWallet successfully disabled for ${live_user} to ensure Wi-Fi stability."
+        # ==============================================================================
+
         return 0
     fi
     return 1
