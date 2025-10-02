@@ -5,11 +5,11 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - cp -rf package.accept_keywords /etc/portage/
-- mkdir -p /etc/portage/repos.conf/ && cp -rf joost-guru.conf /etc/portage/repos.conf/
-- mkdir -p /var/db/repos/joost-guru
+- mkdir -p /etc/portage/repos.conf/ && cp -rf guru.conf /etc/portage/repos.conf/
+- mkdir -p /var/db/repos/guru
 - emerge -1 app-eselect/eselect-repository
 # - eselect repository enable joost-guru
-- emaint sync -r joost-guru
+- emaint sync -r guru
 # bump to latest version
 # - cp /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2020.11.22.ebuild /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild
 # - sed -i 's/2020-11-22/2025-02-15/g' /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild
