@@ -8,10 +8,6 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
 - emaint sync -r guru
-# bump to latest version
-- cp /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2020.11.22.ebuild /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild
-- sed -i 's/2020-11-22/2025-02-15/g' /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild
-- ebuild /var/db/repos/guru/x11-themes/qogir-icon-theme/qogir-icon-theme-2025.02.15.ebuild manifest
 steps:
 {{ template "portage_build" . }}
 requires:
