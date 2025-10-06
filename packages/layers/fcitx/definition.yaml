@@ -8,7 +8,7 @@ description: "Fcitx 5 is a generic input method framework"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-i18n/fcitx
+    app-i18n/fcitx x11-libs/xcb-imdkit
 provides:
   - name: fcitx
     category: app-i18n
