@@ -2,7 +2,7 @@ packages:
   # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 570.181+9
+    version: "570.190"
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -273,7 +273,7 @@ packages:
   # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 570.181+12
+    version: "570.190"
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
