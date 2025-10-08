@@ -22,5 +22,4 @@ install:
 - for tool in iptables iptables-save iptables-restore; do \
     link="/usr/sbin/$tool"; \
     target="$(readlink -f "$link" 2>/dev/null || true)"; \
-    [ "$target" = "/usr/sbin/xtables-legacy-multi" ] && ln -sf /usr/sbin/xtables-nft-multi "$link"; \
-  done
+    [ "$target" = "/usr/sbin/xtables-legacy-multi" ] && ln -sf /usr/sbin/xtables-nft-multi "$link"; done
