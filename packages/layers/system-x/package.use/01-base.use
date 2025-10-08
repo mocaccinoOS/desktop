@@ -38,6 +38,7 @@ media-libs/libpng apng static-libs
 # net-dns/libidn2[static-libs] is for net-misc/curl
 net-dns/libidn2 static-libs
 net-dns/unbound ecdsa python
+net-firewall/iptables nftables
 net-libs/gnutls cxx dane idn nls openssl pkcs11 seccomp sslv2 sslv3 tls-heartbeat tools
 net-misc/curl adns http2 idn ssl sslv3 -gnutls static-libs
 net-misc/openssh libedit -X -ldap

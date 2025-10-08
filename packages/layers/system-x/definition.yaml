@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20251003"
+version: 0.20251003+1
 gcc_version: "14"
 python_version: "3.13"
 category: layers
@@ -886,6 +886,9 @@ provides:
   - name: gnutls
     category: net-libs
     version: '>=0'
+  - name: libnftnl
+    category: net-libs
+    version: '>=0'
   - name: libmnl
     category: net-libs
     version: '>=0'
@@ -905,6 +908,9 @@ provides:
     category: net-mail
     version: '>=0'
   - name: curl
+    category: net-misc
+    version: '>=0'
+  - name: ethertypes
     category: net-misc
     version: '>=0'
   - name: iputils
