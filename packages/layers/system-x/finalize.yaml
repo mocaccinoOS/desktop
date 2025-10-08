@@ -19,7 +19,4 @@ install:
 # Modern kernels (6.17+) have dropped support for ip_tables.ko,
 # so legacy iptables binaries no longer function unless redirected to nftables.
 # This ensures all iptables tools (iptables, save, restore) use the nft backend.
-- for tool in iptables iptables-save iptables-restore; do \
-    link="/usr/sbin/$tool"; \
-    target="$(readlink -f "$link" 2>/dev/null || true)"; \
-    [ "$target" = "/usr/sbin/xtables-legacy-multi" ] && ln -sf /usr/sbin/xtables-nft-multi "$link"; done
+- iptables --version 2>&1 | grep -q 'legacy' && for tool in iptables iptables-save iptables-restore; do [ -e "/usr/sbin/$tool" ] && ln -sf /usr/sbin/xtables-nft-multi "/usr/sbin/$tool"; done
