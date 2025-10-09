@@ -15,8 +15,3 @@ install:
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
 # This must be run incase of trival changes in config files
 - etc-update -p
-# --- iptables backend note ---
-# Modern kernels (6.17+) have dropped support for ip_tables.ko,
-# so legacy iptables binaries no longer function unless redirected to nftables.
-# This ensures all iptables tools (iptables, save, restore) use the nft backend.
-- iptables --version 2>&1 | grep -q 'legacy' && for tool in iptables iptables-save iptables-restore; do [ -e "/usr/sbin/$tool" ] && ln -sf /usr/sbin/xtables-nft-multi "/usr/sbin/$tool"; done
