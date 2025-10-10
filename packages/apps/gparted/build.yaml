@@ -9,5 +9,5 @@ steps:
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
-  name: "gnome-common"
+  name: "X"
   version: ">=0"

@@ -1,6 +1,6 @@
 category: "layers"
 name: "sway"
-version: 1.10.1+33
+version: 1.10.1+34
 uri:
   - https://swaywm.org
 license: "MIT"

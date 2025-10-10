@@ -1,6 +1,6 @@
 category: "apps"
 name: "lightdm"
-version: 1.32.0-r5+6
+version: 1.32.0-r5+7
 uri:
   - https://launchpad.net/lightdm
 license: "GPL-3 LGPL-3"
@@ -11,7 +11,7 @@ labels:
     x11-misc/lightdm x11-misc/lightdm-gtk-greeter
 requires:
   - category: "layers"
-    name: "gnome-common"
+    name: "X"
     version: ">=0"
   - category: "entity"
     name: "lightdm"

@@ -1,6 +1,6 @@
 category: "apps"
 name: "gparted"
-version: 1.6.0-r2+13
+version: 1.6.0-r2+14
 uri:
   - https://gparted.org
 license: "GPL-2+ FDL-1.2+"
@@ -16,5 +16,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "gnome-common"
+    name: "X"
     version: ">=0"

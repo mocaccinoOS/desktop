@@ -1,1 +1,1 @@
-sys-block/gparted -kde -gtk dmraid f2fs mdadm btrfs
+sys-block/gparted -kde -test
