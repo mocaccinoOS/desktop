@@ -1,6 +1,10 @@
 category: "layers"
 name: "kde-common"
 version: 6+101
+uri:
+  - https://mocaccino.org
+license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
+description: "Runtime KDE and Plasma framework layer built on top of the Qt layer, providing the complete set of KDE Frameworks, core Plasma libraries, and supporting components such as KIO, Kirigami, Solid, Sonnet, and Phonon. Forms the base foundation for KDE and Plasma desktop environments, offering shared functionality, file handling, multimedia, and service integration."
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
