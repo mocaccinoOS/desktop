@@ -4,7 +4,7 @@ version: 6.9.2+4
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
-description: "Common Qt runtime and development layer built on top of the X layer, providing essential Qt modules, Python bindings, build utilities, and supporting libraries for KDE Frameworks and Qt-based applications. Includes PyQt6, QtWebEngine, QtMultimedia, QtWayland, and developer tools such as SIP, Ninja, and Rust integration. Serves as the shared foundation for Plasma and other Qt environments in MocaccinoOS."
+description: "Qt runtime and support layer built on top of the X layer, providing the core Qt modules, Python and Perl bindings, cryptographic and system libraries, and supporting components required for modern Qt and KDE-based applications. Includes QtWebEngine, QtMultimedia, QtWayland, and related libraries like QCA and Polkit-Qt."
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
