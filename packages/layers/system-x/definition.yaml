@@ -1,8 +1,12 @@
-name: system-x
+category: "layers"
+name: "system-x"
 version: "0.20251010"
 gcc_version: "14"
 python_version: "3.13"
-category: layers
+uri:
+  - https://mocaccino.org
+license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
+description: "Core MocaccinoOS layer providing the essential base system with systemd, dbus, udev, polkit, coreutils, and all fundamental user and group accounts required for a functional Linux environment. Forms the foundation for all higher MocaccinoOS layers."
 labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "10"
