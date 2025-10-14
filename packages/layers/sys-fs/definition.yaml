@@ -1,6 +1,10 @@
 category: "layers"
 name: "sys-fs"
 version: 1.3+10
+uri:
+  - https://mocaccino.org
+license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
+description: "System utilities and filesystem management layer built on top of system-x. Provides tools and libraries for filesystem creation, maintenance, compression, encryption, storage devices, and basic networking services. Includes support for Btrfs, ZFS, F2FS, NTFS, exFAT, and RAID, forming the backbone for storage and hardware management in MocaccinoOS."
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
