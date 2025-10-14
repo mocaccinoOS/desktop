@@ -1,6 +1,10 @@
 category: "layers"
 name: "gnome-common"
 version: 1.4+21
+uri:
+  - https://mocaccino.org
+license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
+description: "Common GNOME runtime layer built on top of the X layer, providing essential libraries, language runtimes, and system services required by GNOME-based environments and GTK applications. Includes geolocation, printing, multimedia, web, and network management components, as well as development tools and language bindings for Python, Ruby, and JavaScript integration. Forms the shared foundation for higher GNOME desktop layers in MocaccinoOS."
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
