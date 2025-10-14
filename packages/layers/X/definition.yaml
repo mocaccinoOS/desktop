@@ -1,6 +1,10 @@
 category: "layers"
 name: "X"
 version: 1.5+16
+uri:
+  - https://mocaccino.org
+license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
+description: "Graphical and multimedia foundation layer providing the complete X11 and Wayland stack, hardware acceleration, input device support, font rendering, and essential multimedia libraries. Includes Mesa, Cairo, GTK, GStreamer, fontconfig, freetype, and related components required by desktop environments and graphical applications. Builds directly on top of sys-fs to deliver a full graphical runtime environment for MocaccinoOS."
 labels:
   emerge.jobs: "10"
   emerge.packages: >-
