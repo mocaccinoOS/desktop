@@ -16,6 +16,8 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
+# prevent configure failure when CC includes -m32 or -mfpmath flags
+- sed -i '/echo "\${@}"/i\	sed -i "s|basename \\$CC|basename \\"\\${CC%% *}\\"|" configure || die "fix broken CC parsing"' /var/db/repos/gentoo/app-crypt/rhash/rhash-1.4.5.ebuild && sudo ebuild /var/db/repos/gentoo/app-crypt/rhash/rhash-1.4.5.ebuild manifest
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
