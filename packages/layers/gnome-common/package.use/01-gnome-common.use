@@ -19,3 +19,9 @@ net-libs/gnome-online-accounts vala
 net-libs/gtk-vnc gtk3
 net-libs/webkit-gtk keyring lcms pdf spell
 x11-libs/xapp introspection
+
+# Enable Ruby 3.3 support for necessary dependencies (temp fix for build requirements)
+virtual/rubygems ruby_targets_ruby33
+dev-ruby/rubygems ruby_targets_ruby33
+dev-ruby/test-unit ruby_targets_ruby33
+dev-ruby/racc ruby_targets_ruby33
