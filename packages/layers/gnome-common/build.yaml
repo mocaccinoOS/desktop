@@ -3,7 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- sed -i "s/^RUBY_TARGETS=.*/RUBY_TARGETS=\"ruby$(eselect ruby list --brief | tail -n1 | grep -oE '[0-9]{2}')\"/" /etc/portage/make.conf
+- emerge -1 app-eselect/eselect-ruby && sed -i "s/^RUBY_TARGETS=.*/RUBY_TARGETS=\"ruby$(eselect ruby list --brief | tail -n1 | grep -oE '[0-9]{2}')\"/" /etc/portage/make.conf
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
