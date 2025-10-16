@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome-common"
-version: 1.4+21
+version: 1.4+22
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"

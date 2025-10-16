@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 6.9.2+4
+version: "6.9.3"
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"

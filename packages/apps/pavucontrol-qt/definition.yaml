@@ -1,6 +1,6 @@
 category: "apps"
 name: "pavucontrol-qt"
-version: 2.0.0+65
+version: 2.0.0+66
 uri:
   - https://lxqt-project.org
 license: "GPL-2 GPL-2+"
