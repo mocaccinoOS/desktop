@@ -4,7 +4,7 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-applets-1.0.0_beta1_p1 ~amd64
 =cosmic-base/cosmic-applibrary-1.0.0_beta1_p1 ~amd64
 =cosmic-base/cosmic-bg-1.0.0_beta1_p1 ~amd64
-=cosmic-base/cosmic-comp-1.0.0_beta1_p1 ~amd64
+=cosmic-base/cosmic-comp-1.0.0_beta1_p1-r1 ~amd64
 =cosmic-base/cosmic-edit-1.0.0_beta1_p1 ~amd64
 =cosmic-base/cosmic-files-1.0.0_beta1_p1 ~amd64
 =cosmic-base/cosmic-greeter-1.0.0_beta1_p1 ~amd64
