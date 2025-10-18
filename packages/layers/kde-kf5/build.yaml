@@ -50,6 +50,8 @@ prelude:
 # needed for dev-qt/qtcharts:5
 - eselect repository enable xoores
 - emaint sync -r xoores
+# test
+- emerge -1 dev-qt/qtcharts:5::xoores
 {{ template "portage_prelude_build" . }}
 steps:
 # test
