@@ -1,5 +1,7 @@
 excludes:
 {{ template "portage_excludes" }}
+- ^/usr/share/applications/org.gnome.Vte.App.Gtk3.desktop
+- ^/usr/share/applications/org.gnome.Vte.App.Gtk4.desktop
 env:
 {{ template "portage_env" . }}
 prelude:
