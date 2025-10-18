@@ -4,7 +4,7 @@ version: 5.116.0+102
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-python/pyqt5 dev-python/pyqt5-sip dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtchooser:0 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtconcurrent:5 dev-qt/qtdeclarative:5 dev-qt/qtgraphicaleffects:5 dev-qt/qthelp:5 dev-qt/qtimageformats:5 dev-qt/qtlockedfile:0 dev-qt/qtmultimedia:5 dev-qt/qtnetwork:5 dev-qt/qtopengl:5 dev-qt/qtpositioning:5 dev-qt/qtprintsupport:5 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qtscript dev-qt/qtscxml:5 dev-qt/qtserialport:5 dev-qt/qtsingleapplication:0 dev-qt/qtspeech:5 dev-qt/qtsql:5 dev-qt/qtsvg:5 dev-qt/qttest:5 dev-qt/qttranslations:5 dev-qt/qtwayland:5 dev-qt/qtwaylandscanner:5 dev-qt/qtwebsockets:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-qt/qtxmlpatterns:5 kde-frameworks/attica:5 kde-frameworks/karchive:5 kde-frameworks/kauth:5 kde-frameworks/kbookmarks:5 kde-frameworks/kcmutils:5 kde-frameworks/kcodecs:5 kde-frameworks/kcompletion:5 kde-frameworks/kconfig:5 kde-frameworks/kconfigwidgets:5 kde-frameworks/kcoreaddons:5 kde-frameworks/kcrash:5 kde-frameworks/kded:5 kde-frameworks/kdbusaddons:5 kde-frameworks/kdeclarative:5 kde-frameworks/kdoctools:5 kde-frameworks/kglobalaccel:5 kde-frameworks/kguiaddons:5 kde-frameworks/ki18n:5 kde-frameworks/kiconthemes:5 kde-frameworks/kirigami:5  kde-frameworks/kitemmodels:5 kde-frameworks/kitemviews:5 kde-frameworks/kjobwidgets:5 kde-frameworks/knewstuff:5 kde-frameworks/knotifications:5 kde-frameworks/kpackage:5 kde-frameworks/kservice:5 kde-frameworks/kwallet:5 kde-frameworks/kwidgetsaddons:5 kde-frameworks/kwindowsystem:5 kde-frameworks/kxmlgui:5 kde-frameworks/solid:5 kde-plasma/kwayland:5
+    dev-python/pyqt5 dev-python/pyqt5-sip dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtchooser:0 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtcharts:5 dev-qt/qtconcurrent:5 dev-qt/qtdeclarative:5 dev-qt/qtgraphicaleffects:5 dev-qt/qthelp:5 dev-qt/qtimageformats:5 dev-qt/qtlockedfile:0 dev-qt/qtmultimedia:5 dev-qt/qtnetwork:5 dev-qt/qtopengl:5 dev-qt/qtpositioning:5 dev-qt/qtprintsupport:5 dev-qt/qtquickcontrols:5 dev-qt/qtquickcontrols2:5 dev-qt/qtscript dev-qt/qtscxml:5 dev-qt/qtserialport:5 dev-qt/qtsingleapplication:0 dev-qt/qtspeech:5 dev-qt/qtsql:5 dev-qt/qtsvg:5 dev-qt/qttest:5 dev-qt/qttranslations:5 dev-qt/qtwayland:5 dev-qt/qtwaylandscanner:5 dev-qt/qtwebsockets:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 dev-qt/qtxmlpatterns:5 kde-frameworks/attica:5 kde-frameworks/karchive:5 kde-frameworks/kauth:5 kde-frameworks/kbookmarks:5 kde-frameworks/kcmutils:5 kde-frameworks/kcodecs:5 kde-frameworks/kcompletion:5 kde-frameworks/kconfig:5 kde-frameworks/kconfigwidgets:5 kde-frameworks/kcoreaddons:5 kde-frameworks/kcrash:5 kde-frameworks/kded:5 kde-frameworks/kdbusaddons:5 kde-frameworks/kdeclarative:5 kde-frameworks/kdoctools:5 kde-frameworks/kglobalaccel:5 kde-frameworks/kguiaddons:5 kde-frameworks/ki18n:5 kde-frameworks/kiconthemes:5 kde-frameworks/kirigami:5  kde-frameworks/kitemmodels:5 kde-frameworks/kitemviews:5 kde-frameworks/kjobwidgets:5 kde-frameworks/knewstuff:5 kde-frameworks/knotifications:5 kde-frameworks/kpackage:5 kde-frameworks/kservice:5 kde-frameworks/kwallet:5 kde-frameworks/kwidgetsaddons:5 kde-frameworks/kwindowsystem:5 kde-frameworks/kxmlgui:5 kde-frameworks/solid:5 kde-plasma/kwayland:5
 requires:
   - category: "layers"
     name: "kde-common"
@@ -17,6 +17,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: qtlinguist-tools
+    category: dev-qt
+    version: '>=0'
+  - name: qtcharts
     category: dev-qt
     version: '>=0'
   - name: qtconcurrent
