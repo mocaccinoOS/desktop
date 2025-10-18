@@ -46,6 +46,10 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+# needed for dev-qt/qtcharts:5
+- eselect repository enable xoores
+- emaint sync -r xoores
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 - EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" USE="qt5" emerge -1 media-libs/phonon
