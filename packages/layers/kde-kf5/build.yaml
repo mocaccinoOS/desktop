@@ -52,6 +52,8 @@ prelude:
 - emaint sync -r xoores
 {{ template "portage_prelude_build" . }}
 steps:
+# test
+- emerge -1 dev-qt/qtcharts:5::xoores
 - EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" USE="qt5" emerge -1 media-libs/phonon
 - USE="qt5 -qt6" emerge -1 app-text/poppler
 - USE="qt5 -qt6" emerge -1 --nodeps dev-qt/qtwidgets:5 sys-auth/polkit-qt
