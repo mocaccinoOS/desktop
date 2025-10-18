@@ -50,12 +50,12 @@ prelude:
 # needed for dev-qt/qtcharts:5
 - eselect repository enable xoores
 - emaint sync -r xoores
-{{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "portage_prelude_build" . }}
 steps:
 - EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" USE="qt5" emerge -1 media-libs/phonon
 - USE="qt5 -qt6" emerge -1 app-text/poppler
 - USE="qt5 -qt6" emerge -1 --nodeps dev-qt/qtwidgets:5 sys-auth/polkit-qt
-{{ template "portage_build_gentoo_binary" . }}
+{{ template "portage_build" . }}
 requires:
 - category: "buildbase"
   name: "kde-common"
