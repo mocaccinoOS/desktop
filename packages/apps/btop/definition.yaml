@@ -1,6 +1,6 @@
 category: "apps"
 name: "btop"
-version: 1.4.3+4
+version: "1.4.4"
 uri:
   - https://github.com/aristocratos/btop
 license: "Apache-2.0"
