@@ -1,6 +1,6 @@
 category: "apps"
 name: "luet_pm_gui"
-version: 0.7.0+2
+version: "0.7.1"
 requires:
   - category: "layers"
     name: "X"
