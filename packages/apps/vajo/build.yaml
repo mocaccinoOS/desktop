@@ -2,12 +2,8 @@ image: "debian:stable"
 
 prelude:
 - apt-get update
-- apt-get -y install imagemagick
+- apt-get -y install imagemagick git
 - git clone https://github.com/joostruis/luet_pm_gui.git
 steps:
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
 - for size in 16 24 32 48 64 128 256; do mkdir -p /usr/share/icons/hicolor/"${size}x${size}"/apps && magick /usr/share/pixmaps/vajo.png -resize "${size}x${size}" /usr/share/icons/hicolor/"${size}x${size}"/apps/vajo.png; done
-requires:
-- category: "layers"
-  name: "X"
-  version: ">=0"
