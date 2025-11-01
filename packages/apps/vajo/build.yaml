@@ -2,7 +2,7 @@ image: "debian:stable"
 
 prelude:
 - apt-get update
-- apt-get install imagemagick
+- apt-get -y install imagemagick
 - git clone https://github.com/joostruis/luet_pm_gui.git
 steps:
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
