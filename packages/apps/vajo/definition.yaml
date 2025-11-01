@@ -1,6 +1,6 @@
 category: "apps"
 name: "vajo"
-version: 0.7.7+3
+version: 0.7.7+4
 requires:
   - category: "layers"
     name: "X"
