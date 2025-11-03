@@ -20,7 +20,13 @@ fi
 
 for PATCH in ${PATCHDIR}/*.patch; do
     echo "Applying ${PATCH}"
-    patch -p1 --forward < "${PATCH}" || exit 1
+    # Capture output so we can detect harmless "already applied" messages
+    if ! patch -p1 --forward < "${PATCH}" 2>&1 | tee patch.log | grep -q "Reversed (or previously applied) patch detected"; then
+        # If patch failed for any other reason, exit
+        grep -q "FAILED" patch.log && { echo "Patch failed: ${PATCH}"; exit 1; }
+    else
+        echo "Skipping already applied patch: ${PATCH}"
+    fi
 done
 
 # --- Custom patches shipped in patches directory ---
