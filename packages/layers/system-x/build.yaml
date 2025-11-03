@@ -16,12 +16,13 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
+# temp use flags required for pillow. We drop this later
+- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
-- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 steps:
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox binpkg-request-signature" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
