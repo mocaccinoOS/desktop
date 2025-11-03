@@ -7,9 +7,9 @@ mv ${KERNEL_TYPE}-${PACKAGE_VERSION} ${KERNEL_TYPE}
 cp -rfv mocaccino-$ARCH.config ${KERNEL_TYPE}/.config
 cd ${KERNEL_TYPE}
 
-# --- Apply Gentoo genpatches ---
+# --- Apply Gentoo genpatches, using genpatches/ directory ---
 GENPATCH_VER="6.17-9"
-PATCHDIR="../patches"
+PATCHDIR="../genpatches"
 
 mkdir -p "${PATCHDIR}"
 
@@ -29,7 +29,7 @@ for PATCH in ${PATCHDIR}/*.patch; do
     fi
 done
 
-# --- Custom patches shipped in patches directory ---
+# --- Custom patches shipped in patches/ directory ---
 
 # --- Apply Bug 220484 patch ---
 # PATCH_FILE="../patches/0001-net-ipv4-route-reset-fi-broadcast.patch"
