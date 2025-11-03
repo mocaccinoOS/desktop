@@ -16,6 +16,15 @@ cd ${KERNEL_TYPE}
 #     echo "Warning: Patch file not found: $PATCH_FILE"
 # fi
 
+GENPATCH_VER=6.17-9
+wget -q "https://dev.gentoo.org/~alicef/genpatches/tarballs/genpatches-${GENPATCH_VER}.base.tar.xz"
+tar -xf genpatches-${GENPATCH_VER}.base.tar.xz
+
+for PATCH in genpatches-${GENPATCH_VER}.base/*.patch; do
+    echo "Applying ${PATCH}"
+    patch -p1 < "${PATCH}" || exit 1
+done
+
 make olddefconfig
 touch /etc/passwd
 chmod 644 /etc/passwd
