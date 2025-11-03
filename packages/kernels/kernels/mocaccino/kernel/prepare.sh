@@ -17,10 +17,18 @@ cd ${KERNEL_TYPE}
 # fi
 
 GENPATCH_VER=6.17-9
-wget -q "https://dev.gentoo.org/~alicef/genpatches/tarballs/genpatches-${GENPATCH_VER}.base.tar.xz"
-tar -xf genpatches-${GENPATCH_VER}.base.tar.xz
+PATCHDIR="patches"
 
-for PATCH in genpatches-${GENPATCH_VER}.base/*.patch; do
+mkdir -p "${PATCHDIR}"
+
+# Download and extract only if not already present
+if [ ! -d "${PATCHDIR}/genpatches-${GENPATCH_VER}.base" ]; then
+    wget -q "https://dev.gentoo.org/~alicef/genpatches/tarballs/genpatches-${GENPATCH_VER}.base.tar.xz"
+    tar -xf genpatches-${GENPATCH_VER}.base.tar.xz -C "${PATCHDIR}"
+fi
+
+# Apply all patches from that directory
+for PATCH in "${PATCHDIR}/genpatches-${GENPATCH_VER}.base"/*.patch; do
     echo "Applying ${PATCH}"
     patch -p1 < "${PATCH}" || exit 1
 done
