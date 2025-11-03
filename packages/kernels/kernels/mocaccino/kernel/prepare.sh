@@ -24,12 +24,12 @@ PATCHDIR=patches
 
 mkdir -p "${PATCHDIR}"
 
-if [ ! -d ${PATCHDIR}/genpatches-${GENPATCH_VER} ]; then
+if [ ! -d "${PATCHDIR}/genpatches-${GENPATCH_VER}.base" ]; then
     wget -q "https://dev.gentoo.org/~alicef/genpatches/tarballs/genpatches-${GENPATCH_VER}.base.tar.xz"
-    tar -xf genpatches-${GENPATCH_VER}.base.tar.xz -C "${PATCHDIR}"
+    tar -xf "genpatches-${GENPATCH_VER}.base.tar.xz" -C "${PATCHDIR}"
 fi
 
-for PATCH in ${PATCHDIR}/genpatches-${GENPATCH_VER}/*.patch; do
+for PATCH in ${PATCHDIR}/genpatches-${GENPATCH_VER}.base/*.patch; do
     echo "Applying ${PATCH}"
     patch -p1 < "${PATCH}" || exit 1
 done
