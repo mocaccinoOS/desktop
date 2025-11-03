@@ -20,7 +20,7 @@ fi
 
 for PATCH in ${PATCHDIR}/*.patch; do
     echo "Applying ${PATCH}"
-    patch -p1 < "${PATCH}" || exit 1
+    patch -p1 --forward < "${PATCH}" || exit 1
 done
 
 # --- Custom patches shipped in patches directory ---
