@@ -29,6 +29,9 @@ for PATCH in ${PATCHDIR}/*.patch; do
     fi
 done
 
+# --- Stop here for testing ---
+exit 0
+
 # --- Custom patches shipped in patches/ directory ---
 
 # --- Apply Bug 220484 patch ---
