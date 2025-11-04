@@ -20,19 +20,19 @@ cd "${KERNEL_TYPE}"
 
 # --- Apply Gentoo genpatches ---
 GENPATCH_VER=6.17-9
-GENPATCHDIR=../genpatches
+PATCHDIR=../patches
 
-mkdir -p "${GENPATCHDIR}"
+mkdir -p "${PATCHDIR}"
 
 # Download and extract Gentoo patches only if not already present
-if [ -z "$(ls -A ${GENPATCHDIR}/*.patch 2>/dev/null)" ]; then
+if [ -z "$(ls -A ${PATCHDIR}/*.patch 2>/dev/null)" ]; then
     wget -q "https://dev.gentoo.org/~alicef/genpatches/tarballs/genpatches-${GENPATCH_VER}.base.tar.xz"
-    tar -xf "genpatches-${GENPATCH_VER}.base.tar.xz" -C "${GENPATCHDIR}"
+    tar -xf "genpatches-${GENPATCH_VER}.base.tar.xz" -C "${PATCHDIR}"
 fi
 
-echo "Applying Gentoo patches from ${GENPATCHDIR}..."
+echo "Applying Gentoo patches from ${PATCHDIR}..."
 set +x
-for PATCH in ${GENPATCHDIR}/*.patch; do
+for PATCH in ${PATCHDIR}/*.patch; do
     echo "Applying ${PATCH}"
     if patch -p1 --forward < "${PATCH}" > patch.log 2>&1; then
         echo "Applied successfully"
@@ -47,9 +47,6 @@ done
 set -x
 
 echo "All patches processed successfully."
-
-# --- Stop here for testing (remove or comment out when done) ---
-exit 0
 
 # --- Continue kernel preparation ---
 make olddefconfig
