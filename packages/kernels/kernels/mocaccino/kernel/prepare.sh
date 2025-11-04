@@ -22,33 +22,22 @@ for PATCH in ${PATCHDIR}/*.patch; do
     echo "=========================================="
     echo "Processing: $(basename ${PATCH})"
     
-    # Try to apply the patch with dry-run and capture output
-    PATCH_OUTPUT=$(patch -p1 --forward --dry-run < "${PATCH}" 2>&1 || true)
-    
-    if echo "$PATCH_OUTPUT" | grep -q "FAILED\|can't find file\|malformed patch"; then
-        echo "✗ FAILED: Patch cannot be applied (missing files or conflicts)"
-        echo "$PATCH_OUTPUT"
-        ((PATCH_FAILED++))
-        exit 1
-    elif echo "$PATCH_OUTPUT" | grep -q "Reversed (or previously applied) patch detected"; then
-        echo "⊙ SKIPPED: Patch already applied"
-        ((PATCH_SKIPPED++))
-    elif patch -p1 --forward --dry-run < "${PATCH}" &>/dev/null; then
-        # Patch can be cleanly applied
-        if patch -p1 --forward < "${PATCH}" &>/dev/null; then
-            echo "✓ SUCCESS: Patch applied successfully"
-            ((PATCH_SUCCESS++))
+    # Capture patch output
+    if PATCH_OUTPUT=$(patch -p1 --forward < "${PATCH}" 2>&1); then
+        echo "✓ SUCCESS: Patch applied successfully"
+        ((PATCH_SUCCESS++))
+    else
+        # Check if it was reversed/already applied (this is OK)
+        if echo "$PATCH_OUTPUT" | grep -q "Reversed (or previously applied) patch detected"; then
+            echo "⊙ SKIPPED: Patch already applied (in kernel 6.17.7)"
+            ((PATCH_SKIPPED++))
         else
-            echo "✗ FAILED: Patch application failed"
-            patch -p1 --forward < "${PATCH}" || true  # Show the error
+            # Real failure
+            echo "✗ FAILED: Patch cannot be applied"
+            echo "$PATCH_OUTPUT"
             ((PATCH_FAILED++))
             exit 1
         fi
-    else
-        echo "✗ FAILED: Patch cannot be applied"
-        echo "$PATCH_OUTPUT"
-        ((PATCH_FAILED++))
-        exit 1
     fi
 done
 
@@ -60,7 +49,7 @@ echo "  Failed: ${PATCH_FAILED}"
 echo "=========================================="
 
 if [ ${PATCH_FAILED} -gt 0 ]; then
-    echo "ERROR: Some patches failed to apply. Check .rej files for details."
+    echo "ERROR: ${PATCH_FAILED} patch(es) failed to apply"
     exit 1
 fi
 
