@@ -4,3 +4,6 @@ llvm-core/libclc ~amd64
 =dev-util/mesa_clc-25.2.6 ~amd64
 
 dev-util/clinfo ~amd64
+
+# required for Cosmic
+=media-libs/libdisplay-info-0.3.0 ~amd64
