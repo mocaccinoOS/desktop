@@ -1,6 +1,6 @@
 category: "apps"
 name: "snapd"
-version: 2.63+36
+version: 2.63+37
 uri:
   - http://snapcraft.io
 license: "GPL-3 Apache-2.0 BSD BSD-2 LGPL-3-with-linking-exception MIT"

@@ -1,6 +1,6 @@
 category: "layers"
 name: "trinity"
-version: 14.1.2+66
+version: 14.1.2+67
 uri:
   - https://www.trinitydesktop.org
 license: "GPL-3"
