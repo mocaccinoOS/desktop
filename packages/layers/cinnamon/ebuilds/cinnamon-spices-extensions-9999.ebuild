@@ -14,9 +14,14 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 
-IUSE="+screenshot +transparent-panels +tiling blur-overview desktop-cube magic-lamp"
+# 1. 'screenshot' is now disabled by default (-screenshot)
+IUSE="-screenshot +transparent-panels +tiling blur-overview desktop-cube magic-lamp"
 
-RDEPEND=">=gnome-extra/cinnamon-6.4"
+# 2. Add conditional dependency for screenshot
+RDEPEND="
+    >=gnome-extra/cinnamon-6.4
+    screenshot? ( media-gfx/gnome-screenshot ) 
+"
 
 src_install() {
     local ext_name ext_dir
