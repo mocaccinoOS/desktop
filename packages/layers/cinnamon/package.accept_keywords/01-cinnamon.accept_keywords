@@ -2,5 +2,5 @@ app-editors/xed ~amd64
 media-gfx/xviewer ~amd64
 
 # custom ebuilds
-gnome-extra/cinnamon-spices-extensions ~amd64
+=gnome-extra/cinnamon-spices-extensions-9999 **
 x11-misc/pix ~amd64
