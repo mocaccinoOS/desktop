@@ -13,6 +13,8 @@ steps:
 - sed -i 's/#xft-hintstyle=/xft-hintstyle=hintfull/g' /etc/lightdm/lightdm-gtk-greeter.conf
 - sed -i 's/#xft-rgba=/xft-rgba=rgb/g' /etc/lightdm/lightdm-gtk-greeter.conf
 - sed -i 's/#theme-name=/theme-name=Qogir-Dark/g' /etc/lightdm/lightdm-gtk-greeter.conf
+# Do not ship the .keep file; it gets deleted later and causes a false positive in oscheck
+- mkdir -p /var/lib/lightdm-data && rm -f /var/lib/lightdm-data/.keep*
 requires:
 - category: "layers"
   name: "X"
