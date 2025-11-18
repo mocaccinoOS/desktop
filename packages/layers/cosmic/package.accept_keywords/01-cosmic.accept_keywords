@@ -24,6 +24,7 @@ dev-build/just ~amd64
 =cosmic-base/cosmic-session-1.0.0_beta6 ~amd64
 =cosmic-base/cosmic-settings-1.0.0_beta6 ~amd64
 =cosmic-base/cosmic-settings-daemon-1.0.0_beta6 ~amd64
+=cosmic-base/cosmic-store-1.0.0_beta6 ~amd64
 =cosmic-base/cosmic-term-1.0.0_beta6 ~amd64
 =cosmic-base/cosmic-wallpapers-1.0.0_beta6 ~amd64
 =cosmic-base/cosmic-workspaces-epoch-1.0.0_beta6 ~amd64

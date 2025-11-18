@@ -1,6 +1,6 @@
 category: "layers"
 name: "cosmic"
-version: "1.0.0_beta6"
+version: 1.0.0_beta6+1
 uri:
   - https://github.com/pop-os/cosmic-session
 license: "GPL-3.0-or-later AND MPL-2.0 AND CC-BY-SA-4.0"
@@ -9,7 +9,7 @@ arch: "amd64"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    cosmic-base/cosmic-meta cosmic-base/cosmic-applets cosmic-base/cosmic-applibrary cosmic-base/cosmic-bg cosmic-base/cosmic-comp cosmic-base/cosmic-edit cosmic-base/cosmic-files cosmic-base/cosmic-greeter cosmic-base/cosmic-icons cosmic-base/cosmic-idle cosmic-base/cosmic-launcher cosmic-base/cosmic-notifications cosmic-base/cosmic-osd cosmic-base/cosmic-panel cosmic-base/cosmic-randr cosmic-base/cosmic-screenshot cosmic-base/cosmic-session cosmic-base/cosmic-settings-daemon cosmic-base/cosmic-settings cosmic-base/cosmic-term cosmic-base/cosmic-wallpapers cosmic-base/cosmic-workspaces-epoch cosmic-base/xdg-desktop-portal-cosmic
+    cosmic-base/cosmic-meta cosmic-base/cosmic-applets cosmic-base/cosmic-applibrary cosmic-base/cosmic-bg cosmic-base/cosmic-comp cosmic-base/cosmic-edit cosmic-base/cosmic-files cosmic-base/cosmic-greeter cosmic-base/cosmic-icons cosmic-base/cosmic-idle cosmic-base/cosmic-launcher cosmic-base/cosmic-notifications cosmic-base/cosmic-osd cosmic-base/cosmic-panel cosmic-base/cosmic-randr cosmic-base/cosmic-screenshot cosmic-base/cosmic-session cosmic-base/cosmic-settings-daemon cosmic-base/cosmic-settings cosmic-base/cosmic-store cosmic-base/cosmic-term cosmic-base/cosmic-wallpapers cosmic-base/cosmic-workspaces-epoch cosmic-base/xdg-desktop-portal-cosmic
 requires:
   - name: "cosmic-greeter"
     category: "entity"
@@ -87,12 +87,18 @@ provides:
   - category: "cosmic-base"
     name: "cosmic-screenshot"
     version: ">=0"
+  - name: cosmic-store
+    category: cosmic-base
+    version: '>=0'
   - category: "cosmic-base"
     name: "cosmic-term"
     version: ">=0"
   - category: "cosmic-base"
     name: "cosmic-workspaces-epoch"
     version: ">=0"
+  - name: pop-appstream-data
+    category: cosmic-base
+    version: '>=0'
   - category: "cosmic-base"
     name: "pop-fonts"
     version: ">=0"
