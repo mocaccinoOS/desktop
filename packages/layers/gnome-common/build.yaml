@@ -7,9 +7,9 @@ env:
 prelude:
 - emerge -1 app-eselect/eselect-ruby && sed -i "s/^RUBY_TARGETS=.*/RUBY_TARGETS=\"ruby$(eselect ruby list --brief | tail -n1 | grep -oE '[0-9]{2}')\"/" /etc/portage/make.conf
 {{ template "portage_copy_package_files" . }}
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
   name: "X"
