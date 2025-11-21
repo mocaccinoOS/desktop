@@ -7,9 +7,11 @@ env:
 prelude:
 - emerge -1 app-eselect/eselect-ruby && sed -i "s/^RUBY_TARGETS=.*/RUBY_TARGETS=\"ruby$(eselect ruby list --brief | tail -n1 | grep -oE '[0-9]{2}')\"/" /etc/portage/make.conf
 {{ template "portage_copy_package_files" . }}
-{{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "portage_prelude_build" . }}
 steps:
-{{ template "portage_build_gentoo_binary" . }}
+{{ template "portage_build" . }}
+# cleanup ccache
+- CCACHE_DIR=/var/cache/ccache/ ccache -C
 requires:
 - category: "buildbase"
   name: "X"
