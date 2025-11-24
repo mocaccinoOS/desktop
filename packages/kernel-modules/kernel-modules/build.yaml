@@ -13,7 +13,7 @@ prelude:
 {{- end}}
 # TODO Be smarter then this.
 {{ if eq "v4l2loopback-lts" .Values.name }}
-- ln -s /usr/src/linux /lib/modules/6.12.57-mocaccino/build
+- ln -s /usr/src/linux /lib/modules/6.12.59-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if eq "v4l2loopback" .Values.name }}
