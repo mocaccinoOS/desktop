@@ -273,7 +273,7 @@ packages:
   # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 580.95.05+6
+    version: 580.95.05+7
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -371,7 +371,7 @@ packages:
     #       version: ">=0"
 
     name: "v4l2loopback"
-    version: 0.15.1+16
+    version: 0.15.1+17
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -396,7 +396,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba"
-    version: 20250329+47
+    version: 20250329+48
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -425,7 +425,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 7.2.2+9
+    version: 7.2.2+10
     lts: false
     emerge:
       jobs: "3"
@@ -443,7 +443,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone"
-    version: 0.4.8+11
+    version: 0.4.8+12
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -472,7 +472,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo"
-    version: 0.9.7+73
+    version: 0.9.7+74
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
