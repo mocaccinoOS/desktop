@@ -331,6 +331,11 @@ prepare() {
         systemctl enable "lightdm"
     fi
 
+    if [ -f "/usr/share/xsessions/cinnamon.desktop" ]; then
+        setup_default_xsession "cinnamon"
+        systemctl enable "lightdm"
+    fi
+
     if [ -f "/usr/share/wayland-sessions/cosmic.desktop" ]; then
         setup_greet
        	systemctl enable "cosmic-greeter"
