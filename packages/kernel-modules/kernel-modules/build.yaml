@@ -18,7 +18,7 @@ prelude:
 {{- end}}
 {{ if eq "v4l2loopback" .Values.name }}
 - echo "media-video/v4l2loopback ~amd64" > /etc/portage/package.accept_keywords/v4l2loopback.accept_keywords
-- ln -s /usr/src/linux /lib/modules/6.17.9-mocaccino/build
+- ln -s /usr/src/linux /lib/modules/6.17.10-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if contains "rtl8812au" .Values.name }}
