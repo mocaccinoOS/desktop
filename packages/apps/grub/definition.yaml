@@ -1,6 +1,6 @@
 category: "apps"
 name: "grub"
-version: 2.12-r7+26
+version: 2.12-r7+27
 uri:
   - https://www.gnu.org/software/grub
 license: "GPL-3+ BSD MIT"
@@ -8,21 +8,24 @@ description: "GNU GRUB boot loader"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    sys-boot/efibootmgr sys-boot/grub sys-boot/os-prober sys-libs/efivar
+    app-crypt/sbctl sys-boot/efibootmgr sys-boot/grub sys-boot/os-prober sys-libs/efivar
 requires:
   - category: "layers"
     name: "sys-fs"
     version: ">=0"
 provides:
+  - name: sbctl
+    category: app-crypt
+    version: ">=0"
   - name: efibootmgr
     category: sys-boot
-    version: '>=0'
+    version: ">=0"
   - name: grub
     category: sys-boot
-    version: '>=0'
+    version: ">=0"
   - name: os-prober
     category: sys-boot
-    version: '>=0'
+    version: ">=0"
   - name: efivar
     category: sys-libs
-    version: '>=0'
+    version: ">=0"
