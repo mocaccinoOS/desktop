@@ -947,6 +947,9 @@ provides:
   - name: gsl
     category: sci-libs
     version: '>=0'
+  - name: flexiblas
+    category: sci-libs
+    version: '>=0'
   - name: lapack
     category: sci-libs
     version: '>=0'
