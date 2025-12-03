@@ -21,7 +21,7 @@ prelude:
 # temp mask for debugging
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
 # rebuild perl packages
-- emerge -e @perl-core @perl-core-virtuals @perl-modules
+- emerge -1av $(qlist -IC 'perl-core' 'virtual/perl-*' 'dev-perl/*')
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
