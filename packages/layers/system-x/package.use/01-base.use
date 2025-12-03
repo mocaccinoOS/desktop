@@ -83,5 +83,5 @@ sys-libs/ncurses static-libs tinfo
 sys-libs/glibc hardened suid nscd
 # required by reiser4progs
 sys-libs/readline static-libs unicode
-virtual/lapack eselect-ldso
+virtual/lapack flexiblas -eselect-ldso
 virtual/zlib static-libs
