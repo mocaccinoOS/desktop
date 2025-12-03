@@ -44,7 +44,7 @@ net-misc/curl adns http2 idn ssl sslv3 -gnutls static-libs
 net-misc/openssh libedit -X -ldap
 # Add xattr support to rsync
 net-misc/rsync xattr
-sci-libs/lapack eselect-ldso lapacke
+sci-libs/lapack flexiblas lapacke -eselect-ldso
 # We use dev-python/python-magic
 sys-apps/file -python
 sys-apps/kmod lzma static-libs
