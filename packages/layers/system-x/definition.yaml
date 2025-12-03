@@ -947,10 +947,10 @@ provides:
   - name: blas-lapack-aux-wrapper
     category: sci-libs
     version: '>=0'
-  - name: gsl
+  - name: flexiblas
     category: sci-libs
     version: '>=0'
-  - name: flexiblas
+  - name: gsl
     category: sci-libs
     version: '>=0'
   - name: lapack
