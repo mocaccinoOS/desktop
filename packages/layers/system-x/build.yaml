@@ -18,6 +18,8 @@ prelude:
 {{ end }}
 # temp use flags required for pillow. We drop this later
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
+# temp mask for debugging
+- echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
@@ -38,6 +40,7 @@ steps:
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 - rm /etc/portage/package.use/temp.use
+- rm /etc/portage/package.mask/temp.mask
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
