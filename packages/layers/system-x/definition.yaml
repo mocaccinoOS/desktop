@@ -1,7 +1,7 @@
 category: "layers"
 name: "system-x"
-version: 0.20251122+1
-gcc_version: "14"
+version: "0.20251203"
+gcc_version: "15"
 python_version: "3.13"
 uri:
   - https://mocaccino.org
