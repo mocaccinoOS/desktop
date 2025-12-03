@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-disk-utility"
-version: 46.1-r1+48
+version: 46.1-r1+49
 uri:
   - https://wiki.gnome.org/Apps/Disks
 license: "GPL-2+"
