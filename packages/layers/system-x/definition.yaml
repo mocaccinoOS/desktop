@@ -944,6 +944,9 @@ provides:
   - name: Scalar-List-Utils
     category: perl-core
     version: '>=0'
+  - name: blas-lapack-aux-wrapper
+    category: sci-libs
+    version: '>=0'
   - name: gsl
     category: sci-libs
     version: '>=0'
