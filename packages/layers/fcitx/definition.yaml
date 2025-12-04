@@ -1,6 +1,6 @@
 category: "layers"
 name: "fcitx"
-version: 5.1.14+8
+version: 5.1.14+9
 uri:
   - https://fcitx-im.org
 license: "LGPL-2+ Unicode-DFS-2016"

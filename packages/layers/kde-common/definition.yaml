@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-common"
-version: 6+109
+version: 6+110
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"

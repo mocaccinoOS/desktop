@@ -4,7 +4,6 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- cp -rf patches /etc/portage/
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 - mkdir -p /var/lib/gdm/.config

@@ -1,6 +1,6 @@
 category: "apps"
 name: "evolution"
-version: 3.56.2-r1+7
+version: 3.56.2-r1+8
 uri:
   - https://wiki.gnome.org/Apps/Evolution
 license: "LGPL-3"
