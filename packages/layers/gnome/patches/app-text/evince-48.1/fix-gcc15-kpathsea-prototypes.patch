@@ -1,0 +1,44 @@
+--- a/backend/dvi/mdvi-lib/dviread.c
++++ b/backend/dvi/mdvi-lib/dviread.c
+@@ -29,6 +29,8 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #include <mdvi.h>
+ #include <private.h>
+--- a/backend/dvi/mdvi-lib/font.c
++++ b/backend/dvi/mdvi-lib/font.c
+@@ -34,6 +34,8 @@
+ #include <sys/stat.h>
+ #include <unistd.h>
+ #include <string.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #include <mdvi.h>
+ #include <private.h>
+--- a/backend/dvi/mdvi-lib/fontmap.c
++++ b/backend/dvi/mdvi-lib/fontmap.c
+@@ -29,6 +29,8 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #include <mdvi.h>
+ #include <private.h>
+--- a/backend/dvi/mdvi-lib/gf.c
++++ b/backend/dvi/mdvi-lib/gf.c
+@@ -31,6 +31,8 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ #include <mdvi.h>
+ #include <private.h>
