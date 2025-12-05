@@ -1,4 +1,1 @@
-# Downstream in kde-pim we see
-# /usr/lib/gcc/x86_64-pc-linux-gnu/13/../../../../x86_64-pc-linux-gnu/bin/ld: /usr/lib64/libxapian.so: undefined reference to `__cxa_call_terminate@CXXABI_1.3.15'
-# let's see if we get that with previous version too
->dev-libs/xapian-1.4.25
+# placeholder
