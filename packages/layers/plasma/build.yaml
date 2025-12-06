@@ -11,6 +11,7 @@ excludes:
 - ^/usr/share/wallpapers/IceCold
 - ^/usr/share/wallpapers/Kite
 - ^/usr/share/wallpapers/Mountain
+- ^/usr/share/wallpapers/Nexus
 - ^/usr/share/wallpapers/OneStandsOut
 - ^/usr/share/wallpapers/Patak
 - ^/usr/share/wallpapers/Path

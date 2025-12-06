@@ -21,6 +21,8 @@ includes:
 - ^/usr/share/wallpapers/Kite/.*
 - ^/usr/share/wallpapers/Mountain$
 - ^/usr/share/wallpapers/Mountain/.*
+- ^/usr/share/wallpapers/Nexus$
+- ^/usr/share/wallpapers/Nexus/.*
 - ^/usr/share/wallpapers/OneStandsOut$
 - ^/usr/share/wallpapers/OneStandsOut/.*
 - ^/usr/share/wallpapers/Patak$
