@@ -153,7 +153,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.2.2+13
+    version: "7.2.4"
     uri:
       - https://www.virtualbox.org
     license: "GPL-3"
@@ -425,7 +425,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 7.2.2+13
+    version: "7.2.4"
     lts: false
     emerge:
       jobs: "3"
