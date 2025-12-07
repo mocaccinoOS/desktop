@@ -1,0 +1,19 @@
+category: "devel"
+name: "gcc-14"
+version: "14.3.1_p20250801"
+uri:
+  - https://gcc.gnu.org
+license: "GPL-3+ LGPL-3+"
+description: "The GNU Compiler Collection"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    sys-devel/gcc:14
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+provides:
+  - name: gcc
+    category: sys-devel
+    version: '>=0'

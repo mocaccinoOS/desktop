@@ -41,3 +41,7 @@ packages:
     real_category: "layers"
     name: "qemu"
     version: 0+247
+  - !!merge <<: *X
+    real_category: "devel"
+    name: "gcc-14"
+    version: 0+1

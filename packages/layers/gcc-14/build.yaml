@@ -1,0 +1,12 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_prelude_build_gentoo" . }}
+steps:
+{{ template "portage_build_gentoo" . }}
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
