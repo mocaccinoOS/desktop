@@ -3,9 +3,9 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-{{ template "portage_prelude_build_gentoo" . }}
+{{ template "portage_prelude_build" . }}
 steps:
-{{ template "portage_build_gentoo" . }}
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "system-x"
