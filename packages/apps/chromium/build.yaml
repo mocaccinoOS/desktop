@@ -8,6 +8,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "layers"
-  name: "java"
+- category: "apps"
+  name: "nodejs"
   version: ">=0"
