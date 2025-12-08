@@ -13,6 +13,8 @@ REVBUMP_CHAR="${REVBUMP_CHAR:-+}"
 IGNORED_PATHS=(
     "packages/apps/edgevpn-gui"
     "packages/apps/fyneterm"
+    "packages/apps/golauncher"
+    "packages/apps/luet_pm_gui"
     "packages/apps/mos-updater"    
     "packages/apps/nodejs"
     "packages/apps/vajo"
