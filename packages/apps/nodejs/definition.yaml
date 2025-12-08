@@ -1,0 +1,22 @@
+category: "apps"
+name: "nodejs"
+version: "22.13.1"
+uri:
+  - https://nodejs.org
+license: "Apache-1.1 Apache-2.0 BSD BSD-2 MIT"
+description: "A JavaScript runtime built on Chrome's V8 JavaScript engine"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    dev-libs/simdjson net-libs/nodejs
+provides:
+  - name: simdjson
+    category: dev-libs
+    version: ">=0"
+  - name: nodejs
+    category: net-libs
+    version: ">=0"
+requires:
+  - category: "layers"
+    name: "java"
+    version: ">=0"
