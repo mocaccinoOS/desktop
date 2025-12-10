@@ -3,6 +3,8 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+# install 
+- cp -rf env /etc/portage/
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}

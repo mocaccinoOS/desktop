@@ -1,6 +1,6 @@
 category: "devel"
 name: "gcc-14"
-version: "14.3.1_p20250801"
+version: 14.3.1_p20250801+1
 uri:
   - https://gcc.gnu.org
 license: "GPL-3+ LGPL-3+"
