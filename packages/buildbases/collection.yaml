@@ -44,4 +44,4 @@ packages:
   - !!merge <<: *X
     real_category: "devel"
     name: "gcc-14"
-    version: 0+2
+    version: 0+3
