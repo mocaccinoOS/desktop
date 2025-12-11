@@ -1,7 +1,6 @@
 app-crypt/mit-krb5 keyutils nls pkinit
 dev-db/mariadb -berkdb client-libs extraengine odbc
 dev-db/mariadb-connector-c kerberos
-dev-libs/libmbim -man
 dev-libs/libevent ssl
 dev-libs/libnl utils
 dev-libs/libical vala
