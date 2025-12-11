@@ -1,7 +1,9 @@
-# Force GCC 14 toolchain
-CC=/usr/bin/gcc-14
-CXX=/usr/bin/g++-14
-CPP=/usr/bin/cpp-14
+GCC_VER="14.3.1"
+
+# Fully qualified toolchain paths
+CC="/usr/bin/x86_64-pc-linux-gnu-gcc-${GCC_VER}"
+CXX="/usr/bin/x86_64-pc-linux-gnu-g++-${GCC_VER}"
+CPP="/usr/bin/x86_64-pc-linux-gnu-cpp-${GCC_VER}"
 
 # Force source builds
 FEATURES="-getbinpkg -usepkg"
