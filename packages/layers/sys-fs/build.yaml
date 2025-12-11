@@ -12,9 +12,9 @@ prelude:
 - emerge -1 dev-util/ccache
 - emerge -1 app-portage/gentoolkit
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
-{{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "portage_prelude_build" . }}
 steps:
-{{ template "portage_build_gentoo_binary" . }}
+{{ template "portage_build" . }}
 - emerge -C dev-python/pillow dev-python/docutils
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
