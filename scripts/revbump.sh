@@ -19,6 +19,7 @@ IGNORED_PATHS=(
     "packages/apps/nodejs"
     "packages/apps/vajo"
     "packages/fonts"
+    "packages/layers/gcc-14"
     "packages/layers/pangolin-desktop"
     "packages/layers/trinity"
     "packages/themes"
