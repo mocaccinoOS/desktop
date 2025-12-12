@@ -1,6 +1,6 @@
 category: "apps"
 name: "flatpak"
-version: 1.16.1+3
+version: 1.16.1+4
 uri:
   - https://flatpak.org
 license: "LGPL-2.1+"

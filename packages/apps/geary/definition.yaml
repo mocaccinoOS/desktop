@@ -1,6 +1,6 @@
 category: "apps"
 name: "geary"
-version: 46.0-r1+22
+version: 46.0-r1+23
 uri:
   - https://wiki.gnome.org/Apps/Geary
 license: "LGPL-2.1+ CC-BY-3.0 CC-BY-SA-3.0"
