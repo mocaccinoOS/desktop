@@ -371,7 +371,7 @@ packages:
     #       version: ">=0"
 
     name: "v4l2loopback"
-    version: 0.15.1+23
+    version: 0.15.1+24
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -472,7 +472,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo"
-    version: 0.9.7+80
+    version: 0.9.7+81
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
