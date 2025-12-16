@@ -1,6 +1,6 @@
 name: mocaccino-sources
 category: kernel
-version: 6.18.1+2
+version: 6.18.1+3
 prefix: linux
 suffix: mocaccino
 labels:

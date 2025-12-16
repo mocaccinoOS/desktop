@@ -1,6 +1,6 @@
 name: mocaccino-minimal
 category: kernel
-version: 6.18.1+2
+version: 6.18.1+3
 kernelprefix: kernel-vanilla
 suffix: mocaccino
 arch: "x86_64"
