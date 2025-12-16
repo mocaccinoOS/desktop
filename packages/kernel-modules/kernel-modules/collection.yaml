@@ -370,30 +370,30 @@ packages:
     #       category: kernel-modules
     #       version: ">=0"
 
-    name: "v4l2loopback"
-    version: 0.15.1+24
-    uri:
-      - https://github.com/umlaeute/v4l2loopback
-    license: "GPL-2"
-    description: "v4l2 loopback device whose output is its own input"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - =media-video/v4l2loopback-0.15.1
-    provides:
-      - name: v4l2loopback
-        category: media-video
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
+    # name: "v4l2loopback"
+    # version: 0.15.1+24
+    # uri:
+    #   - https://github.com/umlaeute/v4l2loopback
+    # license: "GPL-2"
+    # description: "v4l2 loopback device whose output is its own input"
+    # lts: false
+    # labels:
+    #   emerge.jobs: "3"
+    # emerge:
+    #   jobs: "3"
+    #   packages:
+    #     - =media-video/v4l2loopback-0.15.1
+    # provides:
+    #   - name: v4l2loopback
+    #     category: media-video
+    #     version: ">=0"
+    # requires:
+    #   - name: mocaccino-full
+    #     category: kernel
+    #     version: ">=0"
+    #   - category: "layers"
+    #     name: "X"
+    #     version: ">=0"
   - category: "kernel-modules"
     name: "vhba"
     version: 20250329+55
@@ -470,32 +470,32 @@ packages:
       - name: xone-lts
         category: kernel-modules
         version: ">=0"
-  - category: "kernel-modules"
-    name: "xpadneo"
-    version: 0.9.7+81
-    uri:
-      - https://atar-axis.github.io/xpadneo
-    license: "GPL-3"
-    description: "Advanced Linux Driver for Xbox One Wireless Controller"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - games-util/xpadneo
-    provides:
-      - name: xpadneo
-        category: games-util
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-    conflicts:
-      - name: xpadneo-lts
-        category: kernel-modules
-        version: ">=0"
+  # - category: "kernel-modules"
+  #   name: "xpadneo"
+  #   version: 0.9.7+81
+  #   uri:
+  #     - https://atar-axis.github.io/xpadneo
+  #   license: "GPL-3"
+  #   description: "Advanced Linux Driver for Xbox One Wireless Controller"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - games-util/xpadneo
+  #   provides:
+  #     - name: xpadneo
+  #       category: games-util
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: xpadneo-lts
+  #       category: kernel-modules
+  #       version: ">=0"
