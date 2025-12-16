@@ -3,10 +3,19 @@ PACKAGE_VERSION=${PACKAGE_VERSION%\+*}
 MAJOR_VERSION=$(awk -F. '{print $1"."$2}' <<< $PACKAGE_VERSION)
 mkdir -p output/boot
 pushd ${KERNEL_TYPE}
+
 echo "Compiler version check:"
 ${CC:-gcc} --version
 echo "---"
-make -j$(nproc --ignore=1) KBUILD_BUILD_VERSION="$PACKAGE_VERSION-Mocaccino"
+
+# make -j$(nproc --ignore=1) KBUILD_BUILD_VERSION="$PACKAGE_VERSION-Mocaccino"
+
+# Force compiler on make command line
+make -j$(nproc --ignore=1) \
+    CC="${CC}" \
+    HOSTCC="${HOSTCC}" \
+    HOSTCXX="${HOSTCXX}" \
+    KBUILD_BUILD_VERSION="$PACKAGE_VERSION-Mocaccino"
 
 # $ARCH can't be amd64 here, x86_64 is used here
 if [ $ARCH == "amd64" ]; then
