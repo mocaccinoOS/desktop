@@ -1,0 +1,22 @@
+category: "apps"
+name: "libva-intel-media-driver"
+version: "25.3.4"
+uri:
+  - https://github.com/intel/media-driver
+license: "MIT BSD"
+description: "Intel Media Driver for VA-API (iHD)"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    media-libs/libva-intel-media-driver media-libs/gmmlib
+provides:
+  - name: gmmlib
+    category: media-libs
+    version: '>=0'
+  - name: libva-intel-media-driver
+    category: media-libs
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
