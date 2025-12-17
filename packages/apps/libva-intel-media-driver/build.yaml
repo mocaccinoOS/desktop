@@ -2,6 +2,8 @@ excludes:
 {{ template "portage_excludes" }}
 env:
 {{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:

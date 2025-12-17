@@ -3,7 +3,7 @@ name: "libva-intel-media-driver"
 version: "25.3.4"
 uri:
   - https://github.com/intel/media-driver
-license: "MIT BSD"
+license: "MIT BSD no-source-code"
 description: "Intel Media Driver for VA-API (iHD)"
 labels:
   emerge.jobs: "1"
