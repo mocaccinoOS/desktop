@@ -17,6 +17,9 @@ prelude:
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if eq "v4l2loopback" .Values.name }}
+# patch for 6.18 kernel, see https://bugs.gentoo.org/966360
+- mkdir -p /etc/portage/patches/media-video/v4l2loopback-0.15.1
+- wget -O /etc/portage/patches/media-video/v4l2loopback-0.15.1/0001-fix_for_6_18.patch https://github.com/v4l2loopback/v4l2loopback/commit/6b33fe1f682881eb268ab9fc85f231acc5564ac8.patch
 - echo "media-video/v4l2loopback ~amd64" > /etc/portage/package.accept_keywords/v4l2loopback.accept_keywords
 - ln -s /usr/src/linux /lib/modules/6.18.1-mocaccino/build
 - emerge -1 dev-util/pahole
