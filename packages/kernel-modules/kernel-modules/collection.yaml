@@ -307,95 +307,96 @@ packages:
         category: kernel-modules
         version: ">=0"
 
-    # Currently fails against 6.16.7 kernel
-    #
-    # - category: "kernel-modules"
-    #   name: "rtl8192eu"
-    #   version: 20240518+30
-    #   uri:
-    #     - https://github.com/Mange/rtl8192eu-linux-driver
-    #   license: "GPL-2"
-    #   description: "Realtek 8192EU driver module for Linux kernel"
-    #   lts: false
-    #   labels:
-    #     emerge.jobs: "3"
-    #   emerge:
-    #     jobs: "3"
-    #     packages:
-    #       - net-wireless/rtl8192eu
-    #   provides:
-    #     - name: rtl8192eu
-    #       category: net-wireless
-    #       version: ">=0"
-    #   requires:
-    #     - name: mocaccino-full
-    #       category: kernel
-    #       version: ">=0"
-    #     - category: "layers"
-    #       name: "X"
-    #       version: ">=0"
-    #   conflicts:
-    #     - name: rtl8192eu-lts
-    #       category: kernel-modules
-    #       version: ">=0"
+  # Currently fails against 6.16.7 kernel
+  #
+  # - category: "kernel-modules"
+  #   name: "rtl8192eu"
+  #   version: 20240518+30
+  #   uri:
+  #     - https://github.com/Mange/rtl8192eu-linux-driver
+  #   license: "GPL-2"
+  #   description: "Realtek 8192EU driver module for Linux kernel"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-wireless/rtl8192eu
+  #   provides:
+  #     - name: rtl8192eu
+  #       category: net-wireless
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: rtl8192eu-lts
+  #       category: kernel-modules
+  #       version: ">=0"
 
-    # Currently fails against 6.16.7 kernel
-    #
-    # - category: "kernel-modules"
-    #   name: "rtl8812au"
-    #   version: 20250330+30
-    #   uri:
-    #     - https://github.com/aircrack-ng/rtl8812au
-    #   license: "GPL-2"
-    #   description: "Realtek 8812AU USB WiFi module for Linux kernel"
-    #   lts: false
-    #   labels:
-    #     emerge.jobs: "3"
-    #   emerge:
-    #     jobs: "3"
-    #     packages:
-    #       - net-wireless/rtl8812au
-    #   provides:
-    #     - name: rtl8812au
-    #       category: net-wireless
-    #       version: ">=0"
-    #   requires:
-    #     - name: mocaccino-full
-    #       category: kernel
-    #       version: ">=0"
-    #     - category: "layers"
-    #       name: "X"
-    #       version: ">=0"
-    #   conflicts:
-    #     - name: rtl8812au-lts
-    #       category: kernel-modules
-    #       version: ">=0"
+  # Currently fails against 6.16.7 kernel
+  #
+  # - category: "kernel-modules"
+  #   name: "rtl8812au"
+  #   version: 20250330+30
+  #   uri:
+  #     - https://github.com/aircrack-ng/rtl8812au
+  #   license: "GPL-2"
+  #   description: "Realtek 8812AU USB WiFi module for Linux kernel"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - net-wireless/rtl8812au
+  #   provides:
+  #     - name: rtl8812au
+  #       category: net-wireless
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: rtl8812au-lts
+  #       category: kernel-modules
+  #       version: ">=0"
 
-  - category: "kernel-modules"
-    name: "v4l2loopback"
-    version: 0.15.1+24
-    uri:
-      - https://github.com/umlaeute/v4l2loopback
-    license: "GPL-2"
-    description: "v4l2 loopback device whose output is its own input"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - =media-video/v4l2loopback-0.15.1
-    provides:
-      - name: v4l2loopback
-        category: media-video
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
+  #   Fails against 6.18.1 kernel
+  # - category: "kernel-modules"
+  #   name: "v4l2loopback"
+  #   version: 0.15.1+24
+  #   uri:
+  #     - https://github.com/umlaeute/v4l2loopback
+  #   license: "GPL-2"
+  #   description: "v4l2 loopback device whose output is its own input"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - =media-video/v4l2loopback-0.15.1
+  #   provides:
+  #     - name: v4l2loopback
+  #       category: media-video
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
 
   - category: "kernel-modules"
     name: "vhba"
@@ -473,32 +474,34 @@ packages:
       - name: xone-lts
         category: kernel-modules
         version: ">=0"
-  - category: "kernel-modules"
-    name: "xpadneo"
-    version: 0.9.7+81
-    uri:
-      - https://atar-axis.github.io/xpadneo
-    license: "GPL-3"
-    description: "Advanced Linux Driver for Xbox One Wireless Controller"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - games-util/xpadneo
-    provides:
-      - name: xpadneo
-        category: games-util
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
-    conflicts:
-      - name: xpadneo-lts
-        category: kernel-modules
-        version: ">=0"
+        
+  #   Fails against 6.18.1 kernel
+  # - category: "kernel-modules"
+  #   name: "xpadneo"
+  #   version: 0.9.7+81
+  #   uri:
+  #     - https://atar-axis.github.io/xpadneo
+  #   license: "GPL-3"
+  #   description: "Advanced Linux Driver for Xbox One Wireless Controller"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - games-util/xpadneo
+  #   provides:
+  #     - name: xpadneo
+  #       category: games-util
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: xpadneo-lts
+  #       category: kernel-modules
+  #       version: ">=0"
