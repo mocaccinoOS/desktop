@@ -371,31 +371,32 @@ packages:
   #       category: kernel-modules
   #       version: ">=0"
 
-  - category: "kernel-modules"
-    name: "v4l2loopback"
-    version: 0.15.1+24
-    uri:
-      - https://github.com/umlaeute/v4l2loopback
-    license: "GPL-2"
-    description: "v4l2 loopback device whose output is its own input"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - =media-video/v4l2loopback-0.15.1
-    provides:
-      - name: v4l2loopback
-        category: media-video
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "X"
-        version: ">=0"
+  # Fails against 6.18.1 kernel, see https://bugs.gentoo.org/966360
+  # - category: "kernel-modules"
+  #   name: "v4l2loopback"
+  #   version: 0.15.1+24
+  #   uri:
+  #     - https://github.com/umlaeute/v4l2loopback
+  #   license: "GPL-2"
+  #   description: "v4l2 loopback device whose output is its own input"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - =media-video/v4l2loopback-0.15.1
+  #   provides:
+  #     - name: v4l2loopback
+  #       category: media-video
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "X"
+  #       version: ">=0"
 
   - category: "kernel-modules"
     name: "vhba"
