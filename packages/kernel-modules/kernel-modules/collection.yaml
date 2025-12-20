@@ -319,7 +319,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - =media-video/v4l2loopback-0.15.1
+        - =media-video/v4l2loopback-0.15.3
     provides:
       - name: v4l2loopback
         category: media-video
