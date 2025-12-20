@@ -1,6 +1,6 @@
 name: mocaccino-full
 category: kernel
-version: 6.18.1+3
+version: "6.18.2"
 requires:
   - name: "mocaccino-modules"
     category: "kernel"
@@ -25,4 +25,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
-  package.version: "6.18.1"
+  package.version: "6.18.2"
