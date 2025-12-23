@@ -1,6 +1,6 @@
 category: "apps"
 name: "nodejs"
-version: "22.13.1"
+version: 22.13.1+1
 uri:
   - https://nodejs.org
 license: "Apache-1.1 Apache-2.0 BSD BSD-2 MIT"
