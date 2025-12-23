@@ -44,9 +44,6 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
-# Provide this for C-R test. Must provide in runtime.
-- emerge -1 dev-python/nanobind
-# en test
 # cleanup ccache
 - CCACHE_DIR=/var/cache/ccache/ ccache -C
 requires:
