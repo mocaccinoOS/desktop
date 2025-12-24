@@ -22,6 +22,7 @@ prelude:
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
 # just another test to be sure about python
 - emerge -1 dev-lang/python:3.13 && emerge -1 $(qlist -IC dev-python)
+- emerge -1 sys-apps/portage
 - emerge --depclean
 # rebuild perl && perl packages
 - emerge -1 dev-lang/perl:0 && emerge -1 $(qlist -IC 'perl-core' 'virtual/perl-*' 'dev-perl/*')
