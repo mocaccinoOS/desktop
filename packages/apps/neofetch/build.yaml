@@ -6,6 +6,13 @@ steps:
 {{ template "portage_build" . }}
 - mkdir -p /usr/share/neofetch && cp -r mocaccino.txt /usr/share/neofetch/mocaccino.txt
 - mkdir -p /etc/neofetch && cp -r config.conf /etc/neofetch/config.conf
+- |
+  mv /usr/bin/neofetch /usr/bin/neofetch.bin
+  cat > /usr/bin/neofetch << 'EOF'
+  #!/usr/bin/env bash
+  exec /usr/bin/neofetch.bin --ascii /usr/share/neofetch/mocaccino.txt --ascii_colors 3 7 "$@"
+  EOF
+  chmod +x /usr/bin/neofetch
 requires:
 - category: "layers"
   name: "X"
