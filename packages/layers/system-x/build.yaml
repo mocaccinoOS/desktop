@@ -24,7 +24,6 @@ prelude:
 - emerge -1 dev-lang/python:3.13 
 - emerge -1 sys-apps/portage
 - emerge -1 $(qlist -IC dev-python)
-- emerge --depclean --verbose --quiet-build=y
 # rebuild perl && perl packages
 - emerge -1 dev-lang/perl:0 && emerge -1 $(qlist -IC 'perl-core' 'virtual/perl-*' 'dev-perl/*')
 # avoid circular deps
