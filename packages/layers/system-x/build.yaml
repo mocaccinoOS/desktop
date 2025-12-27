@@ -20,7 +20,7 @@ prelude:
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 # temp mask for debugging
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
-# just another test to be sure about python
+# rebuild python && python packages
 - emerge -1 dev-lang/python:3.13 
 - emerge -1 sys-apps/portage
 - emerge -1 $(qlist -IC dev-python)
