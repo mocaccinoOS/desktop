@@ -16,15 +16,15 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+333
+    version: 0+334
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-kf5"
-    version: 0+105
+    version: 0+106
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+319
+    version: 0+320
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
@@ -36,7 +36,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+332
+    version: 0+333
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
