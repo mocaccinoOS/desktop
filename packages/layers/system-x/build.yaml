@@ -5,10 +5,7 @@ requires:
 unpack: true
 env:
 {{ template "portage_env" . }}
-- MAKEOPTS="--jobs 24 --load-average 25"
 prelude:
-# Install our kernel-tuning-file
-- cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
 {{ template "portage_copy_package_files" . }}
 - cp -rf profile patches bashrc env /etc/portage/
 {{ if ne .Values.arch "amd64" }}
@@ -16,16 +13,20 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
-# temp use flags required for pillow. We drop this later
-- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
-# temp mask for debugging
-- echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
+# Remove Python 3.14
+- emerge -C dev-lang/python:3.14
 # rebuild python && python packages
 - emerge -1 dev-lang/python:3.13 
 - emerge -1 sys-apps/portage
 - emerge -1 $(qlist -IC dev-python)
 # rebuild perl && perl packages
 - emerge -1 dev-lang/perl:0 && emerge -1 $(qlist -IC 'perl-core' 'virtual/perl-*' 'dev-perl/*')
+# Install our kernel-tuning-file
+- cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
+# temp use flags required for pillow. We drop this later
+- echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
+# temp mask for debugging
+- echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages

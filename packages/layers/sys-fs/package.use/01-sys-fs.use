@@ -1,10 +1,12 @@
 app-crypt/mit-krb5 keyutils nls pkinit
 dev-db/mariadb -berkdb client-libs extraengine odbc
 dev-db/mariadb-connector-c kerberos
+dev-libs/boost context nls numpy python zlib zstd
 dev-libs/libevent ssl
 dev-libs/libnl utils
 dev-libs/libical vala
 dev-libs/libverto libev
+dev-python/numpy lapack
 dev-python/pyudev -qt5
 dev-python/rdflib sqlite
 mail-mta/postfix mbox sasl
@@ -18,6 +20,7 @@ net-libs/libtorrent-rasterbar -gnutls
 net-misc/ntp -zeroconf
 net-wireless/bluez obex
 sci-libs/hdf5 cxx fortran szip -threads
+sci-libs/lapack flexiblas lapacke -eselect-ldso
 sys-apps/pciutils kmod udev -zlib
 sys-block/parted device-mapper
 # Require mkfs.dosfs
@@ -28,3 +31,4 @@ sys-fs/xfsprogs libedit
 sys-fs/zfs kernel-builtin
 sys-libs/ldb -ldap
 sys-process/lsof rpc
+virtual/lapack flexiblas -eselect-ldso

@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: 0.20251224+1
+version: "0.20251230"
 gcc_version: "15"
 python_version: "3.13"
 uri:
@@ -11,7 +11,7 @@ labels:
   autobump.strategy: "snapshot"
   emerge.jobs: "10"
   emerge.packages: >-
-    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-cpp/eigen dev-debug/gdb dev-libs/boost dev-libs/double-conversion dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-libs/xxhash dev-perl/Class-Inspector dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/numpy dev-python/python-magic dev-python/pygments dev-python/webencodings dev-vcs/git llvm-core/clang llvm-core/llvm media-libs/libpng net-mail/mailbase sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-kernel/dracut sys-libs/binutils-libs sys-libs/libapparmor
+    acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-debug/gdb dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-libs/xxhash dev-perl/Class-Inspector dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/python-magic dev-vcs/git llvm-core/clang llvm-core/llvm media-libs/libpng net-mail/mailbase sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-kernel/dracut sys-libs/binutils-libs sys-libs/libapparmor
 requires:
   - category: "system"
     name: "gcc-base"
@@ -425,9 +425,6 @@ provides:
   - name: ninja
     category: dev-build
     version: '>=0'
-  - name: eigen
-    category: dev-cpp
-    version: '>=0'
   - name: sqlite
     category: dev-db
     version: '>=0'
@@ -454,12 +451,6 @@ provides:
     version: '>=0'
   - name: tcl
     category: dev-lang
-    version: '>=0'
-  - name: boost
-    category: dev-libs
-    version: '>=0'
-  - name: double-conversion
-    category: dev-libs
     version: '>=0'
   - name: elfutils
     category: dev-libs
@@ -773,13 +764,7 @@ provides:
   - name: nspektr
     category: dev-python
     version: '>=0'
-  - name: numpy
-    category: dev-python
-    version: '>=0'
   - name: ordered-set
-    category: dev-python
-    version: '>=0'
-  - name: packaging
     category: dev-python
     version: '>=0'
   - name: pyelftools
@@ -807,9 +792,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: urllib3
-    category: dev-python
-    version: '>=0'
-  - name: webencodings
     category: dev-python
     version: '>=0'
   - name: wheel
@@ -947,16 +929,7 @@ provides:
   - name: Scalar-List-Utils
     category: perl-core
     version: '>=0'
-  - name: blas-lapack-aux-wrapper
-    category: sci-libs
-    version: '>=0'
-  - name: flexiblas
-    category: sci-libs
-    version: '>=0'
   - name: gsl
-    category: sci-libs
-    version: '>=0'
-  - name: lapack
     category: sci-libs
     version: '>=0'
   - name: openpgp-keys-gentoo-release
@@ -1181,19 +1154,10 @@ provides:
   - name: awk
     category: virtual
     version: '>=0'
-  - name: cblas
-    category: virtual
-    version: '>=0'
   - name: dev-manager
     category: virtual
     version: '>=0'
   - name: editor
-    category: virtual
-    version: '>=0'
-  - name: fortran
-    category: virtual
-    version: '>=0'
-  - name: lapack
     category: virtual
     version: '>=0'
   - name: libc

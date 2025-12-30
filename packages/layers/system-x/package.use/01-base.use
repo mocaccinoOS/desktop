@@ -14,7 +14,6 @@ dev-build/cmake server -qt5
 dev-db/sqlite readline
 dev-debug/gdb python
 dev-lang/python sqlite berkdb
-dev-libs/boost context nls numpy python zlib zstd
 # We want packages with static-libs (add here)
 dev-libs/expat static-libs
 dev-libs/gmp asm cxx static-libs
@@ -29,7 +28,6 @@ dev-libs/libxml2 ipv6 python readline
 dev-libs/lzo static-libs
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
-dev-python/numpy lapack
 dev-scheme/guile regex discouraged networking
 llvm-core/clang xml
 # clang wants USE=clang for llvm
@@ -44,7 +42,6 @@ net-misc/curl adns http2 idn ssl sslv3 -gnutls static-libs
 net-misc/openssh libedit -X -ldap
 # Add xattr support to rsync
 net-misc/rsync xattr
-sci-libs/lapack flexiblas lapacke -eselect-ldso
 # We use dev-python/python-magic
 sys-apps/file -python
 sys-apps/kmod lzma static-libs
@@ -83,5 +80,4 @@ sys-libs/ncurses static-libs tinfo
 sys-libs/glibc hardened suid nscd
 # required by reiser4progs
 sys-libs/readline static-libs unicode
-virtual/lapack flexiblas -eselect-ldso
 virtual/zlib static-libs
