@@ -1,2 +1,2 @@
-# Do not pull in clang / llvm 20
-llvm-core/llvm:20
+# Do not pull in clang / llvm < 21
+<llvm-core/llvm-21
