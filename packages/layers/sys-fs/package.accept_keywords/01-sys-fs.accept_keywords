@@ -1,1 +1,4 @@
 dev-util/spirv-llvm-translator:21 ~amd64
+
+# Needed for LLVM:21
+=sys-fs/bcachefs-tools-1.31.5 ~amd64
