@@ -6,7 +6,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 # Needed for old spidermonkey ( used in layers/mate and layers/cinnamon )
+- printf "%s\n" llvm-core/clang:19 llvm-core/lld:19 llvm-core/llvm:19 > /etc/portage/package.unmask/llvm-19.tmp
 - EMERGE_DEFAULT_OPTS="--getbinpkg" emerge -1 llvm-core/clang:19 llvm-core/lld:19 llvm-core/llvm:19
+- rm -f /etc/portage/package.unmask/llvm-19.tmp
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
