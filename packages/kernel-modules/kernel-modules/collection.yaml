@@ -224,7 +224,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.9.7+82
+    version: "0.9.8"
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
@@ -273,7 +273,7 @@ packages:
   # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 580.95.05+19
+    version: 580.95.05+20
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -308,7 +308,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "v4l2loopback"
-    version: 0.15.3+3
+    version: 0.15.3+4
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -396,7 +396,7 @@ packages:
     #       category: kernel-modules
     #       version: ">=0"
     name: "vhba"
-    version: 20250329+60
+    version: 20250329+61
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -425,7 +425,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 7.2.4+8
+    version: 7.2.4+9
     lts: false
     emerge:
       jobs: "3"
@@ -443,7 +443,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone"
-    version: "0.5.1"
+    version: 0.5.1+1
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -470,34 +470,32 @@ packages:
       - name: xone-lts
         category: kernel-modules
         version: ">=0"
-
-#   Fails against 6.18.1 kernel
-# - category: "kernel-modules"
-#   name: "xpadneo"
-#   version: 0.9.7+81
-#   uri:
-#     - https://atar-axis.github.io/xpadneo
-#   license: "GPL-3"
-#   description: "Advanced Linux Driver for Xbox One Wireless Controller"
-#   lts: false
-#   labels:
-#     emerge.jobs: "3"
-#   emerge:
-#     jobs: "3"
-#     packages:
-#       - games-util/xpadneo
-#   provides:
-#     - name: xpadneo
-#       category: games-util
-#       version: ">=0"
-#   requires:
-#     - name: mocaccino-full
-#       category: kernel
-#       version: ">=0"
-#     - category: "layers"
-#       name: "X"
-#       version: ">=0"
-#   conflicts:
-#     - name: xpadneo-lts
-#       category: kernel-modules
-#       version: ">=0"
+  - category: "kernel-modules"
+    name: "xpadneo"
+    version: "0.9.8"
+    uri:
+      - https://atar-axis.github.io/xpadneo
+    license: "GPL-3"
+    description: "Advanced Linux Driver for Xbox One Wireless Controller"
+    lts: false
+    labels:
+      emerge.jobs: "3"
+    emerge:
+      jobs: "3"
+      packages:
+        - games-util/xpadneo
+    provides:
+      - name: xpadneo
+        category: games-util
+        version: ">=0"
+    requires:
+      - name: mocaccino-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+    conflicts:
+      - name: xpadneo-lts
+        category: kernel-modules
+        version: ">=0"
