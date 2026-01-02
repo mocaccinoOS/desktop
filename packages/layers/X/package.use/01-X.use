@@ -20,6 +20,7 @@ media-fonts/noto -cjk -extra
 media-gfx/graphite2 perl
 media-gfx/imagemagick fftw gs jpeg perl postscript q32 wmf xml
 media-gfx/sane-backends -v4l
+media-libs/libavif dav1d rav1e
 media-libs/chromaprint tools -abi_x86_32
 media-libs/freetype -auto-hinter adobe-cff brotli cleartype_hinting harfbuzz infinality png static-libs
 media-libs/gd fontconfig jpeg truetype zlib
