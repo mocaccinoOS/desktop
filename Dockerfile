@@ -14,6 +14,8 @@ RUN repository/mocaccino-os-commons
 RUN layers/system-x
 
 SHELL ["/bin/sh", "-c"]
+
+RUN luet upgrade && luet install -y system/luet
 RUN rm -rf /var/cache/luet/packages/ /var/cache/luet/repos/
 RUN luet cleanup
 
