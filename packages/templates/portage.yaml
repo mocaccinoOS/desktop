@@ -29,7 +29,9 @@
 
 {{ define "portage_prelude_build" }}
 - |
-  emerge -j ${JOBS} --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
+  export MAKEOPTS="-j${JOBS} -l${JOBS}" && \
+  emerge --jobs=${JOBS} --load-average=${JOBS} \
+         --onlydeps --onlydeps-with-rdeps n {{ ( index .Values.labels "emerge.packages" ) }} && \
   emerge -C {{ ( index .Values.labels "emerge.packages" ) }} || true && \
   /bin/sh -c 'find /usr -xtype l 2>/dev/null -exec rm -v {} \;'
 {{end}}
@@ -43,8 +45,10 @@
 {{end}}
 
 {{ define "portage_build" }}
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- etc-update -q --automode -5
+- |
+  export MAKEOPTS="-j${JOBS} -l${JOBS}" && \
+  emerge --jobs=${JOBS} --load-average=${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} && \
+  etc-update -q --automode -5
 {{end}}
 
 {{ define "portage_build_gentoo_binary" }}
