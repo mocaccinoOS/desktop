@@ -14,8 +14,6 @@ prelude:
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build" . }}
 steps:
-# There seems to be a bug in the dev-libs/libmbim ebuild. We must make sure dev-perl/Locale-gettext is installed before dev-libs/libmbim gets merged.
-# Still valid 2025-12-31
 - emerge -1 dev-perl/Locale-gettext
 {{ template "portage_build" . }}
 # Clean up build dependencies
