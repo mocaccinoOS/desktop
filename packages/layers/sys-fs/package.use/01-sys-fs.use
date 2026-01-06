@@ -9,6 +9,8 @@ dev-libs/libverto libev
 dev-python/numpy lapack
 dev-python/pyudev -qt5
 dev-python/rdflib sqlite
+# Disable 32-bit build - Vala compiler lacks multilib support
+dev-util/umockdev -abi_x86_32
 mail-mta/postfix mbox sasl
 # 32-bit ABI is not that useful; also fixes compilation of 3.6.24 (cannot find libpam for 32 bit)
 net-fs/samba -abi_x86_32 acl aio client oav swat winbind -cluster -ceph -ldap
