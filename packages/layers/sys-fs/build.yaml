@@ -19,7 +19,7 @@ steps:
 # phase because it cannot find the Vala compiler in this environment. 
 # Using the pre-built Gentoo binary bypasses the Vala compilation requirement.
 - echo 'EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg --binpkg-changed-deps=y"' > /etc/portage/env/usepkg.conf && \
-- echo 'dev-util/umockdev usepkg.conf' >> /etc/portage/package.env
+- echo 'dev-util/umockdev usepkg.conf' >> /etc/portage/package.env/01-sys-fs.env
 # Workaround 2025-12-31: There seems to be a bug in the dev-libs/libmbim ebuild. We must make sure dev-perl/Locale-gettext is installed before dev-libs/libmbim gets merged.
 - emerge -1 dev-perl/Locale-gettext
 {{ template "portage_build" . }}
