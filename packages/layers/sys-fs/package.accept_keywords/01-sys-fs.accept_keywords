@@ -2,3 +2,7 @@ dev-util/spirv-llvm-translator:21 ~amd64
 
 # Needed for LLVM:21
 =sys-fs/bcachefs-tools-1.31.5 ~amd64
+
+# The source build for dev-util/umockdev-0.19.3 fails during the 'meson setup' 
+# phase because it cannot find the Vala compiler in this environment. 
+=dev-util/umockdev-0.19.4 ~amd64
