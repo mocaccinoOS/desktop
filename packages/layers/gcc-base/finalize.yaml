@@ -1,3 +1,4 @@
 install:
 - mos config-update update --interactive=false -p /etc/ld.so.conf.d
+- ldconfig
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
