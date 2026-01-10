@@ -1,0 +1,4 @@
+install:
+  - |
+    # Ensure cosmic-greeter has shadow entry for PAM authentication
+    getent shadow cosmic-greeter >/dev/null 2>&1 || passwd -l cosmic-greeter || true
