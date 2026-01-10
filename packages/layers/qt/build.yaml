@@ -40,7 +40,6 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
-- cp gcc-balanced-optimization /etc/portage/env
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
