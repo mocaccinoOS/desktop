@@ -25,8 +25,10 @@ prelude:
 - cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
 # temp use flags required for pillow. We drop this later
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
-# temp mask for debugging
+# temp mask
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
+# since dracut-108-r4 has optional dep for this, we use app-text/asciidoc and not pull in ruby here
+- echo "dev-ruby/asciidoctor" >> /etc/portage/package.mask/temp.mask
 # avoid circular deps
 - USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
 # required for binary packages
