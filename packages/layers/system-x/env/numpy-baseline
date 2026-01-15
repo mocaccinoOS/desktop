@@ -1,0 +1,2 @@
+# Prevent Meson from auto-detecting CPU features
+MYMESONARGS="-Dcpu-baseline=x86-64 -Dcpu-dispatch=none"
