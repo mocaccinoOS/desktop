@@ -1,2 +1,9 @@
+# Remove -march to prevent numpy from auto-detecting
+# Keep other optimizations
+CFLAGS="-O2 -pipe -fomit-frame-pointer -g0 -ffunction-sections -fdata-sections -mno-avx -mno-avx2 -mno-fma"
+CXXFLAGS="-O2 -pipe -fomit-frame-pointer -g0 -ffunction-sections -fdata-sections -mno-avx -mno-avx2 -mno-fma"
+FCFLAGS="-O2 -pipe -fomit-frame-pointer -g0 -ffunction-sections -fdata-sections"
+FFLAGS="-O2 -pipe -fomit-frame-pointer -g0 -ffunction-sections -fdata-sections"
+
 # Prevent Meson from auto-detecting CPU features
 MYMESONARGS="-Dcpu-baseline=x86-64 -Dcpu-dispatch=none"
