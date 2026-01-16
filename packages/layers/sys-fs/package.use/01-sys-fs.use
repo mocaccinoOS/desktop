@@ -6,7 +6,7 @@ dev-libs/libevent ssl
 dev-libs/libnl utils
 dev-libs/libical vala
 dev-libs/libverto libev
-dev-python/numpy lapack
+dev-python/numpy lapack -cpudetection
 dev-python/pyudev -qt5
 dev-python/rdflib sqlite
 # Disable 32-bit build - Vala compiler lacks multilib support

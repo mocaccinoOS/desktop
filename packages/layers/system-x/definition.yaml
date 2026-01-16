@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: 0.20260111+4
+version: "0.20260116"
 gcc_version: "15"
 python_version: "3.13"
 uri:
@@ -9,7 +9,7 @@ license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
 description: "Core MocaccinoOS layer providing the essential base system with systemd, dbus, udev, polkit, coreutils, and all fundamental user and group accounts required for a functional Linux environment. Forms the foundation for all higher MocaccinoOS layers."
 labels:
   autobump.strategy: "snapshot"
-  emerge.jobs: "1"
+  emerge.jobs: "10"
   emerge.packages: >-
     acct-group/plugdev app-alternatives/sh app-arch/cpio app-crypt/p11-kit dev-debug/gdb dev-libs/jemalloc dev-libs/libbsd dev-libs/libgudev dev-libs/libpcre dev-libs/libpcre2 dev-libs/libyaml dev-libs/xxhash dev-perl/Class-Inspector dev-perl/Exporter-Tiny dev-perl/File-ShareDir dev-perl/List-MoreUtils dev-perl/OLE-StorageLite dev-perl/Role-Tiny dev-perl/Types-Serialiser dev-perl/Sub-Name dev-perl/Sub-Quote dev-perl/Syntax-Keyword-Try dev-perl/Text-Unidecode dev-perl/Unicode-Map dev-perl/XS-Parse-Keyword dev-perl/XML-Simple dev-python/pygments dev-python/python-magic dev-vcs/git llvm-core/clang llvm-core/llvm media-libs/libpng net-mail/mailbase sci-libs/gsl sys-apps/lsb-release sys-apps/usbutils sys-devel/binutils sys-kernel/dracut sys-libs/binutils-libs sys-libs/libapparmor
 requires:

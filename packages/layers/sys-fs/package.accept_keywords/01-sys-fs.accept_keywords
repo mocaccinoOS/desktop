@@ -2,3 +2,6 @@ dev-util/spirv-llvm-translator:21 ~amd64
 
 # Needed for LLVM:21
 =sys-fs/bcachefs-tools-1.31.5 ~amd64
+
+# test numpy with cpudetection disabled introduced in 2.3.2-r1
+=dev-python/numpy-2.3.2-r1 ~amd64
