@@ -28,6 +28,7 @@ media-libs/gst-plugins-bad egl -wayland
 media-libs/gst-plugins-base introspection
 media-libs/harfbuzz glib graphite introspection truetype
 media-libs/imlib2 jpeg mp3 png shm webp zlib
+media-libs/libaom cpu_flags_x86_mmx
 media-libs/libgphoto2 exif
 media-libs/libheif gdk-pixbuf rav1e x265
 media-libs/libjxl jpeg
