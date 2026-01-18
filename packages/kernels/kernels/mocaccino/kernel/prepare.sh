@@ -11,11 +11,12 @@ wget https://cdn.kernel.org/pub/linux/kernel/v${PACKAGE_VERSION:0:1}.x/${KERNEL_
 tar xvJf kernel.tar.xz
 mv ${KERNEL_TYPE}-${PACKAGE_VERSION} ${KERNEL_TYPE}
 cp -rfv mocaccino-$ARCH.config ${KERNEL_TYPE}/.config
-cd ${KERNEL_TYPE}
 
-# Fetch Gentoo kernel patches
+# Fetch Gentoo kernel patches BEFORE changing directory
 echo "Fetching Gentoo kernel patches for version ${PACKAGE_VERSION}..."
-bash "$(dirname "$0")/fetch-gentoo-patches.sh"
+bash fetch-gentoo-patches.sh
+
+cd ${KERNEL_TYPE}
 
 # Apply all patches from ../patches directory
 PATCHES_DIR="../patches"
