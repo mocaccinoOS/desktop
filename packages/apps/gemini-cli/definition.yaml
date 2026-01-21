@@ -1,0 +1,19 @@
+category: "apps"
+name: "gemini-cli"
+version: "0.24.5"
+uri:
+  - https://github.com/google-gemini/gemini-cli
+license: "Apache-2.0"
+description: "Gemini CLI - a command-line AI workflow tool by Google"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    dev-util/gemini-cli
+provides:
+  - name: gemini-cli
+    category: dev-util
+    version: '>=0'
+requires:
+  - category: "apps"
+    name: "nodejs"
+    version: ">=0"
