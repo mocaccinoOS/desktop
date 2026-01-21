@@ -1,6 +1,6 @@
 category: "apps"
 name: "gemini-cli"
-version: "0.25.0"
+version: 0.25.0+1
 uri:
   - https://github.com/google-gemini/gemini-cli
 license: "Apache-2.0"
