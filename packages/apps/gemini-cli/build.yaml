@@ -3,6 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+{{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable gentoo-zh
