@@ -43,6 +43,7 @@ steps:
 - emerge --depclean
 - rm /etc/portage/package.use/temp.use
 - rm /etc/portage/package.mask/temp.mask
+- rm /etc/portage/package.accept_keywords/temp.accept_keywords
 excludes:
 - ^/dev
 - ^/etc/._cfg.*
