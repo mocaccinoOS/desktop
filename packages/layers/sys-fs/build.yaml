@@ -8,9 +8,6 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 - cp -rf patches /etc/portage/
-# required for binary packages
-- cp -rf binrepos.conf /etc/portage/
-- emerge -1 app-portage/getuto && getuto
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge dev-util/ccache
