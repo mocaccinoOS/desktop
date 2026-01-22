@@ -33,8 +33,8 @@ prelude:
 - cp -rf binrepos.conf /etc/portage/
 - emerge -1 app-portage/getuto && getuto
 steps:
-- FEATURES="getbinpkg noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -1uDN @system -j $JOBS --usepkg --binpkg-respect-use=y
-- FEATURES="getbinpkg noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS --usepkg --binpkg-respect-use=y
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -1uDN @system -j $JOBS
+- FEATURES="noinfo nodoc -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 {{ template "portage_build_gentoo_binary" . }}
 - chmod -R 0700 /usr/share/polkit-1/rules.d && chown -R 102:0 /usr/share/polkit-1/rules.d
 # Switch iptables to the modern nftables backend (avoids legacy xtables-compat mode)
