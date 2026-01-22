@@ -1,6 +1,7 @@
 # Be sure we have the sh symlink set
 app-alternatives/sh bash
 app-arch/bzip2 static-libs
+app-arch/libarchive expat
 # vzctl and other packages now require xattr support in tar
 app-arch/tar xattr
 app-arch/xz-utils static-libs
