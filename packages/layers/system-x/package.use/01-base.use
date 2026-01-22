@@ -25,7 +25,7 @@ dev-libs/libgudev introspection
 dev-libs/libksba static-libs
 dev-libs/libpcre cxx jit pcre16 readline recursion-limit static-libs unicode zlib
 dev-libs/libpcre2 jit pcre16 pcre32 readline recursion-limit static-libs unicode zlib
-dev-libs/libxml2 ipv6 python readline -doc
+dev-libs/libxml2 ipv6 readline -doc -python
 dev-libs/lzo static-libs
 dev-libs/openssl:0 asm sslv3 static-libs zlib
 dev-libs/popt static-libs
