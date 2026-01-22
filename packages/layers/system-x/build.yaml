@@ -15,19 +15,14 @@ prelude:
 {{ end }}
 # Remove Python 3.14
 - emerge -C dev-lang/python:3.14
-# rebuild python && python packages
-# - emerge -1 dev-lang/python:3.13 
-# - emerge -1 sys-apps/portage
-# - emerge -1 $(qlist -IC dev-python)
-# rebuild perl && perl packages
-# - emerge -1 dev-lang/perl:0 && emerge -1 $(qlist -IC 'perl-core' 'virtual/perl-*' 'dev-perl/*')
 # Install our kernel-tuning-file
 - cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
 # temp use flags required for pillow. We drop this later
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
+# temp use flags required for ghostscript-gpl
+- echo "app-text/ghostscript-gpl -gtk -X" >> /etc/portage/package.use/temp.use
 # temp mask
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
-- echo "app-text/doxygen" >> /etc/portage/package.mask/temp.mask
 # since dracut-108-r4 has optional dep for this, we use app-text/asciidoc and not pull in ruby here
 - echo "dev-ruby/asciidoctor" >> /etc/portage/package.mask/temp.mask
 # avoid circular deps
@@ -40,7 +35,7 @@ steps:
 # Switch iptables to the modern nftables backend (avoids legacy xtables-compat mode)
 - eselect iptables set xtables-nft-multi
 # Clean up build deps
-- emerge -C app-text/po4a dev-lang/yasm dev-python/docutils dev-python/pillow dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
+- emerge -C app-text/ghostscript-gpl app-text/po4a dev-lang/yasm dev-python/docutils dev-python/pillow dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
 # Remove Meson here
 - emerge -C dev-build/meson dev-build/meson-format-array dev-python/meson-python
 - emerge --depclean
