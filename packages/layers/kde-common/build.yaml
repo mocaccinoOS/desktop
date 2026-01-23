@@ -6,9 +6,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
   name: "qt"

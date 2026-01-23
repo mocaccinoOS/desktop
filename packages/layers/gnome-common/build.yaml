@@ -10,9 +10,9 @@ prelude:
 - EMERGE_DEFAULT_OPTS="--quiet --getbinpkg" emerge -1 llvm-core/clang:19 llvm-core/lld:19 llvm-core/llvm:19
 - rm -f /etc/portage/package.unmask/llvm-19.tmp
 {{ template "portage_copy_package_files" . }}
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 # cleanup ccache
 - CCACHE_DIR=/var/cache/ccache/ ccache -C
 requires:

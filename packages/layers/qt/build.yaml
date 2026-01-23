@@ -43,7 +43,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 # cleanup ccache
 - CCACHE_DIR=/var/cache/ccache/ ccache -C
 requires:
