@@ -7,7 +7,7 @@ license: "GPL-2+ FDL-1.1+ LGPL-2+"
 description: "A fork of GNOME Shell with layout similar to GNOME 2"
 labels:
   emerge.jobs: "3"
-  emerge.packages: "app-accessibility/caribou app-editors/xed::haarp dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cinnamon-spices-extensions gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo media-gfx/xviewer::binaryden sys-apps/xdg-desktop-portal-xapp x11-misc/pix x11-terms/gnome-terminal::gentoo x11-wm/muffin"
+  emerge.packages: "app-accessibility/caribou app-editors/xed::haarp dev-libs/libtimezonemap dev-python/pexpect dev-python/ptyprocess dev-python/python-pam gnome-extra/cinnamon gnome-extra/cinnamon-control-center gnome-extra/cinnamon-desktop gnome-extra/cinnamon-menus gnome-extra/cinnamon-screensaver gnome-extra/cinnamon-session gnome-extra/cinnamon-settings-daemon gnome-extra/cinnamon-spices-extensions gnome-extra/cjs gnome-extra/cinnamon-translations gnome-extra/nemo media-gfx/xviewer::binaryden sys-apps/xdg-desktop-portal-xapp x11-libs/xapp-symbolic-icons::binaryden x11-misc/pix x11-terms/gnome-terminal::gentoo x11-wm/muffin"
 requires:
   - category: "layers"
     name: "gnome-common"
@@ -75,6 +75,9 @@ provides:
     version: '>=0'
   - name: xdg-desktop-portal-xapp
     category: sys-apps
+    version: '>=0'
+  - name: xapp-symbolic-icons
+    category: x11-libs
     version: '>=0'
   - name: pix
     category: x11-misc
