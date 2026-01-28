@@ -1,0 +1,31 @@
+category: "layers"
+name: "ibus"
+version: "1.5.31-r1"
+uri:
+  - https://github.com/ibus
+license: "GPL-2"
+description: "Extra ibus input method engines for Chinese and other languages."
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-i18n/ibus-hangul app-i18n/ibus-pinyin app-i18n/ibus-table app-i18n/ibus-table-chinese app-i18n/ibus-table-others
+provides:
+  - name: ibus-hangul
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-pinyin
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table-chinese
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table-others
+    category: app-i18n
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
