@@ -1,6 +1,6 @@
 category: "layers"
 name: "fcitx"
-version: 5.1.14+18
+version: "5.1.17"
 uri:
   - https://fcitx-im.org
 license: "LGPL-2+ Unicode-DFS-2016"
@@ -8,9 +8,15 @@ description: "Fcitx 5 is a generic input method framework"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-i18n/fcitx x11-libs/xcb-imdkit
+    app-i18n/fcitx app-i18n/fcitx-gtk app-i18n/fcitx-qt x11-libs/xcb-imdkit
 provides:
   - name: fcitx
+    category: app-i18n
+    version: '>=0'
+  - name: fcitx-gtk
+    category: app-i18n
+    version: '>=0'
+  - name: fcitx-qt
     category: app-i18n
     version: '>=0'
   - name: extra-cmake-modules
@@ -21,5 +27,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "X"
+    name: "qt"
     version: ">=0"

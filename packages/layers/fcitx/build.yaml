@@ -8,5 +8,5 @@ steps:
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
-  name: "X"
+  name: "qt"
   version: ">=0"
