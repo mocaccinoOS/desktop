@@ -5,6 +5,8 @@ includes:
 - ^/usr/share/wallpapers/Autumn/.*
 - ^/usr/share/wallpapers/Canopee$
 - ^/usr/share/wallpapers/Canopee/.*
+- ^/usr/share/wallpapers/Coast$
+- ^/usr/share/wallpapers/Coast/.*
 - ^/usr/share/wallpapers/ColdRipple$
 - ^/usr/share/wallpapers/ColdRipple/.*
 - ^/usr/share/wallpapers/ColorfulCups$

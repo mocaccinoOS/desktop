@@ -3,6 +3,7 @@ excludes:
 # To reduce footprint drop some wallpapers, they can be installed through themes/plasma-wallpapers-extra
 - ^/usr/share/wallpapers/Autumn
 - ^/usr/share/wallpapers/Canopee
+- ^/usr/share/wallpapers/Coast
 - ^/usr/share/wallpapers/ColdRipple
 - ^/usr/share/wallpapers/ColorfulCups
 - ^/usr/share/wallpapers/DarkestHour
