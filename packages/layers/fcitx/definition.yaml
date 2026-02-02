@@ -10,6 +10,9 @@ labels:
   emerge.packages: >-
     app-i18n/fcitx app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
 provides:
+  - name: chrpath
+    category: app-admin
+    version: '>=0'
   - name: fcitx
     category: app-i18n
     version: '>=0'
@@ -31,7 +34,16 @@ provides:
   - name: opencc
     category: app-i18n
     version: '>=0'
+  - name: nlohmann_json
+    category: dev-cpp
+    version: '>=0' 
+  - name: tclap
+    category: dev-cpp
+    version: '>=0'   
   - name: marisa
+    category: dev-libs
+    version: '>=0'
+  - name: rapidjson
     category: dev-libs
     version: '>=0'
   - name: extra-cmake-modules
