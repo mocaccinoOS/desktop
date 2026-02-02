@@ -1,0 +1,2 @@
+# No python 3.13 support, not required either
+dev-libs/marisa -python
