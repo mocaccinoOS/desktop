@@ -1,0 +1,2 @@
+install:
+- find /etc/libvirt/nwfilter -maxdepth 1 -name '._cfg0001_*' -exec rm -f {} \;
