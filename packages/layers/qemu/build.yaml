@@ -6,7 +6,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 - echo 'CONFIG_PROTECT_MASK="/etc/libvirt/nwfilter"' > /etc/portage/env/libvirt.env
-- echo 'app-emulation/libvirt libvirt.env' >> /etc/portage/package.env
+- echo 'app-emulation/libvirt libvirt.env' >> /etc/portage/package.env/01-qemu.env
 {{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable nest
