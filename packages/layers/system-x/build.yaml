@@ -116,6 +116,7 @@ excludes:
 {{ template "portage_excludes" }}
 
 # Emerge/portage
+- ^/usr/bin/dispatch-conf
 - ^/usr/bin/emerge
 - ^/usr/bin/emerge-webrsync
 - ^/usr/sbin/dispatch-conf
