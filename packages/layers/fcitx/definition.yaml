@@ -1,6 +1,6 @@
 category: "layers"
 name: "fcitx"
-version: 5.1.17+2
+version: 5.1.17+3
 uri:
   - https://fcitx-im.org
 license: "LGPL-2+ Unicode-DFS-2016"
@@ -36,10 +36,10 @@ provides:
     version: '>=0'
   - name: nlohmann_json
     category: dev-cpp
-    version: '>=0' 
+    version: '>=0'
   - name: tclap
     category: dev-cpp
-    version: '>=0'   
+    version: '>=0'
   - name: marisa
     category: dev-libs
     version: '>=0'
