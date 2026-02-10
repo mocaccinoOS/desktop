@@ -24,6 +24,7 @@ kde-frameworks/ki18n:5
 kde-frameworks/kiconthemes:5
 kde-frameworks/kirigami:5
 kde-frameworks/kio:5
+kde-frameworks/kitemmodels:5
 kde-frameworks/kitemviews:5
 kde-frameworks/kjobwidgets:5
 kde-frameworks/knewstuff:5
@@ -36,3 +37,5 @@ kde-frameworks/kwindowsystem:5
 kde-frameworks/kxmlgui:5
 kde-frameworks/solid:5
 kde-plasma/oxygen:5
+
+kde-plasma/kwayland:5
