@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export CHOST="${CHOST:-x86_64-pc-linux-gnu}"
+
 ALL_KERNELS=$(luet search --installed kernel --output json | jq -r '.packages[] | select( .category == "kernel" ) | [.category, .name] | join("/")')
 MOCACCINO_KERNEL_PREFIX="${MOCACCINO_KERNEL_PREFIX:-mocaccino}"
 

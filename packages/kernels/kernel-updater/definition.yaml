@@ -1,6 +1,6 @@
 category: "system"
 name: "kernel-updater"
-version: "0.2"
+version: "0.2.1"
 requires:
 - category: "utils"
   name: "jq"
