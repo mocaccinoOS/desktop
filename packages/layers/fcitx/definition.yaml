@@ -1,6 +1,6 @@
 category: "layers"
 name: "fcitx"
-version: 5.1.17+4
+version: 5.1.17+5
 uri:
   - https://fcitx-im.org
 license: "LGPL-2+ Unicode-DFS-2016"
@@ -8,7 +8,7 @@ description: "Fcitx 5 is a generic input method framework"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    app-i18n/fcitx app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
+    app-i18n/fcitx app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
 provides:
   - name: chrpath
     category: app-admin
@@ -54,5 +54,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "qt"
+    name: "kde-common"
     version: ">=0"

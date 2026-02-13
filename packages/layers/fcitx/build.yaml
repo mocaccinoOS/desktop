@@ -9,5 +9,5 @@ steps:
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
-  name: "qt"
+  name: "kde-common"
   version: ">=0"
