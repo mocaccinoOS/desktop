@@ -326,9 +326,6 @@ provides:
   - name: pinentry
     category: app-crypt
     version: '>=0'
-  - name: rhash
-    category: app-crypt
-    version: '>=0'
   - name: nano
     category: app-editors
     version: '>=0'
@@ -402,9 +399,6 @@ provides:
     category: dev-build
     version: '>=0'
   - name: automake-wrapper
-    category: dev-build
-    version: '>=0'
-  - name: cmake
     category: dev-build
     version: '>=0'
   - name: gtk-doc-am
@@ -482,9 +476,6 @@ provides:
   - name: json-c
     category: dev-libs
     version: '>=0'
-  - name: jsoncpp
-    category: dev-libs
-    version: '>=0'
   - name: libaio
     category: dev-libs
     version: '>=0'
@@ -531,9 +522,6 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libusb
-    category: dev-libs
-    version: '>=0'
-  - name: libuv
     category: dev-libs
     version: '>=0'
   - name: libxml2

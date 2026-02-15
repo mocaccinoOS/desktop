@@ -37,8 +37,8 @@ steps:
 - eselect iptables set xtables-nft-multi
 # Clean up build deps
 - emerge -C app-text/po4a dev-lang/yasm dev-python/docutils dev-python/pillow dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
-# Remove Meson here
-- emerge -C dev-build/meson dev-build/meson-format-array dev-python/meson-python
+# Remove Meson and CMake here
+- emerge -C dev-build/cmake dev-build/meson dev-build/meson-format-array dev-python/meson-python
 - emerge --depclean
 # Clean up binary cache (we are not using the template for binaries
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
