@@ -746,6 +746,9 @@ provides:
   - name: zram-init
     category: sys-block
     version: ">=0"
+  - name: bison
+    category: sys-devel
+    version: '>=0'
   - name: bcachefs-tools
     category: sys-fs
     version: ">=0"

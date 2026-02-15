@@ -1046,9 +1046,6 @@ provides:
   - name: binutils-config
     category: sys-devel
     version: '>=0'
-  - name: bison
-    category: sys-devel
-    version: '>=0'
   - name: flex
     category: sys-devel
     version: '>=0'

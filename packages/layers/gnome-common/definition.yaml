@@ -56,9 +56,6 @@ provides:
   - name: tar
     category: app-alternatives
     version: '>=0'
-  - name: yacc
-    category: app-alternatives
-    version: '>=0'
   - name: tpm2-tss
     category: app-crypt
     version: '>=0'
