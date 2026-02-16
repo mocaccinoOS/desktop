@@ -43,9 +43,6 @@ requires:
   - name: "postdrop"
     category: "entity"
     version: ">=0"
-  - name: "postmaster"
-    category: "entity"
-    version: ">=0"
   - name: "tss"
     category: "entity"
     version: ">=0"
@@ -89,9 +86,6 @@ provides:
   - name: tss
     category: acct-group
     version: ">=0"
-  - name: usb
-    category: acct-group
-    version: ">=0"
   - name: cron
     category: acct-user
     version: ">=0"
@@ -114,9 +108,6 @@ provides:
     category: acct-user
     version: ">=0"
   - name: postfix
-    category: acct-user
-    version: ">=0"
-  - name: postmaster
     category: acct-user
     version: ">=0"
   - name: tss

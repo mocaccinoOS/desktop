@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: 0.20260216+1
+version: 0.20260216+2
 gcc_version: "15"
 python_version: "3.13"
 uri:
@@ -64,6 +64,9 @@ requires:
   - name: "polkitd"
     category: "entity"
     version: ">=0"
+  - name: "postmaster"
+    category: "entity"
+    version: ">=0"
   - name: "portage"
     category: "entity"
     version: ">=0"
@@ -94,6 +97,9 @@ requires:
   - name: "sgx"
     category: "entity"
     version: ">=0"
+  - name: "shadow"
+    category: "entity"
+    version: ">=0"
   - name: "sshd"
     category: "entity"
     version: ">=0"
@@ -110,6 +116,9 @@ requires:
     category: "entity"
     version: ">=0"
   - name: "uucp"
+    category: "entity"
+    version: ">=0"
+  - name: "usb"
     category: "entity"
     version: ">=0"
   - name: "utmp"
