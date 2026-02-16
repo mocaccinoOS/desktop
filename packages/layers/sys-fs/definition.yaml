@@ -797,6 +797,9 @@ provides:
   - name: zfs
     category: sys-fs
     version: ">=0"
+  - name: linux-headers
+    category: sys-kernel
+    version: ">=0"
   - name: cracklib
     category: sys-libs
     version: ">=0"
@@ -852,6 +855,9 @@ provides:
     category: virtual
     version: ">=0"
   - name: mysql
+    category: virtual
+    version: ">=0"
+  - name: os-headers
     category: virtual
     version: ">=0"
   - name: perl-Time-HiRes

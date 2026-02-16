@@ -10,7 +10,7 @@ prelude:
 - cp -rf patches /etc/portage/
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
-- emerge -1 dev-build/cmake sys-devel/bison app-alternatives/yacc
+- emerge -1 virtual/os-headers sys-kernel/linux-headers dev-build/cmake sys-devel/bison app-alternatives/yacc
 - emerge dev-util/ccache
 - emerge app-portage/gentoolkit
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
