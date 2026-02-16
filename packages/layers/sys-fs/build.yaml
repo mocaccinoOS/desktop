@@ -22,8 +22,6 @@ steps:
 # Clean up build dependencies
 - emerge -C dev-python/pillow dev-python/docutils dev-python/sphinx dev-python/sphinx-rtd-theme
 - emerge --depclean
-# Clean up binary cache (we are not using the template for binaries
-- if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
 - rm /etc/portage/package.use/temp.use
 requires:
 - category: "layers"

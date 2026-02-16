@@ -42,8 +42,9 @@ steps:
 # Since 2026-02 it seems we have a dep on virtual/os-headers pulling in sys-kernel/linux-headers
 - emerge -C virtual/os-headers sys-kernel/linux-headers
 - emerge --depclean
-# Clean up binary cache (we are not using the template for binaries
+# Clean up binary cache (we are not using the template for binaries)
 - if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
+- if [ -d /var/cache/binhost/ ] && [ ! -z "$(ls -A /var/cache/binhost/)" ]; then rm -r /var/cache/binhost/*; fi
 - rm /etc/portage/package.use/temp.use
 - rm /etc/portage/package.mask/temp.mask
 excludes:
