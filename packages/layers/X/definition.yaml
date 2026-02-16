@@ -37,9 +37,6 @@ requires:
   - name: "lpadmin"
     category: "entity"
     version: ">=0"
-  - name: "netdev"
-    category: "entity"
-    version: ">=0"
   - name: "pipewire"
     category: "entity"
     version: ">=0"
@@ -69,9 +66,6 @@ provides:
     category: acct-group
     version: ">=0"
   - name: lpadmin
-    category: acct-group
-    version: ">=0"
-  - name: netdev
     category: acct-group
     version: ">=0"
   - name: scanner
