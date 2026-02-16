@@ -22,9 +22,6 @@ requires:
   - name: "cuse"
     category: "entity"
     version: ">=0"
-  - name: "dhcpcd"
-    category: "entity"
-    version: ">=0"
   - name: "dnsmasq"
     category: "entity"
     version: ">=0"
@@ -62,9 +59,6 @@ provides:
   - name: cuse
     category: acct-group
     version: '>=0'
-  - name: dhcpcd
-    category: acct-group
-    version: ">=0"
   - name: dnsmasq
     category: acct-group
     version: ">=0"
@@ -99,9 +93,6 @@ provides:
     category: acct-group
     version: ">=0"
   - name: cron
-    category: acct-user
-    version: ">=0"
-  - name: dhcpcd
     category: acct-user
     version: ">=0"
   - name: dnsmasq
