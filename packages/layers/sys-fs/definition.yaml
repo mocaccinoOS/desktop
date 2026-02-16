@@ -19,6 +19,9 @@ requires:
   - name: "crontab"
     category: "entity"
     version: ">=0"
+  - name: "cuse"
+    category: "entity"
+    version: ">=0"
   - name: "dhcpcd"
     category: "entity"
     version: ">=0"
@@ -56,6 +59,9 @@ provides:
   - name: crontab
     category: acct-group
     version: ">=0"
+  - name: cuse
+    category: acct-group
+    version: '>=0'
   - name: dhcpcd
     category: acct-group
     version: ">=0"
