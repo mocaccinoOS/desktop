@@ -1,9 +1,9 @@
 category: "gentoo"
 name: "stage3"
-version: "0.20260208"
+version: "0.20260215"
 labels:
   package.version: "20260208T163056Z"
-  package.version.arm64: "20231015T161657Z"
+  package.version.arm64: "20260215T164556Z"
   autobump.strategy: "custom"
   autobump.hook: "wget -4 -O - http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64-systemd.txt --quiet | tail -n 1 | awk 'match($1, /^[0-9a-zA-Z]+/)  { print substr($1, RSTART, RLENGTH) }'"
   autobump.version_hook: "wget -4 -O - http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64-systemd.txt --quiet | tail -n 1 | awk 'match($1, /^[0-9]+/)  { print substr($1, RSTART, RLENGTH) }'"
