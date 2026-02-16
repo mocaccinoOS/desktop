@@ -239,6 +239,9 @@ provides:
 - name: mysql-init-scripts
   category: dev-db
   version: '>=0'
+- name: unixODBC
+  category: dev-db
+  version: '>=0'
 - name: lua
   category: dev-lang
   version: '>=0'
