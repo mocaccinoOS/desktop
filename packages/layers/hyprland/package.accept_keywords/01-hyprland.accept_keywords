@@ -1,4 +1,5 @@
 dev-libs/hyprgraphics ~amd64
+dev-libs/hyprlang ~amd64
 dev-libs/hyprland-protocols ~amd64
 dev-util/hyprwayland-scanner ~amd64
 gui-apps/clipman ~amd64
