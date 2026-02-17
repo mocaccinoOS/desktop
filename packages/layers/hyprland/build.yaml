@@ -11,6 +11,7 @@ prelude:
 # for communal maintenance of these packages as well as several new
 # (unpackaged in ::gentoo) dependencies.
 - eselect repository enable hyproverlay
+- emaint sync -r hyproverlay
 # needed for clipman
 - eselect repository enable guru
 - emaint sync -r guru
