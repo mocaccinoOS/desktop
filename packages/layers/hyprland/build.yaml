@@ -6,16 +6,18 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
-# needed for hyprpaper
-- eselect repository enable wayland-desktop
-- emaint sync -r wayland-desktop
+# An unofficial 'hyproverlay' repository has been created at
+#  https://codeberg.org/hyproverlay/hyproverlay.git
+# for communal maintenance of these packages as well as several new
+# (unpackaged in ::gentoo) dependencies.
+- eselect repository enable hyproverlay
 # needed for clipman
 - eselect repository enable guru
 - emaint sync -r guru
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- eselect repository remove wayland-desktop guru
+- eselect repository remove guru hyproverlay
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
