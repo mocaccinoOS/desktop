@@ -7,4 +7,5 @@ gui-apps/hyprpaper ~amd64
 gui-libs/aquamarine ~amd64
 gui-libs/hyprcursor ~amd64
 gui-libs/hyprutils ~amd64
+gui-libs/hyprwire ~amd64
 gui-wm/hyprland ~amd64
