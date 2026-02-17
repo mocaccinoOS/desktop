@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 6.10.1+13
+version: 6.10.1+14
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
@@ -17,20 +17,14 @@ provides:
   - name: qca
     category: app-crypt
     version: '>=0'
-  - name: tpm2-tss
-    category: app-crypt
+  - name: poppler
+    category: app-text
     version: '>=0'
-  - name: trousers
-    category: app-crypt
+  - name: ada
+    category: dev-cpp
     version: '>=0'
-  - name: mime-types
-    category: app-misc
-    version: '>=0'
-  - name: rust-bin
-    category: dev-lang
-    version: '>=0'
-  - name: libgit2
-    category: dev-libs
+  - name: simdutf
+    category: dev-cpp
     version: '>=0'
   - name: md4c
     category: dev-libs
@@ -38,92 +32,8 @@ provides:
   - name: qtkeychain
     category: dev-libs
     version: '>=0'
-  - name: Clone
-    category: dev-perl
-    version: '>=0'
-  - name: IPC-Run3
-    category: dev-perl
-    version: '>=0'
-  - name: libwww-perl
-    category: dev-perl
-    version: '>=0'
-  - name: Locale-gettext
-    category: dev-perl
-    version: '>=0'
-  - name: alabaster
-    category: dev-python
-    version: '>=0'
-  - name: arrow
-    category: dev-python
-    version: '>=0'
-  - name: attrs
-    category: dev-python
-    version: '>=0'
-  - name: autocommand
-    category: dev-python
-    version: '>=0'
-  - name: Babel
-    category: dev-python
-    version: '>=0'
-  - name: calver
-    category: dev-python
-    version: '>=0'
-  - name: editables
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-pip
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-setuptools
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-wheels
-    category: dev-python
-    version: '>=0'
-  - name: fqdn
-    category: dev-python
-    version: '>=0'
-  - name: gentoo-common
-    category: dev-python
-    version: '>=0'
-  - name: imagesize
-    category: dev-python
-    version: '>=0'
-  - name: inflect
-    category: dev-python
-    version: '>=0'
-  - name: isoduration
-    category: dev-python
-    version: '>=0'
-  - name: jsonpointer
-    category: dev-python
-    version: '>=0'
-  - name: jsonschema
-    category: dev-python
-    version: '>=0'
-  - name: lark
-    category: dev-python
-    version: '>=0'
-  - name: pathspec
-    category: dev-python
-    version: '>=0'
-  - name: pkgconfig
-    category: dev-python
-    version: '>=0'
-  - name: platformdirs
-    category: dev-python
-    version: '>=0'
-  - name: pluggy
-    category: dev-python
-    version: '>=0'
-  - name: poetry-core
-    category: dev-python
-    version: '>=0'
-  - name: pydantic
-    category: dev-python
-    version: '>=0'
-  - name: pyhamcrest
-    category: dev-python
+  - name: simdjson
+    category: dev-libs
     version: '>=0'
   - name: pyqt-builder
     category: dev-python
@@ -137,64 +47,13 @@ provides:
   - name: pyqt6-webengine
     category: dev-python
     version: '>=0'
-  - name: pyrsistent
-    category: dev-python
-    version: '>=0'
-  - name: regex
-    category: dev-python
-    version: '>=0'
-  - name: rfc3339-validator
-    category: dev-python
-    version: '>=0'
-  - name: rfc3986-validator
-    category: dev-python
-    version: '>=0'
-  - name: rfc3987
-    category: dev-python
-    version: '>=0'
   - name: sip
     category: dev-python
     version: '>=0'
-  - name: snowballstemmer
-    category: dev-python
+  - name: qt5compat
+    category: dev-qt
     version: '>=0'
-  - name: sphinx
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-applehelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-devhelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-htmlhelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-jsmath
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-qthelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-serializinghtml
-    category: dev-python
-    version: '>=0'
-  - name: strict-rfc3339
-    category: dev-python
-    version: '>=0'
-  - name: tomlkit
-    category: dev-python
-    version: '>=0'
-  - name: trove-classifiers
-    category: dev-python
-    version: '>=0'
-  - name: uri_template
-    category: dev-python
-    version: '>=0'
-  - name: webcolors
-    category: dev-python
-    version: '>=0'
-  - name: qdbus
+  - name: qtbase
     category: dev-qt
     version: '>=0'
   - name: qtcharts
@@ -221,6 +80,9 @@ provides:
   - name: qtquick3d
     category: dev-qt
     version: '>=0'
+  - name: qtquicktimeline
+    category: dev-qt
+    version: '>=0'
   - name: qtscxml
     category: dev-qt
     version: '>=0'
@@ -228,9 +90,6 @@ provides:
     category: dev-qt
     version: '>=0'
   - name: qtserialport
-    category: dev-qt
-    version: '>=0'
-  - name: qtsensors
     category: dev-qt
     version: '>=0'
   - name: qtshadertools
@@ -263,33 +122,18 @@ provides:
   - name: qtwebsockets
     category: dev-qt
     version: '>=0'
-  - name: cargo-c
-    category: dev-util
-    version: '>=0'
-  - name: netsurf-buildsystem
-    category: dev-util
-    version: '>=0'
-  - name: ninja
-    category: dev-util
-    version: '>=0'
-  - name: jack-example-tools
-    category: media-sound
-    version: '>=0'
-  - name: http-parser
-    category: net-libs
-    version: '>=0'
   - name: assimp
     category: media-libs
     version: '>=0'
-  - name: less
-    category: sys-apps
+  - name: ngtcp2
+    category: net-libs
+    version: '>=0'
+  - name: nodejs
+    category: net-libs
     version: '>=0'
   - name: polkit-qt
     category: sys-auth
     version: '>=0'
-  - name: perl-Time-HiRes
+  - name: minizip
     category: virtual
-    version: '>=0'
-  - name: fonttosfnt
-    category: x11-apps
     version: '>=0'
