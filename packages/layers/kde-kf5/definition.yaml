@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-kf5"
-version: 5.116.0+127
+version: 5.116.0+128
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
@@ -10,13 +10,19 @@ requires:
     name: "kde-common"
     version: ">=0"
 provides:
+  - name: poppler
+    category: app-text
+    version: '>=0'
   - name: pyqt5
     category: dev-python
     version: '>=0'
   - name: pyqt5-sip
     category: dev-python
     version: '>=0'
-  - name: qtlinguist-tools
+  - name: linguist-tools
+    category: dev-qt
+    version: '>=0'
+  - name: qtchooser
     category: dev-qt
     version: '>=0'
   - name: qtconcurrent
@@ -25,19 +31,16 @@ provides:
   - name: qtcore
     category: dev-qt
     version: '>=0'
-  - name: qtchooser
-    category: dev-qt
-    version: '>=0'
   - name: qtdbus
-    category: devqt
-    version: '>=0'
-  - name: qtgui
     category: dev-qt
     version: '>=0'
   - name: qtdeclarative
     category: dev-qt
     version: '>=0'
   - name: qtgraphicaleffects
+    category: dev-qt
+    version: '>=0'
+  - name: qtgui
     category: dev-qt
     version: '>=0'
   - name: qthelp
@@ -58,10 +61,10 @@ provides:
   - name: qtprintsupport
     category: dev-qt
     version: '>=0'
-  - name: qtqtquickcontrols
+  - name: qtquickcontrols
     category: dev-qt
     version: '>=0'
-  - name: qtqtquickcontrols2
+  - name: qtquickcontrols2
     category: dev-qt
     version: '>=0'
   - name: qtscxml
@@ -102,4 +105,7 @@ provides:
     version: '>=0'
   - name: qtxmlpatterns
     category: dev-qt
+    version: '>=0'
+  - name: phonon
+    category: media-libs
     version: '>=0'
