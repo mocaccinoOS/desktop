@@ -9,5 +9,6 @@ gui-libs/aquamarine ~amd64
 gui-libs/hyprcursor ~amd64
 gui-libs/hyprland-guiutils ~amd64
 gui-libs/hyprutils ~amd64
+gui-libs/hyprtoolkit ~amd64
 gui-libs/hyprwire ~amd64
 gui-wm/hyprland ~amd64
