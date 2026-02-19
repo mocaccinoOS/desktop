@@ -1,3 +1,4 @@
+dev-cpp/glaze ~amd64
 dev-libs/hyprgraphics ~amd64
 dev-libs/hyprlang ~amd64
 dev-libs/hyprland-protocols ~amd64

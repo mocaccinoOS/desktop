@@ -1,6 +1,6 @@
 category: "layers"
 name: "hyprland"
-version: "0.53.3-r2"
+version: 0.53.3-r2+1
 uri:
   - https://github.com/hyprwm/Hyprland
 license: "MIT"
@@ -14,6 +14,9 @@ requires:
     name: "X"
     version: ">=0"
 provides:
+  - name: glaze
+    category: dev-cpp
+    version: '>=0'
   - name: tomlplusplus
     category: dev-cpp
     version: '>=0'
