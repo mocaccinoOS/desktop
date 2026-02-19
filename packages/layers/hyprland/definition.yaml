@@ -8,7 +8,7 @@ description: "A dymanic tiling Wayland compositor that doesn't sacrifice on its 
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-cpp/tomlplusplus::gentoo dev-libs/hyprgraphics::hyproverlay dev-libs/hyprlang::hyproverlay dev-libs/iniparser::gentoo dev-libs/libliftoff::gentoo dev-util/hyprwayland-scanner::hyproverlay gui-apps/hyprpaper::hyproverlay gui-libs/aquamarine::hyproverlay gui-libs/hyprcursor::hyproverlay gui-libs/hyprland-guiutils::hyproverlay gui-libs/hyprutils::hyproverlay gui-libs/hyprtoolkit::hyproverlay gui-libs/hyprwire::hyproverlay gui-wm/hyprland::hyproverlay media-libs/libspng
+    dev-cpp/tomlplusplus::gentoo dev-libs/hyprgraphics::hyproverlay dev-libs/hyprlang::hyproverlay dev-libs/iniparser::gentoo dev-libs/libliftoff::gentoo dev-util/hyprwayland-scanner::hyproverlay gui-apps/hyprpaper::hyproverlay gui-libs/aquamarine::hyproverlay gui-libs/hyprcursor::hyproverlay gui-libs/hyprland-guiutils::hyproverlay gui-libs/hyprtoolkit::hyproverlay gui-libs/hyprutils::hyproverlay gui-libs/hyprwire::hyproverlay gui-wm/hyprland::hyproverlay media-libs/libspng
 requires:
   - category: "layers"
     name: "X"
@@ -53,10 +53,10 @@ provides:
   - name: hyprland-guiutils
     category: gui-libs
     version: '>=0'
-  - name: hyprutils
+  - name: hyprtoolkit
     category: gui-libs
     version: '>=0'
-  - name: hyprtoolkit
+  - name: hyprutils
     category: gui-libs
     version: '>=0'
   - name: hyprwire
