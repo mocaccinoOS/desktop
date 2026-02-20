@@ -423,24 +423,25 @@ packages:
       - name: vhba-lts
         category: kernel-modules
         version: ">=0"
-  - category: "kernel-modules"
-    name: "virtualbox-modules"
-    version: 7.2.4+26
-    lts: false
-    emerge:
-      jobs: "3"
-      packages:
-        - app-emulation/virtualbox-modules
-    labels:
-      emerge.jobs: "3"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-    conflicts:
-      - name: virtualbox-modules-lts
-        category: kernel-modules
-        version: ">=0"
+  # currently fails against 6.19.2
+  # - category: "kernel-modules"
+  #   name: "virtualbox-modules"
+  #   version: 7.2.4+26
+  #   lts: false
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - app-emulation/virtualbox-modules
+  #   labels:
+  #     emerge.jobs: "3"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: virtualbox-modules-lts
+  #       category: kernel-modules
+  #       version: ">=0"
   - category: "kernel-modules"
     name: "xone"
     version: 0.5.5+6
