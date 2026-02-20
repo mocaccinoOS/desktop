@@ -1,6 +1,6 @@
 category: "apps"
 name: "nodejs"
-version: "24.11.1-r1"
+version: 24.11.1-r1+1
 uri:
   - https://nodejs.org
 license: "Apache-1.1 Apache-2.0 BSD BSD-2 MIT"
@@ -8,8 +8,14 @@ description: "A JavaScript runtime built on Chrome's V8 JavaScript engine"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-libs/simdjson net-libs/nodejs
+    dev-cpp/ada dev-cpp/simdutf dev-libs/simdjson net-libs/nodejs
 provides:
+  - name: ada
+    category: dev-cpp
+    version: ">=0"
+  - name: simdutf
+    category: dev-cpp
+    version: ">=0"
   - name: simdjson
     category: dev-libs
     version: ">=0"
