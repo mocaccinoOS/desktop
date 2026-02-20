@@ -35,33 +35,6 @@ provides:
   - name: system-config-printer
     category: app-admin
     version: '>=0'
-  - name: awk
-    category: app-alternatives
-    version: '>=0'
-  - name: bc
-    category: app-alternatives
-    version: '>=0'
-  - name: cpio
-    category: app-alternatives
-    version: '>=0'
-  - name: gzip
-    category: app-alternatives
-    version: '>=0'
-  - name: lex
-    category: app-alternatives
-    version: '>=0'
-  - name: sh
-    category: app-alternatives
-    version: '>=0'
-  - name: tar
-    category: app-alternatives
-    version: '>=0'
-  - name: tpm2-tss
-    category: app-crypt
-    version: '>=0'
-  - name: trousers
-    category: app-crypt
-    version: '>=0'
   - name: eselect-ruby
     category: app-eselect
     version: '>=0'
@@ -74,29 +47,17 @@ provides:
   - name: localsearch
     category: app-misc
     version: '>=0'
-  - name: mime-types
-    category: app-misc
-    version: '>=0'
   - name: tinysparql
     category: app-misc
-    version: '>=0'
-  - name: docbook-sgml-utils
-    category: app-text
-    version: '>=0'
-  - name: docbook-xml-simple-dtd
-    category: app-text
-    version: '>=0'
-  - name: docbook-xml-simple-dtd
-    category: app-text
     version: '>=0'
   - name: gspell
     category: app-text
     version: '>=0'
-  - name: openjade
-    category: app-text
+  - name: autoconf
+    category: dev-build
     version: '>=0'
-  - name: xhtml1
-    category: app-text
+  - name: fast_float
+    category: dev-cpp
     version: '>=0'
   - name: ruby
     category: dev-lang
@@ -128,13 +89,7 @@ provides:
   - name: libgee
     category: dev-libs
     version: '>=0'
-  - name: libgit2
-    category: dev-libs
-    version: '>=0'
   - name: libgweather
-    category: dev-libs
-    version: '>=0'
-  - name: libpeas
     category: dev-libs
     version: '>=0'
   - name: libpeas
@@ -146,166 +101,40 @@ provides:
   - name: totem-pl-parser
     category: dev-libs
     version: '>=0'
-  - name: Clone
-    category: dev-perl
-    version: '>=0'
-  - name: IPC-Run3
-    category: dev-perl
-    version: '>=0'
-  - name: libwww-perl
-    category: dev-perl
-    version: '>=0'
-  - name: Locale-gettext
-    category: dev-perl
-    version: '>=0'
-  - name: alabaster
-    category: dev-python
-    version: '>=0'
-  - name: arrow
-    category: dev-python
-    version: '>=0'
-  - name: attrs
-    category: dev-python
-    version: '>=0'
-  - name: autocommand
-    category: dev-python
-    version: '>=0'
-  - name: Babel
-    category: dev-python
-    version: '>=0'
-  - name: calver
-    category: dev-python
-    version: '>=0'
-  - name: editables
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-pip
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-setuptools
-    category: dev-python
-    version: '>=0'
-  - name: ensurepip-wheels
-    category: dev-python
-    version: '>=0'
-  - name: fqdn
-    category: dev-python
-    version: '>=0'
-  - name: gentoo-common
-    category: dev-python
-    version: '>=0'
-  - name: imagesize
-    category: dev-python
-    version: '>=0'
-  - name: inflect
-    category: dev-python
-    version: '>=0'
-  - name: isoduration
-    category: dev-python
-    version: '>=0'
-  - name: jsonpointer
-    category: dev-python
-    version: '>=0'
-  - name: jsonschema
-    category: dev-python
-    version: '>=0'
-  - name: lark
-    category: dev-python
-    version: '>=0'
-  - name: pathspec
-    category: dev-python
-    version: '>=0'
-  - name: pkgconfig
-    category: dev-python
-    version: '>=0'
-  - name: platformdirs
-    category: dev-python
-    version: '>=0'
-  - name: pluggy
-    category: dev-python
-    version: '>=0'
-  - name: poetry-core
-    category: dev-python
-    version: '>=0'
   - name: pyatspi
     category: dev-python
     version: '>=0'
   - name: pycups
     category: dev-python
     version: '>=0'
-  - name: pydantic
-    category: dev-python
-    version: '>=0'
-  - name: pyhamcrest
-    category: dev-python
-    version: '>=0'
   - name: pyinotify
-    category: dev-python
-    version: '>=0'
-  - name: pyrsistent
     category: dev-python
     version: '>=0'
   - name: python3-xapp
     category: dev-python
     version: '>=0'
-  - name: regex
-    category: dev-python
-    version: '>=0'
-  - name: rfc3339-validator
-    category: dev-python
-    version: '>=0'
-  - name: rfc3986-validator
-    category: dev-python
-    version: '>=0'
-  - name: rfc3987
-    category: dev-python
-    version: '>=0'
-  - name: snowballstemmer
-    category: dev-python
-    version: '>=0'
-  - name: sphinx
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-applehelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-devhelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-htmlhelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-jsmath
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-qthelp
-    category: dev-python
-    version: '>=0'
-  - name: sphinxcontrib-serializinghtml
-    category: dev-python
-    version: '>=0'
-  - name: strict-rfc3339
-    category: dev-python
-    version: '>=0'
   - name: tinycss2
-    category: dev-python
-    version: '>=0'
-  - name: tomlkit
-    category: dev-python
-    version: '>=0'
-  - name: trove-classifiers
-    category: dev-python
-    version: '>=0'
-  - name: uri_template
-    category: dev-python
-    version: '>=0'
-  - name: webcolors
     category: dev-python
     version: '>=0'
   - name: bundler
     category: dev-ruby
     version: '>=0'
+  - name: date
+    category: dev-ruby
+    version: '>=0'
+  - name: debug
+    category: dev-ruby
+    version: '>=0'
   - name: did_you_mean
+    category: dev-ruby
+    version: '>=0'
+  - name: forwardable
+    category: dev-ruby
+    version: '>=0'
+  - name: io-console
+    category: dev-ruby
+    version: '>=0'
+  - name: irb
     category: dev-ruby
     version: '>=0'
   - name: json
@@ -314,10 +143,43 @@ provides:
   - name: kpeg
     category: dev-ruby
     version: '>=0'
+  - name: logger
+    category: dev-ruby
+    version: '>=0'
+  - name: matrix
+    category: dev-ruby
+    version: '>=0'
   - name: minitest
     category: dev-ruby
     version: '>=0'
+  - name: net-ftp
+    category: dev-ruby
+    version: '>=0'
+  - name: net-imap
+    category: dev-ruby
+    version: '>=0'
+  - name: net-pop
+    category: dev-ruby
+    version: '>=0'
+  - name: net-protocol
+    category: dev-ruby
+    version: '>=0'
+  - name: net-smtp
+    category: dev-ruby
+    version: '>=0'
   - name: power_assert
+    category: dev-ruby
+    version: '>=0'
+  - name: pp
+    category: dev-ruby
+    version: '>=0'
+  - name: prime
+    category: dev-ruby
+    version: '>=0'
+  - name: prism
+    category: dev-ruby
+    version: '>=0'
+  - name: psych
     category: dev-ruby
     version: '>=0'
   - name: racc
@@ -332,6 +194,9 @@ provides:
   - name: rdoc
     category: dev-ruby
     version: '>=0'
+  - name: reline
+    category: dev-ruby
+    version: '>=0'
   - name: rexml
     category: dev-ruby
     version: '>=0'
@@ -341,19 +206,31 @@ provides:
   - name: rubygems
     category: dev-ruby
     version: '>=0'
+  - name: singleton
+    category: dev-ruby
+    version: '>=0'
+  - name: stringio
+    category: dev-ruby
+    version: '>=0'
+  - name: strscan
+    category: dev-ruby
+    version: '>=0'
   - name: test-unit
+    category: dev-ruby
+    version: '>=0'
+  - name: time
+    category: dev-ruby
+    version: '>=0'
+  - name: timeout
     category: dev-ruby
     version: '>=0'
   - name: typeprof
     category: dev-ruby
     version: '>=0'
-  - name: cargo-c
+  - name: cbindgen
     category: dev-util
     version: '>=0'
-  - name: netsurf-buildsystem
-    category: dev-util
-    version: '>=0'
-  - name: ninja
+  - name: colm
     category: dev-util
     version: '>=0'
   - name: ragel
@@ -365,19 +242,13 @@ provides:
   - name: dconf-editor
     category: gnome-base
     version: '>=0'
-  - name: gnome-common
-    category: gnome-base
-    version: '>=0'
-  - name: gnome-desktop
-    category: gnome-base
-    version: '>=0'
   - name: gnome-desktop
     category: gnome-base
     version: '>=0'
   - name: gnome-menus
     category: gnome-base
     version: '>=0'
-  - name: gnome-gnome-settings-daemon
+  - name: gnome-settings-daemon
     category: gnome-base
     version: '>=0'
   - name: gvfs
@@ -434,6 +305,45 @@ provides:
   - name: wpebackend-fdo
     category: gui-libs
     version: '>=0'
+  - name: clang
+    category: llvm-core
+    version: '>=0'
+  - name: clang-linker-config
+    category: llvm-core
+    version: '>=0'
+  - name: clang-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: lld
+    category: llvm-core
+    version: '>=0'
+  - name: lld-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: llvm
+    category: llvm-core
+    version: '>=0'
+  - name: llvm-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: clang-rtlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-runtime
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-stdlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-unwindlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: compiler-rt
+    category: llvm-runtimes
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: llvm-runtimes
+    version: '>=0'
   - name: clutter
     category: media-libs
     version: '>=0'
@@ -458,9 +368,6 @@ provides:
   - name: gst-plugins-opus
     category: media-plugins
     version: '>=0'
-  - name: jack-example-tools
-    category: media-sound
-    version: '>=0'
   - name: telepathy-mission-control
     category: net-im
     version: '>=0'
@@ -473,16 +380,10 @@ provides:
   - name: gssdp
     category: net-libs
     version: '>=0'
-  - name: gssdp
-    category: net-libs
-    version: '>=0'
   - name: gtk-vnc
     category: net-libs
     version: '>=0'
   - name: gupnp
-    category: net-libs
-    version: '>=0'
-  - name: http-parser
     category: net-libs
     version: '>=0'
   - name: libgrss
@@ -500,9 +401,6 @@ provides:
   - name: webkit-gtk
     category: net-libs
     version: '>=0'
-  - name: webkit-gtk
-    category: net-libs
-    version: '>=0'
   - name: cups-pk-helper
     category: net-print
     version: '>=0'
@@ -512,17 +410,11 @@ provides:
   - name: geocode-glib
     category: sci-geosciences
     version: '>=0'
-  - name: less
-    category: sys-apps
-    version: '>=0'
   - name: osinfo-db
     category: sys-apps
     version: '>=0'
   - name: osinfo-db-tools
     category: sys-apps
-    version: '>=0'
-  - name: autoconf
-    category: sys-devel
     version: '>=0'
   - name: libosinfo
     category: sys-libs
@@ -533,25 +425,16 @@ provides:
   - name: imagemagick-tools
     category: virtual
     version: '>=0'
-  - name: perl-Time-HiRes
-    category: virtual
-    version: '>=0'
   - name: ruby-ssl
     category: virtual
     version: '>=0'
   - name: rubygems
     category: virtual
     version: '>=0'
-  - name: fonttosfnt
-    category: x11-apps
-    version: '>=0'
   - name: colord-gtk
     category: x11-libs
     version: '>=0'
   - name: goffice
-    category: x11-libs
-    version: '>=0'
-  - name: gtksourceview
     category: x11-libs
     version: '>=0'
   - name: gtksourceview
