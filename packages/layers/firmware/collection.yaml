@@ -199,6 +199,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Cavium / Marvell network, storage, or acceleration controllers (e.g. LiquidIO, OCTEON), enabling offloads and device features."
   - category: "layers"
+    name: "firmware-cirrus"
+    version: 2+91
+    uri:
+      - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Cirrus Logic audio DSP and smart amplifier devices used in modern laptops."
+  - category: "layers"
     name: "firmware-cis"
     version: 2+91
     uri:
