@@ -1,3 +1,0 @@
-install:
-- ldconfig
-- update-mime-database /usr/share/mime/
