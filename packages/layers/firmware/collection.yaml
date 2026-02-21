@@ -521,6 +521,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11ac chipsets supported by the rtw88 driver, providing advanced wireless capabilities."
   - category: "layers"
+    name: "firmware-rtw89"
+    version: 2+91
+    uri:
+      - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Realtek 802.11ax/802.11be chipsets supported by the rtw89 driver."
+  - category: "layers"
     name: "firmware-silabs"
     version: 2+91
     uri:
