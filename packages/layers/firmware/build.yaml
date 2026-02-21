@@ -3,6 +3,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+- emerge -1 virtual/os-headers sys-kernel/linux-headers
 - emerge -1 media-video/isight-firmware-tools
 - cp AppleUSBVideoSupport /tmp
 steps:
