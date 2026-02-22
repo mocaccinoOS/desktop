@@ -125,6 +125,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Qualcomm Atheros 802.11ax (Wi-Fi 6 / 6E) devices, used by the ath11k driver to support advanced high-throughput wireless adapters (e.g. QCA6390, WCN685x)."
   - category: "layers"
+    name: "firmware-ath12k"
+    version: 2+91
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Qualcomm Atheros 802.11be (Wi-Fi 7) devices supported by the ath12k driver, enabling next-generation high-throughput wireless networking."
+  - category: "layers"
     name: "firmware-ath6k"
     version: 2+91
     uri:
