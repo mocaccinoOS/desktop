@@ -2,4 +2,4 @@ image: "alpine"
 prelude:
 steps:
 - mkdir -p /etc/skel/Desktop
-- cp MocaccinoOS_Manual.pdf /etc/skel/Desktop/MocaccinoOS_Manual.pdf && chmod +x /etc/skel/Desktop/MocaccinoOS_Manual.pdf
+- cp MocaccinoOS_Manual.pdf /etc/skel/Desktop/MocaccinoOS_Manual.pdf
