@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MocaccinoOS Manual
+Comment=User guide for MocaccinoOS
+Exec=xdg-open /etc/skel/Desktop/MocaccinoOS_Manual.pdf
+Icon=help-browser
+Terminal=false
+Categories=Documentation;Help;
+Keywords=mocaccino;manual;help;documentation;

@@ -3,3 +3,5 @@ prelude:
 steps:
 - mkdir -p /etc/skel/Desktop
 - cp MocaccinoOS_Manual.pdf /etc/skel/Desktop/MocaccinoOS_Manual.pdf
+- mkdir -p /usr/share/applications
+- cp mocaccino-manual.desktop /usr/share/applications/mocaccino-manual.desktop
