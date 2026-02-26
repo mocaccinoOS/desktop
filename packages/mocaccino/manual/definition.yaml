@@ -1,0 +1,8 @@
+category: "mocaccino"
+name: "manual"
+version: "0.1"
+labels:
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
