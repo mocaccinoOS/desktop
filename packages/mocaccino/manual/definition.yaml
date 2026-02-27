@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "manual"
-version: 26.02+2
+version: 26.02+3
 labels:
 requires:
   - category: "layers"

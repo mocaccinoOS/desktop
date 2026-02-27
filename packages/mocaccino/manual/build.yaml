@@ -1,7 +1,15 @@
 image: "alpine"
 prelude:
 steps:
-- mkdir -p /etc/skel/Desktop
-- cp MocaccinoOS_Manual.pdf /etc/skel/Desktop/MocaccinoOS_Manual.pdf
+# Install canonical manual (not config protected)
+- mkdir -p /usr/share/mocaccino
+- cp MocaccinoOS_Manual.pdf /usr/share/mocaccino/MocaccinoOS_Manual.pdf
+
+# Install system-wide menu entry
 - mkdir -p /usr/share/applications
 - cp mocaccino-manual.desktop /usr/share/applications/mocaccino-manual.desktop
+
+# Seed desktop icon for new/live users
+- mkdir -p /etc/skel/Desktop
+- cp mocaccino-manual.desktop /etc/skel/Desktop/MocaccinoOS\ Manual.desktop
+- chmod +x /etc/skel/Desktop/MocaccinoOS\ Manual.desktop
