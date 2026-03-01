@@ -34,7 +34,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "v4l2loopback-lts"
-    version: 0.13.1+46
+    version: 0.15.3+23
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -46,7 +46,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - media-video/v4l2loopback
+        - =media-video/v4l2loopback-0.15.3
     provides:
       - name: v4l2loopback
         category: media-video
