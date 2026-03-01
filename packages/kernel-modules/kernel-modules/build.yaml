@@ -21,11 +21,6 @@ prelude:
 - ln -s /usr/src/linux /lib/modules/6.19.5-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
-{{ if contains "rtl8812au" .Values.name }}
-- emerge -1 app-eselect/eselect-repository
-- eselect repository enable rasdark
-- emaint sync -r rasdark
-{{- end}}
 {{ if contains "rtl8192eu" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
