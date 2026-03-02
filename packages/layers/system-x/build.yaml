@@ -83,6 +83,7 @@ excludes:
 - ^/proc
 - ^/luetbuild
 - ^/usr/portage
+- ^/usr/lib/os-release
 - ^/usr/lib/python{{.Values.python_version}}/test
 
 # GCC split
