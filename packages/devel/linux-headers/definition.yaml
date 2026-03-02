@@ -1,0 +1,23 @@
+category: "devel"
+name: "linux-headers"
+version: "6.18"
+uri:
+  - https://www.kernel.org
+license: "GPL-2"
+description: "Linux system headers"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    virtual/os-headers sys-kernel/linux-headers
+  description: "Linux system headers"
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+provides:
+  - name: linux-headers
+    category: sys-kernel
+    version: '>=0'
+  - name: os-headers
+    category: virtual
+    version: '>=0'
