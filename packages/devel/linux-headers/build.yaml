@@ -1,5 +1,3 @@
-excludes:
-{{ template "portage_excludes" }}
 env:
 {{ template "portage_env" . }}
 steps:

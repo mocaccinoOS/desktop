@@ -1,6 +1,6 @@
 category: "devel"
 name: "linux-headers"
-version: "6.18"
+version: 6.18+1
 uri:
   - https://www.kernel.org
 license: "GPL-2"
