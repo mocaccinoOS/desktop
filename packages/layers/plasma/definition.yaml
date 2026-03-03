@@ -1,6 +1,6 @@
 category: "layers"
 name: "plasma"
-version: 6.5.4+15
+version: 6.5.4+16
 uri:
   - https://kde.org/plasma-desktop
 license: "GPL-2"
@@ -35,13 +35,34 @@ provides:
   - name: sddm
     category: acct-user
     version: '>=0'
+  - name: gocryptfs
+    category: app-crypt
+    version: '>=0'
+  - name: range-v3
+    category: dev-cpp
+    version: '>=0'
+  - name: plasma-wayland-protocols
+    category: dev-libs
+    version: '>=0'
   - name: qcoro
     category: dev-libs
     version: '>=0'
   - name: xapian
     category: dev-libs
     version: '>=0'
+  - name: shtab
+    category: dev-python
+    version: '>=0'
+  - name: versioneer
+    category: dev-python
+    version: '>=0'
+  - name: xwaylandvideobridge
+    category: gui-apps
+    version: '>=0'
   - name: kaccounts-integration
+    category: kde-apps
+    version: '>=0'
+  - name: kaccounts-providers
     category: kde-apps
     version: '>=0'
   - name: kfind
@@ -77,6 +98,9 @@ provides:
   - name: kio-gdrive-common
     category: kde-misc
     version: '>=0'
+  - name: aurorae
+    category: kde-plasma
+    version: '>=0'
   - name: bluedevil
     category: kde-plasma
     version: '>=0'
@@ -95,10 +119,10 @@ provides:
   - name: kdecoration
     category: kde-plasma
     version: '>=0'
-  - name: kdesu-gui
+  - name: kdeplasma-addons
     category: kde-plasma
     version: '>=0'
-  - name: kdeplasma-addons
+  - name: kdesu-gui
     category: kde-plasma
     version: '>=0'
   - name: keditfiletype
@@ -149,10 +173,10 @@ provides:
   - name: milou
     category: kde-plasma
     version: '>=0'
-  - name: oxygen
+  - name: ocean-sound-theme
     category: kde-plasma
     version: '>=0'
-  - name: oxygen-sounds
+  - name: oxygen
     category: kde-plasma
     version: '>=0'
   - name: plasma-browser-integration
@@ -171,6 +195,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: plasma-meta
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma-mimeapps-list
     category: kde-plasma
     version: '>=0'
   - name: plasma-nm
@@ -195,6 +222,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: powerdevil
+    category: kde-plasma
+    version: '>=0'
+  - name: qqc2-breeze-style
     category: kde-plasma
     version: '>=0'
   - name: sddm-kcm
