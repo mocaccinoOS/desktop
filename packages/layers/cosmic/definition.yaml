@@ -4,7 +4,7 @@ version: 1.0.8+1
 uri:
   - https://github.com/pop-os/cosmic-session
 license: "GPL-3.0-or-later AND MPL-2.0 AND CC-BY-SA-4.0"
-description: "Next generation COSMIC™ desktop environment (Currently an incomplete pre-alpha)"
+description: "Next generation COSMIC™ desktop environment"
 arch: "amd64"
 labels:
   emerge.jobs: "3"
