@@ -106,6 +106,3 @@ provides:
   - name: qtxmlpatterns
     category: dev-qt
     version: '>=0'
-  - name: phonon
-    category: media-libs
-    version: '>=0'

@@ -48,9 +48,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- EMERGE_DEFAULT_OPTS="--getbinpkg --quiet" USE="qt5" emerge -1 media-libs/phonon
 - USE="qt5 -qt6" emerge -1 app-text/poppler
-# - USE="qt5 -qt6" emerge -1 dev-qt/qtwidgets:5 sys-auth/polkit-qt
 {{ template "portage_build_gentoo_binary" . }}
 requires:
 - category: "buildbase"
