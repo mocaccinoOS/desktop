@@ -29,6 +29,15 @@ provides:
   - name: libqtxdg
     category: dev-libs
     version: '>=0'
+  - name: lxqt-build-tools
+    category: dev-util
+    version: '>=0'
+  - name: xdg-desktop-portal-lxqt
+    category: gui-libs
+    version: '>=0'
+  - name: layer-shell-qt
+    category: kde-plasma
+    version: '>=0'
   - name: lxmenu-data
     category: lxde-base
     version: '>=0'
@@ -36,49 +45,64 @@ provides:
     category: lxde-base
     version: '>=0'
   - name: liblxqt
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-about
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-admin
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-config
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-globalkeys
-    category: lxde-base
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-menu-data
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-meta
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-notificationd
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-panel
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-policykit
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-powermanagement
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-qtplugin
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-runner
-    category: lxde-base
+    category: lxqt-base
     version: '>=0'
   - name: lxqt-session
-    category: lxde-base
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-sudo
+    category: lxqt-base
+    version: '>=0'
+  - name: lxqt-wayland-session
+    category: lxqt-base
     version: '>=0'
   - name: lximage-qt
     category: media-gfx
     version: '>=0'
+  - name: pavucontrol-qt
+    category: media-sound
+    version: '>=0'
   - name: libstatgrab
     category: sys-libs
+    version: '>=0'
+  - name: freedesktop-icon-theme
+    category: virtual
     version: '>=0'
   - name: libfm-extra
     category: x11-libs
@@ -93,6 +117,9 @@ provides:
     category: x11-misc
     version: '>=0'
   - name: qps
+    category: x11-misc
+    version: '>=0'
+  - name: screengrab
     category: x11-misc
     version: '>=0'
   - name: qterminal
