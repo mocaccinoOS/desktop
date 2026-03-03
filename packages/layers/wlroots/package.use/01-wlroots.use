@@ -1,1 +1,2 @@
-# placeholder
+# required for wayfire
+gui-libs/wlroots x11-backend
