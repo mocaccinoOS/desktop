@@ -8,7 +8,7 @@ description: "Media player and framework with support for most multimedia files 
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =media-video/vlc-4.0.0_pre20260215
+    =media-video/vlc-9999
 provides:
   - name: vlc
     category: media-video
