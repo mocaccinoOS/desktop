@@ -8,8 +8,7 @@ prelude:
 # - sed -i '/^inherit / s/$/ git-r3/' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 # - ebuild /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild manifest
 steps:
-# {{ template "portage_build" . }}
-- LDFLAGS="${LDFLAGS} -latomic" emerge media-video/vlc
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "kde-common"
