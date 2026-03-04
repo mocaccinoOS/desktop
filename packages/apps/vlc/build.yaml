@@ -6,7 +6,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 - mkdir -p /etc/portage/env
 - printf 'CC=clang\nCXX=clang++\nLD=clang++\nLDFLAGS="${LDFLAGS} -Wl,--push-state,--as-needed,-latomic,--pop-state"\n' > /etc/portage/env/vlc-atomic-fix.conf
-- echo 'media-video/vlc vlc-atomic-fix.conf' >> /etc/portage/package.env
+- echo 'media-video/vlc vlc-atomic-fix.conf' > /etc/portage/package.env/vlc
 - sed -i '/^EAPI=/a EGIT_COMMIT="dc69496e8a7d273a29b095b94bea403cfac7c1f5"' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - sed -i '/^inherit / s/$/ git-r3/' /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild
 - ebuild /var/db/repos/gentoo/media-video/vlc/vlc-9999.ebuild manifest
