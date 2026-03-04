@@ -1,6 +1,10 @@
 category: "mocaccino"
 name: "manual"
-version: 26.02+5
+version: "26.03"
+uri:
+  - https://www.mocaccino.org/docs/
+license: "CC BY-SA 4.0"
+description: "The official MocaccinoOS Desktop Manual, providing guidance on system usage, performance tuning, and configuration. Covers all default settings and recommended optimizations for a responsive and stable desktop experience."
 labels:
 requires:
   - category: "layers"
