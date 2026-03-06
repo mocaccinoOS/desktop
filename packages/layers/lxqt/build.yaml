@@ -1,26 +1,46 @@
 excludes:
-{{ template "portage_excludes" }}
-- ^/usr/include
-- ^/usr/lib64/.*\.a$
-- ^/usr/lib/.*\.a$
-env:
-{{ template "portage_env" . }}
-prelude:
-{{ template "portage_copy_package_files" . }}
-- emerge -1 media-sound/pavucontrol-qt
-{{ template "portage_prelude_build" . }}
-steps:
-{{ template "portage_build" . }}
-requires:
-- category: "layers"
-  name: "kde-common"
-  version: ">=0"
-subpackages:
-- name: "lxqt-devel"
-  category: "layers"
-  version: "{{.Values.version}}"
-  includes:
-  - ^/usr/include$
-  - ^/usr/include/.*
+  {{ template "portage_excludes" }}
   - ^/usr/lib64/.*\.a$
   - ^/usr/lib/.*\.a$
+
+env:
+  {{ if eq .Name "lxqt" }}
+  {{ template "portage_env" . }}
+  {{ end }}
+
+prelude:
+  {{ if eq .Name "lxqt" }}
+  {{ template "portage_copy_package_files" . }}
+  - emerge -1 media-sound/pavucontrol-qt
+  {{ template "portage_prelude_build" . }}
+  {{ end }}
+
+steps:
+  {{ if eq .Name "lxqt" }}
+  {{ template "portage_build" . }}
+  {{ else }}
+  - echo "Skipping build templates for lxqt-devel; only packaging headers and static libs"
+  {{ end }}
+
+requires:
+  {{ if eq .Name "lxqt" }}
+  - category: "layers"
+    name: "kde-common"
+    version: ">=0"
+  - category: "apps"
+    name: "pavucontrol-qt"
+    version: ">=0"
+  {{ else if eq .Name "lxqt-devel" }}
+  - category: "layers"
+    name: "lxqt"
+    version: ">=0"
+  {{ end }}
+
+subpackages:
+  - name: "lxqt-devel"
+    category: "layers"
+    version: "2.3.0+2"
+    includes:
+      - ^/usr/include/.*
+      - ^/usr/lib64/.*\.a$
+      - ^/usr/lib/.*\.a$
