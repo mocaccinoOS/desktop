@@ -10,9 +10,11 @@ env:
 {{- end }}
 
 prelude:
+{{- if eq .Name "lxqt" }}
   {{ template "portage_copy_package_files" . }}
   - emerge -1 media-sound/pavucontrol-qt
   {{ template "portage_prelude_build" . }}
+{{- end }}
 
 steps:
 {{- if eq .Name "lxqt" }}
