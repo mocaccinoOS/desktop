@@ -1,0 +1,9 @@
+category: "layers"
+name: "lxqt"
+version: 2.3.0+2
+
+packages:
+  - name: "lxqt"
+    version: "{{ .Values.version }}"
+  - name: "lxqt-devel"
+    version: "{{ .Values.version }}"
