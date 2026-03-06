@@ -1,9 +1,13 @@
 category: "layers"
 name: "lxqt"
-version: 2.3.0+2
+version: "2.3.0+2"
 
 packages:
   - name: "lxqt"
     version: "{{ .Values.version }}"
+    labels:
+      emerge.jobs: "6"
   - name: "lxqt-devel"
     version: "{{ .Values.version }}"
+    labels:
+      emerge.jobs: "6"
