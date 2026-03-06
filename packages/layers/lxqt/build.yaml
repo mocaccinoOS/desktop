@@ -1,40 +1,14 @@
 excludes:
-  {{ template "portage_excludes" }}
-  - ^/usr/lib64/.*\.a$
-  - ^/usr/lib/.*\.a$
-
-# Only call portage_env if labels exist
-{{- if and .Values .Values.labels }}
+{{ template "portage_excludes" }}
 env:
-  {{ template "portage_env" . }}
-{{- end }}
-
+{{ template "portage_env" . }}
 prelude:
-{{- if eq .Name "lxqt" }}
-  {{ template "portage_copy_package_files" . }}
-  - emerge -1 media-sound/pavucontrol-qt
-  {{ template "portage_prelude_build" . }}
-{{- end }}
-
-steps:
-{{- if eq .Name "lxqt" }}
+{{ template "portage_copy_package_files" . }}
+- emerge -1 media-sound/pavucontrol-qt
 {{ template "portage_prelude_build" . }}
-{{- end }}
-
+steps:
+{{ template "portage_build" . }}
 requires:
-  - category: "layers"
-    name: "kde-common"
-    version: ">=0"
-  - category: "apps"
-    name: "pavucontrol-qt"
-    version: ">=0"
-
-# Subpackage for development headers & static libraries
-subpackages:
-  - name: "lxqt-devel"
-    category: "layers"
-    version: "2.3.0+2"
-    includes:
-      - ^/usr/include/.*
-      - ^/usr/lib64/.*\.a$
-      - ^/usr/lib/.*\.a$
+- category: "layers"
+  name: "kde-common"
+  version: ">=0"
