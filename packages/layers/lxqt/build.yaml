@@ -2,8 +2,12 @@ excludes:
   {{ template "portage_excludes" }}
   - ^/usr/lib64/.*\.a$
   - ^/usr/lib/.*\.a$
+
+# Only call portage_env if labels exist
+{{- if and .Values .Values.labels }}
 env:
   {{ template "portage_env" . }}
+{{- end }}
 
 prelude:
   {{ template "portage_copy_package_files" . }}
@@ -21,6 +25,7 @@ requires:
     name: "pavucontrol-qt"
     version: ">=0"
 
+# Subpackage for development headers & static libraries
 subpackages:
   - name: "lxqt-devel"
     category: "layers"
