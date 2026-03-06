@@ -1,5 +1,8 @@
 excludes:
 {{ template "portage_excludes" }}
+- ^/usr/include/.*
+- ^/usr/lib64/.*\.a$
+- ^/usr/lib/.*\.a$
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -12,3 +15,12 @@ requires:
 - category: "layers"
   name: "kde-common"
   version: ">=0"
+subpackages:
+- name: "lxqt-devel"
+  category: "layers"
+  version: "{{.Values.version}}"
+  includes:
+  - ^/usr/include$
+  - ^/usr/include/.*
+  - ^/usr/lib64/.*\.a$
+  - ^/usr/lib/.*\.a$
