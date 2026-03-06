@@ -4,6 +4,9 @@ packages:
     version: "0.20260302"
     category: "layers"
     package: "system-x"
+  - <<: *base
+    name: lxqt-devel
+    package: "lxqt"
 #  - <<: *base
 #    name: sys-fs-devel
 #    package: "sys-fs"
