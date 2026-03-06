@@ -135,12 +135,3 @@ packages:
       - name: openbox
         category: x11-wm
         version: '>=0'
-
-  - name: "lxqt-devel"
-    version: "2.3.0+2"
-    labels:
-      emerge.jobs: "6"
-    requires:
-      - category: "layers"
-        name: "lxqt"
-        version: ">=0"
