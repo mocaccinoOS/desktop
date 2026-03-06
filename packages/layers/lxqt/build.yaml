@@ -15,7 +15,9 @@ prelude:
   {{ template "portage_prelude_build" . }}
 
 steps:
-  {{ template "portage_build" . }}
+{{- if eq .Name "lxqt" }}
+{{ template "portage_prelude_build" . }}
+{{- end }}
 
 requires:
   - category: "layers"
