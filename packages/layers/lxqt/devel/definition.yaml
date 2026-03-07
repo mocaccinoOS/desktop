@@ -1,9 +1,0 @@
-category: "layers"
-name: "lxqt-devel"
-version: 2.3.0+2
-license: "LGPL-2.1+"
-description: "LXQt development files (headers and static libs)"
-requires:
-  - category: "layers"
-    name: "lxqt"
-    version: ">=0"

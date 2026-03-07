@@ -1,5 +1,0 @@
-requires:
-  - category: "layers"
-    name: "lxqt"
-    version: ">=0"
-requires_final_images: true
