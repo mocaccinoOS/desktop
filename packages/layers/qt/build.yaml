@@ -1,5 +1,8 @@
 excludes:
 {{ template "portage_excludes" }}
+# Strip static libraries - not needed at runtime, only during compilation
+- ^/usr/lib64/.*\.a$
+- ^/usr/lib/.*\.a$
 # Poppler split. Only ship Qt module
 - ^/usr/bin/pdfattach
 - ^/usr/bin/pdfdetach
