@@ -1,0 +1,9 @@
+category: "mocaccino"
+name: "xorg_fallback"
+version: "0.1"
+description: "Provides a fallback Xorg configuration using the fbdev driver. Ensures a working display environment when no hardware-specific GPU driver is available, such as when booting with nomodeset or in virtual machines."
+labels:
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"

@@ -1,6 +1,6 @@
 name: live-setup
 category: mocaccino
-version: "26.03"
+version: 26.03+1
 
 requires:
 - name: "yip"
@@ -12,7 +12,7 @@ requires:
 - name: "intel_arc_compat"
   category: "mocaccino"
   version: ">=0"
-- name: "nvidia_compat"
+- name: "xorg_fallback"
   category: "mocaccino"
   version: ">=0"
 - name: "enable_flathub"
