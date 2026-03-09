@@ -1,0 +1,4 @@
+image: "alpine"
+prelude:
+steps:
+- mkdir -p /etc/X11/xorg.conf.d && cp files/99-fbdev.conf /etc/X11/xorg.conf.d/99-fbdev.conf
