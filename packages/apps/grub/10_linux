@@ -291,7 +291,7 @@ while [ "x$list" != "x" ] ; do
 
   # MocaccinoOS safe graphics entry
   linux_entry "${OS} (safe graphics)" "${version}" advanced \
-            "${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT} nomodeset"
+    "${GRUB_CMDLINE_LINUX} nomodeset"
             
   if [ "x${GRUB_DISABLE_RECOVERY}" != "xtrue" ]; then
     linux_entry "${OS}" "${version}" recovery \
