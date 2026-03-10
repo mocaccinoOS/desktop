@@ -1,6 +1,6 @@
 category: "layers"
 name: "ibus"
-version: 1.5.31-r1+5
+version: 1.5.31-r1+6
 uri:
   - https://github.com/ibus
 license: "GPL-2"
