@@ -1,5 +1,5 @@
 excludes:
-{{ template "portage_excludes" }}
+{{ define "devel_excludes" }}
 - ^/run
 - ^/etc/openldap/ssl/ldap.*
 - ^/etc/sasl2/sasldb2

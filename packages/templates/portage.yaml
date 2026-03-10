@@ -1,9 +1,5 @@
 {{ define "portage_excludes" }}
-- ^/etc/ld.so.cache
-- ^/etc/ld.so.conf
 - ^/etc/portage/savedconfig
-- ^/usr/lib/cmake
-- ^/usr/lib64/cmake
 - ^/usr/portage
 - ^/usr/portage/distfiles
 - ^/usr/tmp/portage
@@ -14,9 +10,19 @@
 - ^/var/lib/portage
 - ^/var/log
 # devel split
+- ^/etc/ld.so.cache
+- ^/etc/ld.so.conf
 - ^/usr/include
+- ^/usr/lib/cmake
+- ^/usr/lib64/cmake
 - ^/luetbuild
 - ^/tmp
+{{end}}
+
+{{ define "devel_excludes" }}
+{{ template "portage_excludes" }}
+- ^/usr/lib64/.*\.a$
+- ^/usr/lib/.*\.a$
 {{end}}
 
 {{ define "portage_env" }}
