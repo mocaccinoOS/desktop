@@ -1,5 +1,5 @@
 excludes:
-{{ define "devel_excludes" }}
+{{ template "devel_excludes" }}
 # Poppler split. Only ship Qt module
 - ^/usr/bin/pdfattach
 - ^/usr/bin/pdfdetach
