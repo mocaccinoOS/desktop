@@ -2,12 +2,13 @@ install:
 - ldconfig
 # TEST
 # Added for testing. Must move to layers/system-x
-# Remove stale LLVM env.d files for versions that are no longer installed
+# Remove stale env.d files for versioned tools (LLVM, Rust, automake, etc.) no longer installed
 - |
-  for f in /etc/env.d/60llvm-*; do
+  for f in /etc/env.d/*; do
     [ -f "$f" ] || continue
-    llvm_path=$(grep -m1 '^PATH=' "$f" | cut -d'"' -f2)
-    if [ -n "$llvm_path" ] && [ ! -d "$llvm_path" ]; then
+    env_path=$(grep -m1 '^PATH=' "$f" | cut -d'"' -f2)
+    if [ -n "$env_path" ] && [ ! -d "$env_path" ]; then
+      echo "Removing stale env.d entry: $f (PATH=$env_path)"
       rm "$f"
     fi
   done
