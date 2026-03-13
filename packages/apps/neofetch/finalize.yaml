@@ -1,9 +1,2 @@
 install:
 - ldconfig
-# TEST
-# Added for testing. Must move to layers/system-x
-# Remove stale LLVM env.d files for versions that are no longer installed
-- for f in /etc/env.d/60llvm-*; do [ -f "$f" ] || continue; p=$(grep -m1 '^PATH=' "$f" | cut -d'"' -f2); [ -n "$p" ] && [ ! -d "$p" ] && { echo "Removing stale: $f"; rm "$f"; }; done
-# This must be run incase of trival changes in config files
-- etc-update -p
-# END TEST
