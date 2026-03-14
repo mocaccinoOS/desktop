@@ -1,0 +1,3 @@
+install:
+- mkdir -p /usr/share/backgrounds/xfce/
+- ln -sf /usr/share/wallpapers/mocaccino-wallpaper/background.jpg /usr/share/backgrounds/xfce/xfce-x.svg
