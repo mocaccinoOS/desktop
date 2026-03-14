@@ -1,6 +1,6 @@
 category: "themes"
 name: "xfce"
-version: "26.03"
+version: 26.03+1
 labels:
 requires:
   - category: "layers"

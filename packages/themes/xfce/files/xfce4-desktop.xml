@@ -23,6 +23,13 @@
           <property name="image-show" type="bool" value="true"/>
         </property>
       </property>
+      <property name="monitordefault" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/usr/share/wallpapers/mocaccino-wallpaper/background.jpg"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="image-show" type="bool" value="true"/>
+        </property>
+      </property>
     </property>
   </property>
 </channel>
