@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "joost.ruis@mocaccino.org",
+                "Name": "Joost Ruis"
+            }
+        ],
+        "Id": "MocaccinoOS_red",
+        "License": "CC-BY-SA-4.0",
+        "Name": "MocaccinoOS red"
+    }
+}
