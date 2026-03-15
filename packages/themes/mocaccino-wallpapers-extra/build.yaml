@@ -1,0 +1,9 @@
+image: "alpine"
+
+package_dir: /mocaccino-wallpapers-extra
+
+prelude:
+- mkdir -p /mocaccino-wallpapers-extra/usr/share/wallpapers/Mocaccino
+
+steps:
+- cp files/*.jpg /mocaccino-wallpapers-extra/usr/share/wallpapers/Mocaccino
