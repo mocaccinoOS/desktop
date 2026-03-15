@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS blue</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_blue/contents/images/wallpaper.jpg</filename>
+    <options>zoom</options>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS brown</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_brown/contents/images/wallpaper.jpg</filename>
+    <options>zoom</options>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS dark orange</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_dark_orange/contents/images/wallpaper.jpg</filename>
+    <options>zoom</options>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS mocha</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_mocha/contents/images/wallpaper.jpg</filename>
+    <options>zoom</options>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS red</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_red/contents/images/wallpaper.jpg</filename>
+    <options>zoom</options>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+</wallpapers>
