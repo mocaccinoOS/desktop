@@ -1,4 +1,7 @@
 {
+  "X-Plasma-API": "declarativeappletscript",
+  "ServiceTypes": ["Plasma/Wallpaper"],
+  "KPackageStructure": "Plasma/Wallpaper",
     "KPlugin": {
         "Authors": [
             {
