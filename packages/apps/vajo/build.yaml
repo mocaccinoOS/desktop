@@ -1,7 +1,7 @@
 image: "alpine"
 package_dir: "/package"
 prelude:
-- apk update && apk add imagemagick && apk add git
+- apk update && apk add imagemagick && apk add git && apk add bash
 - git clone https://github.com/joostruis/luet_pm_gui.git
 - cd luet_pm_gui && chmod +x install.sh && ./install.sh
 steps:
