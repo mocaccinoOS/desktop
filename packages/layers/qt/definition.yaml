@@ -125,9 +125,6 @@ provides:
   - name: assimp
     category: media-libs
     version: '>=0'
-  - name: ngtcp2
-    category: net-libs
-    version: '>=0'
   - name: nodejs
     category: net-libs
     version: '>=0'
