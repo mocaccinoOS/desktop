@@ -2,29 +2,29 @@ packages:
   - &X
     name: "X"
     category: "buildbase"
-    version: 0+314
+    version: 0+315
     real_category: "layers"
     hidden: true
   - !!merge <<: *X
     real_category: "apps"
     name: "grub"
-    version: 0+238
+    version: 0+239
   - !!merge <<: *X
     real_category: "layers"
     name: "sys-fs"
-    version: 0+225
+    version: 0+226
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-common"
-    version: 0+352
+    version: 0+353
   - !!merge <<: *X
     real_category: "layers"
     name: "kde-kf5"
-    version: 0+123
+    version: 0+124
   - !!merge <<: *X
     real_category: "layers"
     name: "qt"
-    version: 0+337
+    version: 0+338
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
@@ -36,7 +36,7 @@ packages:
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
-    version: 0+349
+    version: 0+350
   - !!merge <<: *X
     real_category: "layers"
     name: "qemu"
