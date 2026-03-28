@@ -5,6 +5,8 @@
     <name>MocaccinoOS blue</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_blue/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
+    <pcolor>#23415a</pcolor>
+    <scolor>#11202d</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
@@ -12,6 +14,8 @@
     <name>MocaccinoOS brown</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_brown/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
+    <pcolor>#3e3127</pcolor>
+    <scolor>#1f1813</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
@@ -19,6 +23,8 @@
     <name>MocaccinoOS dark orange</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_dark_orange/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
+    <pcolor>#3f3125</pcolor>
+    <scolor>#1f1812</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
@@ -26,6 +32,8 @@
     <name>MocaccinoOS mocha</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_mocha/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
+    <pcolor>#463c34</pcolor>
+    <scolor>#231e1a</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
@@ -33,6 +41,8 @@
     <name>MocaccinoOS red</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_red/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
+    <pcolor>#5b1b29</pcolor>
+    <scolor>#2d0d14</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
