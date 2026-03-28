@@ -3,9 +3,17 @@ image: "alpine"
 package_dir: /mocaccino-wallpapers-extra
 
 prelude:
+# KDE Plasma
 - mkdir -p /mocaccino-wallpapers-extra/usr/share/wallpapers
+# GNOME
 - mkdir -p /mocaccino-wallpapers-extra/usr/share/gnome-background-properties
+# XFCE
+- mkdir -p /mocaccino-wallpapers-extra/usr/share/xfce4/backdrops/MocaccinoOS
 
 steps:
+# KDE Plasma
 - cp -r files/MocaccinoOS_* /mocaccino-wallpapers-extra/usr/share/wallpapers/
+# GNOME
 - cp files/mocaccino-wallpapers-extra.xml /mocaccino-wallpapers-extra/usr/share/gnome-background-properties/
+# XFCE
+- for wp in blue brown dark_orange mocha red; do ln -s /usr/share/wallpapers/MocaccinoOS_${wp}/contents/images/1920x1080.jpg /mocaccino-wallpapers-extra/usr/share/xfce4/backdrops/MocaccinoOS/${wp}.jpg; done
