@@ -9,7 +9,7 @@ steps:
 {{ template "portage_build" . }}
 - cp -r 10_linux /etc/grub.d/10_linux
 - mkdir -p /boot/grub
-- cp -r grub-background.png /boot/grub/grub-background.png
+- cp -r files/grub-background.png /boot/grub/grub-background.png
 - sed -i -e '/GRUB_DISTRIBUTOR/ s/Gentoo/Mocaccino/' /etc/default/grub
 - sed -i -e '/GRUB_CMDLINE_LINUX_DEFAULT/ s/#GRUB_CMDLINE_LINUX_DEFAULT=""/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash rd.udev.log-priority=3"/' /etc/default/grub
 - sed -i -e '/GRUB_BACKGROUND/ s/#GRUB_BACKGROUND="\/boot\/grub\/mybackground.png"/GRUB_BACKGROUND="\/boot\/grub\/grub-background.png"/' /etc/default/grub
