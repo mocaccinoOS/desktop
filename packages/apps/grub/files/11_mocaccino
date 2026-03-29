@@ -1,0 +1,31 @@
+#!/bin/sh
+# MocaccinoOS safe graphics boot entry
+
+. "$pkgdatadir/grub-mkconfig_lib"
+
+if [ "x${GRUB_DISABLE_SUBMENU}" = "xy" ]; then
+    exit 0
+fi
+
+# Add safe graphics entry for each kernel found
+for linux in $(ls /boot/kernel-* /boot/vmlinuz-* 2>/dev/null); do
+    [ -f "$linux" ] || continue
+    basename=$(basename $linux)
+    dirname=$(dirname $linux)
+    rel_dirname=$(make_system_path_relative_to_its_root $dirname)
+    version=$(echo $basename | sed -e "s,^[^0-9]*-,,g")
+    
+    # Find matching initramfs
+    initrd=$(ls ${dirname}/initramfs-*${version}* 2>/dev/null | head -1)
+    initrd=$(basename "$initrd" 2>/dev/null)
+
+    echo "menuentry 'MocaccinoOS (safe graphics) with Linux ${version}' --class gnu-linux --class gnu --class os {
+    load_video
+    insmod gzio
+    $(prepare_grub_to_access_device ${GRUB_DEVICE_BOOT} | grub_add_tab)
+    echo 'Loading Linux ${version} (safe graphics)...'
+    linux ${rel_dirname}/${basename} root=${GRUB_DEVICE} ro ${GRUB_CMDLINE_LINUX} ${GRUB_CMDLINE_LINUX_DEFAULT} nomodeset
+    $([ -n "$initrd" ] && echo "echo 'Loading initial ramdisk...'
+    initrd ${rel_dirname}/${initrd}")
+}"
+done
