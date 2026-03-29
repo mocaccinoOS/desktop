@@ -7,7 +7,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- cp -r files/11_mocaccino /etc/grub.d/11_mocaccino
+- cp -r files/10_linux /etc/grub.d/10_linux
 - mkdir -p /boot/grub
 - cp -r files/grub-background.png /boot/grub/grub-background.png
 - sed -i -e '/GRUB_DISTRIBUTOR/ s/Gentoo/Mocaccino/' /etc/default/grub

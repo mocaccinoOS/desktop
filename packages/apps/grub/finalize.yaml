@@ -1,4 +1,5 @@
 install:
+- etc-update --automode -5 /etc/grub.d
 # We want to prevent users overwriting their /etc/default/grub with a vanilla one and make them loose changes they made in that file
 - if [ -f /etc/default/._cfg0001_grub ]; then rm /etc/default/._cfg0001_grub; fi
 - ldconfig
