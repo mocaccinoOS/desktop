@@ -1,17 +1,21 @@
 category: "layers"
-name: "fcitx"
-version: 5.1.17+11
+name: "input"
+version: "26.04"
 uri:
   - https://fcitx-im.org
+  - https://github.com/ibus
 license: "LGPL-2+ Unicode-DFS-2016"
-description: "Fcitx 5 is a generic input method framework"
+description: "Input method frameworks and engines (Fcitx5, IBus) providing multilingual text input support, including Chinese, Korean, and other languages."
 labels:
-  emerge.jobs: "1"
+  emerge.jobs: "2"
   emerge.packages: >-
-    app-i18n/fcitx app-i18n/fcitx-anthy app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
+    app-i18n/anthy app-i18n/fcitx app-i18n/fcitx-anthy app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/ibus-anthy app-i18n/ibus-hangul app-i18n/ibus-pinyin app-i18n/ibus-table app-i18n/ibus-table-chinese app-i18n/ibus-table-others app-i18n/libhangul app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
 provides:
   - name: chrpath
     category: app-admin
+    version: '>=0'
+  - name: anthy
+    category: app-i18n
     version: '>=0'
   - name: fcitx
     category: app-i18n
@@ -29,6 +33,27 @@ provides:
     category: app-i18n
     version: '>=0'
   - name: fcitx-table-extra
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-anthy
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-hangul
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-pinyin
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table-chinese
+    category: app-i18n
+    version: '>=0'
+  - name: ibus-table-others
+    category: app-i18n
+    version: '>=0'
+  - name: libhangul
     category: app-i18n
     version: '>=0'
   - name: libime
