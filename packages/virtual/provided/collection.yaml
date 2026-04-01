@@ -24,6 +24,23 @@ packages:
   - category: "layers"
     name: "sys-fs"
     version: ">=0"
+# Merged layers/fcitx and layers/ibus into layers/input
+- category: "layers"
+  name: "fcitx"
+  version: "1"
+  description: "Virtual package"
+  requires:
+  - category: "layers"
+    name: "input"
+    version: ">=0"
+- category: "layers"
+  name: "ibus"
+  version: "1"
+  description: "Virtual package"
+  requires:
+  - category: "layers"
+    name: "input"
+    version: ">=0"
 # Package got renamed upstream, pull in the renamed package
 - category: "apps"
   name: "woeusb"
