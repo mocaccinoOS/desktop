@@ -84,3 +84,6 @@ requires:
   - category: "layers"
     name: "kde-common"
     version: ">=0"
+  - category: "fonts"
+    name: "noto-cjk"
+    version: ">=0"
