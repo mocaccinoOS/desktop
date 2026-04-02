@@ -3,7 +3,7 @@ name: "vlgothic"
 version: "20200720-r1"
 uri:
   - http://vlgothic.dicey.org
-license: "OFL-1.1"
+license: "vlgothic mplus-fonts BSD-2"
 description: Japanese TrueType font from Vine Linux"
 labels:
   emerge.jobs: "1"
