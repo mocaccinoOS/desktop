@@ -1,6 +1,6 @@
 category: "mocaccino"
 name: "manual"
-version: "26.04"
+version: 26.04+1
 uri:
   - https://www.mocaccino.org/docs/
 license: "CC BY-SA 4.0"
