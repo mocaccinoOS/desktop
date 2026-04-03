@@ -1,6 +1,6 @@
 install:
 {{ if index .Values.labels "lts.kernel" }}
-- depmod -a 6.18.20-mocaccino
+- depmod -a 6.18.21-mocaccino
 {{ else }}
 - depmod -a 6.19.11-mocaccino
 {{ end }}
