@@ -1,0 +1,20 @@
+category: "devel"
+name: "cmake"
+version: "4.2.4"
+uri:
+  - https://cmake.org
+license: "BSD"
+description: "Cross platform Make"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    dev-build/cmake
+  description: "Cross platform Make"
+requires:
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+provides:
+  - name: cmake
+    category: dev-build
+    version: '>=0'

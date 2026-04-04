@@ -1,0 +1,8 @@
+env:
+{{ template "portage_env" . }}
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
