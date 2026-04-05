@@ -3,6 +3,6 @@ env:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "devel"
-  name: "linux-headers"
+- category: "layers"
+  name: "sys-fs"
   version: ">=0"
