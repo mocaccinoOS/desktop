@@ -4,5 +4,5 @@ steps:
 {{ template "portage_build" . }}
 requires:
 - category: "layers"
-  name: "sys-fs"
+  name: "system-x"
   version: ">=0"
