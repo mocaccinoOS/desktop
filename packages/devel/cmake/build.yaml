@@ -5,6 +5,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 requires:
-- category: "layers"
-  name: "system-x"
+- category: "devel"
+  name: "linux-headers"
   version: ">=0"
