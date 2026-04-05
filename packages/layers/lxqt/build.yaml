@@ -8,10 +8,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- sed -i \
-    -e 's|Exec=startlxqtwayland|Exec=labwc -s lxqt-session|' \
-    -e 's|TryExec=startlxqtwayland|TryExec=labwc|' \
-    /usr/share/wayland-sessions/lxqt-wayland.desktop
+- sed -i -e 's|Exec=startlxqtwayland|Exec=labwc -s lxqt-session|' -e 's|TryExec=startlxqtwayland|TryExec=labwc|' /usr/share/wayland-sessions/lxqt-wayland.desktop
 requires:
 - category: "layers"
   name: "kde-common"
