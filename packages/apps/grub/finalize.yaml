@@ -1,5 +1,6 @@
 install:
-- etc-update --automode -5 /etc/grub.d
-# We want to prevent users overwriting their /etc/default/grub with a vanilla one and make them loose changes they made in that file
-- if [ -f /etc/default/._cfg0001_grub ]; then rm /etc/default/._cfg0001_grub; fi
+# Only merge grub.d files safely, never touch other configs
+- for f in /etc/grub.d/._cfg*; do [ -f "$f" ] && mv "$f" "$(dirname $f)/$(basename $f | sed 's/\._cfg[0-9]*_//')"; done
+# Discard any pending grub default config to preserve user changes
+- rm -f /etc/default/._cfg*_grub
 - ldconfig

@@ -4,6 +4,6 @@ install:
 - find /usr/lib/modules -mindepth 1 ! -regex '^/usr/lib/modules/{{ index .Values.labels "package.version" }}-mocaccino\(/.*\)?' -delete
 - rm -rf /boot/bzImage || true
 - cd /boot && ln -s kernel-*-mocaccino bzImage
-# make sure we always have files in grub.d merged before running kernel-updater
-- etc-update --automode -5 /etc/grub.d
+# Only merge grub.d files to ensure correct 10_linux before kernel-updater runs
+- for f in /etc/grub.d/._cfg*; do [ -f "$f" ] && mv "$f" "$(dirname $f)/$(basename $f | sed 's/\._cfg[0-9]*_//')"; done
 - kernel-updater || true
