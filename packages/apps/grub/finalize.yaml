@@ -1,6 +1,6 @@
 install:
 # Only merge grub.d files safely, never touch other configs
-- for f in /etc/grub.d/._cfg*; do [ -f "$f" ] && mv "$f" "$(dirname $f)/$(basename $f | sed 's/\._cfg[0-9]*_//')"; done
+- for f in /etc/grub.d/._cfg*; do [ -f "$f" ] && mv "$f" "$(dirname $f)/$(basename $f | sed 's/\._cfg[0-9]*_//')"; done || true
 # Discard any pending grub default config to preserve user changes
 - rm -f /etc/default/._cfg*_grub
 - ldconfig
