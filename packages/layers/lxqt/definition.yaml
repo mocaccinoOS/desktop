@@ -1,6 +1,6 @@
 category: "layers"
 name: "lxqt"
-version: 2.3.0+10
+version: 2.3.0+11
 uri:
   - https://lxqt-project.org
 license: "LGPL-2.1+"
@@ -37,9 +37,6 @@ provides:
     version: '>=0'
   - name: xdg-desktop-portal-lxqt
     category: gui-libs
-    version: '>=0'
-  - name: layer-shell-qt
-    category: kde-plasma
     version: '>=0'
   - name: lxmenu-data
     category: lxde-base
