@@ -99,25 +99,25 @@ packages:
       - category: "entity"
         name: "vboxsf"
         version: ">=0"
-  - category: "kernel-modules"
-    name: "virtualbox-modules-lts"
-    version: "7.2.6-r2"
-    uri:
-      - https://www.virtualbox.org
-    license: "GPL-3"
-    description: "Kernel Modules for Virtualbox"
-    lts: true
-    emerge:
-      jobs: "3"
-      packages:
-        - app-emulation/virtualbox-modules
-    labels:
-      emerge.jobs: "3"
-      lts.kernel: "true"
-    requires:
-      - name: mocaccino-lts-full
-        category: kernel
-        version: ">=0"
+  # - category: "kernel-modules"
+  #   name: "virtualbox-modules-lts"
+  #   version: "7.2.6-r2"
+  #   uri:
+  #     - https://www.virtualbox.org
+  #   license: "GPL-3"
+  #   description: "Kernel Modules for Virtualbox"
+  #   lts: true
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - app-emulation/virtualbox-modules
+  #   labels:
+  #     emerge.jobs: "3"
+  #     lts.kernel: "true"
+  #   requires:
+  #     - name: mocaccino-lts-full
+  #       category: kernel
+  #       version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
     version: 20250329+86
@@ -308,24 +308,24 @@ packages:
       - name: vhba-lts
         category: kernel-modules
         version: ">=0"
-  - category: "kernel-modules"
-    name: "virtualbox-modules"
-    version: "7.2.6-r2"
-    lts: false
-    emerge:
-      jobs: "3"
-      packages:
-        - app-emulation/virtualbox-modules
-    labels:
-      emerge.jobs: "3"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-    conflicts:
-      - name: virtualbox-modules-lts
-        category: kernel-modules
-        version: ">=0"
+  # - category: "kernel-modules"
+  #   name: "virtualbox-modules"
+  #   version: "7.2.6-r2"
+  #   lts: false
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - app-emulation/virtualbox-modules
+  #   labels:
+  #     emerge.jobs: "3"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: virtualbox-modules-lts
+  #       category: kernel-modules
+  #       version: ">=0"
   - category: "kernel-modules"
     name: "xone"
     version: 0.5.8+3
