@@ -992,6 +992,9 @@ provides:
   - name: nghttp3
     category: net-libs
     version: ">=0"
+  - name: ngtcp2
+    category: net-libs
+    version: '>=0'
   - name: mailbase
     category: net-mail
     version: ">=0"
