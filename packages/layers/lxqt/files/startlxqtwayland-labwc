@@ -1,0 +1,15 @@
+#!/bin/sh
+
+export XDG_SESSION_TYPE=wayland
+export QT_QPA_PLATFORM=wayland
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=0
+export XDG_CURRENT_DESKTOP=LXQt
+
+# Start compositor first (background)
+labwc &
+
+# Give it time to initialize
+sleep 1
+
+# Now start LXQt session properly
+exec lxqt-session

@@ -8,7 +8,9 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
-- sed -i -e 's|TryExec=startlxqtwayland|TryExec=labwc|' -e 's|Exec=startlxqtwayland|Exec=labwc -s lxqt-session|' /usr/share/wayland-sessions/lxqt-wayland.desktop
+# - sed -i -e 's|TryExec=startlxqtwayland|TryExec=labwc|' -e 's|Exec=startlxqtwayland|Exec=labwc -s lxqt-session|' /usr/share/wayland-sessions/lxqt-wayland.desktop
+- install -Dm755 files/startlxqtwayland-labwc /usr/bin/startlxqtwayland-labwc
+- install -Dm644 files/lxqt-wayland.desktop /usr/share/wayland-sessions/lxqt-wayland.desktop
 requires:
 - category: "layers"
   name: "kde-common"

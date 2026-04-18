@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=startlxqtwayland-labwc
+TryExec=startlxqtwayland-labwc
+DesktopNames=LXQt
+
+Name=LXQt (Wayland)
+Comment=LXQt Wayland session using Labwc
+Icon=lxqt
