@@ -1,6 +1,6 @@
 category: "layers"
 name: "wlroots"
-version: 0.19.2+18
+version: 0.19.2+19
 uri:
   - https://github.com/danvd/wlroots-eglstreams
 license: "GPL-3 MIT"
@@ -8,7 +8,7 @@ description: "wlroots (EGLStreams fork)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-libs/libscfg::gentoo dev-libs/vali::gentoo gui-apps/kanshi::gentoo gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/wlogout::guru gui-libs/wlroots::gentoo gui-wm/labwc::gentoo
+    dev-libs/libscfg::gentoo dev-libs/vali::gentoo gui-apps/kanshi::gentoo gui-apps/mako::gentoo gui-apps/wl-clipboard::gentoo gui-apps/wlr-randr::guru gui-apps/wlogout::guru gui-libs/wlroots::gentoo gui-wm/labwc::gentoo
 requires:
   - category: "layers"
     name: "X"
@@ -30,6 +30,9 @@ provides:
     category: gui-apps
     version: '>=0'
   - name: wl-clipboard
+    category: gui-apps
+    version: '>=0'
+  - name: wl-randr
     category: gui-apps
     version: '>=0'
   - name: wlroots
