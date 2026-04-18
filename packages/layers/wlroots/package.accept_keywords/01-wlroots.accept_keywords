@@ -1,4 +1,5 @@
 dev-libs/date ~amd64
+dev-libs/vali ~amd64
 gui-apps/kanshi ~amd64
 gui-apps/waybar ~amd64
 gui-apps/wlogout ~amd64
