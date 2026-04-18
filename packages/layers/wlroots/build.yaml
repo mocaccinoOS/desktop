@@ -7,7 +7,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
-# needed for wlogout
+# needed for wlogout and labwc-tweaks
 - emaint sync -r guru
 {{ template "portage_prelude_build" . }}
 steps:
