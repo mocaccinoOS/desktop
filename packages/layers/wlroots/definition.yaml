@@ -35,7 +35,7 @@ provides:
   - name: wl-clipboard
     category: gui-apps
     version: '>=0'
-  - name: wl-randr
+  - name: wlr-randr
     category: gui-apps
     version: '>=0'
   - name: wlroots
