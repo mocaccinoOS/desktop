@@ -1,10 +1,10 @@
 category: "themes"
 name: "papirus-icon-theme"
-version: "20240201"
+version: "20250501"
 uri:
-  - https://git.io/papirus-icon-theme
+  - https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 license: "GPL-3"
-description: "Papirus icon theme for GTK"
+description: "Free and open source SVG icon theme"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
