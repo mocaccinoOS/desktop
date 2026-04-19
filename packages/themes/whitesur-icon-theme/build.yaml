@@ -1,0 +1,14 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
+- mkdir -p /var/db/repos/gentoo/x11-themes/whitesur-icon-theme && cp ebuilds/whitesur-icon-theme-20251227.ebuild /var/db/repos/gentoo/x11-themes/whitesur-icon-theme
+- ebuild /var/db/repos/gentoo/x11-themes/whitesur-icon-theme/whitesur-icon-theme-20251227.ebuild manifest
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
