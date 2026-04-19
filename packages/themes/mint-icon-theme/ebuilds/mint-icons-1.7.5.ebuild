@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	x11-libs/gdk-pixbuf
-	x11-misc/gtk-update-icon-cache
+	dev-util/gtk-update-icon-cache
 "
 
 src_install() {
