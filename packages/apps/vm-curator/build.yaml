@@ -1,0 +1,14 @@
+excludes:
+{{ template "portage_excludes" }}
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
+- mkdir -p /var/db/repos/gentoo/app-emulation/vm-curator && cp ebuilds/vm-curator-0.4.3.ebuild /var/db/repos/gentoo/app-emulation/vm-curator
+- ebuild /var/db/repos/gentoo/app-emulation/vm-curator/vm-curator-0.4.3.ebuild manifest
+steps:
+{{ template "portage_build" . }}
+requires:
+- category: "layers"
+  name: "qemu"
+  version: ">=0"

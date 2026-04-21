@@ -1,0 +1,19 @@
+category: "apps"
+name: "vm-curator"
+version: "0.4.3"
+uri:
+  - https://github.com/mroboff/vm-curator
+license: "MIT"
+description: "Fast Rust TUI for managing QEMU/KVM virtual machines"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-emulation/vm-curator
+requires:
+  - category: "layers"
+    name: "qemu"
+    version: ">=0"
+provides:
+  - name: vm-curator
+    category: app-emulation
+    version: '>=0'
