@@ -242,9 +242,20 @@ SRC_URI="
 	$(cargo_crate_uris ${CRATES})
 "
 
-# TODO: verify third-party crate licences with:
-#   cargo license --json | jq -r '.[].license' | sort -u
-LICENSE="MIT"
+LICENSE="
+	MIT
+	Apache-2.0
+	Apache-2.0-with-LLVM-exceptions
+	BSL-1.0
+	LGPL-2.1+
+	MPL-2.0
+	Unicode-3.0
+	Unicode-DFS-2016
+	Unlicense
+	WTFPL
+	ZLIB
+"
+
 SLOT="0"
 KEYWORDS="~amd64"
 
