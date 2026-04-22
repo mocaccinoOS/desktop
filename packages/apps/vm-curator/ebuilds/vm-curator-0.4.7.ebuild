@@ -44,7 +44,7 @@ RDEPEND="
 
 BDEPEND="
 	virtual/pkgconfig
-	virtual/rust
+	|| ( dev-lang/rust dev-lang/rust-bin )
 "
 
 src_install() {
