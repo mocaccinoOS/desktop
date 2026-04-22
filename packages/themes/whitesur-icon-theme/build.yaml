@@ -4,8 +4,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- mkdir -p /var/db/repos/gentoo/x11-themes/whitesur-icon-theme && cp ebuilds/whitesur-icon-theme-20251227.ebuild /var/db/repos/gentoo/x11-themes/whitesur-icon-theme
-- ebuild /var/db/repos/gentoo/x11-themes/whitesur-icon-theme/whitesur-icon-theme-20251227.ebuild manifest
+- emerge -1 app-eselect/eselect-repository
+- eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
+- emaint sync -r mocaccino-overlay
 steps:
 {{ template "portage_build" . }}
 requires:
