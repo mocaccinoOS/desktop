@@ -4,8 +4,9 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- mkdir -p /var/db/repos/gentoo/x11-themes/mint-icons && cp ebuilds/mint-icons-1.7.5.ebuild /var/db/repos/gentoo/x11-themes/mint-icons
-- ebuild /var/db/repos/gentoo/x11-themes/mint-icons/mint-icons-1.7.5.ebuild manifest
+- emerge -1 app-eselect/eselect-repository
+- eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
+- emaint sync -r mocaccino-overlay
 steps:
 {{ template "portage_build" . }}
 requires:

@@ -1,6 +1,6 @@
 category: "themes"
 name: "mint-icon-theme"
-version: "1.7.5"
+version: 1.7.5+1
 uri:
   - https://github.com/linuxmint/mint-x-icons
 license: "GPL-3"
@@ -8,12 +8,12 @@ description: "Mint-X icon theme for Linux Mint (based on Faenza and Elementary)"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    x11-themes/mint-icons
+    x11-themes/mint-icon-theme
 requires:
   - category: "layers"
     name: "X"
     version: ">=0"
 provides:
-  - name: mint-icons
+  - name: mint-icon-theme
     category: x11-themes
     version: '>=0'
