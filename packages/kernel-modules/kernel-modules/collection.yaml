@@ -281,7 +281,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba"
-    version: 20250329+95
+    version: "20250329-r1"
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -292,7 +292,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - sys-fs/vhba
+        - sys-fs/vhba::mocaccino-overlay
     provides:
       - name: vhba
         category: sys-fs

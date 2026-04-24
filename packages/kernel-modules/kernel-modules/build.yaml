@@ -6,6 +6,10 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+# add mocaccino-overlay
+- emerge -1 app-eselect/eselect-repository
+- eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
+- emaint sync -r mocaccino-overlay
 {{ if contains "xone" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
