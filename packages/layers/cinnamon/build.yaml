@@ -5,6 +5,10 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+# handle LDFLAGS muffin bug (added 2026-04-24)
+- echo 'LDFLAGS="${LDFLAGS} -Wl,-rpath=/usr/lib64/muffin"' > /etc/portage/env/muffin-rpath.conf
+- echo "x11-wm/muffin muffin-rpath.conf" >> /etc/portage/package.env
+# end muffin LDFLAGS bug
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable haarp
 - emaint sync -r haarp
