@@ -120,7 +120,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20250329+91
+    version: 20250329+92
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -132,7 +132,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - sys-fs/vhba
+        - sys-fs/vhba::gentoo
     provides:
       - name: vhba
         category: sys-fs
