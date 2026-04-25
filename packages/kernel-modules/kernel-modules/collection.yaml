@@ -120,7 +120,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20250329+90
+    version: 20250329+91
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
