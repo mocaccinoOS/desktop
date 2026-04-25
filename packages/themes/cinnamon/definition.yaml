@@ -1,0 +1,8 @@
+category: "themes"
+name: "cinnamon"
+version: "0.1"
+labels:
+requires:
+  - category: "system"
+    name: "mocaccino-wallpaper"
+    version: ">=0"

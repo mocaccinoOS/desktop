@@ -1,0 +1,5 @@
+image: "alpine"
+prelude:
+steps:
+- mkdir -p /usr/share/glib-2.0/schemas
+- cp files/90_mocaccino-cinnamon.gschema.override /usr/share/glib-2.0/schemas

@@ -1,0 +1,6 @@
+[org.cinnamon.desktop.background]
+picture-uri='file:///usr/share/wallpapers/mocaccino-wallpaper/background.jpg'
+picture-options='zoom'
+
+[org.cinnamon.desktop.background.slideshow]
+enabled=false
