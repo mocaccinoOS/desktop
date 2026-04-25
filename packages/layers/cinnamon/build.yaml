@@ -10,8 +10,8 @@ prelude:
 - echo "x11-wm/muffin muffin-rpath.conf" >> /etc/portage/package.env/01-cinnamon.env
 # end muffin LDFLAGS bug
 - emerge -1 app-eselect/eselect-repository
-- eselect repository enable haarp
-- emaint sync -r haarp
+- eselect repository enable guru
+- emaint sync -r guru
 - eselect repository enable binaryden
 - emaint sync -r binaryden
 - eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
