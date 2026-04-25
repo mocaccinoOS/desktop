@@ -132,7 +132,7 @@ packages:
     emerge:
       jobs: "3"
       packages:
-        - sys-fs/vhba
+        - sys-fs/vhba::gentoo
     provides:
       - name: vhba
         category: sys-fs
