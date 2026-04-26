@@ -1,6 +1,6 @@
 category: "apps"
 name: "warehouse"
-version: 1.6.5+1
+version: 1.6.5+2
 uri:
   - https://wiki.gnome.org/Apps/Software
 license: "GPL-3"
@@ -10,6 +10,9 @@ labels:
   emerge.packages: >-
     gui-apps/warehouse::mocaccino-overlay
 provides:
+  - name: blueprint-compiler
+    category: dev-util
+    version: ">=0"
   - name: warehouse
     category: gui-apps
     version: ">=0"
