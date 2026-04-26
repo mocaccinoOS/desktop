@@ -4,3 +4,6 @@ picture-options='zoom'
 
 [org.cinnamon.desktop.background.slideshow]
 enabled=false
+
+[org.marshal.desktop.default-applications.pdf]
+exec='xreader'
