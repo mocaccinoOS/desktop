@@ -1,4 +1,5 @@
 app-editors/xed ~amd64
+app-text/xreader ~amd64
 media-gfx/xviewer ~amd64
 x11-misc/pix ~amd64
 x11-themes/xapp-symbolic-icon-theme ~amd64
