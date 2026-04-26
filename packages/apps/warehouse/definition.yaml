@@ -1,0 +1,22 @@
+category: "apps"
+name: "warehouse"
+version: "1.6.5"
+uri:
+  - https://wiki.gnome.org/Apps/Software
+license: "GPL-3"
+description: "A GTK4 toolbox for managing Flatpaks, remotes, and user data"
+labels:
+  emerge.jobs: "3"
+  emerge.packages: >-
+    gui-apps/warehouse::mocaccino-overlay
+provides:
+  - name: warehouse
+    category: gui-apps
+    version: ">=0"
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
+  - category: "apps"
+    name: "flatpak"
+    version: ">=0"
