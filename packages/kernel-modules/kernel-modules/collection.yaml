@@ -282,7 +282,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba"
-    version: 20250329-r1+2
+    version: 20250329-r1+3
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
