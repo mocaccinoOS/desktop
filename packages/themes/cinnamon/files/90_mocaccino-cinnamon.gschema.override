@@ -4,6 +4,3 @@ picture-options='zoom'
 
 [org.cinnamon.desktop.background.slideshow]
 enabled=false
-
-[org.cinnamon.desktop.default-applications.pdf]
-exec='xreader'
