@@ -12,9 +12,6 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
-  - category: "themes"
-    name: "mint-icon-theme"
-    version: ">=0"
 provides:
   - name: caribou
     category: app-accessibility
