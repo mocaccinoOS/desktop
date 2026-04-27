@@ -1,2 +1,4 @@
 # Set BFQ scheduler on all rotational devices (HDDs)
 ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", ATTR{queue/scheduler}="bfq"
+# Set Kyber scheduler on all NVMe devices for better responsiveness under mixed workloads
+ACTION=="add|change", KERNEL=="nvme[0-9]*n[0-9]*", ATTR{queue/scheduler}="kyber"
