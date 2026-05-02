@@ -1,6 +1,6 @@
 category: "apps"
 name: "vm-curator"
-version: 0.4.7+1
+version: 0.4.7+2
 uri:
   - https://github.com/mroboff/vm-curator
 license: "MIT"

@@ -134,6 +134,9 @@ provides:
   - name: nsplugins
     category: trinity-base
     version: '>=0'
+  - name: tdeadmin-meta
+    category: trinity-base
+    version: '>=0'
   - name: tdebase-data
     category: trinity-base
     version: '>=0'
@@ -153,9 +156,6 @@ provides:
     category: trinity-base
     version: '>=0'
   - name: tdeeject
-    category: trinity-base
-    version: '>=0'
-  - name: tdeadmin-doc
     category: trinity-base
     version: '>=0'
   - name: tdefile-plugins
@@ -179,13 +179,13 @@ provides:
   - name: tdesu
     category: trinity-base
     version: '>=0'
-  - name: tdm
-    category: trinity-base
-    version: '>=0'
   - name: tqt3integration
     category: trinity-base
     version: '>=0'
   - name: trinity-cmake
+    category: trinity-base
+    version: '>=0'
+  - name: trinity-prefix
     category: trinity-base
     version: '>=0'
   - name: twin
