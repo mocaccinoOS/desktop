@@ -5,13 +5,13 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-- emerge -1 sys-devel/gcc:13 && gcc-config x86_64-pc-linux-gnu-13 && . /etc/profile
+# - emerge -1 sys-devel/gcc:13 && gcc-config x86_64-pc-linux-gnu-13 && . /etc/profile
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
 # tdm fails to build, remove from meta
-- sed '/tdm/d' -i /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.2.ebuild
-- ebuild /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.2.ebuild manifest
+- sed '/tdm/d' -i /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.5.ebuild
+- ebuild /var/db/repos/trinity-official/trinity-base/tdebase-meta/tdebase-meta-14.1.5.ebuild manifest
 {{ template "portage_prelude_build" . }}
 steps:
 - emerge -1 www-misc/hldig::trinity-official
