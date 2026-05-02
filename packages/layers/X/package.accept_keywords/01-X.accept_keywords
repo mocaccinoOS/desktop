@@ -1,5 +1,5 @@
 # mesa keyword madness
-=media-libs/mesa-26.0.5 ~amd64
+=media-libs/mesa-26.0.5-r1 ~amd64
 =dev-util/mesa_clc-26.0.5 ~amd64
 llvm-core/libclc ~amd64
 
