@@ -8,7 +8,7 @@ description: "The Trinity Desktop Environment"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    =trinity-base/tdebase-meta-14.1.2 =trinity-base/tdeadmin-meta-14.1.2
+    =trinity-base/tdebase-meta-14.1.5 =trinity-base/tdeadmin-meta-14.1.5
 requires:
   - category: "layers"
     name: "X"
