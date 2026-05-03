@@ -29,11 +29,29 @@
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
   <wallpaper deleted="false">
+    <name>MocaccinoOS green</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_green/contents/images/1920x1080.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#183420</pcolor>
+    <scolor>#0c1a10</scolor>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
     <name>MocaccinoOS mocha</name>
     <filename>/usr/share/wallpapers/MocaccinoOS_mocha/contents/images/1920x1080.jpg</filename>
     <options>zoom</options>
     <pcolor>#463c34</pcolor>
     <scolor>#231e1a</scolor>
+    <author>Joost Ruis</author>
+    <license>CC-BY-SA-4.0</license>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>MocaccinoOS purple</name>
+    <filename>/usr/share/wallpapers/MocaccinoOS_purple/contents/images/1920x1080.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#292044</pcolor>
+    <scolor>#141022</scolor>
     <author>Joost Ruis</author>
     <license>CC-BY-SA-4.0</license>
   </wallpaper>
