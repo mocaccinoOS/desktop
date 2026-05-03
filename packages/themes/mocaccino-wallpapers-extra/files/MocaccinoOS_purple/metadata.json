@@ -1,0 +1,16 @@
+{
+  "X-Plasma-API": "declarativeappletscript",
+  "ServiceTypes": ["Plasma/Wallpaper"],
+  "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "joost.ruis@mocaccino.org",
+                "Name": "Joost Ruis"
+            }
+        ],
+        "Id": "MocaccinoOS_green",
+        "License": "CC-BY-SA-4.0",
+        "Name": "MocaccinoOS purple"
+    }
+}
