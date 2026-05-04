@@ -2,4 +2,4 @@ install:
 - ldconfig
 - chmod u+s /usr/bin/fusermount
 - chmod u+s /usr/bin/fusermount3
-- for f in /etc/postfix/main.cf /etc/mail/aliases.db; do [ -f "$f" ] && rm -f "$(dirname "$f")/._cfg0001_$(basename "$f")"; done
+- for f in /etc/postfix/main.cf /etc/mail/aliases.db; do cfg="$(dirname "$f")/._cfg0001_$(basename "$f")"; [ -f "$cfg" ] && rm -f "$cfg"; done; true
