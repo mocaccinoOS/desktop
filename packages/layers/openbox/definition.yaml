@@ -1,6 +1,6 @@
 category: "layers"
 name: "openbox"
-version: 3.6.1-r11+3
+version: 3.6.1-r11+4
 uri:
   - http://openbox.org/wiki/Main_Page
 license: "GPL-2"
