@@ -6,7 +6,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 requires:
 - category: "layers"
   name: "sys-fs"

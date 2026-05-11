@@ -10,7 +10,7 @@ prelude:
 - emaint sync -r gentoo-zh
 {{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 - eselect repository remove gentoo-zh
 - emerge -C app-eselect/eselect-repository
 requires:

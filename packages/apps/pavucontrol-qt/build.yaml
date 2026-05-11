@@ -5,7 +5,7 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 - emerge -C dev-util/lxqt-build-tools
 requires:
 - category: "layers"

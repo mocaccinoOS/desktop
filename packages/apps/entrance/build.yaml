@@ -12,7 +12,7 @@ prelude:
 - emaint sync -r enlightenment-live
 {{ template "portage_prelude_build" . }}
 steps:
-- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+{{ template "portage_build" . }}
 - eselect repository remove enlightenment-live
 - emerge -C app-eselect/eselect-repository
 requires:
