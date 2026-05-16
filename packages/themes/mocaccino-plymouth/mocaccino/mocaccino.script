@@ -1,22 +1,26 @@
 logoImage = Image("mocaccino.png");
 logoSprite = Sprite(logoImage);
 
-logoSprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - logoImage.GetWidth() / 2));
+logoSprite.SetX(Window.GetX() + (Window.GetWidth()  / 2 - logoImage.GetWidth()  / 2));
 logoSprite.SetY(Window.GetY() + (Window.GetHeight() / 2 - logoImage.GetHeight() / 2));
 
-opacity = 0.0;
-opacity_angle = 0;
-//sign = 1;
-//logoSprite.SetOpacity(opacity);
+// Explicitly set a solid black background
+Window.SetBackgroundTopColor(0.0, 0.0, 0.0);
+Window.SetBackgroundBottomColor(0.0, 0.0, 0.0);
 
+// Initialize animation variables
+opacity_angle = 0.0;
+min_opacity = 0.3;
+
+// Animation callback function
 fun refresh_callback()
 {
-    opacity_angle += ((2 * 3.14) / 50) * 0.5;
-    min_opacity = 0.3;
-    opacity = (Math.Cos(opacity_angle) + 1) / 2;
-    opacity *= 1 - min_opacity;
-    opacity += min_opacity;
-    logoSprite.SetOpacity (opacity);
+    // Increment angle using Math.Pi instead of 3.14
+    opacity_angle += Math.Pi / 50;
+
+    // Calculate the pulsing opacity and apply it
+    opacity = ((Math.Cos(opacity_angle) + 1) / 2) * (1 - min_opacity) + min_opacity;
+    logoSprite.SetOpacity(opacity);
 }
 
 Plymouth.SetRefreshFunction(refresh_callback);
