@@ -1,6 +1,6 @@
 category: "apps"
 name: "vajo"
-version: "0.8.7"
+version: "0.8.8"
 license: "GPL-3"
 description: "A GUI and TUI frontend for the Luet package manager on MocaccinoOS"
 requires:
