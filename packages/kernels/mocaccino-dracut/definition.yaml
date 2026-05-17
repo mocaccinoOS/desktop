@@ -1,3 +1,4 @@
 name: mocaccino-dracut
 category: sys-kernel
 version: "1.8.3"
+description: "MocaccinoOS dracut wrapper and custom configuration files to automate and optimize initramfs generation with optimized module defaults"

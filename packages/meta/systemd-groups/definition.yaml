@@ -1,8 +1,8 @@
-name: systemd-groups
+name: "systemd-groups"
+category: "meta"
 version: "0.20210103+1"
-category: meta
+description: "Establishes core system user groups required by systemd services and basic hardware access controls (like audio, video, wheel, and network)"
 requires:
-# Default groups used by systemd
   - &group
     category: "entity"
     version: ">=0"

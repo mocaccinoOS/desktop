@@ -1,6 +1,7 @@
 category: "system"
 name: "kernel-updater"
 version: "0.2.1"
+description: "Post-install script that automatically detects the running system flavor (Micro or Desktop) to generate the appropriate initramfs and update the GRUB bootloader configuration"
 requires:
 - category: "apps"
   name: "grub"
