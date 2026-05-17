@@ -1,6 +1,7 @@
 category: "mocaccino"
 name: "intel_arc_compat"
 version: "0.3"
+description: "Compatibility fix for Intel Arc graphics, installing a startup service to dynamically configure and fix Intel Xorg server settings."
 labels:
 requires:
   - category: "layers"
