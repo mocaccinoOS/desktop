@@ -2,7 +2,7 @@ image: "alpine"
 package_dir: "/package"
 prelude:
 - apk update && apk add imagemagick && apk add git && apk add bash
-- git clone ssh://git@codeberg.org/MocaccinoOS/Vajo.git
+- git clone https://codeberg.org/MocaccinoOS/Vajo.git
 - cd Vajo && chmod +x install.sh && ./install.sh
 steps:
 - for size in 16 24 32 48 64 128 256; do mkdir -p /package/usr/share/icons/hicolor/"${size}x${size}"/apps && magick /package/usr/share/pixmaps/vajo.png -resize "${size}x${size}" /package/usr/share/icons/hicolor/"${size}x${size}"/apps/vajo.png; done
