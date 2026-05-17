@@ -4,6 +4,7 @@ version: "7.0.6"
 prefix: linux
 suffix: mocaccino
 arch: "x86_64"
+description: "Core kernel modules and hardware drivers for the stable Linux kernel, providing essential support for file systems, network devices, and system hardware peripherals"
 labels:
   autobump.revdeps: "false"
   autobump.string_replace: '{ "prefix": "" }'

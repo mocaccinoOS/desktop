@@ -2,8 +2,9 @@ name: mocaccino-lts-modules
 category: kernel
 version: "6.18.31"
 prefix: linux
-arch: "x86_64"
 suffix: mocaccino
+arch: "x86_64"
+description: "Core kernel modules and hardware drivers for the LTS Linux kernel, providing essential support for file systems, network devices, and system hardware peripherals"
 labels:
   autobump.revdeps: "false"
   autobump.string_replace: '{ "prefix": "" }'

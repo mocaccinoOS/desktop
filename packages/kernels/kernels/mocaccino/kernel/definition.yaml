@@ -1,6 +1,10 @@
 name: mocaccino-full
 category: kernel
 version: "7.0.6"
+uri:
+  - https://kernel.org
+license: "GPL-2"
+description: "The core stable Linux kernel image (vmlinuz) and boot management configuration tools for MocaccinoOS"
 requires:
   - name: "mocaccino-modules"
     category: "kernel"
