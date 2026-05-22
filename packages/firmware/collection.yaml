@@ -97,6 +97,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary microcode and firmware for older Advansys SCSI host adapters (e.g., ASC-3550, ASC-38C0800, ASC-38C1600)."
   - category: "firmware"
+    name: "airoha"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Airoha wireless chips, mainly Bluetooth and audio-related SoC components used in headsets, earbuds, and some embedded devices."
+  - category: "firmware"
     name: "amd-ucode"
     version: "20260410"
     uri:
