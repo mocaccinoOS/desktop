@@ -1,4 +1,4 @@
-{{ if eq .Values.name "firmware" }}
+{{ if eq .Values.name "linux-firmware" }}
 env:
 {{ template "portage_env" . }}
 prelude:
@@ -25,14 +25,14 @@ excludes:
 {{ template "portage_excludes" }}
 {{ else }}
 requires:
-- category: "layers"
-  name: "firmware"
+- category: "firmware"
+  name: "linux-firmware"
   version: ">=0"
 steps:
-- echo "Splitting {{ trimPrefix "firmware-" .Values.name }}"
+- echo "Splitting {{ .Values.name }}"
 unpack: true
 includes:
-- ^/usr/lib/firmware/{{ trimPrefix "firmware-" .Values.name }}/.*
+- ^/usr/lib/firmware/{{ .Values.name }}/.*
 excludes:
 {{ template "portage_excludes" }}
 {{ end }}
