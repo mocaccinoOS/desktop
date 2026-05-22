@@ -510,6 +510,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Ositech USB serial and networking adapters, mainly older mobile connectivity devices."
   - category: "firmware"
+    name: "powervr"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for PowerVR GPUs and graphics accelerators used in embedded and mobile SoCs."
+  - category: "firmware"
     name: "qca"
     version: "20260410"
     uri:
