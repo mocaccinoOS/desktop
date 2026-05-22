@@ -69,13 +69,6 @@ packages:
         category: sys-kernel
         version: '>=0'
   - category: "firmware"
-    name: "amdgpu"
-    version: "20260410"
-    uri:
-      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
-    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Binary firmware for AMD Radeon Graphics Processing Units (GPUs), covering GCN, RDNA, and CDNA architectures."
-  - category: "firmware"
     name: "3com"
     version: "20260410"
     uri:
@@ -97,19 +90,19 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary microcode and firmware for older Advansys SCSI host adapters (e.g., ASC-3550, ASC-38C0800, ASC-38C1600)."
   - category: "firmware"
+    name: "aeonsemi"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for AeonSemi Ethernet PHY chips, enabling gigabit and multi-gig wired networking on embedded platforms and network switches."
+  - category: "firmware"
     name: "airoha"
     version: "20260410"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Airoha (MediaTek subsidiary) EN8811H and related 2.5G/multi-gig Ethernet PHY chips, used in network switches, routers, and embedded platforms."
-  - category: "firmware"
-    name: "amd-ucode"
-    version: "20260410"
-    uri:
-      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
-    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Microcode updates for AMD x86 CPUs to fix hardware bugs, security vulnerabilities, and ensure system stability."
   - category: "firmware"
     name: "amd"
     version: "20260410"
@@ -118,12 +111,47 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Binary firmware for AMD x86 processors (e.g., Family 10h, 11h, 12h, 14h) for various platform and feature support files, separate from the general microcode updates."
   - category: "firmware"
+    name: "amd-ucode"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Microcode updates for AMD x86 CPUs to fix hardware bugs, security vulnerabilities, and ensure system stability."
+  - category: "firmware"
+    name: "amdgpu"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Binary firmware for AMD Radeon Graphics Processing Units (GPUs), covering GCN, RDNA, and CDNA architectures."
+  - category: "firmware"
     name: "amdnpu"
     version: "20260410"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AMD NPUs (Neural Processing Units), used for on-device AI acceleration in newer AMD Ryzen AI / XDNA platforms."
+  - category: "firmware"
+    name: "amdtee"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for the AMD Trusted Execution Environment (TEE), required on newer AMD platforms for fTPM, secure key storage, and trusted boot flows."
+  - category: "firmware"
+    name: "amlogic"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Amlogic SoC subsystems including video decoders, DSPs, and co-processors, used in popular ARM SBCs and TV boxes such as Odroid and Khadas."
+  - category: "firmware"
+    name: "amphion"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for NXP Amphion VPU (Video Processing Unit), enabling hardware-accelerated video encode and decode on i.MX8 SoCs."
   - category: "firmware"
     name: "ar3k"
     version: "20260410"
@@ -243,6 +271,13 @@ packages:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Card Information Structure (CIS) tuples for PCMCIA/CardBus network cards, providing runtime identification and configuration data required by the Linux PCMCIA subsystem for device initialization."
+  - category: "firmware"
+    name: "cnm"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Chips&Media (CNM) VPU codec IP cores embedded in NXP Layerscape, Rockchip, and other SoCs for hardware video processing."
   - category: "firmware"
     name: "cxgb3"
     version: "20260410"
@@ -412,6 +447,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell LiquidIO smart NIC accelerators, enabling TCP/IP offload, packet processing, and DPDK-based acceleration in server networking."
   - category: "firmware"
+    name: "Lontium"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Lontium Semiconductor DisplayPort and HDMI bridge chips (e.g. LT7911EXC), used for display interface conversion in embedded and industrial platforms."
+  - category: "firmware"
     name: "matrox"
     version: "20260410"
     uri:
@@ -515,7 +557,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Ositech 'Jack of Diamonds' PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
+    description: "Firmware for Ositech "Jack of Diamonds" PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
   - category: "firmware"
     name: "powervr"
     version: "20260410"
@@ -629,6 +671,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11be chipsets supported by the rtw89 driver."
   - category: "firmware"
+    name: "sdca"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for SoundWire Device Class Audio (SDCA) devices, increasingly required for audio codec initialization on modern Intel and AMD laptop platforms."
+  - category: "firmware"
     name: "slicoss"
     version: "20260410"
     uri:
@@ -650,6 +699,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Tehuti network controllers, which are used in certain NIC chips supporting 1/10 Gbps Ethernet."
   - category: "firmware"
+    name: "ti"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Texas Instruments WiLink combo chips (wl12xx, wl18xx) and other TI peripherals, covering Wi-Fi, Bluetooth, and FM radio functionality in embedded and mobile platforms."
+  - category: "firmware"
     name: "ti-connectivity"
     version: "20260410"
     uri:
@@ -663,13 +719,6 @@ packages:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for TI Keystone SoC subsystems, supporting functions like networking, accelerators, and offload engines."
-  - category: "firmware"
-    name: "ti"
-    version: "20260410"
-    uri:
-      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
-    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Texas Instruments WiLink combo chips (wl12xx, wl18xx) and other TI peripherals, covering Wi-Fi, Bluetooth, and FM radio functionality in embedded and mobile platforms."
   - category: "firmware"
     name: "tigon"
     version: "20260410"
@@ -691,6 +740,13 @@ packages:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for 10/40 Gbps Cisco / Brocade / Exanet VXGE (10G Ethernet) devices, enabling high-speed NIC offload and features."
+  - category: "firmware"
+    name: "wfx"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Silicon Labs WFx series Wi-Fi modules (WF200, WFM200), used in embedded and IoT platforms for 802.11b/g/n connectivity."
   - category: "firmware"
     name: "xe"
     version: "20260410"
