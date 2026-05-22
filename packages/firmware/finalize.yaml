@@ -5,6 +5,6 @@ install:
   _fw_virtuals=$(luet search --installed -q layers/firmware 2>/dev/null | sed 's/-[^-]*$//')
   if [ -n "$_fw_virtuals" ]; then
     echo "Removing legacy firmware virtual packages..."
-    echo "$_fw_virtuals" | xargs luet uninstall -q
+    echo "$_fw_virtuals" | xargs luet uninstall -y
   fi
 {{ end }}
