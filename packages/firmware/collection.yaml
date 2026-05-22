@@ -265,6 +265,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for digital radio (DAB) USB devices, allowing decoding and radio signal processing under Linux."
   - category: "firmware"
+    name: "dell"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: ""
+  - category: "firmware"
     name: "dpaa2"
     version: "20260410"
     uri:
