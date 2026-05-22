@@ -384,6 +384,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Keyspan PDA-specific USB/serial devices, enabling better integration with personal digital assistants and legacy peripherals."
   - category: "firmware"
+    name: "LENOVO"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Lenovo-specific hardware components such as embedded controllers, docking stations, and platform management features on Lenovo devices."
+  - category: "firmware"
     name: "libertas"
     version: "20260410"
     uri:
