@@ -496,6 +496,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NVIDIA's GSP (Graphics System Processor) split out from the 570-series driver branch, covering RTX 50xx and other Blackwell/Ada GPUs. Offloads driver work from the CPU to the GPU's dedicated system processor."
   - category: "firmware"
+    name: "nxp"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for NXP semiconductors, mainly Wi-Fi, Bluetooth, NFC, and embedded SoC components."
+  - category: "firmware"
     name: "ositech"
     version: "20260410"
     uri:
