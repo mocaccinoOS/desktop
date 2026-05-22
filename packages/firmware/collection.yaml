@@ -621,3 +621,10 @@ packages:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Intel Xe graphics architecture, providing essential microcode for Arc, Alchemist, Battlemage, and other Xe-based GPUs. This firmware enables acceleration, power management, and compute features through the Xe driver stack on Linux."
+  - category: "firmware"
+    name: "yamaha"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: ""
