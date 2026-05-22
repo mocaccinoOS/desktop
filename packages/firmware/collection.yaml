@@ -566,6 +566,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AMD/ATI Radeon GPUs, including microcode blobs needed for GPU initialization, power gating, and features."
   - category: "firmware"
+    name: "realtek"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Realtek Wi-Fi, Bluetooth, and Ethernet controllers across laptops, desktops, and embedded devices."
+  - category: "firmware"
     name: "rockchip"
     version: "20260410"
     uri:
