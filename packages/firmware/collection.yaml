@@ -557,7 +557,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Ositech "Jack of Diamonds" PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
+    description: "Firmware for Ositech 'Jack of Diamonds' PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
   - category: "firmware"
     name: "powervr"
     version: "20260410"
