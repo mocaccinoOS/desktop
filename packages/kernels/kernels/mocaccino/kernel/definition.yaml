@@ -1,6 +1,6 @@
 name: mocaccino-full
 category: kernel
-version: "7.0.6"
+version: "7.0.9"
 uri:
   - https://kernel.org
 license: "GPL-2"
@@ -29,4 +29,4 @@ labels:
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
   autobump.version_hook: |
     curl -Ls https://kernel.org/releases.json | jq -cr '[ .releases[] | select(.moniker == "stable") ][0].version'
-  package.version: "7.0.6"
+  package.version: "7.0.9"
