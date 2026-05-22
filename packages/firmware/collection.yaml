@@ -88,7 +88,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Adaptec storage controllers (mainly RAID/SCSI/SAS host bus adapters used for disk arrays)."
+    description: "Firmware for Adaptec AIC-7xxx series SCSI host adapters, providing microcode required by the aic7xxx driver for legacy SCSI device operation."
   - category: "firmware"
     name: "advansys"
     version: "20260410"
@@ -102,7 +102,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Airoha wireless chips, mainly Bluetooth and audio-related SoC components used in headsets, earbuds, and some embedded devices."
+    description: "Firmware for Airoha (MediaTek subsidiary) EN8811H and related 2.5G/multi-gig Ethernet PHY chips, used in network switches, routers, and embedded platforms."
   - category: "firmware"
     name: "amd-ucode"
     version: "20260410"
@@ -480,7 +480,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Myricom high-performance network adapters used in servers and HPC systems."
+    description: "Firmware for Myricom Myri-10G 10 Gbps network adapters used in HPC and data center environments, enabling the myri10ge driver for high-throughput, low-latency networking."
   - category: "firmware"
     name: "netronome"
     version: "20260410"
@@ -508,21 +508,21 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for NXP semiconductors, mainly Wi-Fi, Bluetooth, NFC, and embedded SoC components."
+    description: "Firmware for NXP peripheral devices not covered by the dedicated dpaa2 or imx packages, including USB controllers, NFC chips, and miscellaneous NXP SoC co-processors."
   - category: "firmware"
     name: "ositech"
     version: "20260410"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Ositech USB serial and networking adapters, mainly older mobile connectivity devices."
+    description: "Firmware for Ositech 'Jack of Diamonds' PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
   - category: "firmware"
     name: "powervr"
     version: "20260410"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for PowerVR GPUs and graphics accelerators used in embedded and mobile SoCs."
+    description: "Firmware for Imagination Technologies PowerVR Series 6+ GPUs embedded in SoCs from TI KeyStone, Renesas, and others, enabling 3D acceleration and graphics features."
   - category: "firmware"
     name: "qca"
     version: "20260410"
@@ -571,7 +571,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Realtek Wi-Fi, Bluetooth, and Ethernet controllers across laptops, desktops, and embedded devices."
+    description: "Firmware for Realtek r8169-family Ethernet controllers (e.g. RTL8168e), providing NIC microcode for the r8169 driver. Wi-Fi and Bluetooth firmware is covered separately by rtlwifi, rtw88, rtw89, and rtl_bt."
   - category: "firmware"
     name: "rockchip"
     version: "20260410"
@@ -704,4 +704,4 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Yamaha audio hardware, mainly older PCI/ISA sound cards and embedded audio DSP chips."
+    description: "Firmware for Yamaha YMF724/740/744/754 (DS-1 series) PCI audio chips, required by the snd-ymfpci driver for DSP initialization and audio playback."
