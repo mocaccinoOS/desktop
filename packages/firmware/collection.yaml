@@ -573,13 +573,6 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11be chipsets supported by the rtw89 driver."
   - category: "firmware"
-    name: "silabs"
-    version: "20260410"
-    uri:
-      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
-    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Silicon Labs (Silicon Labs / SiLabs) USB / wireless / IoT modules, supporting connectivity and peripheral control."
-  - category: "firmware"
     name: "slicoss"
     version: "20260410"
     uri:
