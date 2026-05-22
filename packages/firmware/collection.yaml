@@ -475,6 +475,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell WiFi (mwlwifi) adapters, supporting modern 802.11ac/ax wireless cards using Marvell chips."
   - category: "firmware"
+    name: "myricom"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Myricom high-performance network adapters used in servers and HPC systems."
+  - category: "firmware"
     name: "netronome"
     version: "20260410"
     uri:
