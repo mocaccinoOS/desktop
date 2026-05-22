@@ -88,7 +88,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: ""
+    description: "Firmware for Adaptec storage controllers (mainly RAID/SCSI/SAS host bus adapters used for disk arrays)."
   - category: "firmware"
     name: "advansys"
     version: "20260410"
@@ -116,7 +116,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: ""
+    description: "Firmware for AMD NPUs (Neural Processing Units), used for on-device AI acceleration in newer AMD Ryzen AI / XDNA platforms."
   - category: "firmware"
     name: "ar3k"
     version: "20260410"
@@ -270,7 +270,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: ""
+    description: "Firmware blobs for Dell-specific hardware such as docking stations, embedded controllers, and platform management devices."
   - category: "firmware"
     name: "dpaa2"
     version: "20260410"
@@ -305,7 +305,7 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: ""
+    description: "Firmware for Emagic EMI 6|2 USB audio/audio-MIDI interface devices (USB sound card DSP + streaming control)."
   - category: "firmware"
     name: "ene-ub6250"
     version: "20260410"
@@ -655,4 +655,4 @@ packages:
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: ""
+    description: "Firmware for Yamaha audio hardware, mainly older PCI/ISA sound cards and embedded audio DSP chips."
