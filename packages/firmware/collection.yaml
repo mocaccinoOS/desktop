@@ -300,6 +300,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for E-MU (EMI26) and related audio / MIDI hardware, used in sound processing and synthesis devices."
   - category: "firmware"
+    name: "emi62"
+    version: "20260410"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: ""
+  - category: "firmware"
     name: "ene-ub6250"
     version: "20260410"
     uri:
