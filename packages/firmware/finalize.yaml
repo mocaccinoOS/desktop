@@ -2,7 +2,7 @@ install:
 - ldconfig
 {{ if eq .Values.name "linux-firmware" }}
 - |
-  _fw_virtuals=$(luet search --installed -q layers/firmware 2>/dev/null)
+  _fw_virtuals=$(luet search --installed -q layers/firmware 2>/dev/null | sed 's/-[^-]*$//')
   if [ -n "$_fw_virtuals" ]; then
     echo "Removing legacy firmware virtual packages..."
     echo "$_fw_virtuals" | xargs luet uninstall -q
