@@ -1,0 +1,23 @@
+category: "apps"
+name: "blueman"
+version: "2.4.6"
+uri:
+  - https://github.com/blueman-project/blueman
+license: "GPL-3+ GPL-2"
+description: "Simple and intuitive GTK+ Bluetooth Manager"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    net-wireless/blueman
+  description: "Simple and intuitive GTK+ Bluetooth Manager"
+provides:
+  - name: python-dbusmock
+    category: dev-python
+    version: '>=0'
+  - name: blueman
+    category: net-wireless
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
