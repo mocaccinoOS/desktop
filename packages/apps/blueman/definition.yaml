@@ -11,9 +11,6 @@ labels:
     net-wireless/blueman
   description: "Simple and intuitive GTK+ Bluetooth Manager"
 provides:
-  - name: python-dbusmock
-    category: dev-python
-    version: '>=0'
   - name: blueman
     category: net-wireless
     version: '>=0'
