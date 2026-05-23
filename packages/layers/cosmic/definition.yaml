@@ -15,7 +15,7 @@ requires:
     category: "entity"
     version: ">=0"
   - category: "layers"
-    name: "gnome-common"
+    name: "X"
     version: ">=0"
   - category: "apps"
     name: "flatpak"
