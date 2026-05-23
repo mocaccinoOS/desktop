@@ -1,11 +1,11 @@
 name: "gentoo-portage"
-version: "0.20260518"
+version: "0.20260523"
 category: "layers"
 license: "GPL-2"
 description: "A snapshot of the official Gentoo Portage ebuild repository tree, providing the package recipes, dependency graphs, and build metadata needed to compile layers on MocaccinoOS"
 labels:
   autobump.strategy: git_hash
-  git.hash: "46ac2f579a1e7ba5c6052b23b0e3ea6c2a1824bc"
+  git.hash: "f654671527efd0bdf9f804b65bf6dd71d0e9e174"
   github.owner: gentoo
   github.repo: gentoo
 hidden: true
