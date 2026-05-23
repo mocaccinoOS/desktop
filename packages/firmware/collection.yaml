@@ -629,13 +629,6 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Redpine Signals (RSI) Wi-Fi and Bluetooth combo chipsets, used by the rsi_sdio and rsi_usb drivers for device initialization and radio operations."
   - category: "firmware"
-    name: "RTL8192E"
-    version: 20260410+1
-    uri:
-      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
-    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
-    description: "Firmware for Realtek RTL8192E wireless network adapters, used by RTL drivers to support Wi-Fi functionality."
-  - category: "firmware"
     name: "rtl_bt"
     version: 20260410+1
     uri:
