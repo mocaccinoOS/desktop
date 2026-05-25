@@ -21,7 +21,7 @@ prelude:
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if eq "v4l2loopback" .Values.name }}
-- ln -s /usr/src/linux /lib/modules/7.0.9-mocaccino/build
+- ln -s /usr/src/linux /lib/modules/7.0.10-mocaccino/build
 - emerge -1 dev-util/pahole
 {{- end}}
 {{ if contains "rtl88x2bu" .Values.name }}
