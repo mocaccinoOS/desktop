@@ -1,6 +1,6 @@
 name: mocaccino-full
 category: kernel
-version: "7.0.9+1"
+version: 7.0.9+1
 uri:
   - https://kernel.org
 license: "GPL-2"
