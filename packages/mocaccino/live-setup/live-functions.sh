@@ -54,10 +54,14 @@ setup_autologin() {
     fi
 
     # COSMIC Greeter
-    if  [ -f "$COSMIC_GREETER_FILE" ]; then
-	echo -e "\n[initial_session]" >> $COSMIC_GREETER_FILE
-	echo "command = \"cosmic-session\"" >> $COSMIC_GREETER_FILE
-	echo "user = \"mocaccino\"" >> $COSMIC_GREETER_FILE
+    if [ -f "$COSMIC_GREETER_FILE" ]; then
+        if ! grep -q "\[initial_session\]" "$COSMIC_GREETER_FILE"; then
+            echo -e "\n[initial_session]" >> "$COSMIC_GREETER_FILE"
+            echo "command = \"cosmic-session\"" >> "$COSMIC_GREETER_FILE"
+            echo "user = \"${LIVE_USER}\"" >> "$COSMIC_GREETER_FILE"
+        else
+            sed -i "s/^user = .*/user = \"${LIVE_USER}\"/" "$COSMIC_GREETER_FILE"
+        fi
     fi
 
     # LightDM
@@ -88,8 +92,8 @@ disable_autologin() {
     fi
 
     # COSMIC Greeter
-    if  [ -f "$COSMIC_GREETER_FILE" ]; then
-	sed -i -e '/initial_session/{N;N;d;}' $COSMIC_GREETER_FILE
+    if [ -f "$COSMIC_GREETER_FILE" ]; then
+        sed -i '/^\[initial_session\]/,$d' "$COSMIC_GREETER_FILE"
     fi
 
     # LightDM
@@ -298,9 +302,13 @@ setup_default_xsession() {
 }
 
 setup_greet() {
-   echo -e "\n[initial_session]" >> /etc/greetd/cosmic-greeter.toml
-   echo "command = \"cosmic-session\"" >> /etc/greetd/cosmic-greeter.toml
-   echo "user = \"mocaccino\"" >> /etc/greetd/cosmic-greeter.toml
+    if ! grep -q "\[initial_session\]" "$COSMIC_GREETER_FILE"; then
+        echo -e "\n[initial_session]" >> "$COSMIC_GREETER_FILE"
+        echo "command = \"cosmic-session\"" >> "$COSMIC_GREETER_FILE"
+        echo "user = \"${LIVE_USER}\"" >> "$COSMIC_GREETER_FILE"
+    else
+        sed -i "s/^user = .*/user = \"${LIVE_USER}\"/" "$COSMIC_GREETER_FILE"
+    fi
 }
 
 setup_networkmanager() {
