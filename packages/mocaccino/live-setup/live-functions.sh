@@ -62,6 +62,13 @@ setup_autologin() {
         else
             sed -i "s/^user = .*/user = \"${LIVE_USER}\"/" "$COSMIC_GREETER_FILE"
         fi
+
+        # The cosmic-greeter-daemon caches user data at startup. Since the live
+        # user is created after the daemon first starts, we must restart it so
+        # it discovers the new account before greetd attempts the autologin.
+        if systemd_running; then
+            systemctl restart cosmic-greeter-daemon.service || true
+        fi
     fi
 
     # LightDM
