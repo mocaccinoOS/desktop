@@ -20,6 +20,7 @@ IGNORED_PATHS=(
     "packages/apps/mos-updater"
     "packages/apps/nodejs"
     "packages/apps/vajo"
+    "packages/apps/vm-curator"
     "packages/fonts"
     "packages/devel/gcc-14"
     "packages/devel/linux-headers"
