@@ -198,10 +198,19 @@ setup_vt_autologin() {
 
     systemctl daemon-reload
 
-    # not for SDDM
-    if [ ! -f "$SDDM_FILE" ]; then
-        systemctl restart getty@tty1
+    # Do not restart getty@tty1 if a graphical DM is present.
+    # cosmic-greeter declares Conflicts=getty@tty1.service, so restarting
+    # getty would stop the greeter before it can start. The same race
+    # applies to other DMs, so skip for all of them.
+    if [ -f "$COSMIC_GREETER_FILE" ] || \
+       [ -f "$SDDM_FILE" ] || \
+       [ -f "$LIGHTDM_FILE" ] || \
+       [ -f "$GDM_FILE" ] || \
+       [ -f "$LXDM_FILE" ]; then
+        return 0
     fi
+
+    systemctl restart getty@tty1
 }
 
 setup_desktop_session() {
