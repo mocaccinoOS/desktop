@@ -1,6 +1,6 @@
 name: live-setup
 category: mocaccino
-version: 26.05+1
+version: 26.05+2
 
 requires:
 - name: "yip"
