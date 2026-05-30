@@ -162,25 +162,25 @@ setup_live_user() {
         # HACK: KWallet Disablement for Plasma Live ISO Stability
         # This section prevents the NetworkManager D-Bus timeout by disabling the 
         # KWallet subsystem for the live user, forcing the immediate password prompt.
+        # Only runs on Plasma ISOs (identified by SDDM config presence).
         # ==============================================================================
-        log_info "Applying KWallet workaround for first-time Wi-Fi stability on Plasma."
+        if [ -f "${SDDM_FILE}" ]; then
+            LUSER_HOME="/home/${live_user}"
+            LUSER_CONFIG_DIR="${LUSER_HOME}/.config"
 
-        LUSER_HOME="/home/${live_user}"
-        LUSER_CONFIG_DIR="${LUSER_HOME}/.config"
+            # 1. Ensure the user's .config directory exists
+            if [ ! -d "${LUSER_CONFIG_DIR}" ]; then
+                mkdir -p "${LUSER_CONFIG_DIR}"
+            fi
 
-        # 1. Ensure the user's .config directory exists
-        if [ ! -d "${LUSER_CONFIG_DIR}" ]; then
-            mkdir -p "${LUSER_CONFIG_DIR}"
+            # 2. Write the KWallet configuration file with 'Enabled=false'
+            # This ensures KWallet service never starts or gets involved in secret retrieval.
+            echo -e "[Wallet]\nEnabled=false" > "${LUSER_CONFIG_DIR}/kwalletrc"
+
+            # 3. Set ownership of the config file back to the live user
+            # Note: user is created with -g root (no private group), so use root as group
+            chown "${live_user}:root" "${LUSER_CONFIG_DIR}/kwalletrc"
         fi
-
-        # 2. Write the KWallet configuration file with 'Enabled=false'
-        # This ensures KWallet service never starts or gets involved in secret retrieval.
-        echo -e "[Wallet]\nEnabled=false" > "${LUSER_CONFIG_DIR}/kwalletrc"
-
-        # 3. Set ownership of the config file back to the live user
-        chown "${live_user}:${live_user}" "${LUSER_CONFIG_DIR}/kwalletrc"
-
-        log_info "KWallet successfully disabled for ${live_user} to ensure Wi-Fi stability."
         # ==============================================================================
 
         return 0
