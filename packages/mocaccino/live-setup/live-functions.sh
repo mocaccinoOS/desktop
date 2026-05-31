@@ -361,8 +361,11 @@ prepare() {
     fi
 
     if [ -f "/usr/share/wayland-sessions/cosmic.desktop" ]; then
-        setup_greet
-       	systemctl enable "cosmic-greeter"
+        # setup_greet is intentionally NOT called here — the [initial_session]
+        # autologin block is written at runtime by setup_autologin() in live.sh,
+        # same as all other display managers. Calling it here would bake the
+        # live user autologin into the installed system.
+        systemctl enable "cosmic-greeter"
     fi
 
     if [ -f "/usr/share/xsessions/xfce.desktop" ]; then
