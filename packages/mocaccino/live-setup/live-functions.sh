@@ -55,13 +55,7 @@ setup_autologin() {
 
     # COSMIC Greeter
     if [ -f "$COSMIC_GREETER_FILE" ]; then
-        if ! grep -q "\[initial_session\]" "$COSMIC_GREETER_FILE"; then
-            echo -e "\n[initial_session]" >> "$COSMIC_GREETER_FILE"
-            echo "command = \"cosmic-session\"" >> "$COSMIC_GREETER_FILE"
-            echo "user = \"${LIVE_USER}\"" >> "$COSMIC_GREETER_FILE"
-        else
-            sed -i "s/^user = .*/user = \"${LIVE_USER}\"/" "$COSMIC_GREETER_FILE"
-        fi
+        setup_greet
 
         # The cosmic-greeter-daemon caches user data at startup. Since the live
         # user is created after the daemon first starts, we must restart it so
