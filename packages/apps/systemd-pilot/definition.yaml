@@ -1,6 +1,6 @@
 category: "apps"
 name: "systemd-pilot"
-version: "0.1"
+version: "0.2"
 uri:
   - https://github.com/mfat/systemd-pilot
 license: "GPL-3+"
@@ -16,5 +16,5 @@ provides:
     version: '>=0'
 requires:
   - category: "layers"
-    name: "X"
+    name: "gnome-common"
     version: ">=0"
