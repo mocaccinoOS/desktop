@@ -1,6 +1,6 @@
 category: "apps"
 name: "systemd-pilot"
-version: "0.2"
+version: "0.3"
 uri:
   - https://github.com/mfat/systemd-pilot
 license: "GPL-3+"
