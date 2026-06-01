@@ -1,0 +1,20 @@
+category: "apps"
+name: "systemd-pilot"
+version: "0.1"
+uri:
+  - https://github.com/mfat/systemd-pilot
+license: "GPL-3+"
+description: "Desktop application for managing systemd services"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-apps/systemd-pilot
+  description: "Desktop application for managing systemd services"
+provides:
+  - name: systemd-pilot
+    category: sys-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
