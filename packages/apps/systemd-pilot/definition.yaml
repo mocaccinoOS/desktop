@@ -1,6 +1,6 @@
 category: "apps"
 name: "systemd-pilot"
-version: "0.3"
+version: "0.4"
 uri:
   - https://github.com/mfat/systemd-pilot
 license: "GPL-3+"
@@ -8,7 +8,7 @@ description: "Desktop application for managing systemd services"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    sys-apps/systemd-pilot
+    sys-apps/systemd-pilot dev-python/paramiko
   description: "Desktop application for managing systemd services"
 provides:
   - name: systemd-pilot
