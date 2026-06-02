@@ -1,6 +1,6 @@
 category: "layers"
 name: "input"
-version: 26.04+10
+version: 26.04+11
 uri:
   - https://fcitx-im.org
   - https://github.com/ibus
@@ -9,7 +9,7 @@ description: "Input method frameworks and engines (Fcitx5, IBus) providing multi
 labels:
   emerge.jobs: "2"
   emerge.packages: >-
-    app-i18n/anthy app-i18n/fcitx app-i18n/fcitx-anthy app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/ibus-anthy app-i18n/ibus-hangul app-i18n/ibus-pinyin app-i18n/ibus-table app-i18n/ibus-table-chinese app-i18n/ibus-table-others app-i18n/libhangul app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
+    app-i18n/anthy app-i18n/fcitx app-i18n/fcitx-anthy app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-hangul app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/ibus-anthy app-i18n/ibus-hangul app-i18n/ibus-pinyin app-i18n/ibus-table app-i18n/ibus-table-chinese app-i18n/ibus-table-others app-i18n/libhangul app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
 provides:
   - name: chrpath
     category: app-admin
@@ -27,6 +27,9 @@ provides:
     category: app-i18n
     version: '>=0'
   - name: fcitx-gtk
+    category: app-i18n
+    version: '>=0'
+  - name: fcitx-hangul
     category: app-i18n
     version: '>=0'
   - name: fcitx-qt
