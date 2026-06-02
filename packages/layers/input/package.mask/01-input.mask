@@ -1,2 +1,2 @@
 # Do not pull in older Python
-<dev-lang/python:3.13
+<dev-lang/python-3.13
