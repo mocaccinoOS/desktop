@@ -1,6 +1,6 @@
 category: "apps"
 name: "systemd-pilot"
-version: "0.5"
+version: "0.6"
 uri:
   - https://github.com/mfat/systemd-pilot
 license: "GPL-3+"
@@ -8,13 +8,19 @@ description: "Desktop application for managing systemd services"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    sys-apps/systemd-pilot dev-python/paramiko dev-python/pynacl
+    sys-apps/systemd-pilot dev-python/keyring dev-python/paramiko dev-python/pynacl dev-python/rich
   description: "Desktop application for managing systemd services"
 provides:
+  - name: keyring
+    category: dev-python
+    version: '>=0'
   - name: paramiko
     category: dev-python
     version: '>=0'
   - name: pynacl
+    category: dev-python
+    version: '>=0'
+  - name: rich
     category: dev-python
     version: '>=0'
   - name: systemd-pilot
