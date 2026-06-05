@@ -32,19 +32,15 @@ prepare_workarea() {
   echo "Created folders for all critical file systems."
 }
 
-shell() {
-  # Set flag which indicates that we have obtained controlling terminal.
-  export PID1_SHELL=true
-
-  # Interactive shell with controlling tty as PID 1.
-  exec setsid sh
-}
-
 parse_cmdline() {
 	read -r cmdline < /proc/cmdline
 
 	for param in $cmdline ; do
 		case $param in
+      # Catch ISO boot parameters
+			iso-scan/filename=*|isofrom=*) 
+                export ISO_SCAN_PATH="${param#*=}" 
+                ;;
 			*=*) key=${param%%=*}; value=${param#*=} ;;
 			'#'*) break ;;
 			*) key=$param
@@ -105,7 +101,44 @@ search_overlay() {
     WORK_DIR=""
 
     mount $DEVICE $DEVICE_MNT 2>/dev/null
-    if [ -f $DEVICE_MNT/rootfs.squashfs ] ; then
+    
+    # --- NEW: ISO Loopback Detection Logic ---
+    if [ -n "$ISO_SCAN_PATH" ] && [ -f "$DEVICE_MNT$ISO_SCAN_PATH" ] ; then
+      echo -e "  Found ISO image \\e[94m$ISO_SCAN_PATH\\e[0m on device \\e[31m$DEVICE\\e[0m."
+      
+      mkdir -p /tmp/mnt/iso
+      ISO_MNT=/tmp/mnt/iso
+      
+      LOOP_ISO=$(losetup -f)
+      losetup $LOOP_ISO "$DEVICE_MNT$ISO_SCAN_PATH"
+      mount $LOOP_ISO $ISO_MNT -o ro
+      
+      if [ -f "$ISO_MNT/rootfs.squashfs" ] ; then
+        echo -e "  Found \\e[94m/rootfs.squashfs\\e[0m inside ISO."
+        
+        mkdir -p /tmp/mnt/image
+        IMAGE_MNT=/tmp/mnt/image
+
+        LOOP_DEVICE=$(losetup -f)
+        losetup $LOOP_DEVICE $ISO_MNT/rootfs.squashfs
+        mount $LOOP_DEVICE $IMAGE_MNT -t squashfs
+        OUT=$?
+        if [ ! "$OUT" = "0" ] ; then
+          echo -e "  \\e[31mMount failed (squashfs).\\e[0m"
+        fi
+        
+        OVERLAY_DIR=$IMAGE_MNT
+        OVERLAY_MNT=$IMAGE_MNT
+        UPPER_DIR=$DEFAULT_UPPER_DIR
+        WORK_DIR=$DEFAULT_WORK_DIR
+      else
+        echo -e "  \\e[31mNo rootfs.squashfs inside ISO.\\e[0m"
+        umount $ISO_MNT 2>/dev/null
+        losetup -d $LOOP_ISO 2>/dev/null
+      fi
+
+    # --- ORIGINAL: Standard Live USB/CD Logic ---
+    elif [ -f $DEVICE_MNT/rootfs.squashfs ] ; then
       #image
       echo -e "  Found \\e[94m/rootfs.squashfs\\e[0m image on device \\e[31m$DEVICE\\e[0m."
 

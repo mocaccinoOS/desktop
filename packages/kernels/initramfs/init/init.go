@@ -28,6 +28,8 @@ var (
 		"scsi_mod", "usb_common", "ehci_hcd", "uhci_hcd", "ohci_hcd",
 		"ehci_pci", "xhci_pci", "xhci_hcd", "virtio_blk", "virtio_pci",
 		"part_msdos", "usbms", "usbhid", "hid-generic", "vfat", "nls_iso8859_1", "nls_cp437",
+		// Added for broader ISO loopback boot support:
+        "exfat", "ntfs3", "ntfs",
 	}
 
 	dirs = []string{"/mnt", "/run"}
