@@ -6,7 +6,7 @@ packages:
     git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
     golang_version: "1.20.14"
     arch: "amd64"
-    description: "Initial RAM filesystem (initramfs) for the Long-Term Support (LTS) Linux kernel, providing the essential drivers, modules, and scripts required to mount the root filesystem during the early boot phase."
+    description: "Live environment initramfs for the MocaccinoOS LTS kernel. Includes the specialized tooling and scripts required to bootstrap the OS from live USBs, CDs, or GRUB loopback ISOs. Not intended for installed systems, which generate their own initramfs locally."
     labels:
       autobump.revdeps: "false"
       autobump.string_replace: '{ "prefix": "" }'
@@ -24,7 +24,7 @@ packages:
     git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
     golang_version: "1.20.14"
     arch: "amd64"
-    description: "Initial RAM filesystem (initramfs) for the stable Linux kernel, containing necessary utilities and storage drivers to handle early system initialization and root device discovery."
+    description: "Live environment initramfs for the MocaccinoOS stable kernel. Includes the specialized tooling and scripts required to bootstrap the OS from live USBs, CDs, or GRUB loopback ISOs. Not intended for installed systems, which generate their own initramfs locally."
     labels:
       autobump.revdeps: "false"
       autobump.string_replace: '{ "prefix": "" }'
