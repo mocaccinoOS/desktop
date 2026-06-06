@@ -12,7 +12,7 @@ labels:
   description: "Cross platform Make"
 requires:
   - category: "layers"
-    name: "system-sys-fs"
+    name: "system-x"
     version: ">=0"
 provides:
   - name: cmake

@@ -12,6 +12,3 @@ requires:
 - category: "layers"
   name: "system-x"
   version: ">=0"
-- category: "devel"
-  name: "linux-headers"
-  version: ">=0"
