@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: "0.20260606"
+version: 0.20260606+1
 gcc_version: "15"
 python_version: "3.13"
 uri:
@@ -1178,6 +1178,9 @@ provides:
   - name: dracut
     category: sys-kernel
     version: ">=0"
+  - name: linux-headers
+    category: sys-kernel
+    version: '>=0'
   - name: binutils-libs
     category: sys-libs
     version: ">=0"
@@ -1259,6 +1262,9 @@ provides:
   - name: openssh
     category: virtual
     version: ">=0"
+  - name: os-headers
+    category: virtual
+    version: '>=0'
   - name: package-manager
     category: virtual
     version: ">=0"
