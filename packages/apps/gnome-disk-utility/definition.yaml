@@ -1,6 +1,6 @@
 category: "apps"
 name: "gnome-disk-utility"
-version: 46.1-r1+77
+version: 46.1-r1+78
 uri:
   - https://wiki.gnome.org/Apps/Disks
 license: "GPL-2+"
@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     sys-apps/gnome-disk-utility
+  appstream.id: "org.gnome.DiskUtility"
 provides:
   - name: gnome-disk-utility
     category: sys-apps

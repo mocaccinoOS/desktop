@@ -1,6 +1,6 @@
 category: "apps"
 name: "blueman"
-version: 2.4.6+1
+version: 2.4.6+2
 uri:
   - https://github.com/blueman-project/blueman
 license: "GPL-3+ GPL-2"
@@ -10,6 +10,7 @@ labels:
   emerge.packages: >-
     net-wireless/blueman
   description: "Simple and intuitive GTK+ Bluetooth Manager"
+  appstream.id: "org.blueman.project"
 provides:
   - name: blueman
     category: net-wireless

@@ -1,6 +1,6 @@
 category: "apps"
 name: "xarchiver"
-version: 0.5.4.26+29
+version: 0.5.4.26+30
 uri:
   - https://github.com/ib/xarchiver
 license: "GPL-2"
@@ -10,6 +10,7 @@ labels:
   emerge.packages: >-
     app-arch/xarchiver
   description: "A GTK+ archive manager that can be used with Thunar"
+  appstream.id: "org.xfce.xarchiver"
 provides:
   - name: xarchiver
     category: app-arch

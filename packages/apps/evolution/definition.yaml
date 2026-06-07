@@ -1,6 +1,6 @@
 category: "apps"
 name: "evolution"
-version: 3.58.3+7
+version: 3.58.3+8
 uri:
   - https://wiki.gnome.org/Apps/Evolution
 license: "LGPL-3"
@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     mail-client/evolution
+  appstream.id: "org.gnome.Evolution"
 provides:
   - name: evolution
     category: mail-client

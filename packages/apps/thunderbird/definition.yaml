@@ -1,6 +1,6 @@
 category: "apps"
 name: "thunderbird"
-version: 151.0+1
+version: 151.0+2
 uri:
   - https://www.thunderbird.net
 license: "MPL-2.0 GPL-2 LGPL-2.1"
@@ -10,6 +10,7 @@ labels:
   emerge.packages: >-
     mail-client/thunderbird-bin
   description: "Thunderbird Mail Client"
+  appstream.id: "org.mozilla.Thunderbird"
 provides:
   - name: thunderbird-bin
     category: mail-client

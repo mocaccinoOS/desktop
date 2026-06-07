@@ -1,6 +1,6 @@
 category: "apps"
 name: "gparted"
-version: 1.7.0+7
+version: 1.7.0+8
 uri:
   - https://gparted.org
 license: "GPL-2+ FDL-1.2+"
@@ -10,6 +10,7 @@ labels:
   emerge.packages: >-
     sys-block/gparted
   description: "Partition editor for graphically managing your disk partitions"
+  appstream.id: "org.gnome.gparted"
 provides:
   - name: gparted
     category: sys-block
