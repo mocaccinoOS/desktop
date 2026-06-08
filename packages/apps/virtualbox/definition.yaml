@@ -1,6 +1,6 @@
 category: "apps"
 name: "virtualbox"
-version: 7.2.6-r1+16
+version: "7.2.8"
 uri:
   - https://www.virtualbox.org
 license: "GPL-2"
@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     app-emulation/virtualbox
+  appstream.id: "org.virtualbox.VirtualBox"
 requires:
   - category: "layers"
     name: "qt"

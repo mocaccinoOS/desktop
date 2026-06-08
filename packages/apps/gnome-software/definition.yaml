@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "3"
   emerge.packages: >-
     gnome-extra/gnome-software
+  appstream.id: "org.gnome.Software"
 provides:
   - name: gnome-software
     category: gnome-extra

@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     app-admin/calamares
+  appstream.id: "net.calamares.calamares"
 requires:
   - category: "entity"
     name: "vboxusers"

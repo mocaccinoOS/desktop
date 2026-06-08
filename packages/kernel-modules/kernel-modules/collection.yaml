@@ -60,7 +60,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.2.6+16
+    version: "7.2.8"
     uri:
       - https://www.virtualbox.org
     license: "GPL-3 LGPL-2.1+ MIT"
@@ -101,7 +101,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.2.6-r2+16
+    version: "7.2.8"
     uri:
       - https://www.virtualbox.org
     license: "GPL-3"
@@ -310,7 +310,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 7.2.6-r2+16
+    version: "7.2.8"
     lts: false
     emerge:
       jobs: "3"

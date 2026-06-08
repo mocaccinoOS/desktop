@@ -1,6 +1,6 @@
 category: "apps"
 name: "discover"
-version: 6.6.4+7
+version: "6.6.5-r1"
 uri:
   - https://userbase.kde.org/Discover
 license: "GPL-2"
@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "3"
   emerge.packages: >-
     dev-libs/appstream kde-plasma/discover:6 kde-plasma/flatpak-kcm:6
+  appstream.id: "org.kde.discover"
 provides:
   - name: qtwebview
     category: dev-qt

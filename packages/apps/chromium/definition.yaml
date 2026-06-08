@@ -9,6 +9,7 @@ labels:
   emerge.jobs: "1"
   emerge.packages: >-
     www-client/chromium
+  appstream.id: "chromium-browser"
 provides:
   - name: gn
     category: dev-build

@@ -10,6 +10,7 @@ labels:
   emerge.packages: >-
     mail-client/geary
   description: "A lightweight, easy-to-use, feature-rich email client"
+  appstream.id: "org.gnome.Geary"
 provides:
   - name: geary
     category: mail-client
