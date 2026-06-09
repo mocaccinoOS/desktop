@@ -8,7 +8,7 @@ description: "Desktop application for managing systemd services"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    sys-apps/systemd-pilot dev-python/keyring dev-python/paramiko dev-python/pynacl dev-python/rich
+    sys-apps/systemd-pilot dev-python/keyring dev-python/paramiko dev-python/pynacl
   description: "Desktop application for managing systemd services"
 provides:
   - name: keyring
@@ -18,9 +18,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pynacl
-    category: dev-python
-    version: '>=0'
-  - name: rich
     category: dev-python
     version: '>=0'
   - name: systemd-pilot
