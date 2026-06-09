@@ -8,6 +8,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
+- install -Dm755 files/startlxqtwayland-labwc /usr/bin/startlxqtwayland-labwc
 - install -Dm644 files/lxqt-wayland.desktop /usr/share/wayland-sessions/lxqt-wayland.desktop
 # set default style
 - install -Dm644 files/lxqt.conf /etc/xdg/lxqt/lxqt.conf

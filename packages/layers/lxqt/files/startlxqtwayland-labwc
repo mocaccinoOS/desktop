@@ -1,0 +1,21 @@
+#!/bin/sh
+
+export XDG_SESSION_TYPE=wayland
+export QT_QPA_PLATFORM=wayland
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=0
+export XDG_CURRENT_DESKTOP=LXQt
+
+# Start labwc and wait for its socket to appear
+labwc &
+LABWC_PID=$!
+
+# Wait for the Wayland socket (default: wayland-0 or wayland-1)
+for i in $(seq 1 20); do
+    WAYLAND_DISPLAY=$(ls /run/user/$(id -u)/wayland-* 2>/dev/null | head -1 | xargs basename)
+    [ -n "$WAYLAND_DISPLAY" ] && break
+    sleep 0.1
+done
+
+export WAYLAND_DISPLAY
+
+exec lxqt-session
