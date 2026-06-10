@@ -1,2 +1,2 @@
 dev-cpp/sdbus-c++ ~amd64
-gui-apps/noctalia ~amd64
+=gui-apps/noctalia-5.0.0_pre20260531 **
