@@ -1,0 +1,19 @@
+category: "apps"
+name: "noctalia"
+version: "5.0.0_pre20260531"
+uri:
+  - https://noctalia.dev
+license: "MIT"
+description: "A lightweight Wayland shell and bar built directly on Wayland + OpenGL ES"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    gui-apps/noctalia
+provides:
+  - name: noctalia
+    category: gui-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
