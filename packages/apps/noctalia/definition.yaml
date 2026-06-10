@@ -1,6 +1,6 @@
 category: "apps"
 name: "noctalia"
-version: "4.7.7"
+version: 4.7.7+1
 uri:
   - https://noctalia.dev
 license: "MIT"
