@@ -1,0 +1,2 @@
+# No need to pull in dev-cpp/cpptrace ( this is keyworded ~amd64 )
+gui-apps/noctalia-qs -crash-handler
