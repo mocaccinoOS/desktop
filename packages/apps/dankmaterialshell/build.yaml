@@ -10,6 +10,7 @@ prelude:
 - eselect repository enable guru
 - emaint sync -r mocaccino-overlay
 - emaint sync -r guru
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove mocaccino-overlay
