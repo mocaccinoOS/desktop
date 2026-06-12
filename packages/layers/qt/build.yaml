@@ -40,6 +40,8 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+# * Checking for at least 60 GiB RAM ... Happens since 6.11.1
+- mkdir -p /etc/portage/env /etc/portage/package.env && echo 'CHECKREQS_DONOTHING=1' > /etc/portage/env/qtwebengine && echo 'dev-qt/qtwebengine qtwebengine' > /etc/portage/package.env/qtwebengine
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
