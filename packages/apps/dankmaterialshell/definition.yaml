@@ -7,9 +7,12 @@ license: "MIT"
 description: "Desktop shell for wayland compositors built with Quickshell"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay"
+  emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay gui-apps/quickshell::guru"
 provides:
   - name: dankmaterialshell
+    category: gui-apps
+    version: '>=0'
+  - name: quickshell
     category: gui-apps
     version: '>=0'
 requires:

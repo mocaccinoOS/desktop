@@ -7,10 +7,13 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable mocaccino-overlay
+- eselect repository enable guru
 - emaint sync -r mocaccino-overlay
+- emaint sync -r guru
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove mocaccino-overlay
+- eselect repository remove guru
 - emerge -C app-eselect/eselect-repository
 requires:
 - category: "layers"
