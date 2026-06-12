@@ -1,5 +1,6 @@
 excludes:
 {{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
 env:
 {{ template "portage_env" . }}
 prelude:
