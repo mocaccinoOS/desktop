@@ -1,4 +1,4 @@
-dev-libs/qcoro
+dev-libs/qcoro qml
 kde-apps/kio-extras kf6compat mtp samba taglib
 kde-frameworks/kconfig qml
 kde-frameworks/kfilemetadata taglib
