@@ -1,0 +1,19 @@
+category: "apps"
+name: "xwayland-satellite"
+version: "0.8.1"
+uri:
+  - https://github.com/Supreeeme/xwayland-satellite
+license: "MPL-2.0 Apache-2.0 BSD ISC MIT Unicode-DFS-2016 ZLIB"
+description: "Xwayland outside your Wayland"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    gui-apps/xwayland-satellite::guru
+provides:
+  - name: xwayland-satellite
+    category: gui-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
