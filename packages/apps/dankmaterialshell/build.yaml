@@ -1,0 +1,18 @@
+excludes:
+{{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
+env:
+{{ template "portage_env" . }}
+prelude:
+{{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable mocaccino-overlay
+- emaint sync -r mocaccino-overlay
+steps:
+{{ template "portage_build" . }}
+- eselect repository remove mocaccino-overlay
+- emerge -C app-eselect/eselect-repository
+requires:
+- category: "layers"
+  name: "kde-common"
+  version: ">=0"

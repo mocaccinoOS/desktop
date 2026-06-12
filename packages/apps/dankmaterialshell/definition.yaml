@@ -1,0 +1,18 @@
+category: "apps"
+name: "dankmaterialshell"
+version: "1.4.6-r1"
+uri:
+  - https://github.com/AvengeMedia/DankMaterialShell
+license: "MIT"
+description: "Desktop shell for wayland compositors built with Quickshell"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay"
+provides:
+  - name: dankmaterialshell
+    category: gui-apps
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "kde-common"
+    version: ">=0"
