@@ -1,6 +1,6 @@
 category: "apps"
 name: "blueman"
-version: 2.4.6+2
+version: 2.4.6+3
 uri:
   - https://github.com/blueman-project/blueman
 license: "GPL-3+ GPL-2"

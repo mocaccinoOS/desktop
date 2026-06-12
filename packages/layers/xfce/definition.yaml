@@ -1,6 +1,6 @@
 category: "layers"
 name: "xfce"
-version: 4.20.4+5
+version: 4.20.4+6
 uri:
   - https://xfce.org
 license: "GPL-2+"

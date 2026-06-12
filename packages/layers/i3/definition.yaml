@@ -1,6 +1,6 @@
 category: "layers"
 name: "i3"
-version: 4.24+65
+version: 4.24+66
 uri:
   - https://i3wm.org
 license: "BSD"
