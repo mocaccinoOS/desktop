@@ -15,9 +15,6 @@ provides:
   - name: libdwarf
     category: dev-libs
     version: '>=0'
-  - name: oniguruma
-    category: dev-libs
-    version: '>=0'  
   - name: dankmaterialshell
     category: gui-apps
     version: '>=0'
