@@ -1,6 +1,6 @@
 category: "apps"
 name: "dankmaterialshell"
-version: "1.4.6-r1"
+version: 1.4.6-r1+1
 uri:
   - https://github.com/AvengeMedia/DankMaterialShell
 license: "MIT"
@@ -15,6 +15,9 @@ provides:
   - name: libdwarf
     category: dev-libs
     version: '>=0'
+  - name: oniguruma
+    category: dev-libs
+    version: '>=0'  
   - name: dankmaterialshell
     category: gui-apps
     version: '>=0'
@@ -24,4 +27,7 @@ provides:
 requires:
   - category: "layers"
     name: "kde-common"
+    version: ">=0"
+  - category: "utils"
+    name: "jq"
     version: ">=0"

@@ -5,6 +5,7 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
+- emerge -1 app-misc/jq
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable mocaccino-overlay
 - eselect repository enable guru
