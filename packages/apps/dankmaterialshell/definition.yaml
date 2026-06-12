@@ -1,21 +1,18 @@
 category: "apps"
 name: "dankmaterialshell"
-version: 1.4.6-r1+1
+version: 1.4.6-r1+2
 uri:
   - https://github.com/AvengeMedia/DankMaterialShell
 license: "MIT"
 description: "Desktop shell for wayland compositors built with Quickshell"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay gui-apps/quickshell::guru"
+  emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay gui-apps/dgop::guru gui-apps/quickshell::guru"
 provides:
-  - name: cpptrace
-    category: dev-cpp
-    version: '>=0'
-  - name: libdwarf
-    category: dev-libs
-    version: '>=0'
   - name: dankmaterialshell
+    category: gui-apps
+    version: '>=0'
+  - name: dgop
     category: gui-apps
     version: '>=0'
   - name: quickshell
