@@ -9,6 +9,9 @@ labels:
   emerge.jobs: "1"
   emerge.packages: "gui-apps/dankmaterialshell::mocaccino-overlay gui-apps/quickshell::guru"
 provides:
+  - name: cpptrace
+    category: dev-cpp
+    version: '>=0'
   - name: dankmaterialshell
     category: gui-apps
     version: '>=0'
