@@ -12,6 +12,9 @@ provides:
   - name: cpptrace
     category: dev-cpp
     version: '>=0'
+  - name: libdwarf
+    category: dev-libs
+    version: '>=0'
   - name: dankmaterialshell
     category: gui-apps
     version: '>=0'

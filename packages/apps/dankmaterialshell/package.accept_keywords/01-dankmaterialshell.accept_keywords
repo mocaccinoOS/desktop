@@ -1,3 +1,4 @@
 dev-cpp/cpptrace ~amd64
+dev-libs/libdwarf ~amd64
 gui-apps/dankmaterialshell ~amd64
 gui-apps/quickshell ~amd64
