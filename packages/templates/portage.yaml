@@ -68,10 +68,7 @@
 # -----------------------------
 # Clears compiler cache to avoid leaking build artifacts into final image.
 # Only runs if ccache exists in PATH.
-- |
-  if command -v ccache >/dev/null 2>&1; then
-    CCACHE_DIR=/var/cache/ccache ccache -C || true
-  fi
+- if command -v ccache >/dev/null 2>&1; then env CCACHE_DIR=/var/cache/ccache ccache -C || true; fi
 
 # -----------------------------
 # Python bytecode cleanup
