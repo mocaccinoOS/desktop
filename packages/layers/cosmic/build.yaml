@@ -15,6 +15,7 @@ steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
+{{ template "housekeeping" . }}
 requires:
 - category: "layers"
   name: "gnome-common"

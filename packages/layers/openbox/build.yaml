@@ -6,6 +6,7 @@ prelude:
 {{ template "portage_prelude_build" . }}
 steps:
 {{ template "portage_build" . }}
+{{ template "housekeeping" . }}
 requires:
 - category: "layers"
   name: "X"

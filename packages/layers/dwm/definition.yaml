@@ -1,6 +1,6 @@
 category: "layers"
 name: "dwm"
-version: 6.8+14
+version: 6.8+15
 uri:
   - https://dwm.suckless.org
 license: "MIT"

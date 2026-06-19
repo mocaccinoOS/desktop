@@ -10,6 +10,7 @@ steps:
 - touch /var/lib/gdm/.config/.keep
 {{ template "portage_build_gentoo_binary" . }}
 - chown -R 32:32 /var/lib/gdm
+{{ template "housekeeping" . }}
 requires:
 - category: "layers"
   name: "gnome-common"

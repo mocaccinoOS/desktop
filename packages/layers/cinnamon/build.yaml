@@ -30,6 +30,7 @@ steps:
 - eselect repository remove haarp
 - eselect repository remove mocaccino-overlay
 - emerge -C app-eselect/eselect-repository
+{{ template "housekeeping" . }}
 requires:
 - category: "layers"
   name: "gnome-common"
