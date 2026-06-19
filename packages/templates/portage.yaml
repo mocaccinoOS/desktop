@@ -81,4 +81,14 @@
 - find /usr -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
 - find /usr -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete 2>/dev/null || true
 
+# -----------------------------
+# Python test directories cleanup (optional runtime slimming)
+# -----------------------------
+# Removes embedded test suites shipped inside site-packages.
+# These are not required for runtime execution and are typically used only for development/testing.
+# WARNING: some packages may include runtime helpers in test modules (rare).
+- find /usr/lib/python* /usr/share \
+    -type d \( -name test -o -name tests \) \
+    -path '*/site-packages/*' -prune -exec rm -rf {} + 2>/dev/null || true
+
 {{end}}
