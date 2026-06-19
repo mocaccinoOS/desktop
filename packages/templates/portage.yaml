@@ -87,7 +87,7 @@
 # Removes test suites only inside Python site-packages.
 # This avoids touching system /usr/share tests or other packages.
 # Intended for runtime images only (not dev environments).
-- find /usr/lib/python*/*/site-packages \
+- find /usr/lib/python*/site-packages /usr/lib/python*/*/site-packages \
     -type d \( -name test -o -name tests \) \
     -prune -exec rm -rf {} + 2>/dev/null || true
 
@@ -109,5 +109,5 @@
 - find /usr/lib*/perl5 /usr/lib64/perl5 \
     -type f -name '.packlist' \
     -delete 2>/dev/null || true
-    
+
 {{end}}
