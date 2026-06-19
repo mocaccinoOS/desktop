@@ -98,5 +98,4 @@
 # These are used for development/build systems, not runtime execution.
 # Safe to remove in final runtime images.
 - find /usr -type d -name '*.egg-info' -prune -exec rm -rf {} + 2>/dev/null || true
-
 {{end}}
