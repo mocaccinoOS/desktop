@@ -13,8 +13,7 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
-# cleanup ccache
-- CCACHE_DIR=/var/cache/ccache/ ccache -C
+{{ template "housekeeping" . }}
 requires:
 - category: "buildbase"
   name: "X"

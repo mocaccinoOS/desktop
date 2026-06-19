@@ -60,3 +60,25 @@
 - if [ -d /var/cache/binhost/ ] && [ ! -z "$(ls -A /var/cache/binhost/)" ]; then rm -r /var/cache/binhost/*; fi
 - etc-update -q --automode -5
 {{end}}
+
+{{ define "housekeeping" }}
+
+# -----------------------------
+# ccache cleanup (optional)
+# -----------------------------
+# Clears compiler cache to avoid leaking build artifacts into final image.
+# Only runs if ccache exists in PATH.
+- |
+  if command -v ccache >/dev/null 2>&1; then
+    CCACHE_DIR=/var/cache/ccache ccache -C || true
+  fi
+
+# -----------------------------
+# Python bytecode cleanup
+# -----------------------------
+# Removes __pycache__ directories and compiled Python bytecode.
+# These are runtime-generated optimizations and will be regenerated if needed.
+- find /usr -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+- find /usr -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete 2>/dev/null || true
+
+{{end}}
