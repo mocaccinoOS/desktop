@@ -98,4 +98,16 @@
 # These are used for development/build systems, not runtime execution.
 # Safe to remove in final runtime images.
 - find /usr -type d -name '*.egg-info' -prune -exec rm -rf {} + 2>/dev/null || true
+
+# -----------------------------
+# Perl packaging metadata cleanup (.packlist)
+# -----------------------------
+# Removes ExtUtils installation bookkeeping files.
+# These are only used for Perl module install/uninstall tracking
+# and are not required at runtime.
+# Safe for runtime images.
+- find /usr/lib*/perl5 /usr/lib64/perl5 \
+    -type f -name '.packlist' \
+    -delete 2>/dev/null || true
+    
 {{end}}
