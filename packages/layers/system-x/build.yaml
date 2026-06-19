@@ -83,7 +83,6 @@ excludes:
 - ^/luetbuild
 - ^/usr/portage
 - ^/usr/lib/os-release
-- ^/usr/lib/python{{.Values.python_version}}/test
 
 # GCC split
 - ^/etc/env.d/04gcc-x86_64-pc-linux-gnu
