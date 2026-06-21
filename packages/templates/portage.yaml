@@ -17,6 +17,10 @@
 - ^/usr/lib64/cmake
 - ^/luetbuild
 - ^/tmp
+# Python bytecode
+- ^/usr/lib/python.*/__pycache__
+- ^/usr/lib/python.*/.*\.pyc$
+- ^/usr/lib/python.*/.*\.pyo$
 {{end}}
 
 {{ define "devel_excludes" }}
@@ -69,14 +73,6 @@
 # Clears compiler cache to avoid leaking build artifacts into final image.
 # Only runs if ccache exists in PATH.
 - if command -v ccache >/dev/null 2>&1; then env CCACHE_DIR=/var/cache/ccache ccache -C || true; fi
-
-# -----------------------------
-# Python bytecode cleanup
-# -----------------------------
-# Removes __pycache__ directories and compiled Python bytecode.
-# These are runtime-generated optimizations and will be regenerated if needed.
-- find /usr -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
-- find /usr -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete 2>/dev/null || true
 
 # -----------------------------
 # Python test directories cleanup
