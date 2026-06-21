@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 26.06+1
+version: 26.06+2
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"

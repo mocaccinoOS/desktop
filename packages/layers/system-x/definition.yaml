@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: "0.20260619"
+version: "0.20260621"
 gcc_version: "15"
 python_version: "3.13"
 uri:
