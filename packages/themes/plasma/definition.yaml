@@ -1,0 +1,14 @@
+category: "themes"
+name: "plasma"
+version: "26.06"
+labels:
+requires:
+  - category: "layers"
+    name: "plasma"
+    version: ">=0"
+  - category: "system"
+    name: "mocaccino-icons"
+    version: ">=0"
+  - name: "mocaccino-wallpaper"
+    category: "system"
+    version: ">=0"

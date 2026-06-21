@@ -1,0 +1,3 @@
+image: "alpine"
+steps:
+- sh files/apply-branding.sh
