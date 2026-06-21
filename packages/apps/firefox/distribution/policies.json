@@ -1,0 +1,24 @@
+{
+  "policies": {
+    "DisableAppUpdate": true,
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "Qwant",
+          "URLTemplate": "https://www.qwant.com/?q={searchTerms}&client=mocaccino",
+          "SuggestURLTemplate": "https://api.qwant.com/v3/suggest/?q={searchTerms}&lang=en_US",
+          "IconURL": "https://www.qwant.com/favicon.ico",
+          "Alias": "@qwant"
+        },
+        {
+          "Name": "Ecosia",
+          "URLTemplate": "https://www.ecosia.org/search?q={searchTerms}&addon=mocaccino",
+          "SuggestURLTemplate": "https://ac.ecosia.org/autocomplete?q={searchTerms}&type=list",
+          "IconURL": "https://www.ecosia.org/favicon.ico",
+          "Alias": "@ecosia"
+        }
+      ],
+      "Default": "DuckDuckGo"
+    }
+  }
+}
