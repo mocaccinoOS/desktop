@@ -61,7 +61,7 @@ EOF
 
   # Select icon based on light/dark variant
   if [ "$suffix" = "-dark" ]; then
-    icon="/usr/share/icons/mOS-icons/mOS_outlined_w.png"
+    icon="/usr/share/icons/mOS-icons/mOS_outlined_hl_w.png"
   else
     icon="/usr/share/icons/mOS-icons/mOS_outlined_hl.png"
   fi
