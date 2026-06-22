@@ -82,9 +82,13 @@ EOF
   ln -sf "${icon}" "${dir}/start-here-kde.svg"
 done
 
+# Install wallpaper layout script into both Look and Feel variants
+for variant in org.mocaccino.desktop org.mocaccino.desktop.dark; do
+  install -Dm644 files/lookandfeel/org.mocaccino.desktop/contents/layouts/org.kde.plasma.desktop-layout.js \
+    /usr/share/plasma/look-and-feel/${variant}/contents/layouts/org.kde.plasma.desktop-layout.js
+done
+
 # Apply MocaccinoOS theme as system-wide default
 install -Dm644 files/kdeglobals /etc/xdg/kdeglobals
-
-# TODO: wallpaper is still handled through a file in skel
 
 
