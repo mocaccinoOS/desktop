@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "info@mocaccino.org",
+                "Name": "MocaccinoOS"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "Description": "MocaccinoOS Plasma theme",
+        "EnabledByDefault": true,
+        "Id": "org.mocaccino.desktop",
+        "License": "GPL-2.0",
+        "Name": "MocaccinoOS",
+        "Version": "1.0"
+    }
+}
