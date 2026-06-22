@@ -61,7 +61,7 @@ EOF
 
   # Select icon based on light/dark variant
   if [ "$suffix" = "-dark" ]; then
-    icon="/usr/share/icons/mOS-icons/mOS_outlined_hl_w.png"
+    icon="/usr/share/icons/mOS-icons/mOS_outlined_w.png"
   else
     icon="/usr/share/icons/mOS-icons/mOS_outlined_hl.png"
   fi
@@ -81,6 +81,9 @@ EOF
   ln -sf "${icon}" "${dir}/start-here-kde-symbolic.svg"
   ln -sf "${icon}" "${dir}/start-here-kde.svg"
 done
+
+# Apply MocaccinoOS theme as system-wide default
+install -Dm644 files/kdeglobals /etc/xdg/kdeglobals
 
 # TODO: wallpaper is still handled through a file in skel
 
