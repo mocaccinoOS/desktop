@@ -8,11 +8,11 @@
             }
         ],
         "Category": "Plasma Look And Feel",
-        "Description": "MocaccinoOS Light Plasma theme",
+        "Description": "MocaccinoOS Dark Plasma theme",
         "EnabledByDefault": true,
-        "Id": "org.mocaccino.desktop",
+        "Id": "org.mocaccino.desktop.dark",
         "License": "GPL-2.0",
-        "Name": "MocaccinoOS",
+        "Name": "MocaccinoOS Dark",
         "Version": "1.0"
     }
 }

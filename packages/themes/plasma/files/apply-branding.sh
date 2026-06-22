@@ -1,10 +1,12 @@
 #!/bin/sh
 
-# Install Look and Feel package
-install -Dm644 files/lookandfeel/org.mocaccino.desktop/metadata.json \
-  /usr/share/plasma/look-and-feel/org.mocaccino.desktop/metadata.json
-install -Dm644 files/lookandfeel/org.mocaccino.desktop/contents/defaults \
-  /usr/share/plasma/look-and-feel/org.mocaccino.desktop/contents/defaults
+# Install Look and Feel packages (Light and Dark)
+for theme in org.mocaccino.desktop org.mocaccino.desktop.dark; do
+  install -Dm644 files/lookandfeel/${theme}/metadata.json \
+    /usr/share/plasma/look-and-feel/${theme}/metadata.json
+  install -Dm644 files/lookandfeel/${theme}/contents/defaults \
+    /usr/share/plasma/look-and-feel/${theme}/contents/defaults
+done
 
 # Create inherited icon themes for MocaccinoOS branding
 for suffix in "" "-dark"; do

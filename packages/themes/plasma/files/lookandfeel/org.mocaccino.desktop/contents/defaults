@@ -1,5 +1,8 @@
+[kdeglobals][General]
+ColorScheme=BreezeLight
+
 [kdeglobals][Icons]
-Theme=mocaccino-breeze-dark
+Theme=mocaccino-breeze
 
 [plasmarc][Theme]
-name=breeze-dark
+name=breeze
