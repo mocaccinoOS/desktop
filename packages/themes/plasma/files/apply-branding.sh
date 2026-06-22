@@ -6,6 +6,10 @@ for theme in org.mocaccino.desktop org.mocaccino.desktop.dark; do
     /usr/share/plasma/look-and-feel/${theme}/metadata.json
   install -Dm644 files/lookandfeel/${theme}/contents/defaults \
     /usr/share/plasma/look-and-feel/${theme}/contents/defaults
+  if [ -f files/lookandfeel/${theme}/contents/previews/preview.png ]; then
+    install -Dm644 files/lookandfeel/${theme}/contents/previews/preview.png \
+      /usr/share/plasma/look-and-feel/${theme}/contents/previews/preview.png
+  fi
 done
 
 # Create inherited icon themes for MocaccinoOS branding
@@ -55,26 +59,22 @@ Context=Places
 Type=Scalable
 EOF
 
-  # Symlinks for start menu icons
+  # Install the custom start menu icons (using files/start-here-symbolic.svg)
   for size in 16 22 24; do
     dir="${base_dir}/places/${size}"
     install -d "$dir"
-    ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
-      "${dir}/start-here-symbolic.svg"
-    ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
-      "${dir}/start-here-kde-symbolic.svg"
+    install -m644 files/start-here-symbolic.svg "${dir}/start-here-symbolic.svg"
+    install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde-symbolic.svg"
   done
 
-  # Scalable symlinks
+  # Scalable icons
   dir="${base_dir}/places/scalable"
   install -d "$dir"
-  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
-    "${dir}/start-here-symbolic.svg"
-  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
-    "${dir}/start-here-kde-symbolic.svg"
-  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
-    "${dir}/start-here-kde.svg"
+  install -m644 files/start-here-symbolic.svg "${dir}/start-here-symbolic.svg"
+  install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde-symbolic.svg"
+  install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde.svg"
 done
 
 # TODO: wallpaper is still handled through a file in skel
+
 
