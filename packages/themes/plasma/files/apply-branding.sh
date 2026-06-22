@@ -59,20 +59,27 @@ Context=Places
 Type=Scalable
 EOF
 
-  # Install the custom start menu icons (using files/start-here-symbolic.svg)
+  # Select icon based on light/dark variant
+  if [ "$suffix" = "-dark" ]; then
+    icon="/usr/share/icons/mOS-icons/mOS_outlined_w.png"
+  else
+    icon="/usr/share/icons/mOS-icons/mOS_outlined_hl.png"
+  fi
+
+  # Install the custom start menu icons as symlinks to system icons
   for size in 16 22 24; do
     dir="${base_dir}/places/${size}"
     install -d "$dir"
-    install -m644 files/start-here-symbolic.svg "${dir}/start-here-symbolic.svg"
-    install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde-symbolic.svg"
+    ln -sf "${icon}" "${dir}/start-here-symbolic.svg"
+    ln -sf "${icon}" "${dir}/start-here-kde-symbolic.svg"
   done
 
   # Scalable icons
   dir="${base_dir}/places/scalable"
   install -d "$dir"
-  install -m644 files/start-here-symbolic.svg "${dir}/start-here-symbolic.svg"
-  install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde-symbolic.svg"
-  install -m644 files/start-here-symbolic.svg "${dir}/start-here-kde.svg"
+  ln -sf "${icon}" "${dir}/start-here-symbolic.svg"
+  ln -sf "${icon}" "${dir}/start-here-kde-symbolic.svg"
+  ln -sf "${icon}" "${dir}/start-here-kde.svg"
 done
 
 # TODO: wallpaper is still handled through a file in skel
