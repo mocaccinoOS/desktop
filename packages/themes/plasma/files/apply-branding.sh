@@ -6,14 +6,73 @@ install -Dm644 files/lookandfeel/org.mocaccino.desktop/metadata.json \
 install -Dm644 files/lookandfeel/org.mocaccino.desktop/contents/defaults \
   /usr/share/plasma/look-and-feel/org.mocaccino.desktop/contents/defaults
 
-# Symlinks for start menu icon
-for theme in breeze breeze-dark; do
+# Create inherited icon themes for MocaccinoOS branding
+for suffix in "" "-dark"; do
+  theme="mocaccino-breeze${suffix}"
+  parent="breeze${suffix}"
+  name="Mocaccino Breeze"
+  [ "$suffix" = "-dark" ] && name="Mocaccino Breeze Dark"
+
+  # Base directory
+  base_dir="/usr/share/icons/${theme}"
+  install -d "${base_dir}"
+
+  # Write index.theme
+  cat <<EOF > "${base_dir}/index.theme"
+[Icon Theme]
+Name=${name}
+Comment=${name} Icon Theme
+Inherits=${parent},breeze,hicolor
+DisplayDepth=32
+LinkOverlay=overlay_link
+ZipFormat=7z
+
+# Directory list
+Directories=places/16,places/22,places/24,places/scalable
+
+[places/16]
+Size=16
+Context=Places
+Type=Fixed
+
+[places/22]
+Size=22
+Context=Places
+Type=Fixed
+
+[places/24]
+Size=24
+Context=Places
+Type=Fixed
+
+[places/scalable]
+Size=256
+MinSize=8
+MaxSize=512
+Context=Places
+Type=Scalable
+EOF
+
+  # Symlinks for start menu icons
   for size in 16 22 24; do
-    dir="/usr/share/icons/${theme}/places/${size}"
+    dir="${base_dir}/places/${size}"
     install -d "$dir"
     ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
       "${dir}/start-here-symbolic.svg"
+    ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
+      "${dir}/start-here-kde-symbolic.svg"
   done
+
+  # Scalable symlinks
+  dir="${base_dir}/places/scalable"
+  install -d "$dir"
+  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
+    "${dir}/start-here-symbolic.svg"
+  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
+    "${dir}/start-here-kde-symbolic.svg"
+  ln -sf /usr/share/icons/mOS-icons/scalable/apps/start-here-symbolic.svg \
+    "${dir}/start-here-kde.svg"
 done
 
 # TODO: wallpaper is still handled through a file in skel
+
