@@ -7,8 +7,5 @@ Theme=mocaccino-breeze-dark
 [plasmarc][Theme]
 name=breeze-dark
 
-[Desktop][org.kde.plasma.desktop]
-Wallpaper=org.kde.image
-
 [Wallpaper]
 Image=mocaccino-wallpaper
