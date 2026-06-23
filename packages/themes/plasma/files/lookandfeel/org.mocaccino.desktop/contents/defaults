@@ -5,7 +5,7 @@ ColorScheme=BreezeLight
 Theme=mocaccino-breeze
 
 [plasmarc][Theme]
-name=breeze
+name=org.mocaccino.desktop
 
 [Wallpaper]
 Image=mocaccino-wallpaper

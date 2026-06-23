@@ -5,7 +5,7 @@ ColorScheme=BreezeDark
 Theme=mocaccino-breeze-dark
 
 [plasmarc][Theme]
-name=breeze-dark
+name=org.mocaccino.desktop.dark
 
 [Wallpaper]
 Image=mocaccino-wallpaper
