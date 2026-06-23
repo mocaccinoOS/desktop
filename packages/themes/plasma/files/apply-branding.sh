@@ -10,6 +10,10 @@ for theme in org.mocaccino.desktop org.mocaccino.desktop.dark; do
     install -Dm644 files/lookandfeel/${theme}/contents/previews/preview.png \
       /usr/share/plasma/look-and-feel/${theme}/contents/previews/preview.png
   fi
+  if [ -f files/lookandfeel/${theme}/contents/previews/fullscreenpreview.jpg ]; then
+    install -Dm644 files/lookandfeel/${theme}/contents/previews/fullscreenpreview.jpg \
+      /usr/share/plasma/look-and-feel/${theme}/contents/previews/fullscreenpreview.jpg
+  fi
 done
 
 # Create inherited icon themes for MocaccinoOS branding
