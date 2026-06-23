@@ -1,6 +1,6 @@
 category: "themes"
 name: "plasma"
-version: 26.06+9
+version: 26.06+10
 labels:
 requires:
   - category: "layers"
