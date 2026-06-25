@@ -16,7 +16,8 @@ prelude:
 # Do not include rust here
 - emerge -C dev-lang/rust-bin && emerge --depclean
 # want Python 3.13
-- emerge dev-lang/python:3.13 sys-apps/portage sys-fs/cryptsetup
+- emerge dev-lang/python:3.13
+- emerge -1 sys-apps/portage sys-fs/cryptsetup
 # Remove Python 3.14
 - emerge -C dev-lang/python:3.14
 # Install our kernel-tuning-file
