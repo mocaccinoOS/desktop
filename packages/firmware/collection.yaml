@@ -1,7 +1,7 @@
 packages:
   - category: "firmware"
     name: "linux-firmware"
-    version: 20260410+1
+    version: "20260519"
     labels:
       emerge.jobs: "1"
       emerge.packages: >-
@@ -70,686 +70,686 @@ packages:
         version: '>=0'
   - category: "firmware"
     name: "3com"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary firmware binary blobs specifically for older 3Com wired network interface cards (NICs)."
   - category: "firmware"
     name: "adaptec"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Adaptec AIC-7xxx series SCSI host adapters, providing microcode required by the aic7xxx driver for legacy SCSI device operation."
   - category: "firmware"
     name: "advansys"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary microcode and firmware for older Advansys SCSI host adapters (e.g., ASC-3550, ASC-38C0800, ASC-38C1600)."
   - category: "firmware"
     name: "aeonsemi"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AeonSemi Ethernet PHY chips, enabling gigabit and multi-gig wired networking on embedded platforms and network switches."
   - category: "firmware"
     name: "airoha"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Airoha (MediaTek subsidiary) EN8811H and related 2.5G/multi-gig Ethernet PHY chips, used in network switches, routers, and embedded platforms."
   - category: "firmware"
     name: "amd"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Binary firmware for AMD x86 processors (e.g., Family 10h, 11h, 12h, 14h) for various platform and feature support files, separate from the general microcode updates."
   - category: "firmware"
     name: "amd-ucode"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Microcode updates for AMD x86 CPUs to fix hardware bugs, security vulnerabilities, and ensure system stability."
   - category: "firmware"
     name: "amdgpu"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Binary firmware for AMD Radeon Graphics Processing Units (GPUs), covering GCN, RDNA, and CDNA architectures."
   - category: "firmware"
     name: "amdnpu"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AMD NPUs (Neural Processing Units), used for on-device AI acceleration in newer AMD Ryzen AI / XDNA platforms."
   - category: "firmware"
     name: "amdtee"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for the AMD Trusted Execution Environment (TEE), required on newer AMD platforms for fTPM, secure key storage, and trusted boot flows."
   - category: "firmware"
     name: "amlogic"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Amlogic SoC subsystems including video decoders, DSPs, and co-processors, used in popular ARM SBCs and TV boxes such as Odroid and Khadas."
   - category: "firmware"
     name: "amphion"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NXP Amphion VPU (Video Processing Unit), enabling hardware-accelerated video encode and decode on i.MX8 SoCs."
   - category: "firmware"
     name: "ar3k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary firmware for Qualcomm Atheros AR3011/AR3012 Bluetooth chipsets and related devices, required by the Linux ath3k driver for the Bluetooth controller to function."
   - category: "firmware"
     name: "ath10k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary firmware for Qualcomm Atheros 802.11ac and 802.11ax Wi-Fi adapters (QCA98xx, QCA6174, QCA99xx, etc.). This firmware is loaded by the Linux ath10k driver to enable the wireless card's functionality, which includes support for newer standards like Wi-Fi 5 (802.11ac)."
   - category: "firmware"
     name: "ath11k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Qualcomm Atheros 802.11ax (Wi-Fi 6 / 6E) devices, used by the ath11k driver to support advanced high-throughput wireless adapters (e.g. QCA6390, WCN685x)."
   - category: "firmware"
     name: "ath12k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Qualcomm Atheros 802.11be (Wi-Fi 7) devices supported by the ath12k driver, enabling next-generation high-throughput wireless networking."
   - category: "firmware"
     name: "ath6k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for older Atheros AR600x series 802.11b/g/n wireless adapters, utilized by the ath6k driver to support legacy Wi-Fi standards."
   - category: "firmware"
     name: "ath9k_htc"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Atheros USB-based 802.11n adapters (e.g. AR9271, AR7010) under the ath9k_htc driver, enabling wireless support via USB interfaces."
   - category: "firmware"
     name: "atmel"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Atmel wireless and peripheral devices, including older Wi-Fi (802.11b) and microcontroller-driven USB modules."
   - category: "firmware"
     name: "atusb"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Atmel ATUSB IEEE 802.15.4 USB adapters, used in low-power wireless protocols like Zigbee or 6LoWPAN."
   - category: "firmware"
     name: "av7110"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AV7110-based digital TV / DVB devices, enabling MPEG decoding and reception functions for such tuner hardware."
   - category: "firmware"
     name: "b43"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Broadcom BCM43xx 802.11 wireless adapters, used by the b43 driver to provide wireless functionality on compatible hardware."
   - category: "firmware"
     name: "bnx2"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Broadcom NetXtreme II (bnx2) Ethernet adapters, providing necessary microcode for network interface operation."
   - category: "firmware"
     name: "bnx2x"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Broadcom NetXtreme II 10 Gb Ethernet devices (bnx2x driver), used in server and high-performance networking scenarios."
   - category: "firmware"
     name: "brcm"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Broadcom ‘brcm’ wireless devices (brcmfmac, brcmsmac), including chipsets used in laptops, Raspberry Pi, and embedded platforms."
   - category: "firmware"
     name: "cadence"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Cadence DSP / communication cores often integrated in SoCs, used in multimedia, baseband, or modem subsystems."
   - category: "firmware"
     name: "cavium"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Cavium / Marvell network, storage, or acceleration controllers (e.g. LiquidIO, OCTEON), enabling offloads and device features."
   - category: "firmware"
     name: "cirrus"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Cirrus Logic audio DSP and smart amplifier devices used in modern laptops."
   - category: "firmware"
     name: "cis"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Card Information Structure (CIS) tuples for PCMCIA/CardBus network cards, providing runtime identification and configuration data required by the Linux PCMCIA subsystem for device initialization."
   - category: "firmware"
     name: "cnm"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Chips&Media (CNM) VPU codec IP cores embedded in NXP Layerscape, Rockchip, and other SoCs for hardware video processing."
   - category: "firmware"
     name: "cxgb3"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Chelsio T3 (cxgb3) 10 Gb Ethernet adapters, enabling features such as offloads, TCP acceleration, and iSCSI."
   - category: "firmware"
     name: "cxgb4"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Chelsio T4/T5/T6 (cxgb4) Ethernet adapters supporting 10/40/100 Gb speeds, RDMA, iWARP, and advanced acceleration."
   - category: "firmware"
     name: "cypress"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Cypress / Broadcom USB and peripheral devices (e.g. Bluetooth, USB controllers), supporting their low-level microcode requirements."
   - category: "firmware"
     name: "dabusb"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for digital radio (DAB) USB devices, allowing decoding and radio signal processing under Linux."
   - category: "firmware"
     name: "dell"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware blobs for Dell-specific hardware such as docking stations, embedded controllers, and platform management devices."
   - category: "firmware"
     name: "dpaa2"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NXP DPAA2 (Data Path Acceleration Architecture) network datapath, used in embedded and network processor SoCs."
   - category: "firmware"
     name: "dsp56k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Motorola/National Semiconductor DSP56k digital signal processors, often used in embedded / audio processing applications."
   - category: "firmware"
     name: "e100"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Intel PRO/100 (e100) Ethernet adapters, supplying essential microcode for device initialization and operation."
   - category: "firmware"
     name: "emi26"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for E-MU (EMI26) and related audio / MIDI hardware, used in sound processing and synthesis devices."
   - category: "firmware"
     name: "emi62"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Emagic EMI 6|2 USB audio/audio-MIDI interface devices (USB sound card DSP + streaming control)."
   - category: "firmware"
     name: "ene-ub6250"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for ENE UB6250 / associated embedded controller devices, used for power, sensors, or thermal management."
   - category: "firmware"
     name: "go7007"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Go7007 USB video capture / TV tuner devices, enabling video decoding and hardware control."
   - category: "firmware"
     name: "HP"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for HP-specific hardware components, including docking stations, embedded controllers, and platform management devices."
   - category: "firmware"
     name: "i915"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Microcode and firmware blobs required by Intel integrated graphics (i915 driver), covering GPU initialization and display features."
   - category: "firmware"
     name: "imx"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NXP / Freescale i.MX SoC subsystems (e.g. imaging, multimedia, sensors), supporting device-specific operations."
   - category: "firmware"
     name: "inside-secure"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Inside Secure (now Rambus) EIP-series cryptographic IP cores, embedded in SoCs from NXP, Marvell, and others to accelerate encryption, hashing, and key management operations."
   - category: "firmware"
     name: "intel"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for a variety of Intel devices (network, Wi-Fi, Bluetooth, storage controllers), providing microcode and device code for hardware operation."
   - category: "firmware"
     name: "isci"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Intel Storage Controller Interface (iSCSI / RAID) devices, used by the isci driver in storage subsystems."
   - category: "firmware"
     name: "kaweth"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for KL5KUSB101-based USB Ethernet adapters (kaweth driver), enabling wired network connectivity over USB for legacy devices."
   - category: "firmware"
     name: "keyspan"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Keyspan (serial / USB) devices, providing microcode for USB-to-serial converters and peripheral adapters."
   - category: "firmware"
     name: "keyspan_pda"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Keyspan PDA-specific USB/serial devices, enabling better integration with personal digital assistants and legacy peripherals."
   - category: "firmware"
     name: "LENOVO"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Lenovo-specific hardware components such as embedded controllers, docking stations, and platform management features on Lenovo devices."
   - category: "firmware"
     name: "libertas"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell Libertas wireless devices (e.g. older 802.11b/g chipsets), used by the libertas driver for wireless connectivity."
   - category: "firmware"
     name: "liquidio"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell LiquidIO smart NIC accelerators, enabling TCP/IP offload, packet processing, and DPDK-based acceleration in server networking."
   - category: "firmware"
     name: "Lontium"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Lontium Semiconductor DisplayPort and HDMI bridge chips (e.g. LT7911EXC), used for display interface conversion in embedded and industrial platforms."
   - category: "firmware"
     name: "matrox"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Matrox video / graphics hardware, used in legacy graphics cards and display subsystems."
   - category: "firmware"
     name: "mediatek"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for MediaTek wireless, Ethernet, and power management devices, covering their microcode needs in SoCs."
   - category: "firmware"
     name: "mellanox"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NVIDIA/Mellanox network and InfiniBand adapters (ConnectX series), enabling RDMA, RoCE, and high-performance networking features."
   - category: "firmware"
     name: "meson"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Amlogic / Meson SoCs, including code for video, audio, and sensor subsystems in embedded platforms."
   - category: "firmware"
     name: "microchip"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Microchip / Atmel microcontroller-based peripherals, USB bridges, and network chips."
   - category: "firmware"
     name: "moxa"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Moxa industrial networking devices (serial / Ethernet converters), supporting embedded networking modules."
   - category: "firmware"
     name: "mrvl"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell / Marvell-based wireless and network controllers, enabling microcode for various connectivity devices."
   - category: "firmware"
     name: "mwl8k"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell / Marvell 8k-series wireless chips, used in legacy Wi-Fi adapters under the mwl8k driver."
   - category: "firmware"
     name: "mwlwifi"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Marvell WiFi (mwlwifi) adapters, supporting modern 802.11ac/ax wireless cards using Marvell chips."
   - category: "firmware"
     name: "myricom"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Myricom Myri-10G 10 Gbps network adapters used in HPC and data center environments, enabling the myri10ge driver for high-throughput, low-latency networking."
   - category: "firmware"
     name: "netronome"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Netronome packet processing / smart NIC devices, enabling programmable offloads and packet acceleration."
   - category: "firmware"
     name: "nvidia"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NVIDIA GPU and Tegra devices, covering microcode and support routines for modern graphics and compute features."
   - category: "firmware"
     name: "nvidia-gsp-570"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NVIDIA's GSP (Graphics System Processor) split out from the 570-series driver branch, covering RTX 50xx and other Blackwell/Ada GPUs. Offloads driver work from the CPU to the GPU's dedicated system processor."
   - category: "firmware"
     name: "nxp"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for NXP peripheral devices not covered by the dedicated dpaa2 or imx packages, including USB controllers, NFC chips, and miscellaneous NXP SoC co-processors."
   - category: "firmware"
     name: "ositech"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Ositech 'Jack of Diamonds' PCMCIA combo network and modem cards, required by the pcnet_cs driver for device initialization."
   - category: "firmware"
     name: "powervr"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Imagination Technologies PowerVR Series 6+ GPUs embedded in SoCs from TI KeyStone, Renesas, and others, enabling 3D acceleration and graphics features."
   - category: "firmware"
     name: "qca"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Qualcomm Atheros (QCA) devices beyond ath10k/ath11k, used in diverse networking chips and wireless SoCs."
   - category: "firmware"
     name: "qcom"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Qualcomm SoC subsystems (e.g. modem, sensors, Wi-Fi, Bluetooth) across Snapdragon and embedded platforms."
   - category: "firmware"
     name: "qed"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for QLogic / Broadcom QED network adapters, enabling offload, RDMA, and advanced NIC functionality."
   - category: "firmware"
     name: "qlogic"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for QLogic host bus adapters, FC (Fibre Channel), iSCSI, or NICs, enabling device functionality and offload features."
   - category: "firmware"
     name: "r128"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for ATI/AMD Rage 128 and R128 graphics chipsets, supporting hardware functions and display operations."
   - category: "firmware"
     name: "radeon"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AMD/ATI Radeon GPUs, including microcode blobs needed for GPU initialization, power gating, and features."
   - category: "firmware"
     name: "realtek"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek r8169-family Ethernet controllers (e.g. RTL8168e), providing NIC microcode for the r8169 driver. Wi-Fi and Bluetooth firmware is covered separately by rtlwifi, rtw88, rtw89, and rtl_bt."
   - category: "firmware"
     name: "rockchip"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Rockchip SoCs, covering peripherals like camera, multimedia, and sensor subsystems in the Rockchip platform."
   - category: "firmware"
     name: "rsi"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Redpine Signals (RSI) Wi-Fi and Bluetooth combo chipsets, used by the rsi_sdio and rsi_usb drivers for device initialization and radio operations."
   - category: "firmware"
     name: "rtl_bt"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Bluetooth firmware for Realtek devices (rtl_bt), enabling Bluetooth connectivity via Realtek chipsets."
   - category: "firmware"
     name: "rtl_nic"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek NIC / Ethernet controllers, supplying microcode needed for proper operation over wired networks."
   - category: "firmware"
     name: "rtlwifi"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek Wi-Fi chipsets (rtlwifi), enabling wireless operation across a wide range of Realtek devices."
   - category: "firmware"
     name: "rtw88"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11ac chipsets supported by the rtw88 driver, providing advanced wireless capabilities."
   - category: "firmware"
     name: "rtw89"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11be chipsets supported by the rtw89 driver."
   - category: "firmware"
     name: "sdca"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for SoundWire Device Class Audio (SDCA) devices, increasingly required for audio codec initialization on modern Intel and AMD laptop platforms."
   - category: "firmware"
     name: "slicoss"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for SLIC (Serial Line Interface Card) devices, especially for telephony / VoIP cards using OSS drivers."
   - category: "firmware"
     name: "sxg"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Alacritech SXG 10Gb Ethernet adapters, enabling hardware TCP/IP offload and acceleration features via the sxg driver."
   - category: "firmware"
     name: "tehuti"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Tehuti network controllers, which are used in certain NIC chips supporting 1/10 Gbps Ethernet."
   - category: "firmware"
     name: "ti"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Texas Instruments WiLink combo chips (wl12xx, wl18xx) and other TI peripherals, covering Wi-Fi, Bluetooth, and FM radio functionality in embedded and mobile platforms."
   - category: "firmware"
     name: "ti-connectivity"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Texas Instruments connectivity subsystems (e.g. Wi-Fi, Bluetooth, RF) in embedded SoCs."
   - category: "firmware"
     name: "ti-keystone"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for TI Keystone SoC subsystems, supporting functions like networking, accelerators, and offload engines."
   - category: "firmware"
     name: "tigon"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Broadcom / Alteon Tigon network controllers, used by older NICs for proper initialization."
   - category: "firmware"
     name: "ueagle-atm"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for UEA/LE (uEagle) ATM network cards, supporting Asynchronous Transfer Mode (ATM) networking."
   - category: "firmware"
     name: "vxge"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for 10/40 Gbps Cisco / Brocade / Exanet VXGE (10G Ethernet) devices, enabling high-speed NIC offload and features."
   - category: "firmware"
     name: "wfx"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Silicon Labs WFx series Wi-Fi modules (WF200, WFM200), used in embedded and IoT platforms for 802.11b/g/n connectivity."
   - category: "firmware"
     name: "xe"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Intel Xe graphics architecture, providing essential microcode for Arc, Alchemist, Battlemage, and other Xe-based GPUs. This firmware enables acceleration, power management, and compute features through the Xe driver stack on Linux."
   - category: "firmware"
     name: "yamaha"
-    version: 20260410+1
+    version: "20260519"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
