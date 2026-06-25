@@ -13,6 +13,8 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
+# want Pythin 3.13
+- emerge dev-lang/python:3.13 sys-apps/portage
 # Remove Python 3.14
 - emerge -C dev-lang/python:3.14
 # Install our kernel-tuning-file
