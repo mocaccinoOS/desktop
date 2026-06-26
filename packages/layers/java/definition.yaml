@@ -1,6 +1,6 @@
 category: "layers"
 name: "java"
-version: 21.0.8_p9+48
+version: 21.0.8_p9+49
 uri:
   - https://openjdk.org
 license: "GPL-2-with-classpath-exception"

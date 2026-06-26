@@ -1,6 +1,6 @@
 category: "apps"
 name: "vlc"
-version: 4.0.0_pre20260515+2
+version: 4.0.0_pre20260515+3
 uri:
   - https://www.videolan.org/vlc
 license: "LGPL-2.1 GPL-2"
