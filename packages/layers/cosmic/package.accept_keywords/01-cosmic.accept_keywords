@@ -11,6 +11,7 @@
 =cosmic-base/cosmic-initial-setup-1.1.0 ~amd64
 =cosmic-base/cosmic-launcher-1.1.0 ~amd64
 =cosmic-base/cosmic-meta-1.1.0 ~amd64
+=cosmic-base/cosmic-monitor-1.1.0 ~amd64
 =cosmic-base/cosmic-notifications-1.1.0 ~amd64
 =cosmic-base/cosmic-osd-1.1.0 ~amd64
 =cosmic-base/cosmic-panel-1.1.0 ~amd64
