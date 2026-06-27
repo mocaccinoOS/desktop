@@ -1,6 +1,6 @@
 category: "devel"
 name: "cmake"
-version: "4.3.3-r1"
+version: 4.3.3-r1+1
 uri:
   - https://cmake.org
 license: "BSD"
@@ -8,13 +8,16 @@ description: "Cross platform Make"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    dev-build/cmake
+    dev-build/cmake app-crypt/rhash
   description: "Cross platform Make"
 requires:
   - category: "layers"
     name: "system-x"
     version: ">=0"
 provides:
+  - name: app-crypt
+    category: rhash
+    version: '>=0'
   - name: cmake
     category: dev-build
     version: '>=0'
