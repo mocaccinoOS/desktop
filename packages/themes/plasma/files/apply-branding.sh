@@ -86,6 +86,12 @@ EOF
   ln -sf "${icon}" "${dir}/start-here-kde.svg"
 done
 
+# Install color schemes
+for cs in MocaccinoLight MocaccinoDark; do
+  install -Dm644 files/color-schemes/${cs}.colors \
+    /usr/share/color-schemes/${cs}.colors
+done
+
 # Apply MocaccinoOS theme as system-wide default
 install -Dm644 files/kdeglobals /etc/xdg/kdeglobals
 
