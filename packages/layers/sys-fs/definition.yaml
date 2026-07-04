@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 26.06+3
+version: "26.07"
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
