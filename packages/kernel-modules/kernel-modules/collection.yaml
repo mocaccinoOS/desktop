@@ -1,6 +1,32 @@
 packages:
   # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
+    name: "openrazer-lts"
+    version: "3.12.3"
+    uri:
+      - https://openrazer.github.io
+    license: "GPL-2+"
+    description: "Drivers and user-space daemon to control Razer devices on GNU/Linux"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - sys-apps/openrazer
+    provides:
+      - name: openrazer
+        category: sys-apps
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "gnome-common"
+        version: ">=0"
+  - category: "kernel-modules"
     name: "nvidia-drivers-lts"
     version: 595.84+3
     uri:

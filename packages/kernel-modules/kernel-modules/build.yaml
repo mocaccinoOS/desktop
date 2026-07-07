@@ -10,6 +10,9 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
 - emaint sync -r mocaccino-overlay
+{{ if contains "openrazer" .Values.name }}
+- emerge -1 x11-misc/xdotool
+{{- end}}
 {{ if contains "xone" .Values.name }}
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
