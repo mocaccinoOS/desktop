@@ -252,10 +252,9 @@ packages:
       - https://openrazer.github.io
     license: "GPL-2+"
     description: "Drivers and user-space daemon to control Razer devices on GNU/Linux"
-    lts: true
+    lts: false
     labels:
       emerge.jobs: "3"
-      lts.kernel: "true"
     emerge:
       jobs: "3"
       packages:
@@ -265,7 +264,7 @@ packages:
         category: sys-apps
         version: ">=0"
     requires:
-      - name: mocaccino-lts-full
+      - name: mocaccino-full
         category: kernel
         version: ">=0"
       - category: "layers"
