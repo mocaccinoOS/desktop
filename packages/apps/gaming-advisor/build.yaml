@@ -1,0 +1,5 @@
+image: "alpine"
+package_dir: "/package"
+prelude:
+- git clone https://codeberg.org/MocaccinoOS/mocaccino-gaming-advisor.git
+- cd mocaccino-gaming-advisor && chmod +x install.sh && ./install.sh

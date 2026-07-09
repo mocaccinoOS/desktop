@@ -1,0 +1,10 @@
+category: "apps"
+name: "gaming-advisor"
+version: "0.1"
+license: "MIT"
+description: "GTK3 desktop tool for MocaccinoOS that scans your system for common gaming-performance pitfalls and lets you apply (and revert) fixes directly from the UI."
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
+arch: "amd64"
