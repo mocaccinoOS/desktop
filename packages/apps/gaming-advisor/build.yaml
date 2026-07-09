@@ -1,5 +1,6 @@
 image: "alpine"
 package_dir: "/package"
 prelude:
+- apk update && apk add git && apk add bash
 - git clone https://codeberg.org/MocaccinoOS/mocaccino-gaming-advisor.git
 - cd mocaccino-gaming-advisor && chmod +x install.sh && ./install.sh
