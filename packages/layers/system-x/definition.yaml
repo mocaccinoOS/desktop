@@ -1,8 +1,8 @@
 category: "layers"
 name: "system-x"
-version: "0.20260704"
+version: "0.20260713"
 gcc_version: "15"
-python_version: "3.13"
+python_version: "3.14"
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
