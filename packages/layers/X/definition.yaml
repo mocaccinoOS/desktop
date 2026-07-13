@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: 26.07+2
+version: 26.07+3
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
@@ -500,6 +500,9 @@ provides:
   - name: highway
     category: dev-cpp
     version: '>=0'
+  - name: mm-common
+    category: dev-cpp
+    version: '>=0'
   - name: muParser
     category: dev-cpp
     version: '>=0'
@@ -831,6 +834,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pillow
+    category: dev-python
+    version: '>=0'
+  - name: pkg-resources
     category: dev-python
     version: '>=0'
   - name: puremagic

@@ -1,6 +1,6 @@
 category: "layers"
 name: "sys-fs"
-version: 26.07+2
+version: 26.07+3
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2)"
@@ -188,9 +188,6 @@ provides:
   - name: push
     category: app-shells
     version: '>=0'
-  - name: asciidoc
-    category: app-text
-    version: '>=0'
   - name: build-docbook-catalog
     category: app-text
     version: '>=0'
@@ -222,6 +219,9 @@ provides:
     category: dev-cpp
     version: '>=0'
   - name: eigen
+    category: dev-cpp
+    version: '>=0'
+  - name: expected
     category: dev-cpp
     version: '>=0'
   - name: lmdb
@@ -362,6 +362,75 @@ provides:
   - name: yajl
     category: dev-libs
     version: '>=0'
+  - name: Algorithm-Diff
+    category: dev-perl
+    version: '>=0'
+  - name: Class-Method-Modifiers
+    category: dev-perl
+    version: '>=0'
+  - name: Class-XSAccessor
+    category: dev-perl
+    version: '>=0'
+  - name: Crypt-RC4
+    category: dev-perl
+    version: '>=0'
+  - name: DBD-MariaDB
+    category: dev-perl
+    version: '>=0'
+  - name: DBD-SQLite
+    category: dev-perl
+    version: '>=0'
+  - name: DBI
+    category: dev-perl
+    version: '>=0'
+  - name: Digest-Perl-MD5
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-EUCJPASCII
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-HanExtra
+    category: dev-perl
+    version: '>=0'
+  - name: IO-stringy
+    category: dev-perl
+    version: '>=0'
+  - name: JSON
+    category: dev-perl
+    version: '>=0'
+  - name: JSON-XS
+    category: dev-perl
+    version: '>=0'
+  - name: Locale-gettext
+    category: dev-perl
+    version: '>=0'
+  - name: MIME-Charset
+    category: dev-perl
+    version: '>=0'
+  - name: Moo
+    category: dev-perl
+    version: '>=0'
+  - name: Net-Daemon
+    category: dev-perl
+    version: '>=0'
+  - name: Parse-Yapp
+    category: dev-perl
+    version: '>=0'
+  - name: PlRPC
+    category: dev-perl
+    version: '>=0'
+  - name: Text-CSV
+    category: dev-perl
+    version: '>=0'
+  - name: Text-CSV_XS
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-LineBreak
+    category: dev-perl
+    version: '>=0'
+  - name: YAML-Tiny
+    category: dev-perl
+    version: '>=0'
   - name: attrs
     category: dev-python
     version: '>=0'
@@ -405,6 +474,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: h2
+    category: dev-python
+    version: '>=0'
+  - name: hatch-fancy-pypi-readme
     category: dev-python
     version: '>=0'
   - name: hpack
@@ -495,6 +567,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: six
+    category: dev-python
+    version: '>=0'
+  - name: versioneer
     category: dev-python
     version: '>=0'
   - name: webencodings
@@ -819,6 +894,12 @@ provides:
     category: virtual
     version: '>=0'
   - name: mysql
+    category: virtual
+    version: '>=0'
+  - name: perl-Sys-Syslog
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-HiRes
     category: virtual
     version: '>=0'
   - name: szip
