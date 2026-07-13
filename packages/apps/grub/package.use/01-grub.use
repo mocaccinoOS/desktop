@@ -1,1 +1,1 @@
-sys-boot/grub device-mapper libzfs mount -branding
+sys-boot/grub device-mapper mount -branding
