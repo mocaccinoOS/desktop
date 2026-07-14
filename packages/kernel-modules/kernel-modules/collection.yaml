@@ -198,7 +198,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.10.2+25
+    version: "0.10.4"
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
@@ -413,7 +413,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo"
-    version: 0.10.2+26
+    version: "0.10.4"
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
