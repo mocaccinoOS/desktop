@@ -7,7 +7,7 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 # handle Header Path Injection (CFLAGS workaround) (added 2026-07-14)
 - echo 'CFLAGS="${CFLAGS} -I/usr/include/gobject-introspection-1.0"' > /etc/portage/env/xviewer-gi.conf
-- echo "media-gfx/xviewer xviewer-gi.conf" >> /etc/portage/package.env
+- echo "media-gfx/xviewer xviewer-gi.conf" >> /etc/portage/package.env/01-cinnamon.env
 # handle LDFLAGS muffin bug (added 2026-04-24)
 - echo 'LDFLAGS="${LDFLAGS} -Wl,-rpath=/usr/lib64/muffin"' > /etc/portage/env/muffin-rpath.conf
 - echo "x11-wm/muffin muffin-rpath.conf" >> /etc/portage/package.env/01-cinnamon.env
