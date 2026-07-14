@@ -5,9 +5,6 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_copy_package_files" . }}
-# handle Header Path Injection (CFLAGS workaround) (added 2026-07-14)
-- echo 'CFLAGS="${CFLAGS} -I/usr/include/gobject-introspection-1.0"' > /etc/portage/env/xviewer-gi.conf
-- echo "media-gfx/xviewer xviewer-gi.conf" >> /etc/portage/package.env/01-cinnamon.env
 # handle LDFLAGS muffin bug (added 2026-04-24)
 - echo 'LDFLAGS="${LDFLAGS} -Wl,-rpath=/usr/lib64/muffin"' > /etc/portage/env/muffin-rpath.conf
 - echo "x11-wm/muffin muffin-rpath.conf" >> /etc/portage/package.env/01-cinnamon.env
@@ -15,13 +12,8 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable guru
 - emaint sync -r guru
-- eselect repository enable binaryden
-- emaint sync -r binaryden
 - eselect repository add mocaccino-overlay git https://codeberg.org/MocaccinoOS/mocaccino-overlay.git
 - emaint sync -r mocaccino-overlay
-# Remove broken src_prepare
-- sed -i '/^src_prepare()/,/^}/d' /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.16.ebuild
-- ebuild /var/db/repos/binaryden/media-gfx/xviewer/xviewer-3.4.16.ebuild manifest
 # Add custom ebuild for cinnamon-spices-extensions
 - mkdir -p /var/db/repos/gentoo/gnome-extra/cinnamon-spices-extensions && cp ebuilds/cinnamon-spices-extensions-9999.ebuild /var/db/repos/gentoo/gnome-extra/cinnamon-spices-extensions/cinnamon-spices-extensions-9999.ebuild
 - ebuild /var/db/repos/gentoo/gnome-extra/cinnamon-spices-extensions/cinnamon-spices-extensions-9999.ebuild manifest
@@ -29,7 +21,6 @@ prelude:
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
-- eselect repository remove binaryden
 - eselect repository remove haarp
 - eselect repository remove mocaccino-overlay
 - emerge -C app-eselect/eselect-repository
