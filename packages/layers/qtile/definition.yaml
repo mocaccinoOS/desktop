@@ -1,6 +1,6 @@
 category: "layers"
 name: "qtile"
-version: 0.36.0+1
+version: 0.36.0+2
 uri:
   - https://qtile.org
 license: "MIT"
@@ -8,7 +8,7 @@ description: "A full-featured, hackable tiling window manager written in Python"
 labels:
   emerge.jobs: "3"
   emerge.packages: >-
-    dev-python/dbus-fast dev-python/pulsectl dev-python/pulsectl-asyncio x11-wm/qtile
+    dev-python/dbus-fast dev-python/pulsectl dev-python/pulsectl-asyncio gui-libs/wlroots:0.19 x11-wm/qtile
 requires:
   - category: "layers"
     name: "wlroots"
@@ -22,6 +22,9 @@ provides:
     version: '>=0'
   - name: pulsectl-asyncio
     category: dev-python
+    version: '>=0'
+  - name: wlroots
+    category: gui-libs
     version: '>=0'
   - name: qtile
     category: x11-wm
