@@ -1,20 +1,32 @@
 # [![Packages](https://packages.mocaccino.org/badge/mocaccino-desktop-stable.svg "List of packages")](https://packages.mocaccino.org/mocaccino-desktop) :computer: mocaccinoOS Desktop repository
 
-This repository contains installable "apps" that we refer internally as "layers" to install common suite of packages needed to bootstrap a pure and simple OS.
+This repository contains the package definitions used to build the MocaccinoOS Desktop distribution. Packages are organized to produce reproducible binary builds while remaining compatible with the Gentoo ecosystem.
 
-A User, should be able then to install the Plasma desktop by calling `luet install layers/plasma` and nothing else. That package should bring all the necessary components to make the "app" work as expected. The user shouldn't be exposed to the typical OS architecture of bringing with it dozens of dependencies. 
+Unlike traditional Linux distributions that expose users to hundreds of low-level packages and dependencies, MocaccinoOS groups related runtime components into **layers**. A layer represents a complete, installable software stack that provides everything required for a specific purpose.
 
-Think at it like Android apps: Install and uninstall should be as simple as that.
+For example, installing the KDE Plasma desktop is as simple as:
 
-This approach is completely different from [Mocaccino Micro](https://github.com/mocaccinoOS/mocaccino-micro), which is a LFS and all packages are compiled 1:1. 
+```bash
+luet install layers/plasma
+```
 
-In this repository, updates are OTA-alike, with less friction as possible.
+The `layers/plasma` package pulls in all required runtime components, libraries, services, and applications needed to provide a fully functional Plasma desktop. Users do not need to understand or manually manage the underlying dependency tree.
 
-## Why MOS is different?
+The goal is to make software installation and removal as straightforward as installing an application on Android: install a layer, use it, and remove it when it is no longer needed.
 
-For the user, MOS Desktop is a pure and simple OS. We target to deliver an unique approach on package installation and upgrades. Applications should bundle all the required dependencies in order to run, or alternatively share common layers that are used between them (for example think about MATE, GNOME, and all software that depends on GTK). This allows users to have OTA-alike updates, without having to struggle with all packages dependencies.
+This philosophy differs significantly from the approach taken by [Mocaccino Micro](https://github.com/mocaccinoOS/mocaccino-micro), which follows a Linux From Scratch (LFS) model where packages are built and managed individually in a traditional package hierarchy.
 
-From a developer standpoint, MOS takes a unique approach on package building, allowing developers to iterate locally changes to the packages very easily, thanks to the Luet flexible backend approach. You can use Docker to build packages locally, or Kubernetes to build them in your cluster
+For MocaccinoOS Desktop, binary packages are delivered as complete, reproducible artifacts, enabling low-friction, over-the-air (OTA)-style updates while preserving the flexibility of the Gentoo ecosystem.
+
+
+## Why is MocaccinoOS Desktop different?
+
+MocaccinoOS Desktop is designed around the idea that installing and maintaining software should be simple. Instead of exposing users to hundreds of individual packages and their dependencies, software is delivered as complete layers or applications that include everything required to run, or share common runtime layers where appropriate (for example, GTK-based desktop environments such as MATE and GNOME).
+
+This approach significantly reduces the complexity of package management while enabling low-friction, OTA-style system updates. Users can focus on the software they want to use rather than the dependencies required to make it work.
+
+From a developer's perspective, MocaccinoOS Desktop provides a flexible and reproducible package build system powered by Luet. Package definitions can be developed and tested locally using Docker, or built at scale using Kubernetes, making it easy to iterate on changes while producing consistent binary packages.
+
 
 ## Documentation
 
@@ -23,11 +35,30 @@ From a developer standpoint, MOS takes a unique approach on package building, al
 
 ## Repository layout
 
-As Luet doesn't impose any specific repository layout, we decided to split packages in the following directories:
+Luet does not enforce a specific repository structure, so the MocaccinoOS Desktop packages are organized into the following directories:
 
-- `packages/images`: External images that are consumed by other packages
-- `packages/apps`: Contains all installable applications by end-users
-- `packages/layers`: Contains all installable layers by end-users
-- `packages/meta`: Contains meta packages, used to group multiple packages
-- `packages/virtual`: Virtual packages which are used to provide dependencies for other packages
-- `packages/mocaccino`: Packages used for branding, or MOS setup
+* `packages/images` – Container images and other external images consumed during package builds.
+* `packages/apps` – End-user applications that can be installed individually.
+* `packages/layers` – Layer packages that provide complete runtime environments or software stacks (for example, desktop environments).
+* `packages/meta` – Meta-packages that group multiple related packages under a single installable package.
+* `packages/virtual` – Virtual packages used to satisfy dependencies without providing installable content themselves.
+* `packages/mocaccino` – MocaccinoOS-specific packages, including branding, configuration, and distribution integration.
+
+## Package structure
+
+Each package is stored in its own directory and contains the metadata and build instructions required by Luet. A typical package looks like this:
+
+```text
+packages/apps/firefox/
+├── build.yaml
+├── definition.yaml
+└── finalizer.yaml
+```
+
+The most common files are:
+
+* `definition.yaml` – Defines the package metadata, version, dependencies, labels, and other package information.
+* `build.yaml` – Describes how the package is built and assembled.
+* `finalizer.yaml` *(optional)* – Executes actions after installation, such as updating caches, generating configuration, or performing other system integration tasks.
+
+Depending on the package, additional files and directories may be present, such as patches, configuration files, helper scripts, or build assets.
