@@ -1,6 +1,5 @@
 install:
   - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
-  - chmod u+s /usr/bin/sudo
   - ldconfig
   # During migration to pipewire a broken symlink in
   # /etc/alsa/conf.d (10-samplerate.conf) prevents
