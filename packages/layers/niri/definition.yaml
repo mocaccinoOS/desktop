@@ -1,6 +1,6 @@
 category: "layers"
 name: "niri"
-version: 26.04+13
+version: 26.04+14
 uri:
   - https://github.com/niri-wm/niri
 license: "GPL-3+"

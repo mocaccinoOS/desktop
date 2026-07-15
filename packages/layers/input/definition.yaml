@@ -1,6 +1,6 @@
 category: "layers"
 name: "input"
-version: "26.07"
+version: 26.07+1
 uri:
   - https://fcitx-im.org
   - https://github.com/ibus

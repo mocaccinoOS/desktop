@@ -1,6 +1,6 @@
 category: "layers"
 name: "xfce"
-version: 4.20.4+11
+version: 4.20.4+12
 uri:
   - https://xfce.org
 license: "GPL-2+"
@@ -19,9 +19,6 @@ provides:
     version: '>=0'
   - name: mousepad
     category: app-editors
-    version: '>=0'
-  - name: xfce4-dev-tools
-    category: dev-build
     version: '>=0'
   - name: libwlembed
     category: gui-libs

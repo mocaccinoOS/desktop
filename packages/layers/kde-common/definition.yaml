@@ -1,6 +1,6 @@
 category: "layers"
 name: "kde-common"
-version: "26.07"
+version: 26.07+1
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
@@ -17,8 +17,8 @@ provides:
   - name: discount
     category: app-text
     version: '>=0'
-  - name: check
-    category: dev-libs
+  - name: docbook-xml-dtd
+    category: app-text
     version: '>=0'
   - name: kdiagram
     category: dev-libs
@@ -35,8 +35,11 @@ provides:
   - name: xapian
     category: dev-libs
     version: '>=0'
-  - name: designer
-    category: dev-qt
+  - name: xerces-c
+    category: dev-libs
+    version: '>=0'
+  - name: shtab
+    category: dev-python
     version: '>=0'
   - name: kate-common
     category: kde-apps
@@ -72,9 +75,6 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: extra-cmake-modules
-    category: kde-frameworks
-    version: '>=0'
-  - name: frameworkintegration
     category: kde-frameworks
     version: '>=0'
   - name: frameworkintegration
@@ -164,9 +164,6 @@ provides:
   - name: kimageformats
     category: kde-frameworks
     version: '>=0'
-  - name: kinit
-    category: kde-frameworks
-    version: '>=0'
   - name: kio
     category: kde-frameworks
     version: '>=0'
@@ -212,6 +209,9 @@ provides:
   - name: krunner
     category: kde-frameworks
     version: '>=0'
+  - name: ksecretd-services
+    category: kde-frameworks
+    version: '>=0'
   - name: kservice
     category: kde-frameworks
     version: '>=0'
@@ -222,6 +222,9 @@ provides:
     category: kde-frameworks
     version: '>=0'
   - name: ktexteditor
+    category: kde-frameworks
+    version: '>=0'
+  - name: ktexttemplate
     category: kde-frameworks
     version: '>=0'
   - name: ktextwidgets
@@ -266,19 +269,22 @@ provides:
   - name: syntax-highlighting
     category: kde-frameworks
     version: '>=0'
-  - name: ktexttemplate
-    category: kde-frameworks
-    version: '>=0'
   - name: threadweaver
     category: kde-frameworks
     version: '>=0'
   - name: kactivitymanagerd
     category: kde-plasma
     version: '>=0'
-  - name: kwayland
+  - name: kde-cli-tools-common
     category: kde-plasma
     version: '>=0'
-  - name: plasma5support
+  - name: keditfiletype
+    category: kde-plasma
+    version: '>=0'
+  - name: kglobalacceld
+    category: kde-plasma
+    version: '>=0'
+  - name: kwayland
     category: kde-plasma
     version: '>=0'
   - name: layer-shell-qt
@@ -297,6 +303,9 @@ provides:
     category: kde-plasma
     version: '>=0'
   - name: plasma-activities-stats
+    category: kde-plasma
+    version: '>=0'
+  - name: plasma5support
     category: kde-plasma
     version: '>=0'
   - name: polkit-kde-agent

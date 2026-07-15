@@ -1,6 +1,6 @@
 category: "layers"
 name: "qt"
-version: 6.11.1+5
+version: 6.11.1+6
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
@@ -21,9 +21,6 @@ provides:
     category: app-text
     version: '>=0'
   - name: ada
-    category: dev-cpp
-    version: '>=0'
-  - name: simdutf
     category: dev-cpp
     version: '>=0'
   - name: md4c

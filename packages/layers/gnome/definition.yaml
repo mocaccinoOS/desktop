@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: 49.7+3
+version: 49.7+4
 uri:
   - https://gnome.org
 license: "GPL-2+"
@@ -67,20 +67,53 @@ provides:
   - name: eselect-gnome-shell-extensions
     category: app-eselect
     version: '>=0'
+  - name: docbook-dsssl-stylesheets
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: docbook-sgml-utils
+    category: app-text
+    version: '>=0'
+  - name: docbook-xml-simple-dtd
+    category: app-text
+    version: '>=0'
   - name: evince
     category: app-text
     version: '>=0'
   - name: libspelling
     category: app-text
     version: '>=0'
-  - name: yelp-tools
+  - name: openjade
     category: app-text
+    version: '>=0'
+  - name: opensp
+    category: app-text
+    version: '>=0'
+  - name: xhtml1
+    category: app-text
+    version: '>=0'
+  - name: tcl
+    category: dev-lang
     version: '>=0'
   - name: gom
     category: dev-libs
     version: '>=0'
   - name: liblouis
     category: dev-libs
+    version: '>=0'
+  - name: SGMLSpm
+    category: dev-perl
+    version: '>=0'
+  - name: argcomplete
+    category: dev-python
+    version: '>=0'
+  - name: dasbus
+    category: dev-python
+    version: '>=0'
+  - name: blueprint-compiler
+    category: dev-util
     version: '>=0'
   - name: gdm
     category: gnome-base
@@ -136,11 +169,17 @@ provides:
   - name: sushi
     category: gnome-extra
     version: '>=0'
+  - name: tecla
+    category: gnome-extra
+    version: '>=0'
   - name: yelp
     category: gnome-extra
     version: '>=0'
   - name: gnome-console
     category: gui-apps
+    version: '>=0'
+  - name: adwaita-fonts
+    category: media-fonts
     version: '>=0'
   - name: eog
     category: media-gfx
@@ -185,6 +224,9 @@ provides:
     category: net-libs
     version: '>=0'
   - name: libcloudproviders
+    category: net-libs
+    version: '>=0'
+  - name: libnsl
     category: net-libs
     version: '>=0'
   - name: liboauth

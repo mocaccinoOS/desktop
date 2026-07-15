@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: 1.28.2+56
+version: 1.28.2+57
 uri:
   - https://mate-desktop.org
 license: "FDL-1.1 GPL-2+ LGPL-2+ MIT-with-advertising"
@@ -23,10 +23,13 @@ provides:
   - name: atril
     category: app-text
     version: '>=0'
-  - name: rarian
+  - name: docbook-dsssl-stylesheets
     category: app-text
     version: '>=0'
-  - name: scrollkeeper-dtd
+  - name: docbook-sgml-dtd
+    category: app-text
+    version: '>=0'
+  - name: rarian
     category: app-text
     version: '>=0'
   - name: yelp-tools
@@ -34,6 +37,12 @@ provides:
     version: '>=0'
   - name: libmateweather
     category: dev-libs
+    version: '>=0'
+  - name: tinyxml2
+    category: dev-libs
+    version: '>=0'
+  - name: gtk-doc
+    category: dev-util
     version: '>=0'
   - name: gucharmap
     category: gnome-extra
