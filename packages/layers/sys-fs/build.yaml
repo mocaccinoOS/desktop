@@ -11,8 +11,8 @@ prelude:
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge -1 dev-build/cmake sys-devel/bison app-alternatives/yacc
-- emerge dev-util/ccache
-- emerge app-portage/gentoolkit
+- emerge -1 dev-util/ccache
+- emerge -1 app-portage/gentoolkit app-portage/mirrorselect
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
