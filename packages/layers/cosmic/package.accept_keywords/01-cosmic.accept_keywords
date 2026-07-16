@@ -29,7 +29,7 @@
 =cosmic-base/pop-fonts-9999 ~amd64
 =cosmic-base/pop-gtk-theme-9999 ~amd64
 =cosmic-base/pop-icon-theme-9999 ~amd64
-=cosmic-base/pop-launcher-9999 ~amd64
+=cosmic-base/pop-launcher-1.3.0 ~amd64
 =cosmic-base/pop-theme-meta-9999 ~amd64
 =cosmic-base/system76-power-9999 ~amd64
 =cosmic-base/xdg-desktop-portal-cosmic-1.3.0 ~amd64
