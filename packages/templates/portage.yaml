@@ -47,43 +47,20 @@
 
 {{ define "portage_select_fastest_binhost" }}
 - |
-  if ! command -v mirrorselect >/dev/null 2>&1; then
-      echo "mirrorselect not available in this layer, skipping binhost mirror selection"
-  else
-      set -e
-      BINREPOS_DIR="/etc/portage/binrepos.conf"
-      REPO_FILE="${BINREPOS_DIR}/zz-mocaccino-fastest-binhost.conf"
-      BINPKG_PATH="releases/amd64/binpackages/23.0/x86-64/"
-      REPO_NAME="mocaccino-fastest-binhost"
-      PRIORITY=10000
-      FALLBACK="https://distfiles.gentoo.org/"
-
-      MS_OUTPUT=$(mirrorselect -s5 -b20 -4 -o 2>/dev/null || true)
-
-      FASTEST=$(echo "$MS_OUTPUT" | python3 -c '
-  import re, shlex, sys
-  data = sys.stdin.read()
-  m = re.search(r"GENTOO_MIRRORS=\"([^\"]*)\"", data)
-  if not m:
-      sys.exit(1)
-  mirrors = shlex.split(m.group(1))
-  if not mirrors:
-      sys.exit(1)
-  print(mirrors[0])
-      ' 2>/dev/null) || FASTEST=""
-
-      [ -z "$FASTEST" ] && FASTEST="$FALLBACK"
-      BINHOST_URL="${FASTEST%/}/${BINPKG_PATH}"
-
-      mkdir -p "$BINREPOS_DIR"
-      {
-        echo "[${REPO_NAME}]"
-        echo "priority = ${PRIORITY}"
-        echo "sync-uri = ${BINHOST_URL}"
-      } > "$REPO_FILE"
-
-      echo "Selected fastest binhost: ${BINHOST_URL} (priority ${PRIORITY})"
-  fi
+  command -v mirrorselect >/dev/null 2>&1 || { echo "mirrorselect not available in this layer, skipping binhost mirror selection"; exit 0; } && \
+  BINREPOS_DIR="/etc/portage/binrepos.conf" && \
+  REPO_FILE="${BINREPOS_DIR}/zz-mocaccino-fastest-binhost.conf" && \
+  BINPKG_PATH="releases/amd64/binpackages/23.0/x86-64/" && \
+  REPO_NAME="mocaccino-fastest-binhost" && \
+  PRIORITY=10000 && \
+  FALLBACK="https://distfiles.gentoo.org/" && \
+  MS_OUTPUT=$(mirrorselect -s5 -b20 -4 -o 2>/dev/null || true) && \
+  FASTEST=$(echo "$MS_OUTPUT" | grep -oP 'GENTOO_MIRRORS="\K[^"]*' | awk '{print $1}') && \
+  { [ -z "$FASTEST" ] && FASTEST="$FALLBACK"; true; } && \
+  BINHOST_URL="${FASTEST%/}/${BINPKG_PATH}" && \
+  mkdir -p "$BINREPOS_DIR" && \
+  { echo "[${REPO_NAME}]"; echo "priority = ${PRIORITY}"; echo "sync-uri = ${BINHOST_URL}"; } > "$REPO_FILE" && \
+  echo "Selected fastest binhost: ${BINHOST_URL} (priority ${PRIORITY})"
 {{end}}
 
 {{ define "portage_prelude_build" }}
