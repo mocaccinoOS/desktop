@@ -46,6 +46,21 @@ K8S_SCHEDULER=${K8S_SCHEDULER:-}
 NODE_SELECTOR=${NODE_SELECTOR:-}
 REPOSITORY_TYPE=${REPOSITORY_TYPE:-http}
 REPOSITORY_URL=${REPOSITORY_URL:-https://get.mocaccino.org/mocaccino-desktop}
+JOB_STATE_TIMEOUT_SECONDS=${JOB_STATE_TIMEOUT_SECONDS:-600}
+
+job_state() {
+    job_json=$(kubectl get repobuild -n "$NAMESPACE" "$JOB_NAME" -o json 2>/dev/null) || {
+        printf '%s\n' null
+        return
+    }
+
+    state=$(printf '%s\n' "$job_json" | jq -r '.status.state // empty' 2>/dev/null) || state=
+    if [ -z "$state" ]; then
+        printf '%s\n' null
+    else
+        printf '%s\n' "$state"
+    fi
+}
 
 create_repo() {
     set -e
@@ -129,7 +144,7 @@ build() {
     JOB_NAME="$REPO-$GITHUB_BRANCH"
 
     if kubectl get repobuild -n $NAMESPACE $JOB_NAME; then
-        JOB_STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
+        JOB_STATE=$(job_state)
         if [[ "$JOB_STATE" == "Pending" ]] || [[ "$JOB_STATE" == "Running" ]]; then
             echo "Job $JOB_NAME already running"
             current_checkout=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq '.spec.git_repository.checkout' -r)
@@ -147,15 +162,17 @@ build() {
         create_job
     fi
 
-    STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
-    while ( [ "$STATE" == "Pending" ] || [ "$STATE" == "Running" ] || [[ "$STATE" == "null" ]])
-    do
+    STATE=$(job_state)
+    start_time=$SECONDS
+    while [ "$STATE" != "Succeeded" ] && [ "$STATE" != "Failed" ]; do
+        if (( SECONDS - start_time >= JOB_STATE_TIMEOUT_SECONDS )); then
+            echo "Repo build timed out; last state: $STATE"
+            exit 1
+        fi
         echo "Jobs still running sleeping"
-	sleep 10
-        STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
+        sleep 10
+        STATE=$(job_state)
     done
-
-    STATE=$(kubectl get repobuild -n $NAMESPACE $JOB_NAME -o json | jq -r '.status.state')
 
     case $STATE in
 
