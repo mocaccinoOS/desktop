@@ -1,6 +1,6 @@
 category: "gentoo"
 name: "stage3"
-version: "0.20260719"
+version: 0.20260719+1
 labels:
   package.version: "20260719T170103Z"
   package.version.arm64: "20260215T164556Z"
