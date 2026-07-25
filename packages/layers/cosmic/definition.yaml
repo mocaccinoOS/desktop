@@ -93,6 +93,9 @@ provides:
   - category: "cosmic-base"
     name: "cosmic-screenshot"
     version: ">=0"
+  - name: cosmic-sound-theme
+    category: cosmic-base
+    version: '>=0'
   - name: cosmic-store
     category: cosmic-base
     version: '>=0'
