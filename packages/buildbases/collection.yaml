@@ -24,11 +24,11 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+203
+    version: 0+204
   - !!merge <<: *X
     real_category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 0+395
+    version: 0+396
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
