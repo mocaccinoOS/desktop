@@ -1,6 +1,32 @@
 packages:
   # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
+    name: "broadcom-sta-lts"
+    version: "6.30.223.271-r11"
+    uri:
+      - https://www.broadcom.com/support/802.11
+    license: "Broadcom"
+    description: "Broadcom's IEEE 802.11a/b/g/n hybrid Linux device driver"
+    lts: true
+    labels:
+      emerge.jobs: "3"
+      lts.kernel: "true"
+    emerge:
+      jobs: "3"
+      packages:
+        - net-wireless/broadcom-sta
+    provides:
+      - name: broadcom-sta
+        category: net-wireless
+        version: ">=0"
+    requires:
+      - name: mocaccino-lts-full
+        category: kernel
+        version: ">=0"
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+  - category: "kernel-modules"
     name: "openrazer-lts"
     version: 3.12.3+7
     uri:
