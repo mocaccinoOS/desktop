@@ -1,0 +1,23 @@
+includes:
+- /usr$
+- /usr/lib64$
+- /usr/lib64/glibc-hwcaps$
+- /usr/lib64/glibc-hwcaps/x86-64-v3/.*
+env:
+{{ template "portage_env" . }}
+prelude:
+- cp -rf env /etc/portage/
+{{ template "portage_copy_package_files" . }}
+steps:
+{{ template "portage_build" . }}
+- |
+  mkdir -p /usr/lib64/glibc-hwcaps/x86-64-v3
+  for pkg in media-libs/mesa media-libs/vulkan-loader media-libs/libepoxy media-libs/libglvnd media-libs/glew; do
+    for f in $(qlist -e "$pkg" | grep -E '\.so(\.[0-9.]+)*$'); do
+      mv "$f" /usr/lib64/glibc-hwcaps/x86-64-v3/
+    done
+  done
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"
