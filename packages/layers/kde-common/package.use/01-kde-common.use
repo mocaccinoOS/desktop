@@ -6,8 +6,8 @@ kde-frameworks/kimageformats avif heif
 kde-frameworks/kitemmodels qml
 kde-frameworks/prison qml
 kde-frameworks/sonnet qml
-net-libs/accounts-qml qt6 -qt5
-net-libs/accounts-qt qt6 -qt5
+net-libs/accounts-qml qt6
+net-libs/accounts-qt qt6
 net-libs/kdsoap qt6
 net-libs/signond qt6
 net-libs/signon-oauth2 qt6

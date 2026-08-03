@@ -7,9 +7,8 @@ app-arch/tar xattr
 app-arch/xz-utils static-libs
 app-arch/zstd lz4
 app-crypt/gnupg nls readline smartcard ssl usb
-app-crypt/gpgme -qt5
 app-crypt/p11-kit asn1 libffi trust
-app-crypt/pinentry ncurses -gtk -qt5
+app-crypt/pinentry ncurses -gtk -qt6
 app-misc/pax-utils -python
 dev-build/cmake server -gui
 dev-db/sqlite readline
