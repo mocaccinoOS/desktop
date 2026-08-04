@@ -12,7 +12,7 @@ steps:
 {{ template "portage_build" . }}
 - |
   mkdir -p /usr/lib64/glibc-hwcaps/x86-64-v3 && \
-  for pkg in media-libs/mesa media-libs/vulkan-loader media-libs/libepoxy media-libs/libglvnd media-libs/glew; do \
+  for pkg in {{ index .Values.labels "emerge.packages" }}; do \
     for f in $(qlist -e "$pkg" | grep -E '\.so(\.[0-9.]+)*$'); do \
       mv "$f" /usr/lib64/glibc-hwcaps/x86-64-v3/; \
     done; \
