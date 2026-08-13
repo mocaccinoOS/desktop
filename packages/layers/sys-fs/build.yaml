@@ -11,7 +11,7 @@ prelude:
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
 - emerge -1 dev-build/cmake sys-devel/bison app-alternatives/yacc
-- emerge -1 dev-util/ccache
+- emerge dev-util/ccache
 - emerge -1 app-portage/gentoolkit
 # Copy our custom mirror selection tool
 - cp -f scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
