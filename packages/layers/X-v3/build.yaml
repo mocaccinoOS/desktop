@@ -11,13 +11,13 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 - |
-  mkdir -p /usr/lib64/glibc-hwcaps/x86-64-v3
-  for pkg in {{ index .Values.labels "emerge.packages" }}; do
-    for f in $(qlist -e "$pkg" | grep -E '\.so(\.[0-9.]+)*$'); do
-      rel="${f#/usr/lib64/}"
-      mkdir -p "/usr/lib64/glibc-hwcaps/x86-64-v3/$(dirname "$rel")"
-      mv "$f" "/usr/lib64/glibc-hwcaps/x86-64-v3/$rel"
-    done
+  mkdir -p /usr/lib64/glibc-hwcaps/x86-64-v3 && \
+  for pkg in {{ index .Values.labels "emerge.packages" }}; do \
+    for f in $(qlist -e "$pkg" | grep -E '\.so(\.[0-9.]+)*$'); do \
+      rel="${f#/usr/lib64/}"; \
+      mkdir -p "/usr/lib64/glibc-hwcaps/x86-64-v3/$(dirname "$rel")"; \
+      mv "$f" "/usr/lib64/glibc-hwcaps/x86-64-v3/$rel"; \
+    done; \
   done
 requires:
 - category: "layers"
