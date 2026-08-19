@@ -57,6 +57,9 @@ provides:
   - category: "cosmic-base"
     name: "cosmic-idle"
     version: ">=0"
+  - name: cosmic-initial-setup
+    category: cosmic-base
+    version: '>=0'
   - category: "cosmic-base"
     name: "cosmic-launcher"
     version: ">=0"
@@ -102,6 +105,9 @@ provides:
   - category: "cosmic-base"
     name: "cosmic-term"
     version: ">=0"
+  - name: cosmic-wallpapers
+    category: cosmic-base
+    version: '>=0'
   - category: "cosmic-base"
     name: "cosmic-workspaces-epoch"
     version: ">=0"
