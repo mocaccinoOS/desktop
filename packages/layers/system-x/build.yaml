@@ -13,8 +13,6 @@ prelude:
 {{ else }}
 - cp -rf make.conf /etc/portage/
 {{ end }}
-# Do not include rust here
-- emerge -C dev-lang/rust-bin && emerge --depclean
 # Install our kernel-tuning-file
 - cp mocaccino-kernel-tuning/70-mocaccino.conf /usr/lib/sysctl.d/70-mocaccino.conf
 # temp use flags required for pillow. We drop this later
