@@ -296,35 +296,36 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
-  - category: "kernel-modules"
-    name: "openrazer"
-    version: 3.12.3+14
-    uri:
-      - https://openrazer.github.io
-    license: "GPL-2+"
-    description: "Drivers and user-space daemon to control Razer devices on GNU/Linux"
-    lts: false
-    labels:
-      emerge.jobs: "3"
-    emerge:
-      jobs: "3"
-      packages:
-        - sys-apps/openrazer
-    provides:
-      - name: openrazer
-        category: sys-apps
-        version: ">=0"
-    requires:
-      - name: mocaccino-full
-        category: kernel
-        version: ">=0"
-      - category: "layers"
-        name: "gnome-common"
-        version: ">=0"
-    conflicts:
-      - name: openrazer-lts
-        category: kernel-modules
-        version: ">=0"
+  # Does not compile with kernel 7.2.2      
+  # - category: "kernel-modules"
+  #   name: "openrazer"
+  #   version: 3.12.3+14
+  #   uri:
+  #     - https://openrazer.github.io
+  #   license: "GPL-2+"
+  #   description: "Drivers and user-space daemon to control Razer devices on GNU/Linux"
+  #   lts: false
+  #   labels:
+  #     emerge.jobs: "3"
+  #   emerge:
+  #     jobs: "3"
+  #     packages:
+  #       - sys-apps/openrazer
+  #   provides:
+  #     - name: openrazer
+  #       category: sys-apps
+  #       version: ">=0"
+  #   requires:
+  #     - name: mocaccino-full
+  #       category: kernel
+  #       version: ">=0"
+  #     - category: "layers"
+  #       name: "gnome-common"
+  #       version: ">=0"
+  #   conflicts:
+  #     - name: openrazer-lts
+  #       category: kernel-modules
+  #       version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
     version: 595.84+17
