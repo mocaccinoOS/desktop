@@ -2,3 +2,6 @@ games-util/xpadneo ~amd64
 games-util/xone ~amd64
 net-misc/realtek-rtl88x2bu ~amd64
 net-wireless/broadcom-sta ~amd64
+
+# This version has fix for 7.2 kernel
+=sys-apps/openrazer-3.12.4 ~amd64
