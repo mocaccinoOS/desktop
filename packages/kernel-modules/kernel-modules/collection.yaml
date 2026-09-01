@@ -2,7 +2,7 @@ packages:
   # --- LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "broadcom-sta-lts"
-    version: 6.30.223.271-r11+7
+    version: 6.30.223.271-r11+8
     uri:
       - https://www.broadcom.com/support/802.11
     license: "Broadcom"
@@ -28,7 +28,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "openrazer-lts"
-    version: "3.12.4"
+    version: 3.12.4+1
     uri:
       - https://openrazer.github.io
     license: "GPL-2+"
@@ -54,7 +54,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers-lts"
-    version: 595.84+17
+    version: 595.84+18
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -86,7 +86,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "v4l2loopback-lts"
-    version: 0.15.3+74
+    version: 0.15.3+75
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -112,7 +112,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-guest-additions-lts"
-    version: 7.2.8+23
+    version: 7.2.8+24
     uri:
       - https://www.virtualbox.org
     license: "GPL-3 LGPL-2.1+ MIT"
@@ -153,7 +153,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules-lts"
-    version: 7.2.8+23
+    version: 7.2.8+24
     uri:
       - https://www.virtualbox.org
     license: "GPL-3"
@@ -172,7 +172,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba-lts"
-    version: 20250329-r1+36
+    version: 20250329-r1+37
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -198,7 +198,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone-lts"
-    version: 0.5.8+42
+    version: 0.5.8+43
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -224,7 +224,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo-lts"
-    version: 0.10.4+13
+    version: 0.10.4+14
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
@@ -295,7 +295,7 @@ packages:
         version: ">=0"
       - category: "layers"
         name: "X"
-        version: ">=0"     
+        version: ">=0"
   - category: "kernel-modules"
     name: "openrazer"
     version: "3.12.4"
