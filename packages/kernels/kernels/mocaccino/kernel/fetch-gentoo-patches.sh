@@ -12,7 +12,7 @@ KERNEL_VERSION="${KERNEL_VERSION%\+*}"
 # Extract major.minor version (e.g., "6.18" from "6.18.5")
 MAJOR_MINOR=$(echo ${KERNEL_VERSION} | cut -d. -f1-2)
 
-PATCHES_DIR="$(dirname "$0")/patches"
+PATCHES_DIR="$(dirname "$0")/gentoo_patches"
 mkdir -p "${PATCHES_DIR}"
 
 # Define automatic cleanup on script exit (success or failure)
