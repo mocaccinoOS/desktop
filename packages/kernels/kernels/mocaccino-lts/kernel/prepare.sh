@@ -27,6 +27,33 @@ cd ${KERNEL_TYPE}
 #     echo "Warning: Patch file not found: $PATCH_FILE"
 # fi
 
+# --- Apply additional custom patches ---
+apply_custom_patches() {
+    local patch_dir="$1"
+    if [ ! -d "$patch_dir" ]; then
+        return 0
+    fi
+
+    local found=0 applied=0 failed=0
+    for patch in "$patch_dir"/*.patch; do
+        [ -f "$patch" ] || continue
+        found=$((found + 1))
+        echo "Applying custom patch: $(basename "$patch")"
+        if patch -p1 < "$patch"; then
+            applied=$((applied + 1))
+        else
+            echo "Warning: Failed to apply $(basename "$patch"), continuing..."
+            failed=$((failed + 1))
+        fi
+    done
+
+    if [ $found -gt 0 ]; then
+        echo "Custom patches from $patch_dir: $applied applied, $failed failed (out of $found total)"
+    fi
+}
+
+# apply_custom_patches "../patches"
+
 # Verify compiler before config generation
 echo "=== Compiler Check ==="
 ${CC} --version

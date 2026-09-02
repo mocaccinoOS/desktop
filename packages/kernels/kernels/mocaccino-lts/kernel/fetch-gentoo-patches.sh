@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Store initial directory to allow proper cleanup on exit
+ORIG_DIR="$(pwd)"
+
 # Use PACKAGE_VERSION from environment, or accept as argument
 KERNEL_VERSION="${1:-${PACKAGE_VERSION}}"
 # Strip any +suffix from version (like build.sh does)
@@ -9,53 +12,55 @@ KERNEL_VERSION="${KERNEL_VERSION%\+*}"
 # Extract major.minor version (e.g., "6.18" from "6.18.5")
 MAJOR_MINOR=$(echo ${KERNEL_VERSION} | cut -d. -f1-2)
 
-PATCHES_DIR="$(dirname "$0")/patches"
+PATCHES_DIR="$(dirname "$0")/gentoo_patches"
 mkdir -p "${PATCHES_DIR}"
+
+# Define automatic cleanup on script exit (success or failure)
+cleanup() {
+    cd "${ORIG_DIR}"
+    if [ -n "${TEMP_DIR}" ] && [ -d "${TEMP_DIR}" ]; then
+        rm -rf "${TEMP_DIR}"
+    fi
+    if [ -d "${PATCHES_DIR}" ]; then
+        rm -rf "${PATCHES_DIR}"
+    fi
+}
+trap cleanup EXIT
 
 echo "Fetching Gentoo patches for kernel ${KERNEL_VERSION} (branch ${MAJOR_MINOR})..."
 
 cd "${PATCHES_DIR}"
 
-# Check if patches already exist
-if [ -f ".fetched-${MAJOR_MINOR}" ]; then
-    echo "Patches for ${MAJOR_MINOR} already fetched, skipping download..."
-else
-    # Clean old patches
-    rm -f *.patch .fetched-*
+# Clone the specific kernel version branch from Gentoo's linux-patches repo
+TEMP_DIR=$(mktemp -d)
 
-    # Clone the specific kernel version branch from Gentoo's linux-patches repo
-    TEMP_DIR=$(mktemp -d)
-    trap "rm -rf ${TEMP_DIR}" EXIT
+echo "Cloning Gentoo linux-patches repository (branch ${MAJOR_MINOR})..."
 
-    echo "Cloning Gentoo linux-patches repository (branch ${MAJOR_MINOR})..."
-
-    # Try to clone the specific branch
-    if git clone --depth 1 --branch ${MAJOR_MINOR} \
-        https://anongit.gentoo.org/git/proj/linux-patches.git \
-        "${TEMP_DIR}" 2>/dev/null; then
+# Try to clone the specific branch
+if git clone --depth 1 --branch ${MAJOR_MINOR} \
+    https://anongit.gentoo.org/git/proj/linux-patches.git \
+    "${TEMP_DIR}" 2>/dev/null; then
+    
+    echo "Successfully cloned ${MAJOR_MINOR} branch"
+    
+    # Copy all patch files
+    if [ -d "${TEMP_DIR}" ]; then
+        find "${TEMP_DIR}" -name "*.patch" -exec cp {} . \;
         
-        echo "Successfully cloned ${MAJOR_MINOR} branch"
+        # Remove version upgrade patches (1xxx series)
+        rm -f 1[0-9][0-9][0-9]_linux-*.patch
+        echo "Removed version upgrade patches (1xxx series)"
         
-        # Copy all patch files
-        if [ -d "${TEMP_DIR}" ]; then
-            find "${TEMP_DIR}" -name "*.patch" -exec cp {} . \;
-            
-            # Remove version upgrade patches (1xxx series)
-            rm -f 1[0-9][0-9][0-9]_linux-*.patch
-            echo "Removed version upgrade patches (1xxx series)"
-            
-            patch_count=$(ls -1 *.patch 2>/dev/null | wc -l)
-            
-            if [ ${patch_count} -gt 0 ]; then
-                echo "Downloaded ${patch_count} patches from Gentoo git"
-                touch ".fetched-${MAJOR_MINOR}"
-            fi
+        patch_count=$(ls -1 *.patch 2>/dev/null | wc -l)
+        
+        if [ ${patch_count} -gt 0 ]; then
+            echo "Downloaded ${patch_count} patches from Gentoo git"
         fi
-    else
-        echo "Warning: No patches found for kernel ${MAJOR_MINOR} in Gentoo's repository"
-        echo "Check available branches at: https://gitweb.gentoo.org/proj/linux-patches.git/"
-        echo "Continuing without Gentoo patches..."
     fi
+else
+    echo "Warning: No patches found for kernel ${MAJOR_MINOR} in Gentoo's repository"
+    echo "Check available branches at: https://gitweb.gentoo.org/proj/linux-patches.git/"
+    echo "Continuing without Gentoo patches..."
 fi
 
 # Now apply the patches
