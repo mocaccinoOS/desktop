@@ -52,7 +52,7 @@ apply_custom_patches() {
     fi
 }
 
-apply_custom_patches "/patches"
+apply_custom_patches "../patches"
 
 # Verify compiler before config generation
 echo "=== Compiler Check ==="
