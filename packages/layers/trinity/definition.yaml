@@ -179,6 +179,9 @@ provides:
   - name: tdesu
     category: trinity-base
     version: '>=0'
+  - name: tdm
+    category: trinity-base
+    version: '>=0'
   - name: tqt3integration
     category: trinity-base
     version: '>=0'
