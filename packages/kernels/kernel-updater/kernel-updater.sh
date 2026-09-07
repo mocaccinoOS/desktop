@@ -3,7 +3,7 @@ set -e
 
 export CHOST="${CHOST:-x86_64-pc-linux-gnu}"
 
-ALL_KERNELS=$(luet search --installed kernel --output json | jq -r '.packages[] | select( .category == "kernel" ) | [.category, .name] | join("/")')
+ALL_KERNELS=$(luet search --installed kernel --output json | jq -r '(.packages // [])[] | select( .category == "kernel" ) | [.category, .name] | join("/")')
 MOCACCINO_KERNEL_PREFIX="${MOCACCINO_KERNEL_PREFIX:-mocaccino}"
 
 MOCACCINO_RELEASE=$(cat /etc/mocaccino/release)
@@ -42,10 +42,13 @@ cleanup_stale_initramfs() {
 
     # 2. Refuse to evaluate cleanup if the installed-kernel query looks
     #    empty/broken. An empty/failed query must never be read as
-    #    "nothing is installed".
+    #    "nothing is installed". (.packages // [] guards against luet
+    #    returning {"packages": null} instead of an empty list, which
+    #    would otherwise make jq error out and, under set -e, abort
+    #    the whole script.)
     local installed_versions
     installed_versions=$(luet search --installed kernel --output json \
-        | jq -r '.packages[] | select(.category=="kernel") | select(.name | test("modules") | not) | .version' \
+        | jq -r '(.packages // [])[] | select(.category=="kernel") | select(.name | test("modules") | not) | .version' \
         | sed -E 's/\+.*//')
     if [ -z "$installed_versions" ]; then
         echo "Could not confirm installed kernel list — skipping cleanup check this run"
@@ -76,8 +79,14 @@ cleanup_stale_initramfs() {
     fi
 
     # Always keep the single most recent non-current one as a manual
-    # rescue fallback, no matter what luet reports.
-    local keep_fallback="${candidates[-1]:-}"
+    # rescue fallback, no matter what luet reports. Avoid negative array
+    # indexing ("${candidates[-1]}") — bash raises "bad array subscript"
+    # on an empty array rather than treating it as unset, so :- fallback
+    # doesn't help there. Only compute this when candidates is non-empty.
+    local keep_fallback=""
+    if [ "${#candidates[@]}" -gt 0 ]; then
+        keep_fallback="${candidates[${#candidates[@]}-1]}"
+    fi
 
     local found_any=0
     for f in "${candidates[@]}"; do
@@ -112,7 +121,7 @@ generate_micro_initramfs() {
     CURRENT_KERNEL=$(ls ${MOCACCINO_TARGET}$BOOTDIR/kernel-*)
 
     # Try to grab current kernel package name, excluding modules
-    CURRENT_KERNEL_PACKAGE_NAME=$(luet search --installed kernel --output json | jq -r '.packages[] | select( .category == "kernel" ) | select( .name | test("modules") | not).name')
+    CURRENT_KERNEL_PACKAGE_NAME=$(luet search --installed kernel --output json | jq -r '(.packages // [])[] | select( .category == "kernel" ) | select( .name | test("modules") | not).name')
     MINIMAL_NAME="${CURRENT_KERNEL_PACKAGE_NAME/full/minimal}"
     export INITRAMFS_PACKAGES="${INITRAMFS_PACKAGES:-utils/busybox kernel/$MINIMAL_NAME system/mocaccino-init system/mocaccino-live-boot init/mocaccino-skel system/kmod}"
 
@@ -170,9 +179,9 @@ generate_dracut_initramfs() {
     else
         # Retrieve version of the kernel
         if [[ "$kernel" == *lts* ]] ; then
-            version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-lts-modules\" ) | .version")
+            version=$(luet search --installed kernel --output json | jq  "(.packages // [])[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-lts-modules\" ) | .version")
         else
-            version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-modules\" ) | .version")
+            version=$(luet search --installed kernel --output json | jq  "(.packages // [])[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-modules\" ) | .version")
         fi
         version=${version%\+*}
         md_args="$md_args -r ${version}"
