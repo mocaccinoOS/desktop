@@ -65,9 +65,15 @@ cleanup_stale_initramfs() {
         [ "$f" = "$new_initramfs" ] && continue
         candidates+=("$f")
     done
-    # sort oldest -> newest by mtime
-    IFS=$'\n' candidates=($(ls -tr "${candidates[@]}" 2>/dev/null))
-    unset IFS
+
+    # Only sort if there's actually something to sort — "ls -tr" with no
+    # arguments lists the current working directory, not "nothing", so an
+    # empty candidates array must never reach `ls` unguarded (this is the
+    # common case on a fresh install / ISO build chroot with one kernel).
+    if [ "${#candidates[@]}" -gt 0 ]; then
+        IFS=$'\n' candidates=($(ls -tr "${candidates[@]}" 2>/dev/null))
+        unset IFS
+    fi
 
     # Always keep the single most recent non-current one as a manual
     # rescue fallback, no matter what luet reports.
