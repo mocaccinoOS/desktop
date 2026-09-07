@@ -127,7 +127,7 @@ generate_micro_initramfs() {
     ln -s ${INITRAMFS_GRUB#/} Initrd
     popd
 
-    cleanup_stale_initramfs --pretend
+    cleanup_stale_initramfs
 
     mkdir -p ${MOCACCINO_TARGET}/boot/grub
 
@@ -185,7 +185,7 @@ generate_dracut_initramfs() {
     if [ -n "$CURRENT_KERNEL" ]; then
         export INITRAMFS=${CURRENT_KERNEL/kernel/initramfs}
         INITRAMFS=${INITRAMFS/${MOCACCINO_TARGET}/}
-        cleanup_stale_initramfs --pretend
+        cleanup_stale_initramfs
     else
         echo "Could not determine current kernel file — skipping cleanup check this run"
     fi
