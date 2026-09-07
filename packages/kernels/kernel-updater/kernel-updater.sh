@@ -10,6 +10,95 @@ MOCACCINO_RELEASE=$(cat /etc/mocaccino/release)
 MOCACCINO_TARGET=${MOCACCINO_TARGET:-/}
 
 export LUET_NOLOCK=true
+
+cleanup_stale_initramfs() {
+    local pretend=0
+    while [ $# -gt 0 ]; do
+        case "$1" in
+            --pretend)
+                pretend=1
+                ;;
+            *)
+                echo "cleanup_stale_initramfs: unknown argument $1" 1>&2
+                return 1
+                ;;
+        esac
+        shift
+    done
+
+    if [ "$pretend" = 1 ]; then
+        echo "Checking for stale initramfs images (--pretend — nothing will be deleted)"
+    else
+        echo "Checking for stale initramfs images"
+    fi
+
+    # 1. Refuse to evaluate cleanup if we can't positively confirm the new
+    #    initramfs is a real, non-empty, resolvable file.
+    local new_initramfs="${MOCACCINO_TARGET}${INITRAMFS}"
+    if [ ! -s "$new_initramfs" ]; then
+        echo "New initramfs missing or empty — skipping cleanup check this run"
+        return 0
+    fi
+
+    # 2. Refuse to evaluate cleanup if the installed-kernel query looks
+    #    empty/broken. An empty/failed query must never be read as
+    #    "nothing is installed".
+    local installed_versions
+    installed_versions=$(luet search --installed kernel --output json \
+        | jq -r '.packages[] | select(.category=="kernel") | select(.name | test("modules") | not) | .version' \
+        | sed -E 's/\+.*//')
+    if [ -z "$installed_versions" ]; then
+        echo "Could not confirm installed kernel list — skipping cleanup check this run"
+        return 0
+    fi
+
+    # Only ever consider files matching the *exact* naming convention
+    # mocaccino-dracut/kernel-updater use for official "vanilla" kernels.
+    # Anything else — custom kernels, different ktypes (zen, hardened,
+    # self-built, etc.) — is never touched, never even evaluated.
+    local ktype="vanilla"
+    local arch="${MOC_ARCH:-$(uname -m)}"
+
+    local candidates=()
+    for f in "${MOCACCINO_TARGET}${BOOTDIR}"/initramfs-${ktype}-${arch}-*-mocaccino; do
+        [ -e "$f" ] || continue
+        [ "$f" = "$new_initramfs" ] && continue
+        candidates+=("$f")
+    done
+    # sort oldest -> newest by mtime
+    IFS=$'\n' candidates=($(ls -tr "${candidates[@]}" 2>/dev/null))
+    unset IFS
+
+    # Always keep the single most recent non-current one as a manual
+    # rescue fallback, no matter what luet reports.
+    local keep_fallback="${candidates[-1]:-}"
+
+    local found_any=0
+    for f in "${candidates[@]}"; do
+        [ "$f" = "$keep_fallback" ] && continue
+
+        local ver
+        ver=$(basename "$f" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+
+        # exact match only — no substring false-positives
+        if printf '%s\n' "$installed_versions" | grep -qxF "$ver"; then
+            continue   # still installed, never touch
+        fi
+
+        found_any=1
+        if [ "$pretend" = 1 ]; then
+            echo "[WOULD REMOVE] $f"
+        else
+            echo "Removing stale $f"
+            rm -f -- "$f" || true   # cleanup is best-effort, never fails the update
+        fi
+    done
+
+    if [ "$found_any" = 0 ]; then
+        echo "No stale initramfs images found."
+    fi
+}
+
 generate_micro_initramfs() {
     echo "Generating initramfs and grub setup"
 
@@ -31,6 +120,8 @@ generate_micro_initramfs() {
     ln -s ${KERNEL_GRUB#/} bzImage
     ln -s ${INITRAMFS_GRUB#/} Initrd
     popd
+
+    cleanup_stale_initramfs --pretend
 
     mkdir -p ${MOCACCINO_TARGET}/boot/grub
 
@@ -60,45 +151,57 @@ EOF
 }
 
 generate_dracut_initramfs() {
-  local kernel=$1
-  local md_args="--force"
-  local version=""
+    local kernel=$1
+    local md_args="--force"
+    local version=""
 
-  echo "Generating initramfs and update grub setup"
+    echo "Generating initramfs and update grub setup"
 
-  if [ -z "$kernel" ] ; then
-    md_args="$md_args --rebuild-all"
-  else
-    # Retrieve version of the kernel
-    if [[ "$kernel" == *lts* ]] ; then
-      version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-lts-modules\" ) | .version")
+    BOOTDIR=/boot
+
+    if [ -z "$kernel" ] ; then
+        md_args="$md_args --rebuild-all"
     else
-      version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-modules\" ) | .version")
+        # Retrieve version of the kernel
+        if [[ "$kernel" == *lts* ]] ; then
+            version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-lts-modules\" ) | .version")
+        else
+            version=$(luet search --installed kernel --output json | jq  ".packages[] | select ( .category == \"kernel\" and .name == \"${MOCACCINO_KERNEL_PREFIX}-modules\" ) | .version")
+        fi
+        version=${version%\+*}
+        md_args="$md_args -r ${version}"
     fi
-    version=${version%\+*}
-    md_args="$md_args -r ${version}"
-  fi
 
-  mocaccino-dracut $md_args
+    mocaccino-dracut $md_args
 
-  # TODO: Fix initialization of bzImage, Initrd. Is it used correctly?
-  grub-mkconfig -o ${MOCACCINO_TARGET}/boot/grub/grub.cfg
+    # Figure out which initramfs was just (re)built so cleanup can exclude it.
+    CURRENT_KERNEL=$(ls ${MOCACCINO_TARGET}$BOOTDIR/kernel-* 2>/dev/null | head -1)
+    if [ -n "$CURRENT_KERNEL" ]; then
+        export INITRAMFS=${CURRENT_KERNEL/kernel/initramfs}
+        INITRAMFS=${INITRAMFS/${MOCACCINO_TARGET}/}
+        cleanup_stale_initramfs --pretend
+    else
+        echo "Could not determine current kernel file — skipping cleanup check this run"
+    fi
+
+    # TODO: Fix initialization of bzImage, Initrd. Is it used correctly?
+    grub-mkconfig -o ${MOCACCINO_TARGET}/boot/grub/grub.cfg
 }
 
 case "$MOCACCINO_RELEASE" in
-  "micro")
-    generate_micro_initramfs
-    ;;
-  "micro-embedded"|"desktop-embedded")
-    echo "Nothing to do"
-    ;;
-  "desktop")
-    generate_dracut_initramfs
-    ;;
-  *)
-    echo "The release $MOCACCINO_RELEASE is unsupported."
-    exit 1
-    ;;
+    "micro")
+        generate_micro_initramfs
+        ;;
+    "micro-embedded"|"desktop-embedded")
+        echo "Nothing to do"
+        ;;
+    "desktop")
+        generate_dracut_initramfs
+        ;;
+    *)
+        echo "The release $MOCACCINO_RELEASE is unsupported."
+        exit 1
+        ;;
 esac
 
 exit 0
