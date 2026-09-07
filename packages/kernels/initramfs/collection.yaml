@@ -2,7 +2,7 @@ packages:
   - category: "kernel"
     name: "mocaccino-lts-initramfs"
     modules_name: "mocaccino-lts-modules"
-    version: "6.18.49"
+    version: 6.18.49+1
     git_sha: "e80e77438c627981b266734c03e23dcf8a60014e"
     golang_version: "1.20.14"
     arch: "amd64"
