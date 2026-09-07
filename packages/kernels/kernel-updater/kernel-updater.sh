@@ -34,7 +34,7 @@ cleanup_stale_initramfs() {
 
     # 1. Refuse to evaluate cleanup if we can't positively confirm the new
     #    initramfs is a real, non-empty, resolvable file.
-    local new_initramfs="${MOCACCINO_TARGET}${INITRAMFS}"
+    local new_initramfs="${MOCACCINO_TARGET%/}${INITRAMFS}"
     if [ ! -s "$new_initramfs" ]; then
         echo "New initramfs missing or empty — skipping cleanup check this run"
         return 0
@@ -60,7 +60,7 @@ cleanup_stale_initramfs() {
     local arch="${MOC_ARCH:-$(uname -m)}"
 
     local candidates=()
-    for f in "${MOCACCINO_TARGET}${BOOTDIR}"/initramfs-${ktype}-${arch}-*-mocaccino; do
+    for f in "${MOCACCINO_TARGET%/}${BOOTDIR}"/initramfs-${ktype}-${arch}-*-mocaccino; do
         [ -e "$f" ] || continue
         [ "$f" = "$new_initramfs" ] && continue
         candidates+=("$f")
