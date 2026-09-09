@@ -38,9 +38,6 @@ provides:
   - name: xerces-c
     category: dev-libs
     version: '>=0'
-  - name: shtab
-    category: dev-python
-    version: '>=0'
   - name: kate-common
     category: kde-apps
     version: '>=0'

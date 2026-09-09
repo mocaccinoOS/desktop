@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "26.09"
+version: 26.09+1
 uri:
   - https://mocaccino.org
 license: "Multiple (GPL-2, LGPL, MIT, BSD, Apache-2, Artistic)"
@@ -524,6 +524,9 @@ provides:
   - name: sassc
     category: dev-lang
     version: '>=0'
+  - name: yasm
+    category: dev-lang
+    version: '>=0'
   - name: appstream
     category: dev-libs
     version: '>=0'
@@ -861,6 +864,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pyxdg
+    category: dev-python
+    version: '>=0'
+  - name: shtab
     category: dev-python
     version: '>=0'
   - name: xcffib

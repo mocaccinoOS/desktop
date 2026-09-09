@@ -53,9 +53,6 @@ provides:
   - name: plasma-wayland-protocols
     category: dev-libs
     version: '>=0'
-  - name: shtab
-    category: dev-python
-    version: '>=0'
   - name: versioneer
     category: dev-python
     version: '>=0'

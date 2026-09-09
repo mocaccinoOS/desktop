@@ -9,10 +9,9 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 - cp -rf patches /etc/portage/
 # rust-bin here
-- USE="inspector profiler rustfmt" emerge -1 dev-lang/rust-bin
-- emerge -1 dev-build/cmake sys-devel/bison app-alternatives/yacc
-- emerge dev-util/ccache
-- emerge -1 app-portage/gentoolkit
+- USE="inspector profiler rustfmt" emerge dev-lang/rust-bin
+- emerge sys-devel/bison app-alternatives/yacc
+- emerge app-portage/gentoolkit dev-util/ccache dev-build/cmake
 # Copy our custom mirror selection tool
 - cp -f scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - chmod +x /usr/local/sbin/mocaccino-select-fastest-binhost.sh
