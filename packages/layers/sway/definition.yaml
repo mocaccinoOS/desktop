@@ -8,7 +8,7 @@ description: "i3-compatible Wayland window manager"
 labels:
   emerge.jobs: "1"
   emerge.packages: >-
-    gui-apps/swaybg gui-apps/swayidle gui-apps/swaylock =gui-wm/sway sys-libs/basu
+    gui-apps/swaybg gui-apps/swayidle gui-apps/swaylock gui-wm/sway sys-libs/basu
 requires:
   - category: "layers"
     name: "wlroots"
