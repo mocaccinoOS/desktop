@@ -1,10 +1,10 @@
 # overlay packages
-=cosmic-base/cosmic-applets-1.7.0 ~amd64
+=cosmic-base/cosmic-applets-1.7.0-r1 ~amd64
 =cosmic-base/cosmic-applibrary-1.7.0 ~amd64
 =cosmic-base/cosmic-bg-1.7.0 ~amd64
 =cosmic-base/cosmic-comp-1.7.0 ~amd64
 =cosmic-base/cosmic-edit-1.7.0 ~amd64
-=cosmic-base/cosmic-files-1.7.0 ~amd64
+=cosmic-base/cosmic-files-1.7.0-r1 ~amd64
 =cosmic-base/cosmic-greeter-1.7.0 ~amd64
 =cosmic-base/cosmic-icons-1.7.0 ~amd64
 =cosmic-base/cosmic-idle-1.7.0 ~amd64
