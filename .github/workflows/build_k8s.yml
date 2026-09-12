@@ -9,11 +9,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    # runs-on: [self-hosted]
+    runs-on: [self-hosted, mocaccino-desktop]
     env:
       DOCKER_CFG: ${{ secrets.DOCKER_HOST }}
-      ENCODED_KUBECONFIG: ${{ secrets.KUBECONFIG }}
       #MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
       #MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
       REPOSITORY_TYPE: docker
@@ -57,10 +55,8 @@ jobs:
     - name: Build repository 🔧
       if: github.ref == 'refs/heads/master' && !startsWith(github.ref, 'refs/tags/')
       run: |
-        if [ -z "$EDGEVPN" ]; then
-          export KUBECONFIG=$GITHUB_WORKSPACE/kubeconfig
-          echo "$ENCODED_KUBECONFIG" | base64 -d > $KUBECONFIG
-        else
+        # The runner pod reaches the API with its in-cluster ServiceAccount.
+        if [ -n "$EDGEVPN" ]; then
           source .github/helpers.sh
           start_vpn
           prepare_jumpbox
