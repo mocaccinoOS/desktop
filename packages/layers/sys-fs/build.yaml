@@ -11,19 +11,18 @@ prelude:
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge dev-lang/rust-bin
 - emerge sys-devel/bison app-alternatives/yacc
-- emerge app-portage/gentoolkit dev-util/ccache dev-libs/jsoncpp dev-build/cmake
+- emerge app-portage/gentoolkit dev-util/ccache dev-build/cmake
 # Copy our custom mirror selection tool
 - cp -f scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - chmod +x /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
-{{ template "portage_prelude_build" . }}
+{{ template "portage_prelude_build_gentoo_binary" . }}
 steps:
-- emerge -1 dev-libs/jsoncpp dev-build/cmake
 # Calamares needs this directory
 - mkdir -p /etc/sudoers.d && touch /etc/sudoers.d/.keep && chmod 750 /etc/sudoers.d
 # Workaround 2025-12-31: There seems to be a bug in the dev-libs/libmbim ebuild. We must make sure dev-perl/Locale-gettext is installed before dev-libs/libmbim gets merged.
 - emerge -1 dev-perl/Locale-gettext
-{{ template "portage_build" . }}
+{{ template "portage_build_gentoo_binary" . }}
 # Clean up build dependencies
 - emerge -C dev-python/pillow dev-python/docutils dev-python/sphinx dev-python/sphinx-rtd-theme
 - emerge --depclean
