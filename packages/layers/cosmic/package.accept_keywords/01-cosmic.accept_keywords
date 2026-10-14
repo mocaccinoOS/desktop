@@ -1,6 +1,6 @@
 # overlay packages
 =cosmic-base/cosmic-applets-1.10.0 ~amd64
-=cosmic-base/cosmic-applibrary-1.10.0 ~amd64
+=cosmic-base/cosmic-app-library-1.10.0 ~amd64
 =cosmic-base/cosmic-bg-1.10.0 ~amd64
 =cosmic-base/cosmic-comp-1.10.0 ~amd64
 =cosmic-base/cosmic-edit-1.10.0 ~amd64
