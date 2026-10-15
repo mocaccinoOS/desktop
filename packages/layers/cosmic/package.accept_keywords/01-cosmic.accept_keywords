@@ -25,6 +25,7 @@
 =cosmic-base/cosmic-sound-theme-1.10.0 ~amd64
 =cosmic-base/cosmic-store-1.10.0 ~amd64
 =cosmic-base/cosmic-term-1.10.0 ~amd64
+=cosmic-base/cosmic-viewer-1.10.0 ~amd64
 =cosmic-base/cosmic-wallpapers-1.10.0 ~amd64
 =cosmic-base/cosmic-workspaces-epoch-1.10.0 ~amd64
 =cosmic-base/pop-appstream-data-9999 ~amd64
