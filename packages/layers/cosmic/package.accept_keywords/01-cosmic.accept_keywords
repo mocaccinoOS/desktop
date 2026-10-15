@@ -14,6 +14,7 @@
 =cosmic-base/cosmic-monitor-1.10.0 ~amd64
 =cosmic-base/cosmic-notifications-1.10.0 ~amd64
 =cosmic-base/cosmic-osd-1.10.0 ~amd64
+=cosmic-base/cosmic-osk-1.10.0 ~amd64
 =cosmic-base/cosmic-panel-1.10.0 ~amd64
 =cosmic-base/cosmic-player-1.10.0 ~amd64
 =cosmic-base/cosmic-randr-1.10.0 ~amd64
