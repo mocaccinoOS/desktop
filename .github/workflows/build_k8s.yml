@@ -74,6 +74,7 @@ jobs:
     - name: Repository integrity checks 🔧
       if: github.ref == 'refs/heads/master' && !startsWith(github.ref, 'refs/tags/')
       run: |
+        sudo chown -R $(id -u):$(id -g) /home/runner/.docker
         ./scripts/run.sh repo_validate.sh
     - name: Push to stable repository 🚀
       if: startsWith(github.ref, 'refs/tags/')
