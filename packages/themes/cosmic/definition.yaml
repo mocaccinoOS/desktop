@@ -1,6 +1,6 @@
 category: "themes"
 name: "cosmic"
-version: "26.06"
+version: "26.10"
 labels:
 requires:
   - category: "layers"
