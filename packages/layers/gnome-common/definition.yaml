@@ -299,6 +299,45 @@ provides:
   - name: wpebackend-fdo
     category: gui-libs
     version: '>=0'
+  - name: clang
+    category: llvm-core
+    version: '>=0'
+  - name: clang-linker-config
+    category: llvm-core
+    version: '>=0'
+  - name: clang-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: lld
+    category: llvm-core
+    version: '>=0'
+  - name: lld-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: llvm
+    category: llvm-core
+    version: '>=0'
+  - name: llvm-toolchain-symlinks
+    category: llvm-core
+    version: '>=0'
+  - name: clang-rtlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-runtime
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-stdlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: clang-unwindlib-config
+    category: llvm-runtimes
+    version: '>=0'
+  - name: compiler-rt
+    category: llvm-runtimes
+    version: '>=0'
+  - name: compiler-rt-sanitizers
+    category: llvm-runtimes
+    version: '>=0'
   - name: clutter
     category: media-libs
     version: '>=0'
