@@ -44,6 +44,7 @@ steps:
 - rm /etc/portage/package.use/temp.use
 - rm /etc/portage/package.mask/temp.mask
 {{ template "housekeeping" . }}
+{{ template "pkglist_full" . }}
 excludes:
 - ^/dev
 - ^/etc/._cfg.*

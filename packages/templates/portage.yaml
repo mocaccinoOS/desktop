@@ -66,6 +66,15 @@
 - if [ -d /var/cache/binhost/ ] && [ ! -z "$(ls -A /var/cache/binhost/)" ]; then rm -r /var/cache/binhost/*; fi
 {{end}}
 
+{{ define "pkglist_full" }}
+# Full package list, only for the first layer (layers/system-x), where all
+# installed packages are shipped. All other layers use pkglist_begin and
+# pkglist_end, which list only what the layer adds on top of its parent.
+- mkdir -p /usr/share/mocaccino/packagelists
+- qlist -IRv | LC_ALL=C sort > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.added
+{{end}}
+
+
 {{ define "pkglist_begin" }}
 - qlist -IRv | LC_ALL=C sort > /.layer.before
 {{end}}
