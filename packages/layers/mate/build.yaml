@@ -10,8 +10,8 @@ steps:
 {{ template "portage_build" . }}
 {{ template "housekeeping" . }}
 - qlist -Iv | sort > /var/tmp/layer.after
-- comm -13 /var/tmp/layer.before /var/tmp/layer.after > /usr/share/mocaccino/packagelists/mate.added
-- comm -23 /var/tmp/layer.before /var/tmp/layer.after > /usr/share/mocaccino/packagelists/mate.removed
+- LC_ALL=C comm -13 /.layer.before /.layer.after > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.added
+- LC_ALL=C comm -23 /.layer.before /.layer.after > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.removed
 - rm -f /var/tmp/layer.before /var/tmp/layer.after
 requires:
 - category: "layers"
