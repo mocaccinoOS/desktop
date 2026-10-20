@@ -5,15 +5,11 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
-- qlist -Iv | LC_ALL=C sort > /.layer.before
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 {{ template "housekeeping" . }}
-- mkdir -p /usr/share/mocaccino/packagelists
-- qlist -Iv | LC_ALL=C sort > /.layer.after
-- LC_ALL=C comm -13 /.layer.before /.layer.after > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.added
-- LC_ALL=C comm -23 /.layer.before /.layer.after > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.removed
-- rm -f /.layer.before /.layer.after
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "gnome-common"

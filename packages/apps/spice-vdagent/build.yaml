@@ -5,10 +5,12 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 - cp 99-spice-vdagent /etc/X11/xinit/xinitrc.d/
 - chmod +x /etc/X11/xinit/xinitrc.d/99-spice-vdagent
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "X"

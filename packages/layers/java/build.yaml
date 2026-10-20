@@ -1,11 +1,12 @@
 excludes:
 {{ template "portage_excludes" }}
-
 env:
 {{ template "portage_env" . }}
-
+prelude:
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "buildbase"
   name: "X"

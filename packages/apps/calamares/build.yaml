@@ -5,11 +5,14 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 - cp files/49-calamares.rules /usr/share/polkit-1/rules.d/
 - chown 102:0 /usr/share/polkit-1/rules.d/49-calamares.rules
 - chmod 700 /usr/share/polkit-1/rules.d/49-calamares.rules
+{{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "buildbase"
   name: "kde-common"

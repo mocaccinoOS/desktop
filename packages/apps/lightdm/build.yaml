@@ -5,6 +5,7 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 - sed -i '/syslog/d' /lib/systemd/system/lightdm.service
@@ -16,6 +17,7 @@ steps:
 # Do not ship the .keep file; it gets deleted later and causes a false positive in oscheck
 - mkdir -p /var/lib/lightdm-data && rm -f /var/lib/lightdm-data/.keep*
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "X"

@@ -5,12 +5,14 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "pkglist_begin" . }}
 steps:
 - mkdir -p /var/lib/gdm/.config
 - touch /var/lib/gdm/.config/.keep
 {{ template "portage_build_gentoo_binary" . }}
 - chown -R 32:32 /var/lib/gdm
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "gnome-common"

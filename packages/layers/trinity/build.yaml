@@ -9,11 +9,14 @@ prelude:
 - eselect repository add trinity-official git https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git
 - emaint sync -r trinity-official
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 - emerge -1 www-misc/hldig::trinity-official
 {{ template "portage_build" . }}
 - eselect repository remove -f trinity-official
 - emerge -C app-eselect/eselect-repository
+{{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "X"

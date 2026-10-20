@@ -19,12 +19,14 @@ prelude:
 - ebuild /var/db/repos/gentoo/gnome-extra/cinnamon-spices-extensions/cinnamon-spices-extensions-9999.ebuild manifest
 - emerge -1 x11-themes/gnome-themes-standard x11-themes/adwaita-icon-theme
 {{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
 - eselect repository remove haarp
 - eselect repository remove mocaccino-overlay
 - emerge -C app-eselect/eselect-repository
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "gnome-common"

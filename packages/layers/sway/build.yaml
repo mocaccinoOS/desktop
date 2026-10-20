@@ -5,9 +5,11 @@ env:
 prelude:
 {{ template "portage_copy_package_files" . }}
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "wlroots"

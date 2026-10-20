@@ -8,10 +8,12 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable steam-overlay
 - emaint sync -r steam-overlay
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove steam-overlay
 - emerge -C app-eselect/eselect-repository
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "X"

@@ -11,11 +11,13 @@ prelude:
 - eselect repository add cosmic-overlay git https://github.com/fsvm88/cosmic-overlay
 - emaint sync -r cosmic-overlay
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "gnome-common"
