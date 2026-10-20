@@ -2,8 +2,10 @@ env:
 {{ template "portage_env" . }}
 prelude:
 {{ template "portage_prelude_build" . }}
+{{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "system-x"
