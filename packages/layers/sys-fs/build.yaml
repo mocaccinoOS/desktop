@@ -17,6 +17,7 @@ prelude:
 - chmod +x /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build_gentoo_binary" . }}
+{{ template "pkglist_begin" . }}
 steps:
 # Calamares needs this directory
 - mkdir -p /etc/sudoers.d && touch /etc/sudoers.d/.keep && chmod 750 /etc/sudoers.d
@@ -28,6 +29,7 @@ steps:
 - emerge --depclean
 - rm /etc/portage/package.use/temp.use
 {{ template "housekeeping" . }}
+{{ template "pkglist_end" . }}
 requires:
 - category: "layers"
   name: "system-x"
