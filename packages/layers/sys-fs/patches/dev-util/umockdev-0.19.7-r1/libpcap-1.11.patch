@@ -1,0 +1,320 @@
+From 13e5878d648d835e4af3910b6e94fef30794f1b3 Mon Sep 17 00:00:00 2001
+From: Martin Pitt <martin@piware.de>
+Date: Sun, 20 Sep 2026 03:17:38 +0200
+Subject: [PATCH] pcap: Declare the USB pseudo-header layout ourselves
+
+libpcap 1.11 changed the 64 bit members of pcap_usb_header_mmapped into a
+pair of 32 bit halves, which breaks our binding that reads them as uint64.
+No distribution ships 1.11 yet, so we have to keep building against both.
+
+DLT_USB_LINUX_MMAPPED is a frozen on-disk format, so declare it ourselves
+instead of binding libpcap's struct. Static assertions check our definition
+against whichever libpcap we are built against, so a layout mistake fails
+the build instead of silently corrupting a replay. It has to live in a C
+header rather than in Vala code, as valac warns about the members we never
+read, which is fatal with --werror.
+
+This also fixes what made libpcap change the header in the first place:
+pcap_next() only guarantees 4 byte alignment for the records it hands out,
+so reading them through a struct that wants 8 byte alignment is undefined
+behaviour on architectures which care.
+
+Fixes #284
+---
+ meson.build            |  2 +
+ src/libpcap.vapi       | 29 -------------
+ src/pcap_usb.h         | 93 ++++++++++++++++++++++++++++++++++++++++++
+ src/pcap_usb.vapi      | 38 +++++++++++++++++
+ src/umockdev-pcap.vala | 24 +++++------
+ 5 files changed, 145 insertions(+), 41 deletions(-)
+ create mode 100644 src/pcap_usb.h
+ create mode 100644 src/pcap_usb.vapi
+
+diff --git a/meson.build b/meson.build
+index 44bf1fe7..3d6fcee7 100644
+--- a/meson.build
++++ b/meson.build
+@@ -162,6 +162,7 @@ umockdev_lib = shared_library('umockdev',
+    'src/umockdev-ioctl.vala',
+    'src/umockdev-pcap.vala',
+    'src/umockdev-spi.vala',
++   'src/pcap_usb.vapi',
+    'src/uevent_sender.vapi',
+    'src/uevent_sender.c',
+    'src/ioctl_tree.vapi',
+@@ -228,6 +229,7 @@ umockdev_record_exe = executable('umockdev-record',
+    'src/umockdev-ioctl.vala',
+    'src/umockdev-pcap.vala',
+    'src/umockdev-spi.vala',
++   'src/pcap_usb.vapi',
+    'src/ioctl_tree.vapi',
+    'src/ioctl_tree.c',
+    'src/ioctl_termios.vapi',
+diff --git a/src/libpcap.vapi b/src/libpcap.vapi
+index f1f6dae5..32e32c6f 100644
+--- a/src/libpcap.vapi
++++ b/src/libpcap.vapi
+@@ -25,35 +25,6 @@ public struct pkthdr {
+     uint32 len;
+ }
+ 
+-/* Representing the of ; not a direct copy from the usb.h header */
+-[CCode (cname="pcap_usb_header_mmapped", cheader_filename = "pcap/usb.h")]
+-public struct usb_header_mmapped {
+-    uint64 id;
+-
+-    uint8 event_type;
+-    uint8 transfer_type;
+-    uint8 endpoint_number;
+-    uint8 device_address;
+-    uint16 bus_id;
+-    uint8 setup_flag;
+-    uint8 data_flag;
+-
+-    uint64 ts_sec;
+-
+-    uint32 ts_usec;
+-    int32 status;
+-
+-    uint32 urb_len;
+-    uint32 data_len;
+-
+-    uint64 s; /* Really a union of setup/iso information */
+-
+-    uint32 interval;
+-    uint32 start_frame;
+-    uint32 transfer_flags;
+-    uint32 iso_numdesc;
+-}
+-
+ }
+ 
+ /* This is a separate namespace because cprefix= does not seem to work */
+diff --git a/src/pcap_usb.h b/src/pcap_usb.h
+new file mode 100644
+index 00000000..b1878544
+--- /dev/null
++++ b/src/pcap_usb.h
+@@ -0,0 +1,93 @@
++/* SPDX-License-Identifier: LGPL-2.1-or-later */
++/*
++ * pcap_usb.h - Layout of a DLT_USB_LINUX_MMAPPED record
++ *
++ * This mirrors pcap_usb_header_mmapped from <pcap/usb.h>, which we cannot use
++ * directly: pcap_next() only guarantees 4 byte alignment for the records it
++ * hands out, so the 64 bit members must not be declared as uint64_t, which
++ * asks for an 8 byte aligned load and traps on architectures like sparc64.
++ * libpcap 1.11 fixed that in its own header, and thereby changed the types of
++ * those members; keeping our own definition works with either version.
++ *
++ * DLT_USB_LINUX_MMAPPED is a frozen on-disk format, but the static assertions
++ * below still check us against whichever libpcap we are built against.
++ */
++
++#pragma once
++
++#include <assert.h>
++#include <stddef.h>
++#include <stdint.h>
++#include <string.h>
++
++#include <pcap/usb.h>
++
++/* A 64 bit member; see above. The halves are in host byte order, as libpcap
++ * byte swaps the whole record before handing it out.
++ */
++typedef struct {
++    uint32_t halves[2];
++} umockdev_pcap_uint64;
++
++typedef struct {
++    umockdev_pcap_uint64 id;
++
++    uint8_t event_type;
++    uint8_t transfer_type;
++    uint8_t endpoint_number;
++    uint8_t device_address;
++    uint16_t bus_id;
++    uint8_t setup_flag;
++    uint8_t data_flag;
++
++    umockdev_pcap_uint64 ts_sec;
++
++    uint32_t ts_usec;
++    int32_t status;
++
++    uint32_t urb_len;
++    uint32_t data_len;
++
++    umockdev_pcap_uint64 s; /* really a union of setup/iso information */
++
++    uint32_t interval;
++    uint32_t start_frame;
++    uint32_t xfer_flags;
++    uint32_t ndesc;
++} umockdev_pcap_usb_header;
++
++static inline uint64_t
++umockdev_pcap_uint64_val(const umockdev_pcap_uint64 *value)
++{
++    uint64_t result;
++
++    memcpy(&result, value, sizeof(result));
++    return result;
++}
++
++#define _UMOCKDEV_PCAP_CHECK_MEMBER(m) \
++    static_assert(offsetof(umockdev_pcap_usb_header, m) == offsetof(pcap_usb_header_mmapped, m), \
++                  "umockdev_pcap_usb_header." #m " is at the wrong offset")
++
++static_assert(sizeof(umockdev_pcap_usb_header) == sizeof(pcap_usb_header_mmapped),
++              "umockdev_pcap_usb_header has the wrong size");
++_UMOCKDEV_PCAP_CHECK_MEMBER(id);
++_UMOCKDEV_PCAP_CHECK_MEMBER(event_type);
++_UMOCKDEV_PCAP_CHECK_MEMBER(transfer_type);
++_UMOCKDEV_PCAP_CHECK_MEMBER(endpoint_number);
++_UMOCKDEV_PCAP_CHECK_MEMBER(device_address);
++_UMOCKDEV_PCAP_CHECK_MEMBER(bus_id);
++_UMOCKDEV_PCAP_CHECK_MEMBER(setup_flag);
++_UMOCKDEV_PCAP_CHECK_MEMBER(data_flag);
++_UMOCKDEV_PCAP_CHECK_MEMBER(ts_sec);
++_UMOCKDEV_PCAP_CHECK_MEMBER(ts_usec);
++_UMOCKDEV_PCAP_CHECK_MEMBER(status);
++_UMOCKDEV_PCAP_CHECK_MEMBER(urb_len);
++_UMOCKDEV_PCAP_CHECK_MEMBER(data_len);
++_UMOCKDEV_PCAP_CHECK_MEMBER(s);
++_UMOCKDEV_PCAP_CHECK_MEMBER(interval);
++_UMOCKDEV_PCAP_CHECK_MEMBER(start_frame);
++_UMOCKDEV_PCAP_CHECK_MEMBER(xfer_flags);
++_UMOCKDEV_PCAP_CHECK_MEMBER(ndesc);
++
++#undef _UMOCKDEV_PCAP_CHECK_MEMBER
+diff --git a/src/pcap_usb.vapi b/src/pcap_usb.vapi
+new file mode 100644
+index 00000000..3ea37c0c
+--- /dev/null
++++ b/src/pcap_usb.vapi
+@@ -0,0 +1,38 @@
++[CCode (cprefix = "umockdev_pcap_", lower_case_cprefix = "umockdev_pcap_", cheader_filename = "pcap_usb.h")]
++namespace PcapUsb {
++
++[CCode (cname = "umockdev_pcap_uint64", has_type_id = false)]
++public struct Uint64 {
++    [CCode (cname = "umockdev_pcap_uint64_val")]
++    public uint64 val();
++}
++
++[CCode (cname = "umockdev_pcap_usb_header", has_type_id = false)]
++public struct Header {
++    Uint64 id;
++
++    uint8 event_type;
++    uint8 transfer_type;
++    uint8 endpoint_number;
++    uint8 device_address;
++    uint16 bus_id;
++    uint8 setup_flag;
++    uint8 data_flag;
++
++    Uint64 ts_sec;
++
++    uint32 ts_usec;
++    int32 status;
++
++    uint32 urb_len;
++    uint32 data_len;
++
++    Uint64 s; /* Really a union of setup/iso information */
++
++    uint32 interval;
++    uint32 start_frame;
++    uint32 xfer_flags;
++    uint32 ndesc;
++}
++
++}
+diff --git a/src/umockdev-pcap.vala b/src/umockdev-pcap.vala
+index 9f9cdd4c..42fc9943 100644
+--- a/src/umockdev-pcap.vala
++++ b/src/umockdev-pcap.vala
+@@ -204,19 +204,19 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+             if (cur_buf == null)
+                 return null;
+ 
+-            usb_header_mmapped *urb_hdr = (void*) cur_buf;
++            PcapUsb.Header *urb_hdr = (void*) cur_buf;
+ 
+             cur_waiting_since = now;
+-            last_pkt_time_ms = urb_hdr.ts_sec * 1000 + urb_hdr.ts_usec / 1000;
++            last_pkt_time_ms = urb_hdr.ts_sec.val() * 1000 + urb_hdr.ts_usec / 1000;
+             start_time_ms = last_pkt_time_ms;
+         }
+ 
+         for (; cur_buf != null; cur_buf = rec.next(ref cur_hdr), cur_waiting_since = now) {
+-            assert(cur_hdr.caplen >= 64);
++            assert(cur_hdr.caplen >= sizeof(PcapUsb.Header));
+ 
+-            usb_header_mmapped *urb_hdr = (void*) cur_buf;
++            PcapUsb.Header *urb_hdr = (void*) cur_buf;
+ 
+-            uint64 cur_pkt_time_ms = urb_hdr.ts_sec * 1000 + urb_hdr.ts_usec / 1000;
++            uint64 cur_pkt_time_ms = urb_hdr.ts_sec.val() * 1000 + urb_hdr.ts_usec / 1000;
+ 
+             /* Discard anything from a different bus/device */
+             if (urb_hdr.bus_id != bus || urb_hdr.device_address != device)
+@@ -296,13 +296,13 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+                         assert(urb_hdr.data_len == urb_buffer_length);
+ 
+                         /* Compare the full buffer (as we are outgoing) */
+-                        if (Posix.memcmp(urb_buffer, &cur_buf[sizeof(usb_header_mmapped)], urb_buffer_length) != 0) {
++                        if (Posix.memcmp(urb_buffer, &cur_buf[sizeof(PcapUsb.Header)], urb_buffer_length) != 0) {
+                             if (debug) {
+                                 stderr.printf("UMockdev: Queued URB %d has a buffer mismatch! Recording:", i);
+                                 for (int j = 0; j < urb_buffer_length; j++) {
+                                     if (j > 0 && j % 8 == 0)
+                                         stderr.printf("\n");
+-                                    stderr.printf(" %02x", cur_buf[sizeof(usb_header_mmapped) + j]);
++                                    stderr.printf(" %02x", cur_buf[sizeof(PcapUsb.Header) + j]);
+                                 }
+                                 stderr.printf("\nUMockdev: Submitted:");
+                                 for (int j = 0; j < urb_buffer_length; j++) {
+@@ -317,10 +317,10 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+                     }
+ 
+                     /* Everything matches, mark as submitted */
+-                    urb_data.pcap_id = urb_hdr.id;
++                    urb_data.pcap_id = urb_hdr.id.val();
+ 
+                     /* Packet was handled. */
+-                    last_pkt_time_ms = urb_hdr.ts_sec * 1000 + urb_hdr.ts_usec / 1000;
++                    last_pkt_time_ms = urb_hdr.ts_sec.val() * 1000 + urb_hdr.ts_usec / 1000;
+                     break;
+                 }
+ 
+@@ -337,7 +337,7 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+                 for (int i = 0; i < urbs.length; i++) {
+                     urb_info = urbs.index(i);
+ 
+-                    if (urb_info.pcap_id == urb_hdr.id) {
++                    if (urb_info.pcap_id == urb_hdr.id.val()) {
+                         urb = (Ioctl.usbdevfs_urb*) urb_info.urb_data.data;
+                         urbs.remove_index(i);
+                         break;
+@@ -366,7 +366,7 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+                     if (urb.type == URB_CONTROL)
+                         urb_buffer = &urb.buffer[8];
+ 
+-                    Posix.memcpy(urb_buffer, &cur_buf[sizeof(usb_header_mmapped)], urb_hdr.data_len);
++                    Posix.memcpy(urb_buffer, &cur_buf[sizeof(PcapUsb.Header)], urb_hdr.data_len);
+                 }
+                 urb.status = (int) urb_hdr.status;
+                 urb.actual_length = (int) urb_hdr.urb_len;
+@@ -375,7 +375,7 @@ internal class IoctlUsbPcapHandler : IoctlBase {
+                 assert(urb_hdr.start_frame == 0);
+                 urb.start_frame = (int) urb_hdr.start_frame;
+ 
+-                last_pkt_time_ms = urb_hdr.ts_sec * 1000 + urb_hdr.ts_usec / 1000;
++                last_pkt_time_ms = urb_hdr.ts_sec.val() * 1000 + urb_hdr.ts_usec / 1000;
+ 
+                 return urb_info;
+             }
