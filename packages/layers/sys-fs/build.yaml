@@ -9,8 +9,8 @@ prelude:
 {{ template "portage_copy_package_files" . }}
 # rust-bin here
 - USE="inspector profiler rustfmt" emerge dev-lang/rust-bin
-- emerge sys-devel/bison app-alternatives/yacc
-- emerge app-portage/gentoolkit dev-util/ccache dev-build/cmake
+# Want these tools in build images
+- emerge sys-devel/bison app-alternatives/yacc app-portage/gentoolkit dev-util/ccache dev-build/cmake
 # Copy our custom mirror selection tool
 - install -Dm0755 scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
@@ -23,9 +23,10 @@ steps:
 - emerge -1 dev-perl/Locale-gettext
 {{ template "portage_build_gentoo_binary" . }}
 # Clean up build dependencies
-- emerge -C dev-python/pillow dev-python/docutils dev-python/sphinx dev-python/sphinx-rtd-theme
-- emerge --depclean
-- rm /etc/portage/package.use/temp.use
+- |
+  emerge -C dev-python/pillow dev-python/docutils dev-python/sphinx dev-python/sphinx-rtd-theme && \
+  emerge --depclean && \
+  rm /etc/portage/package.use/temp.use
 {{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
