@@ -1,8 +1,7 @@
 #!/bin/bash
-# Selects the fastest Gentoo binpackage mirror from the live, global mirror
-# list and writes it into a dedicated binrepos.conf drop-in. Idempotent -
-# only ever touches its own file. Never modifies make.conf or any other
-# binrepos.conf entry (e.g. the shipped gentoobinhost.conf stays as-is).
+# Selects the fastest Gentoo binpackage mirrors from the live, global mirror
+# list and writes the top 4 fastest into a dedicated binrepos.conf drop-in.
+# Idempotent - only ever touches its own file.
 
 set -u
 
@@ -14,8 +13,9 @@ PARALLEL=100
 FALLBACK="https://distfiles.gentoo.org/"
 BINREPOS_DIR="/etc/portage/binrepos.conf"
 REPO_FILE="${BINREPOS_DIR}/zz-mocaccino-fastest-binhost.conf"
-REPO_NAME="mocaccino-fastest-binhost"
-PRIORITY=10000
+REPO_NAME_PREFIX="mocaccino-fastest-binhost"
+BASE_PRIORITY=10000
+MIRROR_COUNT=4
 
 if ! command -v curl >/dev/null 2>&1; then
     echo "curl not available in this layer, skipping binhost mirror selection"
@@ -24,7 +24,8 @@ fi
 
 XML=$(curl -s --max-time 5 "$MIRROR_XML_URL" 2>/dev/null || true)
 
-FASTEST=""
+FASTEST_MIRRORS=()
+
 if [ -n "$XML" ]; then
     MIRRORS=$(echo "$XML" | grep -oP '<uri protocol="https"[^>]*>\K[^<]+' | sed 's:/*$:/:' | sort -u)
     if [ -n "$MIRRORS" ]; then
@@ -49,20 +50,36 @@ if [ -n "$XML" ]; then
         echo "$MIRRORS" | xargs -P "$PARALLEL" -I{} bash -c 'probe "$@"' _ {}
 
         if [ -s "$RESULTS" ]; then
-            FASTEST=$(sort -n "$RESULTS" | head -n1 | awk '{print $2}')
+            # Get up to $MIRROR_COUNT unique fastest mirrors
+            mapfile -t FASTEST_MIRRORS < <(sort -n "$RESULTS" | head -n "$MIRROR_COUNT" | awk '{print $2}')
         fi
         rm -f "$RESULTS"
     fi
 fi
 
-[ -z "$FASTEST" ] && FASTEST="$FALLBACK"
-BINHOST_URL="${FASTEST%/}/${BINPKG_PATH}"
+# Fallback if fewer than required mirrors were found
+if [ ${#FASTEST_MIRRORS[@]} -eq 0 ]; then
+    FASTEST_MIRRORS=("$FALLBACK")
+fi
 
 mkdir -p "$BINREPOS_DIR"
-{
-    echo "[${REPO_NAME}]"
-    echo "priority = ${PRIORITY}"
-    echo "sync-uri = ${BINHOST_URL}"
-} > "$REPO_FILE"
+> "$REPO_FILE"
 
-echo "Selected fastest binhost: ${BINHOST_URL} (priority ${PRIORITY})"
+echo "Configured binhost mirrors (in priority order):"
+
+current_priority=$BASE_PRIORITY
+for i in "${!FASTEST_MIRRORS[@]}"; do
+    mirror="${FASTEST_MIRRORS[$i]}"
+    binhost_url="${mirror%/}/${BINPKG_PATH}"
+    repo_section="${REPO_NAME_PREFIX}-$((i + 1))"
+
+    {
+        echo "[${repo_section}]"
+        echo "priority = ${current_priority}"
+        echo "sync-uri = ${binhost_url}"
+        echo ""
+    } >> "$REPO_FILE"
+
+    echo "  ${i+1}. Priority ${current_priority}: ${binhost_url}"
+    current_priority=$((current_priority - 10))
+done
