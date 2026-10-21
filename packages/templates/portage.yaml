@@ -42,7 +42,7 @@
 {{end}}
 
 {{ define "portage_copy_package_files" }}
-- cp -rf package.* /etc/portage/
+- cp -rf package.* /etc/portage/ && if [ -d patches ]; then cp -rf patches /etc/portage/; fi
 {{end}}
 
 {{ define "portage_select_fastest_binhost" }}
