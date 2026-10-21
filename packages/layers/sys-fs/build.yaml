@@ -13,8 +13,7 @@ prelude:
 - emerge sys-devel/bison app-alternatives/yacc
 - emerge app-portage/gentoolkit dev-util/ccache dev-build/cmake
 # Copy our custom mirror selection tool
-- cp -f scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
-- chmod +x /usr/local/sbin/mocaccino-select-fastest-binhost.sh
+- install -Dm0755 scripts/select-fastest-binhost.sh /usr/local/sbin/mocaccino-select-fastest-binhost.sh
 - echo "dev-python/pillow -jpeg -tiff" >> /etc/portage/package.use/temp.use
 {{ template "portage_prelude_build_gentoo_binary" . }}
 {{ template "pkglist_begin" . }}
