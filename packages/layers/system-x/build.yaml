@@ -21,11 +21,8 @@ prelude:
 - echo "media-libs/mesa" >> /etc/portage/package.mask/temp.mask
 # since dracut-108-r4 has optional dep for this, we use app-text/asciidoc and not pull in ruby here
 - echo "dev-ruby/asciidoctor" >> /etc/portage/package.mask/temp.mask
-# avoid circular deps
-- USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl
-# required for binary packages
-- cp -rf binrepos.conf /etc/portage/
-- emerge -1 app-portage/getuto && getuto
+# avoid circular deps, then set up binary packages
+- USE="-http2 -http3 -quic -curl_quic_openssl" emerge -1 net-misc/curl && cp -rf binrepos.conf /etc/portage/ && emerge -1 app-portage/getuto && getuto
 steps:
 - FEATURES="noinfo -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -1uDN @system -j $JOBS
 - FEATURES="noinfo -preserve-libs -sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox" emerge -uDN --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
@@ -37,12 +34,10 @@ steps:
 - emerge -C app-text/po4a dev-lang/yasm dev-python/docutils dev-python/mypy dev-python/pillow dev-util/gdbus-codegen dev-util/gperf sys-apps/help2man app-text/docbook-xml-dtd app-text/asciidoc app-text/xmlto app-text/docbook-xsl-ns-stylesheets app-text/docbook-xsl-stylesheets
 # Remove Meson and CMake here
 - emerge -C dev-build/cmake dev-build/meson dev-build/meson-format-array dev-python/meson-python
+# Depclean
 - emerge --depclean
-# Clean up binary cache (we are not using the template for binaries)
-- if [ -d /var/cache/binpkgs/ ] && [ ! -z "$(ls -A /var/cache/binpkgs/)" ]; then rm -r /var/cache/binpkgs/*; fi
-- if [ -d /var/cache/binhost/ ] && [ ! -z "$(ls -A /var/cache/binhost/)" ]; then rm -r /var/cache/binhost/*; fi
-- rm /etc/portage/package.use/temp.use
-- rm /etc/portage/package.mask/temp.mask
+# Clean up binary cache (we are not using the template for binaries) and temp portage files
+- rm -rf /var/cache/binpkgs/* /var/cache/binhost/* /etc/portage/package.use/temp.use /etc/portage/package.mask/temp.mask
 {{ template "housekeeping" . }}
 {{ template "pkglist_full" . }}
 excludes:
