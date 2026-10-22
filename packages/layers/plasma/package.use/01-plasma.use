@@ -14,4 +14,5 @@ kde-plasma/plasma-desktop input_devices_synaptics touchpad
 kde-plasma/plasma-meta bluetooth gtk networkmanager -crash-handler -firewall
 kde-plasma/plasma-nm modemmanager openconnect
 kde-plasma/print-manager -gtk
+media-libs/leptonica jpeg
 net-vpn/networkmanager-openconnect -gtk
