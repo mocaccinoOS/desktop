@@ -35,8 +35,14 @@ provides:
   - name: sddm
     category: acct-user
     version: '>=0'
+  - name: kio-admin
+    category: app-admin
+    version: '>=0'
   - name: dolphin-plugins-mountiso
     category: app-cdr
+    version: '>=0'
+  - name: gocryptfs
+    category: app-crypt
     version: '>=0'
   - name: convertlit
     category: app-text
@@ -50,26 +56,17 @@ provides:
   - name: tesseract
     category: app-text
     version: '>=0'
-  - name: gocryptfs
-    category: app-crypt
-    version: '>=0'
   - name: range-v3
     category: dev-cpp
-    version: '>=0'
-  - name: plasma-wayland-protocols
-    category: dev-libs
     version: '>=0'
   - name: versioneer
     category: dev-python
     version: '>=0'
-  - name: xwaylandvideobridge
+  - name: sddm-gentoo-config
     category: gui-apps
     version: '>=0'
-  - name: kaccounts-integration
-    category: kde-apps
-    version: '>=0'
-  - name: kaccounts-providers
-    category: kde-apps
+  - name: xwaylandvideobridge
+    category: gui-apps
     version: '>=0'
   - name: ark
     category: kde-apps
@@ -80,7 +77,16 @@ provides:
   - name: dolphin
     category: kde-apps
     version: '>=0'
+  - name: dolphin-plugins-common
+    category: kde-apps
+    version: '>=0'
   - name: gwenview
+    category: kde-apps
+    version: '>=0'
+  - name: kaccounts-integration
+    category: kde-apps
+    version: '>=0'
+  - name: kaccounts-providers
     category: kde-apps
     version: '>=0'
   - name: kcalc
@@ -318,6 +324,9 @@ provides:
     category: media-libs
     version: '>=0'
   - name: kimageannotator
+    category: media-libs
+    version: '>=0'
+  - name: kquickimageeditor
     category: media-libs
     version: '>=0'
   - name: leptonica
