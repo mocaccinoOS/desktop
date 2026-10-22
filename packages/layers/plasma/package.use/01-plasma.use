@@ -1,3 +1,4 @@
+app-text/tesseract -abi_x86_32
 kde-apps/ark lzma
 kde-apps/dolphin semantic-desktop thumbnail
 kde-apps/gwenview kipi raw semantic-desktop
