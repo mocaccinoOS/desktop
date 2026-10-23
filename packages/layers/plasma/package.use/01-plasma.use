@@ -1,4 +1,5 @@
 app-text/tesseract -abi_x86_32
+app-text/tessdata_fast l10n_en -l10n_af -l10n_am -l10n_ar -l10n_as -l10n_az -l10n_be -l10n_bg -l10n_bn -l10n_bo -l10n_br -l10n_bs -l10n_ca -l10n_ceb -l10n_chr -l10n_co -l10n_cs -l10n_cy -l10n_da -l10n_de -l10n_dv -l10n_dz -l10n_el -l10n_eo -l10n_es -l10n_et -l10n_eu -l10n_fa -l10n_fi -l10n_fil -l10n_fo -l10n_fr -l10n_fy -l10n_ga -l10n_gd -l10n_gl -l10n_gu -l10n_he -l10n_hi -l10n_hr -l10n_ht -l10n_hu -l10n_hy -l10n_id -l10n_is -l10n_it -l10n_iu -l10n_ja -l10n_jv -l10n_ka -l10n_kk -l10n_km -l10n_kmr-Latn -l10n_kn -l10n_ko -l10n_ky -l10n_la -l10n_lb -l10n_lo -l10n_lt -l10n_lv -l10n_mi -l10n_mk -l10n_ml -l10n_mn -l10n_mr -l10n_ms -l10n_mt -l10n_my -l10n_ne -l10n_no -l10n_oc -l10n_or -l10n_pa -l10n_pl -l10n_ps -l10n_pt -l10n_qu -l10n_ro -l10n_ru -l10n_sa -l10n_sd -l10n_si -l10n_sk -l10n_sl -l10n_sq -l10n_sr -l10n_su -l10n_sv -l10n_sw -l10n_syc -l10n_ta -l10n_te -l10n_tg -l10n_th -l10n_ti -l10n_to -l10n_tr -l10n_tt -l10n_ug -l10n_uk -l10n_ur -l10n_uz -l10n_vi -l10n_yi -l10n_yo -l10n_zh
 kde-apps/ark lzma
 kde-apps/dolphin semantic-desktop thumbnail
 kde-apps/gwenview kipi raw semantic-desktop
