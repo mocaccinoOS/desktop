@@ -2,3 +2,5 @@ install:
 - usermod --expiredate= sddm
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
 - ldconfig
+# Automerge the shipped autostart entries (user overrides live in ~/.config/autostart)
+- "mos config-update update --interactive=false -p /etc/xdg/autostart 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
