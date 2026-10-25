@@ -3,4 +3,4 @@ install:
 - chmod u+s /usr/bin/sudo
 - chmod u+s /usr/bin/fusermount
 - chmod u+s /usr/bin/fusermount3
-- rm -f /etc/postfix/._cfg????_main.cf /etc/mail/._cfg????_aliases.db
+- rm -f /etc/postfix/._cfg????_main.cf /etc/postfix/._cfg????_main.cf.default /etc/postfix/._cfg????_makedefs.out /etc/mail/._cfg????_aliases.db
