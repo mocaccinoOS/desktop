@@ -7,7 +7,8 @@ install:
 - chmod 4750 /usr/libexec/dbus-daemon-launch-helper
 - chmod u+s /usr/bin/su
 - chmod +s /usr/lib/polkit-1/polkit-agent-helper-1
-- if [ ! -f /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
+# Default to Europe/Rome unless the user already has a timezone set (the -L check covers dangling symlinks)
+- if [ ! -e /etc/localtime ] && [ ! -L /etc/localtime ]; then ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime; fi
 # We want to prevent users overwriting their /etc/locale.conf with a vanilla one and make them loose changes they made in that file
 - if [ -f /etc/._cfg0001_locale.conf ]; then rm /etc/._cfg0001_locale.conf; fi
 - if [ -f /etc/._cfg0001_locale.gen ]; then rm /etc/._cfg0001_locale.gen; fi
