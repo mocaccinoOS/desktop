@@ -6,4 +6,4 @@ install:
   # pipewire from working properly
   - find /etc/alsa/conf.d -xtype l -delete
   # Automerge the shipped fontconfig files (user overrides live in /etc/fonts/conf.d, not conf.avail)
-  - "mos config-update update --interactive=false -p /etc/fonts/conf.avail 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
+  - "mos config-update update --interactive=false -p /etc/fonts/conf.avail 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
