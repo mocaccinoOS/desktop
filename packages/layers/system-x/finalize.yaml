@@ -17,7 +17,11 @@ install:
 - if command -v update-ca-certificates >/dev/null 2>&1; then update-ca-certificates >/dev/null 2>&1; fi
 # Automerge the shadow pam files that only gain rootok/permit lines
 - for n in chpasswd newusers runuser; do for f in /etc/pam.d/._cfg????_"$n"; do if [ -f "$f" ]; then mv -f "$f" "/etc/pam.d/$n"; fi; done; done
+# Automerge the shipped rsyncd and unbound init scripts (only these two, never the whole init.d)
+- for n in rsyncd unbound; do for f in /etc/init.d/._cfg????_"$n"; do if [ -f "$f" ]; then mv -f "$f" "/etc/init.d/$n"; fi; done; done
 # Automerge these config files (only the harmless "ERROR: 0 errors" noise is filtered, real errors stay visible)
+- "mos config-update update --interactive=false -p /etc/python-exec 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
+- "mos config-update update --interactive=false -p /etc/clang 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
 - "mos config-update update --interactive=false -p /etc/dnssec 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
 # Merge trivial changes first, so env.d updates are picked up by env-update below
 - etc-update -p
