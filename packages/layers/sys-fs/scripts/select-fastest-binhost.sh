@@ -17,6 +17,11 @@ REPO_NAME_PREFIX="mocaccino-fastest-binhost"
 BASE_PRIORITY=10000
 MIRROR_COUNT=4
 
+# Hostnames that must never be selected (exact host match).
+BLACKLIST=(
+    "us.mirrors.cicku.me"
+)
+
 if ! command -v curl >/dev/null 2>&1; then
     echo "curl not available in this layer, skipping binhost mirror selection"
     exit 0
@@ -28,6 +33,12 @@ FASTEST_MIRRORS=()
 
 if [ -n "$XML" ]; then
     MIRRORS=$(echo "$XML" | grep -oP '<uri protocol="https"[^>]*>\K[^<]+' | sed 's:/*$:/:' | sort -u)
+
+    # Drop blacklisted hosts (entries are normalized to end with "/")
+    for bad in "${BLACKLIST[@]}"; do
+        MIRRORS=$(echo "$MIRRORS" | grep -viF "://${bad}/" || true)
+    done
+
     if [ -n "$MIRRORS" ]; then
         RESULTS=$(mktemp)
 
@@ -57,7 +68,7 @@ if [ -n "$XML" ]; then
     fi
 fi
 
-# Fallback if fewer than required mirrors were found
+# Fallback if no mirrors were found
 if [ ${#FASTEST_MIRRORS[@]} -eq 0 ]; then
     FASTEST_MIRRORS=("$FALLBACK")
 fi
@@ -80,6 +91,6 @@ for i in "${!FASTEST_MIRRORS[@]}"; do
         echo ""
     } >> "$REPO_FILE"
 
-    echo "  ${i+1}. Priority ${current_priority}: ${binhost_url}"
+    echo "  $((i + 1)). Priority ${current_priority}: ${binhost_url}"
     current_priority=$((current_priority - 10))
 done
