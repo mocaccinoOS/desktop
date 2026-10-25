@@ -1,4 +1,4 @@
 install:
-- mos config-update update --interactive=false -p /etc/ld.so.conf.d
+- "mos config-update update --interactive=false -p /etc/ld.so.conf.d 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
 - ldconfig
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
