@@ -11,6 +11,10 @@ install:
 # We want to prevent users overwriting their /etc/locale.conf with a vanilla one and make them loose changes they made in that file
 - if [ -f /etc/._cfg0001_locale.conf ]; then rm /etc/._cfg0001_locale.conf; fi
 - if [ -f /etc/._cfg0001_locale.gen ]; then rm /etc/._cfg0001_locale.gen; fi
+# ca-certificates: Luet has no CONFIG_PROTECT_MASK, so resolve the leftovers here. The .crt is generated, the .conf is merged
+- rm -f /etc/ssl/certs/._cfg????_ca-certificates.crt
+- for f in /etc/._cfg????_ca-certificates.conf; do if [ -f "$f" ]; then mv -f "$f" /etc/ca-certificates.conf; fi; done
+- if command -v update-ca-certificates >/dev/null 2>&1; then update-ca-certificates >/dev/null 2>&1; fi
 - ldconfig
 - source /etc/profile > /dev/null 2>&1 && env-update > /dev/null 2>&1
 # This must be run incase of trival changes in config files
