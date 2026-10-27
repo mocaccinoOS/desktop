@@ -15,6 +15,8 @@ install:
 - rm -f /etc/ssl/certs/._cfg????_ca-certificates.crt
 - for f in /etc/._cfg????_ca-certificates.conf; do if [ -f "$f" ]; then mv -f "$f" /etc/ca-certificates.conf; fi; done
 - if command -v update-ca-certificates >/dev/null 2>&1; then update-ca-certificates >/dev/null 2>&1; fi
+# Automerge the shipped elfutils profile.d snippet
+- for f in /etc/profile.d/._cfg????_debuginfod.sh; do if [ -f "$f" ]; then mv -f "$f" /etc/profile.d/debuginfod.sh; fi; done
 # Automerge the shadow pam files that only gain rootok/permit lines
 - for n in chpasswd newusers runuser; do for f in /etc/pam.d/._cfg????_"$n"; do if [ -f "$f" ]; then mv -f "$f" "/etc/pam.d/$n"; fi; done; done
 # Automerge the shipped rsyncd and unbound init scripts (only these two, never the whole init.d)
