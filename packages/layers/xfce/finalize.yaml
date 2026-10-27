@@ -3,3 +3,5 @@ install:
 - gtk-update-icon-cache -q -t -f /usr/share/icons/Adwaita
 - gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 - ldconfig
+# Automerge the shipped xfce autostart entries (user overrides live in ~/.config/autostart)
+- "mos config-update update --interactive=false -p /etc/xdg/autostart 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
