@@ -18,7 +18,6 @@ steps:
 {{ template "portage_build" . }}
 - eselect repository remove nest
 - emerge -C app-eselect/eselect-repository
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "buildbase"

@@ -25,7 +25,6 @@ steps:
 - eselect repository remove haarp
 - eselect repository remove mocaccino-overlay
 - emerge -C app-eselect/eselect-repository
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "layers"

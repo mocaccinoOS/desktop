@@ -8,7 +8,6 @@ prelude:
 {{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build_gentoo_binary" . }}
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "apps"

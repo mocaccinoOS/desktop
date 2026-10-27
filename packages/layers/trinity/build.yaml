@@ -15,7 +15,6 @@ steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f trinity-official
 - emerge -C app-eselect/eselect-repository
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "layers"

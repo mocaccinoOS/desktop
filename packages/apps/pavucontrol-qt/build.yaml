@@ -8,7 +8,6 @@ prelude:
 steps:
 {{ template "portage_build" . }}
 - emerge -C dev-util/lxqt-build-tools
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "layers"

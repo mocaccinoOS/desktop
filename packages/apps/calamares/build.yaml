@@ -11,7 +11,6 @@ steps:
 - cp files/49-calamares.rules /usr/share/polkit-1/rules.d/
 - chown 102:0 /usr/share/polkit-1/rules.d/49-calamares.rules
 - chmod 700 /usr/share/polkit-1/rules.d/49-calamares.rules
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "buildbase"

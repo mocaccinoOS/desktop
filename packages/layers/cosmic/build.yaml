@@ -16,7 +16,6 @@ steps:
 {{ template "portage_build" . }}
 - eselect repository remove -f cosmic-overlay
 - emerge -C app-eselect/eselect-repository
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "layers"

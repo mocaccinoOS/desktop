@@ -11,7 +11,6 @@ steps:
 - touch /var/lib/gdm/.config/.keep
 {{ template "portage_build_gentoo_binary" . }}
 - chown -R 32:32 /var/lib/gdm
-{{ template "housekeeping" . }}
 {{ template "pkglist_end" . }}
 requires:
 - category: "layers"
