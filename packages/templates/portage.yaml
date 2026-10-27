@@ -69,7 +69,7 @@
 {{ define "pkglist_full" }}
 - |
   mkdir -p /usr/share/mocaccino/packagelists && \
-  qlist -IRv | LC_ALL=C sort > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.added
+  qlist -IRv | LC_ALL=C sort > /usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-{{ .Values.version }}.pkglist
 {{end}}
 
 
