@@ -1,6 +1,6 @@
 name: "gcc-base"
 category: "system"
-version: 16.2.1_p20260926+3
+version: 16.2.1_p20260926+4
 uri:
   - https://gcc.gnu.org
 license: "GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later"
