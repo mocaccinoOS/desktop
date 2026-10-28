@@ -1,11 +1,12 @@
-image: "ubuntu:25.04"
+image: "ubuntu:26.04"
 env:
 #- LUET_YES=true
-- GCC_VERSION=15
+- GCC_VERSION=16
 - CC=gcc-${GCC_VERSION}
 - CXX=g++-${GCC_VERSION}
 - HOSTCC=gcc-${GCC_VERSION}
 - HOSTCXX=g++-${GCC_VERSION}
+- DEBIAN_FRONTEND=noninteractive
 # $ARCH can't be amd64 here, x86_64 is used here
 {{$arch := ""}}
 {{if eq .Values.arch "amd64" }}
