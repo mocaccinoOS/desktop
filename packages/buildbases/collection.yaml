@@ -24,7 +24,7 @@ packages:
   - !!merge <<: *X
     real_category: "kernel-sources"
     name: "mocaccino-lts-sources"
-    version: 0+226
+    version: 0+227
   - !!merge <<: *X
     real_category: "layers"
     name: "gnome-common"
