@@ -105,21 +105,21 @@ packages:
     description: "Firmware for Airoha (MediaTek subsidiary) EN8811H and related 2.5G/multi-gig Ethernet PHY chips, used in network switches, routers, and embedded platforms."
   - category: "firmware"
     name: "amd"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Binary firmware for AMD x86 processors (e.g., Family 10h, 11h, 12h, 14h) for various platform and feature support files, separate from the general microcode updates."
   - category: "firmware"
     name: "amd-ucode"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Microcode updates for AMD x86 CPUs to fix hardware bugs, security vulnerabilities, and ensure system stability."
   - category: "firmware"
     name: "amdgpu"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -154,14 +154,14 @@ packages:
     description: "Firmware for NXP Amphion VPU (Video Processing Unit), enabling hardware-accelerated video encode and decode on i.MX8 SoCs."
   - category: "firmware"
     name: "ar3k"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Proprietary firmware for Qualcomm Atheros AR3011/AR3012 Bluetooth chipsets and related devices, required by the Linux ath3k driver for the Bluetooth controller to function."
   - category: "firmware"
     name: "ath10k"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -217,7 +217,7 @@ packages:
     description: "Firmware for AV7110-based digital TV / DVB devices, enabling MPEG decoding and reception functions for such tuner hardware."
   - category: "firmware"
     name: "b43"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -238,7 +238,7 @@ packages:
     description: "Firmware for Broadcom NetXtreme II 10 Gb Ethernet devices (bnx2x driver), used in server and high-performance networking scenarios."
   - category: "firmware"
     name: "brcm"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -371,7 +371,7 @@ packages:
     description: "Firmware for HP-specific hardware components, including docking stations, embedded controllers, and platform management devices."
   - category: "firmware"
     name: "i915"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -392,7 +392,7 @@ packages:
     description: "Firmware for Inside Secure (now Rambus) EIP-series cryptographic IP cores, embedded in SoCs from NXP, Marvell, and others to accelerate encryption, hashing, and key management operations."
   - category: "firmware"
     name: "intel"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -462,7 +462,7 @@ packages:
     description: "Firmware for Matrox video / graphics hardware, used in legacy graphics cards and display subsystems."
   - category: "firmware"
     name: "mediatek"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -532,7 +532,7 @@ packages:
     description: "Firmware for Netronome packet processing / smart NIC devices, enabling programmable offloads and packet acceleration."
   - category: "firmware"
     name: "nvidia"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -602,7 +602,7 @@ packages:
     description: "Firmware for ATI/AMD Rage 128 and R128 graphics chipsets, supporting hardware functions and display operations."
   - category: "firmware"
     name: "radeon"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -630,35 +630,35 @@ packages:
     description: "Firmware for Redpine Signals (RSI) Wi-Fi and Bluetooth combo chipsets, used by the rsi_sdio and rsi_usb drivers for device initialization and radio operations."
   - category: "firmware"
     name: "rtl_bt"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Bluetooth firmware for Realtek devices (rtl_bt), enabling Bluetooth connectivity via Realtek chipsets."
   - category: "firmware"
     name: "rtl_nic"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek NIC / Ethernet controllers, supplying microcode needed for proper operation over wired networks."
   - category: "firmware"
     name: "rtlwifi"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek Wi-Fi chipsets (rtlwifi), enabling wireless operation across a wide range of Realtek devices."
   - category: "firmware"
     name: "rtw88"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Realtek 802.11ax/802.11ac chipsets supported by the rtw88 driver, providing advanced wireless capabilities."
   - category: "firmware"
     name: "rtw89"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
@@ -742,7 +742,7 @@ packages:
     description: "Firmware for Silicon Labs WFx series Wi-Fi modules (WF200, WFM200), used in embedded and IoT platforms for 802.11b/g/n connectivity."
   - category: "firmware"
     name: "xe"
-    version: "20260622"
+    version: "20260622+1"
     uri:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
