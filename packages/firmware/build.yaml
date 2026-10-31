@@ -6,6 +6,7 @@ prelude:
 - emerge -1 virtual/os-headers sys-kernel/linux-headers
 - emerge -1 media-video/isight-firmware-tools
 - cp AppleUSBVideoSupport /tmp
+{{ template "pkglist_begin" . }}
 steps:
 - mkdir -p /usr/lib/firmware/isight
 - ift-extract --apple-driver /tmp/AppleUSBVideoSupport
@@ -14,12 +15,20 @@ steps:
 # split nvidia-gsp-570 stuff (introduced in linux-firmware commit 050f0a1)
 - mkdir -p /usr/lib/firmware/nvidia-gsp-570 && find /usr/lib/firmware/nvidia -type f -path '*/gsp/*-570.144.bin' -exec sh -c 'for f; do gpu=$(echo "$f" | cut -d/ -f6); mkdir -p "/usr/lib/firmware/nvidia-gsp-570/$gpu/gsp"; mv "$f" "/usr/lib/firmware/nvidia-gsp-570/$gpu/gsp/"; done' sh {} +
 - find /usr/lib/firmware/nvidia-gsp-570 -type f -path '*/gsp/*-570.144.bin' -exec sh -c 'for f; do gpu=$(echo "$f" | cut -d/ -f6); mkdir -p "/usr/lib/firmware/nvidia/$gpu/gsp"; ln -sf "../../../nvidia-gsp-570/$gpu/gsp/$(basename "$f")" "/usr/lib/firmware/nvidia/$gpu/gsp/"; done' sh {} +
+{{ template "pkglist_end" . }}
+# Package lists for the split firmware packages.
+# The parts are directories cut out of this single emerge, so Portage only knows
+# sys-kernel/linux-firmware as a whole. Write one list per part directory with
+# that atom. The file name carries the part name, and each split package picks
+# up its own file through its includes.
+- for d in /usr/lib/firmware/*/; do qlist -IRv sys-kernel/linux-firmware > /usr/share/mocaccino/packagelists/firmware-$(basename "$d")-{{ .Values.version }}.pkglist; done
 requires:
 - category: "layers"
   name: "system-x"
   version: ">=0"
 includes:
 - ^/usr/lib/firmware/.*\..*
+- ^/usr/share/mocaccino/packagelists/{{ .Values.category }}-{{ .Values.name }}-[0-9][^/]*\.pkglist$
 excludes:
 - ^/usr/lib/firmware/.*/.*
 {{ template "portage_excludes" }}
@@ -33,6 +42,7 @@ steps:
 unpack: true
 includes:
 - ^/usr/lib/firmware/{{ .Values.name }}/.*
+- ^/usr/share/mocaccino/packagelists/firmware-{{ .Values.name }}-[0-9][^/]*\.pkglist$
 excludes:
 {{ template "portage_excludes" }}
 {{ end }}
