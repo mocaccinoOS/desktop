@@ -1,6 +1,6 @@
 category: "fonts"
 name: "noto-cjk"
-version: 20190416+1
+version: 20190416+2
 uri:
   - https://github.com/notofonts/noto-cjk
 license: "OFL-1.1"
