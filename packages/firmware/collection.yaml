@@ -97,6 +97,13 @@ packages:
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for AeonSemi Ethernet PHY chips, enabling gigabit and multi-gig wired networking on embedded platforms and network switches."
   - category: "firmware"
+    name: "aic"
+    version: "20261019"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for AICSemi AIC8800 series Wi-Fi chips (currently AIC8800D80), used on low-cost USB and SDIO Wi-Fi adapters and embedded boards."
+  - category: "firmware"
     name: "airoha"
     version: "20261019"
     uri:
@@ -488,6 +495,13 @@ packages:
       - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
     license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
     description: "Firmware for Microchip / Atmel microcontroller-based peripherals, USB bridges, and network chips."
+  - category: "firmware"
+    name: "morsemicro"
+    version: "20261019"
+    uri:
+      - https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+    license: "GPL-2 GPL-2+ GPL-3 BSD MIT"
+    description: "Firmware for Morse Micro MM81xx Wi-Fi HaLow (802.11ah, sub-GHz) chips, used in long-range low-power IoT and embedded networking."
   - category: "firmware"
     name: "moxa"
     version: "20261019"
