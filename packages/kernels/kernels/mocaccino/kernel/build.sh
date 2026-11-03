@@ -19,7 +19,7 @@ make -j$(nproc --ignore=1) \
 
 # $ARCH can't be amd64 here, x86_64 is used here
 if [ $ARCH == "amd64" ]; then
-  ARCH = "x86_64"
+  ARCH="x86_64"
 fi
 
 if [[ -L "arch/${ARCH}/boot/bzImage" ]]; then
@@ -27,3 +27,12 @@ if [[ -L "arch/${ARCH}/boot/bzImage" ]]; then
 else
    cp -rfv arch/${ARCH}/boot/bzImage ../output/boot/"kernel-${KERNEL_PREFIX}-${ARCH}-${PACKAGE_VERSION}-${SUFFIX}"
 fi
+
+# Strip debug info now so the builder image layer stays small.
+# -p keeps timestamps so later make steps (modules_install) don't rebuild.
+du -sh .
+find . -type f \( -name '*.o' -o -name '*.ko' \) \
+  -not -path './scripts/*' -not -path './tools/*' \
+  -print0 | xargs -0 -r -P"$(nproc)" -n64 strip --strip-debug -p
+strip --strip-debug -p vmlinux
+du -sh .
