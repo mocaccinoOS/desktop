@@ -7,17 +7,22 @@ pushd linux
 
 # $ARCH can't be amd64 here, x86_64 is used here
 if [ $ARCH == "amd64" ]; then
-  ARCH = "x86_64"
+  ARCH="x86_64"
 fi
 
 if [ ! -e "arch/x86/boot/bzImage" ]; then
     cp -rfv ../output/* arch/x86/boot/bzImage || true
 fi
 
-make -j$(nproc --ignore=1) modules_install install \
-		INSTALL_MOD_PATH="$outdir/usr" \
-		INSTALL_PATH="$outdir"/boot
+# Install kernel modules with debug symbols stripped.
+# INSTALL_MOD_STRIP=1 uses --strip-debug.
+make -j"$(nproc --ignore=1)" \
+    modules_install install \
+    INSTALL_MOD_PATH="$outdir/usr" \
+    INSTALL_MOD_STRIP=1 \
+    INSTALL_PATH="$outdir/boot"
 
+# Remove build/source symlinks from the installed modules.
 rm -f "$outdir"/usr/lib/modules/**/build \
     "$outdir"/usr/lib/modules/**/source
 
