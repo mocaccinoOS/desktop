@@ -1,6 +1,6 @@
 name: mocaccino-sources
 category: kernel
-version: "7.3.1"
+version: 7.3.1+2
 prefix: linux
 suffix: mocaccino
 labels:
