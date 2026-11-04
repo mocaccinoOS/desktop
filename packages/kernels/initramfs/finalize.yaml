@@ -1,0 +1,3 @@
+install:
+  - echo "This package should not be installed on your system. See https://github.com/mocaccinoOS/mocaccino/issues/109"
+  - echo "Make sure to uninstall kernel/mocaccino-lts-initramfs and then run mocaccino-dracut --rebuild-all --force"
