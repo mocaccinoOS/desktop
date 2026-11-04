@@ -10,6 +10,7 @@ env:
 
 prelude:
 - apt-get update && (apt-get install -y upx kmod util-linux-extra || apt-get install -y upx kmod util-linux)
+- which switch_root
 - wget https://golang.org/dl/go{{.Values.golang_version}}.linux-{{.Values.arch}}.tar.gz -O golang.tar.gz
 - tar -C /usr/local -xzf golang.tar.gz
 
@@ -51,7 +52,6 @@ steps:
 - find /luetbuild/modules/usr/lib/modules/**/kernel/net/packet  -exec cp --parents -r {} ./modules_copy \;
 
 - |
-   which switch_root || exit 1
    u-root \
    -files "/luetbuild/loader.sh:/loader" \
    -files "/luetbuild/modules/usr/lib/modules:/lib/modules" \
