@@ -3,6 +3,7 @@ excludes:
 env:
 {{ template "portage_env" . }}
 prelude:
+{{ template "portage_prelude_build" . }}
 {{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}

@@ -1,6 +1,6 @@
 category: "apps"
 name: "scx"
-version: "1.1.2"
+version: 1.1.2+1
 uri:
   - https://github.com/sched-ext/scx
 license: "GPL-2 Apache-2.0 BSD-2 BSD CC0-1.0 ISC MIT MPL-2.0 Unicode-3.0 ZLIB"
