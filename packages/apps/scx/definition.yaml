@@ -1,0 +1,34 @@
+category: "apps"
+name: "scx"
+version: "1.1.2"
+uri:
+  - https://github.com/sched-ext/scx
+license: "GPL-2 Apache-2.0 BSD-2 BSD CC0-1.0 ISC MIT MPL-2.0 Unicode-3.0 ZLIB"
+description: "sched_ext schedulers and tools"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    sys-kernel/scx
+provides:
+  - name: jq
+    category: app-misc
+    version: '>=0'
+  - name: libbpf
+    category: dev-libs
+    version: '>=0'
+  - name: oniguruma
+    category: dev-libs
+    version: '>=0'
+  - name: bpftool
+    category: dev-util
+    version: '>=0'
+  - name: scx
+    category: sys-kernel
+    version: '>=0'
+  - name: scx-loader
+    category: sys-kernel
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "X"
+    version: ">=0"
