@@ -1,6 +1,6 @@
 name: mocaccino-lts-full
 category: kernel
-version: 6.18.60+4
+version: 6.18.60+5
 uri:
   - https://kernel.org
 license: "GPL-2"
