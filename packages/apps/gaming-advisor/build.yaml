@@ -1,6 +1,19 @@
-image: "alpine"
-package_dir: "/package"
+excludes:
+{{ template "portage_excludes" }}
+- ^/etc/portage/repos.conf/eselect-repo.conf
+env:
+{{ template "portage_env" . }}
 prelude:
-- apk update && apk add git && apk add bash
-- git clone https://codeberg.org/MocaccinoOS/mocaccino-gaming-advisor.git
-- cd mocaccino-gaming-advisor && chmod +x install.sh && ./install.sh
+{{ template "portage_copy_package_files" . }}
+- emerge -1 app-eselect/eselect-repository
+- eselect repository enable mocaccino-overlay
+- emaint sync -r mocaccino-overlay
+{{ template "portage_prelude_build_gentoo_binary" . }}
+steps:
+{{ template "portage_build" . }}
+- eselect repository remove mocaccino-overlay
+- emerge -C app-eselect/eselect-repository
+requires:
+- category: "layers"
+  name: "X"
+  version: ">=0"

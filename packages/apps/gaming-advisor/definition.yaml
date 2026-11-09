@@ -1,10 +1,16 @@
 category: "apps"
 name: "gaming-advisor"
-version: "0.7.2"
+version: "0.7.3"
 license: "MIT"
 description: "GTK3 desktop tool for MocaccinoOS that scans your system for common gaming-performance pitfalls and lets you apply (and revert) fixes directly from the UI."
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "games-util/gaming-advisor::mocaccino-overlay"
+provides:
+  - name: gaming-advisor
+    category: games-util
+    version: '>=0'
 requires:
   - category: "layers"
     name: "X"
     version: ">=0"
-arch: "amd64"
