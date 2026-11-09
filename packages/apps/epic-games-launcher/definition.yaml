@@ -1,0 +1,16 @@
+category: "apps"
+name: "epic-games-launcher"
+version: "0.113.0"
+license: "all-rights-reserved"
+description: "Download, install, and play games from the Epic Games Store"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "games-util/epic-games-launcher-bin::mocaccino-overlay"
+provides:
+  - name: epic-games-launcher-bin
+    category: games-util
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "gnome-common"
+    version: ">=0"
