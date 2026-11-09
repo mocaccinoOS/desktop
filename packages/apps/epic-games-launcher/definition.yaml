@@ -1,6 +1,6 @@
 category: "apps"
 name: "epic-games-launcher"
-version: "0.113.0"
+version: "0.113.1"
 license: "all-rights-reserved"
 description: "Download, install, and play games from the Epic Games Store"
 labels:
