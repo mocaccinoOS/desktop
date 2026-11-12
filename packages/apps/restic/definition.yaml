@@ -1,0 +1,19 @@
+category: "apps"
+name: "restic"
+version: "0.19.1"
+uri:
+  - https://restic.net
+license: "Apache-2.0 BSD BSD-2 LGPL-3-with-linking-exception MIT"
+description: "A backup program that is fast, efficient and secure"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: >-
+    app-backup/restic
+provides:
+  - name: restic
+    category: app-backup
+    version: '>=0'
+requires:
+  - category: "layers"
+    name: "sys-fs"
+    version: ">=0"
