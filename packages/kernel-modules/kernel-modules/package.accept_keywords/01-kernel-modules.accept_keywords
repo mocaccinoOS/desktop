@@ -5,3 +5,5 @@ net-wireless/broadcom-sta ~amd64
 
 # This version has fix for 7.2 kernel
 =sys-apps/openrazer-3.12.4 ~amd64
+
+=x11-drivers/nvidia-drivers-580.196.07 ~amd64
