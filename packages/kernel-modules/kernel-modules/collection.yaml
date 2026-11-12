@@ -94,7 +94,7 @@ packages:
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
-    description: "NVIDIA 580 legacy kernel modules for Linux LTS (Maxwell, Pascal, Volta GPUs)"
+    description: "NVIDIA 580 legacy kernel modules for Linux LTS (GTX 750, GTX 900, GTX 10-series)"
     lts: true
     labels:
       emerge.jobs: "3"
