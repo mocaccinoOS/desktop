@@ -962,6 +962,9 @@ provides:
   - name: dejavu
     category: media-fonts
     version: '>=0'
+  - name: encodings
+    category: media-fonts
+    version: '>=0'
   - name: font-alias
     category: media-fonts
     version: '>=0'
