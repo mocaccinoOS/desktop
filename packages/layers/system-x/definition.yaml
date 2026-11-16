@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: "0.20261116"
+version: 0.20261116+1
 gcc_version: "16"
 python_version: "3.14"
 uri:
@@ -947,6 +947,9 @@ provides:
   - name: openmp
     category: llvm-runtimes
     version: ">=0"
+  - name: urw-fonts
+    category: media-fonts
+    version: '>=0'
   - name: libpng
     category: media-libs
     version: ">=0"
