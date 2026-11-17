@@ -1,7 +1,7 @@
 category: "apps"
 name: "meshcore-cli"
 # version: "1.6.6"
-version: "0.1"
+version: "0.2"
 uri:
   - https://github.com/meshcore-dev/meshcore-cli
 license: "BSD MIT"
@@ -17,6 +17,9 @@ provides:
   - name: dbus-fast
     category: dev-python
     version: '>=0'
+  - name: prompt-toolkit
+    category: dev-python
+    version: '>=0'
   - name: pyserial-asyncio-fast
     category: dev-python
     version: '>=0'
@@ -27,6 +30,9 @@ provides:
     category: dev-python
     version: '>=0'
   - name: meshcore-cli
+    category: dev-python
+    version: '>=0'
+  - name: wcwidth
     category: dev-python
     version: '>=0'
 requires:
