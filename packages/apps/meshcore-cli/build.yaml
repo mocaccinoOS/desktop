@@ -8,6 +8,7 @@ prelude:
 - emerge -1 app-eselect/eselect-repository
 - eselect repository enable mocaccino-overlay
 - emaint sync -r mocaccino-overlay
+{{ template "portage_prelude_build" . }}
 {{ template "pkglist_begin" . }}
 steps:
 {{ template "portage_build" . }}
