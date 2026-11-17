@@ -1,0 +1,5 @@
+dev-python/bleak ~amd64
+dev-python/pyserial-asyncio-fast ~amd64
+dev-python/pycayennelpp ~amd64
+dev-python/meshcore ~amd64
+dev-python/meshcore-cli ~amd64
