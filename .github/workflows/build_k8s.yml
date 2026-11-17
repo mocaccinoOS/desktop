@@ -36,7 +36,7 @@ jobs:
       MASTER: 10.1.0.20
       ADDRESS: "10.1.0.201/24"
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - uses: fkirc/skip-duplicate-actions@master
     - run: |
         git fetch --prune --unshallow
