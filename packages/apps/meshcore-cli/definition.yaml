@@ -8,7 +8,7 @@ license: "BSD MIT"
 description: "CLI interface to MeshCore companion app over BLE, TCP or Serial"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "dev-python/meshcore-cli"
+  emerge.packages: "dev-python/meshcore::mocaccino-overlay dev-python/meshcore-cli::mocaccino-overlay"
   description: "CLI interface to MeshCore companion app over BLE, TCP or Serial"
 provides:
   - name: bleak
