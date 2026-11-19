@@ -313,7 +313,7 @@ packages:
   # --- non-LTS modules (sorted alphabetically) ---
   - category: "kernel-modules"
     name: "broadcom-sta"
-    version: 6.30.223.271-r11+26
+    version: 6.30.223.271-r11+27
     uri:
       - https://www.broadcom.com/support/802.11
     license: "Broadcom"
@@ -338,7 +338,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "openrazer"
-    version: 3.12.4+18
+    version: 3.12.4+19
     uri:
       - https://openrazer.github.io
     license: "GPL-2+"
@@ -367,7 +367,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "nvidia-drivers"
-    version: 595.104.02+10
+    version: "595.112.07"
     uri:
       - https://www.nvidia.com
     license: "NVIDIA-2025 Apache-2.0 Boost-1.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl public-domain"
@@ -402,7 +402,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "v4l2loopback"
-    version: 0.15.3+93
+    version: 0.15.3+94
     uri:
       - https://github.com/umlaeute/v4l2loopback
     license: "GPL-2"
@@ -427,7 +427,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "vhba"
-    version: 20260313+17
+    version: 20260313+18
     uri:
       - https://cdemu.sourceforge.io
     license: "GPL-2+"
@@ -456,7 +456,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "virtualbox-modules"
-    version: 7.2.18+7
+    version: 7.2.18+8
     lts: false
     emerge:
       jobs: "3"
@@ -474,7 +474,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xone"
-    version: 0.5.8+61
+    version: 0.5.8+62
     uri:
       - https://github.com/dlundqvist/xone
     license: "GPL-2+ MS-TOU"
@@ -503,7 +503,7 @@ packages:
         version: ">=0"
   - category: "kernel-modules"
     name: "xpadneo"
-    version: "0.10.5"
+    version: 0.10.5+1
     uri:
       - https://atar-axis.github.io/xpadneo
     license: "GPL-3"
