@@ -515,6 +515,9 @@ provides:
   - name: isl
     category: dev-libs
     version: ">=0"
+  - name: jansson
+    category: dev-libs
+    version: ">=0"
   - name: jemalloc
     category: dev-libs
     version: ">=0"
