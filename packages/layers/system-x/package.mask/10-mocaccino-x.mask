@@ -1,2 +1,5 @@
 # Always keep newer python masked
 dev-lang/python:3.15
+
+# Mask newer llvm
+=llvm-core/llvm-23.1.6:23/23.1

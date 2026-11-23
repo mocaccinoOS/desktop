@@ -1,6 +1,6 @@
 category: "layers"
 name: "system-x"
-version: "0.20261123"
+version: 0.20261123+1
 gcc_version: "16"
 python_version: "3.14"
 uri:
@@ -524,6 +524,9 @@ provides:
   - name: json-c
     category: dev-libs
     version: ">=0"
+  - name: leancrypto
+    category: dev-libs
+    version: '>=0'
   - name: libaio
     category: dev-libs
     version: ">=0"
