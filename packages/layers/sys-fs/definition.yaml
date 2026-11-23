@@ -179,6 +179,9 @@ provides:
   - name: push
     category: app-shells
     version: '>=0'
+  - name: asciidoc
+    category: app-text
+    version: '>=0'
   - name: build-docbook-catalog
     category: app-text
     version: '>=0'
