@@ -3,4 +3,9 @@ install:
 - chmod u+s /usr/bin/sudo
 - chmod u+s /usr/bin/fusermount
 - chmod u+s /usr/bin/fusermount3
+# Keep the user's postfix config, drop generated defaults: discard vanilla ._cfg copies
 - rm -f /etc/postfix/._cfg????_main.cf /etc/postfix/._cfg????_main.cf.default /etc/postfix/._cfg????_makedefs.out /etc/mail/._cfg????_aliases.db
+# Automerge the shipped tpm2-tss FAPI profiles
+- "mos config-update update --interactive=false -p /etc/tpm2-tss/fapi-profiles 2>&1 | grep -v -e '^ERROR: 0 errors' -e '^[[:space:]]*$' -e '^Latest changeset' -e '^Merging configuration' -e '^Unmerged configuration' || true"
+# Automerge fapi-config.json (only this file)
+- for f in /etc/tpm2-tss/._cfg????_fapi-config.json; do if [ -f "$f" ]; then mv -f "$f" /etc/tpm2-tss/fapi-config.json; fi; done
