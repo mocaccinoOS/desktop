@@ -203,9 +203,6 @@ provides:
   - name: meson
     category: dev-build
     version: '>=0'
-  - name: meson-format-array
-    category: dev-build
-    version: '>=0'
   - name: abseil-cpp
     category: dev-cpp
     version: '>=0'
@@ -240,9 +237,6 @@ provides:
     category: dev-lang
     version: '>=0'
   - name: vala
-    category: dev-lang
-    version: '>=0'
-  - name: yasm
     category: dev-lang
     version: '>=0'
   - name: blake3
@@ -467,9 +461,6 @@ provides:
   - name: h2
     category: dev-python
     version: '>=0'
-  - name: hatch-fancy-pypi-readme
-    category: dev-python
-    version: '>=0'
   - name: hpack
     category: dev-python
     version: '>=0'
@@ -558,9 +549,6 @@ provides:
     category: dev-python
     version: '>=0'
   - name: six
-    category: dev-python
-    version: '>=0'
-  - name: versioneer
     category: dev-python
     version: '>=0'
   - name: webencodings
