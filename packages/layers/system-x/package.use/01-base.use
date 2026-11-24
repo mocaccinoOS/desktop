@@ -1,3 +1,5 @@
+# Do not want llvm_slot_23 yet
+*/* llvm_slot_22 -llvm_slot_23
 # Be sure we have the sh symlink set
 app-alternatives/sh bash
 app-arch/bzip2 static-libs
