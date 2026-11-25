@@ -1,5 +1,7 @@
 install:
 - glib-compile-schemas /usr/share/glib-2.0/schemas > /dev/null 2>&1
+# Automerge the shipped gdm D-Bus policy (only this file, never the whole system.d)
+- for f in /etc/dbus-1/system.d/._cfg????_gdm.conf; do if [ -f "$f" ]; then mv -f "$f" /etc/dbus-1/system.d/gdm.conf; fi; done
 # Fix gnome icons caches
 - rm -f /usr/share/icons/hicolor/icon-theme.cache
 - gtk-update-icon-cache -f /usr/share/icons/*
