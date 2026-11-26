@@ -10,7 +10,7 @@
 =cosmic-base/cosmic-idle-1.12.0 ~amd64
 =cosmic-base/cosmic-initial-setup-1.12.0 ~amd64
 =cosmic-base/cosmic-launcher-1.12.0 ~amd64
-=cosmic-base/cosmic-meta-1.12.0 ~amd64
+=cosmic-base/cosmic-meta-1.12.0-r1 ~amd64
 =cosmic-base/cosmic-monitor-1.12.0 ~amd64
 =cosmic-base/cosmic-notifications-1.12.0 ~amd64
 =cosmic-base/cosmic-osd-1.12.0 ~amd64
